@@ -1,48 +1,58 @@
-# .github/workflows/deploy.yml
-name: CI/CD Docusaurus → GitHub Pages (pnpm)
+name: Deploy Docusaurus + SDK with pnpm to GitHub Pages
 
 on:
   push:
-    branches:
-      - main # 或你的默认分支
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 拉取代码
-      - name: Checkout repository
+      # 1. 检出 Docusaurus 源码
+      - name: Checkout Docusaurus repo
         uses: actions/checkout@v3
         with:
-          submodules: true
+          fetch-depth: 0
 
-      # 2. 安装 pnpm
+      # 2. 同步检出 SDK 仓库 到 XRSDK 目录
+      - name: Checkout SDK repo
+        uses: actions/checkout@v3
+        with:
+          repository: webspatial/webspatial-sdk
+          ref: main
+          path: XRSDK
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 3. 安装 pnpm 并启用缓存
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4 # 安装 pnpm；可指定 version 字段锁定版本，也可省略让其读取 package.json 中的 packageManager 字段&#8203;:contentReference[oaicite:0]{index=0}
+        uses: pnpm/action-setup@v2
         with:
-          version: 9 # 可选：指定与你本地一致的 pnpm 版本
-          run_install: false # 仅安装 pnpm，不自动安装依赖
+          version: 9
+          cache: "pnpm"
 
-      # 3. 安装 Node.js 并启用 pnpm 缓存
-      - name: Setup Node.js (with pnpm cache)
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-          cache: "pnpm" # 利用 setup-node 自带的 pnpm 缓存机制，加速依赖安装&#8203;:contentReference[oaicite:1]{index=1}
+      # 4. 在 XRSDK 中安装依赖并构建 SDK
+      - name: Build SDK with pnpm
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm run build
 
-      # 4. 安装项目依赖
-      - name: Install dependencies
+      # 5. 安装 Docusaurus 依赖
+      - name: Install Docusaurus dependencies
         run: pnpm install --frozen-lockfile
 
-      # 5. 构建 Docusaurus 站点
+      # 7. 构建 Docusaurus 站点
       - name: Build Docusaurus site
         run: pnpm run build
 
-      # 6. 部署到 gh-pages 分支
+      # 8. 发布到 gh-pages 分支
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Docusaurus 构建输出目录&#8203;:contentReference[oaicite:2]{index=2}
-          publish_branch: gh-pages
+          publish_dir: ./build
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
