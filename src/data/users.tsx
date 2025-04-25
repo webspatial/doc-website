@@ -10,6 +10,7 @@
 import {translate} from '@docusaurus/Translate';
 import {sortBy} from '@site/src/utils/jsUtils';
 
+let require = (xxx)=> "https://placehold.co/600x400"
 /*
  * ADD YOUR SITE TO THE DOCUSAURUS SHOWCASE
  *
