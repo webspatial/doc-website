@@ -1,46 +1,46 @@
-# .github/workflows/deploy.yml
-name: CI/CD Docusaurus → GitHub Pages (pnpm)
+name: CI/CD Docusaurus → GitHub Pages (SSH Deploy Key)
 
 on:
   push:
-    branches:
-      - main # 或你的默认分支
+    branches: [main]
+
+permissions:
+  contents: none # 主仓库不使用 GITHUB_TOKEN 做 git fetch
 
 jobs:
-  build-and-deploy:
+  build-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # 1. 拉取代码
-      - name: Checkout repository
+      # 1）加载 SSH 私钥（对应子模块仓库的 Deploy Key）
+      - name: Checkout via SSH (repo + submodules)
         uses: actions/checkout@v3
-
-      # 2. 安装 pnpm
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4 # 安装 pnpm；可指定 version 字段锁定版本，也可省略让其读取 package.json 中的 packageManager 字段&#8203;:contentReference[oaicite:0]{index=0}
         with:
-          version: 9 # 可选：指定与你本地一致的 pnpm 版本
-          run_install: false # 仅安装 pnpm，不自动安装依赖
+          ssh-key: ${{ secrets.SUBMODULE_SSH_KEY }} # 私钥内容&#8203;:contentReference[oaicite:4]{index=4}
+          ssh-known-hosts: github.com # 验证 host key
+          submodules: recursive # 递归拉 submodule&#8203;:contentReference[oaicite:5]{index=5}
+          persist-credentials: false # 禁用 HTTPS token 覆盖
 
-      # 3. 安装 Node.js 并启用 pnpm 缓存
+      # 2）pnpm & 构建
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with: { run_install: false }
+
       - name: Setup Node.js (with pnpm cache)
         uses: actions/setup-node@v4
         with:
           node-version: "18"
-          cache: "pnpm" # 利用 setup-node 自带的 pnpm 缓存机制，加速依赖安装&#8203;:contentReference[oaicite:1]{index=1}
+          cache: "pnpm"
 
-      # 4. 安装项目依赖
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # 5. 构建 Docusaurus 站点
-      - name: Build Docusaurus site
+      - name: Build site
         run: pnpm run build
 
-      # 6. 部署到 gh-pages 分支
-      - name: Deploy to GitHub Pages
+      # 3）部署到 GitHub Pages
+      - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Docusaurus 构建输出目录&#8203;:contentReference[oaicite:2]{index=2}
+          publish_dir: ./build
           publish_branch: gh-pages
