@@ -1,6 +1,6 @@
 # Class: SpatialSession
 
-Defined in: [SpatialSession.ts:66](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L66)
+Defined in: [SpatialSession.ts:66](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L66)
 
 Session use to establish a connection to the spatial renderer of the system. All resources must be created by the session
 
@@ -20,7 +20,7 @@ Session use to establish a connection to the spatial renderer of the system. All
 
 > **addOnEngineUpdateEventListener**(`callback`): `void`
 
-Defined in: [SpatialSession.ts:76](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L76)
+Defined in: [SpatialSession.ts:76](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L76)
 
 Add event listener callback to be called each frame
 
@@ -42,7 +42,7 @@ callback to be called each update
 
 > **createEntity**(`options?`): `Promise`\<[`SpatialEntity`](SpatialEntity.md)\>
 
-Defined in: [SpatialSession.ts:95](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L95)
+Defined in: [SpatialSession.ts:95](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L95)
 
 Creates a Entity
 
@@ -64,7 +64,7 @@ Entity
 
 > **createInputComponent**(`options?`): `Promise`\<[`SpatialInputComponent`](SpatialInputComponent.md)\>
 
-Defined in: [SpatialSession.ts:181](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L181)
+Defined in: [SpatialSession.ts:181](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L181)
 
 Creates a InputComponent
 [Experimental] Creates a InputComponent used to handle click and drag events of the entity containing a model
@@ -87,7 +87,7 @@ InputComponent
 
 > **createMeshResource**(`options?`): `Promise`\<[`SpatialMeshResource`](SpatialMeshResource.md)\>
 
-Defined in: [SpatialSession.ts:195](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L195)
+Defined in: [SpatialSession.ts:195](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L195)
 
 Creates a MeshResource containing geometry data
 
@@ -109,7 +109,7 @@ MeshResource
 
 > **createModel3DComponent**(`options?`): `Promise`\<[`SpatialModel3DComponent`](SpatialModel3DComponent.md)\>
 
-Defined in: [SpatialSession.ts:159](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L159)
+Defined in: [SpatialSession.ts:159](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L159)
 
 Creates a Model3DComponent
 
@@ -131,7 +131,7 @@ Model3DComponent
 
 > **createModelComponent**(`options?`): `Promise`\<[`SpatialModelComponent`](SpatialModelComponent.md)\>
 
-Defined in: [SpatialSession.ts:138](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L138)
+Defined in: [SpatialSession.ts:138](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L138)
 
 Creates a ModelComponent used to display geometry + material of a 3D model
 
@@ -153,7 +153,7 @@ ModelComponent
 
 > **createPhysicallyBasedMaterialResource**(`options?`): `Promise`\<[`SpatialPhysicallyBasedMaterialResource`](SpatialPhysicallyBasedMaterialResource.md)\>
 
-Defined in: [SpatialSession.ts:212](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L212)
+Defined in: [SpatialSession.ts:212](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L212)
 
 Creates a PhysicallyBasedMaterial containing PBR material data
 
@@ -175,7 +175,7 @@ PhysicallyBasedMaterial
 
 > **createViewComponent**(`options?`): `Promise`\<[`SpatialViewComponent`](SpatialViewComponent.md)\>
 
-Defined in: [SpatialSession.ts:124](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L124)
+Defined in: [SpatialSession.ts:124](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L124)
 
 Creates a ViewComponent used to display 3D content within the entity
 
@@ -197,7 +197,7 @@ SpatialViewComponent
 
 > **createWindowComponent**(`options?`): `Promise`\<[`SpatialWindowComponent`](SpatialWindowComponent.md)\>
 
-Defined in: [SpatialSession.ts:110](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L110)
+Defined in: [SpatialSession.ts:110](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L110)
 
 Creates a WindowComponent
 [TODO] should creation of components be moved to entity? and these made private?
@@ -220,7 +220,7 @@ WindowComponent
 
 > **createWindowContainer**(`options?`): `Promise`\<[`SpatialWindowContainer`](SpatialWindowContainer.md)\>
 
-Defined in: [SpatialSession.ts:228](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L228)
+Defined in: [SpatialSession.ts:228](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L228)
 
 Creates a WindowContainer
 
@@ -242,7 +242,7 @@ SpatialWindowContainer
 
 > **createWindowContext**(): `Promise`\<`null` \| `Window`\>
 
-Defined in: [SpatialSession.ts:395](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L395)
+Defined in: [SpatialSession.ts:395](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L395)
 
 Creates a window context object that is compatable with SpatialWindowComponent's setFromWindow API
 
@@ -258,7 +258,7 @@ window context
 
 > **dismissImmersiveSpace**(): `Promise`\<`void`\>
 
-Defined in: [SpatialSession.ts:340](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L340)
+Defined in: [SpatialSession.ts:340](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L340)
 
 Closes the immersive space
 
@@ -272,7 +272,7 @@ Closes the immersive space
 
 > **getCurrentWindowComponent**(): [`SpatialWindowComponent`](SpatialWindowComponent.md)
 
-Defined in: [SpatialSession.ts:265](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L265)
+Defined in: [SpatialSession.ts:265](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L265)
 
 Retrieves the window for this page
 
@@ -289,7 +289,7 @@ the window component corresponding to the js running on this page
 
 > **getCurrentWindowContainer**(): [`SpatialWindowContainer`](SpatialWindowContainer.md)
 
-Defined in: [SpatialSession.ts:369](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L369)
+Defined in: [SpatialSession.ts:369](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L369)
 
 Gets the current window container for the window
 [TODO] discuss what happens if it doesnt yet have a window container
@@ -306,7 +306,7 @@ the current window container for the window
 
 > **getImmersiveWindowContainer**(): `Promise`\<[`SpatialWindowContainer`](SpatialWindowContainer.md)\>
 
-Defined in: [SpatialSession.ts:350](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L350)
+Defined in: [SpatialSession.ts:350](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L350)
 
 Retreives the window container corresponding to the Immersive space
 
@@ -322,7 +322,7 @@ the immersive window container
 
 > **getParentWindowComponent**(): `Promise`\<`null` \| [`SpatialWindowComponent`](SpatialWindowComponent.md)\>
 
-Defined in: [SpatialSession.ts:273](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L273)
+Defined in: [SpatialSession.ts:273](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L273)
 
 Retrieves the parent window for this page or null if this is the root page
 
@@ -338,7 +338,7 @@ the window component or null
 
 > **log**(...`msg`): `Promise`\<`void`\>
 
-Defined in: [SpatialSession.ts:293](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L293)
+Defined in: [SpatialSession.ts:293](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L293)
 
 Logs a message to the native apps console
 
@@ -360,7 +360,7 @@ mesage to log
 
 > **openImmersiveSpace**(): `Promise`\<`void`\>
 
-Defined in: [SpatialSession.ts:335](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L335)
+Defined in: [SpatialSession.ts:335](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L335)
 
 Opens the immersive space
 
@@ -374,7 +374,7 @@ Opens the immersive space
 
 > **transaction**(`fn`): `Promise`\<`unknown`\>
 
-Defined in: [SpatialSession.ts:385](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialSession.ts#L385)
+Defined in: [SpatialSession.ts:385](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialSession.ts#L385)
 
 Start a transaction that queues up commands to submit them all at once to reduce ipc overhead
 

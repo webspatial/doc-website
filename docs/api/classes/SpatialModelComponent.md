@@ -1,6 +1,6 @@
 # Class: SpatialModelComponent
 
-Defined in: [component/SpatialModelComponent.ts:9](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModelComponent.ts#L9)
+Defined in: [component/SpatialModelComponent.ts:9](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModelComponent.ts#L9)
 
 Used to position a model in 3D space, made up of a mesh and materials to be applied to the mesh
 
@@ -14,7 +14,7 @@ Used to position a model in 3D space, made up of a mesh and materials to be appl
 
 > **name**: `string` = `''`
 
-Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialObject.ts#L23)
+Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L23)
 
 #### Inherited from
 
@@ -26,7 +26,7 @@ Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/b
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialObject.ts#L18)
+Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L18)
 
 Marks resource to be released (it should no longer be used)
 
@@ -44,7 +44,7 @@ Marks resource to be released (it should no longer be used)
 
 > **getEntity**(): `Promise`\<`null` \| [`SpatialEntity`](SpatialEntity.md)\>
 
-Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialComponent.ts#L11)
+Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialComponent.ts#L11)
 
 Gets the entity this component is attached to
 
@@ -64,7 +64,7 @@ entity or null
 
 > `protected` **onDestroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialObject.ts#L25)
+Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L25)
 
 #### Returns
 
@@ -80,7 +80,7 @@ Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/b
 
 > **setMaterials**(`materials`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModelComponent.ts:25](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModelComponent.ts#L25)
+Defined in: [component/SpatialModelComponent.ts:25](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModelComponent.ts#L25)
 
 Sets the materials that should be applied to the mesh
 
@@ -102,7 +102,7 @@ array of materials to set
 
 > **setMesh**(`mesh`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModelComponent.ts:15](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModelComponent.ts#L15)
+Defined in: [component/SpatialModelComponent.ts:15](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModelComponent.ts#L15)
 
 Sets the mesh to be displayed by the component
 

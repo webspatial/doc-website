@@ -25,8 +25,8 @@ const config: Config = {
             // Options
             // todo: need to link to xrsdk code base
             {
-                entryPoints: ['../XRSDK/core/src/index.ts'],
-                tsconfig: '../XRSDK/core/tsconfig.json',
+                entryPoints: ['./XRSDK/core/src/index.ts'],
+                tsconfig: './XRSDK/core/tsconfig.json',
                 sidebar: {
                     autoConfiguration: true,
                     pretty: true,

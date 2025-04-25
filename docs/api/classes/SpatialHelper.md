@@ -1,6 +1,6 @@
 # Class: SpatialHelper
 
-Defined in: [SpatialHelper.ts:11](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialHelper.ts#L11)
+Defined in: [SpatialHelper.ts:11](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialHelper.ts#L11)
 
 Helper class used to quickly add spatial content to standard web pages
 [Experimental] expect APIs to potentially change in future versions
@@ -11,7 +11,7 @@ Helper class used to quickly add spatial content to standard web pages
 
 > **new SpatialHelper**(`session`): `SpatialHelper`
 
-Defined in: [SpatialHelper.ts:29](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialHelper.ts#L29)
+Defined in: [SpatialHelper.ts:29](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialHelper.ts#L29)
 
 #### Parameters
 
@@ -29,7 +29,7 @@ Defined in: [SpatialHelper.ts:29](https://github.com/webspatial/webspatial-sdk/b
 
 > **dom**: `object`
 
-Defined in: [SpatialHelper.ts:172](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialHelper.ts#L172)
+Defined in: [SpatialHelper.ts:172](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialHelper.ts#L172)
 
 #### attachSpatialView()
 
@@ -51,7 +51,7 @@ Defined in: [SpatialHelper.ts:172](https://github.com/webspatial/webspatial-sdk/
 
 > **navigation**: `object`
 
-Defined in: [SpatialHelper.ts:79](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialHelper.ts#L79)
+Defined in: [SpatialHelper.ts:79](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialHelper.ts#L79)
 
 #### openPanel()
 
@@ -115,7 +115,7 @@ Defined in: [SpatialHelper.ts:79](https://github.com/webspatial/webspatial-sdk/b
 
 > **session**: [`SpatialSession`](SpatialSession.md)
 
-Defined in: [SpatialHelper.ts:29](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialHelper.ts#L29)
+Defined in: [SpatialHelper.ts:29](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialHelper.ts#L29)
 
 ***
 
@@ -123,7 +123,7 @@ Defined in: [SpatialHelper.ts:29](https://github.com/webspatial/webspatial-sdk/b
 
 > **shape**: `object`
 
-Defined in: [SpatialHelper.ts:31](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialHelper.ts#L31)
+Defined in: [SpatialHelper.ts:31](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialHelper.ts#L31)
 
 #### createModelEntity()
 
@@ -175,7 +175,7 @@ Defined in: [SpatialHelper.ts:31](https://github.com/webspatial/webspatial-sdk/b
 
 > **get** `static` **instance**(): `null` \| `SpatialHelper`
 
-Defined in: [SpatialHelper.ts:13](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialHelper.ts#L13)
+Defined in: [SpatialHelper.ts:13](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialHelper.ts#L13)
 
 ##### Returns
 
@@ -187,7 +187,7 @@ Defined in: [SpatialHelper.ts:13](https://github.com/webspatial/webspatial-sdk/b
 
 > **setBackgroundStyle**(`style`, `backgroundColor`): `Promise`\<`void`\>
 
-Defined in: [SpatialHelper.ts:223](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialHelper.ts#L223)
+Defined in: [SpatialHelper.ts:223](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialHelper.ts#L223)
 
 #### Parameters
 

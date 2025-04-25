@@ -1,6 +1,6 @@
 # Class: Spatial
 
-Defined in: [Spatial.ts:6](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/Spatial.ts#L6)
+Defined in: [Spatial.ts:6](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/Spatial.ts#L6)
 
 Base object designed to be placed on navigator.spatial to mirror navigator.xr for webxr
 
@@ -20,7 +20,7 @@ Base object designed to be placed on navigator.spatial to mirror navigator.xr fo
 
 > **getClientVersion**(): `string`
 
-Defined in: [Spatial.ts:45](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/Spatial.ts#L45)
+Defined in: [Spatial.ts:45](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/Spatial.ts#L45)
 
 Gets the client version, format is "x.x.x"
 
@@ -36,7 +36,7 @@ client version string
 
 > **getNativeVersion**(): `any`
 
-Defined in: [Spatial.ts:34](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/Spatial.ts#L34)
+Defined in: [Spatial.ts:34](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/Spatial.ts#L34)
 
 Gets the native version, format is "x.x.x"
 
@@ -52,7 +52,7 @@ native version string
 
 > **isSupported**(): `boolean`
 
-Defined in: [Spatial.ts:26](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/Spatial.ts#L26)
+Defined in: [Spatial.ts:26](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/Spatial.ts#L26)
 
 #### Returns
 
@@ -66,7 +66,7 @@ true if web spatial is supported by this webpage
 
 > **requestSession**(): `null` \| [`SpatialSession`](SpatialSession.md)
 
-Defined in: [Spatial.ts:12](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/Spatial.ts#L12)
+Defined in: [Spatial.ts:12](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/Spatial.ts#L12)
 
 Requests a session object from the browser
 

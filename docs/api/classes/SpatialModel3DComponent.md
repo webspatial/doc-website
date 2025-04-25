@@ -1,6 +1,6 @@
 # Class: SpatialModel3DComponent
 
-Defined in: [component/SpatialModel3DComponent.ts:21](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L21)
+Defined in: [component/SpatialModel3DComponent.ts:21](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L21)
 
 Used to position a model3d in 3D space
 
@@ -14,7 +14,7 @@ Used to position a model3d in 3D space
 
 > **new SpatialModel3DComponent**(`_resource`): `SpatialModel3DComponent`
 
-Defined in: [component/EventSpatialComponent.ts:15](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/EventSpatialComponent.ts#L15)
+Defined in: [component/EventSpatialComponent.ts:15](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/EventSpatialComponent.ts#L15)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [component/EventSpatialComponent.ts:15](https://github.com/webspatia
 
 > **name**: `string` = `''`
 
-Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialObject.ts#L23)
+Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L23)
 
 #### Inherited from
 
@@ -48,7 +48,7 @@ Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/b
 
 > `optional` **onFailure**: (`errorReason`) => `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:131](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L131)
+Defined in: [component/SpatialModel3DComponent.ts:131](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L131)
 
 Callback fired when model load failure
 
@@ -68,7 +68,7 @@ Callback fired when model load failure
 
 > `optional` **onSuccess**: () => `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:125](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L125)
+Defined in: [component/SpatialModel3DComponent.ts:125](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L125)
 
 Callback fired when model load success
 
@@ -84,7 +84,7 @@ Callback fired when model load success
 
 > **set** **onDoubleTap**(`callback`): `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:204](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L204)
+Defined in: [component/SpatialModel3DComponent.ts:204](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L204)
 
 ##### Parameters
 
@@ -104,7 +104,7 @@ Defined in: [component/SpatialModel3DComponent.ts:204](https://github.com/webspa
 
 > **set** **onDrag**(`callback`): `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:154](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L154)
+Defined in: [component/SpatialModel3DComponent.ts:154](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L154)
 
 ##### Parameters
 
@@ -124,7 +124,7 @@ Defined in: [component/SpatialModel3DComponent.ts:154](https://github.com/webspa
 
 > **set** **onDragEnd**(`callback`): `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:170](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L170)
+Defined in: [component/SpatialModel3DComponent.ts:170](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L170)
 
 ##### Parameters
 
@@ -144,7 +144,7 @@ Defined in: [component/SpatialModel3DComponent.ts:170](https://github.com/webspa
 
 > **set** **onDragStart**(`callback`): `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:138](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L138)
+Defined in: [component/SpatialModel3DComponent.ts:138](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L138)
 
 ##### Parameters
 
@@ -164,7 +164,7 @@ Defined in: [component/SpatialModel3DComponent.ts:138](https://github.com/webspa
 
 > **set** **onLongPress**(`callback`): `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:215](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L215)
+Defined in: [component/SpatialModel3DComponent.ts:215](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L215)
 
 ##### Parameters
 
@@ -184,7 +184,7 @@ Defined in: [component/SpatialModel3DComponent.ts:215](https://github.com/webspa
 
 > **set** **onTap**(`callback`): `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:193](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L193)
+Defined in: [component/SpatialModel3DComponent.ts:193](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L193)
 
 ##### Parameters
 
@@ -202,7 +202,7 @@ Defined in: [component/SpatialModel3DComponent.ts:193](https://github.com/webspa
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/SpatialObject.ts#L18)
+Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L18)
 
 Marks resource to be released (it should no longer be used)
 
@@ -220,7 +220,7 @@ Marks resource to be released (it should no longer be used)
 
 > **getEntity**(): `Promise`\<`null` \| [`SpatialEntity`](SpatialEntity.md)\>
 
-Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialComponent.ts#L11)
+Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialComponent.ts#L11)
 
 Gets the entity this component is attached to
 
@@ -240,7 +240,7 @@ entity or null
 
 > `protected` **onDestroy**(): `Promise`\<`void`\>
 
-Defined in: [component/EventSpatialComponent.ts:29](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/EventSpatialComponent.ts#L29)
+Defined in: [component/EventSpatialComponent.ts:29](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/EventSpatialComponent.ts#L29)
 
 #### Returns
 
@@ -256,7 +256,7 @@ Defined in: [component/EventSpatialComponent.ts:29](https://github.com/webspatia
 
 > `protected` **onRecvEvent**(`data`): `void`
 
-Defined in: [component/SpatialModel3DComponent.ts:22](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L22)
+Defined in: [component/SpatialModel3DComponent.ts:22](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L22)
 
 #### Parameters
 
@@ -284,7 +284,7 @@ Abstract method to be implemented by subclasses. Called when a spatial event is 
 
 > **setAspectRatio**(`aspectRatio`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModel3DComponent.ts:96](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L96)
+Defined in: [component/SpatialModel3DComponent.ts:96](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L96)
 
 Constrains this model dimensions to the specified aspect ratio.
 with a value of 0, the model will use the original aspect ratio.
@@ -307,7 +307,7 @@ number
 
 > **setContentMode**(`contentMode`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModel3DComponent.ts:84](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L84)
+Defined in: [component/SpatialModel3DComponent.ts:84](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L84)
 
 Sets how the model fill the rect
 
@@ -327,7 +327,7 @@ Sets how the model fill the rect
 
 > **setOpacity**(`opacity`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModel3DComponent.ts:74](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L74)
+Defined in: [component/SpatialModel3DComponent.ts:74](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L74)
 
 Sets the opacity of the model
 
@@ -347,7 +347,7 @@ Sets the opacity of the model
 
 > **setResizable**(`resizable`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModel3DComponent.ts:116](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L116)
+Defined in: [component/SpatialModel3DComponent.ts:116](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L116)
 
 Sets whether the model appear in original size or fit the rect
 
@@ -367,7 +367,7 @@ Sets whether the model appear in original size or fit the rect
 
 > **setResolution**(`width`, `height`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModel3DComponent.ts:58](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L58)
+Defined in: [component/SpatialModel3DComponent.ts:58](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L58)
 
 Sets the resolution of the spatial view in dom pixels
 
@@ -391,7 +391,7 @@ Sets the resolution of the spatial view in dom pixels
 
 > **setRotationAnchor**(`rotationAnchor`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModel3DComponent.ts:64](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L64)
+Defined in: [component/SpatialModel3DComponent.ts:64](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L64)
 
 #### Parameters
 
@@ -409,7 +409,7 @@ Defined in: [component/SpatialModel3DComponent.ts:64](https://github.com/webspat
 
 > **setScrollWithParent**(`scrollWithParent`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialModel3DComponent.ts:106](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialModel3DComponent.ts#L106)
+Defined in: [component/SpatialModel3DComponent.ts:106](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialModel3DComponent.ts#L106)
 
 Defaults to false. If set to true, scrolling the parent page will also scroll this window with it like other dom elements
 

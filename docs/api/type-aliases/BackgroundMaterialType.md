@@ -2,7 +2,7 @@
 
 > **BackgroundMaterialType** = `"none"` \| `"translucent"` \| `"thick"` \| `"regular"` \| `"thin"` \| `"transparent"`
 
-Defined in: [component/SpatialWindowComponent.ts:20](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/component/SpatialWindowComponent.ts#L20)
+Defined in: [component/SpatialWindowComponent.ts:20](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L20)
 
 Material type for SpatialDiv or HTML document.
 
