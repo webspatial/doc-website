@@ -1,3 +1,3 @@
 [submodule "XRSDK"]
 	path = XRSDK
-	url = git@github.com:webspatial/webspatial-sdk.git
+	url = https://github.com/webspatial/webspatial-sdk.git
