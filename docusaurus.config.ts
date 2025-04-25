@@ -1,151 +1,166 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type {Options as IdealImageOptions} from '@docusaurus/plugin-ideal-image';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  plugins: ['@docusaurus/theme-live-codeblock'],
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
-
-  presets: [
-    [
-      'classic',
-      {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      } satisfies Preset.Options,
+    plugins: [
+        '@docusaurus/theme-live-codeblock',
+        [
+            'ideal-image',
+            {
+                quality: 70,
+                max: 1030,
+                min: 640,
+                steps: 2,
+                // Use false to debug, but it incurs huge perf costs
+                disableInDev: true,
+            } satisfies IdealImageOptions,
+        ],
     ],
-  ],
+    title: 'My Site',
+    tagline: 'Dinosaurs are cool',
+    favicon: 'img/favicon.ico',
 
-  themeConfig: {
-    liveCodeBlock: {
-      /**
-       * The position of the live playground, above or under the editor
-       * Possible values: "top" | "bottom"
-       */
-      playgroundPosition: 'bottom',
+    // Set the production url of your site here
+    url: 'https://your-docusaurus-site.example.com',
+    // Set the /<baseUrl>/ pathname under which your site is served
+    // For GitHub pages deployment, it is often '/<projectName>/'
+    baseUrl: '/',
+
+    // GitHub pages deployment config.
+    // If you aren't using GitHub pages, you don't need these.
+    organizationName: 'facebook', // Usually your GitHub org/user name.
+    projectName: 'docusaurus', // Usually your repo name.
+
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'warn',
+
+    // Even if you don't use internationalization, you can use this field to set
+    // useful metadata like html lang. For example, if your site is Chinese, you
+    // may want to replace "en" with "zh-Hans".
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en'],
     },
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
-    navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+
+    presets: [
+        [
+            'classic',
+            {
+                docs: {
+                    sidebarPath: './sidebars.ts',
+                    // Please change this to your repo.
+                    // Remove this to remove the "edit this page" links.
+                    editUrl:
+                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                },
+                blog: {
+                    showReadingTime: true,
+                    feedOptions: {
+                        type: ['rss', 'atom'],
+                        xslt: true,
+                    },
+                    // Please change this to your repo.
+                    // Remove this to remove the "edit this page" links.
+                    editUrl:
+                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                    // Useful options to enforce blogging best practices
+                    onInlineTags: 'warn',
+                    onInlineAuthors: 'warn',
+                    onUntruncatedBlogPosts: 'warn',
+                },
+                theme: {
+                    customCss: './src/css/custom.css',
+                },
+            } satisfies Preset.Options,
+        ],
+    ],
+
+    themeConfig: {
+        liveCodeBlock: {
+            /**
+             * The position of the live playground, above or under the editor
+             * Possible values: "top" | "bottom"
+             */
+            playgroundPosition: 'bottom',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+        // Replace with your project's social card
+        image: 'img/docusaurus-social-card.jpg',
+        navbar: {
+            title: 'My Site',
+            logo: {
+                alt: 'My Site Logo',
+                src: 'img/logo.svg',
+            },
+            items: [
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'tutorialSidebar',
+                    position: 'left',
+                    label: 'Tutorial',
+                },
+                {to: '/blog', label: 'Blog', position: 'left'},
+                {to: 'showcase', label: 'Showcase', position: 'left'},
+                {
+                    href: 'https://github.com/facebook/docusaurus',
+                    label: 'GitHub',
+                    position: 'right',
+                },
+            ],
         },
-      ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
+        footer: {
+            style: 'dark',
+            links: [
+                {
+                    title: 'Docs',
+                    items: [
+                        {
+                            label: 'Tutorial',
+                            to: '/docs/intro',
+                        },
+                    ],
+                },
+                {
+                    title: 'Community',
+                    items: [
+                        {
+                            label: 'Stack Overflow',
+                            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                        },
+                        {
+                            label: 'Discord',
+                            href: 'https://discordapp.com/invite/docusaurus',
+                        },
+                        {
+                            label: 'X',
+                            href: 'https://x.com/docusaurus',
+                        },
+                    ],
+                },
+                {
+                    title: 'More',
+                    items: [
+                        {
+                            label: 'Blog',
+                            to: '/blog',
+                        },
+                        {
+                            label: 'GitHub',
+                            href: 'https://github.com/facebook/docusaurus',
+                        },
+                    ],
+                },
+            ],
+            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
         },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
+        prism: {
+            theme: prismThemes.github,
+            darkTheme: prismThemes.dracula,
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-  } satisfies Preset.ThemeConfig,
+    } satisfies Preset.ThemeConfig,
 };
 
 export default config;
