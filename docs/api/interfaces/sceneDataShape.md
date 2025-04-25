@@ -1,0 +1,41 @@
+[**@webspatial/core-sdk**](../README.md)
+
+***
+
+[@webspatial/core-sdk](../globals.md) / sceneDataShape
+
+# Interface: sceneDataShape
+
+Defined in: [types.ts:14](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/types.ts#L14)
+
+## Properties
+
+### method?
+
+> `optional` **method**: `"createRoot"` \| `"showRoot"`
+
+Defined in: [types.ts:15](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/types.ts#L15)
+
+***
+
+### sceneConfig?
+
+> `optional` **sceneConfig**: [`WindowContainerOptions`](WindowContainerOptions.md)
+
+Defined in: [types.ts:16](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/types.ts#L16)
+
+***
+
+### url?
+
+> `optional` **url**: `string`
+
+Defined in: [types.ts:17](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/types.ts#L17)
+
+***
+
+### window
+
+> **window**: `Window`
+
+Defined in: [types.ts:18](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/types.ts#L18)
