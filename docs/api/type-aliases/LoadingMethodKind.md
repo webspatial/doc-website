@@ -1,9 +1,3 @@
-[**@webspatial/core-sdk**](../README.md)
-
-***
-
-[@webspatial/core-sdk](../globals.md) / LoadingMethodKind
-
 # Type Alias: LoadingMethodKind
 
 > **LoadingMethodKind** = `"show"` \| `"hide"`

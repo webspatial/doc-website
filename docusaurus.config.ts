@@ -19,6 +19,22 @@ const config: Config = {
                 disableInDev: true,
             } satisfies IdealImageOptions,
         ],
+        [
+            'docusaurus-plugin-typedoc',
+
+            // Options
+            // todo: need to link to xrsdk code base
+            {
+                entryPoints: ['../XRSDK/core/src/index.ts'],
+                tsconfig: '../XRSDK/core/tsconfig.json',
+                sidebar: {
+                    autoConfiguration: true,
+                    pretty: true,
+                    typescript: true,
+                    deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
+                },
+            },
+        ],
     ],
     title: 'My Site',
     tagline: 'Dinosaurs are cool',
@@ -103,7 +119,9 @@ const config: Config = {
                     label: 'Tutorial',
                 },
                 {
-                    to: '/docs/api',
+                    type: 'docSidebar',
+                    sidebarId: 'apiSidebar',
+                    // to: '/docs/api',
                     label: 'API',
                     position: 'left',
                 },

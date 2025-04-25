@@ -1,9 +1,3 @@
-[**@webspatial/core-sdk**](../README.md)
-
-***
-
-[@webspatial/core-sdk](../globals.md) / StyleParam
-
 # Type Alias: StyleParam
 
 > **StyleParam** = `object`

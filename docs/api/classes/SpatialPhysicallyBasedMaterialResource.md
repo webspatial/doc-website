@@ -1,9 +1,3 @@
-[**@webspatial/core-sdk**](../README.md)
-
-***
-
-[@webspatial/core-sdk](../globals.md) / SpatialPhysicallyBasedMaterialResource
-
 # Class: SpatialPhysicallyBasedMaterialResource
 
 Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:8](https://github.com/webspatial/webspatial-sdk/blob/4b99b8c118df67a102dd2d333c40fa2b5e426143/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L8)

@@ -1,7 +1,3 @@
-**@webspatial/core-sdk**
-
-***
-
 # **Full API documentation**
 
 * [API Docs](https://github.com/webspatial/webspatial.github.io/blob/main/docs/globals.md)

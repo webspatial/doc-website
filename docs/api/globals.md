@@ -1,7 +1,3 @@
-[**@webspatial/core-sdk**](README.md)
-
-***
-
 # @webspatial/core-sdk
 
 ## Classes
