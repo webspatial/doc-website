@@ -25,7 +25,7 @@ jobs:
           repository: webspatial/webspatial-sdk
           ref: main
           path: XRSDK
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
 
       # 3. 安装 pnpm 并启用缓存
       - name: Setup pnpm
