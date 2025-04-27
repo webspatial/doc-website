@@ -1,6 +1,6 @@
 # Class: SpatialMeshResource
 
-Defined in: [resource/SpatialMeshResource.ts:6](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/resource/SpatialMeshResource.ts#L6)
+Defined in: [resource/SpatialMeshResource.ts:6](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/resource/SpatialMeshResource.ts#L6)
 
 Mesh asset containing geometry
 
@@ -14,7 +14,7 @@ Mesh asset containing geometry
 
 > **name**: `string` = `''`
 
-Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L23)
+Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L23)
 
 #### Inherited from
 
@@ -26,7 +26,7 @@ Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/b
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L18)
+Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L18)
 
 Marks resource to be released (it should no longer be used)
 
@@ -44,7 +44,7 @@ Marks resource to be released (it should no longer be used)
 
 > `protected` **onDestroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L25)
+Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L25)
 
 #### Returns
 

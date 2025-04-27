@@ -1,6 +1,6 @@
 # Class: SpatialPhysicallyBasedMaterialResource
 
-Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:8](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L8)
+Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:8](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L8)
 
 PBR material which can be set on a SpatialModelComponent
 
@@ -14,7 +14,7 @@ PBR material which can be set on a SpatialModelComponent
 
 > **\_modelComponentAttachedTo**: `object` = `{}`
 
-Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:22](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L22)
+Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:22](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L22)
 
 #### Index Signature
 
@@ -26,7 +26,7 @@ Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:22](https://gith
 
 > **baseColor**: `object`
 
-Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:12](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L12)
+Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:12](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L12)
 
 Base color of the material containing rgba between 0 and 1
 
@@ -52,7 +52,7 @@ Base color of the material containing rgba between 0 and 1
 
 > **metallic**: `object`
 
-Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:16](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L16)
+Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:16](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L16)
 
 PBR metalic value between 0 and 1
 
@@ -66,7 +66,7 @@ PBR metalic value between 0 and 1
 
 > **name**: `string` = `''`
 
-Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L23)
+Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L23)
 
 #### Inherited from
 
@@ -78,7 +78,7 @@ Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/b
 
 > **roughness**: `object`
 
-Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:20](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L20)
+Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:20](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L20)
 
 PBR roughness value between 0 and 1
 
@@ -92,7 +92,7 @@ PBR roughness value between 0 and 1
 
 > **\_addToComponent**(`c`): `void`
 
-Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L23)
+Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:23](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L23)
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:23](https://gith
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L18)
+Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L18)
 
 Marks resource to be released (it should no longer be used)
 
@@ -128,7 +128,7 @@ Marks resource to be released (it should no longer be used)
 
 > `protected` **onDestroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L25)
+Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L25)
 
 #### Returns
 
@@ -144,7 +144,7 @@ Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/b
 
 > **update**(): `Promise`\<`void`\>
 
-Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:30](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L30)
+Defined in: [resource/SpatialPhysicallyBasedMaterialResource.ts:30](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/resource/SpatialPhysicallyBasedMaterialResource.ts#L30)
 
 Syncs state of color, metallic, roupghness to the renderer
 

@@ -1,6 +1,6 @@
 # Class: SpatialEntity
 
-Defined in: [SpatialEntity.ts:10](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L10)
+Defined in: [SpatialEntity.ts:10](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L10)
 
 Entity used to describe an object that can be added to the scene
 
@@ -14,7 +14,7 @@ Entity used to describe an object that can be added to the scene
 
 > **name**: `string` = `''`
 
-Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L23)
+Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L23)
 
 #### Inherited from
 
@@ -26,7 +26,7 @@ Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/b
 
 > **transform**: [`SpatialTransform`](SpatialTransform.md)
 
-Defined in: [SpatialEntity.ts:15](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L15)
+Defined in: [SpatialEntity.ts:15](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L15)
 
 Transform corresponding to the entity
 note: updateTransform must be called for transform to be synced to rendering
@@ -37,7 +37,7 @@ note: updateTransform must be called for transform to be synced to rendering
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialEntity.ts:129](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L129)
+Defined in: [SpatialEntity.ts:129](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L129)
 
 Removes a reference to the entity by the renderer and this object should no longer be used. [TODO] Attached components will not be destroyed
 
@@ -55,7 +55,7 @@ Removes a reference to the entity by the renderer and this object should no long
 
 > **getBoundingBox**(): `Promise`\<\{ `center`: \{ `x`: `number`; `y`: `number`; `z`: `number`; \}; `extents`: \{ `x`: `number`; `y`: `number`; `z`: `number`; \}; \}\>
 
-Defined in: [SpatialEntity.ts:108](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L108)
+Defined in: [SpatialEntity.ts:108](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L108)
 
 Query the 3d boudning box of the entity
 
@@ -71,7 +71,7 @@ The bounding box of the entity
 
 > **getComponent**\<`T`\>(`type`): `undefined` \| `T`
 
-Defined in: [SpatialEntity.ts:65](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L65)
+Defined in: [SpatialEntity.ts:65](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L65)
 
 Gets a component from the entity
 
@@ -97,7 +97,7 @@ Gets a component from the entity
 
 > **isDestroyed**(): `boolean`
 
-Defined in: [SpatialEntity.ts:137](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L137)
+Defined in: [SpatialEntity.ts:137](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L137)
 
 Check if destroy has been called
 
@@ -111,7 +111,7 @@ Check if destroy has been called
 
 > `protected` **onDestroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L25)
+Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L25)
 
 #### Returns
 
@@ -127,7 +127,7 @@ Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/b
 
 > **removeComponent**\<`T`\>(`type`): `Promise`\<`void`\>
 
-Defined in: [SpatialEntity.ts:52](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L52)
+Defined in: [SpatialEntity.ts:52](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L52)
 
 Removes a component from the entity
 
@@ -153,7 +153,7 @@ Removes a component from the entity
 
 > **setComponent**(`component`): `Promise`\<`void`\>
 
-Defined in: [SpatialEntity.ts:44](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L44)
+Defined in: [SpatialEntity.ts:44](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L44)
 
 Attaches a component to the entity to be displayed
 [TODO] review pass by value vs ref and ownership model for this
@@ -174,7 +174,7 @@ Attaches a component to the entity to be displayed
 
 > **setCoordinateSpace**(`space`): `Promise`\<`void`\>
 
-Defined in: [SpatialEntity.ts:100](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L100)
+Defined in: [SpatialEntity.ts:100](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L100)
 
 Sets the coordinate space of this entity (Default: App)
 "App" = game engine style coordinates in meters
@@ -200,7 +200,7 @@ coordinate space mode
 
 > **setParent**(`e`): `Promise`\<`void`\>
 
-Defined in: [SpatialEntity.ts:86](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L86)
+Defined in: [SpatialEntity.ts:86](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L86)
 
 Sets a parent entity, if that entity or its parents are attached to a window container, this entity will be displayed
 
@@ -222,7 +222,7 @@ parent entity or null to remove current parent
 
 > **setVisible**(`visible`): `Promise`\<`void`\>
 
-Defined in: [SpatialEntity.ts:122](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L122)
+Defined in: [SpatialEntity.ts:122](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L122)
 
 Sets if the entity should be visible (default: True)
 
@@ -242,7 +242,7 @@ Sets if the entity should be visible (default: True)
 
 > **updateTransform**(): `Promise`\<`void`\>
 
-Defined in: [SpatialEntity.ts:27](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L27)
+Defined in: [SpatialEntity.ts:27](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L27)
 
 Syncs the transform with the renderer, must be called to observe updates
 
@@ -256,7 +256,7 @@ Syncs the transform with the renderer, must be called to observe updates
 
 > **updateZIndex**(`zIndex`): `Promise`\<`void`\>
 
-Defined in: [SpatialEntity.ts:34](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialEntity.ts#L34)
+Defined in: [SpatialEntity.ts:34](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialEntity.ts#L34)
 
 Syncs the zIndex with the renderer
 

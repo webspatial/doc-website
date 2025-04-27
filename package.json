@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "git submodule update --init --recursive",
+    "link:xrsdk": "bash scripts/link-xrsdk.sh",
+    "postinstall": "npm run link:xrsdk",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",

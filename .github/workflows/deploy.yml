@@ -12,13 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 检出 Docusaurus 源码
       - name: Checkout Docusaurus repo
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      # 2. 同步检出 SDK 仓库 到 XRSDK 目录
       - name: Checkout SDK repo
         uses: actions/checkout@v3
         with:
@@ -27,28 +25,18 @@ jobs:
           path: XRSDK
           token: ${{ secrets.PAT_TOKEN }}
 
-      # 3. 安装 pnpm 并启用缓存
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 9
           cache: "pnpm"
 
-      # 4. 在 XRSDK 中安装依赖并构建 SDK
-      - name: Build SDK with pnpm
-        run: |
-          pnpm install --frozen-lockfile
-          pnpm run build
-
-      # 5. 安装 Docusaurus 依赖
       - name: Install Docusaurus dependencies
         run: pnpm install --frozen-lockfile
 
-      # 7. 构建 Docusaurus 站点
       - name: Build Docusaurus site
         run: pnpm run build
 
-      # 8. 发布到 gh-pages 分支
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

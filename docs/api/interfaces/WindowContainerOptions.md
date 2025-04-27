@@ -1,6 +1,6 @@
 # Interface: WindowContainerOptions
 
-Defined in: [types.ts:3](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/types.ts#L3)
+Defined in: [types.ts:3](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/types.ts#L3)
 
 ## Properties
 
@@ -8,7 +8,7 @@ Defined in: [types.ts:3](https://github.com/webspatial/webspatial-sdk/blob/61c10
 
 > `optional` **defaultSize**: `object`
 
-Defined in: [types.ts:4](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/types.ts#L4)
+Defined in: [types.ts:4](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/types.ts#L4)
 
 #### height
 
@@ -24,4 +24,4 @@ Defined in: [types.ts:4](https://github.com/webspatial/webspatial-sdk/blob/61c10
 
 > `optional` **resizability**: `"automatic"` \| `"contentSize"` \| `"contentMinSize"`
 
-Defined in: [types.ts:9](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/types.ts#L9)
+Defined in: [types.ts:9](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/types.ts#L9)

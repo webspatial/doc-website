@@ -1,6 +1,6 @@
 # Class: SpatialInputComponent
 
-Defined in: [component/SpatialInputComponent.ts:14](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialInputComponent.ts#L14)
+Defined in: [component/SpatialInputComponent.ts:14](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialInputComponent.ts#L14)
 
 Used to handle input events on an entity
 
@@ -14,7 +14,7 @@ Used to handle input events on an entity
 
 > **new SpatialInputComponent**(`_resource`): `SpatialInputComponent`
 
-Defined in: [component/EventSpatialComponent.ts:15](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/EventSpatialComponent.ts#L15)
+Defined in: [component/EventSpatialComponent.ts:15](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/EventSpatialComponent.ts#L15)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [component/EventSpatialComponent.ts:15](https://github.com/webspatia
 
 > **name**: `string` = `''`
 
-Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L23)
+Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L23)
 
 #### Inherited from
 
@@ -48,7 +48,7 @@ Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/b
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L18)
+Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L18)
 
 Marks resource to be released (it should no longer be used)
 
@@ -66,7 +66,7 @@ Marks resource to be released (it should no longer be used)
 
 > **getEntity**(): `Promise`\<`null` \| [`SpatialEntity`](SpatialEntity.md)\>
 
-Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialComponent.ts#L11)
+Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialComponent.ts#L11)
 
 Gets the entity this component is attached to
 
@@ -86,7 +86,7 @@ entity or null
 
 > `protected` **onDestroy**(): `Promise`\<`void`\>
 
-Defined in: [component/EventSpatialComponent.ts:29](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/EventSpatialComponent.ts#L29)
+Defined in: [component/EventSpatialComponent.ts:29](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/EventSpatialComponent.ts#L29)
 
 #### Returns
 
@@ -102,7 +102,7 @@ Defined in: [component/EventSpatialComponent.ts:29](https://github.com/webspatia
 
 > `protected` **onRecvEvent**(`data`): `void`
 
-Defined in: [component/SpatialInputComponent.ts:15](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialInputComponent.ts#L15)
+Defined in: [component/SpatialInputComponent.ts:15](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialInputComponent.ts#L15)
 
 #### Parameters
 
@@ -130,7 +130,7 @@ Abstract method to be implemented by subclasses. Called when a spatial event is 
 
 > **onTranslate**(`data`): `void`
 
-Defined in: [component/SpatialInputComponent.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialInputComponent.ts#L23)
+Defined in: [component/SpatialInputComponent.ts:23](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialInputComponent.ts#L23)
 
 Callback fired when a translate event occurs
 

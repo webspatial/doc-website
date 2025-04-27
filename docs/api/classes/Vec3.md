@@ -1,6 +1,6 @@
 # Class: Vec3
 
-Defined in: [SpatialTransform.ts:1](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialTransform.ts#L1)
+Defined in: [SpatialTransform.ts:1](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialTransform.ts#L1)
 
 ## Constructors
 
@@ -8,7 +8,7 @@ Defined in: [SpatialTransform.ts:1](https://github.com/webspatial/webspatial-sdk
 
 > **new Vec3**(`x`, `y`, `z`): `Vec3`
 
-Defined in: [SpatialTransform.ts:2](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialTransform.ts#L2)
+Defined in: [SpatialTransform.ts:2](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialTransform.ts#L2)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [SpatialTransform.ts:2](https://github.com/webspatial/webspatial-sdk
 
 > **x**: `number` = `0`
 
-Defined in: [SpatialTransform.ts:3](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialTransform.ts#L3)
+Defined in: [SpatialTransform.ts:3](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialTransform.ts#L3)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [SpatialTransform.ts:3](https://github.com/webspatial/webspatial-sdk
 
 > **y**: `number` = `0`
 
-Defined in: [SpatialTransform.ts:4](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialTransform.ts#L4)
+Defined in: [SpatialTransform.ts:4](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialTransform.ts#L4)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [SpatialTransform.ts:4](https://github.com/webspatial/webspatial-sdk
 
 > **z**: `number` = `0`
 
-Defined in: [SpatialTransform.ts:5](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialTransform.ts#L5)
+Defined in: [SpatialTransform.ts:5](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialTransform.ts#L5)

@@ -1,6 +1,6 @@
 # Class: SpatialWindowComponent
 
-Defined in: [component/SpatialWindowComponent.ts:45](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L45)
+Defined in: [component/SpatialWindowComponent.ts:45](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L45)
 
 Used to position an web window in 3D space
 
@@ -14,7 +14,7 @@ Used to position an web window in 3D space
 
 > **name**: `string` = `''`
 
-Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L23)
+Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L23)
 
 #### Inherited from
 
@@ -26,7 +26,7 @@ Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/b
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L18)
+Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L18)
 
 Marks resource to be released (it should no longer be used)
 
@@ -44,7 +44,7 @@ Marks resource to be released (it should no longer be used)
 
 > **getEntity**(): `Promise`\<`null` \| [`SpatialEntity`](SpatialEntity.md)\>
 
-Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialComponent.ts#L11)
+Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialComponent.ts#L11)
 
 Gets the entity this component is attached to
 
@@ -64,7 +64,7 @@ entity or null
 
 > **loadURL**(`url`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:50](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L50)
+Defined in: [component/SpatialWindowComponent.ts:50](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L50)
 
 Loads a url page in the window
 
@@ -86,7 +86,7 @@ url to load
 
 > `protected` **onDestroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L25)
+Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L25)
 
 #### Returns
 
@@ -102,7 +102,7 @@ Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/b
 
 > **setFromWindow**(`window`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:54](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L54)
+Defined in: [component/SpatialWindowComponent.ts:54](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L54)
 
 #### Parameters
 
@@ -120,7 +120,7 @@ Defined in: [component/SpatialWindowComponent.ts:54](https://github.com/webspati
 
 > **setOpacity**(`opacity`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:93](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L93)
+Defined in: [component/SpatialWindowComponent.ts:93](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L93)
 
 [Experimental] Sets the opacity of the window after apply material
 
@@ -140,7 +140,7 @@ Defined in: [component/SpatialWindowComponent.ts:93](https://github.com/webspati
 
 > **setResolution**(`width`, `height`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:73](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L73)
+Defined in: [component/SpatialWindowComponent.ts:73](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L73)
 
 Sets the resolution of the window, the resulting dimensions when rendered will be equal to 1/1360 units
 eg. if the resolution is set to 1360x1360 it will be a 1x1 plane
@@ -170,7 +170,7 @@ height in pixels
 
 > **setRotationAnchor**(`rotationAnchor`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:83](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L83)
+Defined in: [component/SpatialWindowComponent.ts:83](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L83)
 
 [Experimental] Sets the anchor which the entity this is attached to will rotate around
 
@@ -190,7 +190,7 @@ Defined in: [component/SpatialWindowComponent.ts:83](https://github.com/webspati
 
 > **setScrollEdgeInsets**(`insets`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:149](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L149)
+Defined in: [component/SpatialWindowComponent.ts:148](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L148)
 
 Modifies the amount the spatial window can be scrolled
 Should only be used internally
@@ -228,7 +228,7 @@ margin to modify scroll distances by
 
 > **setScrollEnabled**(`enabled`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:164](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L164)
+Defined in: [component/SpatialWindowComponent.ts:163](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L163)
 
 Enable/Disable scrolling in the window (defaults to enabled), if disabled, scrolling will be applied to the root page
 
@@ -250,7 +250,7 @@ value to set
 
 > **setScrollWithParent**(`scrollWithParent`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:172](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L172)
+Defined in: [component/SpatialWindowComponent.ts:171](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L171)
 
 Defaults to false. If set to true, scrolling the parent page will also scroll this window with it like other dom elements
 
@@ -272,7 +272,7 @@ value to set
 
 > **setStyle**(`styleParam`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:103](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialWindowComponent.ts#L103)
+Defined in: [component/SpatialWindowComponent.ts:103](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L103)
 
 Sets the style that should be applied to the window
 

@@ -1,6 +1,6 @@
 # Class: SpatialViewComponent
 
-Defined in: [component/SpatialViewComponent.ts:13](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialViewComponent.ts#L13)
+Defined in: [component/SpatialViewComponent.ts:13](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialViewComponent.ts#L13)
 
 Represenets a volume that can be added to the webpage
 Child entities will be added within this volume's space
@@ -20,7 +20,7 @@ If the resolution of the spatial view is not a square, the volume will be larger
 
 > **name**: `string` = `''`
 
-Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L23)
+Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L23)
 
 #### Inherited from
 
@@ -32,7 +32,7 @@ Defined in: [SpatialObject.ts:23](https://github.com/webspatial/webspatial-sdk/b
 
 > **destroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L18)
+Defined in: [SpatialObject.ts:18](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L18)
 
 Marks resource to be released (it should no longer be used)
 
@@ -50,7 +50,7 @@ Marks resource to be released (it should no longer be used)
 
 > **getEntity**(): `Promise`\<`null` \| [`SpatialEntity`](SpatialEntity.md)\>
 
-Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialComponent.ts#L11)
+Defined in: [component/SpatialComponent.ts:11](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialComponent.ts#L11)
 
 Gets the entity this component is attached to
 
@@ -70,7 +70,7 @@ entity or null
 
 > `protected` **onDestroy**(): `Promise`\<`void`\>
 
-Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/SpatialObject.ts#L25)
+Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialObject.ts#L25)
 
 #### Returns
 
@@ -86,7 +86,7 @@ Defined in: [SpatialObject.ts:25](https://github.com/webspatial/webspatial-sdk/b
 
 > **setIsPortal**(`isPortal`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialViewComponent.ts:27](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialViewComponent.ts#L27)
+Defined in: [component/SpatialViewComponent.ts:27](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialViewComponent.ts#L27)
 
 Sets if content of the spatialView should be within a portal
 If true, volume will be behind the page, if false, it will be in front of the page
@@ -107,7 +107,7 @@ If true, volume will be behind the page, if false, it will be in front of the pa
 
 > **setResolution**(`width`, `height`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialViewComponent.ts:17](https://github.com/webspatial/webspatial-sdk/blob/61c10fdd1eb0797e7a65f18c05fc06e8b1381245/core/src/core/component/SpatialViewComponent.ts#L17)
+Defined in: [component/SpatialViewComponent.ts:17](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialViewComponent.ts#L17)
 
 Sets the resolution of the spatial view in dom pixels
 
