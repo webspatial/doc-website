@@ -1,6 +1,6 @@
 # Interface: ModelProps
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:51
+Defined in: [spatial-react-components/Model/index.tsx:51](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L51)
 
 ## Properties
 
@@ -8,7 +8,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **aspectRatio**: `number`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:61
+Defined in: [spatial-react-components/Model/index.tsx:61](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L61)
 
 ***
 
@@ -16,7 +16,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > **children**: `ModelChildren`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:55
+Defined in: [spatial-react-components/Model/index.tsx:55](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L55)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **className**: `string`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:53
+Defined in: [spatial-react-components/Model/index.tsx:53](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L53)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **contentMode**: `"fill"` \| `"fit"`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:59
+Defined in: [spatial-react-components/Model/index.tsx:59](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L59)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **onDoubleTap**: (`event`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:67
+Defined in: [spatial-react-components/Model/index.tsx:67](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L67)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **onDrag**: (`dragEvent`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:63
+Defined in: [spatial-react-components/Model/index.tsx:63](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L63)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **onDragEnd**: (`dragEvent`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:64
+Defined in: [spatial-react-components/Model/index.tsx:64](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L64)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **onDragStart**: (`dragEvent`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:62
+Defined in: [spatial-react-components/Model/index.tsx:62](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L62)
 
 #### Parameters
 
@@ -112,7 +112,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **onLoad**: (`event`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:56
+Defined in: [spatial-react-components/Model/index.tsx:56](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L56)
 
 #### Parameters
 
@@ -130,7 +130,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **onLongPress**: (`event`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:68
+Defined in: [spatial-react-components/Model/index.tsx:68](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L68)
 
 #### Parameters
 
@@ -148,7 +148,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **onTap**: (`event`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:66
+Defined in: [spatial-react-components/Model/index.tsx:66](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L66)
 
 #### Parameters
 
@@ -166,7 +166,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **poster**: `string`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:71
+Defined in: [spatial-react-components/Model/index.tsx:71](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L71)
 
 ***
 
@@ -174,7 +174,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **resizable**: `boolean`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:60
+Defined in: [spatial-react-components/Model/index.tsx:60](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L60)
 
 ***
 
@@ -182,4 +182,4 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx
 
 > `optional` **style**: `CSSProperties`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model/index.tsx:54
+Defined in: [spatial-react-components/Model/index.tsx:54](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model/index.tsx#L54)

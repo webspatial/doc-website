@@ -55,21 +55,21 @@ const config: Config = {
       'docusaurus-plugin-typedoc',
 
       // Options
-      // todo: need to link to xrsdk code base
       {
         id: 'react-sdk',
         // ── begin explicit source-link settings ──
 
         // Ensure TypeDoc always generates links, even if Git auto-detection is off
-        // disableGit: true,
+        disableGit: true,
 
         // // Template for linking to GitHub.
         // // {path} is the file path under the SDK repo, {line} the line number.
-        // sourceLinkTemplate:
-        //   'https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/{path}#L{line}',
+        basePath: './XRSDK/react/src',
+        sourceLinkTemplate:
+          'https://github.com/webspatial/webspatial-sdk/blob/main/react/src/{path}#L{line}',
 
         // // (Optional) override the revision—use your default branch or commit SHA
-        // gitRevision: 'main',
+        gitRevision: 'main',
         cleanOutputDir: false,
 
         // ── end explicit settings ──

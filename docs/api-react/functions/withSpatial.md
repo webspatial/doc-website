@@ -2,7 +2,7 @@
 
 > **withSpatial**(`Component`): `any`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialPrimitive.tsx:8
+Defined in: [spatial-react-components/SpatialPrimitive.tsx:8](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialPrimitive.tsx#L8)
 
 ## Parameters
 

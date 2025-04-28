@@ -1,6 +1,6 @@
 # Interface: SpatialReactComponentProps
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:16
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:16](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L16)
 
 ## Properties
 
@@ -8,7 +8,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **allowScroll**: `boolean`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:17
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:17](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L17)
 
 ***
 
@@ -16,7 +16,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **children**: `ReactNode`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:20
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:20](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L20)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **className**: `string`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:21
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:21](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L21)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **component**: `ElementType`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:24
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:24](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L24)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **debugName**: `string`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:26
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:26](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L26)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **debugShowStandardInstance**: `boolean`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:27
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:27](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L27)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **scrollWithParent**: `boolean`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:18
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:18](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L18)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **spatialStyle**: `Partial`\<`spatialStyleDef`\>
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:19
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:19](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L19)
 
 ***
 
@@ -72,4 +72,4 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactCom
 
 > `optional` **style**: `CSSProperties`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialReactComponent/types.ts:22
+Defined in: [spatial-react-components/SpatialReactComponent/types.ts:22](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialReactComponent/types.ts#L22)

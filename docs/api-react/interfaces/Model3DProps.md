@@ -1,6 +1,6 @@
 # Interface: Model3DProps
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:27
+Defined in: [spatial-react-components/Model3D/types.ts:27](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L27)
 
 ## Properties
 
@@ -8,7 +8,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **aspectRatio**: `number`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:33
+Defined in: [spatial-react-components/Model3D/types.ts:33](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L33)
 
 ***
 
@@ -16,7 +16,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **children**: `ReactNode`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:38
+Defined in: [spatial-react-components/Model3D/types.ts:38](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L38)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **className**: `string`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:34
+Defined in: [spatial-react-components/Model3D/types.ts:34](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L34)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **contentMode**: `"fill"` \| `"fit"`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:31
+Defined in: [spatial-react-components/Model3D/types.ts:31](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L31)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > **modelUrl**: `string`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:29
+Defined in: [spatial-react-components/Model3D/types.ts:29](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L29)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **onDoubleTap**: (`event`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:47
+Defined in: [spatial-react-components/Model3D/types.ts:47](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L47)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **onDrag**: (`dragEvent`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:43
+Defined in: [spatial-react-components/Model3D/types.ts:43](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L43)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **onDragEnd**: (`dragEvent`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:44
+Defined in: [spatial-react-components/Model3D/types.ts:44](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L44)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **onDragStart**: (`dragEvent`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:42
+Defined in: [spatial-react-components/Model3D/types.ts:42](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L42)
 
 #### Parameters
 
@@ -120,7 +120,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **onLoad**: (`event`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:40
+Defined in: [spatial-react-components/Model3D/types.ts:40](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L40)
 
 #### Parameters
 
@@ -138,7 +138,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **onLongPress**: (`event`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:48
+Defined in: [spatial-react-components/Model3D/types.ts:48](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L48)
 
 #### Parameters
 
@@ -156,7 +156,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **onTap**: (`event`) => `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:46
+Defined in: [spatial-react-components/Model3D/types.ts:46](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L46)
 
 #### Parameters
 
@@ -174,7 +174,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **resizable**: `boolean`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:32
+Defined in: [spatial-react-components/Model3D/types.ts:32](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L32)
 
 ***
 
@@ -182,7 +182,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **spatialTransform**: `PartialSpatialTransformType`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:28
+Defined in: [spatial-react-components/Model3D/types.ts:28](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L28)
 
 ***
 
@@ -190,7 +190,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > `optional` **style**: `CSSProperties`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:35
+Defined in: [spatial-react-components/Model3D/types.ts:35](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L35)
 
 ***
 
@@ -198,4 +198,4 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > **visible**: `boolean`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:30
+Defined in: [spatial-react-components/Model3D/types.ts:30](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L30)

@@ -1,6 +1,6 @@
 # Class: XRApp
 
-Defined in: doc-website/XRSDK/react/src/XRApp.ts:22
+Defined in: [XRApp.ts:22](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/XRApp.ts#L22)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ Defined in: doc-website/XRSDK/react/src/XRApp.ts:22
 
 > **deinit**(): `void`
 
-Defined in: doc-website/XRSDK/react/src/XRApp.ts:49
+Defined in: [XRApp.ts:49](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/XRApp.ts#L49)
 
 #### Returns
 
@@ -30,7 +30,7 @@ Defined in: doc-website/XRSDK/react/src/XRApp.ts:49
 
 > **handleATag**(`event`): `void`
 
-Defined in: doc-website/XRSDK/react/src/XRApp.ts:31
+Defined in: [XRApp.ts:31](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/XRApp.ts#L31)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: doc-website/XRSDK/react/src/XRApp.ts:31
 
 > **init**(): `void`
 
-Defined in: doc-website/XRSDK/react/src/XRApp.ts:44
+Defined in: [XRApp.ts:44](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/XRApp.ts#L44)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: doc-website/XRSDK/react/src/XRApp.ts:44
 
 > **initScene**(`name`, `callback`): `void`
 
-Defined in: doc-website/XRSDK/react/src/XRApp.ts:132
+Defined in: [XRApp.ts:132](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/XRApp.ts#L132)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: doc-website/XRSDK/react/src/XRApp.ts:132
 
 > **open**(`url?`, `target?`, `features?`): `null` \| `Window`
 
-Defined in: doc-website/XRSDK/react/src/XRApp.ts:78
+Defined in: [XRApp.ts:78](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/XRApp.ts#L78)
 
 #### Parameters
 
@@ -108,7 +108,7 @@ Defined in: doc-website/XRSDK/react/src/XRApp.ts:78
 
 > **show**(`window`, `cfg`): `Promise`\<`void`\>
 
-Defined in: doc-website/XRSDK/react/src/XRApp.ts:60
+Defined in: [XRApp.ts:60](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/XRApp.ts#L60)
 
 #### Parameters
 
@@ -130,7 +130,7 @@ Defined in: doc-website/XRSDK/react/src/XRApp.ts:60
 
 > `static` **getInstance**(): `XRApp`
 
-Defined in: doc-website/XRSDK/react/src/XRApp.ts:24
+Defined in: [XRApp.ts:24](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/XRApp.ts#L24)
 
 #### Returns
 

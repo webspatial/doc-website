@@ -62,6 +62,13 @@ const reqObj = {
     false,
     /\.md$/,
   ),
+   //@ts-ignore
+   reactFunctions: require.context(
+    // relative to this file, adjust path if necessary
+    '../../../docs/api-react/functions',
+    false,
+    /\.md$/,
+  ),
 };
 
 export default function CardList({path}: {path: keyof typeof reqObj}) {

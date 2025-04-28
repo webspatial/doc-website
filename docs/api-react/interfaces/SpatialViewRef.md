@@ -1,6 +1,6 @@
 # Interface: SpatialViewRef
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialView.tsx:20
+Defined in: [spatial-react-components/SpatialView.tsx:20](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialView.tsx#L20)
 
 ## Extends
 
@@ -12,7 +12,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialView.tsx
 
 > **accessKey**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10036
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10036](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10036)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/accessKey)
 
@@ -26,7 +26,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **accessKeyLabel**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10038
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10038](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10038)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/accessKeyLabel)
 
@@ -40,7 +40,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **align**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10000
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10000](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10000)
 
 Sets or retrieves how the object is aligned with adjacent text.
 
@@ -56,7 +56,7 @@ Sets or retrieves how the object is aligned with adjacent text.
 
 > **ariaAtomic**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2229
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2229](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2229)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaAtomic)
 
@@ -70,7 +70,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaAutoComplete**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2231
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2231](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2231)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaAutoComplete)
 
@@ -84,7 +84,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaBrailleLabel**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2233
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2233](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2233)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaBrailleLabel)
 
@@ -98,7 +98,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaBrailleRoleDescription**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2235
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2235](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2235)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaBrailleRoleDescription)
 
@@ -112,7 +112,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaBusy**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2237
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2237](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2237)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaBusy)
 
@@ -126,7 +126,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaChecked**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2239
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2239](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2239)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaChecked)
 
@@ -140,7 +140,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaColCount**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2241
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2241](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2241)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColCount)
 
@@ -154,7 +154,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaColIndex**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2243
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2243](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2243)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColIndex)
 
@@ -168,7 +168,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaColSpan**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2245
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2245](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2245)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaColSpan)
 
@@ -182,7 +182,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaCurrent**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2247
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2247](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2247)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaCurrent)
 
@@ -196,7 +196,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaDescription**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2249
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2249](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2249)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaDescription)
 
@@ -210,7 +210,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaDisabled**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2251
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2251](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2251)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaDisabled)
 
@@ -224,7 +224,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaExpanded**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2253
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2253](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2253)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaExpanded)
 
@@ -238,7 +238,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaHasPopup**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2255
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2255](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2255)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaHasPopup)
 
@@ -252,7 +252,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaHidden**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2257
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2257](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2257)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaHidden)
 
@@ -266,7 +266,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaInvalid**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2258
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2258](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2258)
 
 #### Inherited from
 
@@ -278,7 +278,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaKeyShortcuts**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2260
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2260](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2260)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaKeyShortcuts)
 
@@ -292,7 +292,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaLabel**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2262
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2262](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2262)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLabel)
 
@@ -306,7 +306,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaLevel**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2264
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2264](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2264)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLevel)
 
@@ -320,7 +320,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaLive**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2266
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2266](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2266)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaLive)
 
@@ -334,7 +334,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaModal**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2268
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2268](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2268)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaModal)
 
@@ -348,7 +348,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaMultiLine**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2270
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2270](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2270)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaMultiLine)
 
@@ -362,7 +362,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaMultiSelectable**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2272
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2272](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2272)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaMultiSelectable)
 
@@ -376,7 +376,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaOrientation**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2274
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2274](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2274)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaOrientation)
 
@@ -390,7 +390,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaPlaceholder**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2276
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2276](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2276)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPlaceholder)
 
@@ -404,7 +404,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaPosInSet**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2278
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2278](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2278)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPosInSet)
 
@@ -418,7 +418,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaPressed**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2280
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2280](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2280)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaPressed)
 
@@ -432,7 +432,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaReadOnly**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2282
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2282](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2282)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaReadOnly)
 
@@ -446,7 +446,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaRequired**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2284
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2284](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2284)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRequired)
 
@@ -460,7 +460,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaRoleDescription**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2286
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2286](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2286)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRoleDescription)
 
@@ -474,7 +474,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaRowCount**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2288
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2288](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2288)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowCount)
 
@@ -488,7 +488,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaRowIndex**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2290
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2290](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2290)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowIndex)
 
@@ -502,7 +502,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaRowSpan**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2292
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2292](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2292)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaRowSpan)
 
@@ -516,7 +516,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaSelected**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2294
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2294](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2294)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSelected)
 
@@ -530,7 +530,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaSetSize**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2296
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2296](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2296)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSetSize)
 
@@ -544,7 +544,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaSort**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2298
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2298](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2298)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaSort)
 
@@ -558,7 +558,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaValueMax**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2300
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2300](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2300)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueMax)
 
@@ -572,7 +572,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaValueMin**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2302
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2302](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2302)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueMin)
 
@@ -586,7 +586,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaValueNow**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2304
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2304](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2304)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueNow)
 
@@ -600,7 +600,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ariaValueText**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2306
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2306](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2306)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/ariaValueText)
 
@@ -614,7 +614,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **assignedSlot**: `null` \| `HTMLSlotElement`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:21074
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:21074](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L21074)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/assignedSlot)
 
@@ -628,7 +628,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **ATTRIBUTE\_NODE**: `2`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15963
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15963](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15963)
 
 #### Inherited from
 
@@ -640,7 +640,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **attributes**: `NamedNodeMap`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7687
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7687](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7687)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/attributes)
 
@@ -654,7 +654,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **attributeStyleMap**: `StylePropertyMap`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7950
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7950](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7950)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/attributeStyleMap)
 
@@ -668,7 +668,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **autocapitalize**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10040
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10040](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10040)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/autocapitalize)
 
@@ -682,7 +682,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **autofocus**: `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11845
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11845](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L11845)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/autofocus)
 
@@ -696,7 +696,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **baseURI**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15832
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15832](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15832)
 
 Returns node's node document's document base URL.
 
@@ -712,7 +712,7 @@ Returns node's node document's document base URL.
 
 > `readonly` **CDATA\_SECTION\_NODE**: `4`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15967
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15967](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15967)
 
 node is a CDATASection node.
 
@@ -726,7 +726,7 @@ node is a CDATASection node.
 
 > `readonly` **childElementCount**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16525
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16525](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16525)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/childElementCount)
 
@@ -740,7 +740,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **childNodes**: `NodeListOf`\<`ChildNode`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15838
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15838](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15838)
 
 Returns the children.
 
@@ -756,7 +756,7 @@ Returns the children.
 
 > `readonly` **children**: `HTMLCollection`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16531
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16531](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16531)
 
 Returns the child elements.
 
@@ -772,7 +772,7 @@ Returns the child elements.
 
 > `readonly` **classList**: `DOMTokenList`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7693
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7693](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7693)
 
 Allows for manipulation of element's class content attribute as a set of whitespace-separated tokens through a DOMTokenList object.
 
@@ -788,7 +788,7 @@ Allows for manipulation of element's class content attribute as a set of whitesp
 
 > **className**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7699
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7699](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7699)
 
 Returns the value of element's class content attribute. Can be set to change it.
 
@@ -804,7 +804,7 @@ Returns the value of element's class content attribute. Can be set to change it.
 
 > `readonly` **clientHeight**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7701
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7701](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7701)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientHeight)
 
@@ -818,7 +818,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **clientLeft**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7703
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7703](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7703)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientLeft)
 
@@ -832,7 +832,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **clientTop**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7705
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7705](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7705)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientTop)
 
@@ -846,7 +846,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **clientWidth**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7707
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7707](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7707)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/clientWidth)
 
@@ -860,7 +860,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **COMMENT\_NODE**: `8`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15973
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15973](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15973)
 
 node is a Comment node.
 
@@ -874,7 +874,7 @@ node is a Comment node.
 
 > **contentEditable**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7957
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7957](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7957)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/contentEditable)
 
@@ -888,7 +888,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **dataset**: `DOMStringMap`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11847
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11847](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L11847)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dataset)
 
@@ -902,7 +902,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **dir**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10042
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10042](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10042)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/dir)
 
@@ -916,7 +916,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **DOCUMENT\_FRAGMENT\_NODE**: `11`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15979
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15979](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15979)
 
 node is a DocumentFragment node.
 
@@ -930,7 +930,7 @@ node is a DocumentFragment node.
 
 > `readonly` **DOCUMENT\_NODE**: `9`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15975
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15975](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15975)
 
 node is a document.
 
@@ -944,7 +944,7 @@ node is a document.
 
 > `readonly` **DOCUMENT\_POSITION\_CONTAINED\_BY**: `16`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15990
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15990](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15990)
 
 Set when other is a descendant of node.
 
@@ -958,7 +958,7 @@ Set when other is a descendant of node.
 
 > `readonly` **DOCUMENT\_POSITION\_CONTAINS**: `8`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15988
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15988](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15988)
 
 Set when other is an ancestor of node.
 
@@ -972,7 +972,7 @@ Set when other is an ancestor of node.
 
 > `readonly` **DOCUMENT\_POSITION\_DISCONNECTED**: `1`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15982
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15982](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15982)
 
 Set when node and other are not in the same tree.
 
@@ -986,7 +986,7 @@ Set when node and other are not in the same tree.
 
 > `readonly` **DOCUMENT\_POSITION\_FOLLOWING**: `4`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15986
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15986](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15986)
 
 Set when other is following node.
 
@@ -1000,7 +1000,7 @@ Set when other is following node.
 
 > `readonly` **DOCUMENT\_POSITION\_IMPLEMENTATION\_SPECIFIC**: `32`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15991
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15991](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15991)
 
 #### Inherited from
 
@@ -1012,7 +1012,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **DOCUMENT\_POSITION\_PRECEDING**: `2`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15984
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15984](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15984)
 
 Set when other is preceding node.
 
@@ -1026,7 +1026,7 @@ Set when other is preceding node.
 
 > `readonly` **DOCUMENT\_TYPE\_NODE**: `10`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15977
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15977](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15977)
 
 node is a doctype.
 
@@ -1040,7 +1040,7 @@ node is a doctype.
 
 > **draggable**: `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10044
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10044](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10044)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/draggable)
 
@@ -1054,7 +1054,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **ELEMENT\_NODE**: `1`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15962
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15962](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15962)
 
 node is an element.
 
@@ -1068,7 +1068,7 @@ node is an element.
 
 > **enterKeyHint**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7959
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7959](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7959)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/enterKeyHint)
 
@@ -1082,7 +1082,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **ENTITY\_NODE**: `6`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15969
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15969](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15969)
 
 #### Inherited from
 
@@ -1094,7 +1094,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **ENTITY\_REFERENCE\_NODE**: `5`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15968
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15968](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15968)
 
 #### Inherited from
 
@@ -1106,7 +1106,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **firstChild**: `null` \| `ChildNode`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15844
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15844](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15844)
 
 Returns the first child.
 
@@ -1122,7 +1122,7 @@ Returns the first child.
 
 > `readonly` **firstElementChild**: `null` \| `Element`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16537
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16537](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16537)
 
 Returns the first child that is an element, and null otherwise.
 
@@ -1138,7 +1138,7 @@ Returns the first child that is an element, and null otherwise.
 
 > **getViewEntity**: () => `Promise`\<`null` \| `SpatialEntity`\>
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialView.tsx:21
+Defined in: [spatial-react-components/SpatialView.tsx:21](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/SpatialView.tsx#L21)
 
 #### Returns
 
@@ -1150,7 +1150,7 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/SpatialView.tsx
 
 > **hidden**: `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10046
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10046](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10046)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/hidden)
 
@@ -1164,7 +1164,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **id**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7713
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7713](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7713)
 
 Returns the value of element's id content attribute. Can be set to change it.
 
@@ -1180,7 +1180,7 @@ Returns the value of element's id content attribute. Can be set to change it.
 
 > **inert**: `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10048
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10048](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10048)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/inert)
 
@@ -1194,7 +1194,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **innerHTML**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7715
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7715](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7715)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/innerHTML)
 
@@ -1208,7 +1208,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **innerText**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10050
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10050](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10050)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/innerText)
 
@@ -1222,7 +1222,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **inputMode**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7961
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7961](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7961)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/inputMode)
 
@@ -1236,7 +1236,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **isConnected**: `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15850
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15850](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15850)
 
 Returns true if node is connected and false otherwise.
 
@@ -1252,7 +1252,7 @@ Returns true if node is connected and false otherwise.
 
 > `readonly` **isContentEditable**: `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7963
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7963](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7963)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/isContentEditable)
 
@@ -1266,7 +1266,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **lang**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10052
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10052](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10052)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/lang)
 
@@ -1280,7 +1280,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **lastChild**: `null` \| `ChildNode`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15856
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15856](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15856)
 
 Returns the last child.
 
@@ -1296,7 +1296,7 @@ Returns the last child.
 
 > `readonly` **lastElementChild**: `null` \| `Element`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16543
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16543](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16543)
 
 Returns the last child that is an element, and null otherwise.
 
@@ -1312,7 +1312,7 @@ Returns the last child that is an element, and null otherwise.
 
 > `readonly` **localName**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7721
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7721](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7721)
 
 Returns the local name.
 
@@ -1328,7 +1328,7 @@ Returns the local name.
 
 > `readonly` **namespaceURI**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7727
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7727](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7727)
 
 Returns the namespace.
 
@@ -1344,7 +1344,7 @@ Returns the namespace.
 
 > `readonly` **nextElementSibling**: `null` \| `Element`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16112
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16112](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16112)
 
 Returns the first following sibling that is an element, and null otherwise.
 
@@ -1360,7 +1360,7 @@ Returns the first following sibling that is an element, and null otherwise.
 
 > `readonly` **nextSibling**: `null` \| `ChildNode`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15862
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15862](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15862)
 
 Returns the next sibling.
 
@@ -1376,7 +1376,7 @@ Returns the next sibling.
 
 > `readonly` **nodeName**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15868
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15868](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15868)
 
 Returns a string appropriate for the type of node.
 
@@ -1392,7 +1392,7 @@ Returns a string appropriate for the type of node.
 
 > `readonly` **nodeType**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15874
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15874](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15874)
 
 Returns the type of node.
 
@@ -1408,7 +1408,7 @@ Returns the type of node.
 
 > **nodeValue**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15876
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15876](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15876)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/nodeValue)
 
@@ -1422,7 +1422,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `optional` **nonce**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11849
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11849](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L11849)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/nonce)
 
@@ -1436,7 +1436,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **NOTATION\_NODE**: `12`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15980
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15980](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15980)
 
 #### Inherited from
 
@@ -1448,7 +1448,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **offsetHeight**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10054
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10054](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10054)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetHeight)
 
@@ -1462,7 +1462,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **offsetLeft**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10056
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10056](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10056)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetLeft)
 
@@ -1476,7 +1476,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **offsetParent**: `null` \| `Element`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10058
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10058](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10058)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetParent)
 
@@ -1490,7 +1490,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **offsetTop**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10060
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10060](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10060)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetTop)
 
@@ -1504,7 +1504,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **offsetWidth**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10062
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10062](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10062)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/offsetWidth)
 
@@ -1518,7 +1518,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onabort**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9032
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9032](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9032)
 
 Fires when the user aborts the download.
 
@@ -1538,7 +1538,7 @@ The event.
 
 > **onanimationcancel**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9034
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9034](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9034)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationcancel_event)
 
@@ -1552,7 +1552,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onanimationend**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9036
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9036](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9036)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationend_event)
 
@@ -1566,7 +1566,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onanimationiteration**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9038
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9038](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9038)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationiteration_event)
 
@@ -1580,7 +1580,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onanimationstart**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9040
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9040](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9040)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animationstart_event)
 
@@ -1594,7 +1594,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onauxclick**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9042
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9042](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9042)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/auxclick_event)
 
@@ -1608,7 +1608,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onbeforeinput**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9044
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9044](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9044)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/beforeinput_event)
 
@@ -1622,7 +1622,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onbeforetoggle**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9046
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9046](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9046)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/beforetoggle_event)
 
@@ -1636,7 +1636,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onbeforexrselect**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: XRSDK/node\_modules/.pnpm/@types+webxr@0.5.21/node\_modules/@types/webxr/index.d.ts:1168
+Defined in: [../../../../XRSDK/node\_modules/.pnpm/@types+webxr@0.5.21/node\_modules/@types/webxr/index.d.ts:1168](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pes+webxr@0.5.21/node_modules/@types/webxr/index.d.ts#L1168)
 
 An XRSessionEvent of type beforexrselect is dispatched on the DOM overlay
 element before generating a WebXR selectstart input event if the -Z axis
@@ -1653,7 +1653,7 @@ at the time the input device's primary action is triggered.
 
 > **onblur**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9053
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9053](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9053)
 
 Fires when the object loses the input focus.
 
@@ -1673,7 +1673,7 @@ The focus event.
 
 > **oncancel**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9055
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9055](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9055)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/cancel_event)
 
@@ -1687,7 +1687,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **oncanplay**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9062
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9062](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9062)
 
 Occurs when playback is possible, but would require further buffering.
 
@@ -1707,7 +1707,7 @@ The event.
 
 > **oncanplaythrough**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9064
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9064](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9064)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/canplaythrough_event)
 
@@ -1721,7 +1721,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onchange**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9071
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9071](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9071)
 
 Fires when the contents of the object or selection have changed.
 
@@ -1741,7 +1741,7 @@ The event.
 
 > **onclick**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9078
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9078](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9078)
 
 Fires when the user clicks the left mouse button on the object
 
@@ -1761,7 +1761,7 @@ The mouse event.
 
 > **onclose**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9080
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9080](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9080)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/close_event)
 
@@ -1775,7 +1775,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **oncontextlost**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9082
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9082](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9082)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/webglcontextlost_event)
 
@@ -1789,7 +1789,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **oncontextmenu**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9089
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9089](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9089)
 
 Fires when the user clicks the right mouse button in the client area, opening the context menu.
 
@@ -1809,7 +1809,7 @@ The mouse event.
 
 > **oncontextrestored**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9091
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9091](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9091)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/contextrestored_event)
 
@@ -1823,7 +1823,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **oncopy**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9093
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9093](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9093)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/copy_event)
 
@@ -1837,7 +1837,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **oncuechange**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9095
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9095](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9095)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTrackElement/cuechange_event)
 
@@ -1851,7 +1851,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **oncut**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9097
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9097](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9097)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/cut_event)
 
@@ -1865,7 +1865,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ondblclick**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9104
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9104](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9104)
 
 Fires when the user double-clicks the object.
 
@@ -1885,7 +1885,7 @@ The mouse event.
 
 > **ondrag**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9111
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9111](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9111)
 
 Fires on the source object continuously during a drag operation.
 
@@ -1905,7 +1905,7 @@ The event.
 
 > **ondragend**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9118
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9118](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9118)
 
 Fires on the source object when the user releases the mouse at the close of a drag operation.
 
@@ -1925,7 +1925,7 @@ The event.
 
 > **ondragenter**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9125
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9125](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9125)
 
 Fires on the target element when the user drags the object to a valid drop target.
 
@@ -1945,7 +1945,7 @@ The drag event.
 
 > **ondragleave**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9132
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9132](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9132)
 
 Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
 
@@ -1965,7 +1965,7 @@ The drag event.
 
 > **ondragover**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9139
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9139](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9139)
 
 Fires on the target element continuously while the user drags the object over a valid drop target.
 
@@ -1985,7 +1985,7 @@ The event.
 
 > **ondragstart**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9146
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9146](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9146)
 
 Fires on the source object when the user starts to drag a text selection or selected object.
 
@@ -2005,7 +2005,7 @@ The event.
 
 > **ondrop**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9148
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9148](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9148)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/drop_event)
 
@@ -2019,7 +2019,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ondurationchange**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9155
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9155](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9155)
 
 Occurs when the duration attribute is updated.
 
@@ -2039,7 +2039,7 @@ The event.
 
 > **onemptied**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9162
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9162](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9162)
 
 Occurs when the media element is reset to its initial state.
 
@@ -2059,7 +2059,7 @@ The event.
 
 > **onended**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9169
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9169](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9169)
 
 Occurs when the end of playback is reached.
 
@@ -2079,7 +2079,7 @@ The event
 
 > **onerror**: `OnErrorEventHandler`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9176
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9176](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9176)
 
 Fires when an error occurs during object loading.
 
@@ -2099,7 +2099,7 @@ The event.
 
 > **onfocus**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9183
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9183](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9183)
 
 Fires when the object receives focus.
 
@@ -2119,7 +2119,7 @@ The event.
 
 > **onformdata**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9185
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9185](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9185)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/formdata_event)
 
@@ -2133,7 +2133,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onfullscreenchange**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7729
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7729](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7729)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/fullscreenchange_event)
 
@@ -2147,7 +2147,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onfullscreenerror**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7731
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7731](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7731)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/fullscreenerror_event)
 
@@ -2161,7 +2161,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ongotpointercapture**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9187
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9187](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9187)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/gotpointercapture_event)
 
@@ -2175,7 +2175,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **oninput**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9189
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9189](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9189)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/input_event)
 
@@ -2189,7 +2189,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **oninvalid**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9191
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9191](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9191)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLInputElement/invalid_event)
 
@@ -2203,7 +2203,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onkeydown**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9198
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9198](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9198)
 
 Fires when the user presses a key.
 
@@ -2223,7 +2223,7 @@ The keyboard event
 
 > **onkeypress**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9206
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9206](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9206)
 
 Fires when the user presses an alphanumeric key.
 
@@ -2245,7 +2245,7 @@ The event.
 
 > **onkeyup**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9213
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9213](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9213)
 
 Fires when the user releases a key.
 
@@ -2265,7 +2265,7 @@ The keyboard event
 
 > **onload**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9220
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9220](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9220)
 
 Fires immediately after the browser loads the object.
 
@@ -2285,7 +2285,7 @@ The event.
 
 > **onloadeddata**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9227
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9227](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9227)
 
 Occurs when media data is loaded at the current playback position.
 
@@ -2305,7 +2305,7 @@ The event.
 
 > **onloadedmetadata**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9234
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9234](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9234)
 
 Occurs when the duration and dimensions of the media have been determined.
 
@@ -2325,7 +2325,7 @@ The event.
 
 > **onloadstart**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9241
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9241](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9241)
 
 Occurs when Internet Explorer begins looking for media data.
 
@@ -2345,7 +2345,7 @@ The event.
 
 > **onlostpointercapture**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9243
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9243](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9243)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/lostpointercapture_event)
 
@@ -2359,7 +2359,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onmousedown**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9250
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9250](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9250)
 
 Fires when the user clicks the object with either mouse button.
 
@@ -2379,7 +2379,7 @@ The mouse event.
 
 > **onmouseenter**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9252
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9252](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9252)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseenter_event)
 
@@ -2393,7 +2393,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onmouseleave**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9254
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9254](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9254)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/mouseleave_event)
 
@@ -2407,7 +2407,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onmousemove**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9261
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9261](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9261)
 
 Fires when the user moves the mouse over the object.
 
@@ -2427,7 +2427,7 @@ The mouse event.
 
 > **onmouseout**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9268
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9268](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9268)
 
 Fires when the user moves the mouse pointer outside the boundaries of the object.
 
@@ -2447,7 +2447,7 @@ The mouse event.
 
 > **onmouseover**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9275
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9275](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9275)
 
 Fires when the user moves the mouse pointer into the object.
 
@@ -2467,7 +2467,7 @@ The mouse event.
 
 > **onmouseup**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9282
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9282](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9282)
 
 Fires when the user releases a mouse button while the mouse is over the object.
 
@@ -2487,7 +2487,7 @@ The mouse event.
 
 > **onpaste**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9284
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9284](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9284)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/paste_event)
 
@@ -2501,7 +2501,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onpause**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9291
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9291](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9291)
 
 Occurs when playback is paused.
 
@@ -2521,7 +2521,7 @@ The event.
 
 > **onplay**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9298
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9298](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9298)
 
 Occurs when the play method is requested.
 
@@ -2541,7 +2541,7 @@ The event.
 
 > **onplaying**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9305
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9305](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9305)
 
 Occurs when the audio or video has started playing.
 
@@ -2561,7 +2561,7 @@ The event.
 
 > **onpointercancel**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9307
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9307](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9307)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointercancel_event)
 
@@ -2575,7 +2575,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onpointerdown**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9309
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9309](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9309)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerdown_event)
 
@@ -2589,7 +2589,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onpointerenter**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9311
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9311](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9311)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerenter_event)
 
@@ -2603,7 +2603,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onpointerleave**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9313
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9313](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9313)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerleave_event)
 
@@ -2617,7 +2617,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onpointermove**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9315
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9315](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9315)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointermove_event)
 
@@ -2631,7 +2631,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onpointerout**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9317
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9317](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9317)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerout_event)
 
@@ -2645,7 +2645,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onpointerover**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9319
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9319](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9319)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerover_event)
 
@@ -2659,7 +2659,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onpointerup**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9321
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9321](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9321)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/pointerup_event)
 
@@ -2673,7 +2673,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onprogress**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9328
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9328](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9328)
 
 Occurs to indicate progress while downloading media data.
 
@@ -2693,7 +2693,7 @@ The event.
 
 > **onratechange**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9335
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9335](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9335)
 
 Occurs when the playback rate is increased or decreased.
 
@@ -2713,7 +2713,7 @@ The event.
 
 > **onreset**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9342
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9342](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9342)
 
 Fires when the user resets a form.
 
@@ -2733,7 +2733,7 @@ The event.
 
 > **onresize**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9344
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9344](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9344)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLVideoElement/resize_event)
 
@@ -2747,7 +2747,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onscroll**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9351
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9351](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9351)
 
 Fires when the user repositions the scroll box in the scroll bar on the object.
 
@@ -2767,7 +2767,7 @@ The event.
 
 > **onscrollend**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9353
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9353](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9353)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/scrollend_event)
 
@@ -2781,7 +2781,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onsecuritypolicyviolation**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9355
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9355](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9355)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/securitypolicyviolation_event)
 
@@ -2795,7 +2795,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onseeked**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9362
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9362](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9362)
 
 Occurs when the seek operation ends.
 
@@ -2815,7 +2815,7 @@ The event.
 
 > **onseeking**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9369
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9369](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9369)
 
 Occurs when the current playback position is moved.
 
@@ -2835,7 +2835,7 @@ The event.
 
 > **onselect**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9376
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9376](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9376)
 
 Fires when the current selection changes.
 
@@ -2855,7 +2855,7 @@ The event.
 
 > **onselectionchange**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9378
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9378](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9378)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Document/selectionchange_event)
 
@@ -2869,7 +2869,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onselectstart**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9380
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9380](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9380)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/selectstart_event)
 
@@ -2883,7 +2883,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onslotchange**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9382
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9382](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9382)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLSlotElement/slotchange_event)
 
@@ -2897,7 +2897,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onstalled**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9389
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9389](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9389)
 
 Occurs when the download has stopped.
 
@@ -2917,7 +2917,7 @@ The event.
 
 > **onsubmit**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9391
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9391](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9391)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLFormElement/submit_event)
 
@@ -2931,7 +2931,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onsuspend**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9398
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9398](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9398)
 
 Occurs if the load operation has been intentionally halted.
 
@@ -2951,7 +2951,7 @@ The event.
 
 > **ontimeupdate**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9405
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9405](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9405)
 
 Occurs to indicate the current playback position.
 
@@ -2971,7 +2971,7 @@ The event.
 
 > **ontoggle**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9407
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9407](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9407)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLDetailsElement/toggle_event)
 
@@ -2985,7 +2985,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `optional` **ontouchcancel**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9409
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9409](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9409)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchcancel_event)
 
@@ -2999,7 +2999,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `optional` **ontouchend**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9411
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9411](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9411)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchend_event)
 
@@ -3013,7 +3013,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `optional` **ontouchmove**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9413
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9413](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9413)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchmove_event)
 
@@ -3027,7 +3027,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `optional` **ontouchstart**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9415
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9415](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9415)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/touchstart_event)
 
@@ -3041,7 +3041,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ontransitioncancel**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9417
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9417](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9417)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitioncancel_event)
 
@@ -3055,7 +3055,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ontransitionend**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9419
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9419](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9419)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionend_event)
 
@@ -3069,7 +3069,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ontransitionrun**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9421
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9421](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9421)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionrun_event)
 
@@ -3083,7 +3083,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **ontransitionstart**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9423
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9423](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9423)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/transitionstart_event)
 
@@ -3097,7 +3097,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **onvolumechange**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9430
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9430](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9430)
 
 Occurs when the volume is changed, or playback is muted or unmuted.
 
@@ -3117,7 +3117,7 @@ The event.
 
 > **onwaiting**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9437
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9437](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9437)
 
 Occurs when playback stops because the next frame of a video resource is not available.
 
@@ -3137,7 +3137,7 @@ The event.
 
 > **onwebkitanimationend**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9443
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9443](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9443)
 
 #### Deprecated
 
@@ -3155,7 +3155,7 @@ This is a legacy alias of `onanimationend`.
 
 > **onwebkitanimationiteration**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9449
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9449](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9449)
 
 #### Deprecated
 
@@ -3173,7 +3173,7 @@ This is a legacy alias of `onanimationiteration`.
 
 > **onwebkitanimationstart**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9455
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9455](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9455)
 
 #### Deprecated
 
@@ -3191,7 +3191,7 @@ This is a legacy alias of `onanimationstart`.
 
 > **onwebkittransitionend**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9461
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9461](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9461)
 
 #### Deprecated
 
@@ -3209,7 +3209,7 @@ This is a legacy alias of `ontransitionend`.
 
 > **onwheel**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9463
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:9463](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L9463)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/wheel_event)
 
@@ -3223,7 +3223,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **outerHTML**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7733
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7733](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7733)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/outerHTML)
 
@@ -3237,7 +3237,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **outerText**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10064
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10064](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10064)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/outerText)
 
@@ -3251,7 +3251,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **ownerDocument**: `Document`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7734
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7734](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7734)
 
 Returns the node document. Returns null for documents.
 
@@ -3267,7 +3267,7 @@ Returns the node document. Returns null for documents.
 
 > `readonly` **parentElement**: `null` \| `HTMLElement`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15888
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15888](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15888)
 
 Returns the parent element.
 
@@ -3283,7 +3283,7 @@ Returns the parent element.
 
 > `readonly` **parentNode**: `null` \| `ParentNode`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15894
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15894](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15894)
 
 Returns the parent.
 
@@ -3299,7 +3299,7 @@ Returns the parent.
 
 > `readonly` **part**: `DOMTokenList`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7736
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7736](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7736)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/part)
 
@@ -3313,7 +3313,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **popover**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10066
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10066](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10066)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/popover)
 
@@ -3327,7 +3327,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **prefix**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7742
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7742](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7742)
 
 Returns the namespace prefix.
 
@@ -3343,7 +3343,7 @@ Returns the namespace prefix.
 
 > `readonly` **previousElementSibling**: `null` \| `Element`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16118
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16118](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16118)
 
 Returns the first preceding sibling that is an element, and null otherwise.
 
@@ -3359,7 +3359,7 @@ Returns the first preceding sibling that is an element, and null otherwise.
 
 > `readonly` **previousSibling**: `null` \| `ChildNode`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15900
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15900](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15900)
 
 Returns the previous sibling.
 
@@ -3375,7 +3375,7 @@ Returns the previous sibling.
 
 > `readonly` **PROCESSING\_INSTRUCTION\_NODE**: `7`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15971
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15971](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15971)
 
 node is a ProcessingInstruction node.
 
@@ -3389,7 +3389,7 @@ node is a ProcessingInstruction node.
 
 > **role**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2307
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2307](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2307)
 
 #### Inherited from
 
@@ -3401,7 +3401,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **scrollHeight**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7744
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7744](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7744)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollHeight)
 
@@ -3415,7 +3415,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scrollLeft**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7746
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7746](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7746)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollLeft)
 
@@ -3429,7 +3429,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scrollTop**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7748
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7748](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7748)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollTop)
 
@@ -3443,7 +3443,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **scrollWidth**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7750
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7750](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7750)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollWidth)
 
@@ -3457,7 +3457,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **shadowRoot**: `null` \| `ShadowRoot`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7756
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7756](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7756)
 
 Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
 
@@ -3473,7 +3473,7 @@ Returns element's shadow root, if any, and if shadow root's mode is "open", and 
 
 > **slot**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7762
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7762](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7762)
 
 Returns the value of element's slot content attribute. Can be set to change it.
 
@@ -3489,7 +3489,7 @@ Returns the value of element's slot content attribute. Can be set to change it.
 
 > **spellcheck**: `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10068
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10068](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10068)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/spellcheck)
 
@@ -3503,7 +3503,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **style**: `CSSStyleDeclaration`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7952
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7952](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7952)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/style)
 
@@ -3517,7 +3517,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **tabIndex**: `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11851
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11851](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L11851)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/tabIndex)
 
@@ -3531,7 +3531,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > `readonly` **tagName**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7768
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7768](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7768)
 
 Returns the HTML-uppercased qualified name.
 
@@ -3547,7 +3547,7 @@ Returns the HTML-uppercased qualified name.
 
 > `readonly` **TEXT\_NODE**: `3`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15965
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15965](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15965)
 
 node is a Text node.
 
@@ -3561,7 +3561,7 @@ node is a Text node.
 
 > **textContent**: `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15902
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15902](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15902)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/textContent)
 
@@ -3575,7 +3575,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **title**: `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10070
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10070](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10070)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/title)
 
@@ -3589,7 +3589,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **translate**: `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10072
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10072](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10072)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/translate)
 
@@ -3605,7 +3605,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **addEventListener**\<`K`\>(`type`, `listener`, `options?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10001
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10001](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10001)
 
 ##### Type Parameters
 
@@ -3639,7 +3639,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **addEventListener**(`type`, `listener`, `options?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10002
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10002](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10002)
 
 ##### Parameters
 
@@ -3669,7 +3669,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **after**(...`nodes`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:5712
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:5712](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L5712)
 
 Inserts nodes just after node, while replacing strings in nodes with equivalent Text nodes.
 
@@ -3697,7 +3697,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 > **animate**(`keyframes`, `options?`): `Animation`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2459
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2459](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2459)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/animate)
 
@@ -3725,7 +3725,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **append**(...`nodes`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16551
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16551](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16551)
 
 Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
 
@@ -3753,7 +3753,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 > **appendChild**\<`T`\>(`node`): `T`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15904
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15904](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15904)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/appendChild)
 
@@ -3783,7 +3783,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **attachInternals**(): `ElementInternals`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10074
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10074](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10074)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/attachInternals)
 
@@ -3801,7 +3801,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **attachShadow**(`init`): `ShadowRoot`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7774
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7774](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7774)
 
 Creates a shadow root for element and returns it.
 
@@ -3827,7 +3827,7 @@ Creates a shadow root for element and returns it.
 
 > **before**(...`nodes`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:5720
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:5720](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L5720)
 
 Inserts nodes just before node, while replacing strings in nodes with equivalent Text nodes.
 
@@ -3855,7 +3855,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 > **blur**(): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11853
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11853](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L11853)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/blur)
 
@@ -3873,7 +3873,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **checkVisibility**(`options?`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7776
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7776](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7776)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/checkVisibility)
 
@@ -3897,7 +3897,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **click**(): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10076
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10076](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10076)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/click)
 
@@ -3915,7 +3915,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **cloneNode**(`deep?`): `Node`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15910
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15910](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15910)
 
 Returns a copy of node. If deep is true, the copy also includes the node's descendants.
 
@@ -3943,7 +3943,7 @@ Returns a copy of node. If deep is true, the copy also includes the node's desce
 
 > **closest**\<`K`\>(`selector`): `null` \| `HTMLElementTagNameMap`\[`K`\]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7782
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7782](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7782)
 
 Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
 
@@ -3973,7 +3973,7 @@ Returns the first (starting at element) inclusive ancestor that matches selector
 
 > **closest**\<`K`\>(`selector`): `null` \| `SVGElementTagNameMap`\[`K`\]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7783
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7783](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7783)
 
 ##### Type Parameters
 
@@ -3999,7 +3999,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **closest**\<`K`\>(`selector`): `null` \| `MathMLElementTagNameMap`\[`K`\]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7784
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7784](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7784)
 
 ##### Type Parameters
 
@@ -4025,7 +4025,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **closest**\<`E`\>(`selectors`): `null` \| `E`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7785
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7785](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7785)
 
 ##### Type Parameters
 
@@ -4053,7 +4053,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **compareDocumentPosition**(`other`): `number`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15916
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15916](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15916)
 
 Returns a bitmask indicating the position of other relative to node.
 
@@ -4079,7 +4079,7 @@ Returns a bitmask indicating the position of other relative to node.
 
 > **computedStyleMap**(): `StylePropertyMapReadOnly`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7787
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7787](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7787)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/computedStyleMap)
 
@@ -4097,7 +4097,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **contains**(`other`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15922
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15922](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15922)
 
 Returns true if other is an inclusive descendant of node, and false otherwise.
 
@@ -4123,7 +4123,7 @@ Returns true if other is an inclusive descendant of node, and false otherwise.
 
 > **dispatchEvent**(`event`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:8309
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:8309](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L8309)
 
 Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
 
@@ -4149,7 +4149,7 @@ Dispatches a synthetic event event to target and returns true if either event's 
 
 > **focus**(`options?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11855
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:11855](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L11855)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/focus)
 
@@ -4173,7 +4173,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getAnimations**(`options?`): `Animation`[]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2461
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:2461](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L2461)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAnimations)
 
@@ -4197,7 +4197,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getAttribute**(`qualifiedName`): `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7793
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7793](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7793)
 
 Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
 
@@ -4223,7 +4223,7 @@ Returns element's first attribute whose qualified name is qualifiedName, and nul
 
 > **getAttributeNames**(): `string`[]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7805
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7805](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7805)
 
 Returns the qualified names of all element's attributes. Can contain duplicates.
 
@@ -4243,7 +4243,7 @@ Returns the qualified names of all element's attributes. Can contain duplicates.
 
 > **getAttributeNode**(`qualifiedName`): `null` \| `Attr`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7807
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7807](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7807)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNode)
 
@@ -4267,7 +4267,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getAttributeNodeNS**(`namespace`, `localName`): `null` \| `Attr`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7809
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7809](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7809)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNodeNS)
 
@@ -4295,7 +4295,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getAttributeNS**(`namespace`, `localName`): `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7799
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7799](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7799)
 
 Returns element's attribute whose namespace is namespace and local name is localName, and null if there is no such attribute otherwise.
 
@@ -4325,7 +4325,7 @@ Returns element's attribute whose namespace is namespace and local name is local
 
 > **getBoundingClientRect**(): `DOMRect`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7811
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7811](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7811)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getBoundingClientRect)
 
@@ -4343,7 +4343,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getClientRects**(): `DOMRectList`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7813
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7813](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7813)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getClientRects)
 
@@ -4361,7 +4361,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByClassName**(`classNames`): `HTMLCollectionOf`\<`Element`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7819
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7819](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7819)
 
 Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
 
@@ -4389,7 +4389,7 @@ Returns a HTMLCollection of the elements in the object on which the method was i
 
 > **getElementsByTagName**\<`K`\>(`qualifiedName`): `HTMLCollectionOf`\<`HTMLElementTagNameMap`\[`K`\]\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7821
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7821](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7821)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagName)
 
@@ -4417,7 +4417,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByTagName**\<`K`\>(`qualifiedName`): `HTMLCollectionOf`\<`SVGElementTagNameMap`\[`K`\]\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7822
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7822](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7822)
 
 ##### Type Parameters
 
@@ -4443,7 +4443,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByTagName**\<`K`\>(`qualifiedName`): `HTMLCollectionOf`\<`MathMLElementTagNameMap`\[`K`\]\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7823
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7823](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7823)
 
 ##### Type Parameters
 
@@ -4469,7 +4469,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByTagName**\<`K`\>(`qualifiedName`): `HTMLCollectionOf`\<`HTMLElementDeprecatedTagNameMap`\[`K`\]\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7825
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7825](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7825)
 
 ##### Type Parameters
 
@@ -4497,7 +4497,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByTagName**(`qualifiedName`): `HTMLCollectionOf`\<`Element`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7826
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7826](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7826)
 
 ##### Parameters
 
@@ -4521,7 +4521,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByTagNameNS**(`namespaceURI`, `localName`): `HTMLCollectionOf`\<`HTMLElement`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7828
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7828](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7828)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getElementsByTagNameNS)
 
@@ -4547,7 +4547,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByTagNameNS**(`namespaceURI`, `localName`): `HTMLCollectionOf`\<`SVGElement`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7829
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7829](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7829)
 
 ##### Parameters
 
@@ -4571,7 +4571,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByTagNameNS**(`namespaceURI`, `localName`): `HTMLCollectionOf`\<`MathMLElement`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7830
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7830](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7830)
 
 ##### Parameters
 
@@ -4595,7 +4595,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getElementsByTagNameNS**(`namespace`, `localName`): `HTMLCollectionOf`\<`Element`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7831
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7831](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7831)
 
 ##### Parameters
 
@@ -4621,7 +4621,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getHTML**(`options?`): `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7833
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7833](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7833)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/getHTML)
 
@@ -4645,7 +4645,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **getRootNode**(`options?`): `Node`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15928
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15928](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15928)
 
 Returns node's root.
 
@@ -4671,7 +4671,7 @@ Returns node's root.
 
 > **hasAttribute**(`qualifiedName`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7839
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7839](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7839)
 
 Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise.
 
@@ -4697,7 +4697,7 @@ Returns true if element has an attribute whose qualified name is qualifiedName, 
 
 > **hasAttributeNS**(`namespace`, `localName`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7845
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7845](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7845)
 
 Returns true if element has an attribute whose namespace is namespace and local name is localName.
 
@@ -4727,7 +4727,7 @@ Returns true if element has an attribute whose namespace is namespace and local 
 
 > **hasAttributes**(): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7851
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7851](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7851)
 
 Returns true if element has attributes, and false otherwise.
 
@@ -4747,7 +4747,7 @@ Returns true if element has attributes, and false otherwise.
 
 > **hasChildNodes**(): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15934
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15934](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15934)
 
 Returns whether node has children.
 
@@ -4767,7 +4767,7 @@ Returns whether node has children.
 
 > **hasPointerCapture**(`pointerId`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7853
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7853](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7853)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/hasPointerCapture)
 
@@ -4791,7 +4791,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **hidePopover**(): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10078
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10078](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10078)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/hidePopover)
 
@@ -4809,7 +4809,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **insertAdjacentElement**(`where`, `element`): `null` \| `Element`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7855
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7855](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7855)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentElement)
 
@@ -4837,7 +4837,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **insertAdjacentHTML**(`position`, `string`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7857
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7857](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7857)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentHTML)
 
@@ -4865,7 +4865,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **insertAdjacentText**(`where`, `data`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7859
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7859](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7859)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/insertAdjacentText)
 
@@ -4893,7 +4893,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **insertBefore**\<`T`\>(`node`, `child`): `T`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15936
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15936](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15936)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/insertBefore)
 
@@ -4927,7 +4927,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **isDefaultNamespace**(`namespace`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15938
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15938](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15938)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isDefaultNamespace)
 
@@ -4951,7 +4951,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **isEqualNode**(`otherNode`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15944
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15944](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15944)
 
 Returns whether node and otherNode have the same properties.
 
@@ -4977,7 +4977,7 @@ Returns whether node and otherNode have the same properties.
 
 > **isSameNode**(`otherNode`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15946
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15946](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15946)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/isSameNode)
 
@@ -5001,7 +5001,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **lookupNamespaceURI**(`prefix`): `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15948
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15948](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15948)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lookupNamespaceURI)
 
@@ -5025,7 +5025,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **lookupPrefix**(`namespace`): `null` \| `string`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15950
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15950](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15950)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/lookupPrefix)
 
@@ -5049,7 +5049,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **matches**(`selectors`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7865
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7865](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7865)
 
 Returns true if matching selectors against element's root yields element, and false otherwise.
 
@@ -5075,7 +5075,7 @@ Returns true if matching selectors against element's root yields element, and fa
 
 > **normalize**(): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15956
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15956](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15956)
 
 Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.
 
@@ -5095,7 +5095,7 @@ Removes empty exclusive Text nodes and concatenates the data of remaining contig
 
 > **prepend**(...`nodes`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16559
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16559](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16559)
 
 Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
 
@@ -5125,7 +5125,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 > **querySelector**\<`K`\>(`selectors`): `null` \| `HTMLElementTagNameMap`\[`K`\]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16565
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16565](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16565)
 
 Returns the first element that is a descendant of node that matches selectors.
 
@@ -5155,7 +5155,7 @@ Returns the first element that is a descendant of node that matches selectors.
 
 > **querySelector**\<`K`\>(`selectors`): `null` \| `SVGElementTagNameMap`\[`K`\]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16566
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16566](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16566)
 
 ##### Type Parameters
 
@@ -5181,7 +5181,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **querySelector**\<`K`\>(`selectors`): `null` \| `MathMLElementTagNameMap`\[`K`\]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16567
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16567](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16567)
 
 ##### Type Parameters
 
@@ -5207,7 +5207,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **querySelector**\<`K`\>(`selectors`): `null` \| `HTMLElementDeprecatedTagNameMap`\[`K`\]
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16569
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16569](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16569)
 
 ##### Type Parameters
 
@@ -5235,7 +5235,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **querySelector**\<`E`\>(`selectors`): `null` \| `E`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16570
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16570](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16570)
 
 ##### Type Parameters
 
@@ -5265,7 +5265,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **querySelectorAll**\<`K`\>(`selectors`): `NodeListOf`\<`HTMLElementTagNameMap`\[`K`\]\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16576
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16576](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16576)
 
 Returns all element descendants of node that match selectors.
 
@@ -5295,7 +5295,7 @@ Returns all element descendants of node that match selectors.
 
 > **querySelectorAll**\<`K`\>(`selectors`): `NodeListOf`\<`SVGElementTagNameMap`\[`K`\]\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16577
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16577](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16577)
 
 ##### Type Parameters
 
@@ -5321,7 +5321,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **querySelectorAll**\<`K`\>(`selectors`): `NodeListOf`\<`MathMLElementTagNameMap`\[`K`\]\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16578
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16578](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16578)
 
 ##### Type Parameters
 
@@ -5347,7 +5347,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **querySelectorAll**\<`K`\>(`selectors`): `NodeListOf`\<`HTMLElementDeprecatedTagNameMap`\[`K`\]\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16580
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16580](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16580)
 
 ##### Type Parameters
 
@@ -5375,7 +5375,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **querySelectorAll**\<`E`\>(`selectors`): `NodeListOf`\<`E`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16581
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16581](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16581)
 
 ##### Type Parameters
 
@@ -5403,7 +5403,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **releasePointerCapture**(`pointerId`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7867
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7867](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7867)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/releasePointerCapture)
 
@@ -5427,7 +5427,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **remove**(): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:5726
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:5726](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L5726)
 
 Removes node.
 
@@ -5447,7 +5447,7 @@ Removes node.
 
 > **removeAttribute**(`qualifiedName`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7873
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7873](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7873)
 
 Removes element's first attribute whose qualified name is qualifiedName.
 
@@ -5473,7 +5473,7 @@ Removes element's first attribute whose qualified name is qualifiedName.
 
 > **removeAttributeNode**(`attr`): `Attr`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7881
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7881](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7881)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/removeAttributeNode)
 
@@ -5497,7 +5497,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **removeAttributeNS**(`namespace`, `localName`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7879
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7879](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7879)
 
 Removes element's attribute whose namespace is namespace and local name is localName.
 
@@ -5527,7 +5527,7 @@ Removes element's attribute whose namespace is namespace and local name is local
 
 > **removeChild**\<`T`\>(`child`): `T`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15958
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15958](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15958)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/removeChild)
 
@@ -5559,7 +5559,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **removeEventListener**\<`K`\>(`type`, `listener`, `options?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10003
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10003](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10003)
 
 ##### Type Parameters
 
@@ -5593,7 +5593,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **removeEventListener**(`type`, `listener`, `options?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10004
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10004](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10004)
 
 ##### Parameters
 
@@ -5623,7 +5623,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **replaceChild**\<`T`\>(`node`, `child`): `T`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15960
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:15960](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L15960)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Node/replaceChild)
 
@@ -5657,7 +5657,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **replaceChildren**(...`nodes`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16589
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:16589](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L16589)
 
 Replace all children of node with nodes, while replacing strings in nodes with equivalent Text nodes.
 
@@ -5685,7 +5685,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 > **replaceWith**(...`nodes`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:5734
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:5734](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L5734)
 
 Replaces node with nodes, while replacing strings in nodes with equivalent Text nodes.
 
@@ -5713,7 +5713,7 @@ Throws a "HierarchyRequestError" DOMException if the constraints of the node tre
 
 > **requestFullscreen**(`options?`): `Promise`\<`void`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7889
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7889](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7889)
 
 Displays element fullscreen and resolves promise when done.
 
@@ -5741,7 +5741,7 @@ When supplied, options's navigationUI member indicates whether showing navigatio
 
 > **requestPointerLock**(`options?`): `Promise`\<`void`\>
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7891
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7891](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7891)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/requestPointerLock)
 
@@ -5767,7 +5767,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scroll**(`options?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7893
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7893](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7893)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scroll)
 
@@ -5789,7 +5789,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scroll**(`x`, `y`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7894
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7894](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7894)
 
 ##### Parameters
 
@@ -5817,7 +5817,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scrollBy**(`options?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7896
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7896](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7896)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollBy)
 
@@ -5839,7 +5839,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scrollBy**(`x`, `y`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7897
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7897](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7897)
 
 ##### Parameters
 
@@ -5865,7 +5865,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scrollIntoView**(`arg?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7899
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7899](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7899)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollIntoView)
 
@@ -5891,7 +5891,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scrollTo**(`options?`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7901
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7901](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7901)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/scrollTo)
 
@@ -5913,7 +5913,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **scrollTo**(`x`, `y`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7902
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7902](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7902)
 
 ##### Parameters
 
@@ -5939,7 +5939,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **setAttribute**(`qualifiedName`, `value`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7908
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7908](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7908)
 
 Sets the value of element's first attribute whose qualified name is qualifiedName to value.
 
@@ -5969,7 +5969,7 @@ Sets the value of element's first attribute whose qualified name is qualifiedNam
 
 > **setAttributeNode**(`attr`): `null` \| `Attr`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7916
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7916](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7916)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttributeNode)
 
@@ -5993,7 +5993,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **setAttributeNodeNS**(`attr`): `null` \| `Attr`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7918
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7918](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7918)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setAttributeNodeNS)
 
@@ -6017,7 +6017,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **setAttributeNS**(`namespace`, `qualifiedName`, `value`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7914
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7914](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7914)
 
 Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
 
@@ -6051,7 +6051,7 @@ Sets the value of element's attribute whose namespace is namespace and local nam
 
 > **setHTMLUnsafe**(`html`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7920
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7920](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7920)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setHTMLUnsafe)
 
@@ -6075,7 +6075,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **setPointerCapture**(`pointerId`): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7922
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7922](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7922)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/setPointerCapture)
 
@@ -6099,7 +6099,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **showPopover**(): `void`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10080
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10080](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10080)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/showPopover)
 
@@ -6117,7 +6117,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **toggleAttribute**(`qualifiedName`, `force?`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7930
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7930](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7930)
 
 If force is not given, "toggles" qualifiedName, removing it if it is present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
 
@@ -6149,7 +6149,7 @@ Returns true if qualifiedName is now present, and false otherwise.
 
 > **togglePopover**(`force?`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10082
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:10082](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L10082)
 
 [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLElement/togglePopover)
 
@@ -6173,7 +6173,7 @@ Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/types
 
 > **webkitMatchesSelector**(`selectors`): `boolean`
 
-Defined in: doc-website/node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7936
+Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.dom.d.ts:7936](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pm/typescript@5.6.3/node_modules/typescript/lib/lib.dom.d.ts#L7936)
 
 #### Parameters
 

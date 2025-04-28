@@ -1,6 +1,6 @@
 # Interface: ModelEvent
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:17
+Defined in: [spatial-react-components/Model3D/types.ts:17](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L17)
 
 ## Extended by
 
@@ -12,4 +12,4 @@ Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.t
 
 > **target**: [`ModelElement`](ModelElement.md)
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/Model3D/types.ts:18
+Defined in: [spatial-react-components/Model3D/types.ts:18](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/Model3D/types.ts#L18)

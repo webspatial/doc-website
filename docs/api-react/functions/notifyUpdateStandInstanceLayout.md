@@ -2,7 +2,7 @@
 
 > **notifyUpdateStandInstanceLayout**(): `void`
 
-Defined in: doc-website/XRSDK/react/src/spatial-react-components/notifyUpdateStandInstanceLayout.ts:12
+Defined in: [spatial-react-components/notifyUpdateStandInstanceLayout.ts:12](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/spatial-react-components/notifyUpdateStandInstanceLayout.ts#L12)
 
 External-developers can call this function to sync the standardInstance layout to PortalInstance.
 

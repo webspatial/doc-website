@@ -2,7 +2,7 @@
 
 > **initScene**(`name`, `callback`): `void`
 
-Defined in: doc-website/XRSDK/react/src/initScene.ts:4
+Defined in: [initScene.ts:4](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/initScene.ts#L4)
 
 ## Parameters
 
