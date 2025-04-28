@@ -6,77 +6,77 @@ const typedocSidebar: SidebarsConfig = { items: [
     "items": [
       {
         "type": "doc",
-        "id": "api/classes/Spatial",
+        "id": "api-core/classes/Spatial",
         "label": "Spatial"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialEntity",
+        "id": "api-core/classes/SpatialEntity",
         "label": "SpatialEntity"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialHelper",
+        "id": "api-core/classes/SpatialHelper",
         "label": "SpatialHelper"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialInputComponent",
+        "id": "api-core/classes/SpatialInputComponent",
         "label": "SpatialInputComponent"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialMeshResource",
+        "id": "api-core/classes/SpatialMeshResource",
         "label": "SpatialMeshResource"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialModel3DComponent",
+        "id": "api-core/classes/SpatialModel3DComponent",
         "label": "SpatialModel3DComponent"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialModelComponent",
+        "id": "api-core/classes/SpatialModelComponent",
         "label": "SpatialModelComponent"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialPhysicallyBasedMaterialResource",
+        "id": "api-core/classes/SpatialPhysicallyBasedMaterialResource",
         "label": "SpatialPhysicallyBasedMaterialResource"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialSession",
+        "id": "api-core/classes/SpatialSession",
         "label": "SpatialSession"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialTransform",
+        "id": "api-core/classes/SpatialTransform",
         "label": "SpatialTransform"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialViewComponent",
+        "id": "api-core/classes/SpatialViewComponent",
         "label": "SpatialViewComponent"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialWindowComponent",
+        "id": "api-core/classes/SpatialWindowComponent",
         "label": "SpatialWindowComponent"
       },
       {
         "type": "doc",
-        "id": "api/classes/SpatialWindowContainer",
+        "id": "api-core/classes/SpatialWindowContainer",
         "label": "SpatialWindowContainer"
       },
       {
         "type": "doc",
-        "id": "api/classes/Vec3",
+        "id": "api-core/classes/Vec3",
         "label": "Vec3"
       },
       {
         "type": "doc",
-        "id": "api/classes/Vec4",
+        "id": "api-core/classes/Vec4",
         "label": "Vec4"
       }
     ]
@@ -87,17 +87,17 @@ const typedocSidebar: SidebarsConfig = { items: [
     "items": [
       {
         "type": "doc",
-        "id": "api/interfaces/sceneDataJSBShape",
+        "id": "api-core/interfaces/sceneDataJSBShape",
         "label": "sceneDataJSBShape"
       },
       {
         "type": "doc",
-        "id": "api/interfaces/sceneDataShape",
+        "id": "api-core/interfaces/sceneDataShape",
         "label": "sceneDataShape"
       },
       {
         "type": "doc",
-        "id": "api/interfaces/WindowContainerOptions",
+        "id": "api-core/interfaces/WindowContainerOptions",
         "label": "WindowContainerOptions"
       }
     ]
@@ -108,32 +108,32 @@ const typedocSidebar: SidebarsConfig = { items: [
     "items": [
       {
         "type": "doc",
-        "id": "api/type-aliases/BackgroundMaterialType",
+        "id": "api-core/type-aliases/BackgroundMaterialType",
         "label": "BackgroundMaterialType"
       },
       {
         "type": "doc",
-        "id": "api/type-aliases/CornerRadius",
+        "id": "api-core/type-aliases/CornerRadius",
         "label": "CornerRadius"
       },
       {
         "type": "doc",
-        "id": "api/type-aliases/LoadingMethodKind",
+        "id": "api-core/type-aliases/LoadingMethodKind",
         "label": "LoadingMethodKind"
       },
       {
         "type": "doc",
-        "id": "api/type-aliases/SpatialModelDragEvent",
+        "id": "api-core/type-aliases/SpatialModelDragEvent",
         "label": "SpatialModelDragEvent"
       },
       {
         "type": "doc",
-        "id": "api/type-aliases/StyleParam",
+        "id": "api-core/type-aliases/StyleParam",
         "label": "StyleParam"
       },
       {
         "type": "doc",
-        "id": "api/type-aliases/WindowStyle",
+        "id": "api-core/type-aliases/WindowStyle",
         "label": "WindowStyle"
       }
     ]

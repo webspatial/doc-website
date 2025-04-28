@@ -23,8 +23,8 @@ const config: Config = {
       'docusaurus-plugin-typedoc',
 
       // Options
-      // todo: need to link to xrsdk code base
       {
+        id: 'core-sdk',
         // ── begin explicit source-link settings ──
 
         // Ensure TypeDoc always generates links, even if Git auto-detection is off
@@ -37,11 +37,45 @@ const config: Config = {
 
         // (Optional) override the revision—use your default branch or commit SHA
         gitRevision: 'main',
-        cleanOutputDir:false,
+        cleanOutputDir: false,
 
         // ── end explicit settings ──
         entryPoints: ['./XRSDK/core/src/index.ts'],
         tsconfig: './XRSDK/core/tsconfig.json',
+        out: 'docs/api-core',
+        sidebar: {
+          autoConfiguration: true,
+          pretty: true,
+          typescript: true,
+          deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
+        },
+      },
+    ],
+    [
+      'docusaurus-plugin-typedoc',
+
+      // Options
+      // todo: need to link to xrsdk code base
+      {
+        id: 'react-sdk',
+        // ── begin explicit source-link settings ──
+
+        // Ensure TypeDoc always generates links, even if Git auto-detection is off
+        // disableGit: true,
+
+        // // Template for linking to GitHub.
+        // // {path} is the file path under the SDK repo, {line} the line number.
+        // sourceLinkTemplate:
+        //   'https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/{path}#L{line}',
+
+        // // (Optional) override the revision—use your default branch or commit SHA
+        // gitRevision: 'main',
+        cleanOutputDir: false,
+
+        // ── end explicit settings ──
+        entryPoints: ['./XRSDK/react/src/index.ts'],
+        tsconfig: './XRSDK/react/tsconfig.json',
+        out: 'docs/api-react',
         sidebar: {
           autoConfiguration: true,
           pretty: true,

@@ -5,32 +5,32 @@ import DocCardWithTOC from '@site/src/components/DocCardWithTOC';
 // directory: (directory, useSubdirectories, regex)
 
 //@ts-ignore
-const req = require.context(
-  // relative to this file, adjust path if necessary
-  '../../../docs/api/classes',
-  false,
-  /\.md$/,
-);
+// const req = require.context(
+//   // relative to this file, adjust path if necessary
+//   '../../../docs/api/classes',
+//   false,
+//   /\.md$/,
+// );
 
 const reqObj = {
   //@ts-ignore
   Classes: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api/classes',
+    '../../../docs/api-core/classes',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   Interfaces: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api/interfaces',
+    '../../../docs/api-core/interfaces',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   TypeAliases: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api/type-aliases',
+    '../../../docs/api-core/type-aliases',
     false,
     /\.md$/,
   ),
