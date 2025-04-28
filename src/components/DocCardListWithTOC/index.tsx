@@ -14,23 +14,51 @@ import DocCardWithTOC from '@site/src/components/DocCardWithTOC';
 
 const reqObj = {
   //@ts-ignore
-  Classes: require.context(
+  coreClasses: require.context(
     // relative to this file, adjust path if necessary
     '../../../docs/api-core/classes',
     false,
     /\.md$/,
   ),
   //@ts-ignore
-  Interfaces: require.context(
+  coreInterfaces: require.context(
     // relative to this file, adjust path if necessary
     '../../../docs/api-core/interfaces',
     false,
     /\.md$/,
   ),
   //@ts-ignore
-  TypeAliases: require.context(
+  reactTypeAliases: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-core/type-aliases',
+    '../../../docs/api-react/type-aliases',
+    false,
+    /\.md$/,
+  ),
+  //@ts-ignore
+  reactClasses: require.context(
+    // relative to this file, adjust path if necessary
+    '../../../docs/api-react/classes',
+    false,
+    /\.md$/,
+  ),
+  //@ts-ignore
+  reactInterfaces: require.context(
+    // relative to this file, adjust path if necessary
+    '../../../docs/api-react/interfaces',
+    false,
+    /\.md$/,
+  ),
+  //@ts-ignore
+  reactVariables: require.context(
+    // relative to this file, adjust path if necessary
+    '../../../docs/api-react/variables',
+    false,
+    /\.md$/,
+  ),
+  //@ts-ignore
+  reactTypeAliases: require.context(
+    // relative to this file, adjust path if necessary
+    '../../../docs/api-react/type-aliases',
     false,
     /\.md$/,
   ),
