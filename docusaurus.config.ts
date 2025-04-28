@@ -37,6 +37,7 @@ const config: Config = {
 
         // (Optional) override the revision—use your default branch or commit SHA
         gitRevision: 'main',
+        cleanOutputDir:false,
 
         // ── end explicit settings ──
         entryPoints: ['./XRSDK/core/src/index.ts'],
