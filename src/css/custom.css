@@ -19,6 +19,9 @@
   /* Use a darker color to ensure contrast, ideally we don't need important */
   --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker) !important;
   --ifm-menu-color-active: var(--ifm-color-primary-darker) !important;
+   /* menu color */
+  --ifm-menu-color: #4E5969 !important;
+  --ifm-menu-link-sublist-icon: url('../img/arrow.svg')
 }
 
 html[data-theme='dark'] {
@@ -247,4 +250,23 @@ html[data-red-border] div#__docusaurus {
     auto-fill,
     minmax(15rem, 1fr)
   ); /* identical to theme’s min-width */ /* :contentReference[oaicite:5]{index=5} */
+}
+
+.menu__link{
+  line-height: 22px;
+  /* line-height: 1.75; */
+  font-size: 14px;
+}
+
+.menu {
+  font-weight: 400;
+}
+
+.menu__caret:before {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1rem 1rem;
+}
+
+/* .menu__link:hover,  */
+.menu__caret:hover {
+  background: none;
 }
