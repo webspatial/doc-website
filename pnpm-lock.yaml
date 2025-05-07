@@ -29,6 +29,9 @@ importers:
       clsx:
         specifier: ^2.0.0
         version: 2.1.1
+      docusaurus-plugin-generate-llms-txt:
+        specifier: ^0.0.1
+        version: 0.0.1(@docusaurus/core@3.7.0(@mdx-js/react@3.1.0(@types/react@19.1.2)(react@19.1.0))(acorn@6.4.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.6.3))
       prism-react-renderer:
         specifier: ^2.3.0
         version: 2.4.1(react@19.1.0)
@@ -2379,6 +2382,12 @@ packages:
   dns-packet@5.6.1:
     resolution: {integrity: sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==}
     engines: {node: '>=6'}
+
+  docusaurus-plugin-generate-llms-txt@0.0.1:
+    resolution: {integrity: sha512-XlUeQ23anYc85I1k9pO61fWcMWcUs8Tx7n3zqIus/1wjZ1mjezm0lOX9jymu9Y2MAi3/YQbDxsfo4kZrMf5q6A==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@docusaurus/core': '>=2.0.0'
 
   docusaurus-plugin-typedoc@1.3.1:
     resolution: {integrity: sha512-JX7VFp8msScA1iYk3YAYhY1NDW2DcxI4CGLEvfIkXNoXU0YdPlF39JsoGNkgQnsQpN4Ryndm3ocEXXIdyAM6jQ==}
@@ -8708,6 +8717,11 @@ snapshots:
   dns-packet@5.6.1:
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.5
+
+  docusaurus-plugin-generate-llms-txt@0.0.1(@docusaurus/core@3.7.0(@mdx-js/react@3.1.0(@types/react@19.1.2)(react@19.1.0))(acorn@6.4.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.6.3)):
+    dependencies:
+      '@docusaurus/core': 3.7.0(@mdx-js/react@3.1.0(@types/react@19.1.2)(react@19.1.0))(acorn@6.4.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.6.3)
+      js-yaml: 4.1.0
 
   docusaurus-plugin-typedoc@1.3.1(typedoc-plugin-markdown@4.6.3(typedoc@0.28.3(typescript@5.6.3))):
     dependencies:

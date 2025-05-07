@@ -7,6 +7,12 @@ import type {Options as IdealImageOptions} from '@docusaurus/plugin-ideal-image'
 
 const config: Config = {
   plugins: [
+    [
+      "docusaurus-plugin-generate-llms-txt",
+      {
+        outputFile: "llms.txt", // defaults to llms.txt if not specified
+      },
+    ],
     '@docusaurus/theme-live-codeblock',
     [
       'ideal-image',
