@@ -1632,7 +1632,7 @@ Defined in: [../../../node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescr
 
 > **onbeforexrselect**: `null` \| (`this`, `ev`) => `any`
 
-Defined in: [../../../../XRSDK/node\_modules/.pnpm/@types+webxr@0.5.21/node\_modules/@types/webxr/index.d.ts:1168](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pes+webxr@0.5.21/node_modules/@types/webxr/index.d.ts#L1168)
+Defined in: [../../../../XRSDK/node\_modules/.pnpm/@types+webxr@0.5.22/node\_modules/@types/webxr/index.d.ts:1168](https://github.com/webspatial/webspatial-sdk/blob/main/react/src/pes+webxr@0.5.22/node_modules/@types/webxr/index.d.ts#L1168)
 
 An XRSessionEvent of type beforexrselect is dispatched on the DOM overlay
 element before generating a WebXR selectstart input event if the -Z axis

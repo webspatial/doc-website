@@ -190,7 +190,7 @@ Defined in: [component/SpatialWindowComponent.ts:83](https://github.com/webspati
 
 > **setScrollEdgeInsets**(`insets`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:148](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L148)
+Defined in: [component/SpatialWindowComponent.ts:149](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L149)
 
 Modifies the amount the spatial window can be scrolled
 Should only be used internally
@@ -228,7 +228,7 @@ margin to modify scroll distances by
 
 > **setScrollEnabled**(`enabled`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:163](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L163)
+Defined in: [component/SpatialWindowComponent.ts:164](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L164)
 
 Enable/Disable scrolling in the window (defaults to enabled), if disabled, scrolling will be applied to the root page
 
@@ -250,7 +250,7 @@ value to set
 
 > **setScrollWithParent**(`scrollWithParent`): `Promise`\<`void`\>
 
-Defined in: [component/SpatialWindowComponent.ts:171](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L171)
+Defined in: [component/SpatialWindowComponent.ts:172](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/component/SpatialWindowComponent.ts#L172)
 
 Defaults to false. If set to true, scrolling the parent page will also scroll this window with it like other dom elements
 
