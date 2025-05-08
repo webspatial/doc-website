@@ -198,7 +198,8 @@ const config: Config = {
         {to: 'showcase', label: 'Showcase', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          // label: 'GitHub',
+          className: 'xheader-github-link',
           position: 'right',
         },
       ],
