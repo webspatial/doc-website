@@ -21,6 +21,7 @@
   --ifm-menu-color-active: var(--ifm-color-primary-darker) !important;
   /* menu color */
   --ifm-menu-color: #4e5969 !important;
+  --ifm-menu-color-active: #4E5969;
   --ifm-menu-link-sublist-icon: url('../img/arrow.svg');
 }
 
@@ -256,7 +257,19 @@ html[data-red-border] div#__docusaurus {
   line-height: 22px;
   /* line-height: 1.75; */
   font-size: 14px;
+  font-weight: 400;
 }
+.menu__link--active {
+  font-weight: 500;
+}
+
+.menu__link--active:not(.menu__link--sublist){
+  font-weight: 600;
+  color: #3491FA;
+  background-color: #E8F7FF;
+}
+
+
 
 .menu {
   font-weight: 400;
