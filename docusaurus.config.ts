@@ -7,10 +7,11 @@ import type {Options as IdealImageOptions} from '@docusaurus/plugin-ideal-image'
 
 const config: Config = {
   plugins: [
+    'docusaurus-plugin-sass',
     [
-      "docusaurus-plugin-generate-llms-txt",
+      'docusaurus-plugin-generate-llms-txt',
       {
-        outputFile: "llms.txt", // defaults to llms.txt if not specified
+        outputFile: 'llms.txt', // defaults to llms.txt if not specified
       },
     ],
     '@docusaurus/theme-live-codeblock',
@@ -148,7 +149,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/css/custom.scss',
         },
       } satisfies Preset.Options,
     ],
