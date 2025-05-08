@@ -46,8 +46,8 @@ const config: Config = {
         cleanOutputDir: false,
 
         // ── end explicit settings ──
-        entryPoints: ['./XRSDK/core/src/index.ts'],
-        tsconfig: './XRSDK/core/tsconfig.json',
+        entryPoints: ['./XRSDK/packages/core/src/index.ts'],
+        tsconfig: './XRSDK/packages/core/tsconfig.json',
         out: 'docs/api-core',
         sidebar: {
           autoConfiguration: true,
@@ -70,7 +70,7 @@ const config: Config = {
 
         // // Template for linking to GitHub.
         // // {path} is the file path under the SDK repo, {line} the line number.
-        basePath: './XRSDK/react/src',
+        basePath: './XRSDK/packages/react/src',
         sourceLinkTemplate:
           'https://github.com/webspatial/webspatial-sdk/blob/main/react/src/{path}#L{line}',
 
@@ -79,8 +79,8 @@ const config: Config = {
         cleanOutputDir: false,
 
         // ── end explicit settings ──
-        entryPoints: ['./XRSDK/react/src/index.ts'],
-        tsconfig: './XRSDK/react/tsconfig.json',
+        entryPoints: ['./XRSDK/packages/react/src/index.ts'],
+        tsconfig: './XRSDK/packages/react/tsconfig.json',
         out: 'docs/api-react',
         sidebar: {
           autoConfiguration: true,
