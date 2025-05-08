@@ -99,6 +99,16 @@
   background-color: var(--ifm-navbar-link-hover-color);
 }
 
+.DocSearch-Button-Container {
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+  .DocSearch-Button-Placeholder {
+    font-size: 14px;
+  }
+}
+
 html[data-theme='dark'] {
   --site-color-feedback-background: #2a2929;
   --docusaurus-highlighted-code-line-bg: rgb(66 66 66 / 35%);
