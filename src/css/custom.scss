@@ -8,6 +8,16 @@
 @import url('react-medium-image-zoom/dist/styles.css');
 
 :root {
+  --ifm-color-primary: #3491fa;
+  --ifm-color-primary-dark: #1781f9;
+  --ifm-color-primary-darker: #0879f9;
+  --ifm-color-primary-darkest: #0564ce;
+  --ifm-color-primary-light: #51a1fb;
+  --ifm-color-primary-lighter: #60a9fb;
+  --ifm-color-primary-lightest: #8cc1fc;
+
+  --ifm-heading-color: #1d2129;
+
   /*
    See css var + hsl color palette technique:
    https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
@@ -24,6 +34,16 @@
   --ifm-menu-color-active: #4e5969;
   --ifm-menu-link-sublist-icon: url('../img/arrow.svg');
 }
+
+// mdx container
+.container > .row {
+  .col:first-child {
+    padding: 0 56px;
+  }
+  .col {
+    padding-left: 0;
+  }
+}
 /* MDX headers */
 .markdown h1:first-child {
   --ifm-h1-font-size: 36px;
@@ -39,19 +59,52 @@
   h2 {
     --ifm-h2-font-size: 28px;
     line-height: 36px;
+    margin-top: 64px;
   }
   h3 {
     --ifm-h3-font-size: 20px;
     line-height: 28px;
+    margin-top: 48px;
   }
   h4 {
     --ifm-h4-font-size: 16px;
     line-height: 24px;
+    margin-top: 32px;
   }
 
   h5 {
     --ifm-h5-font-size: 14px;
     line-height: 22px;
+    margin-top: 24px;
+  }
+  color: #4e5969;
+
+  code {
+    border: none;
+    border-radius: 3px;
+    --ifm-code-padding-vertical: 0.4rem;
+    --ifm-code-padding-horizontal: 0.4rem;
+    --ifm-code-background: #f2f3f5;
+    font-size: 12px;
+  }
+
+  pre {
+    --ifm-pre-border-radius: 4px;
+  }
+  blockquote {
+    --ifm-blockquote-color: #4e5969;
+    --ifm-blockquote-border-color: #e5e6eb;
+    border-left-width: 1px;
+    color: #86909c;
+    --ifm-spacing-vertical: 24px;
+  }
+  > p {
+    margin-bottom: 8px;
+  }
+
+  .theme-code-block {
+    margin-bottom: 24px;
+    box-shadow: none;
   }
 }
 
@@ -100,13 +153,68 @@
 }
 
 .DocSearch-Button-Container {
-  svg {
-    width: 18px;
-    height: 18px;
+  > svg {
+    width: 16px;
+    height: 16px;
+    // padding: 8px;
+    > path {
+      stroke: #86909c;
+    }
   }
   .DocSearch-Button-Placeholder {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #86909c;
+    line-height: 18px;
   }
+}
+
+span.DocSearch-Button-Keys {
+  .DocSearch-Button-Key:first-child {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+  .DocSearch-Button-Key {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border: 0.63px #86909c solid;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: unset;
+    background: transparent;
+    top: unset; // 坑
+  }
+}
+
+// navbar dropdown
+
+.dropdown > .navbar__link:after {
+  border: none;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url('../img/arrow-black.svg') 50% / 1rem 1rem;
+  transform: rotate(180deg);
+  top: 1px;
+  left: 0px;
+}
+
+// mdx
+.breadcrumbs__item {
+  --ifm-font-color-base: #86909c;
+  &--active .breadcrumbs__link {
+    color: var(--ifm-font-color-base);
+  }
+}
+.breadcrumbs li:nth-child(2) {
+  .breadcrumbs__link {
+    padding-left: 0;
+  }
+}
+.badge--secondary {
+  color: #4e5969;
+  background-color: #f2f3f5;
+  font-weight: 500;
 }
 
 html[data-theme='dark'] {
@@ -119,18 +227,6 @@ html[data-theme='dark'] {
   * other properties here.
   */
 [data-theme='light'] {
-  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 30%);
-  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 26%);
-  --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 23%);
-  --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 17%);
-
-  --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light) 39%);
-  --ifm-color-primary-lighter: hsl(
-    var(--site-primary-hue-saturation-light) 47%
-  );
-  --ifm-color-primary-lightest: hsl(
-    var(--site-primary-hue-saturation-light) 58%
-  );
 }
 
 /*
@@ -138,18 +234,6 @@ html[data-theme='dark'] {
   * other properties here.
   */
 [data-theme='dark'] {
-  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 45%);
-  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 41%);
-  --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 38%);
-  --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 32%);
-
-  --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light) 54%);
-  --ifm-color-primary-lighter: hsl(
-    var(--site-primary-hue-saturation-light) 62%
-  );
-  --ifm-color-primary-lightest: hsl(
-    var(--site-primary-hue-saturation-light) 73%
-  );
 }
 
 .header-github-link::before {

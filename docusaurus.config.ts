@@ -2,6 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Options as IdealImageOptions} from '@docusaurus/plugin-ideal-image';
+import xGithubTheme from './src/css/xGithubTheme';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -256,7 +257,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
+      // theme: prismThemes.github,
+      theme: xGithubTheme,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
