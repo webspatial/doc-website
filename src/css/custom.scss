@@ -43,6 +43,14 @@
   .col {
     padding-left: 0;
   }
+
+  .col--3 {
+    --ifm-col-width: 200px;
+  }
+
+  .theme-doc-footer-edit-meta-row>.col{
+    padding-left: 32px;
+  }
 }
 /* MDX headers */
 .markdown h1:first-child {
@@ -215,6 +223,44 @@ span.DocSearch-Button-Keys {
   color: #4e5969;
   background-color: #f2f3f5;
   font-weight: 500;
+}
+a.table-of-contents__link {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // font-size: 16px;
+  line-height: 1.5em;
+}
+.table-of-contents__link {
+  strong {
+    // display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  strong {
+    font-weight: normal;
+    // font-size: 16px;
+    line-height: 1.5em;
+  }
+  &--active strong {
+    font-weight: 700;
+  }
+}
+
+.table-of-contents {
+  margin: 0 0 0 16px;
+  li {
+    // display: flex;
+    // align-items: center;
+    height: 2em;
+    margin: 0px;
+    // line-height: 2rem;
+    // border: solid 1px red;
+  }
 }
 
 html[data-theme='dark'] {

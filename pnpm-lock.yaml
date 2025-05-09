@@ -29,6 +29,9 @@ importers:
       clsx:
         specifier: ^2.0.0
         version: 2.1.1
+      copy-text-to-clipboard:
+        specifier: ^3.2.0
+        version: 3.2.0
       docusaurus-plugin-generate-llms-txt:
         specifier: ^0.0.1
         version: 0.0.1(@docusaurus/core@3.7.0(@mdx-js/react@3.1.0(@types/react@19.1.2)(react@19.1.0))(acorn@6.4.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.6.3))

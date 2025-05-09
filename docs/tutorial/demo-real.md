@@ -19,7 +19,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 >
 > Once you've completed the walkthrough and seen WebSpatial in action, you can refer to the **[WebSpatial Developer Guide](https://bytedance.larkoffice.com/wiki/HcAkwmwHzirkXpkgzMHckDrhnac)** for more advanced use cases, option explanations, and best practices tailored to real-world projects.
 
-1. ## Create a standard React + Vite + TypeScript project
+## 1.  Create a standard React + Vite + TypeScript project
 
 > First, make sure **Node.js is installed** on your system. (You can find installation instructions on the [official Node.js website](https://nodejs.org).)
 
@@ -37,14 +37,14 @@ npm install
 
 > 🔴 **Note:** Any text highlighted in red below indicates **temporary commands or configuration** that are functional for now but **will be updated to official syntax before the public release**.
 
-1. ## **Install WebSpatial SDK**
+## 1.  **Install WebSpatial SDK**
 
 ```json
 npm install --save @webspatial/react-sdk @webspatial/core-sdk @google/model-viewer three
 npm install --save-dev @webspatial/builder @webspatial/vite-plugin @webspatial/platform-visionos vite-plugin-html
 ```
 
-1. ## **Integrate the WebSpatial SDK into your web build tool (Vite)**
+## 1.  **Integrate the WebSpatial SDK into your web build tool (Vite)**
 
 First, Edit  `tsconfig.app.json` 和 `tsconfig.node.json`, Add the following configuration:
 
@@ -101,7 +101,7 @@ XR_ENV=avp npm run dev
 
 ![img](https://bytedance.larkoffice.com/space/api/box/stream/download/asynccode/?code=NDM1MWNkOTUzZmVmYTZhZWY2MzQ1YjZhYjQ4NGVhZWRfM1R6YVh6QjBtZVFLa0h3emhNbEZFcG1lcFN0MW1kNmxfVG9rZW46T011SmJLd21ub2ZhVm14V0hRanVBNWZNc2lmXzE3NDY3Nzk2MjM6MTc0Njc4MzIyM19WNA)
 
-1. ## **Build and Run Your WebSpatial App**
+## 1.  **Build and Run Your WebSpatial App**
 
 Before using the WebSpatial build toolchain, you’ll need to install **Xcode** and the **visionOS Simulator**.
 
@@ -128,7 +128,7 @@ This will automatically launch the **visionOS Simulator**, install the packaged 
 
 ![img](https://bytedance.larkoffice.com/space/api/box/stream/download/asynccode/?code=OGIwYWMwMGJkMDQxNzgwY2I4OGFjMzg3MDU2YmViOTdfWUNJYzJBRk80R3BvUFVNS3c5MnVoSHJxeW9pSG5mcHlfVG9rZW46VHJERmJsekR6b1JTNEJ4TFpQcXU3emVyc0RmXzE3NDY3Nzk2MjM6MTc0Njc4MzIyM19WNA)
 
-1. ## **Configure Initial Scene Properties**
+## 1.  **Configure Initial Scene Properties**
 
 The following configuration is **currently functional** as a temporary solution:：
 
@@ -174,7 +174,7 @@ Rerun the WebSpatial application packaging tool introduced earlier (execute the 
 
 ![img](https://bytedance.larkoffice.com/space/api/box/stream/download/asynccode/?code=N2MyOGNiMDU2NTY0YTk3M2E3N2ViN2EzYjZlMTRiZTVfU3FMajdNUlRiNU9YMXRwd0JSU3cxMzduTVZnMVVvTVpfVG9rZW46VUhUWmI2b0t2b1dEMUx4aDNyRXVvcGFDc3dlXzE3NDY3Nzk2MjM6MTc0Njc4MzIyM19WNA)
 
-1. ## **Add a new scene**
+## 1.  **Add a new scene**
 
 First, add a new page.
 
@@ -202,7 +202,7 @@ function SecondPage() {
 export default SecondPage;
 ```
 
-In `src/App.tsx `add:
+In `src/App.tsx` add:
 
 ```python
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -268,7 +268,7 @@ Click the link or button to display a new space application scenario with the co
 
 <video data-lark-video-uri="drivetoken://ER4vbUz2loAopZxjjOquP8Xss1b" data-lark-video-mime="video/mp4" data-lark-video-size="76193434" data-lark-video-duration="0" data-lark-video-name="3月21日.mp4" data-lark-video-width="1522" data-lark-video-height="1080"></video>
 
-1. ## **Set the initialization properties of the new scene**
+## 1.  **Set the initialization properties of the new scene**
 
 Introduce the scene initialization API of WebSpatial SDK `in src/App.tsx `:
 
@@ -296,7 +296,7 @@ Click the button to see that the default size of the secondScene scene has chang
 
 ![img](https://bytedance.larkoffice.com/space/api/box/stream/download/asynccode/?code=NmExOWQ3NjU2NTZjNmEyYzVjYjY5ZWE0OThlYzYxZjdfOTJlOWkwOEZNZnA0QnBvak5yWGE3V205Q1BZNHJZN3ZfVG9rZW46RGlIVWJHQXc4b2Y2VFp4UnJ2TXVIWXlnc2ViXzE3NDY3Nzk2MjM6MTc0Njc4MzIyM19WNA)
 
-1. ## **Add material background**
+## 1.  **Add material background**
 
 Modify `index.html `to add a `XR_ENV `-specific classname to `< html > `:
 
@@ -365,7 +365,7 @@ html.is-spatial {
 
 ![img](https://bytedance.larkoffice.com/space/api/box/stream/download/asynccode/?code=OTRiM2UyMTU4N2ExYzUzYjg0NWNkZjMxYWQ0NTliYjNfY2tIbWo4UXFXcWxKVmYwU0VJaVA0bWJyV0ZuRDdCZlpfVG9rZW46UUNRdWIyVmNZb0UySzF4Qko4cHU5bXhqczNYXzE3NDY3Nzk2MjM6MTc0Njc4MzIyM19WNA)![img](https://bytedance.larkoffice.com/space/api/box/stream/download/asynccode/?code=NWQ3ZjVkNDQzMWE2MTVkZGMyNmI4YzBkYmI0YWMwMjZfTVdPdWd2M3pYZkUyT1dPWXg0SGtVT293S1FuY3l0eEdfVG9rZW46VWhrV2I2dXk3b2JKYXR4VXhVRnVVOHFjc1NnXzE3NDY3Nzk2MjM6MTc0Njc4MzIyM19WNA)
 
-1. ## **Uplift "spatialized element**
+## 1.  **Uplift "spatialized element**
 
 Set the description information in count-card as "spatialized element".
 
@@ -421,7 +421,7 @@ In `src/index.css `'s `XR_ENV `mode special style, do some Z-axis movement and r
 
 ![img](https://bytedance.larkoffice.com/space/api/box/stream/download/asynccode/?code=Y2M2MGQ4NjZiZDQ3ZGU5ZmE3Njk2YzlkMjkyZTMyMzZfUUdWZmZZOE0wdUxZYVF0ZUplSndibXpxYUMwOHNTRDhfVG9rZW46TTdrb2JFTGZxb3ZTZ2t4NUJwYnVjUWJJczNiXzE3NDY3Nzk2MjM6MTc0Njc4MzIyM19WNA)![img](https://bytedance.larkoffice.com/space/api/box/stream/download/asynccode/?code=ZDM4MzE5MjI1M2UxZDgyZTMwZGViMWFmNTI2ZWYwZjFfcFBtaVF0MFkyOWxCUkVLZEhUVGlUOWgxN3h4VXlJdktfVG9rZW46Qmt4VGJRSXBhb1RFSmN4VEx4MXVodXF4c0hHXzE3NDY3Nzk2MjM6MTc0Njc4MzIyM19WNA)
 
-1. ## **Add static 3D content**
+## 1.  **Add static 3D content**
 
 > To be supplemented
 
