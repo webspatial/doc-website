@@ -20,15 +20,20 @@ function TagItem({
   label,
   description,
   color,
+  backgroundColor,
 }: {
   label: string;
   description: string;
   color: string;
+  backgroundColor: string;
 }) {
   return (
-    <li className={styles.tag} title={description}>
-      <span className={styles.textLabel}>{label.toLowerCase()}</span>
-      <span className={styles.colorLabel} style={{backgroundColor: color}} />
+    <li
+      className={styles.tag}
+      title={description}
+      style={{color, backgroundColor}}>
+      <span className={styles.textLabel}>{label}</span>
+      {/* <span className={styles.colorLabel} style={{backgroundColor: color}} /> */}
     </li>
   );
 }
@@ -44,6 +49,8 @@ function ShowcaseCardTag({tags}: {tags: TagType[]}) {
   return (
     <>
       {tagObjectsSorted.map((tagObject, index) => {
+        // escape for empty label
+        if (!tagObject.label) return null;
         return <TagItem key={index} {...tagObject} />;
       })}
     </>
@@ -70,14 +77,25 @@ function ShowcaseCard({user}: {user: User}) {
       <div className="card__body">
         <div className={clsx(styles.showcaseCardHeader)}>
           <Heading as="h4" className={styles.showcaseCardTitle}>
-            <Link href={user.website} className={styles.showcaseCardLink}>
-              {user.title}
-            </Link>
+            <span className={styles.showcaseCardLink}>{user.title}</span>
           </Heading>
-          {user.tags.includes('favorite') && (
+          {/* {user.tags.includes('favorite') && (
             <FavoriteIcon size="medium" style={{marginRight: '0.25rem'}} />
+          )} */}
+          {user.source && (
+            // todo: replace icon
+            <Link
+              href={user.website}
+              className={clsx(
+                'button button--secondary button--sm',
+                styles.showcaseCardSrcBtn,
+              )}>
+              <Translate id="showcase.card.sourceLink">website</Translate>
+            </Link>
           )}
           {user.source && (
+            // todo: githubIcon
+
             <Link
               href={user.source}
               className={clsx(

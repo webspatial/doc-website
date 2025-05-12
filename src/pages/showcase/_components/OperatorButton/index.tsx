@@ -30,7 +30,12 @@ export default function OperatorButton() {
           }
         }}
       />
-      <label htmlFor={id} className={clsx(styles.checkboxLabel, 'shadow--md')}>
+      <label
+        htmlFor={id}
+        className={clsx(
+          styles.checkboxLabel,
+          //  'shadow--md'
+        )}>
         {/* eslint-disable @docusaurus/no-untranslated-text */}
         <span className={styles.checkboxLabelOr}>OR</span>
         <span className={styles.checkboxLabelAnd}>AND</span>

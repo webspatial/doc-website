@@ -10,7 +10,7 @@
 import {translate} from '@docusaurus/Translate';
 import {sortBy} from '@site/src/utils/jsUtils';
 
-let require = (xxx)=> "https://placehold.co/600x400"
+let require = (xxx) => 'https://placehold.co/600x400';
 /*
  * ADD YOUR SITE TO THE DOCUSAURUS SHOWCASE
  *
@@ -39,25 +39,25 @@ let require = (xxx)=> "https://placehold.co/600x400"
 // Available tags to assign to a showcase site
 // Please choose all tags that you think might apply.
 // We'll remove inappropriate tags, but it's less likely that we add tags.
-export type TagType =
-  // DO NOT USE THIS TAG: we choose sites to add to favorites
-  | 'favorite'
-  // For open-source sites, a link to the source code is required.
-  // The source should be the *website's* source, not the project's source!
-  | 'opensource'
-  | 'product'
-  // Feel free to add the 'design' tag as long as there's _some_ level of
-  // CSS/swizzling.
-  | 'design'
-  // Site must have more than one locale.
-  | 'i18n'
-  | 'versioning'
-  // Large sites are defined as those with > 200 pages, excluding versions.
-  | 'large'
-  | 'meta'
-  | 'personal'
-  // Right-to-left direction.
-  | 'rtl';
+export type TagType = string;
+//   // DO NOT USE THIS TAG: we choose sites to add to favorites
+//   | 'favorite'
+//   // For open-source sites, a link to the source code is required.
+//   // The source should be the *website's* source, not the project's source!
+//   | 'opensource'
+//   | 'product'
+//   // Feel free to add the 'design' tag as long as there's _some_ level of
+//   // CSS/swizzling.
+//   | 'design'
+//   // Site must have more than one locale.
+//   | 'i18n'
+//   | 'versioning'
+//   // Large sites are defined as those with > 200 pages, excluding versions.
+//   | 'large'
+//   | 'meta'
+//   | 'personal'
+//   // Right-to-left direction.
+//   | 'rtl';
 
 // Add sites to this list
 // prettier-ignore
@@ -2399,6 +2399,7 @@ export type Tag = {
   label: string;
   description: string;
   color: string;
+  backgroundColor?: string;
 };
 
 export const Tags: {[type in TagType]: Tag} = {
@@ -2409,7 +2410,8 @@ export const Tags: {[type in TagType]: Tag} = {
         'Our favorite Docusaurus sites that you must absolutely check out!',
       id: 'showcase.tag.favorite.description',
     }),
-    color: '#e9669e',
+    color: '#E9669F',
+    backgroundColor: '#E966661A',
   },
 
   opensource: {
@@ -2419,6 +2421,7 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'showcase.tag.opensource.description',
     }),
     color: '#39ca30',
+    backgroundColor: '#30CA591A',
   },
 
   product: {
@@ -2427,7 +2430,8 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'Docusaurus sites associated to a commercial product!',
       id: 'showcase.tag.product.description',
     }),
-    color: '#dfd545',
+    color: '#0AAFC1',
+    backgroundColor: '#3087CA1A',
   },
 
   design: {
@@ -2437,7 +2441,8 @@ export const Tags: {[type in TagType]: Tag} = {
         'Beautiful Docusaurus sites, polished and standing out from the initial template!',
       id: 'showcase.tag.design.description',
     }),
-    color: '#a44fb7',
+    color: '#303ACA',
+    backgroundColor: '#3054CA1A',
   },
 
   i18n: {
@@ -2447,57 +2452,58 @@ export const Tags: {[type in TagType]: Tag} = {
         'Translated Docusaurus sites using the internationalization support with more than 1 locale.',
       id: 'showcase.tag.i18n.description',
     }),
-    color: '#127f82',
+    color: '#8C30CA',
+    backgroundColor: '#6E30CA1A',
   },
 
-  versioning: {
-    label: translate({message: 'Versioning'}),
-    description: translate({
-      message:
-        'Docusaurus sites using the versioning feature of the docs plugin to manage multiple versions.',
-      id: 'showcase.tag.versioning.description',
-    }),
-    color: '#fe6829',
-  },
+  // versioning: {
+  //   label: translate({message: 'Versioning'}),
+  //   description: translate({
+  //     message:
+  //       'Docusaurus sites using the versioning feature of the docs plugin to manage multiple versions.',
+  //     id: 'showcase.tag.versioning.description',
+  //   }),
+  //   color: '#127f82',
+  // },
 
-  large: {
-    label: translate({message: 'Large'}),
-    description: translate({
-      message:
-        'Very large Docusaurus sites, including many more pages than the average!',
-      id: 'showcase.tag.large.description',
-    }),
-    color: '#8c2f00',
-  },
+  // large: {
+  //   label: translate({message: 'Large'}),
+  //   description: translate({
+  //     message:
+  //       'Very large Docusaurus sites, including many more pages than the average!',
+  //     id: 'showcase.tag.large.description',
+  //   }),
+  //   color: '#8c2f00',
+  // },
 
-  meta: {
-    label: translate({message: 'Meta'}),
-    description: translate({
-      message: 'Docusaurus sites of Meta (formerly Facebook) projects',
-      id: 'showcase.tag.meta.description',
-    }),
-    color: '#4267b2', // Facebook blue
-  },
+  // meta: {
+  //   label: translate({message: 'Meta'}),
+  //   description: translate({
+  //     message: 'Docusaurus sites of Meta (formerly Facebook) projects',
+  //     id: 'showcase.tag.meta.description',
+  //   }),
+  //   color: '#4267b2', // Facebook blue
+  // },
 
-  personal: {
-    label: translate({message: 'Personal'}),
-    description: translate({
-      message:
-        'Personal websites, blogs and digital gardens built with Docusaurus',
-      id: 'showcase.tag.personal.description',
-    }),
-    color: '#14cfc3',
-  },
+  // personal: {
+  //   label: translate({message: 'Personal'}),
+  //   description: translate({
+  //     message:
+  //       'Personal websites, blogs and digital gardens built with Docusaurus',
+  //     id: 'showcase.tag.personal.description',
+  //   }),
+  //   color: '#14cfc3',
+  // },
 
-  rtl: {
-    label: translate({message: 'RTL Direction'}),
-    description: translate({
-      message:
-        'Docusaurus sites using the right-to-left reading direction support.',
-      id: 'showcase.tag.rtl.description',
-    }),
-    color: '#ffcfc3',
-  },
+  // rtl: {
+  //   label: translate({message: 'RTL Direction'}),
+  //   description: translate({
+  //     message:
+  //       'Docusaurus sites using the right-to-left reading direction support.',
+  //     id: 'showcase.tag.rtl.description',
+  //   }),
+  //   color: '#ffcfc3',
+  // },
 };
 
 export const TagList = Object.keys(Tags) as TagType[];

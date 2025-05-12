@@ -33,26 +33,28 @@ function TagCircleIcon({color, style}: {color: string; style?: CSSProperties}) {
 }
 
 function ShowcaseTagListItem({tag}: {tag: TagType}) {
-  const {label, description, color} = Tags[tag];
+  const {label, description, color, backgroundColor} = Tags[tag];
   return (
     <li className={styles.tagListItem}>
       <ShowcaseTagSelect
         tag={tag}
+        color={color}
+        backgroundColor={backgroundColor ?? 'white'}
         label={label}
         description={description}
-        icon={
-          tag === 'favorite' ? (
-            <FavoriteIcon size="small" style={{marginLeft: 8}} />
-          ) : (
-            <TagCircleIcon
-              color={color}
-              style={{
-                backgroundColor: color,
-                marginLeft: 8,
-              }}
-            />
-          )
-        }
+        // icon={
+        //   tag === 'favorite' ? (
+        //     <FavoriteIcon size="small" style={{marginLeft: 8}} />
+        //   ) : (
+        //     <TagCircleIcon
+        //       color={color}
+        //       style={{
+        //         backgroundColor: color,
+        //         marginLeft: 8,
+        //       }}
+        //     />
+        //   )
+        // }
       />
     </li>
   );

@@ -35,7 +35,9 @@ interface Props extends ComponentProps<'input'> {
   tag: TagType;
   label: string;
   description: string;
-  icon: ReactElement<ComponentProps<'svg'>>;
+  icon?: ReactElement<ComponentProps<'svg'>>;
+
+  backgroundColor: string;
 }
 
 export default function ShowcaseTagSelect({
@@ -43,6 +45,8 @@ export default function ShowcaseTagSelect({
   label,
   description,
   tag,
+  color,
+  backgroundColor,
   ...rest
 }: Props): ReactNode {
   const id = useId();
@@ -62,7 +66,17 @@ export default function ShowcaseTagSelect({
         }}
         {...rest}
       />
-      <label htmlFor={id} className={styles.checkboxLabel} title={description}>
+      <label
+        htmlFor={id}
+        style={{
+          color: color,
+          backgroundColor: backgroundColor,
+          //@ts-ignore
+          '--border-color':color,
+          // '--ifm-color-secondary-darkest': color,
+        }}
+        className={styles.checkboxLabel}
+        title={description}>
         {label}
         {icon}
       </label>
