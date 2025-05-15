@@ -86,23 +86,13 @@ function ShowcaseCard({user}: {user: User}) {
             // todo: replace icon
             <Link
               href={user.website}
-              className={clsx(
-                'button button--secondary button--sm',
-                styles.showcaseCardSrcBtn,
-              )}>
-              <Translate id="showcase.card.sourceLink">website</Translate>
+            >
+              <div className={styles.linkIcon}></div>
             </Link>
           )}
           {user.source && (
-            // todo: githubIcon
-
-            <Link
-              href={user.source}
-              className={clsx(
-                'button button--secondary button--sm',
-                styles.showcaseCardSrcBtn,
-              )}>
-              <Translate id="showcase.card.sourceLink">source</Translate>
+            <Link href={user.source} style={{marginLeft: '4px'}}>
+              <div className={styles.sourceIcon}></div>
             </Link>
           )}
         </div>

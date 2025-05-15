@@ -7,19 +7,28 @@
 
 .showcaseCardImage {
   overflow: hidden;
-  height: 150px;
   border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  aspect-ratio: 16 / 9; 
 }
 
 .showcaseCardHeader {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .showcaseCardTitle {
   margin-bottom: 0;
   flex: 1 1 auto;
+  min-width: 0;
+  margin-right: 16px;
+}
+
+.showcaseCardLink {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .showcaseCardTitle a {
@@ -49,6 +58,16 @@
   padding-right: 12px;
   border: none;
 }
+.linkIcon {
+  width: 24px;
+  height: 24px;
+  background: url('./img/link-icon.svg');
+}
+.sourceIcon {
+  width: 24px;
+  height: 24px;
+  background: url('./img/source-icon.svg');
+}
 
 .showcaseCardSrcBtn:focus-visible {
   background-color: var(--ifm-color-secondary-dark);
@@ -64,8 +83,9 @@
 }
 
 .showcaseCardBody {
-  font-size: smaller;
-  line-height: 1.66;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #86909C;
 }
 
 .cardFooter {

@@ -24,12 +24,12 @@ const SUBMIT_URL = 'https://github.com/facebook/docusaurus/discussions/7826';
 
 function ShowcaseHeader() {
   return (
-    <section className="margin-top--lg margin-bottom--lg text--center">
+    <section className="markdown margin-top--lg margin-bottom--lg text--center">
       <Heading as="h1">{TITLE}</Heading>
       <p>{DESCRIPTION}</p>
       <Link className="button button--primary" to={SUBMIT_URL}>
         <Translate id="showcase.header.button">
-          🙏 Please add your site
+          Please add your site
         </Translate>
       </Link>
     </section>
