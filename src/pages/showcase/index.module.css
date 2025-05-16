@@ -1,0 +1,14 @@
+.title {
+  margin-bottom: 8px !important;
+}
+
+.button {
+  padding-top: 8.5px;
+  padding-bottom: 8.5px;
+  border-radius: 30px;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 28px;
+  height: 48px;
+  /* line-height: inherit; */
+}

@@ -5,6 +5,18 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+@font-face {
+  font-family: 'PICOSansVFESC';
+  src: url('fonts/PICOSansVFESC.ttf') format('truetype');
+  font-display: swap;
+}
+
+body {
+  * {
+    font-family: 'PICOSansVFESC', sans-serif;
+  }
+}
+
 @import url('react-medium-image-zoom/dist/styles.css');
 
 :root {
@@ -48,7 +60,7 @@
     --ifm-col-width: 200px;
   }
 
-  .theme-doc-footer-edit-meta-row>.col{
+  .theme-doc-footer-edit-meta-row > .col {
     padding-left: 32px;
   }
 }
@@ -94,6 +106,7 @@
     --ifm-code-padding-horizontal: 0.4rem;
     --ifm-code-background: #f2f3f5;
     font-size: 12px;
+    line-height: 175%;
   }
 
   pre {
@@ -108,6 +121,7 @@
   }
   > p {
     margin-bottom: 8px;
+    line-height: 175%;
   }
 
   .theme-code-block {
