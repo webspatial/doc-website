@@ -49,6 +49,11 @@ const typedocSidebar: SidebarsConfig = { items: [
         "type": "doc",
         "id": "api-react/interfaces/SpatialViewRef",
         "label": "SpatialViewRef"
+      },
+      {
+        "type": "doc",
+        "id": "api-react/interfaces/WindowContainerOptions",
+        "label": "WindowContainerOptions"
       }
     ]
   },

@@ -12,7 +12,7 @@ Defined in: [initScene.ts:4](https://github.com/webspatial/webspatial-sdk/blob/m
 
 ### callback
 
-(`pre`) => `WindowContainerOptions`
+(`pre`) => [`WindowContainerOptions`](../interfaces/WindowContainerOptions.md)
 
 ## Returns
 

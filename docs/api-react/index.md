@@ -13,6 +13,7 @@
 - [ModelProps](interfaces/ModelProps.md)
 - [SpatialReactComponentProps](interfaces/SpatialReactComponentProps.md)
 - [SpatialViewRef](interfaces/SpatialViewRef.md)
+- [WindowContainerOptions](interfaces/WindowContainerOptions.md)
 
 ## Type Aliases
 

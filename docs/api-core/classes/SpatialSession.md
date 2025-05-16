@@ -242,7 +242,7 @@ SpatialWindowContainer
 
 > **createWindowContext**(): `Promise`\<`null` \| `Window`\>
 
-Defined in: [SpatialSession.ts:395](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L395)
+Defined in: [SpatialSession.ts:399](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L399)
 
 Creates a window context object that is compatable with SpatialWindowComponent's setFromWindow API
 
@@ -258,7 +258,7 @@ window context
 
 > **dismissImmersiveSpace**(): `Promise`\<`void`\>
 
-Defined in: [SpatialSession.ts:340](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L340)
+Defined in: [SpatialSession.ts:344](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L344)
 
 Closes the immersive space
 
@@ -289,7 +289,7 @@ the window component corresponding to the js running on this page
 
 > **getCurrentWindowContainer**(): [`SpatialWindowContainer`](SpatialWindowContainer.md)
 
-Defined in: [SpatialSession.ts:369](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L369)
+Defined in: [SpatialSession.ts:373](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L373)
 
 Gets the current window container for the window
 [TODO] discuss what happens if it doesnt yet have a window container
@@ -306,7 +306,7 @@ the current window container for the window
 
 > **getImmersiveWindowContainer**(): `Promise`\<[`SpatialWindowContainer`](SpatialWindowContainer.md)\>
 
-Defined in: [SpatialSession.ts:350](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L350)
+Defined in: [SpatialSession.ts:354](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L354)
 
 Retreives the window container corresponding to the Immersive space
 
@@ -360,7 +360,7 @@ mesage to log
 
 > **openImmersiveSpace**(): `Promise`\<`void`\>
 
-Defined in: [SpatialSession.ts:335](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L335)
+Defined in: [SpatialSession.ts:339](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L339)
 
 Opens the immersive space
 
@@ -374,7 +374,7 @@ Opens the immersive space
 
 > **transaction**(`fn`): `Promise`\<`unknown`\>
 
-Defined in: [SpatialSession.ts:385](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L385)
+Defined in: [SpatialSession.ts:389](https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/SpatialSession.ts#L389)
 
 Start a transaction that queues up commands to submit them all at once to reduce ipc overhead
 

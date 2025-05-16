@@ -70,7 +70,7 @@ Defined in: [XRApp.ts:124](https://github.com/webspatial/webspatial-sdk/blob/mai
 
 ##### callback
 
-(`pre`) => `WindowContainerOptions`
+(`pre`) => [`WindowContainerOptions`](../interfaces/WindowContainerOptions.md)
 
 #### Returns
 
@@ -118,7 +118,7 @@ Defined in: [XRApp.ts:52](https://github.com/webspatial/webspatial-sdk/blob/main
 
 ##### cfg
 
-`WindowContainerOptions`
+[`WindowContainerOptions`](../interfaces/WindowContainerOptions.md)
 
 #### Returns
 
