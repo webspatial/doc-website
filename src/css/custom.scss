@@ -72,9 +72,13 @@ body {
   h1 {
     &:first-child {
       --ifm-h1-font-size: 36px;
+      margin-bottom: 80px;
     }
     --ifm-h1-font-size: 36px;
     line-height: 48px;
+    &:not(:first-child) {
+      margin-top: 80px;
+    }
   }
   h2 {
     --ifm-h2-font-size: 28px;
@@ -267,10 +271,11 @@ a.table-of-contents__link {
 
 .table-of-contents {
   margin: 0 0 0 16px;
+  padding-top: 0;
+  padding-bottom: 0;
   li {
     // display: flex;
     // align-items: center;
-    height: 2em;
     margin: 0px;
     // line-height: 2rem;
     // border: solid 1px red;
