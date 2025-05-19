@@ -72,7 +72,7 @@ body {
   h1 {
     &:first-child {
       --ifm-h1-font-size: 36px;
-      margin-bottom: 80px;
+      margin-bottom: 20px;
     }
     --ifm-h1-font-size: 36px;
     line-height: 48px;
@@ -124,8 +124,18 @@ body {
     --ifm-spacing-vertical: 24px;
   }
   > p {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     line-height: 175%;
+    code {
+      padding: 5px;
+    }
+  }
+
+  ul {
+    margin-bottom: 12px;
+    code {
+      padding: 5px;
+    }
   }
 
   .theme-code-block {
@@ -270,7 +280,7 @@ a.table-of-contents__link {
 }
 
 .table-of-contents {
-  margin: 0 0 0 16px;
+  margin: 20px 0 0 16px;
   padding-top: 0;
   padding-bottom: 0;
   li {
@@ -515,4 +525,9 @@ html[data-red-border] div#__docusaurus {
 /* .menu__link:hover,  */
 .menu__caret:hover {
   background: none;
+}
+
+// version banner
+.theme-doc-version-banner{
+  display: none;
 }
