@@ -48,7 +48,7 @@ body {
 }
 
 // mdx container
-.container > .row {
+main .container > .row {
   .col:first-child {
     padding: 0 56px;
   }
@@ -528,6 +528,6 @@ html[data-red-border] div#__docusaurus {
 }
 
 // version banner
-.theme-doc-version-banner{
+.theme-doc-version-banner {
   display: none;
 }
