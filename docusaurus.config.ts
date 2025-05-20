@@ -7,6 +7,7 @@ import xGithubTheme from './src/css/xGithubTheme';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  baseUrl: '/doc-website/',
   plugins: [
     'docusaurus-plugin-sass',
     [
