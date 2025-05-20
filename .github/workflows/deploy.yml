@@ -24,6 +24,10 @@ jobs:
           ref: main
           path: XRSDK
           token: ${{ secrets.PAT_TOKEN }}
+      
+      - name: Checkout specific commit
+        working-directory: XRSDK
+        run: git checkout c7b7aef7fa761d33c34d51d078cc5cb2882f8228
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
