@@ -531,3 +531,79 @@ html[data-red-border] div#__docusaurus {
 .theme-doc-version-banner {
   display: none;
 }
+
+// blog
+.main-wrapper article.margin-bottom--xl {
+  margin-bottom: 48px !important;
+  &::after {
+    content: ' ';
+    border-bottom: solid 1px #e5e6eb;
+    display: block;
+    // height: 80px;// 87px
+    height: 41px;
+    // background-color: #f0f0f0; /* 设置背景颜色 */
+    // margin-top: 20px; /* 设置与前面内容的间距 */
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    + div {
+      font-size: 12px;
+      color: #86909c;
+    }
+  }
+
+  .markdown {
+    font-size: 14px;
+    color: #4e5969;
+
+    p{
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .margin-top--md.margin-bottom--sm.row {
+    display: none;
+  }
+  footer {
+    margin-top: 20px;
+    > div {
+      > b {
+        display: none;
+      }
+
+      ul {
+        margin-left: 0 !important;
+      }
+    }
+    > div:nth-of-type(2) {
+      display: none;
+    }
+    li a {
+      color:#86909C;
+      border-color: #e5e6eb;
+      padding:3.7px 8px;
+      font-size: 14px;
+    }
+  }
+}
+
+.main-wrapper {
+  aside > nav {
+    margin-left: 40px;
+    > div {
+      > h3,
+      a {
+        color: #4e5969;
+      }
+      a {
+        font-size: 14px;
+      }
+      &:nth-child(n + 2) {
+        margin-top: 42px;
+      }
+    }
+  }
+}
