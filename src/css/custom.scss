@@ -675,3 +675,92 @@ html[data-red-border] div#__docusaurus {
     }
   }
 }
+
+body .DocSearch {
+  --docsearch-spacing: 24px;
+
+  &-Modal {
+    --docsearch-modal-background: white;
+    background: var(--docsearch-modal-background);
+    border-radius: 16px;
+  }
+  &-Footer {
+    border-radius: 0 0 16px 16px;
+  }
+  .DocSearch-Form {
+    border-radius: 8px;
+    padding: 0 16px;
+    svg {
+      path {
+        stroke: #c9cdd4;
+      }
+    }
+    .DocSearch-Input {
+      &::placeholder {
+        color: #c9cdd4;
+      }
+      color: #1d2129;
+    }
+  }
+  .DocSearch-Hit-source {
+    color: #4e5969;
+  }
+
+  .DocSearch-Hit {
+    padding-bottom: 8px;
+    a {
+      border-radius: 8px;
+      padding-left: 16px;
+      box-shadow: unset;
+      border: solid 1px #e5e6eb;
+      // background-color: #F2F3F5;
+      .DocSearch-Hit-Container {
+        padding-right: 16px;
+      }
+    }
+
+    &[aria-selected='true'] {
+      .DocSearch-Hit-title {
+        color: #ffffff;
+      }
+    }
+    &[aria-selected='false'] {
+      .DocSearch-Hit-title {
+        color: #1d2129;
+      }
+      .DocSearch-Hit-path {
+        color: #86909c;
+        font-weight: 400;
+      }
+      // .DocSearch-Hit-icon svg path {
+      //   stroke: #c9cdd4;
+      // }
+    }
+  }
+
+  .DocSearch-HitsFooter {
+    a {
+      color: #86909c;
+      border-bottom: unset;
+      &:hover {
+        color: var(--ifm-color-primary);
+      }
+    }
+  }
+  .DocSearch-Footer {
+    box-shadow: unset;
+    border-top: 1px solid #e5e6eb;
+
+    .DocSearch-Commands {
+      .DocSearch-Commands-Key {
+        box-shadow: unset;
+        background: transparent;
+        border: 1px solid #e5e6eb;
+      }
+    }
+
+    .DocSearch-Label {
+      color: #86909c;
+    }
+  }
+}
