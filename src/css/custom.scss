@@ -63,6 +63,17 @@ main .container > .row {
   .theme-doc-footer-edit-meta-row > .col {
     padding-left: 32px;
   }
+  > div.col:first-child {
+    max-width: unset !important;
+    padding: 0 80px;
+    h2 a {
+      color: #1d2129;
+      font-size: 20px;
+      &:hover {
+        color: var(--ifm-color-primary);
+      }
+    }
+  }
 }
 /* MDX headers */
 .markdown h1:first-child {
@@ -485,17 +496,6 @@ html[data-red-border] div#__docusaurus {
 
 /* custom css */
 
-.myDocCardGrid {
-  display: grid; /* CSS Grid container */ /* :contentReference[oaicite:1]{index=1} */
-  gap: var(--ifm-card-vertical-spacing) /* vertical gutter */
-    /* :contentReference[oaicite:2]{index=2} */
-    var(--ifm-card-horizontal-spacing); /* horizontal gutter */ /* :contentReference[oaicite:3]{index=3} */
-  grid-template-columns:                                  /* responsive columns */           /* :contentReference[oaicite:4]{index=4} */ repeat(
-    auto-fill,
-    minmax(15rem, 1fr)
-  ); /* identical to theme’s min-width */ /* :contentReference[oaicite:5]{index=5} */
-}
-
 .menu__link {
   line-height: 22px;
   /* line-height: 1.75; */
@@ -633,7 +633,7 @@ html[data-red-border] div#__docusaurus {
     }
   }
 
-  header{
+  header {
     margin-bottom: 32px;
   }
 

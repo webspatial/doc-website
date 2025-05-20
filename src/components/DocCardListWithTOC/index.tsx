@@ -1,5 +1,6 @@
 import React from 'react';
 import DocCardWithTOC from '@site/src/components/DocCardWithTOC';
+import styles from './style.module.scss';
 
 // Create a require-context for all .md files in docs/api/classes
 // directory: (directory, useSubdirectories, regex)
@@ -62,8 +63,8 @@ const reqObj = {
     false,
     /\.md$/,
   ),
-   //@ts-ignore
-   reactFunctions: require.context(
+  //@ts-ignore
+  reactFunctions: require.context(
     // relative to this file, adjust path if necessary
     '../../../docs/api-react/functions',
     false,
@@ -76,7 +77,7 @@ export default function CardList({path}: {path: keyof typeof reqObj}) {
 
   const modules = reqObj[path].keys().map((filePath) => reqObj[path](filePath));
   return (
-    <div className="myDocCardGrid">
+    <div className={styles.myDocCardGrid}>
       {modules.map((mod, idx) => (
         // `mod` is the module object; default export is the MDX component
         <DocCardWithTOC key={idx} item={mod} />

@@ -3,7 +3,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
-import styles from './styles.module.css'; // ← 本地 CSS Module
+import styles from './styles.module.scss';
 
 interface TOCItem {
   value: string;
@@ -34,13 +34,15 @@ const DocCardWithTOC: React.FC<DocCardWithTOCProps> = ({item}) => {
         <Link to={permalink}>{title}</Link>
       </Heading>
 
-      <div className="card__body">
+      <div className={clsx('card__body', styles.body)}>
         <ul className={styles.myDocCardList}>
           {toc
             .filter((tocItem) => tocItem.level === 3)
             .map((tocItem) => (
               <li key={tocItem.id}>
-                <Link to={`${permalink}#${tocItem.id}`}>{tocItem.value.replace(/\(\)$/, '')}</Link>
+                <Link to={`${permalink}#${tocItem.id}`}>
+                  {tocItem.value.replace(/\(\)$/, '')}
+                </Link>
               </li>
             ))}
         </ul>
