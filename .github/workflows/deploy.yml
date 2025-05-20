@@ -19,14 +19,9 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: webspatial/webspatial-sdk
-          ref: main
+          ref: c7b7aef7fa761d33c34d51d078cc5cb2882f8228
           path: XRSDK
           token: ${{ secrets.PAT_TOKEN }}
-      
-      - name: Checkout specific commit
-        run: |
-          cd XRSDK
-          git checkout c7b7aef7fa761d33c34d51d078cc5cb2882f8228
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
