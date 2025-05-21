@@ -15,12 +15,12 @@
   transition: all var(--ifm-transition-fast) ease;
   transition-property: border, box-shadow;
 
-  background-color: #f2f3f5;
+  background-color: var(--color-fill-2);
 
   .body {
     padding-left: 0;
     a {
-      color: #4e5969;
+      color: var(--color-text-2);
       font-size: 14px;
       &:hover {
         color: var(--ifm-color-primary);

@@ -20,6 +20,22 @@ body {
 @import url('react-medium-image-zoom/dist/styles.css');
 
 :root {
+  // tokens
+  --color-border-4: #86909c;
+  --color-border-3: #c9cdd4;
+  --color-border-2: #e5e6eb;
+  --color-border-1: #f2f3f5;
+
+  --color-fill-5: #4e5969;
+  --color-fill-4: #c9cdd4;
+  --color-fill-3: #e5e6eb;
+  --color-fill-2: #f2f3f5;
+  --color-fill-1: #f7f8fa;
+  --color-text-1: #1d2129;
+  --color-text-2: #4e5969;
+  --color-text-3: #86909c;
+  --color-text-4: #c9cdd4;
+
   --ifm-color-primary: #3491fa;
   --ifm-color-primary-dark: #1781f9;
   --ifm-color-primary-darker: #0879f9;
@@ -28,7 +44,7 @@ body {
   --ifm-color-primary-lighter: #60a9fb;
   --ifm-color-primary-lightest: #8cc1fc;
 
-  --ifm-heading-color: #1d2129;
+  --ifm-heading-color: var(--color-text-1);
 
   /*
    See css var + hsl color palette technique:
@@ -42,9 +58,25 @@ body {
   --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker) !important;
   --ifm-menu-color-active: var(--ifm-color-primary-darker) !important;
   /* menu color */
-  --ifm-menu-color: #4e5969 !important;
-  --ifm-menu-color-active: #4e5969;
+  --ifm-menu-color: var(--color-fill-5) !important;
+  --ifm-menu-color-active: var(--color-fill-5);
   --ifm-menu-link-sublist-icon: url('../img/arrow.svg');
+}
+
+[data-theme='dark'] {
+  --color-border-4: rgba(245, 247, 250, 0.6);
+  --color-border-3: rgba(245, 247, 250, 0.4);
+  --color-border-2: rgba(245, 247, 250, 0.3);
+  --color-border-1: rgba(245, 247, 250, 0.2);
+  --color-fill-5: rgba(245, 247, 250, 0.1);
+  --color-fill-4: rgba(245, 247, 250, 0.16);
+  --color-fill-3: rgba(245, 247, 250, 0.3);
+  --color-fill-2: rgba(245, 247, 250, 0.4);
+  --color-fill-1: rgba(245, 247, 250, 0.7);
+  --color-text-1: rgba(255, 255, 255, 0.9);
+  --color-text-2: rgba(242, 246, 250, 0.7);
+  --color-text-3: rgba(242, 246, 250, 0.5);
+  --color-text-4: rgba(242, 246, 250, 0.3);
 }
 
 // mdx container
@@ -67,7 +99,7 @@ main .container > .row {
     max-width: unset !important;
     padding: 0 80px;
     h2 a {
-      color: #1d2129;
+      color: var(--color-text-1);
       font-size: 20px;
       &:hover {
         color: var(--ifm-color-primary);
@@ -112,14 +144,14 @@ main .container > .row {
     line-height: 22px;
     margin-top: 24px;
   }
-  color: #4e5969;
+  color: var(--color-text-2);
 
   code {
     border: none;
     border-radius: 3px;
     --ifm-code-padding-vertical: 0.4rem;
     --ifm-code-padding-horizontal: 0.4rem;
-    --ifm-code-background: #f2f3f5;
+    --ifm-code-background: var(--color-fill-2);
     font-size: 12px;
     line-height: 175%;
   }
@@ -128,10 +160,10 @@ main .container > .row {
     --ifm-pre-border-radius: 4px;
   }
   blockquote {
-    --ifm-blockquote-color: #4e5969;
-    --ifm-blockquote-border-color: #e5e6eb;
+    --ifm-blockquote-color: var(--color-text-2);
+    --ifm-blockquote-border-color: var(--color-fill-3);
     border-left-width: 1px;
-    color: #86909c;
+    color: var(--color-text-3);
     --ifm-spacing-vertical: 24px;
   }
   > p {
@@ -205,13 +237,13 @@ main .container > .row {
     height: 16px;
     // padding: 8px;
     > path {
-      stroke: #86909c;
+      stroke: var(--color-text-3);
     }
   }
   .DocSearch-Button-Placeholder {
     font-size: 12px;
     font-weight: 500;
-    color: #86909c;
+    color: var(--color-text-3);
     line-height: 18px;
   }
 }
@@ -225,7 +257,7 @@ span.DocSearch-Button-Keys {
     width: 20px;
     height: 20px;
     font-size: 12px;
-    border: 0.63px #86909c solid;
+    border: 0.63px var(--color-text-3) solid;
     padding: 5px;
     border-radius: 5px;
     box-shadow: unset;
@@ -248,7 +280,7 @@ span.DocSearch-Button-Keys {
 
 // mdx
 .breadcrumbs__item {
-  --ifm-font-color-base: #86909c;
+  --ifm-font-color-base: var(--color-text-3);
   &--active .breadcrumbs__link {
     color: var(--ifm-font-color-base);
   }
@@ -259,8 +291,8 @@ span.DocSearch-Button-Keys {
   }
 }
 .badge--secondary {
-  color: #4e5969;
-  background-color: #f2f3f5;
+  color: var(--color-text-2);
+  background-color: var(--color-fill-2);
   font-weight: 500;
 }
 a.table-of-contents__link {
@@ -497,6 +529,7 @@ html[data-red-border] div#__docusaurus {
 /* custom css */
 
 .menu__link {
+  color: var(--color-text-2);
   line-height: 22px;
   /* line-height: 1.75; */
   font-size: 14px;
@@ -537,7 +570,7 @@ html[data-red-border] div#__docusaurus {
   margin-bottom: 48px !important;
   &::after {
     content: ' ';
-    border-bottom: solid 1px #e5e6eb;
+    border-bottom: solid 1px var(--color-fill-3);
     display: block;
     // height: 80px;// 87px
     height: 41px;
@@ -550,13 +583,13 @@ html[data-red-border] div#__docusaurus {
     line-height: 48px;
     + div {
       font-size: 12px;
-      color: #86909c;
+      color: var(--color-text-3);
     }
   }
 
   .markdown {
     font-size: 14px;
-    color: #4e5969;
+    color: var(--color-text-2);
 
     p {
       font-size: 16px;
@@ -582,8 +615,8 @@ html[data-red-border] div#__docusaurus {
       display: none;
     }
     li a {
-      color: #86909c;
-      border-color: #e5e6eb;
+      color: var(--color-text-3);
+      border-color: var(--color-fill-3);
       padding: 3.7px 8px;
       font-size: 14px;
     }
@@ -596,7 +629,7 @@ html[data-red-border] div#__docusaurus {
     > div {
       > h3,
       a {
-        color: #4e5969;
+        color: var(--color-text-2);
       }
       a {
         font-size: 14px;
@@ -626,8 +659,8 @@ html[data-red-border] div#__docusaurus {
       display: none;
     }
     li a {
-      color: #86909c;
-      border-color: #e5e6eb;
+      color: var(--color-text-3);
+      border-color: var(--color-fill-3);
       padding: 3.7px 8px;
       font-size: 14px;
     }
@@ -640,7 +673,7 @@ html[data-red-border] div#__docusaurus {
   .avatar {
     .avatar__name {
       a {
-        color: #4e5969;
+        color: var(--color-text-2);
         &:hover {
           color: var(--ifm-link-color);
         }
@@ -653,21 +686,21 @@ html[data-red-border] div#__docusaurus {
       --docusaurus-blog-social-icon-size: 14px;
 
       a[title='newsletter'] svg {
-        stroke: #4e5969;
+        stroke: var(--color-text-2);
         transform: scale(1.2);
         transform-origin: center;
       }
       a:not([title='newsletter']) {
         svg {
           path {
-            fill: #4e5969;
+            fill: var(--color-fill-5);
           }
         }
       }
 
       small {
         font-size: 12px;
-        color: #86909c;
+        color: var(--color-text-3);
         + div {
           margin-top: 2px;
         }
@@ -692,18 +725,18 @@ body .DocSearch {
     padding: 0 16px;
     svg {
       path {
-        stroke: #c9cdd4;
+        stroke: var(--color-fill-4);
       }
     }
     .DocSearch-Input {
       &::placeholder {
-        color: #c9cdd4;
+        color: var(--color-fill-4);
       }
-      color: #1d2129;
+      color: var(--color-text-1);
     }
   }
   .DocSearch-Hit-source {
-    color: #4e5969;
+    color: var(--color-text-2);
   }
 
   .DocSearch-Hit {
@@ -712,8 +745,8 @@ body .DocSearch {
       border-radius: 8px;
       padding-left: 16px;
       box-shadow: unset;
-      border: solid 1px #e5e6eb;
-      // background-color: #F2F3F5;
+      border: solid 1px var(--color-fill-3);
+      // background-color: var(--color-fill-2);
       .DocSearch-Hit-Container {
         padding-right: 16px;
       }
@@ -726,21 +759,21 @@ body .DocSearch {
     }
     &[aria-selected='false'] {
       .DocSearch-Hit-title {
-        color: #1d2129;
+        color: var(--color-text-1);
       }
       .DocSearch-Hit-path {
-        color: #86909c;
+        color: var(--color-text-3);
         font-weight: 400;
       }
       // .DocSearch-Hit-icon svg path {
-      //   stroke: #c9cdd4;
+      //   stroke: var(--color-fill-4);
       // }
     }
   }
 
   .DocSearch-HitsFooter {
     a {
-      color: #86909c;
+      color: var(--color-text-3);
       border-bottom: unset;
       &:hover {
         color: var(--ifm-color-primary);
@@ -749,18 +782,18 @@ body .DocSearch {
   }
   .DocSearch-Footer {
     box-shadow: unset;
-    border-top: 1px solid #e5e6eb;
+    border-top: 1px solid var(--color-fill-3);
 
     .DocSearch-Commands {
       .DocSearch-Commands-Key {
         box-shadow: unset;
         background: transparent;
-        border: 1px solid #e5e6eb;
+        border: 1px solid var(--color-fill-3);
       }
     }
 
     .DocSearch-Label {
-      color: #86909c;
+      color: var(--color-text-3);
     }
   }
 }
