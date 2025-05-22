@@ -10,11 +10,24 @@
   src: url('fonts/PICOSansVFESC.ttf') format('truetype');
   font-display: swap;
 }
-
-body {
-  * {
-    font-family: 'PICOSansVFESC', sans-serif;
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  --ifm-heading-font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
   }
+}
+body {
+  // * {
+    // font-family: 'PICOSansVFESC', sans-serif;
+    // font-family: Inter, sans-serif;
+  // }
 }
 
 @import url('react-medium-image-zoom/dist/styles.css');

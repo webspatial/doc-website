@@ -7,6 +7,22 @@ import xGithubTheme from './src/css/xGithubTheme';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://rsms.me/',
+      },
+    },
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://rsms.me/inter/inter.css',
+      type: 'text/css',
+    },
+  ],
   plugins: [
     'docusaurus-plugin-sass',
     [
