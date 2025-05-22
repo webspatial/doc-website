@@ -2,7 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Options as IdealImageOptions} from '@docusaurus/plugin-ideal-image';
-import xGithubTheme from './src/css/xGithubTheme';
+import xGithubTheme, {emptyTheme} from './src/css/xGithubTheme';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -43,71 +43,71 @@ const config: Config = {
         disableInDev: true,
       } satisfies IdealImageOptions,
     ],
-    [
-      'docusaurus-plugin-typedoc',
+    // [
+    //   'docusaurus-plugin-typedoc',
 
-      // Options
-      {
-        id: 'core-sdk',
-        // ── begin explicit source-link settings ──
+    //   // Options
+    //   {
+    //     id: 'core-sdk',
+    //     // ── begin explicit source-link settings ──
 
-        // Ensure TypeDoc always generates links, even if Git auto-detection is off
-        disableGit: true,
+    //     // Ensure TypeDoc always generates links, even if Git auto-detection is off
+    //     disableGit: true,
 
-        // Template for linking to GitHub.
-        // {path} is the file path under the SDK repo, {line} the line number.
-        sourceLinkTemplate:
-          'https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/{path}#L{line}',
+    //     // Template for linking to GitHub.
+    //     // {path} is the file path under the SDK repo, {line} the line number.
+    //     sourceLinkTemplate:
+    //       'https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/{path}#L{line}',
 
-        // (Optional) override the revision—use your default branch or commit SHA
-        gitRevision: 'main',
-        cleanOutputDir: false,
+    //     // (Optional) override the revision—use your default branch or commit SHA
+    //     gitRevision: 'main',
+    //     cleanOutputDir: false,
 
-        // ── end explicit settings ──
-        entryPoints: ['./XRSDK/packages/core/src/index.ts'],
-        tsconfig: './XRSDK/packages/core/tsconfig.json',
-        out: 'docs/api-core',
-        sidebar: {
-          autoConfiguration: true,
-          pretty: true,
-          typescript: true,
-          deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
-        },
-      },
-    ],
-    [
-      'docusaurus-plugin-typedoc',
+    //     // ── end explicit settings ──
+    //     entryPoints: ['./XRSDK/packages/core/src/index.ts'],
+    //     tsconfig: './XRSDK/packages/core/tsconfig.json',
+    //     out: 'docs/api-core',
+    //     sidebar: {
+    //       autoConfiguration: true,
+    //       pretty: true,
+    //       typescript: true,
+    //       deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
+    //     },
+    //   },
+    // ],
+    // [
+    //   'docusaurus-plugin-typedoc',
 
-      // Options
-      {
-        id: 'react-sdk',
-        // ── begin explicit source-link settings ──
+    //   // Options
+    //   {
+    //     id: 'react-sdk',
+    //     // ── begin explicit source-link settings ──
 
-        // Ensure TypeDoc always generates links, even if Git auto-detection is off
-        disableGit: true,
+    //     // Ensure TypeDoc always generates links, even if Git auto-detection is off
+    //     disableGit: true,
 
-        // // Template for linking to GitHub.
-        // // {path} is the file path under the SDK repo, {line} the line number.
-        basePath: './XRSDK/packages/react/src',
-        sourceLinkTemplate:
-          'https://github.com/webspatial/webspatial-sdk/blob/main/react/src/{path}#L{line}',
+    //     // // Template for linking to GitHub.
+    //     // // {path} is the file path under the SDK repo, {line} the line number.
+    //     basePath: './XRSDK/packages/react/src',
+    //     sourceLinkTemplate:
+    //       'https://github.com/webspatial/webspatial-sdk/blob/main/react/src/{path}#L{line}',
 
-        // // (Optional) override the revision—use your default branch or commit SHA
-        gitRevision: 'main',
-        cleanOutputDir: false,
+    //     // // (Optional) override the revision—use your default branch or commit SHA
+    //     gitRevision: 'main',
+    //     cleanOutputDir: false,
 
-        // ── end explicit settings ──
-        entryPoints: ['./XRSDK/packages/react/src/index.ts'],
-        tsconfig: './XRSDK/packages/react/tsconfig.json',
-        out: 'docs/api-react',
-        sidebar: {
-          autoConfiguration: true,
-          pretty: true,
-          typescript: true,
-          deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
-        },
-      },
-    ],
+    //     // ── end explicit settings ──
+    //     entryPoints: ['./XRSDK/packages/react/src/index.ts'],
+    //     tsconfig: './XRSDK/packages/react/tsconfig.json',
+    //     out: 'docs/api-react',
+    //     sidebar: {
+    //       autoConfiguration: true,
+    //       pretty: true,
+    //       typescript: true,
+    //       deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
+    //     },
+    //   },
+    // ],
   ],
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
@@ -189,10 +189,11 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      // title: 'My Site',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo.dark.svg',
       },
       items: [
         {
@@ -208,15 +209,15 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Guide',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'apiSidebar',
-          // to: '/docs/api',
-          label: 'API',
-          position: 'left',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'apiSidebar',
+        //   // to: '/docs/api',
+        //   label: 'API',
+        //   position: 'left',
+        // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: 'showcase', label: 'Showcase', position: 'left'},
         {
@@ -273,9 +274,10 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
+      theme: emptyTheme,
+      darkTheme: emptyTheme,
       // theme: prismThemes.github,
-      theme: xGithubTheme,
-      darkTheme: prismThemes.dracula,
+      // darkTheme: prismThemes.gruvboxMaterialDark,
     },
   } satisfies Preset.ThemeConfig,
 };

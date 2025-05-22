@@ -11,4 +11,14 @@
   line-height: 28px;
   height: 48px;
   /* line-height: inherit; */
+  [data-theme='dark'] & {
+    color: white;
+  }
+}
+
+.backColor {
+  background-color: #f7f8fa;
+  html[data-theme='dark'] & {
+    background-color: #232525;
+  }
 }

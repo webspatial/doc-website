@@ -42,10 +42,13 @@ function ShowcaseHeader() {
 
 export default function Showcase(): ReactNode {
   return (
-    <Layout title={TITLE} description={DESCRIPTION}>
-      <main className="margin-vert--lg">
+    <Layout
+      title={TITLE}
+      description={DESCRIPTION}
+      wrapperClassName={styles.backColor}>
+      <main className="margin-vert--xl">
         <ShowcaseHeader />
-        <ShowcaseFilters />
+        {/* <ShowcaseFilters /> */}
         {/* <div
           style={{display: 'flex', marginLeft: 'auto'}}
           className="container">

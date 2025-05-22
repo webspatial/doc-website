@@ -3,6 +3,9 @@
 }
 .admonitionContent {
   color: var(--color-text-2);
+  p {
+    font-size: 14px;
+  }
 }
 :global(.alert--danger) {
   .admonitionHeading {
