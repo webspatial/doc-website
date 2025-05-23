@@ -86,7 +86,6 @@ function ShowcaseCard({user}: {user: User}) {
             <FavoriteIcon size="medium" style={{marginRight: '0.25rem'}} />
           )} */}
           {user.source && (
-            // todo: replace icon
             <Link href={user.website}>
               <div className={styles.linkIcon}>
                 <svg

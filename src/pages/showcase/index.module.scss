@@ -17,8 +17,15 @@
 }
 
 .backColor {
-  background-color: #f7f8fa;
+  background-color: var(--color-fill-1);
   html[data-theme='dark'] & {
     background-color: #232525;
+  }
+}
+
+.headerSection {
+  padding-top: 7rem;
+  html[data-theme='light'] & {
+    background: linear-gradient(to bottom, #ffffff, var(--color-fill-1));
   }
 }

@@ -133,6 +133,7 @@
   margin-right: 6px;
 }
 .cardWrap {
+  box-shadow: unset;
   [data-theme='dark'] & {
     background-color: var(--color-fill-1);
   }
