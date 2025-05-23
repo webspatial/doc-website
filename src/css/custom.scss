@@ -122,7 +122,7 @@ main .container > .row {
     padding-left: 32px;
   }
   > div.col:first-child {
-    max-width: calc(100% - 200px) !important;
+    // max-width: calc(100% - 200px) !important; // fixme: this will have impact on mobile layout
     padding: 0 80px;
     h2 a {
       color: var(--color-text-1);
