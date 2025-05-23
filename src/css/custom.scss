@@ -5,13 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-@import './codeblock.css';
-
-@font-face {
-  font-family: 'PICOSansVFESC';
-  src: url('fonts/PICOSansVFESC.ttf') format('truetype');
-  font-display: swap;
-}
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
@@ -24,12 +17,6 @@
   :root {
     font-family: InterVariable, sans-serif;
   }
-}
-body {
-  // * {
-  // font-family: 'PICOSansVFESC', sans-serif;
-  // font-family: Inter, sans-serif;
-  // }
 }
 
 @import url('react-medium-image-zoom/dist/styles.css');
@@ -105,34 +92,37 @@ body {
   --color-text-4: rgba(242, 246, 250, 0.3);
 }
 
-// mdx container
-main .container > .row {
-  .col:first-child {
-    padding: 0 56px;
-  }
-  .col {
-    padding-left: 0;
-  }
+// mdx container for PC
+@media (min-width: 997px) {
+  main .container > .row {
+    .col:first-child {
+      padding: 0 56px;
+    }
+    .col {
+      padding-left: 0;
+    }
 
-  .col--3 {
-    --ifm-col-width: 200px;
-  }
+    .col--3 {
+      --ifm-col-width: 200px;
+    }
 
-  .theme-doc-footer-edit-meta-row > .col {
-    padding-left: 32px;
-  }
-  > div.col:first-child {
-    // max-width: calc(100% - 200px) !important; // fixme: this will have impact on mobile layout
-    padding: 0 80px;
-    h2 a {
-      color: var(--color-text-1);
-      font-size: 20px;
-      &:hover {
-        color: var(--ifm-color-primary);
+    .theme-doc-footer-edit-meta-row > .col {
+      padding-left: 32px;
+    }
+    > div.col:first-child {
+      padding: 0 80px;
+      max-width: calc(100% - 200px) !important;
+      h2 a {
+        color: var(--color-text-1);
+        font-size: 20px;
+        &:hover {
+          color: var(--ifm-color-primary);
+        }
       }
     }
   }
 }
+
 /* MDX headers */
 .markdown h1:first-child {
   --ifm-h1-font-size: 36px;

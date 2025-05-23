@@ -12,14 +12,14 @@ const config: Config = {
       tagName: 'link',
       attributes: {
         rel: 'preconnect',
-        href: 'https://rsms.me/',
+        href: '//rsms.me/',
       },
     },
   ],
 
   stylesheets: [
     {
-      href: 'https://rsms.me/inter/inter.css',
+      href: '//rsms.me/inter/inter.css',
       type: 'text/css',
     },
   ],
@@ -166,7 +166,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.scss',
+          customCss: ['./src/css/codeblock.scss', './src/css/custom.scss'],
         },
       } satisfies Preset.Options,
     ],
