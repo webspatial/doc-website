@@ -14,7 +14,7 @@ import {Tags, TagList, type TagType, type User} from '@site/src/data/users';
 import {sortBy} from '@site/src/utils/jsUtils';
 import Heading from '@theme/Heading';
 import FavoriteIcon from '../FavoriteIcon';
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 function TagItem({
   label,
@@ -58,13 +58,14 @@ function ShowcaseCardTag({tags}: {tags: TagType[]}) {
 }
 
 function getCardImage(user: User): string {
-  return (
-    user.preview ??
-    // TODO make it configurable
-    `https://slorber-api-screenshot.netlify.app/${encodeURIComponent(
-      user.website,
-    )}/showcase`
-  );
+  return user.preview ?? '';
+  // return (
+  //   user.preview ??
+  //   // TODO make it configurable
+  //   `https://slorber-api-screenshot.netlify.app/${encodeURIComponent(
+  //     user.website,
+  //   )}/showcase`
+  // );
 }
 
 function ShowcaseCard({user}: {user: User}) {
@@ -75,7 +76,7 @@ function ShowcaseCard({user}: {user: User}) {
       className={clsx('card ', styles.cardWrap)} /**shadow--md */
     >
       <div className={clsx('card__image', styles.showcaseCardImage)}>
-        <Image img={image} alt={user.title} />
+        {image && <Image img={image} alt={user.title} />}
       </div>
       <div className="card__body">
         <div className={clsx(styles.showcaseCardHeader)}>
@@ -122,9 +123,11 @@ function ShowcaseCard({user}: {user: User}) {
         </div>
         <p className={styles.showcaseCardBody}>{user.description}</p>
       </div>
-      <ul className={clsx('card__footer', styles.cardFooter)}>
-        <ShowcaseCardTag tags={user.tags} />
-      </ul>
+      <div className={clsx(styles.cardFooterWrap)}>
+        <ul className={clsx('card__footer', styles.cardFooter)}>
+          <ShowcaseCardTag tags={user.tags} />
+        </ul>
+      </div>
     </li>
   );
 }

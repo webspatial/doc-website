@@ -39,7 +39,7 @@ function ShowcaseHeader() {
       <Link
         className={clsx('button button--primary', styles.button)}
         to={SUBMIT_URL}>
-        <Translate id="showcase.header.button">Please add your site</Translate>
+        <Translate id="showcase.header.button"> Add your site</Translate>
       </Link>
     </section>
   );

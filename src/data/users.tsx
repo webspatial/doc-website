@@ -10,7 +10,10 @@
 import {translate} from '@docusaurus/Translate';
 import {sortBy} from '@site/src/utils/jsUtils';
 
-let require = (xxx) => 'https://placehold.co/1600x900';
+let require = (x) => {
+  return null
+  // return 'https://placehold.co/1600x900';
+};
 /*
  * ADD YOUR SITE TO THE DOCUSAURUS SHOWCASE
  *
@@ -85,7 +88,7 @@ const Users: User[] = [
     preview: require('./showcase/algolia.png'),
     website: 'https://docsearch.algolia.com/',
     source: 'https://github.com/algolia/docsearch/tree/main/packages/website',
-    tags: ['favorite', 'opensource', 'product'],
+    tags: ['favorite', 'opensource', 'product','design', 'opensource'],
   },
   {
     title: 'Apache APISIX',
@@ -2411,7 +2414,7 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'showcase.tag.favorite.description',
     }),
     color: '#F77234',
-    backgroundColor: '#FFF3E8',
+    backgroundColor: '#FF7A0017',
   },
 
   opensource: {
@@ -2421,7 +2424,7 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'showcase.tag.opensource.description',
     }),
     color: '#00B42A',
-    backgroundColor: '#E8FFFB',
+    backgroundColor: '#00FFD317',
   },
 
   product: {
@@ -2431,7 +2434,7 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'showcase.tag.product.description',
     }),
     color: '#DEA616',
-    backgroundColor: '#FCF7D4',
+    backgroundColor: '#FFDE001F',
   },
 
   design: {
@@ -2442,7 +2445,7 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'showcase.tag.design.description',
     }),
     color: '#8845E5',
-    backgroundColor: '#F7F0FC',
+    backgroundColor: '#9000FF0D',
   },
 
   // i18n: {
