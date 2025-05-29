@@ -73,8 +73,19 @@
   height: 24px;
 }
 .sourceIcon {
+  box-sizing: content-box;
   width: 24px;
   height: 24px;
+  padding: 2px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 8px;
+  background: rgba(80, 80, 80, 0.32);
+  backdrop-filter: blur(6px);
+  svg{
+    transform: translateY(-1px);
+  }
 }
 
 .showcaseCardSrcBtn:focus-visible {
@@ -157,6 +168,7 @@
   margin-right: 6px;
 }
 .cardWrap {
+  position: relative;
   box-shadow: unset;
   [data-theme='dark'] & {
     background-color: var(--color-fill-1);
