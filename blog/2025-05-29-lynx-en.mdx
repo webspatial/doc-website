@@ -4,7 +4,7 @@ authors: yangshun
 tags: [docusaurus]
 ---
 import Tabs from '@theme/Tabs';
-import {default as Tab} from '@theme/TabItem';
+import TabItem from '@theme/TabItem';
 
 Today, we're excited to introduce Lynx, a family of technologies empowering developers to use their existing web skills to create truly native UIs for both mobile and web from a single codebase.  {/* truncate  */}Designed for diverse use cases and rich interactivity, Lynx delivers vibrant and engaging UIs for large-scale apps like TikTok, featuring a speedy, versatile rendering engine, performance-driven dual-threaded UI programming, modern Rust-based tooling, and more!
 We deeply appreciate all the prior arts that have shaped the field of cross-platform development, and aspire to contribute to this movement by open sourcing Lynx today, inviting more developers to build applications with more freedom and productivity.
@@ -140,7 +140,7 @@ Please refer to the [integrate-with-existing-apps](https://lynxjs.org/guide/star
 In your project's `build.gradle` or `build.gradle.kts` file, update the Lynx version as follows:
 
 <Tabs groupId='update-lynx-3-2-with-existing-app'>
-<Tab label="build.gradle" value="1">
+<TabItem label="build.gradle" value="1">
 
 ```groovy title=build.gradle {3-6}
 dependencies {
@@ -152,8 +152,8 @@ dependencies {
 }
 ```
 
-</Tab>
-<Tab label="build.gradle.kts" value="2">
+</TabItem>
+<TabItem label="build.gradle.kts" value="2">
 
 ```groovy title=build.gradle.kts {3-6}
 dependencies {
@@ -165,13 +165,13 @@ dependencies {
 }
 ```
 
-</Tab>
+</TabItem>
 </Tabs>
 
 In your project's `build.gradle` or `build.gradle.kts` file, update the LynxService version:
 
 <Tabs groupId='update-lynx-3-2-with-existing-app'>
-<Tab label="build.gradle" value="3">
+<TabItem label="build.gradle" value="3">
 
 ```groovy title=build.gradle {8-24}
 dependencies {
@@ -202,9 +202,9 @@ dependencies {
 }
 ```
 
-</Tab>
+</TabItem>
 
-<Tab label="build.gradle.kts" value="4">
+<TabItem label="build.gradle.kts" value="4">
 
 ```groovy title=build.gradle.kts {8-24}
 dependencies {
@@ -234,7 +234,7 @@ dependencies {
 }
 ```
 
-</Tab>
+</TabItem>
 </Tabs>
 
 ### iOS

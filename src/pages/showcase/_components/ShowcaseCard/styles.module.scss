@@ -43,7 +43,8 @@
 
 .showcaseCardTitle a {
   text-decoration: none;
-  color: #1d2129;
+  // color: #1d2129;
+  color: var(--color-text-1);
   font-weight: 600;
   background: linear-gradient(
       var(--ifm-color-primary),
@@ -83,7 +84,7 @@
   border-radius: 8px;
   background: rgba(80, 80, 80, 0.32);
   backdrop-filter: blur(6px);
-  svg{
+  svg {
     transform: translateY(-1px);
   }
 }
@@ -172,5 +173,14 @@
   box-shadow: unset;
   [data-theme='dark'] & {
     background-color: var(--color-fill-1);
+  }
+  transition: 0.25s ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  [data-theme='dark'] &:hover{
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.12);
   }
 }
