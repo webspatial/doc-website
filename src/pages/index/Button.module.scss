@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  border-radius: 100px;
+  background: #4e3bf6;
+  a {
+    display: flex;
+    height: 48px;
+    padding: 5px 24px;
+    justify-content: center;
+    align-items: center;
+
+    &:global(.small) {
+      height: 32px;
+    }
+
+    color: #fff;
+    // font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 137.5% */
+  }
+}
