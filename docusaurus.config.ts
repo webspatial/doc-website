@@ -5,6 +5,8 @@ import type {Options as IdealImageOptions} from '@docusaurus/plugin-ideal-image'
 import xGithubTheme, {emptyTheme} from './src/css/xGithubTheme';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+const BASE_URL = process.env.BASE_URL || '/';
+const PROJ_NAME = process.env.PROJECT_NAME || 'my-default-project';
 
 const config: Config = {
   headTags: [
@@ -117,12 +119,12 @@ const config: Config = {
   url: 'https://webspatial.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/doc-website/',
+  baseUrl: BASE_URL,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'webspatial', // Usually your GitHub org/user name.
-  projectName: 'doc-website', // Usually your repo name.
+  projectName: PROJ_NAME, // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
