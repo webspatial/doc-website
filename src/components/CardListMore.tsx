@@ -11,7 +11,7 @@ type Props = {
 };
 const CardListMore: React.FC<Props> = ({data}) => {
   return (
-    <>
+    <div className={styles.container}>
       {data.map((x, i) => {
         return (
           <div className={styles.wrap} style={{background: x.background}}>
@@ -38,7 +38,7 @@ const CardListMore: React.FC<Props> = ({data}) => {
           </div>
         );
       })}
-    </>
+    </div>
   );
 };
 export default CardListMore;
