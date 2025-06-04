@@ -937,7 +937,7 @@ body .DocSearch {
 
       [data-theme='dark'] & a {
         // background-color: var(--color-fill-2);
-        background-color: rgba(255,255,255,0.16);
+        background-color: rgba(255, 255, 255, 0.16);
       }
     }
     &[aria-selected='false'] {
@@ -997,5 +997,20 @@ body .DocSearch {
   }
   form.DocSearch-Form {
     border-radius: 24px;
+  }
+}
+@media (max-width: 996px) {
+  .navbar__toggle {
+    position: absolute;
+    right: 0;
+  }
+
+  .navbar__items--right > :last-child {
+    padding-right: 0;
+    margin-right: 46px;
+  }
+  .navbar-sidebar {
+    left: unset;
+    right: 0;
   }
 }

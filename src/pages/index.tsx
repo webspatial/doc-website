@@ -1,3 +1,4 @@
+import React from 'react';
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
@@ -15,6 +16,7 @@ import Slider from '../components/Slider';
 import CardList from '../components/CardList';
 import SliderB from '../components/SliderB';
 import CardListMore from '../components/CardListMore';
+import {useColorMode} from '@docusaurus/theme-common';
 
 // function HomepageHeader() {
 //   const {siteConfig} = useDocusaurusContext();
@@ -39,6 +41,7 @@ import CardListMore from '../components/CardListMore';
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -59,7 +62,7 @@ export default function Home(): ReactNode {
         </Section>
 
         <Section title={data.section4.title} desc={data.section4.desc}>
-           <CardListMore data={data.section4.children} />
+          <CardListMore data={data.section4.children} />
         </Section>
         <Bottom />
       </main>
