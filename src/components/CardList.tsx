@@ -9,7 +9,7 @@ type Props = {
 };
 const CardList: React.FC<Props> = ({data}) => {
   return (
-    <div>
+    <div className={styles.container}>
       {data.map((x, i) => {
         return (
           <div className={styles.wrap}>
