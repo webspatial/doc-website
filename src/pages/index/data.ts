@@ -2,7 +2,7 @@ export default {
   banner: {
     title: 'Bring Your Web to Space.',
     desc: 'Spatialize any website across real and virtual spaces with widely adopted open-web tech, empowering every web developer and enriching XR ecosystems.',
-    imgUrl: 'todo:',
+    imgUrl: 'https://placehold.co/1280x1280',
     button: {
       text: 'Quick Start',
       url: '#',
@@ -14,15 +14,15 @@ export default {
     children: [
       {
         title: 'Large Screen',
-        imgUrl: 'https://placehold.co/1280x1280',
+        imgUrl: 'https://placecats.com/800/400',
       },
       {
         title: 'Small Screen',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placecats.com/700/500',
       },
       {
         title: 'Vision OS',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placecats.com/600/400',
       },
       {
         title: 'Android XR',
@@ -46,24 +46,24 @@ export default {
     desc: 'Add depth, transform, animation, and 3D layout to your app—step by step.',
     children: [
       {
-        title: 'Make Your DIVs UI Spatialized',
+        title: 'Split the Web Page, Free the UI',
         desc: 'Break the crowded, solid-backed web page into independent panels that hover in space, removing the frame so translucent UI lives naturally over the real world.',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placecats.com/millie/800/800',
       },
       {
-        title: 'Make Your DIVs UI Spatialized',
+        title: 'Elevate HTML Elements, Unlock Depth',
         desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis, giving your interface true depth beyond width and height.',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placecats.com/millie/800/800',
       },
       {
-        title: 'Make Your DIVs UI Spatialized',
+        title: 'Multiple Scene Containers, Native Power',
         desc: 'Compose your web app from multiple OS-managed flat or volumetric scenes so it behaves like a native spatial app and delivers a unified experience across web and native.',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placecats.com/millie/800/800',
       },
       {
-        title: 'Make Your DIVs UI Spatialized',
+        title: 'Add True 3D Content, Blend Dimensions',
         desc: 'Introduce volumetric 3D elements that nest and layout seamlessly with 2D elements, then drive them with the 3D engine to host dynamic, interactive 3D content.',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placecats.com/millie/800/800',
       },
     ],
   },
@@ -73,19 +73,19 @@ export default {
     children: [
       {
         title: 'Start with What You Know',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placehold.co/1280x1280',
       },
       {
         title: 'Start with What You Know todo:2',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placehold.co/1280x1280',
       },
       {
         title: 'Start with What You Know todo:3',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placehold.co/1280x1280',
       },
       {
         title: 'Start with What You Know todo:4',
-        imgUrl: 'todo:',
+        imgUrl: 'https://placehold.co/1280x1280',
       },
     ],
   },

@@ -11,6 +11,8 @@ import Banner from './Banner';
 import Section from './Section';
 import data from './data';
 import Bottom from './Bottom';
+import Slider from './Slider';
+import CardList from './CardList';
 
 // function HomepageHeader() {
 //   const {siteConfig} = useDocusaurusContext();
@@ -42,13 +44,16 @@ export default function Home(): ReactNode {
       {/* <HomepageHeader /> */}
       <Banner />
       <main className={styles.mainWrap}>
-        {/* <HomepageFeatures /> */}
         <Section title={data.section1.title} desc={data.section1.desc}>
           {/* image slider */}
+          <Slider
+            data={data.section1.children.map((x) => ({...x, url: x.imgUrl}))}
+          />
         </Section>
 
         <Section title={data.section2.title} desc={data.section2.desc}>
           {/* image list */}
+          <CardList data={data.section2.children}/>
         </Section>
 
         <Section title={data.section3.title} desc={data.section3.desc}>
