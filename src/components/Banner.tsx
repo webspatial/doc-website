@@ -1,5 +1,5 @@
 import React from 'react';
-import data from './data';
+import data from '../data/index/data';
 import styles from './Banner.module.scss';
 import Button from './Button';
 type Props = {};

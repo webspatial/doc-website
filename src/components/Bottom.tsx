@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Bottom.module.scss';
-import data from './data';
+import data from '../data/index/data';
 import Link from '@docusaurus/Link';
 import Button from './Button';
 type Props = {};
