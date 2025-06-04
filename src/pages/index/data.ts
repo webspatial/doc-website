@@ -26,16 +26,19 @@ export default {
       },
       {
         title: 'Android XR',
+        imgUrl: 'https://placecats.com/600/400',
         desc: '（Coming soon）',
         disable: true,
       },
       {
         title: 'Meta Horizon OS',
+        imgUrl: 'https://placecats.com/600/400',
         desc: '（Coming soon）',
         disable: true,
       },
       {
         title: 'PICO OS',
+        imgUrl: 'https://placecats.com/600/400',
         desc: '（Coming soon）',
         disable: true,
       },
@@ -73,19 +76,19 @@ export default {
     children: [
       {
         title: 'Start with What You Know',
-        imgUrl: 'https://placehold.co/1280x1280',
+        imgUrl: 'https://placecats.com/600/300',
       },
       {
         title: 'Start with What You Know todo:2',
-        imgUrl: 'https://placehold.co/1280x1280',
+        imgUrl: 'https://placecats.com/600/400',
       },
       {
         title: 'Start with What You Know todo:3',
-        imgUrl: 'https://placehold.co/1280x1280',
+        imgUrl: 'https://placecats.com/600/500',
       },
       {
         title: 'Start with What You Know todo:4',
-        imgUrl: 'https://placehold.co/1280x1280',
+        imgUrl: 'https://placecats.com/600/600',
       },
     ],
   },

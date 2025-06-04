@@ -5,6 +5,7 @@ import clsx from 'clsx';
 type Props = {
   url: string;
   size?: 'medium' | 'small' | 'large';
+  children: React.ReactNode;
 };
 const Button: React.FC<Props> = ({children, url, size = 'medium'}) => {
   return (

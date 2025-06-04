@@ -4,7 +4,7 @@ import clsx from 'clsx';
 type Props = {
   data: {
     title: string;
-    url: string;
+    imgUrl: string;
     desc?: string;
     disable?: boolean;
   }[];
@@ -15,7 +15,7 @@ const Slider: React.FC<Props> = ({data}) => {
     <div className={styles.slider}>
       <div
         className={styles.img}
-        style={{backgroundImage: `url(${data[idx].url})`}}
+        style={{backgroundImage: `url(${data[idx].imgUrl})`}}
       />
       <div className={styles.btnContainer}>
         {data.map((item, i) => {
@@ -27,12 +27,19 @@ const Slider: React.FC<Props> = ({data}) => {
                 idx === i ? styles.active : '',
                 item.disable ? styles.disabled : '',
               )}
-              onClick={() => {
+              onClick={(e) => {
                 if (item.disable) return;
                 setIdx(i);
+                e.currentTarget.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'nearest',
+                  inline: 'center',
+                });
               }}>
               {item.title}
-              {item.desc && <div className={clsx(styles.desc)}>{item.desc}</div>}
+              {item.desc && (
+                <div className={clsx(styles.desc)}>{item.desc}</div>
+              )}
             </div>
           );
         })}

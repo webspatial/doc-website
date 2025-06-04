@@ -1,0 +1,90 @@
+.slider {
+  // width: 100%;
+  //   max-width: 600px; // 根据需要调整整体宽度
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.topWrap {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  .img {
+    width: 100%;
+    height: 365px;
+    padding-bottom: 56.25%; // 16:9 比例，可以改成 portrait 比例等
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-image 0.3s ease-in-out;
+  }
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  // height: 24px;
+  padding: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(128, 128, 128, 0.7) 0%,
+    rgba(128, 128, 128, 0) 100%
+  );
+  background-blend-mode: color-burn;
+  backdrop-filter: blur(40px);
+  width: 100%;
+
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.btnContainer {
+  width: 100%;
+  margin-top: 24px;
+
+  display: flex;
+  height: 42.26px;
+  padding: 0px 16px;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    gap: 8px;
+    .btn {
+      width: 24px;
+      height: 2.5px;
+      border-radius: 10px;
+      opacity: 0.2;
+      background: #d9d9d9;
+      cursor: pointer;
+      &.active {
+        opacity: 0.7;
+        background: #d9d9d9;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    .pre,
+    .next {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      &.disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import styles from './Section.module.scss';
 type Props = {
   title: string;
   desc: string;
+  children?: React.ReactNode;
 };
 const Section: React.FC<Props> = ({title, desc, children}) => {
   return (
