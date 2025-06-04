@@ -1,29 +1,122 @@
-.bannerWrap {
-  //   background: #2f2f2f;
-  background: url('https://placecats.com/600/600') center 300px / cover
-      no-repeat,
-    #2f2f2f;
-  height: 800px;
+@media (max-width: 576px) {
+  .bannerWrap {
+    background: url('https://placecats.com/600/600') center 300px / cover
+        no-repeat,
+      #2f2f2f;
+    height: 800px;
 
-  .innerWrap {
-    width: 280px;
-    margin: 40px auto;
-    .title {
-      color: rgba(255, 255, 255, 0.9);
-      // font-family: Poppins;
-      font-size: 28px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 150%; /* 42px */
+    .innerWrap {
+      width: 280px;
+      margin: 40px auto;
+      .title {
+        color: rgba(255, 255, 255, 0.9);
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 42px */
+      }
+      .desc {
+        color: rgba(242, 246, 250, 0.5);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+        margin-bottom: 40px;
+      }
     }
-    .desc {
-      color: rgba(242, 246, 250, 0.5);
-      // font-family: Poppins;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 30px */
-      margin-bottom: 40px;
+  }
+}
+@media (min-width: 577px) and (max-width: 996px) {
+  .bannerWrap {
+    background: url('https://placecats.com/600/600') right 300px / 50% auto
+        no-repeat,
+      #2f2f2f;
+    height: 480px;
+
+    .innerWrap {
+      width: 328px;
+      margin: 140px 120px 0;
+      .title {
+        color: rgba(255, 255, 255, 0.9);
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 42px */
+      }
+      .desc {
+        color: rgba(242, 246, 250, 0.5);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1280px) {
+  .bannerWrap {
+    background: url('https://placecats.com/600/600') right 300px / 50% auto
+        no-repeat,
+      #2f2f2f;
+    height: 600px;
+
+    .innerWrap {
+      width: 400px;
+      margin: 140px 120px 0;
+      .title {
+        color: rgba(255, 255, 255, 0.9);
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 42px */
+      }
+      .desc {
+        color: rgba(242, 246, 250, 0.5);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .bannerWrap {
+    background: url('https://placecats.com/600/600') right 300px / 50% auto
+        no-repeat,
+      #2f2f2f;
+    height: 960px;
+
+    .innerWrap {
+      width: 648px;
+      margin: 140px 120px 0;
+      .title {
+        color: rgba(255, 255, 255, 0.9);
+        font-family: Poppins;
+        font-size: 41px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 42px */
+      }
+      .desc {
+        color: rgba(242, 246, 250, 0.5);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+        margin-bottom: 40px;
+      }
     }
   }
 }
