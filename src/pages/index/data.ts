@@ -100,37 +100,49 @@ export default {
         title: 'WebSpatial API',
         desc: 'BAn open, minimal extension to HTML, CSS, and JS that adds spatial powers like elevation, multi-scenes, 3D containers',
         moreUrl: 'todo:',
+        background:
+          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(78, 59, 246, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #191919',
       },
       {
         title: 'React SDK',
         desc: 'A drop-in library for React projects that instantly unlocks WebSpatial APIs, and lets you build spatial apps with the same React components and ecosystem you already use.',
         moreUrl: 'todo:',
+        background:
+          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'WebSpatial Builder',
         desc: 'A CLI tool that packages WebSpatial-enabled React projects into installable native spatial app, wrapping web code in a platform-specific App Shell that runs WebSpatial APIs.',
         moreUrl: 'todo:',
+        background:
+          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(252, 184, 75, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'Platform Simulator',
         desc: 'Preview and debug WebSpatial app on visionOS simulator without a headset.',
         moreUrl: 'todo:',
+        background:
+          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'Safari / Chrome DevTools',
         desc: 'Inspect DOM, measure performance, and live-edit styles using the same tools you know.',
         moreUrl: 'todo:',
+        background:
+          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(240, 59, 94, 0.14) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: '3D Authoring Tools',
         desc: 'Import 3D assets from Blender, Spline, or any authoring tool that supports USD or glTF.',
         moreUrl: 'todo:',
+        background:
+          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(78, 59, 246, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #191919',
       },
     ],
   },
   bottom: {
     title: 'Start building with WebSpatial',
-    imgUrl: 'https://placehold.co/400x225',
+    imgUrl: 'https://placecats.com/600/400',
     children: [
       {
         title: 'Quick Start',

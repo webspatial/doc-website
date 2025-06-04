@@ -14,6 +14,7 @@ import Bottom from './Bottom';
 import Slider from './Slider';
 import CardList from './CardList';
 import SliderB from './SliderB';
+import CardListMore from './CardListMore';
 
 // function HomepageHeader() {
 //   const {siteConfig} = useDocusaurusContext();
@@ -58,7 +59,7 @@ export default function Home(): ReactNode {
         </Section>
 
         <Section title={data.section4.title} desc={data.section4.desc}>
-          {/* todo: card list */}
+           <CardListMore data={data.section4.children} />
         </Section>
         <Bottom />
       </main>

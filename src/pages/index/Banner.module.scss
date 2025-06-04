@@ -1,5 +1,9 @@
 .bannerWrap {
-  background: #2f2f2f;
+  //   background: #2f2f2f;
+  background: url('https://placecats.com/600/600') center 300px / cover
+      no-repeat,
+    #2f2f2f;
+  height: 800px;
 
   .innerWrap {
     width: 280px;
