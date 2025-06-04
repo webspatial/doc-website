@@ -1,4 +1,6 @@
 .bottomWrap {
+  margin: 0 auto 154px;
+  // margin-bottom: 154px;
   .topImg {
     width: 100%;
     height: 225px;
@@ -23,14 +25,57 @@
     .btnGrp {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 16px;
       div:first-child {
         width: 144px;
       }
       div:last-child {
         width: 144px;
       }
-      margin-bottom: 154px;
+      
+    }
+  }
+  @media (min-width: 577px) and (max-width: 996px) {
+    max-width: 640px;
+    margin-bottom: 250px;
+    .topImg {
+      height: 360px;
+    }
+
+    .container {
+      width: max-content;
+      .title {
+        font-size: 28px;
+      }
+    }
+  }
+  @media (min-width: 997px) and (max-width: 1280px) {
+    max-width: 1000px;
+    margin-bottom: 360px;
+    .topImg {
+      height: 560px;
+    }
+
+    .container {
+      width: max-content;
+      .title {
+        font-size: 32px;
+      }
+    }
+  }
+  @media (min-width: 1281px) {
+    max-width: 1000px;
+    margin-bottom: 420px;
+    .topImg {
+      height: 560px;
+    }
+
+    .container {
+      width: max-content;
+      .title {
+        font-size: 44px;
+      }
     }
   }
 }

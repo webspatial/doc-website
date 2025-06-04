@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Bottom.module.scss';
 import data from '../data/index/data';
-import Link from '@docusaurus/Link';
 import Button from './Button';
 type Props = {};
 const Bottom: React.FC<Props> = () => {
@@ -18,10 +17,9 @@ const Bottom: React.FC<Props> = () => {
         <div className={styles.btnGrp}>
           {data.bottom.children.map((x, i) => {
             return (
-              <Button url={x.url}>{x.title}</Button>
-              //     <Link to={x.url} key={i}>
-              //       {x.title}
-              //     </Link>
+              <Button key={i} url={x.url}>
+                {x.title}
+              </Button>
             );
           })}
         </div>
