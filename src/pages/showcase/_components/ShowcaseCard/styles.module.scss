@@ -82,7 +82,7 @@
   top: 12px;
   right: 12px;
   border-radius: 8px;
-  background: rgba(80, 80, 80, 0.32);
+  background: rgba(80, 80, 80, 0.5);
   backdrop-filter: blur(6px);
   svg {
     transform: translateY(-1px);
@@ -175,6 +175,7 @@
 .cardWrap {
   position: relative;
   box-shadow: unset;
+  border-radius: 16px;
   [data-theme='dark'] & {
     background-color: var(--color-fill-1);
   }

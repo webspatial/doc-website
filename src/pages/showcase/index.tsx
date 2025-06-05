@@ -35,7 +35,7 @@ function ShowcaseHeader() {
       <Heading as="h1" className={styles.title}>
         {TITLE}
       </Heading>
-      <p>{DESCRIPTION}</p>
+      <p className={styles.desc}>{DESCRIPTION}</p>
       <Link
         className={clsx('button button--primary', styles.button)}
         to={SUBMIT_URL}>
