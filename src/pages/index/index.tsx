@@ -8,14 +8,14 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.scss';
-import Banner from '../components/Banner';
-import Section from '../components/Section';
-import data from '../data/index/data';
-import Bottom from '../components/Bottom';
-import Slider from '../components/Slider';
-import CardList from '../components/CardList';
-import SliderB from '../components/SliderB';
-import CardListMore from '../components/CardListMore';
+import Banner from '../_components/Banner';
+import Section from '../_components/Section';
+import data from '../../data/index/data';
+import Bottom from '../_components/Bottom';
+import Slider from '../_components/Slider';
+import CardList from '../_components/CardList';
+import SliderB from '../_components/SliderB';
+import CardListMore from '../_components/CardListMore';
 import {useColorMode} from '@docusaurus/theme-common';
 
 // function HomepageHeader() {
