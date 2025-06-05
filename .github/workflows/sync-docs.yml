@@ -1,0 +1,42 @@
+name: Sync docs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Docusaurus repo
+        uses: actions/checkout@v3
+
+      - name: Checkout SDK repo
+        uses: actions/checkout@v3
+        with:
+          repository: webspatial/webspatial-sdk
+          ref: c7b7aef7fa761d33c34d51d078cc5cb2882f8228
+          path: XRSDK
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+          cache: "pnpm"
+
+      - name: Run sync docs
+        run: pnpm run sync-docs
+
+      - name: Create or update pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: sync docs
+          title: Sync docs
+          body: This is an automated pull request.
+          branch: sync-webspatial
+          base: main
