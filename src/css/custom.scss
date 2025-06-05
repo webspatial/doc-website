@@ -872,6 +872,12 @@ html[data-red-border] div#__docusaurus {
 }
 
 body .DocSearch {
+  .DocSearch-Logo {
+    .cls-1,
+    .cls-2 {
+      fill: var(--color-fill-3);
+    }
+  }
   --docsearch-searchbox-height: 48px;
   --docsearch-hit-height: 48px;
   --docsearch-spacing: 24px;
