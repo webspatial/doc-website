@@ -200,7 +200,7 @@ const config: Config = {
       items: [
         {
           type: 'docsVersionDropdown',
-          versions: ['current', '0.2.0', '0.1.0'],
+          versions: ['current'],
           position: 'right',
         },
         {
