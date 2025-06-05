@@ -111,11 +111,15 @@
   -webkit-box-orient: vertical; /* 垂直排列子元素 */
   overflow: hidden; /* 隐藏超出容器的内容 */
   text-overflow: ellipsis; /* 超出部分显示省略号 */
+  min-height: 30px;
 }
 .cardFooterWrap {
   position: relative;
   padding: 16px;
   margin-top: auto;
+  ul{
+    min-height: 26px;
+  }
   &::after {
     position: absolute;
     right: 16px;
