@@ -6,17 +6,12 @@
  */
 
 :root {
-  font-family: Inter, sans-serif;
+  font-family: Poppins, 'JetBrains Mono', sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  --ifm-heading-font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
+  --ifm-heading-font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto,
     Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI',
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
-}
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
 }
 
 @import url('react-medium-image-zoom/dist/styles.css');
@@ -192,8 +187,8 @@ a:hover {
   color: var(--color-text-2);
 
   code {
-    --ifm-font-family-monospace: Inter, SFMono-Regular, Menlo, Monaco, Consolas,
-      'Liberation Mono', 'Courier New', monospace;
+    --ifm-font-family-monospace: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco,
+      Consolas, 'Liberation Mono', 'Courier New', monospace;
     border: none;
     --ifm-code-padding-vertical: 0.4rem;
     --ifm-code-padding-horizontal: 0.4rem;
