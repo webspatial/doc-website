@@ -219,15 +219,6 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docsVersionDropdown',
-          versions: ['current'],
-          position: 'right',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
@@ -242,6 +233,16 @@ const config: Config = {
         // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: 'showcase', label: 'Showcase', position: 'left'},
+
+        {
+          type: 'docsVersionDropdown',
+          versions: ['current'],
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/facebook/docusaurus',
           // label: 'GitHub',
