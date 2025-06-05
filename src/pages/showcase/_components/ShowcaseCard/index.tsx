@@ -15,23 +15,37 @@ import {sortBy} from '@site/src/utils/jsUtils';
 import Heading from '@theme/Heading';
 import FavoriteIcon from '../FavoriteIcon';
 import styles from './styles.module.scss';
+import {useColorMode} from '@docusaurus/theme-common';
 
 function TagItem({
   label,
   description,
   color,
   backgroundColor,
+  darkColor,
+  darkBackgroundColor,
 }: {
   label: string;
   description: string;
   color: string;
-  backgroundColor: string;
+  backgroundColor?: string;
+  darkColor?: string;
+  darkBackgroundColor?: string;
 }) {
+  const {colorMode, setColorMode} = useColorMode();
+  const finalColor = colorMode === 'dark' ? darkColor ?? color : color;
+  const finalBackGroundColor =
+    colorMode === 'dark'
+      ? darkBackgroundColor ?? backgroundColor
+      : backgroundColor;
   return (
     <li
       className={styles.tag}
       title={description}
-      style={{color, backgroundColor}}>
+      style={{
+        color: finalColor,
+        backgroundColor: finalBackGroundColor,
+      }}>
       <span className={styles.textLabel}>{label}</span>
       {/* <span className={styles.colorLabel} style={{backgroundColor: color}} /> */}
     </li>

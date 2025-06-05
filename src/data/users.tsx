@@ -11,7 +11,7 @@ import {translate} from '@docusaurus/Translate';
 import {sortBy} from '@site/src/utils/jsUtils';
 
 let require = (x) => {
-  return null
+  return null;
   // return 'https://placehold.co/1600x900';
 };
 /*
@@ -2403,6 +2403,8 @@ export type Tag = {
   description: string;
   color: string;
   backgroundColor?: string;
+  darkColor?: string;
+  darkBackgroundColor?: string;
 };
 
 export const Tags: {[type in TagType]: Tag} = {
@@ -2413,8 +2415,10 @@ export const Tags: {[type in TagType]: Tag} = {
         'Our favorite Docusaurus sites that you must absolutely check out!',
       id: 'showcase.tag.favorite.description',
     }),
-    color: '#F77234',
-    backgroundColor: '#FF7A0017',
+    color: 'rgba(78, 59, 246, 1)',
+    backgroundColor: 'rgba(77, 77, 255, 0.12)',
+    darkColor: 'rgba(159, 148, 255, 1)',
+    darkBackgroundColor: 'rgba(108, 93, 235, 0.16)',
   },
 
   opensource: {
@@ -2423,8 +2427,9 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'Open-Source Docusaurus sites can be useful for inspiration!',
       id: 'showcase.tag.opensource.description',
     }),
-    color: '#00B42A',
-    backgroundColor: '#00FFD317',
+    color: 'rgba(18, 128, 227, 1)',
+    backgroundColor: 'rgba(48, 152, 245, 0.09)',
+    darkBackgroundColor: 'rgba(39, 153, 255, 0.12)',
   },
 
   product: {
@@ -2433,8 +2438,9 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'Docusaurus sites associated to a commercial product!',
       id: 'showcase.tag.product.description',
     }),
-    color: '#DEA616',
-    backgroundColor: '#FFDE001F',
+    color: 'rgba(226, 151, 30, 1)',
+    backgroundColor: 'rgba(226, 151, 30, 0.12)',
+    darkBackgroundColor: 'rgba(194, 129, 26, 0.12)',
   },
 
   design: {
@@ -2444,8 +2450,8 @@ export const Tags: {[type in TagType]: Tag} = {
         'Beautiful Docusaurus sites, polished and standing out from the initial template!',
       id: 'showcase.tag.design.description',
     }),
-    color: '#8845E5',
-    backgroundColor: '#9000FF0D',
+    color: 'rgba(240, 59, 94, 1)',
+    backgroundColor: 'rgba(240, 59, 94, 0.05)',
   },
 
   // i18n: {
