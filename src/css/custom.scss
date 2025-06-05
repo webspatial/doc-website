@@ -675,16 +675,16 @@ html[data-red-border] div#__docusaurus {
 
 // blog list
 .main-wrapper article.margin-bottom--xl {
-  margin-bottom: 48px !important;
-  &::after {
-    content: ' ';
-    border-bottom: transparent 1px var(--color-fill-3);
-    display: block;
-    // height: 80px;// 87px
-    height: 41px;
-    // background-color: #f0f0f0; /* 设置背景颜色 */
-    // margin-top: 20px; /* 设置与前面内容的间距 */
-  }
+  margin-bottom: 77px !important;
+  // &::after {
+  //   content: ' ';
+  //   border-bottom: transparent 1px var(--color-fill-3);
+  //   display: block;
+  //   // height: 80px;// 87px
+  //   height: 41px;
+  //   // background-color: #f0f0f0; /* 设置背景颜色 */
+  //   // margin-top: 20px; /* 设置与前面内容的间距 */
+  // }
 
   h2 {
     font-size: 36px;

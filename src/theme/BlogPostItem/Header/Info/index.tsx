@@ -64,12 +64,12 @@ export default function BlogPostItemHeaderInfo({className}: Props): ReactNode {
   return (
     <div className={clsx(styles.container, 'margin-vert--md', className)}>
       <DateTime date={date} formattedDate={formatDate(date)} />
-      {typeof readingTime !== 'undefined' && (
+      {/* {typeof readingTime !== 'undefined' && (
         <>
           <Spacer />
           <ReadingTime readingTime={readingTime} />
         </>
-      )}
+      )} */}
     </div>
   );
 }

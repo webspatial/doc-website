@@ -6,8 +6,8 @@ import BlogPostItemHeaderAuthors from '@theme/BlogPostItem/Header/Authors';
 export default function BlogPostItemHeader(): ReactNode {
   return (
     <header>
-      <BlogPostItemHeaderInfo />
       <BlogPostItemHeaderTitle />
+      {/* <BlogPostItemHeaderInfo /> */}
       <BlogPostItemHeaderAuthors />
     </header>
   );
