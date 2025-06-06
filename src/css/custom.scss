@@ -1076,3 +1076,85 @@ body .DocSearch {
 a[href$='blog/authors'] {
   display: none;
 }
+
+// footer
+.theme-layout-footer {
+  .container {
+    padding: 0;
+  }
+  @media (max-width: 576px) {
+    padding: 48px 0;
+    .container {
+      max-width: 278px;
+    } 
+    .footer__bottom{
+      margin-top: 80px;
+    }
+  }
+  @media (min-width: 577px) and (max-width: 996px) {
+    padding: 64px 0;
+     .container {
+      max-width: 640px;
+    }
+    .col {
+      --ifm-col-width: 50%;
+    }
+    .footer__bottom{
+      margin-top: 80px;
+    }
+  }
+  @media (min-width: 997px) and (max-width: 1280px) {
+    padding: 64px 0;
+    .container {
+      max-width: 840px;
+    }
+  }
+  @media (min-width: 1281px) {
+    padding: 64px 0;
+    .container {
+      max-width: 1200px;
+    }
+  }
+  .footer__title {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%; /* 28px */
+    margin-bottom: 20px;
+  }
+  a.footer__link-item {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%; /* 28px */
+  }
+
+  .footer__item {
+    margin-bottom: 16px;
+  }
+
+  .theme-layout-footer-column {
+    padding: 0 8px;
+  }
+
+  .footer__links {
+    margin: 0;
+  }
+
+  .footer__bottom {
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+  }
+}
+.footer--dark {
+  --ifm-footer-background-color: rgba(30, 30, 31, 1);
+}
