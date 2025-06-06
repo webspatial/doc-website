@@ -249,6 +249,12 @@ const config: Config = {
           className: 'xheader-github-link',
           position: 'right',
         },
+        {
+          href: 'https://discordapp.com/invite/docusaurus',
+          // label: 'Discord',
+          className: 'xheader-discord-link',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -293,7 +299,7 @@ const config: Config = {
             },
           ],
         },
-         {
+        {
           title: 'More2',
           items: [
             {
