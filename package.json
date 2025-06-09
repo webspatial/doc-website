@@ -17,7 +17,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "sync-docs": "bash scripts/sync-docs.sh"
+    "sync-docs": "bash scripts/sync-docs.sh",
+    "convert-md-imgs": "find ./docs -name '*.md' -exec bash ./scripts/convert-img-links.sh {} \\;"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.0",

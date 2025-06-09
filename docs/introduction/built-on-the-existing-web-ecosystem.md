@@ -137,32 +137,32 @@ The screenshots below show how this sample project looks on different platforms.
 <div className="row">
   <div className="col col--6">
     <p>Large Screen</p>
-    <a href="/assets/intro/techshop-desktop.png" target="_blank"><img src="/assets/intro/techshop-desktop.png" alt="Large Screen" /></a>
+    ![Large Screen](/assets/intro/techshop-desktop.png)
   </div>
   <div className="col col--6">
     <p>Tablet</p>
-    <a href="/assets/intro/techshop-pad.png" target="_blank"><img src="/assets/intro/techshop-pad.png" alt="Tablet" /></a>
+    ![Tablet](/assets/intro/techshop-pad.png)
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>Small Window</p>
-    <a href="/assets/intro/techshop-small.png" target="_blank"><img src="/assets/intro/techshop-small.png" alt="Small Window" /></a>
+    ![Small Window](/assets/intro/techshop-small.png)
   </div>
   <div className="col col--6">
     <p>Phone</p>
-    <a href="/assets/intro/techshop-phone.png" target="_blank"><img src="/assets/intro/techshop-phone.png" alt="Phone" /></a>
+    ![Phone](/assets/intro/techshop-phone.png)
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>visionOS Safari</p>
-    <a href="/assets/intro/techshop-safari.png" target="_blank"><img src="/assets/intro/techshop-safari.png" alt="visionOS Safari" /></a>
+    ![visionOS Safari](/assets/intro/techshop-safari.png)
   </div>
   <div className="col col--6">
     <p>WebSpatial</p>
-    <a href="/assets/intro/techshop-spatial.png" target="_blank"><img src="/assets/intro/techshop-spatial.png" alt="WebSpatial" /></a>
+    ![WebSpatial](/assets/intro/techshop-spatial.png)
   </div>
 </div>

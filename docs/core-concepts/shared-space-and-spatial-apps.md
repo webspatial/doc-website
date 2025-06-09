@@ -35,28 +35,28 @@ Spatial Apps are the [new generation of XR apps](../introduction/the-new-generat
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/concepts/1-3.png" target="_blank"><img src="/assets/concepts/1-3.png" alt="Spatial App Example 1" /></a>
+    ![Spatial App Example 1](/assets/concepts/1-3.png)
   </div>
   <div className="col col--6">
-    <a href="/assets/concepts/1-4.png" target="_blank"><img src="/assets/concepts/1-4.png" alt="Spatial App Example 2" /></a>
-  </div>
-</div>
-
-<div className="row">
-  <div className="col col--6">
-    <a href="/assets/concepts/1-5.png" target="_blank"><img src="/assets/concepts/1-5.png" alt="Spatial App Example 3" /></a>
-  </div>
-  <div className="col col--6">
-    <a href="/assets/concepts/1-6.png" target="_blank"><img src="/assets/concepts/1-6.png" alt="Spatial App Example 4" /></a>
+    ![Spatial App Example 2](/assets/concepts/1-4.png)
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/concepts/1-7.png" target="_blank"><img src="/assets/concepts/1-7.png" alt="Spatial App Example 5" /></a>
+    ![Spatial App Example 3](/assets/concepts/1-5.png)
   </div>
   <div className="col col--6">
-    <a href="/assets/concepts/1-8.png" target="_blank"><img src="/assets/concepts/1-8.png" alt="Spatial App Example 6" /></a>
+    ![Spatial App Example 4](/assets/concepts/1-6.png)
+  </div>
+</div>
+
+<div className="row">
+  <div className="col col--6">
+    ![Spatial App Example 5](/assets/concepts/1-7.png)
+  </div>
+  <div className="col col--6">
+    ![Spatial App Example 6](/assets/concepts/1-8.png)
   </div>
 </div>
 

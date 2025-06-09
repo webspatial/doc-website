@@ -16,10 +16,10 @@ The software interface expands from a bounded display to the entire 3D space aro
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/intro/intro-1-1.png" target="_blank"><img src="/assets/intro/intro-1-1.png" alt="intro-1-1" /></a>
+    ![intro-1-1](/assets/intro/intro-1-1.png)
   </div>
   <div className="col col--6">
-    <a href="/assets/intro/intro-1-2.png" target="_blank"><img src="/assets/intro/intro-1-2.png" alt="intro-1-2" /></a>
+    ![intro-1-2](/assets/intro/intro-1-2.png)
   </div>
 </div>
 
@@ -32,10 +32,10 @@ Both the GUI and the content **no longer have to stay flat**; they can be built 
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/intro/intro-1-3.png" target="_blank"><img src="/assets/intro/intro-1-3.png" alt="intro-1-3" /></a>
+    ![intro-1-3](/assets/intro/intro-1-3.png)
   </div>
   <div className="col col--6">
-    <a href="/assets/intro/intro-1-4.png" target="_blank"><img src="/assets/intro/intro-1-4.png" alt="intro-1-4" /></a>
+    ![intro-1-4](/assets/intro/intro-1-4.png)
   </div>
 </div>
 
@@ -49,18 +49,18 @@ Interaction gains more possibilities: it is more natural and intuitive, more fle
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/intro/intro-1-5.png" target="_blank"><img src="/assets/intro/intro-1-5.png" alt="intro-1-5" /></a>
+    ![intro-1-5](/assets/intro/intro-1-5.png)
   </div>
   <div className="col col--6">
-    <a href="/assets/intro/intro-1-6.gif" target="_blank"><img src="/assets/intro/intro-1-6.gif" alt="intro-1-6" /></a>
+    ![intro-1-6](/assets/intro/intro-1-6.gif)
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/intro/intro-1-7.png" target="_blank"><img src="/assets/intro/intro-1-7.png" alt="intro-1-7" /></a>
+    ![intro-1-7](/assets/intro/intro-1-7.png)
   </div>
   <div className="col col--6">
-    <a href="/assets/intro/intro-1-8.png" target="_blank"><img src="/assets/intro/intro-1-8.png" alt="intro-1-8" /></a>
+    ![intro-1-8](/assets/intro/intro-1-8.png)
   </div>
 </div>

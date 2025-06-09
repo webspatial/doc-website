@@ -12,10 +12,10 @@ A Scene is a content container centrally managed by the spatial-computing OS. Ev
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/concepts/3-1.png" target="_blank"><img src="/assets/concepts/3-1.png" alt="Scene Example 1" /></a>
+    ![Scene Example 1](/assets/concepts/3-1.png)
   </div>
   <div className="col col--6">
-    <a href="/assets/concepts/3-2.png" target="_blank"><img src="/assets/concepts/3-2.png" alt="Scene Example 2" /></a>
+    ![Scene Example 2](/assets/concepts/3-2.png)
   </div>
 </div>
 
@@ -63,10 +63,10 @@ Another difference: a WebSpatial Scene **has no browser UI such as address bar, 
 >
 > <div className="row">
 >   <div className="col col--6">
->     <a href="/assets/concepts/3-12.png" target="_blank"><img src="/assets/concepts/3-12.png" alt="Non-spatial version" /></a>
+>     ![Non-spatial version](/assets/concepts/3-12.png)
 >   </div>
 >   <div className="col col--6">
->     <a href="/assets/concepts/3-13.png" target="_blank"><img src="/assets/concepts/3-13.png" alt="Spatial version with transparent background" /></a>
+>     ![Spatial version with transparent background](/assets/concepts/3-13.png)
 >   </div>
 > </div>
 
@@ -95,10 +95,10 @@ The PWA standard's [`display` property](../development-guide/enabling-webspatial
 >
 > <div className="row">
 >   <div className="col col--6">
->     <a href="/assets/concepts/3-16.png" target="_blank"><img src="/assets/concepts/3-16.png" alt="Android PWA minimal-ui mode 1" /></a>
+>     ![Android PWA minimal-ui mode 1](/assets/concepts/3-16.png)
 >   </div>
 >   <div className="col col--6">
->     <a href="/assets/concepts/3-17.png" target="_blank"><img src="/assets/concepts/3-17.png" alt="Android PWA minimal-ui mode 2" /></a>
+>     ![Android PWA minimal-ui mode 2](/assets/concepts/3-17.png)
 >   </div>
 > </div>
 >
@@ -106,10 +106,10 @@ The PWA standard's [`display` property](../development-guide/enabling-webspatial
 >
 > <div className="row">
 >   <div className="col col--6">
->     <a href="/assets/concepts/3-18.png" target="_blank"><img src="/assets/concepts/3-18.png" alt="Android PWA standalone mode 1" /></a>
+>     ![Android PWA standalone mode 1](/assets/concepts/3-18.png)
 >   </div>
 >   <div className="col col--6">
->     <a href="/assets/concepts/3-19.png" target="_blank"><img src="/assets/concepts/3-19.png" alt="Android PWA standalone mode 2" /></a>
+>     ![Android PWA standalone mode 2](/assets/concepts/3-19.png)
 >   </div>
 > </div>
 
@@ -142,10 +142,10 @@ The current version of WebSpatial SDK does not support this feature natively. Yo
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/concepts/3-24.png" target="_blank"><img src="/assets/concepts/3-24.png" alt="Scene Properties Example 1" /></a>
+    ![Scene Properties Example 1](/assets/concepts/3-24.png)
   </div>
   <div className="col col--6">
-    <a href="/assets/concepts/3-25.png" target="_blank"><img src="/assets/concepts/3-25.png" alt="Scene Properties Example 2" /></a>
+    ![Scene Properties Example 2](/assets/concepts/3-25.png)
   </div>
 </div>
 
@@ -168,10 +168,10 @@ For example, as the distance between scene and user changes, a reading-oriented 
 
 <div className="row">
   <div className="col col--6">
-    <a href="/assets/concepts/3-26.gif" target="_blank"><img src="/assets/concepts/3-26.gif" alt="Spatial Layout Example 1" /></a>
+    ![Spatial Layout Example 1](/assets/concepts/3-26.gif)
   </div>
   <div className="col col--6">
-    <a href="/assets/concepts/3-27.gif" target="_blank"><img src="/assets/concepts/3-27.gif" alt="Spatial Layout Example 2" /></a>
+    ![Spatial Layout Example 2](/assets/concepts/3-27.gif)
   </div>
 </div>
 
@@ -192,10 +192,10 @@ The classic example is the scene's [`defaultSize`](../development-guide/using-th
 >
 > <div className="row">
 >   <div className="col col--6">
->     <a href="/assets/concepts/3-28.png" target="_blank"><img src="/assets/concepts/3-28.png" alt="Scene Initialization Example 1" /></a>
+>     ![Scene Initialization Example 1](/assets/concepts/3-28.png)
 >   </div>
 >   <div className="col col--6">
->     <a href="/assets/concepts/3-29.png" target="_blank"><img src="/assets/concepts/3-29.png" alt="Scene Initialization Example 2" /></a>
+>     ![Scene Initialization Example 2](/assets/concepts/3-29.png)
 >   </div>
 > </div>
 
