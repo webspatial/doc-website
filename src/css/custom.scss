@@ -354,6 +354,48 @@ a:hover {
     color: rgba(255, 255, 255, 0.7);
   }
 }
+.dropdownHr {
+  display: none;
+}
+.theme-layout-navbar.navbar.navbar--fixed-top.navbar-sidebar--show {
+  .navbar-sidebar {
+    --ifm-navbar-sidebar-width: 100%;
+    bottom: unset;
+
+    .menu__link.dropdownHr {
+      display: block;
+      border-radius: unset;
+      margin: 20px 0;
+      padding: 0;
+      height: 1px;
+      background-color: rgba(242, 243, 245, 1);
+      cursor: unset;
+      pointer-events: none;
+    }
+  }
+
+  .navbar-sidebar__items {
+    height: unset;
+  }
+  // .xheader-github-link::after {
+  //   content: 'Github';
+  // }
+  // .xheader-github-link::before {
+  //   display: none;
+  // }
+  // .xheader-discord-link::after {
+  //   content: 'Discord';
+  // }
+  // .xheader-discord-link::before {
+  //   display: none;
+  // }
+
+  // .xheader-locale {
+  //   svg {
+  //     display: none;
+  //   }
+  // }
+}
 
 .DocSearch-Button-Container {
   width: 128px;

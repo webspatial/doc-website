@@ -233,14 +233,20 @@ const config: Config = {
         // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: 'showcase', label: 'Showcase', position: 'left'},
-
+        {
+          to: '#',
+          className: 'dropdownHr',
+          position: 'right',
+        },
         {
           type: 'docsVersionDropdown',
           versions: ['current'],
           position: 'right',
         },
+
         {
           type: 'localeDropdown',
+          className: 'xheader-locale',
           position: 'right',
         },
         {
