@@ -8,7 +8,7 @@ import styles from './style.module.scss';
 //@ts-ignore
 // const req = require.context(
 //   // relative to this file, adjust path if necessary
-//   '../../../docs/api/classes',
+//   '../../../docs/test/api/classes',
 //   false,
 //   /\.md$/,
 // );
@@ -17,56 +17,56 @@ const reqObj = {
   //@ts-ignore
   coreClasses: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-core/classes',
+    '../../../docs/test/api-core/classes',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   coreInterfaces: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-core/interfaces',
+    '../../../docs/test/api-core/interfaces',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   reactTypeAliases: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-react/type-aliases',
+    '../../../docs/test/api-react/type-aliases',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   reactClasses: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-react/classes',
+    '../../../docs/test/api-react/classes',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   reactInterfaces: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-react/interfaces',
+    '../../../docs/test/api-react/interfaces',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   reactVariables: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-react/variables',
+    '../../../docs/test/api-react/variables',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   reactTypeAliases: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-react/type-aliases',
+    '../../../docs/test/api-react/type-aliases',
     false,
     /\.md$/,
   ),
   //@ts-ignore
   reactFunctions: require.context(
     // relative to this file, adjust path if necessary
-    '../../../docs/api-react/functions',
+    '../../../docs/test/api-react/functions',
     false,
     /\.md$/,
   ),
