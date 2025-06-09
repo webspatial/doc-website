@@ -8,7 +8,7 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "build:test": "cross-env BASE_URL='/doc-website/' PROJECT_NAME='doc-website' npm run build",
+    "build:test": "cross-env BASE_URL='/doc-website/' npm run build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

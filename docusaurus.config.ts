@@ -6,7 +6,7 @@ import xGithubTheme, {emptyTheme} from './src/css/xGithubTheme';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 const BASE_URL = process.env.BASE_URL || '/';
-const PROJ_NAME = process.env.PROJECT_NAME || 'my-default-project';
+const PROJ_NAME = 'doc-website'; //process.env.PROJECT_NAME || 'my-default-project';
 
 const config: Config = {
   staticDirectories: ['static'],
