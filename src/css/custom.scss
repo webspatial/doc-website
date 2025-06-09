@@ -331,9 +331,9 @@ a:hover {
   mask-image: url('../img/discord-light.svg');
   transition: background-color var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
-    :hover{
-     background-color: var(--ifm-navbar-link-hover-color);
-    }
+  :hover {
+    background-color: var(--ifm-navbar-link-hover-color);
+  }
 }
 
 .xheader-discord-link:hover::before {
