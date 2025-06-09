@@ -148,6 +148,9 @@ a:hover {
   --ifm-h1-font-size: 36px;
 }
 .markdown {
+  ol {
+    padding-left: 1rem; // todo:
+  }
   strong {
     font-weight: 600;
   }
@@ -1278,4 +1281,8 @@ a[href$='blog/authors'] {
 }
 .footer--dark {
   --ifm-footer-background-color: rgba(30, 30, 31, 1);
+}
+
+.pagination-nav__label {
+  font-weight: 500;
 }
