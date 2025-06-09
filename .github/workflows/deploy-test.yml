@@ -1,4 +1,4 @@
-name: Deploy Docusaurus + SDK with pnpm to GitHub Pages
+name: Deploy test site to GitHub Pages
 
 on:
   push:
