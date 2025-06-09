@@ -9,6 +9,8 @@ const BASE_URL = process.env.BASE_URL || '/';
 const PROJ_NAME = process.env.PROJECT_NAME || 'my-default-project';
 
 const config: Config = {
+  staticDirectories: ['static'],
+
   headTags: [
     // {
     //   tagName: 'link',
@@ -171,6 +173,12 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          remarkPlugins: [
+            [
+              require('@docusaurus/remark-plugin-npm2yarn'),
+              {sync: true, converters: ['pnpm', 'yarn']},
+            ],
+          ],
         },
         blog: {
           showReadingTime: true,
@@ -320,6 +328,22 @@ const config: Config = {
       darkTheme: emptyTheme,
       // theme: prismThemes.github,
       // darkTheme: prismThemes.gruvboxMaterialDark,
+      additionalLanguages: ['diff', 'json5', 'ini'],
+      magicComments: [
+        {
+          className: 'theme-code-block-highlighted-line',
+          line: 'highlight-next-line',
+          block: {start: 'highlight-start', end: 'highlight-end'},
+        },
+        {
+          className: 'code-block-diff-add-line',
+          line: 'diff-add',
+        },
+        {
+          className: 'code-block-diff-remove-line',
+          line: 'diff-remove',
+        },
+      ],
     },
   } satisfies Preset.ThemeConfig,
 };
