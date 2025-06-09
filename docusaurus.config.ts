@@ -275,54 +275,50 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'DEVELOP',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Guides',
+              to: '/docs/development-guide',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'PARTICIPATE',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Showcase',
+              href: '/showcase',
+            },
+            {
+              label: 'Community',
+              href: '#todo:',
+            },
+          ],
+        },
+        {
+          title: 'FIND US',
+          items: [
+            {
+              label: 'GitHub',
+              href: '//github.com/webspatial/webspatial-sdk',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              to: '//discord.gg/sXtcgNFK',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Explore More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Privacy Policy',
+              to: '#todo:',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More2',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Terms of Service',
+              href: '#todo:',
             },
           ],
         },

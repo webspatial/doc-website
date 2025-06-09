@@ -107,7 +107,7 @@
 // mdx container for PC
 @media (min-width: 997px) {
   main .container > .row {
-    .col:first-child {
+    div.col:first-child {
       padding: 0 56px;
     }
     .col {
@@ -128,7 +128,7 @@
       padding-left: 32px;
     }
     > div.col:first-child {
-      padding: 0 80px;
+      // padding: 0 80px;
       max-width: calc(100% - 200px) !important;
       h2 a {
         color: var(--color-text-1);
@@ -152,7 +152,7 @@ a:hover {
     font-weight: 600;
   }
   --ifm-heading-font-weight: 600;
-  h1 {
+  > h1 {
     &:first-child {
       --ifm-h1-font-size: 36px;
       margin-bottom: 20px;
@@ -163,23 +163,23 @@ a:hover {
       margin-top: 80px;
     }
   }
-  h2 {
+  > h2 {
     --ifm-h2-font-size: 28px;
     line-height: 36px;
     margin-top: 64px;
   }
-  h3 {
+  > h3 {
     --ifm-h3-font-size: 20px;
     line-height: 28px;
     margin-top: 48px;
   }
-  h4 {
+  > h4 {
     --ifm-h4-font-size: 16px;
     line-height: 24px;
     margin-top: 32px;
   }
 
-  h5 {
+  > h5 {
     --ifm-h5-font-size: 14px;
     line-height: 22px;
     margin-top: 24px;
