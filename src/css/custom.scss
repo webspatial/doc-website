@@ -289,6 +289,11 @@ a:hover {
 
 .navbar__link {
   font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar__logo img {
+  max-width: 128px;
 }
 
 .navbar--fixed-top.navbar {
@@ -301,10 +306,17 @@ a:hover {
   width: 20px;
   height: 20px;
   display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
+  background-color: rgba(78, 89, 105, 1); //var(--ifm-navbar-link-color);
+  [data-theme='dark'] & {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  mask-image: url('../img/github-light.svg');
+
   transition: background-color var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
+}
+.xheader-github-link:hover::before {
+  background-color: var(--ifm-navbar-link-hover-color);
 }
 
 .xheader-discord-link::before {
@@ -312,19 +324,77 @@ a:hover {
   width: 20px;
   height: 20px;
   display: flex;
-  background-color: var(--ifm-navbar-link-color);
-  mask-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M16.666%203.95499C15.4052%203.37496%2014.073%202.96445%2012.7044%202.73416C12.5294%203.03416%2012.3369%203.44083%2012.2002%203.75916C10.7451%203.54754%209.267%203.54754%207.81187%203.75916C7.65955%203.40998%207.49132%203.06795%207.30771%202.73416C5.93827%202.96117%204.60571%203.37182%203.34604%203.95499C0.836039%207.65666%200.157705%2011.2692%200.497705%2014.8342C2.16437%2016.045%203.77271%2016.7808%205.35104%2017.2658C5.73854%2016.7408%206.08687%2016.1783%206.38604%2015.5892C5.81859%2015.3755%205.27071%2015.1132%204.74854%2014.805C4.88521%2014.7067%205.02187%2014.6%205.14604%2014.4958C8.30687%2015.9375%2011.7244%2015.9375%2014.8427%2014.4958C14.9802%2014.6%2015.1069%2014.7067%2015.2435%2014.8042C14.7194%2015.1142%2014.176%2015.3742%2013.606%2015.5892C13.906%2016.1783%2014.2535%2016.7417%2014.641%2017.2658C16.3853%2016.7365%2018.0268%2015.9142%2019.4952%2014.8342C19.9119%2010.7067%2018.8369%207.12249%2016.666%203.95499ZM6.8227%2012.6333C5.87521%2012.6333%205.1002%2011.7708%205.1002%2010.7167C5.1002%209.66166%205.85521%208.79916%206.82187%208.79916C7.78271%208.79916%208.56687%209.66166%208.54687%2010.7158C8.54687%2011.7708%207.78354%2012.6333%206.8227%2012.6333ZM13.1885%2012.6333C12.2385%2012.6333%2011.4635%2011.7708%2011.4635%2010.7167C11.4635%209.66166%2012.2185%208.79916%2013.1885%208.79916C14.146%208.79916%2014.9302%209.66166%2014.911%2010.7158C14.911%2011.7708%2014.1552%2012.6333%2013.1885%2012.6333Z%22%20fill%3D%22white%22%20fill-opacity%3D%220.7%22%2F%3E%0A%3C%2Fsvg%3E');
+  background-color: rgba(78, 89, 105, 1); //var(--ifm-navbar-link-color);
+  [data-theme='dark'] & {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  mask-image: url('../img/discord-light.svg');
   transition: background-color var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
+  :hover {
+    background-color: var(--ifm-navbar-link-hover-color);
+  }
 }
 
-.xheader-github-link:hover::before {
+.xheader-discord-link:hover::before {
   background-color: var(--ifm-navbar-link-hover-color);
 }
 
 .navbar__items--right button.clean-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.navbar__items--right svg {
+  width: 32px;
+  height: 32px;
+  // toggle light/dark button
+  color: rgba(78, 89, 105, 1);
+  [data-theme='dark'] & {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+.dropdownHr {
+  display: none;
+}
+.theme-layout-navbar.navbar.navbar--fixed-top.navbar-sidebar--show {
+  .navbar-sidebar {
+    --ifm-navbar-sidebar-width: 100%;
+    bottom: unset;
+
+    .menu__link.dropdownHr {
+      display: block;
+      border-radius: unset;
+      margin: 20px 0;
+      padding: 0;
+      height: 1px;
+      background-color: rgba(242, 243, 245, 1);
+      cursor: unset;
+      pointer-events: none;
+    }
+  }
+
+  .navbar-sidebar__items {
+    height: unset;
+  }
+  // .xheader-github-link::after {
+  //   content: 'Github';
+  // }
+  // .xheader-github-link::before {
+  //   display: none;
+  // }
+  // .xheader-discord-link::after {
+  //   content: 'Discord';
+  // }
+  // .xheader-discord-link::before {
+  //   display: none;
+  // }
+
+  // .xheader-locale {
+  //   svg {
+  //     display: none;
+  //   }
+  // }
 }
 
 .DocSearch-Button-Container {
@@ -367,12 +437,13 @@ span.DocSearch-Button-Keys {
 
 .dropdown > .navbar__link:after {
   border: none;
-  width: 0.6rem;
-  height: 0.6rem;
+  width: 12px;
+  height: 12px;
   background: url('../img/arrow-black.svg') 50% / 1rem 1rem;
   transform: rotate(180deg);
-  top: 1px;
+  top: -4px;
   left: 0px;
+  margin-left: 0;
 
   [data-theme='dark'] & {
     background: url('../img/arrow-white.svg') 50% / 1rem 1rem;

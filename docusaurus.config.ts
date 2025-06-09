@@ -241,24 +241,30 @@ const config: Config = {
         // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: 'showcase', label: 'Showcase', position: 'left'},
-
+        {
+          to: '#',
+          className: 'dropdownHr',
+          position: 'right',
+        },
         {
           type: 'docsVersionDropdown',
           versions: ['current'],
           position: 'right',
         },
+
         {
           type: 'localeDropdown',
+          className: 'xheader-locale',
           position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/webspatial/webspatial-sdk',
           // label: 'GitHub',
           className: 'xheader-github-link',
           position: 'right',
         },
         {
-          href: 'https://discordapp.com/invite/docusaurus',
+          href: 'https://discord.gg/sXtcgNFK',
           // label: 'Discord',
           className: 'xheader-discord-link',
           position: 'right',
