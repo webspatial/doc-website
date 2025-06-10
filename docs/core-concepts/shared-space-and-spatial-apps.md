@@ -14,7 +14,7 @@ Within this single 3D space, multiple apps can coexist harmoniously - they fit n
 
 These **Multitasking Apps** include not only traditional 2D apps but also **Spatial Apps** that take advantage of 3D space and contain 3D content.
 
-| [![](../assets/concepts/1-1.png)](../assets/concepts/1-1.png) | [![](../assets/concepts/1-2.png)](../assets/concepts/1-2.png) |
+| <Image img={require("../assets/concepts/1-1.png")} alt="Scene Example 1" /> | <Image img={require("../assets/concepts/1-2.png")} alt="Scene Example 1" /> |
 | :-------------------------------------------------------: | :-------------------------------------------------------: |
 
 ## Spatial Apps {#spatial-apps}
@@ -83,15 +83,15 @@ Because of this, Spatial Apps cannot freely build independent rendering pipeline
 :::info
 [Unified Rendering App Model](https://developer.picoxr.com/news/multi-app-rendering/):
 
-[![image](../assets/concepts/1-9.png)](../assets/concepts/1-9.png)
+<Image img={require("../assets/concepts/1-9.png")} alt="Scene Example 1" />
 
 Unified rendering architecture on visionOS:
 
-[![image](../assets/concepts/1-10.png)](../assets/concepts/1-10.png)
+<Image img={require("../assets/concepts/1-10.png")} alt="Scene Example 1" />
 
 Excerpts from the WWDC session on unified rendering:
 
-[![image](../assets/concepts/1-11.png)](../assets/concepts/1-11.png)
-[![image](../assets/concepts/1-12.png)](../assets/concepts/1-12.png)
-[![image](../assets/concepts/1-13.png)](../assets/concepts/1-13.png)
+<Image img={require("../assets/concepts/1-11.png")} alt="Scene Example 1" />
+<Image img={require("../assets/concepts/1-12.png")} alt="Scene Example 1" />
+<Image img={require("../assets/concepts/1-13.png")} alt="Scene Example 1" />
 :::

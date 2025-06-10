@@ -32,7 +32,7 @@ Then open the site's local URL in Chrome or Edge. You should see the PWA install
 
 Open your browser's DevTools, you should see how the browser has parsed the Web App Manifest for this page.
 
-[![](../../../assets/guide/pwa-3.png)](../../../assets/guide/pwa-3.png)
+<Image img={require("../../../assets/guide/pwa-3.png")} alt="Scene Example 3" />
 
 At this point, the site qualifies as a minimal PWA.
 

@@ -28,17 +28,17 @@ sidebar_position: 4
 
 With WebSpatial, **HTML elements** can be laid out and positioned not only along the X and Y axes via CSS, but also [**along the Z axis in front of the web page**](../development-guide/using-the-webspatial-api/elevate-2d-elements):
 
-[![image](../assets/intro/intro-4-2.jpeg)](../assets/intro/intro-4-2.jpeg)
+<Image img={require("../assets/intro/intro-4-2.jpeg")} alt="Scene Example 4" />
 
 ### Transform HTML Elements in True 3D {#transform}
 
 WebSpatial lets HTML elements [**rotate, scale, and warp along the Z axis in real space**](../development-guide/using-the-webspatial-api/elevate-2d-elements).
 
-[![image](../assets/intro/intro-4-3.png)](../assets/intro/intro-4-3.png)
+<Image img={require("../assets/intro/intro-4-3.png")} alt="Scene Example 4" />
 
 For example, you can build an actual 3D cube using plain `div` elements:
 
-[![image](../assets/intro/intro-4-4.jpeg)](../assets/intro/intro-4-4.jpeg)
+<Image img={require("../assets/intro/intro-4-4.jpeg")} alt="Scene Example 4" />
 
 ### Material-Based Backgrounds {#material}
 
@@ -46,23 +46,23 @@ With WebSpatial, HTML elements can have backgrounds that are **[semi-transparent
 
 You can also set the background of an element or an entire page window to a [**fully transparent material**](../development-guide/using-the-webspatial-api/add-material-backgrounds), making its contents appear to float and disperse in space.
 
-[![image](../assets/intro/intro-4-5.png)](../assets/intro/intro-4-5.png)
+<Image img={require("../assets/intro/intro-4-5.png")} alt="Scene Example 4" />
 
 ### Genuine 3D Elements for HTML {#3d-elements}
 
 WebSpatial adds **[true 3D elements](../core-concepts/spatialized-elements-and-3d-container-elements#3d-elements)** to HTML, allowing 3D content to appear directly in space:
 
-[![image](../assets/intro/intro-4-6.jpeg)](../assets/intro/intro-4-6.jpeg)
+<Image img={require("../assets/intro/intro-4-6.jpeg")} alt="Scene Example 4" />
 
 These 3D elements can [**participate in layout alongside 2D elements**](../development-guide/using-the-webspatial-api/add-3d-content), forming any mix of Web content and GUI:
 
-[![image](../assets/intro/intro-4-7.jpeg)](../assets/intro/intro-4-7.jpeg)
+<Image img={require("../assets/intro/intro-4-7.jpeg")} alt="Scene Example 4" />
 
 ### Multi-Scene Spatial Apps {#multi-scene}
 
 A WebSpatial app can comprise multiple **[scenes](../core-concepts/scenes-and-spatial-layouts)**, just like a native spatial app. These 2D + 3D (or pure 3D) scenes can be [**managed as standard Web windows**](../development-guide/using-the-webspatial-api/manage-multiple-scenes), while also allowing for be [initialized with configurations specific to spatial computing platforms](../core-concepts/scenes-and-spatial-layouts#scene-init).
 
-[![image](../assets/intro/intro-4-8.gif)](../assets/intro/intro-4-8.gif)
+<Image img={require("../assets/intro/intro-4-8.gif")} alt="Scene Example 4" />
 
 ### 3D Containers with 3D Engine APIs (upcoming feature) {#3d-engine}
 
