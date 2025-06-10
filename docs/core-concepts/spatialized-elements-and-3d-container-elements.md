@@ -31,7 +31,7 @@ A spatialized 2D element mainly gains two new capabilities:
    View [related WebSpatial APIs](../development-guide/using-the-webspatial-api/add-material-backgrounds).
    :::
 
-   <Image img={require("../assets/concepts/4-1.png")} alt="Scene Example 4" />
+   [![](/assets/concepts/4-1.png)](/assets/concepts/4-1.png)
 
 2. **Spatial elevation**
 
@@ -41,19 +41,19 @@ A spatialized 2D element mainly gains two new capabilities:
    View [related WebSpatial APIs](../development-guide/using-the-webspatial-api/elevate-2d-elements).
    :::
 
-   <Image img={require("../assets/concepts/4-2.png")} alt="Scene Example 4" />
+   [![](/assets/concepts/4-2.png)](/assets/concepts/4-2.png)
 
 Both new capabilities support nesting:
 
 1. If the window or a parent element already has a material background, its child elements can still use [different translucent material](../development-guide/using-the-webspatial-api/add-material-backgrounds#translucent-options) backgrounds.
 
-   <Image img={require("../assets/concepts/4-3.png")} alt="Scene Example 4" />
-   <Image img={require("../assets/concepts/4-4.png")} alt="Scene Example 4" />
+   [![](/assets/concepts/4-3.png)](/assets/concepts/4-3.png)
+   [![](/assets/concepts/4-4.png)](/assets/concepts/4-4.png)
 
 2. If the parent element has been elevated and rotated in 3D space, child elements can continue to be elevated and rotated on that basis.
 
-   <Image img={require("../assets/concepts/4-5.jpeg")} alt="Scene Example 4" />
-   <Image img={require("../assets/concepts/4-6.png")} alt="Scene Example 4" />
+   [![](/assets/concepts/4-5.jpeg)](/assets/concepts/4-5.jpeg)
+   [![](/assets/concepts/4-6.png)](/assets/concepts/4-6.png)
 
 ## 3D Content Container Elements {#3d-elements}
 
@@ -86,13 +86,13 @@ There are two kinds of 3D content container elements.
 
   Their 3D content comes from pre-authored [3D model files](../development-guide/using-the-webspatial-api/add-3d-content).
 
-  <Image img={require("../assets/concepts/4-7.png")} alt="Scene Example 4" />
+  [![](/assets/concepts/4-7.png)](/assets/concepts/4-7.png)
 
 - **Dynamic 3D content containers**
 
   Their 3D content is generated in real time by a [3D engine](../development-guide/using-the-webspatial-api/add-3d-content).
 
-  <Image img={require("../assets/concepts/4-8.png")} alt="Scene Example 4" />
+  [![](/assets/concepts/4-8.png)](/assets/concepts/4-8.png)
 
 ## Interaction with 2D Content {#nature-interaction}
 
@@ -110,7 +110,7 @@ The default interaction mode on visionOS is called **Natural Interaction** and i
   - Moving a finger without touching an object is "selection (navigation)," while touching the object is "activation (trigger)."
   - As with touchscreens, after the finger touches an object it can move before releasing to fire move events.
 
-<Image img={require("../assets/concepts/4-9.png")} alt="Scene Example 4" />
+[![](/assets/concepts/4-9.png)](/assets/concepts/4-9.png)
 
 The browser engine on visionOS already lets 2D web content support Natural Interaction:
 

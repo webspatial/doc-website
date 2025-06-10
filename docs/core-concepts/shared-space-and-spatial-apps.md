@@ -14,7 +14,7 @@ Within this single 3D space, multiple apps can coexist harmoniously - they fit n
 
 These **Multitasking Apps** include not only traditional 2D apps but also **Spatial Apps** that take advantage of 3D space and contain 3D content.
 
-| <Image img={require("../assets/concepts/1-1.png")} alt="Scene Example 1" /> | <Image img={require("../assets/concepts/1-2.png")} alt="Scene Example 1" /> |
+| [![](/assets/concepts/1-1.png)](/assets/concepts/1-1.png) | [![](/assets/concepts/1-2.png)](/assets/concepts/1-2.png) |
 | :-------------------------------------------------------: | :-------------------------------------------------------: |
 
 ## Spatial Apps {#spatial-apps}
@@ -35,28 +35,28 @@ Spatial Apps are the [new generation of XR apps](../introduction/the-new-generat
 
 <div className="row">
   <div className="col col--6">
-    <Image img={require("../assets/concepts/1-3.png")} alt="Spatial App Example 1" />
+    <a href="/assets/concepts/1-3.png" target="_blank"><img src="/assets/concepts/1-3.png" alt="Spatial App Example 1" /></a>
   </div>
   <div className="col col--6">
-    <Image img={require("../assets/concepts/1-4.png")} alt="Spatial App Example 2" />
-  </div>
-</div>
-
-<div className="row">
-  <div className="col col--6">
-    <Image img={require("../assets/concepts/1-5.png")} alt="Spatial App Example 3" />
-  </div>
-  <div className="col col--6">
-    <Image img={require("../assets/concepts/1-6.png")} alt="Spatial App Example 4" />
+    <a href="/assets/concepts/1-4.png" target="_blank"><img src="/assets/concepts/1-4.png" alt="Spatial App Example 2" /></a>
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
-    <Image img={require("../assets/concepts/1-7.png")} alt="Spatial App Example 5" />
+    <a href="/assets/concepts/1-5.png" target="_blank"><img src="/assets/concepts/1-5.png" alt="Spatial App Example 3" /></a>
   </div>
   <div className="col col--6">
-    <Image img={require("../assets/concepts/1-8.png")} alt="Spatial App Example 6" />
+    <a href="/assets/concepts/1-6.png" target="_blank"><img src="/assets/concepts/1-6.png" alt="Spatial App Example 4" /></a>
+  </div>
+</div>
+
+<div className="row">
+  <div className="col col--6">
+    <a href="/assets/concepts/1-7.png" target="_blank"><img src="/assets/concepts/1-7.png" alt="Spatial App Example 5" /></a>
+  </div>
+  <div className="col col--6">
+    <a href="/assets/concepts/1-8.png" target="_blank"><img src="/assets/concepts/1-8.png" alt="Spatial App Example 6" /></a>
   </div>
 </div>
 
@@ -83,15 +83,15 @@ Because of this, Spatial Apps cannot freely build independent rendering pipeline
 :::info
 [Unified Rendering App Model](https://developer.picoxr.com/news/multi-app-rendering/):
 
-<Image img={require("../assets/concepts/1-9.png")} alt="Scene Example 1" />
+[![image](/assets/concepts/1-9.png)](/assets/concepts/1-9.png)
 
 Unified rendering architecture on visionOS:
 
-<Image img={require("../assets/concepts/1-10.png")} alt="Scene Example 1" />
+[![image](/assets/concepts/1-10.png)](/assets/concepts/1-10.png)
 
 Excerpts from the WWDC session on unified rendering:
 
-<Image img={require("../assets/concepts/1-11.png")} alt="Scene Example 1" />
-<Image img={require("../assets/concepts/1-12.png")} alt="Scene Example 1" />
-<Image img={require("../assets/concepts/1-13.png")} alt="Scene Example 1" />
+[![image](/assets/concepts/1-11.png)](/assets/concepts/1-11.png)
+[![image](/assets/concepts/1-12.png)](/assets/concepts/1-12.png)
+[![image](/assets/concepts/1-13.png)](/assets/concepts/1-13.png)
 :::

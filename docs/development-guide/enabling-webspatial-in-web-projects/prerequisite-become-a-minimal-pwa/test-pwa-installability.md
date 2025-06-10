@@ -27,12 +27,12 @@ npm run start
 
 Then open the site's local URL in Chrome or Edge. You should see the PWA install button in the address bar of your browser:
 
-<Image img={require("../../../assets/guide/pwa-1.png")} alt="Scene Example 1" />
-<Image img={require("../../../assets/guide/pwa-2.png")} alt="Scene Example 2" />
+![](/assets/guide/pwa-1.png)
+![](/assets/guide/pwa-2.png)
 
 Open your browser's DevTools, you should see how the browser has parsed the Web App Manifest for this page.
 
-<Image img={require("../../../assets/guide/pwa-3.png")} alt="Scene Example 3" />
+[![](/assets/guide/pwa-3.png)](/assets/guide/pwa-3.png)
 
 At this point, the site qualifies as a minimal PWA.
 
