@@ -148,6 +148,9 @@ a:hover {
   --ifm-h1-font-size: 36px;
 }
 .markdown {
+  hr {
+    background-color: var(--color-border-1);
+  }
   ol {
     padding-left: 1rem; // todo:
   }
@@ -477,9 +480,15 @@ span.DocSearch-Button-Keys {
     color: var(--ifm-font-color-base);
   }
 }
-.breadcrumbs li:nth-child(2) {
+.breadcrumbs li:nth-child(n + 2) {
   .breadcrumbs__link {
     padding-left: 0;
+    padding-right: 0;
+  }
+
+  &::after {
+    padding: 0 4px;
+    background-repeat: no-repeat;
   }
 }
 .badge--secondary {
