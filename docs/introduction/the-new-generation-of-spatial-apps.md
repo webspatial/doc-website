@@ -10,19 +10,19 @@ The new generation of XR apps—**spatial apps**—are not cut off from the 2D a
 
 <div className="row">
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-2-1-1.gif")} alt="intro-2-1" />
+    <Image img={require("../assets/intro/intro-2-1-1.gif")} alt="intro-2-1" />
   </div>
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-2-2.png")} alt="intro-2-2" />
+    <Image img={require("../assets/intro/intro-2-2.png")} alt="intro-2-2" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-2-3.png")} alt="intro-2-3" />
+    <Image img={require("../assets/intro/intro-2-3.png")} alt="intro-2-3" />
   </div>
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-2-4.png")} alt="intro-2-4" />
+    <Image img={require("../assets/intro/intro-2-4.png")} alt="intro-2-4" />
   </div>
 </div>
 
@@ -162,11 +162,11 @@ Before visionOS, apps on XR platforms were **completely different** from apps on
 
 <div className="row">
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-2-5.png")} alt="intro-2-5" />
+    <Image img={require("../assets/intro/intro-2-5.png")} alt="intro-2-5" />
     <p className="text--center">Desktop apps</p>
   </div>
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-2-6.png")} alt="intro-2-6" />
+    <Image img={require("../assets/intro/intro-2-6.png")} alt="intro-2-6" />
     <p className="text--center">Traditional XR apps</p>
   </div>
 </div>
