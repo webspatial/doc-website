@@ -19,7 +19,8 @@
     "typecheck": "tsc",
     "sync-docs": "bash scripts/sync-docs.sh",
     "convert-img-links": "find ./docs -path ./docs/test -prune -o -name '*.md' -exec bash ./scripts/convert-img-links.sh {} \\;",
-    "convert-md-images": "find ./docs -path ./docs/test -prune -o -name '*.md' -exec node ./scripts/convert-md-images.js {} \\;"
+    "convert-md-images": "find ./docs -path ./docs/test -prune -o -name '*.md' -exec node ./scripts/convert-md-images.js {} \\;",
+    "fix-md-all": "npm run convert-img-links && npm run convert-md-images"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.0",
