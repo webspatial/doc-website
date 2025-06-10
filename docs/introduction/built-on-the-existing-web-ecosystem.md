@@ -137,32 +137,32 @@ The screenshots below show how this sample project looks on different platforms.
 <div className="row">
   <div className="col col--6">
     <p>Large Screen</p>
-    <a href="/assets/intro/techshop-desktop.png" target="_blank"><img src="/assets/intro/techshop-desktop.png" alt="Large Screen" /></a>
+    <Image img={require("/assets/intro/techshop-desktop.png")} alt="Large Screen" />
   </div>
   <div className="col col--6">
     <p>Tablet</p>
-    <a href="/assets/intro/techshop-pad.png" target="_blank"><img src="/assets/intro/techshop-pad.png" alt="Tablet" /></a>
+    <Image img={require("/assets/intro/techshop-pad.png")} alt="Tablet" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>Small Window</p>
-    <a href="/assets/intro/techshop-small.png" target="_blank"><img src="/assets/intro/techshop-small.png" alt="Small Window" /></a>
+    <Image img={require("/assets/intro/techshop-small.png")} alt="Small Window" />
   </div>
   <div className="col col--6">
     <p>Phone</p>
-    <a href="/assets/intro/techshop-phone.png" target="_blank"><img src="/assets/intro/techshop-phone.png" alt="Phone" /></a>
+    <Image img={require("/assets/intro/techshop-phone.png")} alt="Phone" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>visionOS Safari</p>
-    <a href="/assets/intro/techshop-safari.png" target="_blank"><img src="/assets/intro/techshop-safari.png" alt="visionOS Safari" /></a>
+    <Image img={require("/assets/intro/techshop-safari.png")} alt="visionOS Safari" />
   </div>
   <div className="col col--6">
     <p>WebSpatial</p>
-    <a href="/assets/intro/techshop-spatial.png" target="_blank"><img src="/assets/intro/techshop-spatial.png" alt="WebSpatial" /></a>
+    <Image img={require("/assets/intro/techshop-spatial.png")} alt="WebSpatial" />
   </div>
 </div>
