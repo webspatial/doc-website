@@ -27,8 +27,8 @@ npm run start
 
 Then open the site's local URL in Chrome or Edge. You should see the PWA install button in the address bar of your browser:
 
-![](../../../assets/guide/pwa-1.png)
-![](../../../assets/guide/pwa-2.png)
+<Image img={require("../../../assets/guide/pwa-1.png")} alt="Scene Example 1" />
+<Image img={require("../../../assets/guide/pwa-2.png")} alt="Scene Example 2" />
 
 Open your browser's DevTools, you should see how the browser has parsed the Web App Manifest for this page.
 
