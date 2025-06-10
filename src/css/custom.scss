@@ -158,6 +158,16 @@ a:hover {
     font-weight: 600;
   }
   --ifm-heading-font-weight: 600;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-text-1);
+  }
+
   > h1 {
     &:first-child {
       --ifm-h1-font-size: 36px;
@@ -190,7 +200,7 @@ a:hover {
     line-height: 22px;
     margin-top: 24px;
   }
-  color: var(--color-text-2);
+  color: var(--color-text-1);
 
   code {
     --ifm-font-family-monospace: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco,
