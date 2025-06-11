@@ -1,6 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
+/**
+ * 
+ * convert <a><img src="src"></a> to <Image src="src"/>
+ */
+
 // 获取输入文件参数
 const inputFile = process.argv[2];
 
@@ -38,7 +43,7 @@ try {
         return match; // 保持原样
       }
 
-      return `<Image img={require("${src}")} alt="${alt}" />`;
+      return `<Image img="${src}" alt="${alt}" />`;
     },
   );
 
