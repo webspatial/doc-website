@@ -1,8 +1,9 @@
+import {darkTheme} from './src/css/prism-theme/xdark';
+import {lightTheme} from './src/css/prism-theme/xlight';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import type {Options as IdealImageOptions} from '@docusaurus/plugin-ideal-image';
-import xGithubTheme, {emptyTheme} from './src/css/xGithubTheme';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 const BASE_URL = process.env.BASE_URL || '/';
@@ -198,7 +199,10 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: ['./src/css/codeblock.scss', './src/css/custom.scss'],
+          customCss: [
+            // './src/css/codeblock.scss',
+            './src/css/custom.scss',
+          ],
         },
       } satisfies Preset.Options,
     ],
@@ -328,8 +332,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
-      theme: emptyTheme,
-      darkTheme: emptyTheme,
+      theme: lightTheme, //emptyTheme,
+      darkTheme: darkTheme, //emptyTheme,
       // theme: prismThemes.github,
       // darkTheme: prismThemes.gruvboxMaterialDark,
       additionalLanguages: ['diff', 'json5', 'ini'],
