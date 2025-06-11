@@ -538,6 +538,9 @@ a.table-of-contents__link {
   margin: 20px 0 0 16px;
   padding-top: 0;
   padding-bottom: 0;
+  code {
+    border: unset;
+  }
   li {
     // display: flex;
     // align-items: center;
@@ -1208,7 +1211,7 @@ body .DocSearch {
 @media (max-width: 996px) {
   // padding for blog h5
   .container main {
-    padding: 0 40px;
+    padding: 0 24px;
   }
   .navbar__toggle {
     position: absolute;
