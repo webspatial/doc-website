@@ -22,7 +22,7 @@
 .showcaseCardHeader {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .showcaseCardTitle {
@@ -115,9 +115,9 @@
 }
 .cardFooterWrap {
   position: relative;
-  padding: 16px;
-  margin-top: auto;
-  ul{
+  padding: 8px 16px 16px;
+  margin-top: 0;
+  ul {
     min-height: 26px;
   }
   &::after {
@@ -185,7 +185,7 @@
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
   }
 
-  [data-theme='dark'] &:hover{
+  [data-theme='dark'] &:hover {
     box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.12);
   }
 }
