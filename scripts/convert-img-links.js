@@ -49,11 +49,11 @@ try {
 
       // 如果 href 存在且与 src 不同，保留链接结构和所有属性
       if (href && href !== src) {
-        return `<a${aAttributes}><Image img="${src}" alt="${alt}" /></a>`;
+        return `<a${aAttributes}><Image src="${src}" alt="${alt}" /></a>`;
       }
 
       // 如果没有 href 或者 href 与 src 相同，只输出 Image 组件
-      return `<Image img="${src}" alt="${alt}" />`;
+      return `<Image src="${src}" alt="${alt}" />`;
     },
   );
 

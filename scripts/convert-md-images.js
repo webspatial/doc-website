@@ -31,11 +31,11 @@ content = content.replace(nestedImgRegex, (match, imgAlt, imgSrc, linkHref) => {
   // 如果链接地址与图片地址不同，保留链接结构
   if (href && href !== src) {
     const titleAttr = linkTitle ? ` title="${linkTitle}"` : '';
-    return `<a href="${href}"${titleAttr}><Image img={require("${src}")} alt="${alt}" /></a>`;
+    return `<a href="${href}"${titleAttr}><Image src=${src} alt="${alt}" /></a>`;
   }
 
   // 如果链接地址与图片地址相同或没有链接，只输出Image组件
-  return `<Image img="${src}" alt="${alt}" />`;
+  return `<Image src="${src}" alt="${alt}" />`;
 });
 
 // 处理普通图片：![](...)
@@ -50,7 +50,7 @@ content = content.replace(normalImgRegex, (match, imgAlt, imgSrc) => {
   const alt = imgAlt || `Scene Example ${fileName.match(/\d+/)?.[0] || 'X'}`;
 
   console.log('普通图片');
-  return `<Image img="${imgSrc}" alt="${alt}" />`;
+  return `<Image src="${imgSrc}" alt="${alt}" />`;
 });
 
 fs.writeFileSync(filePath, content, 'utf-8');

@@ -54,4 +54,4 @@ WebSpatial Builder also supports [offline-packing the Web build output into the 
 
 If the upcoming **WebSpatial Browser** app (currently under development) has been pre-installed on the target platform, there is no need to package, install, or publish the app to app stores. Since the WebSpatial Browser already contains the WebSpatial App Shell, so you can open any WebSpatial App URL directly in it and experience it in spatial form.
 
-<Image img="/assets/concepts/2-1.png" alt="Scene Example 2" />
+<Image src="/assets/concepts/2-1.png" alt="Scene Example 2" />
