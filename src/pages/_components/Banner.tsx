@@ -9,9 +9,12 @@ const Banner: React.FC<Props> = () => {
   const initColorMode = React.useRef<ColorMode>(colorMode);
   React.useEffect(() => {
     // force set dark mode in landing page and restore after leaving
+    initColorMode.current = localStorage.getItem('theme') ?? ('light' as any);
+
     if (colorMode !== 'dark') {
       setColorMode('dark');
     }
+
     return () => {
       setTimeout(() => {
         setColorMode(initColorMode.current);
