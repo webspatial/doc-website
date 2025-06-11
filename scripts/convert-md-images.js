@@ -17,7 +17,7 @@ content = content.replace(nestedImgRegex, (match, imgSrc1, imgSrc2) => {
   const alt = `Scene Example ${fileName.match(/\d+/)?.[0] || 'X'}`;
   console.log('嵌套链接图片');
   // return `<Image img={require("${src}")} alt="${alt}" decoding="async" loading="lazy" className="img" />`;
-  return `<Image img={require("${src}")} alt="${alt}" />`;
+  return `<Image src="${src}" alt="${alt}" />`;
 });
 
 // 处理普通图片：![](...)
@@ -27,7 +27,7 @@ content = content.replace(normalImgRegex, (match, imgSrc) => {
   const alt = `Scene Example ${fileName.match(/\d+/)?.[0] || 'X'}`;
   console.log('普通图片');
   // return `<Image img={require("${imgSrc}")} alt="${alt}" decoding="async" loading="lazy" className="img" />`;
-  return `<Image img={require("${imgSrc}")} alt="${alt}" />`;
+  return `<Image src="${imgSrc}" alt="${alt}" />`;
 });
 
 fs.writeFileSync(filePath, content, 'utf-8');
