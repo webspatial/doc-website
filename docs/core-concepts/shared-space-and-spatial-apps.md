@@ -35,28 +35,28 @@ Spatial Apps are the [new generation of XR apps](../introduction/the-new-generat
 
 <div className="row">
   <div className="col col--6">
-    <Image img={require("/assets/concepts/1-3.png")} alt="Spatial App Example 1" />
+    <Image img={require("/assets/concepts/1-3.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image img={require("/assets/concepts/1-4.png")} alt="Spatial App Example 2" />
-  </div>
-</div>
-
-<div className="row">
-  <div className="col col--6">
-    <Image img={require("/assets/concepts/1-5.png")} alt="Spatial App Example 3" />
-  </div>
-  <div className="col col--6">
-    <Image img={require("/assets/concepts/1-6.png")} alt="Spatial App Example 4" />
+    <Image img={require("/assets/concepts/1-4.png")} alt="" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
-    <Image img={require("/assets/concepts/1-7.png")} alt="Spatial App Example 5" />
+    <Image img={require("/assets/concepts/1-5.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image img={require("/assets/concepts/1-8.png")} alt="Spatial App Example 6" />
+    <Image img={require("/assets/concepts/1-6.png")} alt="" />
+  </div>
+</div>
+
+<div className="row">
+  <div className="col col--6">
+    <Image img={require("/assets/concepts/1-7.png")} alt="" />
+  </div>
+  <div className="col col--6">
+    <Image img={require("/assets/concepts/1-8.png")} alt="" />
   </div>
 </div>
 

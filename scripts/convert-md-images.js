@@ -16,6 +16,7 @@ content = content.replace(nestedImgRegex, (match, imgSrc1, imgSrc2) => {
   const fileName = path.basename(src);
   const alt = `Scene Example ${fileName.match(/\d+/)?.[0] || 'X'}`;
   console.log('嵌套链接图片');
+  // return `<Image img={require("${src}")} alt="${alt}" decoding="async" loading="lazy" className="img" />`;
   return `<Image img={require("${src}")} alt="${alt}" />`;
 });
 
@@ -25,6 +26,7 @@ content = content.replace(normalImgRegex, (match, imgSrc) => {
   const fileName = path.basename(imgSrc);
   const alt = `Scene Example ${fileName.match(/\d+/)?.[0] || 'X'}`;
   console.log('普通图片');
+  // return `<Image img={require("${imgSrc}")} alt="${alt}" decoding="async" loading="lazy" className="img" />`;
   return `<Image img={require("${imgSrc}")} alt="${alt}" />`;
 });
 
