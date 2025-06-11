@@ -23,9 +23,21 @@ try {
 
   // 正则替换：将 <a><img></a> 替换为 React 组件结构
   const updatedContent = content.replace(
-    /<a[^>]*><img[^>]*src="([^"]+)"[^>]*(?:alt="([^"]*)")?[^>]*\/?><\/a>/g,
-    (match, src, alt = '') => {
-      // return `<Image img={require("${src}")} alt="${alt}" decoding="async" loading="lazy" className="img" />`;
+    /<a[^>]*><img([^>]*)\/?><\/a>/g,
+    (match, imgAttributes) => {
+      // 提取 src 属性
+      const srcMatch = imgAttributes.match(/src=["']([^"']+)["']/);
+      const src = srcMatch ? srcMatch[1] : '';
+
+      // 提取 alt 属性
+      const altMatch = imgAttributes.match(/alt=["']([^"']*)["']/);
+      const alt = altMatch ? altMatch[1] : '';
+
+      if (!src) {
+        console.warn(`⚠️ 未找到src属性：${match}`);
+        return match; // 保持原样
+      }
+
       return `<Image img={require("${src}")} alt="${alt}" />`;
     },
   );

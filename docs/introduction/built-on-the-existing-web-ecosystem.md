@@ -137,32 +137,32 @@ The screenshots below show how this sample project looks on different platforms.
 <div className="row">
   <div className="col col--6">
     <p>Large Screen</p>
-    <Image img={require("/assets/intro/techshop-desktop.png")} alt="" />
+    <Image img={require("/assets/intro/techshop-desktop.png")} alt="Large Screen" />
   </div>
   <div className="col col--6">
     <p>Tablet</p>
-    <Image img={require("/assets/intro/techshop-pad.png")} alt="" />
+    <Image img={require("/assets/intro/techshop-pad.png")} alt="Tablet" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>Small Window</p>
-    <Image img={require("/assets/intro/techshop-small.png")} alt="" />
+    <Image img={require("/assets/intro/techshop-small.png")} alt="Small Window" />
   </div>
   <div className="col col--6">
     <p>Phone</p>
-    <Image img={require("/assets/intro/techshop-phone.png")} alt="" />
+    <Image img={require("/assets/intro/techshop-phone.png")} alt="Phone" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>visionOS Safari</p>
-    <Image img={require("/assets/intro/techshop-safari.png")} alt="" />
+    <Image img={require("/assets/intro/techshop-safari.png")} alt="visionOS Safari" />
   </div>
   <div className="col col--6">
     <p>WebSpatial</p>
-    <Image img={require("/assets/intro/techshop-spatial.png")} alt="" />
+    <Image img={require("/assets/intro/techshop-spatial.png")} alt="WebSpatial" />
   </div>
 </div>
