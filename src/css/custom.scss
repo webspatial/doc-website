@@ -1140,6 +1140,10 @@ body .DocSearch {
           color: var(--docsearch-highlight-color) !important;
         }
       }
+      .DocSearch-Hit-path {
+        color: var(--color-text-3) !important;
+        font-weight: 400;
+      }
       a {
         background-color: rgba(rgb(78, 59, 246), 0.12);
       }
