@@ -7,7 +7,7 @@ export default {
     imgUrl: getFakeImg(1280, 1280),
     button: {
       text: 'Quick Start',
-      url: '#',
+      url: '/docs/quick-example',
     },
   },
   section1: {
@@ -101,28 +101,28 @@ export default {
       {
         title: 'WebSpatial API',
         desc: 'BAn open, minimal extension to HTML, CSS, and JS that adds spatial powers like elevation, multi-scenes, 3D containers',
-        moreUrl: 'todo:',
+        moreUrl: '/docs/development-guide/using-the-webspatial-api/',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(78, 59, 246, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #191919',
       },
       {
         title: 'React SDK',
         desc: 'A drop-in library for React projects that instantly unlocks WebSpatial APIs, and lets you build spatial apps with the same React components and ecosystem you already use.',
-        moreUrl: 'todo:',
+        moreUrl: '/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'WebSpatial Builder',
         desc: 'A CLI tool that packages WebSpatial-enabled React projects into installable native spatial app, wrapping web code in a platform-specific App Shell that runs WebSpatial APIs.',
-        moreUrl: 'todo:',
+        moreUrl: '/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(252, 184, 75, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'Platform Simulator',
         desc: 'Preview and debug WebSpatial app on visionOS simulator without a headset.',
-        moreUrl: 'todo:',
+        moreUrl: '/docs/quick-example/#package-and-run',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
@@ -148,11 +148,11 @@ export default {
     children: [
       {
         title: 'Quick Start',
-        url: 'todo:',
+        url: '/docs/quick-example',
       },
       {
         title: 'Concept',
-        url: 'todo:',
+        url: '/docs/core-concepts/',
       },
     ],
   },
