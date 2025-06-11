@@ -83,15 +83,15 @@ Because of this, Spatial Apps cannot freely build independent rendering pipeline
 :::info
 [Unified Rendering App Model](https://developer.picoxr.com/news/multi-app-rendering/):
 
-<Image img={require("/assets/concepts/1-9.png")} alt="Scene Example 1" />
+<Image img={require("/assets/concepts/1-9.png")} alt="image" />
 
 Unified rendering architecture on visionOS:
 
-<Image img={require("/assets/concepts/1-10.png")} alt="Scene Example 1" />
+<Image img={require("/assets/concepts/1-10.png")} alt="image" />
 
 Excerpts from the WWDC session on unified rendering:
 
-<Image img={require("/assets/concepts/1-11.png")} alt="Scene Example 1" />
-<Image img={require("/assets/concepts/1-12.png")} alt="Scene Example 1" />
-<Image img={require("/assets/concepts/1-13.png")} alt="Scene Example 1" />
+<Image img={require("/assets/concepts/1-11.png")} alt="image" />
+<Image img={require("/assets/concepts/1-12.png")} alt="image" />
+<Image img={require("/assets/concepts/1-13.png")} alt="image" />
 :::
