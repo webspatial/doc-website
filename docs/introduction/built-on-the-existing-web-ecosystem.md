@@ -137,32 +137,32 @@ The screenshots below show how this sample project looks on different platforms.
 <div className="row">
   <div className="col col--6">
     <p>Large Screen</p>
-    <Image src="/assets/intro/techshop-desktop.png" alt="Large Screen" />
+    <Image img="/assets/intro/techshop-desktop.png" alt="Large Screen" />
   </div>
   <div className="col col--6">
     <p>Tablet</p>
-    <Image src="/assets/intro/techshop-pad.png" alt="Tablet" />
+    <Image img="/assets/intro/techshop-pad.png" alt="Tablet" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>Small Window</p>
-    <Image src="/assets/intro/techshop-small.png" alt="Small Window" />
+    <Image img="/assets/intro/techshop-small.png" alt="Small Window" />
   </div>
   <div className="col col--6">
     <p>Phone</p>
-    <Image src="/assets/intro/techshop-phone.png" alt="Phone" />
+    <Image img="/assets/intro/techshop-phone.png" alt="Phone" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>visionOS Safari</p>
-    <Image src="/assets/intro/techshop-safari.png" alt="visionOS Safari" />
+    <Image img="/assets/intro/techshop-safari.png" alt="visionOS Safari" />
   </div>
   <div className="col col--6">
     <p>WebSpatial</p>
-    <Image src="/assets/intro/techshop-spatial.png" alt="WebSpatial" />
+    <Image img="/assets/intro/techshop-spatial.png" alt="WebSpatial" />
   </div>
 </div>

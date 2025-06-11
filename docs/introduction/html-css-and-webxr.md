@@ -12,10 +12,10 @@ However, the problem that follows is, **the Web didn't automatically gain such s
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-1.png" alt="intro-3-1" />
+    <Image img="/assets/intro/intro-3-1.png" alt="intro-3-1" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-2.png" alt="intro-3-2" />
+    <Image img="/assets/intro/intro-3-2.png" alt="intro-3-2" />
   </div>
 </div>
 
@@ -23,19 +23,19 @@ On desktop and mobile platforms, Web development relies on **the same 2D GUI tec
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-3.png" alt="intro-3-3" />
+    <Image img="/assets/intro/intro-3-3.png" alt="intro-3-3" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-4.png" alt="intro-3-4" />
+    <Image img="/assets/intro/intro-3-4.png" alt="intro-3-4" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-5.png" alt="intro-3-5" />
+    <Image img="/assets/intro/intro-3-5.png" alt="intro-3-5" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-6.png" alt="intro-3-6" />
+    <Image img="/assets/intro/intro-3-6.png" alt="intro-3-6" />
   </div>
 </div>
 
@@ -43,10 +43,10 @@ However, HTML/CSS content is confined to the 2D plane of a browser window or Web
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-7.png" alt="intro-3-7" />
+    <Image img="/assets/intro/intro-3-7.png" alt="intro-3-7" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-8.png" alt="intro-3-8" />
+    <Image img="/assets/intro/intro-3-8.png" alt="intro-3-8" />
   </div>
 </div>
 
@@ -58,10 +58,10 @@ On the other hand, Web 3D content built with WebGL or WebGPU can use a new Web s
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-9.png" alt="intro-3-9" />
+    <Image img="/assets/intro/intro-3-9.png" alt="intro-3-9" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-10.png" alt="intro-3-10" />
+    <Image img="/assets/intro/intro-3-10.png" alt="intro-3-10" />
   </div>
 </div>
 
@@ -70,8 +70,8 @@ But WebXR content faces issues identical to those of [traditional XR apps](./the
 - WebXR content **cannot coexist with other XR apps**, and it **cannot even coexist with other 2D Web content in the same web page**. Once a WebXR session starts, it takes over rendering for the entire space, hiding the original web page and OS UI; the app itself must handle all interaction.
 - Its all content and GUI must be built [**entirely with WebGL or WebGPU**](https://developer.picoxr.com/document/web/webxr-vs-web3d/), usually with a **Web 3D engine**. This approach is **completely disconnected** from mainstream Web development with HTML + CSS + JS. In mainstream internet domains, 2D Web GUIs satisfy requirements easily and tap into a huge stock of UI patterns, component libraries, and open-source ecosystems. **None of that can be used directly in WebXR development**. Devs have to start from scratch, reinvent UI with disparate 3D GUI experiments or re-implement familiar 2D GUIs via WebGL/WebGPU.
 
-<Image src="/assets/intro/intro-3-11.png" alt="intro-3-11" />
-<Image src="/assets/intro/intro-3-12.png" alt="intro-3-12" />
+<Image img="/assets/intro/intro-3-11.png" alt="intro-3-11" />
+<Image img="/assets/intro/intro-3-12.png" alt="intro-3-12" />
 
 ## Problem Summary {#summary}
 

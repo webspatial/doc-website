@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * 
+ *
  * convert <a><img src="src"></a> to <Image src="src"/>
  */
 
@@ -28,8 +28,12 @@ try {
 
   // 正则替换：将 <a><img></a> 替换为 React 组件结构
   const updatedContent = content.replace(
-    /<a[^>]*><img([^>]*)\/?><\/a>/g,
-    (match, imgAttributes) => {
+    /<a([^>]*?)><img([^>]*)\/?><\/a>/g,
+    (match, aAttributes, imgAttributes) => {
+      // 提取 a 标签的 href 属性
+      const hrefMatch = aAttributes.match(/href=["']([^"']+)["']/);
+      const href = hrefMatch ? hrefMatch[1] : '';
+
       // 提取 src 属性
       const srcMatch = imgAttributes.match(/src=["']([^"']+)["']/);
       const src = srcMatch ? srcMatch[1] : '';
@@ -43,6 +47,12 @@ try {
         return match; // 保持原样
       }
 
+      // 如果 href 存在且与 src 不同，保留链接结构和所有属性
+      if (href && href !== src) {
+        return `<a${aAttributes}><Image img="${src}" alt="${alt}" /></a>`;
+      }
+
+      // 如果没有 href 或者 href 与 src 相同，只输出 Image 组件
       return `<Image img="${src}" alt="${alt}" />`;
     },
   );
