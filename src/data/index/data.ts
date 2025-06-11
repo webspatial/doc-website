@@ -1,8 +1,10 @@
+import {getFakeImg} from '@site/src/utils/imgUtils';
+
 export default {
   banner: {
     title: 'Bring Your Web to Space.',
     desc: 'Spatialize any website across real and virtual spaces with widely adopted open-web tech, empowering every web developer and enriching XR ecosystems.',
-    imgUrl: 'https://placehold.co/1280x1280',
+    imgUrl: getFakeImg(1280, 1280),
     button: {
       text: 'Quick Start',
       url: '#',
@@ -14,31 +16,31 @@ export default {
     children: [
       {
         title: 'Large Screen',
-        imgUrl: 'https://placecats.com/800/400',
+        imgUrl: getFakeImg(800, 400),
       },
       {
         title: 'Small Screen',
-        imgUrl: 'https://placecats.com/700/500',
+        imgUrl: getFakeImg(700, 500),
       },
       {
         title: 'Vision OS',
-        imgUrl: 'https://placecats.com/600/400',
+        imgUrl: getFakeImg(600, 400),
       },
       {
         title: 'Android XR',
-        imgUrl: 'https://placecats.com/600/400',
+        imgUrl: getFakeImg(600, 400),
         desc: '（Coming soon）',
         disable: true,
       },
       {
         title: 'Meta Horizon OS',
-        imgUrl: 'https://placecats.com/600/400',
+        imgUrl: getFakeImg(600, 400),
         desc: '（Coming soon）',
         disable: true,
       },
       {
         title: 'PICO OS',
-        imgUrl: 'https://placecats.com/600/400',
+        imgUrl: getFakeImg(600, 400),
         desc: '（Coming soon）',
         disable: true,
       },
@@ -51,22 +53,22 @@ export default {
       {
         title: 'Split the Web Page, Free the UI',
         desc: 'Break the crowded, solid-backed web page into independent panels that hover in space, removing the frame so translucent UI lives naturally over the real world.',
-        imgUrl: 'https://placecats.com/millie/800/800',
+        imgUrl: getFakeImg(600, 400),
       },
       {
         title: 'Elevate HTML Elements, Unlock Depth',
         desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis, giving your interface true depth beyond width and height.',
-        imgUrl: 'https://placecats.com/millie/800/800',
+        imgUrl: getFakeImg(600, 400),
       },
       {
         title: 'Multiple Scene Containers, Native Power',
         desc: 'Compose your web app from multiple OS-managed flat or volumetric scenes so it behaves like a native spatial app and delivers a unified experience across web and native.',
-        imgUrl: 'https://placecats.com/millie/800/800',
+        imgUrl: getFakeImg(600, 400),
       },
       {
         title: 'Add True 3D Content, Blend Dimensions',
         desc: 'Introduce volumetric 3D elements that nest and layout seamlessly with 2D elements, then drive them with the 3D engine to host dynamic, interactive 3D content.',
-        imgUrl: 'https://placecats.com/millie/800/800',
+        imgUrl: getFakeImg(600, 400),
       },
     ],
   },
@@ -76,19 +78,19 @@ export default {
     children: [
       {
         title: 'Start with What You Know',
-        imgUrl: 'https://placecats.com/600/300',
+        imgUrl: getFakeImg(600, 400),
       },
       {
         title: 'Start with What You Know todo:2',
-        imgUrl: 'https://placecats.com/600/400',
+        imgUrl: getFakeImg(600, 400),
       },
       {
         title: 'Start with What You Know todo:3',
-        imgUrl: 'https://placecats.com/600/500',
+        imgUrl: getFakeImg(600, 500),
       },
       {
         title: 'Start with What You Know todo:4',
-        imgUrl: 'https://placecats.com/600/600',
+        imgUrl: getFakeImg(600, 600),
       },
     ],
   },
@@ -142,7 +144,7 @@ export default {
   },
   bottom: {
     title: 'Start building with WebSpatial',
-    imgUrl: 'https://placecats.com/600/400',
+    imgUrl: getFakeImg(600, 400),
     children: [
       {
         title: 'Quick Start',
