@@ -151,8 +151,8 @@ a:hover {
   // a{
   //   color:var(--color-text-1);
   // }
-  li{
-    ::marker{
+  li {
+    ::marker {
       color: var(--color-text-2);
     }
   }
@@ -1362,4 +1362,13 @@ a[href$='blog/authors'] {
 
 .pagination-nav__label {
   font-weight: 500;
+}
+
+.blackLink {
+  a {
+    color: var(--color-text-1);
+    &:hover {
+      color: var(--ifm-link-hover-color);
+    }
+  }
 }

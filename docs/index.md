@@ -9,6 +9,7 @@ Welcome to the WebSpatial Handbook.
 It is recommended that you read this documentation in sequence, particularly the first three chapters—[Introduction](introduction), [Quick Example](quick-start), and [Core Concepts](core-concepts). The fourth chapter provides comprehensive and detailed [development documentation](development-guide).
 
 ## Table of Contents
+<div className="blackLink">
 
 1. [Introduction](introduction)
    - [New Powers for XR Apps](introduction/new-powers-for-xr-apps)
@@ -46,6 +47,8 @@ It is recommended that you read this documentation in sequence, particularly the
      - [Elevate 2D Elements](development-guide/using-the-webspatial-api/elevate-2d-elements)
      - [Manage Multiple Scenes](development-guide/using-the-webspatial-api/manage-multiple-scenes)
      - [Add 3D Content](development-guide/using-the-webspatial-api/add-3d-content)
+
+</div>
 
 ## Feedback & Support
 
