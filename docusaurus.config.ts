@@ -214,9 +214,9 @@ const config: Config = {
   themeConfig: {
     algolia: {
       // todo: test only, to be replaced
-      appId: 'X1Z85QJPUV',
-      apiKey: 'bf7211c161e8205da2f933a02534105a',
-      indexName: 'docusaurus-2',
+      appId: 'C6FO9APPMF',
+      apiKey: '56e68bd6f98ae749cbb893fb483e5284',
+      indexName: 'webspatialio',
     },
     liveCodeBlock: {
       /**
