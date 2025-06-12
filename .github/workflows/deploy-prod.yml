@@ -17,23 +17,11 @@ jobs:
           fetch-depth: 0
           lfs: true
 
-      - name: Checkout SDK repo
-        uses: actions/checkout@v3
-        with:
-          repository: webspatial/webspatial-sdk    
-          ref: c7b7aef7fa761d33c34d51d078cc5cb2882f8228  # todo: change to main
-          path: XRSDK
-          token: ${{ secrets.PAT_TOKEN }}          
-
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 9
           cache: "pnpm"
-
-      - name: Run XRSDK setup
-        working-directory: XRSDK
-        run: npm run setup
 
       - name: Install Docusaurus dependencies
         run: pnpm install --frozen-lockfile
