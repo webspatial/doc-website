@@ -10,6 +10,8 @@ import tdk from './src/data/tdk';
 const BASE_URL = process.env.BASE_URL || '/';
 const PROJ_NAME = 'doc-website'; //process.env.PROJECT_NAME || 'my-default-project';
 
+const isProd = BASE_URL == '/';
+
 const config: Config = {
   staticDirectories: ['static'],
 
@@ -215,8 +217,8 @@ const config: Config = {
     algolia: {
       // todo: test only, to be replaced
       appId: 'C6FO9APPMF',
-      apiKey: '56e68bd6f98ae749cbb893fb483e5284',
-      indexName: 'webspatialio',
+      apiKey: 'bc44822daa62380257f5a4483d322852', //'56e68bd6f98ae749cbb893fb483e5284',
+      indexName: isProd ? 'webspatialio-prod' : 'webspatialio',
     },
     liveCodeBlock: {
       /**
