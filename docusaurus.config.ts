@@ -136,7 +136,7 @@ const config: Config = {
   ],
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://webspatial.github.io',
@@ -189,10 +189,12 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
+          blogTitle: tdk.blog.title,
+          blogDescription: tdk.blog.description,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
