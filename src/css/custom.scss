@@ -1130,6 +1130,9 @@ body .DocSearch {
         div:nth-of-type(3) {
           display: none;
         }
+        .DocSearch-Hit-Tree {
+          color: var(--color-border-3);
+        }
       }
       // .DocSearch-Hit-icon {
       //   display: none;
@@ -1197,14 +1200,14 @@ body .DocSearch {
     border-top: 1px solid var(--color-fill-3);
 
     .DocSearch-Commands {
-      li{
+      li {
         margin-right: 16px;
       }
       .DocSearch-Commands-Key {
         box-shadow: unset;
         background: transparent;
         border: 1px solid var(--color-fill-3);
-        svg{
+        svg {
           width: 14px;
           height: 14px;
         }
@@ -1220,7 +1223,7 @@ body .DocSearch {
       color: var(--color-text-3);
     }
 
-    .DocSearch-Logo svg{
+    .DocSearch-Logo svg {
       height: 15px;
     }
   }
