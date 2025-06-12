@@ -240,8 +240,9 @@ const config: Config = {
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
-          position: 'left',
+          position: 'right',
           label: 'Guide',
+          group: 'left',
         },
         // {
         //   type: 'docSidebar',
@@ -250,12 +251,13 @@ const config: Config = {
         //   label: 'API',
         //   position: 'left',
         // },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {to: 'showcase', label: 'Showcase', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'right', group: 'left'},
+        {to: 'showcase', label: 'Showcase', position: 'right', group: 'left'},
         {
           to: '#',
           className: 'dropdownHr',
           position: 'right',
+          group: 'left',
         },
         // {
         //   type: 'docsVersionDropdown',

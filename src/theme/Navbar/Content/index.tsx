@@ -16,7 +16,7 @@ import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -24,6 +24,7 @@ function useNavbarItems() {
 }
 
 function NavbarItems({items}: {items: NavbarItemConfig[]}): ReactNode {
+  console.log('🚀 ~ NavbarItems ~ items:', items);
   return (
     <>
       {items.map((item, i) => (
@@ -79,6 +80,9 @@ export default function NavbarContent(): ReactNode {
 
   const searchBarItem = items.find((item) => item.type === 'search');
 
+  const rightLeftItems = rightItems.filter((item) => item.group === 'left');
+  const rightRightItems = rightItems.filter((item) => item.group !== 'left'); // right and default
+
   return (
     <NavbarContentLayout
       left={
@@ -98,10 +102,28 @@ export default function NavbarContent(): ReactNode {
               <SearchBar />
             </NavbarSearch>
           )}
+          <NavbarItems items={rightLeftItems} />
+          <Sparator />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
-          <NavbarItems items={rightItems} />
+          <Sparator />
+          <NavbarItems items={rightRightItems} />
         </>
       }
     />
   );
 }
+
+const Sparator = () => {
+  return (
+    <div className={styles.separator}>
+      {/* <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="2"
+        height="12"
+        viewBox="0 0 2 12"
+        fill="none">
+        <path d="M1 0V12" stroke="#E5E6EB" />
+      </svg> */}
+    </div>
+  );
+};
