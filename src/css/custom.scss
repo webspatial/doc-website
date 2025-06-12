@@ -148,6 +148,14 @@ a:hover {
   --ifm-h1-font-size: 36px;
 }
 .markdown {
+  // a{
+  //   color:var(--color-text-1);
+  // }
+  li{
+    ::marker{
+      color: var(--color-text-2);
+    }
+  }
   hr {
     background-color: var(--color-border-1);
   }

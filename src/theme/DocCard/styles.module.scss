@@ -1,0 +1,9 @@
+.wrap {
+  h2 {
+    margin-bottom: 8px;
+    &::first-letter {
+      font-size: 0; /* 利用 0 字号把它看不见 */
+      margin-right: -4px; /* 微调空隙（根据 emoji 宽度自己调） */
+    }
+  }
+}

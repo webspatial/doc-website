@@ -1,0 +1,12 @@
+.wrap {
+  //   background: #000;
+  article {
+    margin-bottom: 16px;
+    a {
+      box-shadow: unset;
+      &:hover {
+        box-shadow: unset;
+      }
+    }
+  }
+}
