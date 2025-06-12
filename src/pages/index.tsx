@@ -17,6 +17,7 @@ import CardList from './_components/CardList';
 import SliderB from './_components/SliderB';
 import CardListMore from './_components/CardListMore';
 import {useColorMode} from '@docusaurus/theme-common';
+import tdk from '../data/tdk';
 
 // function HomepageHeader() {
 //   const {siteConfig} = useDocusaurusContext();
@@ -44,8 +45,8 @@ export default function Home(): ReactNode {
 
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={tdk.index.title}
+      description={tdk.index.description}>
       {/* <HomepageHeader /> */}
       <Banner />
       <main className={styles.mainWrap}>

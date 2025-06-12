@@ -12,17 +12,19 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
-import ShowcaseSearchBar from '@site/src/pages/showcase/_components/ShowcaseSearchBar';
+// import ShowcaseSearchBar from '@site/src/pages/showcase/_components/ShowcaseSearchBar';
 import ShowcaseCards from './_components/ShowcaseCards';
-import ShowcaseFilters from './_components/ShowcaseFilters';
+// import ShowcaseFilters from './_components/ShowcaseFilters';
 import styles from './index.module.scss';
 import clsx from 'clsx';
+import tdk from '@site/src/data/tdk';
 
-const TITLE = translate({message: 'Docusaurus Site Showcase'});
-const DESCRIPTION = translate({
-  message: 'List of websites people are building with Docusaurus',
-});
-const SUBMIT_URL = 'https://github.com/facebook/docusaurus/discussions/7826';
+const TITLE = tdk.showcase.title; // translate({message: 'Docusaurus Site Showcase'});
+const DESCRIPTION = tdk.showcase.description;
+// translate({
+//   message: 'List of websites people are building with Docusaurus',
+// });
+const SUBMIT_URL = 'https://github.com/facebook/docusaurus/discussions/7826'; // todo:
 
 function ShowcaseHeader() {
   // margin-top--lg
