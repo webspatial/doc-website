@@ -257,17 +257,17 @@ const config: Config = {
           className: 'dropdownHr',
           position: 'right',
         },
-        {
-          type: 'docsVersionDropdown',
-          versions: ['current'],
-          position: 'right',
-        },
+        // {
+        //   type: 'docsVersionDropdown',
+        //   versions: ['current'],
+        //   position: 'right',
+        // },
 
-        {
-          type: 'localeDropdown',
-          className: 'xheader-locale',
-          position: 'right',
-        },
+        // {
+        //   type: 'localeDropdown',
+        //   className: 'xheader-locale',
+        //   position: 'right',
+        // },
         {
           href: 'https://github.com/webspatial/webspatial-sdk',
           // label: 'GitHub',
