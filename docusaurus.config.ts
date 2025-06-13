@@ -273,13 +273,17 @@ const config: Config = {
         {
           href: 'https://github.com/webspatial/webspatial-sdk',
           // label: 'GitHub',
+          h5Label: 'GitHub',
           className: 'xheader-github-link',
+          h5ClassName: '',
           position: 'right',
         },
         {
           href: 'https://discord.gg/sXtcgNFK',
           // label: 'Discord',
+          h5Label: 'Discord',
           className: 'xheader-discord-link',
+          h5ClassName: '',
           position: 'right',
         },
       ],
