@@ -42,7 +42,7 @@ The manifest must contain at least the following properties:
 
 The [Add Icon Files](./add-icon-files) section lists the exact icon requirements and provides ready-to-use sample icons.
 
-If you only need to build an app that installs and runs in the visionOS simulator, you may omit the manifest entirely or exclude any of the properties above. For missing properties, [WebSpatial Builder](./step-2-add-build-tool-for-packaged-webspatial-apps) will fill in default placeholders automatically.
+If you only need to build an app that installs and runs in the visionOS simulator, you may omit the manifest entirely or exclude any of the properties above. For missing properties, [WebSpatial Builder](../step-2-add-build-tool-for-packaged-webspatial-apps) will fill in default placeholders automatically.
 
 :::
 
@@ -54,8 +54,8 @@ The entry point that loads when the app starts.
 
 This property both sets the WebSpatial app's default [**Start Scene**](../../../core-concepts/scenes-and-spatial-layouts#start-scene) and **determines how the app is packaged**:
 
-- If [`start_url`](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/start_url) is an full URL (including an http-prefixed domain) or is completed into a full URL via the [`--base`](./parameters-of-the-webspatial-builder#base-for-devserver) option of the [WebSpatial Builder](./step-2-add-build-tool-for-packaged-webspatial-apps), the [Packaged WebSpatial App](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will **NOT** include website files (for example, the files Vite outputs to `dist/`). Instead, the [WebSpatial App Shell](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will **load all pages and static files on demand from the web server** at runtime.
-- If `start_url` is a relative path and you do NOT supply a domain through [`--base`](./parameters-of-the-webspatial-builder#base-for-devserver), the [Packaged WebSpatial App](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will bundle your entire website files (for example, everything in `dist/`). This produces a **fully offline** app that loads HTML and other static files directly from the package.
+- If [`start_url`](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/start_url) is an full URL (including an http-prefixed domain) or is completed into a full URL via the [`--base`](../step-2-add-build-tool-for-packaged-webspatial-apps/options-of-the-webspatial-builder#base-for-devserver) option of the [WebSpatial Builder](../step-2-add-build-tool-for-packaged-webspatial-apps), the [Packaged WebSpatial App](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will **NOT** include website files (for example, the files Vite outputs to `dist/`). Instead, the [WebSpatial App Shell](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will **load all pages and static files on demand from the web server** at runtime.
+- If `start_url` is a relative path and you do NOT supply a domain through [`--base`](../step-2-add-build-tool-for-packaged-webspatial-apps/options-of-the-webspatial-builder#base-for-devserver), the [Packaged WebSpatial App](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will bundle your entire website files (for example, everything in `dist/`). This produces a **fully offline** app that loads HTML and other static files directly from the package.
 
 ### `scope` {#scope}
 
@@ -75,7 +75,7 @@ Sets the [display](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_
 
 ### `icons` {#icons}
 
-Icons used during installation. [WebSpatial Builder](./step-2-add-build-tool-for-packaged-webspatial-apps) uses this setting to find icon files that meet spatial computing platform requirements.
+Icons used during installation. [WebSpatial Builder](../step-2-add-build-tool-for-packaged-webspatial-apps) uses this setting to find icon files that meet spatial computing platform requirements.
 
 At minimum, include:
 

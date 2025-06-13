@@ -12,6 +12,10 @@ Use a minimal example to get a quick feel for the actual results and development
 
 :::
 
+:::tip
+You can follow this doc to build the demo from scratch, or just grab the ready-made version from [the repo](https://github.com/webspatial/quick-example). You can also watch this [video](https://youtu.be/ddBBDBq7nhs) for a quick overview of everything in the doc.
+:::
+
 ## 1. Create a modern web project that supports WebSpatial {#create-project}
 
 First confirm that Node.js is installed (see the [Node.js official website](https://nodejs.org/en/download)).

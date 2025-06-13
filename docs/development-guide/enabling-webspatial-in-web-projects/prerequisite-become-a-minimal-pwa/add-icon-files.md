@@ -15,7 +15,7 @@ The best practice for a WebSpatial project is to include at least the following 
 | **1024 × 1024** | [visionOS app](https://developer.apple.com/design/human-interface-guidelines/app-icons#visionOS-app-icon-sizes) | App icon in Vision Pro                                  | **Not allowed**        | **Not allowed** | WebSpatial + Web App Manifest                                                                                                                                                      |
 
 :::tip
-Ready-to-use sample icons (you can use this directly in your demo): [webspatial-icon-examples.zip](../../../assets/guide/webspatial-icon-examples.zip)
+Ready-to-use sample icons (you can use this directly in your demo): [webspatial-icon-examples.zip](/assets/guide/webspatial-icon-examples.zip)
 :::
 
 In addition to the standard PWA requirements, a [**Packaged WebSpatial App**](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) has extra icon rules:

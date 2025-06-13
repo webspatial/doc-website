@@ -4,11 +4,35 @@ sidebar_position: 0
 
 # WebSpatial Handbook
 
-Welcome to the WebSpatial Handbook.
+## Overview
 
-It is recommended that you read this documentation in sequence, particularly the first three chapters—[Introduction](introduction), [Quick Example](quick-start), and [Core Concepts](core-concepts). The fourth chapter provides comprehensive and detailed [development documentation](development-guide).
+It’s recommended to read these docs in order, especially the first three chapters:
+
+1. [**Introduction**](introduction): Introduces the problems WebSpatial solves and the benefits it brings.
+2. [**Quick Example**](quick-start): Use a minimal example to get a quick feel for the actual results and development experience of the WebSpatial SDK.
+3. [**Core Concepts**](core-concepts): Learn the fundamental concepts of [Spatial Apps](core-concepts/shared-space-and-spatial-apps) and the [WebSpatial SDK](core-concepts/unique-concepts-in-webspatial).
+
+The fourth chapter provides comprehensive and detailed [**Development Guide**](development-guide). The guide consists of three parts, structured for both sequential reading and quick reference:
+
+1. [What web projects can use WebSpatial API](development-guide/web-projects-that-support-webspatial).
+2. How to [add the WebSpatial SDK](development-guide/enabling-webspatial-in-web-projects) to your web projects, [use WebSpatial Builder for visionOS testing](development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps) (simulator or device), and how to bring spatial features to your site while still [keeping it a standard, cross-platform website](development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools).
+3. How to [use the WebSpatial API](development-guide/using-the-webspatial-api) ([Spatialization](development-guide/using-the-webspatial-api/spatialize-html-elements), [Material](development-guide/using-the-webspatial-api/add-material-backgrounds), [Elevation](development-guide/using-the-webspatial-api/elevate-2d-elements), [Scenes](development-guide/using-the-webspatial-api/manage-multiple-scenes), [3D](development-guide/using-the-webspatial-api/add-3d-content)) in web projects where the SDK is already integrated.
+
+There are currently two sample projects:
+
+1. One is the [Quick Example](quick-start) itself, which you can build it from scratch, or just grab the ready-made version from [the repo](https://github.com/webspatial/quick-example). There's also a [video](https://youtu.be/ddBBDBq7nhs) showing the full setup process.
+2. The other is the ["techshop" demo](https://github.com/webspatial/sample-techshop), showcases more realistic spatial UI design and also demonstrates [cross-platform functionality](introduction/built-on-the-existing-web-ecosystem#example-techshop).
+
+## Feedback & Support
+
+<!-- :::warning -->
+
+The WebSpatial SDK is newly open-sourced and may have bugs or missing docs/examples. If you run into issues, don't spend too much time trying to fix them yourself, just share sample code with us on [Discord](https://discord.gg/nhFhSuhNF2) or [GitHub Issues](https://github.com/webspatial/webspatial-sdk/issues). That way, we can quickly assess the problem and offer a solution, suggestion, or hotfix.
+
+<!-- ::: -->
 
 ## Table of Contents
+
 <div className="blackLink">
 
 1. [Introduction](introduction)
@@ -34,8 +58,8 @@ It is recommended that you read this documentation in sequence, particularly the
        - [Add Web App Manifest](development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest)
      - [Step 1: Install the WebSpatial SDK](development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk)
      - [Step 2: Add Build Tool for Packaged WebSpatial Apps](development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps)
-       - [Parameters of the WebSpatial Builder](development-guide/enabling-webspatial-in-web-projects/parameters-of-the-webspatial-builder)
-       - [[Optional] Simplify WebSpatial Builder Using dotenv](development-guide/enabling-webspatial-in-web-projects/optional-simplify-webspatial-builder-using-dotenv)
+       - [Options of the WebSpatial Builder](development-guide/enabling-webspatial-in-web-projects/options-of-the-webspatial-builder)
+       - [(Optional) Simplify WebSpatial Builder Using dotenv](development-guide/enabling-webspatial-in-web-projects/optional-simplify-webspatial-builder-using-dotenv)
      - [Step 3: Integrate WebSpatial SDK into Web Build Tools](development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools)
        - [Configure JS/TS Compiler](development-guide/enabling-webspatial-in-web-projects/configure-js-ts-compiler)
        - [Add Optimizations and Defaults to Web Build Tools](development-guide/enabling-webspatial-in-web-projects/add-optimizations-and-defaults-to-web-build-tools)
@@ -49,7 +73,3 @@ It is recommended that you read this documentation in sequence, particularly the
      - [Add 3D Content](development-guide/using-the-webspatial-api/add-3d-content)
 
 </div>
-
-## Feedback & Support
-
-If you encounter any issues within the documentation or or can't find answers in it, feel free to open an issue in this repo, we'll get back to you as soon as possible. We also use these issue discussions to help improve the docs. You're also welcome to send a PR directly to help make the documentation better.
