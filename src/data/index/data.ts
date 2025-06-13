@@ -52,12 +52,12 @@ export default {
     children: [
       {
         title: 'Split the Web Page, Free the UI',
-        desc: 'Break the crowded, solid-backed web page into independent panels that hover in space, removing the frame so translucent UI lives naturally over the real world.',
+        desc: 'Break the crowded, solid-backed web page into independent panels that hover in space,\n removing the frame so translucent UI lives naturally over the real world.',
         imgUrl: getFakeImg(600, 400),
       },
       {
         title: 'Elevate HTML Elements, Unlock Depth',
-        desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis, giving your interface true depth beyond width and height.',
+        desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis,\n giving your interface true depth beyond width and height.',
         imgUrl: getFakeImg(600, 400),
       },
       {
@@ -67,7 +67,7 @@ export default {
       },
       {
         title: 'Add True 3D Content, Blend Dimensions',
-        desc: 'Introduce volumetric 3D elements that nest and layout seamlessly with 2D elements, then drive them with the 3D engine to host dynamic, interactive 3D content.',
+        desc: 'Introduce volumetric 3D elements that nest and layout seamlessly with 2D elements,\n then drive them with the 3D engine to host dynamic, interactive 3D content.',
         imgUrl: getFakeImg(600, 400),
       },
     ],

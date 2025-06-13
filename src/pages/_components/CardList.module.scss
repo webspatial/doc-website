@@ -39,6 +39,7 @@
         font-weight: 700;
         line-height: 150%; /* 27px */
         margin-bottom: 8px;
+        white-space: pre-line;
       }
 
       .desc {
@@ -48,6 +49,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 21px */
+        white-space: pre-line;
       }
     }
   }
