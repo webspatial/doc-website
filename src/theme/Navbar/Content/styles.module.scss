@@ -28,4 +28,7 @@ See https://github.com/facebook/docusaurus/pull/11142
   width: 1px;
   height: 12px;
   background-color: rgba(229, 230, 235, 1);
+  @media (max-width: 996px) {
+    display: none;
+  }
 }
