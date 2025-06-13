@@ -3,7 +3,7 @@ import {getFakeImg} from '@site/src/utils/imgUtils';
 export default {
   banner: {
     title: 'Bring Your Web to Space.',
-    desc: 'Spatialize any website across real and virtual spaces with widely adopted open-web tech, empowering every web developer and enriching XR ecosystems.',
+    desc: 'Spatialize any website across real and virtual spaces with\n widely adopted open-web tech, empowering every web\n developer and enriching XR ecosystems.',
     imgUrl: getFakeImg(1280, 1280),
     button: {
       text: 'Quick Start',
