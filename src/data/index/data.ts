@@ -11,8 +11,8 @@ export default {
     },
   },
   section1: {
-    title: 'One App, Every Device , From Screen to Spatial',
-    desc: 'One codebase delivers 2D UI on desktop and mobile screens, then unlocks Spatialized UI on spatial-computing devices.',
+    title: 'One App, Every Device,\n From Screen to Spatial',
+    desc: 'One codebase delivers 2D UI on desktop and mobile screens,\n then unlocks Spatialized UI on spatial-computing devices.',
     children: [
       {
         title: 'Large Screen',
@@ -47,7 +47,7 @@ export default {
     ],
   },
   section2: {
-    title: 'Empower Spatial Creativity and Expand Your Web from 2D to 3D',
+    title: 'Empower Spatial Creativity and\n Expand Your Web from 2D to 3D',
     desc: 'Add depth, transform, animation, and 3D layout to your app—step by step.',
     children: [
       {
@@ -74,7 +74,7 @@ export default {
   },
   section3: {
     title: 'Keep Coding Web, Ship Spatial',
-    desc: 'Keep coding with React, CSS, JS and the web-dev tools you already know. WebSpatial extends your existing web stack with a minimal set of new spatial APIs, drops straight into any project, and unlock native-grade spatial power with almost no code changes or extra cost.',
+    desc: 'Keep coding with React, CSS, JS and the web-dev tools you already know.\n WebSpatial extends your existing web stack with a minimal set of new spatial APIs, drops straight into \n any project, and unlock native-grade spatial power with almost no code changes or extra cost.',
     children: [
       {
         title: 'Start with What You Know',
