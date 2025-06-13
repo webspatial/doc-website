@@ -1411,6 +1411,13 @@ a[href$='blog/authors'] {
     font-weight: 400;
     line-height: 16px; /* 133.333% */
   }
+  .footer__copyright {
+    margin-top: 80px;
+
+    @media (min-width: 1281px) {
+      margin-top: 126px;
+    }
+  }
 }
 .footer--dark {
   --ifm-footer-background-color: rgba(30, 30, 31, 1);
