@@ -241,7 +241,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'right',
-          label: 'Guide',
+          label: 'Docs',
           group: 'left',
         },
         // {
@@ -295,7 +295,7 @@ const config: Config = {
           title: 'DEVELOP',
           items: [
             {
-              label: 'Guides',
+              label: 'Docs',
               to: '/docs/development-guide',
             },
           ],
