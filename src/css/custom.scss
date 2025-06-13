@@ -1059,6 +1059,9 @@ body .DocSearch {
   // --docsearch-modal-height: 480px;
 
   &-Modal {
+    --docsearch-modal-shadow: 0px 20px 36px 0px rgba(0, 0, 0, 0.12),
+      0px 12px 36px 0px rgba(0, 0, 0, 0.06), 0px 0px 8px 0px rgba(0, 0, 0, 0.04);
+
     // max-height: var(--docsearch-modal-height);
     --docsearch-modal-background: white;
     background: var(--docsearch-modal-background);
