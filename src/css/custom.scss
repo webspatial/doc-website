@@ -804,6 +804,7 @@ html[data-red-border] div#__docusaurus {
   /* line-height: 1.75; */
   font-size: 14px;
   font-weight: 400;
+  padding: 10px 12px;
 }
 .menu__link,
 .menu__list-item-collapsible {
@@ -817,6 +818,16 @@ html[data-red-border] div#__docusaurus {
   font-weight: 600;
   color: var(--ifm-color-primary);
   // background-color: rgba(78, 59, 246, 0.08);
+}
+
+.theme-doc-sidebar-item-link-level-1 a {
+  font-weight: 600;
+}
+
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1
+  > div
+  > a {
+  font-weight: 600;
 }
 
 .menu {
