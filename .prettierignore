@@ -1,0 +1,7 @@
+# # 忽略 Markdown 文件
+# *.md
+# *.mdx
+
+# # 忽略特定目录中的 markdown 文件
+# docs/**/*.md
+# blog/**/*.md
