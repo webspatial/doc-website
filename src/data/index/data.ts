@@ -1,5 +1,10 @@
 import {getFakeImg} from '@site/src/utils/imgUtils';
-
+import img01a from '@site/static/img/index-s2/01a.jpeg';
+import img01b from '@site/static/img/index-s2/01b.jpeg';
+import img02a from '@site/static/img/index-s2/02a.jpeg';
+import img02b from '@site/static/img/index-s2/02b.jpeg';
+import img03a from '@site/static/img/index-s2/03a.jpeg';
+import img03b from '@site/static/img/index-s2/03b.jpeg';
 export default {
   banner: {
     title: 'Bring Your Web to Space.',
@@ -53,22 +58,22 @@ export default {
       {
         title: 'Split the Web Page, Free the UI',
         desc: 'Break the crowded, solid-backed web page into independent panels that hover in space,\n removing the frame so translucent UI lives naturally over the real world.',
-        imgUrl: getFakeImg(600, 400),
+        imgUrl: [img01a, img01b], //getFakeImg(600, 400),
       },
       {
         title: 'Elevate HTML Elements, Unlock Depth',
         desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis,\n giving your interface true depth beyond width and height.',
-        imgUrl: getFakeImg(600, 400),
+        imgUrl: [img02a, img02b], //getFakeImg(600, 400),
       },
       {
         title: 'Multiple Scene Containers, Native Power',
         desc: 'Compose your web app from multiple OS-managed flat or volumetric scenes so it behaves like a native spatial app and delivers a unified experience across web and native.',
-        imgUrl: getFakeImg(600, 400),
+        imgUrl: [img03a, img03b], // getFakeImg(600, 400),
       },
       {
         title: 'Add True 3D Content, Blend Dimensions',
         desc: 'Introduce volumetric 3D elements that nest and layout seamlessly with 2D elements,\n then drive them with the 3D engine to host dynamic, interactive 3D content.',
-        imgUrl: getFakeImg(600, 400),
+        imgUrl: [getFakeImg(600, 400), getFakeImg(600, 500)], // fixme:
       },
     ],
   },
@@ -108,14 +113,16 @@ export default {
       {
         title: 'React SDK',
         desc: 'A drop-in library for React projects that instantly unlocks WebSpatial APIs, and lets you build spatial apps with the same React components and ecosystem you already use.',
-        moreUrl: '/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk',
+        moreUrl:
+          '/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'WebSpatial Builder',
         desc: 'A CLI tool that packages WebSpatial-enabled React projects into installable native spatial app, wrapping web code in a platform-specific App Shell that runs WebSpatial APIs.',
-        moreUrl: '/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps',
+        moreUrl:
+          '/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(252, 184, 75, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },

@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './CardList.module.scss';
+import clsx from 'clsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 type Props = {
   data: {
     title: string;
     desc: string;
-    imgUrl: string;
+    imgUrl: string[];
   }[];
 };
 const CardList: React.FC<Props> = ({data}) => {
@@ -12,10 +14,16 @@ const CardList: React.FC<Props> = ({data}) => {
     <div className={styles.container}>
       {data.map((x, i) => {
         return (
-          <div className={styles.wrap}>
+          <div className={styles.wrap} key={i}>
             <div
-              className={styles.img}
-              style={{backgroundImage: `url(${x.imgUrl})`}}></div>
+              className={styles.img} // placeholder
+              // style={{
+              //   backgroundImage: `url(${x.imgUrl[currentImgIndex]})`,
+              // }}
+            >
+              <FadeImages urls={x.imgUrl} />
+            </div>
+
             <div className={styles.content}>
               <div className={styles.title}>{x.title}</div>
               <div className={styles.desc}>{x.desc}</div>
@@ -27,3 +35,32 @@ const CardList: React.FC<Props> = ({data}) => {
   );
 };
 export default CardList;
+
+const FadeImages = ({urls}: {urls: string[]}) => {
+  const [currentImgIndex, setCurrentImgIndex] = React.useState(0);
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImgIndex((prev) => (prev + 1) % 2);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <>
+      {urls.map((url, index) => {
+        const finalUrl = useBaseUrl(url);
+        return (
+          <div
+            className={clsx(
+              styles.imgItem,
+              currentImgIndex === index ? styles.active : '',
+            )}
+            key={index}
+            style={{
+              backgroundImage: `url(${finalUrl})`,
+            }}></div>
+        );
+      })}
+    </>
+  );
+};

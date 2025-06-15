@@ -9,11 +9,26 @@
     background: linear-gradient(270deg, #020204 0%, #020204 100%);
     overflow: hidden;
     .img {
+      position: relative;
       background-size: 100%;
       height: 428px;
       width: 100%;
       // margin-bottom: 108px;
+      .imgItem {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+        background-size: cover;
+        background-position: center;
+
+        &.active {
+          opacity: 1;
+        }
+      }
     }
+
     .content {
       position: absolute;
       width: 100%;
