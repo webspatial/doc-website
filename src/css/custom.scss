@@ -742,7 +742,7 @@ div[class^='announcementBar_'] {
 }
 
 .code-block-diff-add-line {
-  background-color: #e4f5e8;
+  background-color:  rgba(122, 255, 154, 0.16);
   display: block;
   margin: 0 -40px;
   padding: 0 40px;
@@ -756,7 +756,7 @@ div[class^='announcementBar_'] {
 }
 
 .code-block-diff-remove-line {
-  background-color: #f7ebee;
+  background-color: rgba(255, 67, 111, 0.22);
   display: block;
   margin: 0 -40px;
   padding: 0 40px;
