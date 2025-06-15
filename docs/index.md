@@ -6,7 +6,7 @@ sidebar_position: 0
 
 ## Overview
 
-It’s recommended to read these docs in order, especially the first three chapters:
+It's recommended to read these docs in order, especially the first three chapters:
 
 1. [**Introduction**](introduction): Introduces the problems WebSpatial solves and the benefits it brings.
 2. [**Quick Example**](quick-start): Use a minimal example to get a quick feel for the actual results and development experience of the WebSpatial SDK.
