@@ -3,7 +3,7 @@ import {getFakeImg} from '@site/src/utils/imgUtils';
 export default {
   banner: {
     title: 'Bring Your Web to Space.',
-    desc: 'Spatialize any website across real and virtual spaces with\n widely adopted open-web tech, empowering every web\n developer and enriching XR ecosystems.',
+    desc: 'Spatialize any website across real and virtual spaces with widely adopted open-web tech, empowering every web developer and enriching XR ecosystems.',
     imgUrl: getFakeImg(1280, 1280),
     button: {
       text: 'Quick Start',
@@ -11,8 +11,8 @@ export default {
     },
   },
   section1: {
-    title: 'One App, Every Device,\n From Screen to Spatial',
-    desc: 'One codebase delivers 2D UI on desktop and mobile screens,\n then unlocks Spatialized UI on spatial-computing devices.',
+    title: 'One App, Every Device, From Screen to Spatial',
+    desc: 'One codebase delivers 2D UI on desktop and mobile screens, then unlocks Spatialized UI on spatial-computing devices.',
     children: [
       {
         title: 'Large Screen',
@@ -47,17 +47,17 @@ export default {
     ],
   },
   section2: {
-    title: 'Empower Spatial Creativity and\n Expand Your Web from 2D to 3D',
+    title: 'Empower Spatial Creativity and Expand Your Web from 2D to 3D',
     desc: 'Add depth, transform, animation, and 3D layout to your app—step by step.',
     children: [
       {
         title: 'Split the Web Page, Free the UI',
-        desc: 'Break the crowded, solid-backed web page into independent panels that hover in space,\n removing the frame so translucent UI lives naturally over the real world.',
+        desc: 'Break the crowded, solid-backed web page into independent panels that hover in space, removing the frame so translucent UI lives naturally over the real world.',
         imgUrl: ['/img/index-s2/a1.png', '/img/index-s2/a2.png'], //getFakeImg(600, 400),
       },
       {
         title: 'Elevate HTML Elements, Unlock Depth',
-        desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis,\n giving your interface true depth beyond width and height.',
+        desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis, giving your interface true depth beyond width and height.',
         imgUrl: ['/img/index-s2/b1.png', '/img/index-s2/b2.png'], //getFakeImg(600, 400),
       },
       {
@@ -67,14 +67,14 @@ export default {
       },
       {
         title: 'Add True 3D Content, Blend Dimensions',
-        desc: 'Introduce volumetric 3D elements that nest and layout seamlessly with 2D elements,\n then drive them with the 3D engine to host dynamic, interactive 3D content.',
+        desc: 'Introduce volumetric 3D elements that nest and layout seamlessly with 2D elements, then drive them with the 3D engine to host dynamic, interactive 3D content.',
         imgUrl: ['/img/index-s2/d1.png', '/img/index-s2/d2.png'], // fixme:
       },
     ],
   },
   section3: {
     title: 'Keep Coding Web, Ship Spatial',
-    desc: 'Keep coding with React, CSS, JS and the web-dev tools you already know.\n WebSpatial extends your existing web stack with a minimal set of new spatial APIs, drops straight into \n any project, and unlock native-grade spatial power with almost no code changes or extra cost.',
+    desc: 'Keep coding with React, CSS, JS and the web-dev tools you already know. WebSpatial extends your existing web stack with a minimal set of new spatial APIs, drops straight into  any project, and unlock native-grade spatial power with almost no code changes or extra cost.',
     children: [
       {
         title: 'Start with What You Know',

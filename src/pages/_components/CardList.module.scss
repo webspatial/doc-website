@@ -46,7 +46,6 @@
       background-blend-mode: color-burn;
       backdrop-filter: blur(40px);
       .title {
-        white-space: pre-line;
         color: rgba(255, 255, 255, 0.9);
         font-family: Poppins;
         font-size: 18px;
@@ -54,7 +53,6 @@
         font-weight: 700;
         line-height: 150%; /* 27px */
         margin-bottom: 8px;
-        white-space: pre-line;
       }
 
       .desc {
@@ -64,7 +62,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 21px */
-        white-space: pre-line;
       }
     }
   }

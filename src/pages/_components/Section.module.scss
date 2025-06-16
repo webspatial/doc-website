@@ -1,6 +1,6 @@
 .sectionWrap {
-  margin: 150px auto 0;
-  width: 320px;
+  margin: 150px 20px 0;
+  // width: 320px;
   .title {
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
@@ -10,7 +10,6 @@
     font-weight: 600;
     line-height: 150%; /* 36px */
     margin-bottom: 12px;
-    white-space: pre-line;
   }
 
   .desc {
@@ -22,9 +21,13 @@
     font-weight: 400;
     line-height: 150%; /* 24px */
     margin-bottom: 30px;
-    white-space: pre-line;
+    hyphens: auto;
   }
-  width:100%;
+  @media (min-width: 577px) {
+    width: 100%;
+    margin: 150px auto 0;
+  }
+  // width:100%;
   /* 577px 到 996px */
   @media (min-width: 577px) and (max-width: 996px) {
     max-width: 640px; // fixme: overflow?
