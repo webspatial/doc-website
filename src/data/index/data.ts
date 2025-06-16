@@ -48,7 +48,7 @@ export default {
   },
   section2: {
     title: 'Empower Spatial Creativity and Expand Your Web from 2D to 3D',
-    // desc: '',
+    desc: '',
     children: [
       {
         title: 'Split the Web Page, Free the UI',
@@ -131,14 +131,14 @@ export default {
       {
         title: 'Safari / Chrome DevTools',
         desc: 'Inspect DOM, measure performance, and live-edit styles using the same tools you know.',
-        // moreUrl: 'todo:',
+        moreUrl: '',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(240, 59, 94, 0.14) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: '3D Authoring Tools',
         desc: 'Import 3D assets from Blender, Spline, or any authoring tool that supports USD or glTF.',
-        // moreUrl: 'todo:',
+        moreUrl: '',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(78, 59, 246, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #191919',
       },

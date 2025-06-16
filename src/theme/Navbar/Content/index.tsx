@@ -15,6 +15,7 @@ import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
+import {useLocation} from '@docusaurus/router';
 
 import styles from './styles.module.scss';
 
@@ -82,6 +83,10 @@ export default function NavbarContent(): ReactNode {
   const rightLeftItems = rightItems.filter((item) => item.group === 'left');
   const rightRightItems = rightItems.filter((item) => item.group !== 'left'); // right and default
 
+  const location = useLocation();
+
+  const hideSeparator = location.pathname === '/';
+
   return (
     <NavbarContentLayout
       left={
@@ -102,9 +107,9 @@ export default function NavbarContent(): ReactNode {
             </NavbarSearch>
           )}
           <NavbarItems items={rightLeftItems} />
-          <Sparator />
+          {!hideSeparator && <Separator />}
           <NavbarColorModeToggle className={styles.colorModeToggle} />
-          <Sparator />
+          {!hideSeparator && <Separator />}
           <NavbarItems items={rightRightItems} />
         </>
       }
@@ -112,7 +117,7 @@ export default function NavbarContent(): ReactNode {
   );
 }
 
-const Sparator = () => {
+const Separator = () => {
   return (
     <div className={styles.separator}>
       {/* <svg

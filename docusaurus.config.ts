@@ -251,7 +251,7 @@ const config: Config = {
         //   label: 'API',
         //   position: 'left',
         // },
-        {to: '/blog', label: 'Blog', position: 'right', group: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'right', group: 'left'},
         // {to: 'showcase', label: 'Showcase', position: 'right', group: 'left'},
         {
           to: '#',
@@ -353,6 +353,7 @@ const config: Config = {
           items: [
             {
               label: 'Blog',
+              className: 'disabled',
               to: '/blog',
             },
             {
