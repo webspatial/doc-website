@@ -92,6 +92,10 @@ export default {
         title: 'Start with What You Know ',
         imgUrl: '/img/index-code/code4.png', //getFakeImg(600, 600),
       },
+      {
+        title: 'Start with What You Know ',
+        imgUrl: '/img/index-code/code5.png', //getFakeImg(600, 600),
+      },
     ],
   },
   section4: {

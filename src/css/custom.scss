@@ -878,6 +878,13 @@ html[data-red-border] div#__docusaurus {
   background: none;
 }
 
+.theme-doc-toc-mobile {
+  button,
+  > div {
+    background-color: rgba(242, 243, 245, 1);
+  }
+}
+
 .theme-doc-toc-mobile button.clean-btn::after {
   background: var(--ifm-menu-link-sublist-icon) 50% 50% / 1.25rem 1.25rem
     no-repeat;
@@ -1375,10 +1382,11 @@ a[href$='blog/authors'] {
   @media (max-width: 576px) {
     padding: 48px 0;
     .container {
-      max-width: 278px;
+      // max-width: 278px;
+      padding: 0 41px;
     }
     .footer__bottom {
-      margin-top: 80px;
+      margin-top: 16px;
     }
   }
   @media (min-width: 577px) and (max-width: 996px) {
@@ -1390,13 +1398,16 @@ a[href$='blog/authors'] {
       --ifm-col-width: 50%;
     }
     .footer__bottom {
-      margin-top: 80px;
+      margin-top: 16px;
     }
   }
   @media (min-width: 997px) and (max-width: 1280px) {
-    padding: 64px 0;
+    padding: 64px 0 40px;
     .container {
       max-width: 840px;
+    }
+    .footer__bottom {
+      margin-top: 16px;
     }
   }
   @media (min-width: 1281px) {
@@ -1412,7 +1423,7 @@ a[href$='blog/authors'] {
     font-style: normal;
     font-weight: 400;
     line-height: 175%; /* 28px */
-    margin-bottom: 20px;
+    margin-bottom: 20x;
   }
   a.footer__link-item {
     color: rgba(255, 255, 255, 0.8);
@@ -1466,7 +1477,7 @@ a[href$='blog/authors'] {
     line-height: 16px; /* 133.333% */
   }
   .footer__copyright {
-    margin-top: 80px;
+    // margin-top: 80px;
 
     @media (min-width: 1281px) {
       margin-top: 126px;
