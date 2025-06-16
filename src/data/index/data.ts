@@ -48,7 +48,7 @@ export default {
   },
   section2: {
     title: 'Empower Spatial Creativity and Expand Your Web from 2D to 3D',
-    desc: 'Add depth, transform, animation, and 3D layout to your app—step by step.',
+    // desc: '',
     children: [
       {
         title: 'Split the Web Page, Free the UI',
