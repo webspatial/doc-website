@@ -16,15 +16,15 @@ export default {
     children: [
       {
         title: 'Large Screen',
-        imgUrl: '/video/large.mp4'//getFakeImg(800, 400),
+        imgUrl: '/video/large.mp4', //getFakeImg(800, 400),
       },
       {
         title: 'Small Screen',
-        imgUrl: '/video/small.mp4'//getFakeImg(700, 500),
+        imgUrl: '/video/small.mp4', //getFakeImg(700, 500),
       },
       {
         title: 'visionOS',
-        imgUrl: '/video/visionOS.mp4'// getFakeImg(600, 400),
+        imgUrl: '/video/visionOS.mp4', // getFakeImg(600, 400),
       },
       {
         title: 'Android XR',
@@ -78,19 +78,19 @@ export default {
     children: [
       {
         title: 'Start with What You Know',
-        imgUrl: getFakeImg(600, 400),
+        imgUrl: '/img/index-code/code1.png', //getFakeImg(600, 400),
       },
       {
-        title: 'Start with What You Know todo:2',
-        imgUrl: getFakeImg(600, 400),
+        title: 'Start with What You Know ',
+        imgUrl: '/img/index-code/code2.png', //getFakeImg(600, 400),
       },
       {
-        title: 'Start with What You Know todo:3',
-        imgUrl: getFakeImg(600, 500),
+        title: 'Start with What You Know ',
+        imgUrl: '/img/index-code/code3.png', //getFakeImg(600, 500),
       },
       {
-        title: 'Start with What You Know todo:4',
-        imgUrl: getFakeImg(600, 600),
+        title: 'Start with What You Know ',
+        imgUrl: '/img/index-code/code4.png', //getFakeImg(600, 600),
       },
     ],
   },
@@ -146,7 +146,7 @@ export default {
   },
   bottom: {
     title: 'Start building with WebSpatial',
-    imgUrl:'/img/bottom.png', //getFakeImg(600, 400),
+    imgUrl: '/img/bottom.png', //getFakeImg(600, 400),
     children: [
       {
         title: 'Quick Start',

@@ -27,7 +27,9 @@ const SliderB: React.FC<Props> = ({data}) => {
           className={styles.img}
           style={{backgroundImage: `url(${data[idx].imgUrl})`}}
         />
-        <div className={styles.title}>{data[idx].title}</div>
+        {/* <div className={styles.placeholder}> */}
+        {/* <div className={styles.title}>{data[idx].title}</div> */}
+        {/* </div> */}
       </div>
 
       <div className={styles.btnContainer}>
