@@ -1,10 +1,5 @@
 import {getFakeImg} from '@site/src/utils/imgUtils';
-import img01a from '@site/static/img/index-s2/01a.jpeg';
-import img01b from '@site/static/img/index-s2/01b.jpeg';
-import img02a from '@site/static/img/index-s2/02a.jpeg';
-import img02b from '@site/static/img/index-s2/02b.jpeg';
-import img03a from '@site/static/img/index-s2/03a.jpeg';
-import img03b from '@site/static/img/index-s2/03b.jpeg';
+
 export default {
   banner: {
     title: 'Bring Your Web to Space.',
@@ -58,17 +53,17 @@ export default {
       {
         title: 'Split the Web Page, Free the UI',
         desc: 'Break the crowded, solid-backed web page into independent panels that hover in space,\n removing the frame so translucent UI lives naturally over the real world.',
-        imgUrl: [img01a, img01b], //getFakeImg(600, 400),
+        imgUrl: ['/img/index-s2/01a.jpeg', '/img/index-s2/01b.jpeg'], //getFakeImg(600, 400),
       },
       {
         title: 'Elevate HTML Elements, Unlock Depth',
         desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis,\n giving your interface true depth beyond width and height.',
-        imgUrl: [img02a, img02b], //getFakeImg(600, 400),
+        imgUrl: ['/img/index-s2/02a.jpeg', '/img/index-s2/02b.jpeg'], //getFakeImg(600, 400),
       },
       {
         title: 'Multiple Scene Containers, Native Power',
         desc: 'Compose your web app from multiple OS-managed flat or volumetric scenes so it behaves like a native spatial app and delivers a unified experience across web and native.',
-        imgUrl: [img03a, img03b], // getFakeImg(600, 400),
+        imgUrl: ['/img/index-s2/03a.jpeg', '/img/index-s2/03b.jpeg'], // getFakeImg(600, 400),
       },
       {
         title: 'Add True 3D Content, Blend Dimensions',
