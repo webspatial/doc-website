@@ -280,7 +280,7 @@ At the end of the existing content in `src/App.tsx` (below `<p className="read-t
 
 Clicking the link or button opens a new [spatial-app scene](../core-concepts/scenes-and-spatial-layouts) that displays the content of `/second-page`:
 
-<Image src="/assets/intro/intro-4-8.gif" alt="Scene Example 4" />
+<Image src="https://static.webspatial.dev/intro-4-8.gif" alt="Scene Example 4" />
 
 ## 7. Set initialization properties for the new scene {#init-scene}
 

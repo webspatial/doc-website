@@ -62,7 +62,7 @@ These 3D elements can [**participate in layout alongside 2D elements**](../devel
 
 A WebSpatial app can comprise multiple **[scenes](../core-concepts/scenes-and-spatial-layouts)**, just like a native spatial app. These 2D + 3D (or pure 3D) scenes can be [**managed as standard Web windows**](../development-guide/using-the-webspatial-api/manage-multiple-scenes), while also allowing for be [initialized with configurations specific to spatial computing platforms](../core-concepts/scenes-and-spatial-layouts#scene-init).
 
-<Image src="/assets/intro/intro-4-8.gif" alt="image" />
+<Image src="https://static.webspatial.dev/intro-4-8.gif" alt="image" />
 
 ### 3D Containers with 3D Engine APIs (upcoming feature) {#3d-engine}
 
