@@ -106,13 +106,19 @@
 
 // mdx container for PC
 @media (min-width: 997px) {
+  main .container {
+    padding: 0 40px;
+  }
+  // main .container {
+  //   padding: 0 56px;
+  // }
   main .container > .row {
-    > div.col:first-child {
-      padding: 0 56px;
-    }
-    .col {
-      padding-left: 0;
-    }
+    // > div.col:first-child {
+    //   padding: 0 56px;
+    // }
+    // .col {
+    //   padding-left: 0;
+    // }
 
     .col--3 {
       --ifm-col-width: 200px;
@@ -129,7 +135,7 @@
     }
     > div.col:first-child {
       // padding: 0 80px;
-      max-width: calc(100% - 200px) !important;
+      // max-width: calc(100% - 200px) !important;
       h2 a {
         color: var(--color-text-1);
         font-size: 20px;
