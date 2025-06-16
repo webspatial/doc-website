@@ -16,15 +16,15 @@ export default {
     children: [
       {
         title: 'Large Screen',
-        imgUrl: getFakeImg(800, 400),
+        imgUrl: '/video/large.mp4'//getFakeImg(800, 400),
       },
       {
         title: 'Small Screen',
-        imgUrl: getFakeImg(700, 500),
+        imgUrl: '/video/small.mp4'//getFakeImg(700, 500),
       },
       {
         title: 'visionOS',
-        imgUrl: getFakeImg(600, 400),
+        imgUrl: '/video/visionOS.mp4'// getFakeImg(600, 400),
       },
       {
         title: 'Android XR',

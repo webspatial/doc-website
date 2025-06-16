@@ -10,13 +10,22 @@ type Props = {
   }[];
 };
 const Slider: React.FC<Props> = ({data}) => {
-  const [idx, setIdx] = React.useState(0);
+  const [idx, setIdx] = React.useState(2);
   return (
     <div className={styles.slider}>
-      <div
+      <div className={styles.img}>
+        <video
+          className={styles.video}
+          src={data[idx].imgUrl}
+          autoPlay
+          muted
+          loop
+        />
+      </div>
+      {/* <div
         className={styles.img}
         style={{backgroundImage: `url(${data[idx].imgUrl})`}}
-      />
+      /> */}
       <div className={styles.btnContainer}>
         {data.map((item, i) => {
           return (
