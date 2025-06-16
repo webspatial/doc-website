@@ -343,11 +343,16 @@ a:hover {
   box-shadow: unset;
   border-bottom: 1px solid var(--ifm-toc-border-color);
 }
-
+@media (min-width: 997px) {
+  .xheader-github-link {
+    padding: 0 18px 0 0 !important;
+  }
+}
 .xheader-github-link::before {
   content: '';
   width: 20px;
   height: 20px;
+
   display: flex;
   background-color: rgba(78, 89, 105, 1); //var(--ifm-navbar-link-color);
   [data-theme='dark'] & {
