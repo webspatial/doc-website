@@ -49,11 +49,16 @@ const FadeImages = ({urls}: {urls: string[]}) => {
     <>
       {urls.map((url, index) => {
         const finalUrl = useBaseUrl(url);
+        const isHotfix = url.endsWith('b2.png');
+        // const isC = url.endsWith('c1.png') || url.endsWith('c2.png');
+        const isD = url.endsWith('d1.png') || url.endsWith('d2.png');
         return (
           <div
             className={clsx(
               styles.imgItem,
               currentImgIndex === index ? styles.active : '',
+              isHotfix ? styles.hotfix : '',
+              isD ? styles.isD : '',
             )}
             key={index}
             style={{

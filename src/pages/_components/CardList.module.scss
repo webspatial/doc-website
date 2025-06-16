@@ -17,12 +17,28 @@
       // margin-bottom: 108px;
       .imgItem {
         position: absolute;
+        @media (max-width: 576px) {
+          transform: translateY(-15px);
+          &.hotfix {
+            transform: scale(0.8);
+          }
+        }
+        @media (min-width: 577px) and (max-width: 996px) {
+          transform: scale(1.2) translateY(-10px);
+          &.hotfix {
+            transform: scale(1) translateX(-10px);
+          }
+          &.isD {
+            transform: scale(1);
+          }
+        }
         width: 100%;
         height: 100%;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
 
         &.active {
           opacity: 1;
@@ -41,11 +57,11 @@
       margin: 0 auto;
       background: linear-gradient(
         0deg,
-        rgba(128, 128, 128, 0.7) 0%,
+        rgb(45 56 139) 0%,
         rgba(128, 128, 128, 0) 100%
       );
       // background-blend-mode: color-burn;
-      backdrop-filter: blur(4px);
+      // backdrop-filter: blur(1px);
 
       .title {
         color: rgba(255, 255, 255, 0.9);
