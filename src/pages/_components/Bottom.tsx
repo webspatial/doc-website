@@ -10,18 +10,18 @@ const Bottom: React.FC<Props> = () => {
         className={styles.topImg}
         style={{
           backgroundImage: `url(${data.bottom.imgUrl})`,
-        }}
-      />
-      <div className={styles.container}>
-        <div className={styles.title}>{data.bottom.title}</div>
-        <div className={styles.btnGrp}>
-          {data.bottom.children.map((x, i) => {
-            return (
-              <Button key={i} url={x.url}>
-                {x.title}
-              </Button>
-            );
-          })}
+        }}>
+        <div className={styles.container}>
+          <div className={styles.title}>{data.bottom.title}</div>
+          <div className={styles.btnGrp}>
+            {data.bottom.children.map((x, i) => {
+              return (
+                <Button key={i} url={x.url}>
+                  {x.title}
+                </Button>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

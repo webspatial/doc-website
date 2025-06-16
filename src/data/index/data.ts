@@ -146,7 +146,7 @@ export default {
   },
   bottom: {
     title: 'Start building with WebSpatial',
-    imgUrl: getFakeImg(600, 400),
+    imgUrl:'/img/bottom.png', //getFakeImg(600, 400),
     children: [
       {
         title: 'Quick Start',
