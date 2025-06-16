@@ -19,7 +19,7 @@ Any Web project that meets the following requirements can use the [WebSpatial AP
 
 1. **The current UI is built with React and Web standards, running directly in mainstream browser engines.**
 
-   - By simply [configuring `jsx-runtime`](../enabling-webspatial-in-web-projects/configure-js-ts-compiler) - which does [NOT affect the site's appearance or performance on other platforms](../enabling-webspatial-in-web-projects/generate-a-webspatial-specific-website) - you can call WebSpatial's HTML/CSS-based API inside React. This works with [PostCSS, Tailwind CSS, CSS-in-JS, and other CSS tooling](../using-the-webspatial-api/spatialize-html-elements#css).
+   - By simply [configuring `jsx-runtime`](../enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/configure-js-ts-compiler) - which does [NOT affect the site's appearance or performance on other platforms](../enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website) - you can call WebSpatial's HTML/CSS-based API inside React. This works with [PostCSS, Tailwind CSS, CSS-in-JS, and other CSS tooling](../using-the-webspatial-api/spatialize-html-elements#css).
    - Non-React projects can gain spatial capabilities via WebSpatial's [Core SDK](../enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#core-sdk) (documentation coming soon).
    - We hope to work with the community to add support for more UI frameworks on top of the Core SDK in the future. Contributions are welcome!
 
@@ -32,14 +32,14 @@ Any Web project that meets the following requirements can use the [WebSpatial AP
 
 3. **The final web code is built using one of the following mainstream Web build tools.**
 
-   - Vite (It's recommended to use the WebSpatial's [Vite plugin](../enabling-webspatial-in-web-projects/add-optimizations-and-defaults-to-web-build-tools#vite))
-   - Next.js (It's recommended to use the WebSpatial's [Next.js plugin](../enabling-webspatial-in-web-projects/add-optimizations-and-defaults-to-web-build-tools#next))
-   - Rsbuild (It's recommended to use the WebSpatial's [Rsbuild plugin](../enabling-webspatial-in-web-projects/add-optimizations-and-defaults-to-web-build-tools#rsbuild))
-   - Rspack (It's recommended to use the WebSpatial's [Rspack plugin](../enabling-webspatial-in-web-projects/add-optimizations-and-defaults-to-web-build-tools#rspack))
+   - Vite (It's recommended to use the WebSpatial's [Vite plugin](../enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools#vite))
+   - Next.js (It's recommended to use the WebSpatial's [Next.js plugin](../enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools#next))
+   - Rsbuild (It's recommended to use the WebSpatial's [Rsbuild plugin](../enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools#rsbuild))
+   - Rspack (It's recommended to use the WebSpatial's [Rspack plugin](../enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools#rspack))
    - Webpack (Docs to be added)
 
 4. **The project's web server (including any third-party web services) can control HTML output and static Web assets.**
-   - This server can serve [special HTML tailored for WebSpatial](../enabling-webspatial-in-web-projects/generate-a-webspatial-specific-website) for every URL on your site. That HTML loads static web files specifically for the [WebSpatial App Shell](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk), like JS files that include the WebSpatial SDK.
+   - This server can serve [special HTML tailored for WebSpatial](../enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website) for every URL on your site. That HTML loads static web files specifically for the [WebSpatial App Shell](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk), like JS files that include the WebSpatial SDK.
 
 If you want to add the WebSpatial API to an existing Web project, you can skip the rest of this chapter and jump to the next main chapter: [Enabling WebSpatial in Web Projects](../enabling-webspatial-in-web-projects/)
 

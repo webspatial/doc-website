@@ -74,7 +74,7 @@ In the comparisons below, underline means advantage and _italics_ mean disadvant
 - **Spatial apps**
 
   - <ins>The 2D and 3D content in the app can [**go beyond the flat window**](../core-concepts/spatialized-elements-and-3d-container-elements) and be displayed throughout the 3D space.</ins>
-  - To let multiple apps [**share one 3D space (unified rendering)**](../core-concepts/shared-space-and-spatial-apps#unified-rendering), different apps can't just implement arbitrary rendering mechanisms and freely draw their content without constraints. They must supply content via [OS-managed 2D/3D containers](../core-concepts/scenes-and-spatial-layouts.m) and describe it with OS-understood APIs; the OS handles the rendering.
+  - To let multiple apps [**share one 3D space (unified rendering)**](../core-concepts/shared-space-and-spatial-apps#unified-rendering), different apps can't just implement arbitrary rendering mechanisms and freely draw their content without constraints. They must supply content via [OS-managed 2D/3D containers](../core-concepts/scenes-and-spatial-layouts) and describe it with OS-understood APIs; the OS handles the rendering.
 
 - **Desktop/Mobile apps**
 
@@ -141,7 +141,7 @@ In the comparisons below, underline means advantage and _italics_ mean disadvant
 
 - **Spatial apps**
 
-  - <ins>The GUI is built from **UI components** (including [3D containers](/core-concepts/spatialized-elements-and-3d-container-elements#3d-elements)).</ins>
+  - <ins>The GUI is built from **UI components** (including [3D containers](../core-concepts/spatialized-elements-and-3d-container-elements#3d-elements)).</ins>
   - <ins>The OS and framework render those components each frame; the app does not care about drawing.</ins>
   - <ins>Position and size of these UI elements are automatically decided based on their [**layout relationships** (like nesting hierarchy or order) and attributes](../development-guide/using-the-webspatial-api/elevate-2d-elements). Developers use them like **building blocks** - highly concrete and intuitive - allow developers to work entirely in code without the assistance of visual editors.</ins>
 

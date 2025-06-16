@@ -20,7 +20,7 @@ The fourth chapter provides comprehensive and detailed [**Development Guide**](d
 
 There are currently two sample projects:
 
-1. One is the [Quick Example](quick-start) itself, which you can build it from scratch, or just grab the ready-made version from [the repo](https://github.com/webspatial/quick-example). There's also a [video](https://youtu.be/ddBBDBq7nhs) showing the full setup process.
+1. One is the [Quick Example](quick-example) itself, which you can build it from scratch, or just grab the ready-made version from [the repo](https://github.com/webspatial/quick-example). There's also a [video](https://youtu.be/ddBBDBq7nhs) showing the full setup process.
 2. The other is the ["techshop" demo](https://github.com/webspatial/sample-techshop), showcases more realistic spatial UI design and also demonstrates [cross-platform functionality](introduction/built-on-the-existing-web-ecosystem#example-techshop).
 
 ## Feedback & Support

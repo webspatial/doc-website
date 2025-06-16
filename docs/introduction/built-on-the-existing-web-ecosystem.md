@@ -102,7 +102,7 @@ You can use the **existing link element and window-related DOM APIs** in Web sta
                 </p>
 ```
 
-You can manage **app-level configurations** such as the WebSpatial app's [start scene](../core-concepts/scenes-and-spatial-layouts#start-scene), offline packaging, [native window UI](../core-concepts/scenes-and-spatial-layouts#scene-menu), and app icons by using the **[Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/add-web-app-manifest) from the [PWA standard](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa)**.
+You can manage **app-level configurations** such as the WebSpatial app's [start scene](../core-concepts/scenes-and-spatial-layouts#start-scene), offline packaging, [native window UI](../core-concepts/scenes-and-spatial-layouts#scene-menu), and app icons by using the **[Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) from the [PWA standard](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa)**.
 
 ```json5 {6-11} showLineNumbers title="public/manifest.webmanifest"
 {
