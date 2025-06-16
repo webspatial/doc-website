@@ -23,7 +23,7 @@ export default {
         imgUrl: getFakeImg(700, 500),
       },
       {
-        title: 'Vision OS',
+        title: 'visionOS',
         imgUrl: getFakeImg(600, 400),
       },
       {
