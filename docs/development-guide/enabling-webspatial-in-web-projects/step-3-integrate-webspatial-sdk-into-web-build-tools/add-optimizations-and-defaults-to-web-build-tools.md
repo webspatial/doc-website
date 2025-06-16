@@ -6,7 +6,7 @@ sidebar_position: 2
 
 In addition to [Configure the JS/TS Compiler](./configure-js-ts-compiler), a Web project that includes the [WebSpatial SDK](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) needs several essential performance optimizations and default configuration values (convention over configuration). These optimizations and defaults need to be implemented through the project's web build tool and web server.
 
-If your project uses a higher-level framework such as Next.js, Vite, or Rsbuild—tools that bundle a web build tool and web server, you only need to add the corresponding [WebSpatial plugin](../step-1-install-the-webspatial-sdk#non-core-deps-for-building) to their configuration. These ready-made plugins spare you from manual setup and reduce boilerplate in the codebase.
+If your project uses tools like Next.js, Vite, or Rsbuild that bundle both the web build tool and web server - you just need to add the corresponding [WebSpatial plugin](../step-1-install-the-webspatial-sdk#non-core-deps-for-building) in their config. These ready-to-use plugins save you from manual setup and reduce boilerplate code.
 
 <!-- If your project relies directly on a lower-level web build tool such as Webpack, you can follow the guidelines in this document to integrate these optimizations and defaults by hand. -->
 

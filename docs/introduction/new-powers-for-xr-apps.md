@@ -12,7 +12,7 @@ The software interface expands from a bounded display to the entire 3D space aro
 
 1. Apps built around large screens and multiple windows achieve higher **efficiency**.
 2. The "living space" for apps grows, so more apps can act as sidekicks or companions and **no longer have to carry the entire user scenario alone**.
-3. Content that used to feel ordinary—HD images, data visualizations, videos—gains **fresh appeal** when presented in a spacious environment.
+3. Content that used to feel ordinary - HD images, data visualizations, videos - gains **fresh appeal** when presented in a spacious environment.
 
 <div className="row">
   <div className="col col--6">
@@ -43,7 +43,7 @@ Both the GUI and the content **no longer have to stay flat**; they can be built 
 
 Interaction gains more possibilities: it is more natural and intuitive, more flexible and diverse, and easier to tailor to specific scenarios.
 
-1. Users can handle digital content **like real objects**—grab, drag, stretch, squeeze, and rotate it directly—without **extra control panels or specialized gestures** to learn.
+1. Users can handle digital content **like real objects** - grab, drag, stretch, squeeze, and rotate it directly - without **extra control panels or specialized gestures** to learn.
 2. No more flinging a mouse across the screen or poking at a touch panel with hands held up; most of the time **hands stay still** (choose with eye gaze, confirm with a pinch).
 3. There is no need to buy or store dedicated hardware. Software alone can flexibly provide various **specialized input tools** (just as the iPhone implements its keyboard purely in software).
 

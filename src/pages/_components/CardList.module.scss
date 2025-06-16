@@ -53,6 +53,7 @@
         font-weight: 700;
         line-height: 150%; /* 27px */
         margin-bottom: 8px;
+        text-wrap: pretty;
       }
 
       .desc {
@@ -62,6 +63,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 21px */
+        text-wrap: balance;
       }
     }
   }
