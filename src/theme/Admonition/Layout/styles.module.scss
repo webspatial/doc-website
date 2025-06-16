@@ -10,13 +10,26 @@
     font-size: 14px;
   }
   code {
+    color: rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 0, 0.06);
+    html[data-theme='dark'] & {
+      background-color: rgba(255, 255, 255, 0.09);
+      color: rgba(255, 255, 255, 0.8);
+    }
     line-height: 24px;
     padding: 0 4px;
   }
 }
+:global(.alert--secondary) {
+  --ifm-alert-foreground-color: rgba(51, 55, 61, 1);
+  --ifm-color-secondary-contrast-background: rgba(242, 243, 245, 1);
+  html[data-theme='dark'] & {
+    --ifm-alert-foreground-color: rgba(255, 255, 255, 0.9);
+    --ifm-color-secondary-contrast-background: rgba(255, 255, 255, 0.15);
+  }
+}
 :global(.alert--danger) {
-   --ifm-alert-foreground-color: rgba(240, 59, 94, 1);
+  --ifm-alert-foreground-color: rgba(240, 59, 94, 1);
   --ifm-color-danger-contrast-background: rgba(255, 245, 247, 1);
   html[data-theme='dark'] & {
     --ifm-alert-foreground-color: rgba(240, 59, 94, 1);
@@ -25,7 +38,7 @@
 }
 
 :global(.alert--warning) {
-   --ifm-alert-foreground-color: rgba(255, 125, 0, 1);
+  --ifm-alert-foreground-color: rgba(255, 125, 0, 1);
   --ifm-color-warning-contrast-background: rgba(255, 249, 240, 1);
   html[data-theme='dark'] & {
     --ifm-alert-foreground-color: rgba(255, 125, 0, 1);
