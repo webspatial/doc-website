@@ -86,7 +86,7 @@ That's why PWA app windows include some native UI to provide the general feature
 
 <Image src="/assets/concepts/3-14.png" alt="Scene Example 3" />
 
-The PWA standard's [`display` property](../development-guide/enabling-webspatial-in-web-projects/add-web-app-manifest#display) in the [Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/add-web-app-manifest) lets you control certain parts of this native UI - for example, **whether native navigation buttons appear**.
+The PWA standard's [`display` property](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#display) in the [Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) lets you control certain parts of this native UI - for example, **whether native navigation buttons appear**.
 
 > The following image shows a desktop PWA in `minimal-ui` mode (native title bar with navigation buttons).
 > <Image src="/assets/concepts/3-15.png" alt="Scene Example 3" />
@@ -205,11 +205,11 @@ Every time a WebSpatial app launches, it **starts with a single Scene** called t
 
 Because the Start Scene is the entry point of the WebSpatial app, it is created and initialized entirely by native code ([WebSpatial App Shell](./unique-concepts-in-webspatial#webspatial-sdk)). **The web code runs only after this Start Scene exists.**
 
-Consequently, the Start Scene's type and initial configuration can only be set via the [Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/add-web-app-manifest).
+Consequently, the Start Scene's type and initial configuration can only be set via the [Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest).
 
 Additional scenes created later within the same WebSpatial app are [created by web code](../development-guide/using-the-webspatial-api/manage-multiple-scenes#new-scene), where their initialization can also be configured in web code.
 
-The URL loaded in the Start Scene is the very first page the WebSpatial app loads and runs. By default, it is defined by [`start_url`](../development-guide/enabling-webspatial-in-web-projects/add-web-app-manifest#start-url) in the Web App Manifest. If the WebSpatial app is launched through a specific URL, the Start Scene loads that URL instead.
+The URL loaded in the Start Scene is the very first page the WebSpatial app loads and runs. By default, it is defined by [`start_url`](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) in the Web App Manifest. If the WebSpatial app is launched through a specific URL, the Start Scene loads that URL instead.
 
 > In the Quick Example, clicking buttons and links in the Start Scene opens two new Scenes:
 > <Image src="/assets/concepts/3-30.png" alt="Scene Example 3" />

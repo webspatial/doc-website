@@ -49,7 +49,7 @@ See [which dependencies are installed](../development-guide/enabling-webspatial-
 
 ## 3. Integrate the WebSpatial SDK into the web build tool (Vite) {#web-build-tool}
 
-First modify `tsconfig.app.json` and `tsconfig.node.json`, adding the configuration that [affects JSX compilation](../development-guide/enabling-webspatial-in-web-projects/configure-js-ts-compiler).
+First modify `tsconfig.app.json` and `tsconfig.node.json`, adding the configuration that [affects JSX compilation](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/configure-js-ts-compiler).
 
 ```json5
 {
@@ -60,8 +60,8 @@ First modify `tsconfig.app.json` and `tsconfig.node.json`, adding the configurat
 
 Then modify `vite.config.ts`:
 
-- Add [WebSpatial's Vite plugin](../development-guide/enabling-webspatial-in-web-projects/add-optimizations-and-defaults-to-web-build-tools).
-- Inject the [environment variable `$XR_ENV`](../development-guide/enabling-webspatial-in-web-projects/check-if-running-in-webspatial-mode) into HTML.
+- Add [WebSpatial's Vite plugin](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools).
+- Inject the [environment variable `$XR_ENV`](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode) into HTML.
 
 ```jsx
 import { defineConfig } from "vite";
@@ -95,7 +95,7 @@ export default defineConfig({
 });
 ```
 
-Run [the Dev Server for desktop/mobile and other non-XR platforms](../development-guide/enabling-webspatial-in-web-projects/generate-a-webspatial-specific-website#regular-dev-server) (keep it running in the following steps):
+Run [the Dev Server for desktop/mobile and other non-XR platforms](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website#regular-dev-server) (keep it running in the following steps):
 
 ```bash npm2yarn
 npm run dev
@@ -107,7 +107,7 @@ Open the URL shown in the terminal in a desktop browser such as Chrome to confir
 
 <Image src="/assets/quick/2.png" alt="Scene Example 2" />
 
-Next, open a new terminal window (in the project root) and run another Dev Server to generate [web code specifically for WebSpatial](../development-guide/enabling-webspatial-in-web-projects/generate-a-webspatial-specific-website#dedicated-dev-server), used in the WebSpatial app on visionOS (keep it running in the following steps):
+Next, open a new terminal window (in the project root) and run another Dev Server to generate [web code specifically for WebSpatial](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website#dedicated-dev-server), used in the WebSpatial app on visionOS (keep it running in the following steps):
 
 ```bash npm2yarn
 XR_ENV=avp npm run dev
@@ -244,7 +244,7 @@ Move all existing JSX in `src/App.tsx` into the designated position in the new J
 ```
 
 :::tip
-What is [`__XR_ENV_BASE__`](../development-guide/enabling-webspatial-in-web-projects/generate-a-webspatial-specific-website#use-dedicated-dev-server)?
+What is [`__XR_ENV_BASE__`](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website#use-dedicated-dev-server)?
 :::
 
 The new page `/second-page` has been added:
@@ -312,7 +312,7 @@ Click the button and see that the [default size](../core-concepts/scenes-and-spa
 
 ## 8. Add material backgrounds {#material-background}
 
-Edit the `index.html` file to [add a special classname to the `<html>` element](../development-guide/enabling-webspatial-in-web-projects/check-if-running-in-webspatial-mode#css-solution) when this web code is executed as a WebSpatial app ([`XR_ENV` mode](../development-guide/enabling-webspatial-in-web-projects/generate-a-webspatial-specific-website)).
+Edit the `index.html` file to [add a special classname to the `<html>` element](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode#css-solution) when this web code is executed as a WebSpatial app ([`XR_ENV` mode](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website)).
 
 <!-- prettier-ignore-start -->
 ```html
@@ -375,7 +375,7 @@ Modify `src/App.tsx` to make both card elements ["spatialized HTML elements"](..
                   </a>
 ```
 
-In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-web-projects/check-if-running-in-webspatial-mode#css-solution) in `src/index.css`, set [different translucent materials](../development-guide/using-the-webspatial-api/add-material-backgrounds#translucent-options) for the backgrounds of the two card elements and the link.
+In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode#css-solution) in `src/index.css`, set [different translucent materials](../development-guide/using-the-webspatial-api/add-material-backgrounds#translucent-options) for the backgrounds of the two card elements and the link.
 
 ```css
 html.is-spatial {
@@ -424,7 +424,7 @@ Mark the description text inside `count-card` as a [spatialized HTML element](..
                 </p>
 ```
 
-In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-web-projects/check-if-running-in-webspatial-mode#css-solution) in `src/index.css`, change this element to `position: relative` and use the WebSpatial's [Z-axis positioning API (`--xr-back`)](../development-guide/using-the-webspatial-api/elevate-2d-elements) to "elevate" it into 3D space in front of the web page plane. Also apply different levels of 'elevation' to the link elements spatialized earlier.
+In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode#css-solution) in `src/index.css`, change this element to `position: relative` and use the WebSpatial's [Z-axis positioning API (`--xr-back`)](../development-guide/using-the-webspatial-api/elevate-2d-elements) to "elevate" it into 3D space in front of the web page plane. Also apply different levels of 'elevation' to the link elements spatialized earlier.
 
 ```css {5-12,19} showLineNumbers
   .count-card {
@@ -460,7 +460,7 @@ In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-we
 
 Another way to "elevate" is to [use CSS Transform](../development-guide/using-the-webspatial-api/elevate-2d-elements#css-transform), which can also [deform and rotate](../introduction/make-the-web-spatial-too#transform) in 3D space.
 
-In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-web-projects/check-if-running-in-webspatial-mode#css-solution) in `src/index.css`, move and rotate `link-card` along the Z axis (around the X axis):
+In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode#css-solution) in `src/index.css`, move and rotate `link-card` along the Z axis (around the X axis):
 
 ```css
   .link-card {

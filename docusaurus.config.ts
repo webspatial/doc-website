@@ -13,6 +13,9 @@ const PROJ_NAME = 'doc-website'; //process.env.PROJECT_NAME || 'my-default-proje
 const isProd = BASE_URL == '/';
 
 const config: Config = {
+  // onBrokenLinks: 'throw', // 发现死链就 fail‐fast
+  // onBrokenAnchors: 'throw', // 发现失效锚点也直接失败
+
   staticDirectories: ['static'],
 
   headTags: [
@@ -158,17 +161,17 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: [
-      'en',
-      // 'zh-Hans'
-    ],
-    localeConfigs: {
-      en: {htmlLang: 'en-US'},
-      'zh-Hans': {htmlLang: 'zh-CN'},
-    },
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: [
+  //     'en',
+  //     // 'zh-Hans'
+  //   ],
+  //   localeConfigs: {
+  //     en: {htmlLang: 'en-US'},
+  //     'zh-Hans': {htmlLang: 'zh-CN'},
+  //   },
+  // },
 
   presets: [
     [
