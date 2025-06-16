@@ -41,7 +41,7 @@ const FadeImages = ({urls}: {urls: string[]}) => {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImgIndex((prev) => (prev + 1) % 2);
-    }, 3000);
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
