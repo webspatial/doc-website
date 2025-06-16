@@ -2,6 +2,8 @@
   display: inline-block;
   border-radius: 100px;
   background: #4e3bf6;
+  transition: background-color 0.5s ease;
+
   a {
     display: flex;
     height: 48px;
@@ -17,7 +19,10 @@
     // font-family: Poppins;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 22px; /* 137.5% */
+  }
+  &:hover {
+    background-color: #4e3bf699;
   }
 }

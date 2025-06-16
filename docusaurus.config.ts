@@ -252,7 +252,7 @@ const config: Config = {
         //   position: 'left',
         // },
         {to: '/blog', label: 'Blog', position: 'right', group: 'left'},
-        {to: 'showcase', label: 'Showcase', position: 'right', group: 'left'},
+        // {to: 'showcase', label: 'Showcase', position: 'right', group: 'left'},
         {
           to: '#',
           className: 'dropdownHr',
@@ -292,55 +292,87 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'DEVELOP',
+          title: 'Learn',
           items: [
             {
-              label: 'Docs',
-              to: '/docs/development-guide',
+              label: 'Introduction',
+              to: '/docs/introduction/',
+            },
+            {
+              label: 'Core Concepts',
+              to: '/docs/core-concepts/',
+            },
+            {
+              label: 'Quick Example',
+              to: '/docs/quick-example/',
+            },
+            {
+              label: 'Video',
+              className: 'disabled',
+              to: '/',
             },
           ],
         },
         {
-          title: 'PARTICIPATE',
+          title: 'Develop',
           items: [
             {
-              label: 'Showcase',
-              href: '/showcase',
+              label: 'Compatibility',
+              to: '/docs/development-guide/web-projects-that-support-webspatial/',
             },
             {
-              label: 'Community',
-              href: '#todo:',
+              label: 'Setup Guide',
+              to: '/docs/development-guide/enabling-webspatial-in-web-projects/',
+            },
+            {
+              label: 'WebSpatial API',
+              to: '/docs/development-guide/using-the-webspatial-api/',
             },
           ],
         },
         {
-          title: 'FIND US',
+          title: 'Community',
           items: [
             {
-              label: 'GitHub',
-              href: '//github.com/webspatial/webspatial-sdk',
+              label: 'GitHub Issues',
+              href: '//github.com/webspatial/webspatial-sdk/issues',
             },
             {
-              label: 'Discord',
-              to: '//discord.gg/sXtcgNFK',
+              label: 'Join Discord',
+              href: '//discord.gg/nhFhSuhNF2',
+            },
+            {
+              label: 'FAQ',
+              className: 'disabled',
+              to: '/',
             },
           ],
         },
         {
-          title: 'Explore More',
+          title: 'News',
           items: [
             {
-              label: 'Privacy Policy',
-              to: '#todo:',
+              label: 'Blog',
+              to: '/blog',
             },
             {
-              label: 'Terms of Service',
-              href: '#todo:',
+              label: 'Releases',
+              href: 'https://github.com/webspatial/webspatial-sdk/releases',
+            },
+            {
+              label: 'X',
+              className: 'disabled',
+              to: '/',
+            },
+            {
+              label: 'Events',
+              className: 'disabled',
+              to: '/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Released under the MIT License. \nCopyright © ${new Date().getFullYear()} WebSpatial`,
     },
     prism: {
       theme: darkTheme, // lightTheme, //emptyTheme,

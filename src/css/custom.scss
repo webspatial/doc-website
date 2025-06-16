@@ -151,7 +151,12 @@
 }
 a:hover {
   text-decoration: none;
-  --ifm-link-hover-color: #0f0471;
+  // --ifm-link-hover-color: #0f0471;
+  // color: var(--ifm-color-primary-light);
+  // [data-theme='dark'] & {
+  //   // --ifm-link-hover-color: var(--ifm-color-primary-dark);
+  //   color: var(--ifm-color-primary-dark);
+  // }
   // opacity: 0.8;
 }
 /* MDX headers */
@@ -159,6 +164,18 @@ a:hover {
   --ifm-h1-font-size: 36px;
 }
 .markdown {
+  a:hover {
+    text-decoration: none;
+    // --ifm-link-hover-color: #0f0471;
+    color: var(--ifm-color-primary-light);
+    [data-theme='dark'] & {
+      // --ifm-link-hover-color: var(--ifm-color-primary-dark);
+      color: var(--ifm-color-primary-dark);
+    }
+    p {
+      color: var(--color-text-1);
+    }
+  }
   // a{
   //   color:var(--color-text-1);
   // }
@@ -1404,6 +1421,15 @@ a[href$='blog/authors'] {
     font-style: normal;
     font-weight: 700;
     line-height: 175%; /* 28px */
+
+    &.disabled {
+      color: rgba(242, 246, 250, 0.3);
+      &:hover {
+        color: rgba(242, 246, 250, 0.3);
+        // cursor: not-allowed;
+      }
+      pointer-events: none;
+    }
   }
 
   .footer__item {
@@ -1416,6 +1442,18 @@ a[href$='blog/authors'] {
 
   .footer__links {
     margin: 0;
+    a:hover {
+      text-decoration: none;
+      // --ifm-link-hover-color: #0f0471;
+      color: var(--ifm-color-primary-light);
+      [data-theme='dark'] & {
+        // --ifm-link-hover-color: var(--ifm-color-primary-dark);
+        color: var(--ifm-color-primary-dark);
+      }
+      p {
+        color: var(--color-text-1);
+      }
+    }
   }
 
   .footer__bottom {
@@ -1450,4 +1488,8 @@ a[href$='blog/authors'] {
       color: var(--ifm-link-hover-color);
     }
   }
+}
+
+.footer__copyright {
+  white-space: pre-line;
 }
