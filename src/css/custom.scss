@@ -6,12 +6,13 @@
  */
 
 :root {
-  font-family: Poppins, 'JetBrains Mono', sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  --ifm-heading-font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto,
-    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  font-family: 'InterVariable', 'Inter', system-ui, -apple-system, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Noto Sans CJK SC',
+    sans-serif;
+  font-feature-settings: 'cv05' 1, 'liga' 1, 'calt' 1; /* Inter 等可开启可读性特性, fix for Chrome */
+  --ifm-heading-font-family: 'InterVariable', 'Inter', system-ui, -apple-system,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC',
+    'Noto Sans CJK SC', sans-serif;
 }
 
 @import url('react-medium-image-zoom/dist/styles.css');
@@ -1389,7 +1390,7 @@ a[href$='blog/authors'] {
   }
   a.footer__link-item {
     color: rgba(255, 255, 255, 0.8);
-    font-family: Poppins;
+    // font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1411,7 +1412,7 @@ a[href$='blog/authors'] {
   .footer__bottom {
     color: rgba(255, 255, 255, 0.3);
     text-align: center;
-    font-family: Poppins;
+    // font-family: Poppins;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
