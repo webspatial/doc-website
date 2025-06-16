@@ -53,22 +53,22 @@ export default {
       {
         title: 'Split the Web Page, Free the UI',
         desc: 'Break the crowded, solid-backed web page into independent panels that hover in space,\n removing the frame so translucent UI lives naturally over the real world.',
-        imgUrl: ['/img/index-s2/01a.jpeg', '/img/index-s2/01b.jpeg'], //getFakeImg(600, 400),
+        imgUrl: ['/img/index-s2/a1.png', '/img/index-s2/a2.png'], //getFakeImg(600, 400),
       },
       {
         title: 'Elevate HTML Elements, Unlock Depth',
         desc: 'Move any HTML element off the flat page—whether static or animated—and position or reshape it along the Z-axis,\n giving your interface true depth beyond width and height.',
-        imgUrl: ['/img/index-s2/02a.jpeg', '/img/index-s2/02b.jpeg'], //getFakeImg(600, 400),
+        imgUrl: ['/img/index-s2/b1.png', '/img/index-s2/b2.png'], //getFakeImg(600, 400),
       },
       {
         title: 'Multiple Scene Containers, Native Power',
         desc: 'Compose your web app from multiple OS-managed flat or volumetric scenes so it behaves like a native spatial app and delivers a unified experience across web and native.',
-        imgUrl: ['/img/index-s2/03a.jpeg', '/img/index-s2/03b.jpeg'], // getFakeImg(600, 400),
+        imgUrl: ['/img/index-s2/c1.png', '/img/index-s2/c2.png'], // getFakeImg(600, 400),
       },
       {
         title: 'Add True 3D Content, Blend Dimensions',
         desc: 'Introduce volumetric 3D elements that nest and layout seamlessly with 2D elements,\n then drive them with the 3D engine to host dynamic, interactive 3D content.',
-        imgUrl: [getFakeImg(600, 400), getFakeImg(600, 500)], // fixme:
+        imgUrl: ['/img/index-s2/d1.png', '/img/index-s2/d2.png'], // fixme:
       },
     ],
   },
