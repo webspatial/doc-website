@@ -7,7 +7,7 @@ const tdk = {
   index: {
     title: 'WebSpatial',
     description:
-      'WebSpatial is a web development platform that provides a set of tools and services to help developers build and deploy web applications. It is designed to be easy to use and to provide a wide range of features and services, including a code editor, a build system, a deployment system, and a testing system.',
+      'WebSpatial is a set of spatial APIs and ready-to-use SDK that extend the standard 2D Web ecosystem to support spatial computing across platforms. It enables the entire HTML/CSS-based Web world to step into the spatial era, gaining spatial power on par with native apps (like visionOS apps) while keeping the advantages they already have.',
   },
   blog: {
     title: 'WebSpatial Blog',
