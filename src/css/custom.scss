@@ -107,7 +107,7 @@
 // mdx container for PC
 @media (min-width: 997px) {
   main .container > .row {
-    div.col:first-child {
+    > div.col:first-child {
       padding: 0 56px;
     }
     .col {
@@ -742,7 +742,7 @@ div[class^='announcementBar_'] {
 }
 
 .code-block-diff-add-line {
-  background-color:  rgba(122, 255, 154, 0.16);
+  background-color: rgba(122, 255, 154, 0.16);
   display: block;
   margin: 0 -40px;
   padding: 0 40px;
