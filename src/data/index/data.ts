@@ -33,7 +33,7 @@ export default {
         disable: true,
       },
       {
-        title: 'Meta Horizon OS',
+        title: 'Meta Horizon',
         imgUrl: getFakeImg(600, 400),
         desc: '（Coming soon）',
         disable: true,

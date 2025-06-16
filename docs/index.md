@@ -9,7 +9,7 @@ sidebar_position: 0
 It's recommended to read these docs in order, especially the first three chapters:
 
 1. [**Introduction**](introduction): Introduces the problems WebSpatial solves and the benefits it brings.
-2. [**Quick Example**](quick-start): Use a minimal example to get a quick feel for the actual results and development experience of the WebSpatial SDK.
+2. [**Quick Example**](quick-example): Use a minimal example to get a quick feel for the actual results and development experience of the WebSpatial SDK.
 3. [**Core Concepts**](core-concepts): Learn the fundamental concepts of [Spatial Apps](core-concepts/shared-space-and-spatial-apps) and the [WebSpatial SDK](core-concepts/unique-concepts-in-webspatial).
 
 The fourth chapter provides comprehensive and detailed [**Development Guide**](development-guide). The guide consists of three parts, structured for both sequential reading and quick reference:
@@ -42,7 +42,7 @@ The WebSpatial SDK is newly open-sourced and may have bugs or missing docs/examp
    - [Make the Web Spatial Too](introduction/make-the-web-spatial-too)
    - [Built on the Existing Web Ecosystem](introduction/built-on-the-existing-web-ecosystem)
    - [If You Are a \_\_\_ Developer](introduction/if-you-are-a-developer)
-2. [Quick Example](quick-start)
+2. [Quick Example](quick-example)
 3. [Core Concepts](core-concepts)
    - [Shared Space and Spatial Apps](core-concepts/shared-space-and-spatial-apps)
    - [Unique Concepts in WebSpatial](core-concepts/unique-concepts-in-webspatial)
@@ -58,13 +58,13 @@ The WebSpatial SDK is newly open-sourced and may have bugs or missing docs/examp
        - [Add Web App Manifest](development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest)
      - [Step 1: Install the WebSpatial SDK](development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk)
      - [Step 2: Add Build Tool for Packaged WebSpatial Apps](development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps)
-       - [Options of the WebSpatial Builder](development-guide/enabling-webspatial-in-web-projects/options-of-the-webspatial-builder)
-       - [(Optional) Simplify WebSpatial Builder Using dotenv](development-guide/enabling-webspatial-in-web-projects/optional-simplify-webspatial-builder-using-dotenv)
+       - [Options of the WebSpatial Builder](development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps/options-of-the-webspatial-builder)
+       - [(Optional) Simplify WebSpatial Builder Using dotenv](development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps/optional-simplify-webspatial-builder-using-dotenv)
      - [Step 3: Integrate WebSpatial SDK into Web Build Tools](development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools)
-       - [Configure JS/TS Compiler](development-guide/enabling-webspatial-in-web-projects/configure-js-ts-compiler)
-       - [Add Optimizations and Defaults to Web Build Tools](development-guide/enabling-webspatial-in-web-projects/add-optimizations-and-defaults-to-web-build-tools)
-       - [Generate a WebSpatial-Specific Website](development-guide/enabling-webspatial-in-web-projects/generate-a-webspatial-specific-website)
-       - [Check if Running in WebSpatial Mode](development-guide/enabling-webspatial-in-web-projects/check-if-running-in-webspatial-mode)
+       - [Configure JS/TS Compiler](development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/configure-js-ts-compiler)
+       - [Add Optimizations and Defaults to Web Build Tools](development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools)
+       - [Generate a WebSpatial-Specific Website](development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website)
+       - [Check if Running in WebSpatial Mode](development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode)
    - [Using the WebSpatial API](development-guide/using-the-webspatial-api)
      - [Spatialize HTML Elements](development-guide/using-the-webspatial-api/spatialize-html-elements)
      - [Add Material Backgrounds](development-guide/using-the-webspatial-api/add-material-backgrounds)
