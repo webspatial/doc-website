@@ -279,7 +279,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://discord.gg/sXtcgNFK',
+          href: 'https://discord.gg/nhFhSuhNF2',
           // label: 'Discord',
           h5Label: 'Discord',
           className: 'xheader-discord-link',
