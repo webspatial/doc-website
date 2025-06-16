@@ -6,12 +6,13 @@
 
     border-radius: 20px;
     border: 2px solid #2b3042;
-    background: linear-gradient(270deg, #020204 0%, #020204 100%);
+    // background: linear-gradient(270deg, #020204 0%, #020204 100%);
+    background: url('/img/index-s2/cbg.png') center/cover no-repeat;
     overflow: hidden;
     .img {
       position: relative;
       background-size: 100%;
-      height: 428px;
+
       width: 100%;
       // margin-bottom: 108px;
       .imgItem {
@@ -43,8 +44,9 @@
         rgba(128, 128, 128, 0.7) 0%,
         rgba(128, 128, 128, 0) 100%
       );
-      background-blend-mode: color-burn;
-      backdrop-filter: blur(40px);
+      // background-blend-mode: color-burn;
+      backdrop-filter: blur(4px);
+
       .title {
         color: rgba(255, 255, 255, 0.9);
         // font-family: Poppins;
@@ -67,16 +69,20 @@
   }
   @media (max-width: 576px) {
     .wrap {
+      height: 428px;
       max-width: 100%;
       margin: 0 20px 24px;
       // margin-left: auto;
       // margin-right: auto;
       // margin-bottom: 24px;
       .img {
-        height: 428px;
+        height: 326px;
+        // position: relative; // 新增定位上下文
+        // top: -10px; // 向上移动10px
       }
+
       .content {
-        padding: 28px;
+        padding: 24px;
         .title {
           font-size: 20px;
         }
