@@ -24,7 +24,6 @@ function useNavbarItems() {
 }
 
 function NavbarItems({items}: {items: NavbarItemConfig[]}): ReactNode {
-  console.log('🚀 ~ NavbarItems ~ items:', items);
   return (
     <>
       {items.map((item, i) => (

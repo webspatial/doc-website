@@ -10,7 +10,6 @@ type Props = WrapperProps<typeof DocCardType>;
 export default function DocCardWrapper(props: Props): ReactNode {
   //@ts-ignore
   const {item, ...rest} = props;
-  console.log('🚀 ~ DocCardWrapper ~ item:', item);
   return (
     <>
       <DocCard {...rest} item={{...item, className: styles.wrap}} />
