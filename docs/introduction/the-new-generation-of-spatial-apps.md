@@ -6,7 +6,7 @@ sidebar_position: 2
 
 With Apple's release of the next-gen XR OS, visionOS, and its new spatial-computing architecture ([Unified Rendering app model](https://developer.picoxr.com/news/multi-app-rendering/)), the [long-standing bottlenecks of traditional XR apps](#problems-with-traditional-xr-apps) have been fundamentally addressed.
 
-The new generation of XR apps—**spatial apps**—are not cut off from the 2D apps on desktop and mobile platforms. Instead, they extend the advantages of those 2D apps, adding [**spatial capabilities**](../core-concepts/shared-space-and-spatial-apps) that bring **optional enhancements** on spatial-computing platforms and free them from flat 2D windows.
+The new generation of XR apps - **spatial apps** - are not cut off from the 2D apps on desktop and mobile platforms. Instead, they extend the advantages of those 2D apps, adding [**spatial capabilities**](../core-concepts/shared-space-and-spatial-apps) that bring **optional enhancements** on spatial-computing platforms and free them from flat 2D windows.
 
 <div className="row">
   <div className="col col--6">
