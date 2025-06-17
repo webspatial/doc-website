@@ -44,12 +44,13 @@ const config: Config = {
     {
       tagName: 'script',
       attributes: {
-        async: true,
+        async: 'true',
         src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GA_ID}`,
       },
     },
     {
       tagName: 'script',
+      attributes: {},
       innerHTML: `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
