@@ -40,7 +40,7 @@ content = content.replace(nestedImgRegex, (match, imgAlt, imgSrc, linkHref) => {
 
 // 处理普通图片：![](...)
 const normalImgRegex = /!\[([^\]]*?)\]\(([^)]+?)\)/g;
-content = content.replace(normalImgRegex, (match, imgAlt, imgSrc) => {
+const replaced = content.replace(normalImgRegex, (match, imgAlt, imgSrc) => {
   // 解析图片src，可能包含title
   const imgSrcMatch = imgSrc.match(/^([^"\s]+)(?:\s+"([^"]*)")?/);
   const src = imgSrcMatch ? imgSrcMatch[1] : imgSrc;
@@ -56,6 +56,8 @@ content = content.replace(normalImgRegex, (match, imgAlt, imgSrc) => {
   console.log('普通图片');
   return `<Image ${imgProp} alt="${alt}" />`; // 修改此行
 });
-
-fs.writeFileSync(filePath, content, 'utf-8');
-console.log(`✅ 已处理文件: ${filePath}`);
+if (replaced === content) {
+} else {
+  fs.writeFileSync(filePath, replaced, 'utf-8');
+  console.log(`✅ 已处理文件: ${filePath}`);
+}

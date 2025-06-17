@@ -274,10 +274,10 @@ After the [Confirm (Activate)](../../core-concepts/spatialized-elements-and-3d-c
 
 <p className="row">
   <div className="col col--6">
-    <Image src="/assets/guide/hand-2.png" alt="" />
+    <Image img={require("/assets/guide/hand-2.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/guide/hand-3.png" alt="" />
+    <Image img={require("/assets/guide/hand-3.png")} alt="" />
   </div>
 </p>
 

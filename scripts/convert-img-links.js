@@ -39,8 +39,9 @@ try {
       const src = srcMatch ? srcMatch[1] : '';
 
       // 新增：判断是否为外部链接
-      const isExternal = src.startsWith('http://') || src.startsWith('https://');
-      
+      const isExternal =
+        src.startsWith('http://') || src.startsWith('https://');
+
       // 修改：根据链接类型生成不同属性
       const imgProp = isExternal ? `img="${src}"` : `img={require("${src}")}`;
 
@@ -62,10 +63,14 @@ try {
     },
   );
 
-  // 写回文件
-  fs.writeFileSync(inputFile, updatedContent, 'utf8');
+  if (updatedContent === content) {
+    // console.log(`⚠️ 未检测到任何 <a><img></a> 模式，文件未修改：${inputFile}`);
+  } else {
+    // 写回文件
+    fs.writeFileSync(inputFile, updatedContent, 'utf8');
 
-  console.log(`✅ 已就地替换完成：${inputFile}`);
+    console.log(`✅ 已就地替换完成：${inputFile}`);
+  }
 } catch (error) {
   console.error(`❌ 处理文件时出错：${error.message}`);
   process.exit(1);

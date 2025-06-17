@@ -56,10 +56,10 @@ In this demo, the Start Scene originally used the size shown in the left image (
 
 <p className="row">
   <div className="col col--6">
-    <Image src="/assets/concepts/3-28.png" alt="" />
+    <Image img={require("/assets/concepts/3-28.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/concepts/3-29.png" alt="" />
+    <Image img={require("/assets/concepts/3-29.png")} alt="" />
   </div>
 </p>
 

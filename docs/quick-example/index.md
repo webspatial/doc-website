@@ -339,10 +339,10 @@ html.is-spatial {
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/quick/10.png" alt="" />
+    <Image img={require("/assets/quick/10.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/quick/11.png" alt="" />
+    <Image img={require("/assets/quick/11.png")} alt="" />
   </div>
 </div>
 
@@ -404,10 +404,10 @@ html.is-spatial {
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/quick/12.png" alt="" />
+    <Image img={require("/assets/quick/12.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/quick/13.png" alt="" />
+    <Image img={require("/assets/quick/13.png")} alt="" />
   </div>
 </div>
 
@@ -451,10 +451,10 @@ In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-we
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/quick/14.png" alt="" />
+    <Image img={require("/assets/quick/14.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/quick/15.png" alt="" />
+    <Image img={require("/assets/quick/15.png")} alt="" />
   </div>
 </div>
 
@@ -477,10 +477,10 @@ In the [styles for `XR_ENV` mode](../development-guide/enabling-webspatial-in-we
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/quick/16.png" alt="" />
+    <Image img={require("/assets/quick/16.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/quick/17.png" alt="" />
+    <Image img={require("/assets/quick/17.png")} alt="" />
   </div>
 </div>
 

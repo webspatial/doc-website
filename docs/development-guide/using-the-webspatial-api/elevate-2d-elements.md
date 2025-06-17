@@ -248,10 +248,10 @@ Standard CSS already allows transforms along all three axes, but depth effects a
 
 <p className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-7.png" alt="" />
+    <Image img={require("/assets/intro/intro-3-7.png")} alt="" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-3-8.png" alt="" />
+    <Image img={require("/assets/intro/intro-3-8.png")} alt="" />
   </div>
 </p>
 
