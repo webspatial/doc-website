@@ -1,6 +1,4 @@
 import React from 'react';
-import Zoom from 'react-medium-image-zoom';
-// import 'react-medium-image-zoom/dist/styles.css';
 import IdealImage from '@theme/IdealImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -12,7 +10,7 @@ export default function Image({src, alt, title, ...props}) {
     // 使用Cloudflare图片URL
     const baseUrl = process.env.CLOUDFLARE_IMAGE_BASE_URL; // 示例：https://imagedelivery.net/账户ID/
     return (
-      <Zoom>
+      <>
         {/* 替换 IdealImage 为普通 img 标签，使用 Cloudflare 的格式优化参数 */}
         <img
           src={`${baseUrl}${src}?format=auto&quality=75`}
@@ -20,16 +18,12 @@ export default function Image({src, alt, title, ...props}) {
           title={title}
           {...props}
         />
-      </Zoom>
+      </>
     );
   }
 
   // 其他环境使用本地路径
   const imgUrl = useBaseUrl(src);
 
-  return (
-    <Zoom>
-      <IdealImage img={imgUrl} alt={alt} title={title} {...props} />
-    </Zoom>
-  );
+  return <IdealImage img={imgUrl} alt={alt} title={title} {...props} />;
 }
