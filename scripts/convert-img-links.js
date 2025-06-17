@@ -38,22 +38,27 @@ try {
       const srcMatch = imgAttributes.match(/src=["']([^"']+)["']/);
       const src = srcMatch ? srcMatch[1] : '';
 
+      // 新增：判断是否为外部链接
+      const isExternal = src.startsWith('http://') || src.startsWith('https://');
+      
+      // 修改：根据链接类型生成不同属性
+      const imgProp = isExternal ? `img="${src}"` : `img={require("${src}")}`;
+
       // 提取 alt 属性
       const altMatch = imgAttributes.match(/alt=["']([^"']*)["']/);
       const alt = altMatch ? altMatch[1] : '';
 
       if (!src) {
         console.warn(`⚠️ 未找到src属性：${match}`);
-        return match; // 保持原样
+        return match;
       }
 
-      // 如果 href 存在且与 src 不同，保留链接结构和所有属性
+      // 修改：使用新的 imgProp
       if (href && href !== src) {
-        return `<a${aAttributes}><Image src="${src}" alt="${alt}" /></a>`;
+        return `<a${aAttributes}><Image ${imgProp} alt="${alt}" /></a>`;
       }
 
-      // 如果没有 href 或者 href 与 src 相同，只输出 Image 组件
-      return `<Image src="${src}" alt="${alt}" />`;
+      return `<Image ${imgProp} alt="${alt}" />`;
     },
   );
 

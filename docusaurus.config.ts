@@ -89,7 +89,7 @@ const config: Config = {
         min: 640,
         steps: 2,
         // Use false to debug, but it incurs huge perf costs
-        disableInDev: true,
+        disableInDev: false,
       } satisfies IdealImageOptions,
     ],
     // [

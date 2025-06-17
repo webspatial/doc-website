@@ -266,7 +266,7 @@ An element becomes an Interaction Region if any of the following is true:
 - It is an input or form element.
 - Otherwise add the CSS property `cursor: pointer` to mark any element as an Interaction Region.
 
-<Image src="/assets/guide/hand-1.png" alt="Scene Example 1" />
+<Image img={require("/assets/guide/hand-1.png")} alt="Scene Example 1" />
 
 ### JavaScript events {#js-events}
 

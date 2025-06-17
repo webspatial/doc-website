@@ -1,6 +1,6 @@
 import React from 'react';
 import IdealImage from '@theme/IdealImage';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+// import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const useCloudflare = false; // todo: 暂未启用
 export default function Image({src, alt, title, ...props}) {
@@ -22,8 +22,5 @@ export default function Image({src, alt, title, ...props}) {
     );
   }
 
-  // 其他环境使用本地路径
-  const imgUrl = useBaseUrl(src);
-
-  return <IdealImage img={imgUrl} alt={alt} title={title} {...props} />;
+  return <IdealImage img={src} alt={alt} title={title} {...props} />;
 }

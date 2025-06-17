@@ -125,7 +125,7 @@ Example from the [Quick Example](../../quick-example/):
 
 Clicking the link or the button opens new Scenes. Every Scene shows the content of `/second-page`, because that URL is opened in each new scene. Clicking the link multiple times produces multiple Scenes. Clicking the button multiple times produces a single Scene, because the `window.open` call gives it the window name `"secondScene"`.
 
-<Image src="https://static.webspatial.dev/intro-4-8.gif" alt="Scene Example 4" />
+<Image img="https://static.webspatial.dev/intro-4-8.gif" alt="Scene Example 4" />
 
 ---
 
@@ -244,7 +244,7 @@ When you click the link, no window name is supplied, so no initialization proper
 
 When you click the button, `initScene()` supplies initialization properties for the window name `"secondScene"`. The subsequent `window.open` call skips the waiting state and creates the Scene directly with those properties (right window in the image).
 
-<Image src="/assets/concepts/3-30.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-30.png")} alt="Scene Example 3" />
 
 ## Managing Multiple Scenes {#multi-scenes}
 

@@ -16,10 +16,10 @@ The software interface expands from a bounded display to the entire 3D space aro
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-1-1.png" alt="intro-1-1" />
+    <Image img={require("/assets/intro/intro-1-1.png")} alt="intro-1-1" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-1-2.png" alt="intro-1-2" />
+    <Image img={require("/assets/intro/intro-1-2.png")} alt="intro-1-2" />
   </div>
 </div>
 
@@ -32,10 +32,10 @@ Both the GUI and the content **no longer have to stay flat**; they can be built 
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-1-3.png" alt="intro-1-3" />
+    <Image img={require("/assets/intro/intro-1-3.png")} alt="intro-1-3" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-1-4.png" alt="intro-1-4" />
+    <Image img={require("/assets/intro/intro-1-4.png")} alt="intro-1-4" />
   </div>
 </div>
 
@@ -49,18 +49,18 @@ Interaction gains more possibilities: it is more natural and intuitive, more fle
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-1-5.png" alt="intro-1-5" />
+    <Image img={require("/assets/intro/intro-1-5.png")} alt="intro-1-5" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-1-6.gif" alt="intro-1-6" />
+    <Image img={require("/assets/intro/intro-1-6.gif")} alt="intro-1-6" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/intro/intro-1-7.png" alt="intro-1-7" />
+    <Image img={require("/assets/intro/intro-1-7.png")} alt="intro-1-7" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/intro/intro-1-8.png" alt="intro-1-8" />
+    <Image img={require("/assets/intro/intro-1-8.png")} alt="intro-1-8" />
   </div>
 </div>

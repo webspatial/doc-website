@@ -49,8 +49,12 @@ content = content.replace(normalImgRegex, (match, imgAlt, imgSrc) => {
   const fileName = path.basename(src);
   const alt = imgAlt || `Scene Example ${fileName.match(/\d+/)?.[0] || 'X'}`;
 
+  // 新增：判断外部链接
+  const isExternal = src.startsWith('http://') || src.startsWith('https://');
+  const imgProp = isExternal ? `img="${src}"` : `img={require("${src}")}`;
+
   console.log('普通图片');
-  return `<Image src="${imgSrc}" alt="${alt}" />`;
+  return `<Image ${imgProp} alt="${alt}" />`; // 修改此行
 });
 
 fs.writeFileSync(filePath, content, 'utf-8');
