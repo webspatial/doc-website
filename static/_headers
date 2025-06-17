@@ -1,7 +1,7 @@
-# HTML：始终回源校验
+# HTML: Always revalidate with the origin server
 /*
   Cache-Control: no-store, must-revalidate
 
-# 构建系统自动生成、带 hash 的静态资源，以及内容图片（改图片需要手动改文件名）
+# build outputs hashed static files, plus content images (if you change an image, you'll have to rename the file yourself)
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
