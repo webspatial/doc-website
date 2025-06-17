@@ -41,6 +41,22 @@ const config: Config = {
         crossorigin: 'true',
       },
     },
+    {
+      tagName: 'script',
+      attributes: {
+        async: true,
+        src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GA_ID}`,
+      },
+    },
+    {
+      tagName: 'script',
+      innerHTML: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.GA_ID}');
+      `,
+    },
   ],
 
   stylesheets: [
