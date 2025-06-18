@@ -32,7 +32,8 @@ export default function Image({img, alt, title, ...props}) {
           window.open(img);
           return;
         }
-        const fullImageURL = img?.src?.images?.[1]?.path;
+        const lengths = img?.src?.images?.length;
+        const fullImageURL = img?.src?.images?.[lengths - 1]?.path;
         fullImageURL && window.open(fullImageURL);
       }}>
       <IdealImage img={img} alt={alt} title={title} {...props} />
