@@ -2,7 +2,7 @@
 
 /**
  * 
- * convert <Image img={require('src')}/> to <Image src="src"/>
+ * convert <Image src="src"/> to <Image img={require('src')}/> 
  */
 
 const fs = require('fs');
@@ -22,16 +22,18 @@ if (!filePath) {
 let content = fs.readFileSync(filePath, 'utf-8');
 
 // 正则匹配并替换
-const imgRequireRegex =
-  /<Image\s+img=\{require\("(.+?)"\)\}\s+alt="(.+?)"\s*\/>/g;
-const replaced = content.replace(imgRequireRegex, (match, imgPath, altText) => {
-  return `<Image src="${imgPath}" alt="${altText}" />`;
+const imgSrcRegex = /<Image\s+src="(.+?)"\s+alt="(.*?)"\s*\/>/g;
+const replaced = content.replace(imgSrcRegex, (_, srcPath, altText) => {
+    // 新增：判断是否为外部链接
+    const isExternal = srcPath.startsWith('http://') || srcPath.startsWith('https://');
+    const imgProp = isExternal ? `img="${srcPath}"` : `img={require("${srcPath}")}`;
+    return `<Image ${imgProp} alt="${altText}" />`;
 });
 
 // 如果没有变化，则提示
 if (replaced === content) {
   // console.log(
-  //   `⚠️ 未检测到任何 <Image img={require(...)} /> 模式，文件未修改：${filePath}`,
+  //   `⚠️ 未检测到任何 模式，文件未修改：${filePath}`,
   // );
 } else {
   fs.writeFileSync(filePath, replaced, 'utf-8');

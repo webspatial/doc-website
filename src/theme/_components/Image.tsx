@@ -1,35 +1,90 @@
-import React from 'react';
-import Zoom from 'react-medium-image-zoom';
-// import 'react-medium-image-zoom/dist/styles.css';
+import React, {useState} from 'react';
 import IdealImage from '@theme/IdealImage';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
-const useCloudflare = false; // todo: 暂未启用
-export default function Image({src, alt, title, ...props}) {
-  // // 将相对路径转换为最终 URL，以便 IdealImage 能正确加载
+const useCloudflare = false;
+export default function Image({img, alt, title, ...props}) {
+  const [showModal, setShowModal] = useState(false);
+  const [fullImageURL, setFullImageURL] = useState('');
 
-  if (useCloudflare) {
-    // 使用Cloudflare图片URL
-    const baseUrl = process.env.CLOUDFLARE_IMAGE_BASE_URL; // 示例：https://imagedelivery.net/账户ID/
-    return (
-      <Zoom>
-        {/* 替换 IdealImage 为普通 img 标签，使用 Cloudflare 的格式优化参数 */}
-        <img
-          src={`${baseUrl}${src}?format=auto&quality=75`}
-          alt={alt}
-          title={title}
-          {...props}
-        />
-      </Zoom>
-    );
-  }
+  const handleClick = () => {
+    let url = '';
+    if (typeof img === 'string') {
+      url = img;
+    } else {
+      const lengths = img?.src?.images?.length;
+      url = img?.src?.images?.[lengths - 1]?.path || '';
+    }
 
-  // 其他环境使用本地路径
-  const imgUrl = useBaseUrl(src);
+    setFullImageURL(url);
+    setShowModal(true);
+  };
 
   return (
-    <Zoom>
-      <IdealImage img={imgUrl} alt={alt} title={title} {...props} />
-    </Zoom>
+    <>
+      <div style={{cursor: 'pointer'}} onClick={handleClick}>
+        <IdealImage img={img} alt={alt} title={title} {...props} />
+      </div>
+
+      {showModal && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0,0,0,0.8)',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+          onClick={() => setShowModal(false)}>
+          <button
+            style={{
+              position: 'absolute',
+              top: 24,
+              right: 24,
+              height: '40px',
+              width: '40px',
+              background: 'none',
+              border: 'none',
+              color: '#fff',
+              fontSize: '28px',
+              cursor: 'pointer',
+              zIndex: 10000,
+              padding: 0,
+              borderRadius: '50%',
+              transition: 'background 0.2s',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              lineHeight: 1,
+            }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowModal(false);
+            }}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.background = 'rgba(255,255,255,0.2)')
+            }
+            onMouseOut={(e) => (e.currentTarget.style.background = 'none')}
+            aria-label="关闭图片预览">
+            ×
+          </button>
+          <img
+            src={fullImageURL}
+            style={{
+              maxWidth: '90vw',
+              maxHeight: '90vh',
+              objectFit: 'contain',
+              borderRadius: 8,
+            }}
+            alt={alt}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+    </>
   );
 }
