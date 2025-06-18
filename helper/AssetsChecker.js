@@ -21,16 +21,16 @@ async function checkFolder(originPath, tempPath){
         if(!file.includes(".")) {
             checkFolder(originPath + "/" + file, tempPath + "/" + file);
         }
-        else if(file.includes(".png")){
+        else if(file.includes(".png") || file.includes(".jpg") || file.includes(".jpeg")){
         // if(file.includes(".png")){
-            if(await transImg(originPath + "/" + file, tempPath + "/" + file)){
+            if(await transImg(originPath + "/" + file, tempPath + "/" + file), file.includes(".png")){
                 console.log(file);
             }
         }
     }
 }
 
-async function transImg(originPath, tempPath){
+async function transImg(originPath, tempPath, isPng){
     const image = await Jimp.read(originPath);
     const width = image.bitmap.width;
     const height = image.bitmap.height;
@@ -46,11 +46,13 @@ async function transImg(originPath, tempPath){
         }
         hasResize = true
     }
-    if(isFullyOpaque(image)){
+    if(isPng && isFullyOpaque(image)){
+        console.log("fully opaque")
         image.write(tempPath.replace(".png", ".jpg"));
         return true
     }
     else if(hasResize){
+        console.log("resize")
         image.write(tempPath);
         return true
     }
