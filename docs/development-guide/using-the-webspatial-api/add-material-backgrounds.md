@@ -107,7 +107,7 @@ Besides `none` (no custom setting), `transparent` (fully transparent), and `tran
 - `thick` – Suitable for content nested inside another material background.
 - `thin` – Good for interactive elements and highlighted selections.
 
-<Image img={require("/assets/concepts/4-4.png")} alt="Scene Example 4" />
+<Image img={require("/assets/concepts/4-4.jpg")} alt="Scene Example 4" />
 <Image img={require("/assets/concepts/4-3.png")} alt="Scene Example 4" />
 
 Example from the [Techshop demo](../../introduction/built-on-the-existing-web-ecosystem#example-techshop):
