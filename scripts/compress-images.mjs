@@ -8,7 +8,7 @@ import imageminMozjpeg from 'imagemin-mozjpeg';
 import imageminPngquant from 'imagemin-pngquant';
 
 (async () => {
-  const files = await globby('static/img/**/*.{jpg,jpeg,png,gif}');
+  const files = await globby('static/assets/**/*.{jpg,jpeg,png,gif}');
   if (files.length === 0) {
     console.log('No images found in static/img');
     return;
