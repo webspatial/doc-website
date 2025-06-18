@@ -5,3 +5,6 @@
 # build outputs hashed static files, plus content images (if you change an image, you'll have to rename the file yourself)
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
