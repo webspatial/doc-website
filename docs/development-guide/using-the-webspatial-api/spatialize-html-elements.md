@@ -266,7 +266,7 @@ An element becomes an Interaction Region if any of the following is true:
 - It is an input or form element.
 - Otherwise add the CSS property `cursor: pointer` to mark any element as an Interaction Region.
 
-<Image src="/assets/guide/hand-1.jpg" alt="Scene Example 1" />
+<Image img={require("/assets/guide/hand-1.jpg")} alt="Scene Example 1" />
 
 ### JavaScript events {#js-events}
 
@@ -274,10 +274,10 @@ After the [Confirm (Activate)](../../core-concepts/spatialized-elements-and-3d-c
 
 <p className="row">
   <div className="col col--6">
-    <Image src="/assets/guide/hand-2.jpg" alt="" />
+    <Image img={require("/assets/guide/hand-2.jpg")} alt="" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/guide/hand-3.jpg" alt="" />
+    <Image img={require("/assets/guide/hand-3.jpg")} alt="" />
   </div>
 </p>
 
