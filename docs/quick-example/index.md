@@ -101,7 +101,7 @@ Run [the Dev Server for desktop/mobile and other non-XR platforms](../developmen
 npm run dev
 ```
 
-<Image img={require("/assets/quick/1.png")} alt="Scene Example 1" />
+<Image img={require("/assets/quick/1.jpg")} alt="Scene Example 1" />
 
 Open the URL shown in the terminal in a desktop browser such as Chrome to confirm everything works:
 
@@ -113,7 +113,7 @@ Next, open a new terminal window (in the project root) and run another Dev Serve
 XR_ENV=avp npm run dev
 ```
 
-<Image img={require("/assets/quick/3.png")} alt="Scene Example 3" />
+<Image img={require("/assets/quick/3.jpg")} alt="Scene Example 3" />
 
 ## 4. Package and run the WebSpatial app {#package-and-run}
 

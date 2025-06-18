@@ -46,8 +46,8 @@ This category of APIs makes the HTML element completely leave the normal layout 
 
 With absolute positioning, the element is positioned relative to the nearest ancestor [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Containing_block#identifying_the_containing_block) - an ancestor whose `position` value is not `static`, or one that has a `transform` property. If no such ancestor exists, it is positioned relative to the entire window.
 
-<Image img={require("/assets/guide/3-1.png")} alt="Scene Example 3" />
-<Image img={require("/assets/guide/3-2.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-1.jpg")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-2.jpg")} alt="Scene Example 3" />
 
 In this mode, there are four CSS properties in the current web standard that let you "move" (position) an element in the four directions along the X and Y axes:
 
@@ -56,7 +56,7 @@ In this mode, there are four CSS properties in the current web standard that let
 - `left`: moves rightward along the X-axis
 - `right`: moves leftward along the X-axis
 
-<Image img={require("/assets/guide/3-3.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-3.jpg")} alt="Scene Example 3" />
 
 The [WebSpatial API](../../core-concepts/unique-concepts-in-webspatial#webspatial-api) adds a new CSS property that positions the element along the Z-axis:
 
@@ -111,7 +111,7 @@ The `<p>` text is positioned on the Y-axis relative to its containing block `.co
 
 On the Z-axis, `--xr-back` also positions the `<p>` relative to the plane of `.count-card`, which is both a semi-transparent spatialized element and a containing block.
 
-<Image img={require("/assets/guide/3-4.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-4.jpg")} alt="Scene Example 3" />
 
 <a id="position-fixed"></a>
 
@@ -144,7 +144,7 @@ Example from the [Techshop demo](../../introduction/built-on-the-existing-web-ec
 
 The top bar and side bar are fixed; the product list remains in the page flow. Shrinking the window with the drag handle clips the list, which scrolls, while the top bar and side bar stay in place.
 
-<Image img={require("/assets/guide/3-5.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-5.jpg")} alt="Scene Example 3" />
 
 Clicking "View Details" opens a new product-detail window scene:
 
@@ -165,7 +165,7 @@ Clicking "View Details" opens a new product-detail window scene:
 
 While the page scrolls, the left product image scrolls too, but the right info panel remains fixed.
 
-<Image img={require("/assets/guide/3-6.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-6.jpg")} alt="Scene Example 3" />
 
 <a id="not-affect-layout"></a>
 
@@ -179,7 +179,7 @@ This category of APIs do not affect the normal layout flow. The HTML element sti
 
 With relative positioning, the element can move along X and Y using the four CSS properties.
 
-<Image img={require("/assets/guide/3-7.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-7.jpg")} alt="Scene Example 3" />
 
 It can also move along Z with `--xr-back`. The initial Z position is **the plane where the element originally sits**, which works as the "back surface."
 
@@ -213,7 +213,7 @@ html.is-spatial {
 
 The `.link-card` is below `.count-card` in the original flow. In relative positioning mode, `--xr-back` moves it 50 units forward along Z while leaving its X/Y position untouched.
 
-<Image img={require("/assets/guide/3-8.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-8.jpg")} alt="Scene Example 3" />
 
 Another example from the [Quick Example](../../quick-example/):
 
@@ -236,7 +236,7 @@ Another example from the [Quick Example](../../quick-example/):
 
 `.count-card` moves 50 units forward in Z with relative positioning, while keeping its original X and Y position. Inside it, an absolutely positioned `<p>` moves an additional 20 units forward relative to the `.count-card` plane.
 
-<Image img={require("/assets/guide/3-9.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-9.jpg")} alt="Scene Example 3" />
 
 <a id="css-transform"></a>
 
@@ -248,10 +248,10 @@ Standard CSS already allows transforms along all three axes, but depth effects a
 
 <p className="row">
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-3-7.png")} alt="" />
+    <Image img={require("/assets/intro/intro-3-7.jpg")} alt="" />
   </div>
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-3-8.png")} alt="" />
+    <Image img={require("/assets/intro/intro-3-8.jpg")} alt="" />
   </div>
 </p>
 
@@ -302,7 +302,7 @@ html.is-spatial {
 
 `.link-card` first moves 50 units forward via `--xr-back`, then applies a transform: it moves another 30 px forward (automatically converted to pt) and rotates 30 degrees outward around its top edge.
 
-<Image img={require("/assets/guide/3-14.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-14.jpg")} alt="Scene Example 3" />
 
 Example from [Techshop demo](../../introduction/built-on-the-existing-web-ecosystem#example-techshop):
 
@@ -318,7 +318,7 @@ Example from [Techshop demo](../../introduction/built-on-the-existing-web-ecosys
 
 The side menu is fixed at the far left, then transformed: it moves 320 px forward on Z (converted to pt) and rotates 80 degrees inward around its left edge.
 
-<Image img={require("/assets/guide/3-15.png")} alt="Scene Example 3" />
+<Image img={require("/assets/guide/3-15.jpg")} alt="Scene Example 3" />
 
 <a id="with-layout"></a>
 

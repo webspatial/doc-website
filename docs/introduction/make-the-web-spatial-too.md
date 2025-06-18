@@ -34,7 +34,7 @@ With WebSpatial, **HTML elements** can be laid out and positioned not only along
 
 WebSpatial lets HTML elements [**rotate, scale, and warp along the Z axis in real space**](../development-guide/using-the-webspatial-api/elevate-2d-elements).
 
-<Image img={require("/assets/intro/intro-4-3.png")} alt="image" />
+<Image img={require("/assets/intro/intro-4-3.jpg")} alt="image" />
 
 For example, you can build an actual 3D cube using plain `div` elements:
 
@@ -46,7 +46,7 @@ With WebSpatial, HTML elements can have backgrounds that are **[semi-transparent
 
 You can also set the background of an element or an entire page window to a [**fully transparent material**](../development-guide/using-the-webspatial-api/add-material-backgrounds), making its contents appear to float and disperse in space.
 
-<Image img={require("/assets/intro/intro-4-5.png")} alt="image" />
+<Image img={require("/assets/intro/intro-4-5.jpg")} alt="image" />
 
 ### Genuine 3D Elements for HTML {#3d-elements}
 

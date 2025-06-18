@@ -42,7 +42,7 @@ html.is-spatial {
   border-radius: 10%;
 ```
 
-<Image img={require("/assets/guide/2-1.png")} alt="Scene Example 2" />
+<Image img={require("/assets/guide/2-1.jpg")} alt="Scene Example 2" />
 
 - To add a translucent background, the default value is `translucent`. If the window is nested inside other translucent material content and needs to be visually separated, you can choose from [other material options](#translucent-options).
 - Use `border-radius` to control the roundness of the window border.
@@ -59,7 +59,7 @@ html.is-spatial {
   --xr-background-material: transparent;
 ```
 
-<Image img={require("/assets/guide/2-2.png")} alt="Scene Example 2" />
+<Image img={require("/assets/guide/2-2.jpg")} alt="Scene Example 2" />
 
 ## Translucent HTML Elements {#for-html-elements}
 
@@ -85,7 +85,7 @@ Example based on the [Quick Example](../../quick-example/):
 
 Removing the `--xr-background-material` property from the `.link-card` element reveals that it is transparent by default.
 
-<Image img={require("/assets/guide/2-3.png")} alt="Scene Example 2" />
+<Image img={require("/assets/guide/2-3.jpg")} alt="Scene Example 2" />
 
 Whether or not the spatialized HTML element is elevated, you can set `--xr-background-material: translucent` (or one of the [other options](#translucent-options)) to give it a translucent background.
 
@@ -97,7 +97,7 @@ Example based on the [Quick Example](../../quick-example/):
     --xr-background-material: translucent;
 ```
 
-<Image img={require("/assets/guide/2-4.png")} alt="Scene Example 2" />
+<Image img={require("/assets/guide/2-4.jpg")} alt="Scene Example 2" />
 
 ## Additional Material Options {#translucent-options}
 
@@ -107,7 +107,7 @@ Besides `none` (no custom setting), `transparent` (fully transparent), and `tran
 - `thick` – Suitable for content nested inside another material background.
 - `thin` – Good for interactive elements and highlighted selections.
 
-<Image img={require("/assets/concepts/4-4.png")} alt="Scene Example 4" />
+<Image img={require("/assets/concepts/4-4.jpg")} alt="Scene Example 4" />
 <Image img={require("/assets/concepts/4-3.png")} alt="Scene Example 4" />
 
 Example from the [Techshop demo](../../introduction/built-on-the-existing-web-ecosystem#example-techshop):
@@ -145,7 +145,7 @@ Example from the [Techshop demo](../../introduction/built-on-the-existing-web-ec
 
 The sidebar menu itself uses a translucent material background. Items inside the menu use `thin` or `thick` depending on whether they are selected, creating clear visual separation from the menu background.
 
-<Image img={require("/assets/guide/2-5.png")} alt="Scene Example 2" />
+<Image img={require("/assets/guide/2-5.jpg")} alt="Scene Example 2" />
 
 ## Content Visibility and Opacity {#opacity}
 
