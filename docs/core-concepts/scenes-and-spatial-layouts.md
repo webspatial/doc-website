@@ -23,29 +23,29 @@ A Scene is a content container centrally managed by the spatial-computing OS. Ev
 
 The most basic **Scene type** is the **Window**.
 
-<Image src="/assets/concepts/3-3.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-3.jpg" alt="Scene Example 3" />
 
 Unlike a flat window in the desktop operating systems, a Window Scene can host both 2D and **3D content**. All content is positioned **based on the window plane** and can extend into **the 3D space in front of it**.
 
-<Image src="/assets/concepts/3-4.png" alt="Scene Example 3" />
-<Image src="/assets/concepts/3-5.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-4.jpg" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-5.jpg" alt="Scene Example 3" />
 
 A Window Scene has a new capability: its background and borders can be fully transparent, making the content **appear to float independently in space**.
 
-<Image src="/assets/concepts/3-6.png" alt="Scene Example 3" />
-<Image src="/assets/concepts/3-7.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-6.jpg" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-7.jpg" alt="Scene Example 3" />
 
 ### Volume Scene {#scenes-volume}
 
 A spatial app can also use a more 3D scene type called a **Volume Scene** (also referred to as a **volumetric window**, or **volume**).
 This scene is a bounded local 3D space (a sort of 3D bounding box) that has volume. It can also hold 3D content and **2D content**.
 
-<Image src="/assets/concepts/3-8.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-8.jpg" alt="Scene Example 3" />
 
 Although both Window Scenes and Volume Scenes can host 2D and 3D content, the former behaves like a **panel with depth extending forward**, while the latter behaves like a bounded **object** with full volume. The OS treats them differently within the shared space, integrates them with the environment in distinct ways, and exposes different interactions, for example separate drag behaviors and [Spatial Layout](#spatial-layout) modes.
 
-<Image src="/assets/concepts/3-9.png" alt="Scene Example 3" />
-<Image src="/assets/concepts/3-10.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-9.jpg" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-10.jpg" alt="Scene Example 3" />
 
 ### Scenes in a WebSpatial App {#scenes-in-webspatial}
 
@@ -84,21 +84,21 @@ Because a WebSpatial Scene is [essentially a web page](#scenes-in-webspatial), i
 
 That's why PWA app windows include some native UI to provide the general features mentioned above.
 
-<Image src="/assets/concepts/3-14.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-14.jpg" alt="Scene Example 3" />
 
 The PWA standard's [`display` property](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#display) in the [Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) lets you control certain parts of this native UI - for example, **whether native navigation buttons appear**.
 
 > The following image shows a desktop PWA in `minimal-ui` mode (native title bar with navigation buttons).
-> <Image src="/assets/concepts/3-15.png" alt="Scene Example 3" />
+> <Image src="/assets/concepts/3-15.jpg" alt="Scene Example 3" />
 >
 > The following images show an Android PWA in `minimal-ui` mode (native title bar, navigation buttons inside the menu).
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-16.png" alt="Android PWA minimal-ui mode 1" />
+>     <Image src="/assets/concepts/3-16.jpg" alt="Android PWA minimal-ui mode 1" />
 >   </div>
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-17.png" alt="Android PWA minimal-ui mode 2" />
+>     <Image src="/assets/concepts/3-17.jpg" alt="Android PWA minimal-ui mode 2" />
 >   </div>
 > </div>
 >
@@ -106,10 +106,10 @@ The PWA standard's [`display` property](../development-guide/enabling-webspatial
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-18.png" alt="Android PWA standalone mode 1" />
+>     <Image src="/assets/concepts/3-18.jpg" alt="Android PWA standalone mode 1" />
 >   </div>
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-19.png" alt="Android PWA standalone mode 2" />
+>     <Image src="/assets/concepts/3-19.jpg" alt="Android PWA standalone mode 2" />
 >   </div>
 > </div>
 
@@ -119,7 +119,7 @@ WebSpatial is [**built on top of PWA**](../development-guide/enabling-webspatial
 The Scene Menu shown in the image isn't the final design. It's a temporary test version. It's collapsed by default, and when expanded, it lets you view and copy the URL, use navigation buttons (depend on the `display` property in the Web App Manifest), etc.
 :::
 
-<Image src="/assets/concepts/3-20.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-20.jpg" alt="Scene Example 3" />
 
 ## Scene Properties {#scene-props}
 
@@ -127,12 +127,12 @@ Window Scenes in WebSpatial apps have some Scene properties that are fully contr
 
 The window plane can use a [**semi-transparent** material background](../development-guide/using-the-webspatial-api/add-material-backgrounds#for-window-scenes), rendered dynamically against the surrounding environment so it remains legible in any context. You can also round the four corners instead of keeping the default sharp angles.
 
-<Image src="/assets/concepts/3-21.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-21.jpg" alt="Scene Example 3" />
 
 Alternatively, set the background to a [fully transparent material](../development-guide/using-the-webspatial-api/add-material-backgrounds#for-window-scenes) with no border, making the page content appear to float freely.
 
-<Image src="/assets/concepts/3-22.png" alt="Scene Example 3" />
-<Image src="/assets/concepts/3-23.png" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-22.jpg" alt="Scene Example 3" />
+<Image src="/assets/concepts/3-23.jpg" alt="Scene Example 3" />
 
 You can create native UI elements that hover on the window edge and provide global functionality (for example, a global navigation bar).
 
@@ -142,10 +142,10 @@ The current version of WebSpatial SDK does not support this feature natively. Yo
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/concepts/3-24.png" alt="Scene Properties Example 1" />
+    <Image src="/assets/concepts/3-24.jpg" alt="Scene Properties Example 1" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/concepts/3-25.png" alt="Scene Properties Example 2" />
+    <Image src="/assets/concepts/3-25.jpg" alt="Scene Properties Example 2" />
   </div>
 </div>
 
