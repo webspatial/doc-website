@@ -101,6 +101,13 @@
   font-weight: 500;
   line-height: 25px;
   transition: background-color 0.2s, box-shadow 0.2s;
+  &.disabled {
+    color: rgba(242, 246, 250, 0.3);
+    cursor: not-allowed;
+    .desc {
+      color: rgba(242, 246, 250, 0.3);
+    }
+  }
 }
 
 .active {
@@ -113,14 +120,6 @@
     bottom: -18px;
     height: 2px;
     background-color: #fff;
-  }
-}
-
-.disabled {
-  color: rgba(242, 246, 250, 0.3);
-  cursor: not-allowed;
-  .desc {
-    color: rgba(242, 246, 250, 0.3);
   }
 }
 
