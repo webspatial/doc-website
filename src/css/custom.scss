@@ -15,7 +15,6 @@
     'Noto Sans CJK SC', sans-serif;
 }
 
-
 :root {
   // tokens
   --color-border-4: #86909c;
@@ -1502,4 +1501,29 @@ a[href$='blog/authors'] {
 
 .footer__copyright {
   white-space: pre-line;
+}
+
+// for Tabs
+.tabs-container {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgb(24, 24, 27);
+  .tabs {
+    margin-bottom: 0;
+    background-color: rgb(39, 39, 42);
+    // border-bottom-color: rgb(63, 63, 70);
+    border-bottom: solid 1px rgb(63, 63, 70);
+    // color: var(--color-text-1);
+
+    .tabs__item {
+      border-bottom-width: 1px;
+      color: #c9cdd4;
+    }
+    .tabs__item--active {
+      color: var(--ifm-color-primary-light);
+    }
+  }
+  div.margin-top--md {
+    margin-top: 0 !important;
+  }
 }
