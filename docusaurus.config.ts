@@ -236,9 +236,9 @@ const config: Config = {
   themeConfig: {
     algolia: {
       // todo: test only, to be replaced
-      appId: 'C6FO9APPMF',
-      apiKey: 'bc44822daa62380257f5a4483d322852', //'56e68bd6f98ae749cbb893fb483e5284',
-      indexName: isProd ? 'webspatialio-prod' : 'webspatialio',
+      appId: 'LIUME5J8UD',
+      apiKey: 'b7d539514fa1d4e67dbbaf010aeb004c', //'56e68bd6f98ae749cbb893fb483e5284',
+      indexName: 'webspatial',
     },
     liveCodeBlock: {
       /**
