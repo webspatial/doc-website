@@ -9,7 +9,9 @@ export default function Image({img, alt, title, ...props}) {
   const [open, setOpen] = useState(false);
   const [fullImageURL, setFullImageURL] = useState('');
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    const hasImage = e.currentTarget.querySelector('img');
+    if (!hasImage) return;
     let url = '';
     if (typeof img === 'string') {
       url = img;
