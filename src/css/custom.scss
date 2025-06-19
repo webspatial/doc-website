@@ -1520,7 +1520,8 @@ a[href$='blog/authors'] {
       color: #c9cdd4;
     }
     .tabs__item--active {
-      color: var(--ifm-color-primary-light);
+      color: rgb(199, 146, 234); //var(--ifm-color-primary-light);
+      border-bottom-color: rgb(199, 146, 234);
     }
   }
   div.margin-top--md {
