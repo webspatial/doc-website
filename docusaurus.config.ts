@@ -13,6 +13,7 @@ const PROJ_NAME = 'doc-website'; //process.env.PROJECT_NAME || 'my-default-proje
 const isProd = BASE_URL == '/';
 
 const config: Config = {
+  trailingSlash: false,
   // onBrokenLinks: 'throw', // 发现死链就 fail‐fast
   // onBrokenAnchors: 'throw', // 发现失效锚点也直接失败
 
