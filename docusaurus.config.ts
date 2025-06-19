@@ -157,8 +157,7 @@ const config: Config = {
     //   },
     // ],
   ],
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'WebSpatial',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
