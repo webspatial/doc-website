@@ -12,10 +12,10 @@ A Scene is a content container centrally managed by the spatial-computing OS. Ev
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/concepts/3-1.png" alt="Scene Example 1" />
+    <Image img={require("/assets/concepts/3-1.png")} alt="Scene Example 1" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/concepts/3-2.png" alt="Scene Example 2" />
+    <Image img={require("/assets/concepts/3-2.png")} alt="Scene Example 2" />
   </div>
 </div>
 
@@ -23,29 +23,29 @@ A Scene is a content container centrally managed by the spatial-computing OS. Ev
 
 The most basic **Scene type** is the **Window**.
 
-<Image src="/assets/concepts/3-3.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-3.jpg")} alt="Scene Example 3" />
 
 Unlike a flat window in the desktop operating systems, a Window Scene can host both 2D and **3D content**. All content is positioned **based on the window plane** and can extend into **the 3D space in front of it**.
 
-<Image src="/assets/concepts/3-4.png" alt="Scene Example 3" />
-<Image src="/assets/concepts/3-5.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-4.jpg")} alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-5.jpg")} alt="Scene Example 3" />
 
 A Window Scene has a new capability: its background and borders can be fully transparent, making the content **appear to float independently in space**.
 
-<Image src="/assets/concepts/3-6.png" alt="Scene Example 3" />
-<Image src="/assets/concepts/3-7.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-6.jpg")} alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-7.jpg")} alt="Scene Example 3" />
 
 ### Volume Scene {#scenes-volume}
 
 A spatial app can also use a more 3D scene type called a **Volume Scene** (also referred to as a **volumetric window**, or **volume**).
 This scene is a bounded local 3D space (a sort of 3D bounding box) that has volume. It can also hold 3D content and **2D content**.
 
-<Image src="/assets/concepts/3-8.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-8.jpg")} alt="Scene Example 3" />
 
 Although both Window Scenes and Volume Scenes can host 2D and 3D content, the former behaves like a **panel with depth extending forward**, while the latter behaves like a bounded **object** with full volume. The OS treats them differently within the shared space, integrates them with the environment in distinct ways, and exposes different interactions, for example separate drag behaviors and [Spatial Layout](#spatial-layout) modes.
 
-<Image src="/assets/concepts/3-9.png" alt="Scene Example 3" />
-<Image src="/assets/concepts/3-10.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-9.jpg")} alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-10.jpg")} alt="Scene Example 3" />
 
 ### Scenes in a WebSpatial App {#scenes-in-webspatial}
 
@@ -55,7 +55,7 @@ At the same time, each Scene acts as a container that loads a URL, parses, and r
 
 Unlike browser windows, Scenes from different WebSpatial apps aren't managed like multiple windows or tabs inside a single browser app. Each WebSpatial app owns one or more Scenes independently, just like a native spatial app.
 
-<Image src="/assets/concepts/3-11.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-11.png")} alt="Scene Example 3" />
 
 Another difference: a WebSpatial Scene **has no browser UI such as address bar, bookmarks, or history**. It's more like a PWA window on desktop platforms, but allow the whole Scene to have a fully transparent background, so no window borders is visible, only native UI left around the window area is the essential, minimal elements related to scene management, such as the drag bar and close button at the bottom of visionOS app windows, plus the WebSpatial app's own **Scene Menu**.
 
@@ -63,10 +63,10 @@ Another difference: a WebSpatial Scene **has no browser UI such as address bar, 
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-12.png" alt="Non-spatial version" />
+>     <Image img={require("/assets/concepts/3-12.png")} alt="Non-spatial version" />
 >   </div>
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-13.png" alt="Spatial version with transparent background" />
+>     <Image img={require("/assets/concepts/3-13.png")} alt="Spatial version with transparent background" />
 >   </div>
 > </div>
 
@@ -84,21 +84,21 @@ Because a WebSpatial Scene is [essentially a web page](#scenes-in-webspatial), i
 
 That's why PWA app windows include some native UI to provide the general features mentioned above.
 
-<Image src="/assets/concepts/3-14.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-14.jpg")} alt="Scene Example 3" />
 
 The PWA standard's [`display` property](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#display) in the [Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) lets you control certain parts of this native UI - for example, **whether native navigation buttons appear**.
 
 > The following image shows a desktop PWA in `minimal-ui` mode (native title bar with navigation buttons).
-> <Image src="/assets/concepts/3-15.png" alt="Scene Example 3" />
+> <Image img={require("/assets/concepts/3-15.jpg")} alt="Scene Example 3" />
 >
 > The following images show an Android PWA in `minimal-ui` mode (native title bar, navigation buttons inside the menu).
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-16.png" alt="Android PWA minimal-ui mode 1" />
+>     <Image img={require("/assets/concepts/3-16.jpg")} alt="Android PWA minimal-ui mode 1" />
 >   </div>
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-17.png" alt="Android PWA minimal-ui mode 2" />
+>     <Image img={require("/assets/concepts/3-17.jpg")} alt="Android PWA minimal-ui mode 2" />
 >   </div>
 > </div>
 >
@@ -106,10 +106,10 @@ The PWA standard's [`display` property](../development-guide/enabling-webspatial
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-18.png" alt="Android PWA standalone mode 1" />
+>     <Image img={require("/assets/concepts/3-18.jpg")} alt="Android PWA standalone mode 1" />
 >   </div>
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-19.png" alt="Android PWA standalone mode 2" />
+>     <Image img={require("/assets/concepts/3-19.jpg")} alt="Android PWA standalone mode 2" />
 >   </div>
 > </div>
 
@@ -119,7 +119,7 @@ WebSpatial is [**built on top of PWA**](../development-guide/enabling-webspatial
 The Scene Menu shown in the image isn't the final design. It's a temporary test version. It's collapsed by default, and when expanded, it lets you view and copy the URL, use navigation buttons (depend on the `display` property in the Web App Manifest), etc.
 :::
 
-<Image src="/assets/concepts/3-20.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-20.jpg")} alt="Scene Example 3" />
 
 ## Scene Properties {#scene-props}
 
@@ -127,12 +127,12 @@ Window Scenes in WebSpatial apps have some Scene properties that are fully contr
 
 The window plane can use a [**semi-transparent** material background](../development-guide/using-the-webspatial-api/add-material-backgrounds#for-window-scenes), rendered dynamically against the surrounding environment so it remains legible in any context. You can also round the four corners instead of keeping the default sharp angles.
 
-<Image src="/assets/concepts/3-21.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-21.jpg")} alt="Scene Example 3" />
 
 Alternatively, set the background to a [fully transparent material](../development-guide/using-the-webspatial-api/add-material-backgrounds#for-window-scenes) with no border, making the page content appear to float freely.
 
-<Image src="/assets/concepts/3-22.png" alt="Scene Example 3" />
-<Image src="/assets/concepts/3-23.png" alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-22.jpg")} alt="Scene Example 3" />
+<Image img={require("/assets/concepts/3-23.jpg")} alt="Scene Example 3" />
 
 You can create native UI elements that hover on the window edge and provide global functionality (for example, a global navigation bar).
 
@@ -142,10 +142,10 @@ The current version of WebSpatial SDK does not support this feature natively. Yo
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/concepts/3-24.png" alt="Scene Properties Example 1" />
+    <Image img={require("/assets/concepts/3-24.jpg")} alt="Scene Properties Example 1" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/concepts/3-25.png" alt="Scene Properties Example 2" />
+    <Image img={require("/assets/concepts/3-25.jpg")} alt="Scene Properties Example 2" />
   </div>
 </div>
 
@@ -168,10 +168,10 @@ For example, as the distance between scene and user changes, a reading-oriented 
 
 <div className="row">
   <div className="col col--6">
-    <Image src="/assets/concepts/3-26.gif" alt="Spatial Layout Example 1" />
+    <Image img={require("/assets/concepts/3-26.gif")} alt="Spatial Layout Example 1" />
   </div>
   <div className="col col--6">
-    <Image src="/assets/concepts/3-27.gif" alt="Spatial Layout Example 2" />
+    <Image img={require("/assets/concepts/3-27.gif")} alt="Spatial Layout Example 2" />
   </div>
 </div>
 
@@ -192,10 +192,10 @@ The classic example is the scene's [`defaultSize`](../development-guide/using-th
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-28.png" alt="Scene Initialization Example 1" />
+>     <Image img={require("/assets/concepts/3-28.png")} alt="Scene Initialization Example 1" />
 >   </div>
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-29.png" alt="Scene Initialization Example 2" />
+>     <Image img={require("/assets/concepts/3-29.png")} alt="Scene Initialization Example 2" />
 >   </div>
 > </div>
 
@@ -212,4 +212,4 @@ Additional scenes created later within the same WebSpatial app are [created by w
 The URL loaded in the Start Scene is the very first page the WebSpatial app loads and runs. By default, it is defined by [`start_url`](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) in the Web App Manifest. If the WebSpatial app is launched through a specific URL, the Start Scene loads that URL instead.
 
 > In the Quick Example, clicking buttons and links in the Start Scene opens two new Scenes:
-> <Image src="/assets/concepts/3-30.png" alt="Scene Example 3" />
+> <Image img={require("/assets/concepts/3-30.png")} alt="Scene Example 3" />

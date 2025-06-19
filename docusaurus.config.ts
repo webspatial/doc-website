@@ -84,11 +84,11 @@ const config: Config = {
       'ideal-image',
       {
         quality: 70,
-        max: 1030,
+        max: 1920,
         min: 640,
         steps: 2,
         // Use false to debug, but it incurs huge perf costs
-        disableInDev: true,
+        disableInDev: false,
       } satisfies IdealImageOptions,
     ],
     // [
@@ -157,8 +157,7 @@ const config: Config = {
     //   },
     // ],
   ],
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'WebSpatial',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
@@ -236,9 +235,9 @@ const config: Config = {
   themeConfig: {
     algolia: {
       // todo: test only, to be replaced
-      appId: 'C6FO9APPMF',
-      apiKey: 'bc44822daa62380257f5a4483d322852', //'56e68bd6f98ae749cbb893fb483e5284',
-      indexName: isProd ? 'webspatialio-prod' : 'webspatialio',
+      appId: 'LIUME5J8UD',
+      apiKey: 'b7d539514fa1d4e67dbbaf010aeb004c', //'56e68bd6f98ae749cbb893fb483e5284',
+      indexName: 'webspatial',
     },
     liveCodeBlock: {
       /**

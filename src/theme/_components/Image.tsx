@@ -1,35 +1,51 @@
-import React from 'react';
-import Zoom from 'react-medium-image-zoom';
-// import 'react-medium-image-zoom/dist/styles.css';
+import React, {useState} from 'react';
 import IdealImage from '@theme/IdealImage';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import {Lightbox} from 'yet-another-react-lightbox';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import 'yet-another-react-lightbox/styles.css';
 
-const useCloudflare = false; // todo: 暂未启用
-export default function Image({src, alt, title, ...props}) {
-  // // 将相对路径转换为最终 URL，以便 IdealImage 能正确加载
+const useCloudflare = false;
+export default function Image({img, alt, title, ...props}) {
+  const [open, setOpen] = useState(false);
+  const [fullImageURL, setFullImageURL] = useState('');
 
-  if (useCloudflare) {
-    // 使用Cloudflare图片URL
-    const baseUrl = process.env.CLOUDFLARE_IMAGE_BASE_URL; // 示例：https://imagedelivery.net/账户ID/
-    return (
-      <Zoom>
-        {/* 替换 IdealImage 为普通 img 标签，使用 Cloudflare 的格式优化参数 */}
-        <img
-          src={`${baseUrl}${src}?format=auto&quality=75`}
-          alt={alt}
-          title={title}
-          {...props}
-        />
-      </Zoom>
-    );
-  }
+  const handleClick = () => {
+    let url = '';
+    if (typeof img === 'string') {
+      url = img;
+    } else {
+      const lengths = img?.src?.images?.length;
+      url = img?.src?.images?.[lengths - 1]?.path || '';
+    }
 
-  // 其他环境使用本地路径
-  const imgUrl = useBaseUrl(src);
+    setFullImageURL(url);
+    setOpen(true);
+  };
 
   return (
-    <Zoom>
-      <IdealImage img={imgUrl} alt={alt} title={title} {...props} />
-    </Zoom>
+    <>
+      <div style={{cursor: 'pointer'}} onClick={handleClick}>
+        <IdealImage img={img} alt={alt} title={title} {...props} />
+      </div>
+
+      <Lightbox
+        open={open}
+        close={() => {
+          setOpen(false);
+        }}
+        slides={[{src: fullImageURL}]}
+        styles={{container: {backgroundColor: 'rgba(0, 0, 0, .8)'}}}
+        controller={{
+          aria: true,
+          closeOnBackdropClick: true,
+        }}
+        carousel={{finite: true}}
+        render={{
+          buttonPrev: () => null,
+          buttonNext: () => null,
+        }}
+        plugins={[Zoom]}
+      />
+    </>
   );
 }

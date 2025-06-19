@@ -18,10 +18,10 @@ Your own application code may also contain logic that is specific to WebSpatial 
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-12.png" alt="Non-spatial version" />
+>     <Image img={require("/assets/concepts/3-12.png")} alt="Non-spatial version" />
 >   </div>
 >   <div className="col col--6">
->     <Image src="/assets/concepts/3-13.png" alt="Spatial version with transparent background" />
+>     <Image img={require("/assets/concepts/3-13.png")} alt="Spatial version with transparent background" />
 >   </div>
 > </div>
 > The left image shows the non-spatial UI; the right image shows the spatial UI.

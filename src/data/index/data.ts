@@ -78,23 +78,23 @@ export default {
     children: [
       {
         title: 'Start with What You Know',
-        imgUrl: '/img/index-code/code1.png', //getFakeImg(600, 400),
+        imgUrl: '/img/index-code/code1.jpg', //getFakeImg(600, 400),
       },
       {
         title: 'Start with What You Know ',
-        imgUrl: '/img/index-code/code2.png', //getFakeImg(600, 400),
+        imgUrl: '/img/index-code/code2.jpg', //getFakeImg(600, 400),
       },
       {
         title: 'Start with What You Know ',
-        imgUrl: '/img/index-code/code3.png', //getFakeImg(600, 500),
+        imgUrl: '/img/index-code/code3.jpg', //getFakeImg(600, 500),
       },
       {
         title: 'Start with What You Know ',
-        imgUrl: '/img/index-code/code4.png', //getFakeImg(600, 600),
+        imgUrl: '/img/index-code/code4.jpg', //getFakeImg(600, 600),
       },
       {
         title: 'Start with What You Know ',
-        imgUrl: '/img/index-code/code5.png', //getFakeImg(600, 600),
+        imgUrl: '/img/index-code/code5.jpg', //getFakeImg(600, 600),
       },
     ],
   },
