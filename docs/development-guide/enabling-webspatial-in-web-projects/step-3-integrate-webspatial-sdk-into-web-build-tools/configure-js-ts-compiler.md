@@ -4,10 +4,10 @@ sidebar_position: 1
 
 # Configure the JS/TS Compiler
 
-To use the [WebSpatial API](../../../core-concepts/unique-concepts-in-webspatial#webspatial-api) inside a UI framework such as React, you need to integrate WebSpatial's framework SDK (currently only the [React SDK](../step-1-install-the-webspatial-sdk#react-sdk)) into the JS/TS compiler used by your Web project. This allows the SDK to affect JSX transforms and other stages that involve the HTML/CSS APIs.
+To use the [WebSpatial API](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) inside a UI framework such as React, you need to integrate WebSpatial's framework SDK (currently only the [React SDK](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#react-sdk)) into the JS/TS compiler used by your Web project. This allows the SDK to affect JSX transforms and other stages that involve the HTML/CSS APIs.
 
 :::info
-In builds targeting desktop/mobile platforms and regular browsers, [the SDK is inactive](./generate-a-webspatial-specific-website) - it adds no extra code and makes no changes to behavior or performance.
+In builds targeting desktop/mobile platforms and regular browsers, [the SDK is inactive](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website) - it adds no extra code and makes no changes to behavior or performance.
 :::
 
 ## TypeScript
@@ -44,7 +44,7 @@ export default defineConfig({
 });
 ```
 
-Example [using Rsbuild](./add-optimizations-and-defaults-to-web-build-tools#rsbuild):
+Example [using Rsbuild](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools#rsbuild):
 
 ```ts title="rsbuild.config.ts"
 import { defineConfig } from '@rsbuild/core'
@@ -61,7 +61,7 @@ export default defineConfig({
     }),
 ```
 
-Example [using Rspack](./add-optimizations-and-defaults-to-web-build-tools#rspack):
+Example [using Rspack](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools#rspack):
 
 ```js title="rspack.config.mjs"
   module: {
@@ -92,7 +92,7 @@ Example [using Rspack](./add-optimizations-and-defaults-to-web-build-tools#rspac
 
 In a React + JavaScript project, the JS compiler is usually embedded inside the Web build tool, so you need to integrate WebSpatial's React SDK through the build tool's configuration file.
 
-Example [using Vite](./add-optimizations-and-defaults-to-web-build-tools#vite):
+Example [using Vite](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools#vite):
 
 ```js title="vite.config.js"
 import { defineConfig } from "vite";

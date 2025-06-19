@@ -6,9 +6,9 @@ sidebar_position: 5
 
 While the mainstream Web ecosystem is ultimately built on HTML/CSS, most Web developers **do not work directly with raw HTML/CSS** when creating applications. Instead, they rely on **UI frameworks or full-featured application frameworks**. React is currently the most popular choice - developers use HTML through React's JSX API and component-based architecture, and CSS through APIs such as TailwindCSS, PostCSS, or CSS-in-JS.
 
-To quickly put the [WebSpatial API](../core-concepts/unique-concepts-in-webspatial#webspatial-api) into practice in the real world and meet the urgent needs of the Web ecosystem, the WebSpatial open-source project provides a **[WebSpatial SDK](../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) designed for Web frameworks (for example, React + Vite)**. This lets Web developers immediately start using the WebSpatial API within their framework's HTML (JSX) and CSS APIs, **without waiting for browser engines to ship these capabilities**.
+To quickly put the [WebSpatial API](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) into practice in the real world and meet the urgent needs of the Web ecosystem, the WebSpatial open-source project provides a **[WebSpatial SDK](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) designed for Web frameworks (for example, React + Vite)**. This lets Web developers immediately start using the WebSpatial API within their framework's HTML (JSX) and CSS APIs, **without waiting for browser engines to ship these capabilities**.
 
-In its first release, WebSpatial SDK offers **out-of-the-box support for [React projects](../development-guide/web-projects-that-support-webspatial/)**.
+In its first release, WebSpatial SDK offers **out-of-the-box support for [React projects](/docs/development-guide/web-projects-that-support-webspatial/)**.
 
 :::info
 
@@ -16,7 +16,7 @@ We hope to work with the community to add support for more UI frameworks in the 
 
 :::
 
-You can call WebSpatial's [**HTML API**](../development-guide/using-the-webspatial-api/spatialize-html-elements) and [**DOM API**](../development-guide/using-the-webspatial-api/spatialize-html-elements#dom) directly inside React JSX:
+You can call WebSpatial's [**HTML API**](/docs/development-guide/using-the-webspatial-api/spatialize-html-elements) and [**DOM API**](/docs/development-guide/using-the-webspatial-api/spatialize-html-elements#dom) directly inside React JSX:
 
 ```jsx
 // diff-remove
@@ -37,7 +37,7 @@ You can call WebSpatial's [**HTML API**](../development-guide/using-the-webspati
 
 <!-- TODO：add examples for Model -->
 
-You can also use WebSpatial's [**CSS API**](../development-guide/using-the-webspatial-api/spatialize-html-elements#css) in a React project together with TailwindCSS, PostCSS, Styled Components, and similar solutions:
+You can also use WebSpatial's [**CSS API**](/docs/development-guide/using-the-webspatial-api/spatialize-html-elements#css) in a React project together with TailwindCSS, PostCSS, Styled Components, and similar solutions:
 
 ```css
 .count-card {
@@ -58,7 +58,7 @@ You can also use WebSpatial's [**CSS API**](../development-guide/using-the-websp
 }
 ```
 
-You can use the **existing link element and window-related DOM APIs** in Web standards together with WebSpatial's new **[Scene Initialization](../core-concepts/scenes-and-spatial-layouts#scene-init) API** - to treat and manage [scenes within spatial apps](../core-concepts/scenes-and-spatial-layouts) as regular web page windows.
+You can use the **existing link element and window-related DOM APIs** in Web standards together with WebSpatial's new **[Scene Initialization](/docs/core-concepts/scenes-and-spatial-layouts#scene-init) API** - to treat and manage [scenes within spatial apps](/docs/core-concepts/scenes-and-spatial-layouts) as regular web page windows.
 
 ```jsx
                 <p>
@@ -102,7 +102,7 @@ You can use the **existing link element and window-related DOM APIs** in Web sta
                 </p>
 ```
 
-You can manage **app-level configurations** such as the WebSpatial app's [start scene](../core-concepts/scenes-and-spatial-layouts#start-scene), offline packaging, [native window UI](../core-concepts/scenes-and-spatial-layouts#scene-menu), and app icons by using the **[Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) from the [PWA standard](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa)**.
+You can manage **app-level configurations** such as the WebSpatial app's [start scene](/docs/core-concepts/scenes-and-spatial-layouts#start-scene), offline packaging, [native window UI](/docs/core-concepts/scenes-and-spatial-layouts#scene-menu), and app icons by using the **[Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) from the [PWA standard](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa)**.
 
 ```json5 {6-11} showLineNumbers title="public/manifest.webmanifest"
 {
@@ -132,7 +132,7 @@ A Web project that integrates the WebSpatial SDK is still a **cross-platform web
 
 Example project: https://github.com/webspatial/sample-techshop
 
-The screenshots below show how this sample project looks on different platforms. Only the last screenshot runs as a [Packaged WebSpatial App](../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) on visionOS and activates spatialized UI. All other screenshots show the project running directly in regular browsers that do **not** support the [WebSpatial API](../core-concepts/unique-concepts-in-webspatial#webspatial-api) (including Safari on visionOS).
+The screenshots below show how this sample project looks on different platforms. Only the last screenshot runs as a [Packaged WebSpatial App](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) on visionOS and activates spatialized UI. All other screenshots show the project running directly in regular browsers that do **not** support the [WebSpatial API](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) (including Safari on visionOS).
 
 <div className="row">
   <div className="col col--6">

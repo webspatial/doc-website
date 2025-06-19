@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # The New Generation of Spatial Apps
 
-With Apple's release of the next-gen XR OS, visionOS, and its new spatial-computing architecture ([Unified Rendering app model](https://developer.picoxr.com/news/multi-app-rendering/)), the [long-standing bottlenecks of traditional XR apps](#problems-with-traditional-xr-apps) have been fundamentally addressed.
+With Apple's release of the next-gen XR OS, visionOS, and its new spatial-computing architecture ([Unified Rendering app model](https://developer.picoxr.com/news/multi-app-rendering/)), the [long-standing bottlenecks of traditional XR apps](#traditional-xr-apps) have been fundamentally addressed.
 
-The new generation of XR apps - **spatial apps** - are not cut off from the 2D apps on desktop and mobile platforms. Instead, they extend the advantages of those 2D apps, adding [**spatial capabilities**](../core-concepts/shared-space-and-spatial-apps) that bring **optional enhancements** on spatial-computing platforms and free them from flat 2D windows.
+The new generation of XR apps - **spatial apps** - are not cut off from the 2D apps on desktop and mobile platforms. Instead, they extend the advantages of those 2D apps, adding [**spatial capabilities**](/docs/core-concepts/shared-space-and-spatial-apps) that bring **optional enhancements** on spatial-computing platforms and free them from flat 2D windows.
 
 <div className="row">
   <div className="col col--6">
@@ -57,7 +57,7 @@ In the comparisons below, underline means advantage and _italics_ mean disadvant
 
 - **Spatial apps**
 
-  - <ins>An app can **own the entire 3D space** or only [**a local part of it**](../core-concepts/scenes-and-spatial-layouts) such as its own [scene container (similar to a bounding box)](../core-concepts/scenes-and-spatial-layouts), while the OS handles the rest.</ins>
+  - <ins>An app can **own the entire 3D space** or only [**a local part of it**](/docs/core-concepts/scenes-and-spatial-layouts) such as its own [scene container (similar to a bounding box)](/docs/core-concepts/scenes-and-spatial-layouts), while the OS handles the rest.</ins>
   - <ins>Because the OS supplies most functionality and a unified experience, the app can **focus on its unique value**, so design and development costs stay low and package size is small.</ins>
 
 - **Desktop/Mobile apps**
@@ -73,8 +73,8 @@ In the comparisons below, underline means advantage and _italics_ mean disadvant
 
 - **Spatial apps**
 
-  - <ins>The 2D and 3D content in the app can [**go beyond the flat window**](../core-concepts/spatialized-elements-and-3d-container-elements) and be displayed throughout the 3D space.</ins>
-  - To let multiple apps [**share one 3D space (unified rendering)**](../core-concepts/shared-space-and-spatial-apps#unified-rendering), different apps can't just implement arbitrary rendering mechanisms and freely draw their content without constraints. They must supply content via [OS-managed 2D/3D containers](../core-concepts/scenes-and-spatial-layouts) and describe it with OS-understood APIs; the OS handles the rendering.
+  - <ins>The 2D and 3D content in the app can [**go beyond the flat window**](/docs/core-concepts/spatialized-elements-and-3d-container-elements) and be displayed throughout the 3D space.</ins>
+  - To let multiple apps [**share one 3D space (unified rendering)**](/docs/core-concepts/shared-space-and-spatial-apps#unified-rendering), different apps can't just implement arbitrary rendering mechanisms and freely draw their content without constraints. They must supply content via [OS-managed 2D/3D containers](/docs/core-concepts/scenes-and-spatial-layouts) and describe it with OS-understood APIs; the OS handles the rendering.
 
 - **Desktop/Mobile apps**
 
@@ -87,7 +87,7 @@ In the comparisons below, underline means advantage and _italics_ mean disadvant
 
 - **Spatial apps**
 
-  - <ins>Leverage environment sensing, head tracking, hand tracking, and eye tracking to deliver [**truly natural interaction**](../core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction).</ins>
+  - <ins>Leverage environment sensing, head tracking, hand tracking, and eye tracking to deliver [**truly natural interaction**](/docs/core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction).</ins>
   - <ins>Need no controllers. Regardless of GUI type (2D or 3D) or distance, these apps default to using the most efficient, low-effort, and natural **eye-hand interaction**. The OS handles interaction implementation and visual effects, reducing app costs and keeping the user experience consistent.</ins>
 
 - **Desktop/Mobile apps**
@@ -102,9 +102,9 @@ In the comparisons below, underline means advantage and _italics_ mean disadvant
 
 - **Spatial apps**
 
-  - <ins>Built on [**2D GUI frameworks** enhanced with spatial features](../introduction/built-on-the-existing-web-ecosystem).</ins>
+  - <ins>Built on [**2D GUI frameworks** enhanced with spatial features](/docs/introduction/built-on-the-existing-web-ecosystem).</ins>
   - <ins>Fit almost every business domain and app type (except a few heavy 3D niches) while building on the existing product/GUI design patterns and keep developing from there.</ins>
-  - <ins>[APIs](../core-concepts/unique-concepts-in-webspatial#webspatial-api) are highly abstract, concrete, intuitive, and have a low learning curve.</ins>
+  - <ins>[APIs](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) are highly abstract, concrete, intuitive, and have a low learning curve.</ins>
   - <ins>Large potential base of developers ready to start building and strong integration with the open-source ecosystem.</ins>
 
 - **Desktop/Mobile apps**
@@ -124,7 +124,7 @@ In the comparisons below, underline means advantage and _italics_ mean disadvant
 
 - **Spatial apps**
 
-  - <ins>The OS provides [basic interaction events (for 2D)](../development-guide/using-the-webspatial-api/spatialize-html-elements#content-interaction) and [advanced spatial interaction events (for 3D or 2D content)](../core-concepts/spatialized-elements-and-3d-container-elements#spatial-interaction).</ins>
+  - <ins>The OS provides [basic interaction events (for 2D)](/docs/development-guide/using-the-webspatial-api/spatialize-html-elements#content-interaction) and [advanced spatial interaction events (for 3D or 2D content)](/docs/core-concepts/spatialized-elements-and-3d-container-elements#spatial-interaction).</ins>
   - <ins>The OS renders common interaction visuals.</ins>
 
 - **Desktop/Mobile apps**
@@ -141,9 +141,9 @@ In the comparisons below, underline means advantage and _italics_ mean disadvant
 
 - **Spatial apps**
 
-  - <ins>The GUI is built from **UI components** (including [3D containers](../core-concepts/spatialized-elements-and-3d-container-elements#3d-elements)).</ins>
+  - <ins>The GUI is built from **UI components** (including [3D containers](/docs/core-concepts/spatialized-elements-and-3d-container-elements#3d-elements)).</ins>
   - <ins>The OS and framework render those components each frame; the app does not care about drawing.</ins>
-  - <ins>Position and size of these UI elements are automatically decided based on their [**layout relationships** (like nesting hierarchy or order) and attributes](../development-guide/using-the-webspatial-api/elevate-2d-elements). Developers use them like **building blocks** - highly concrete and intuitive - allow developers to work entirely in code without the assistance of visual editors.</ins>
+  - <ins>Position and size of these UI elements are automatically decided based on their [**layout relationships** (like nesting hierarchy or order) and attributes](/docs/development-guide/using-the-webspatial-api/elevate-2d-elements). Developers use them like **building blocks** - highly concrete and intuitive - allow developers to work entirely in code without the assistance of visual editors.</ins>
 
 - **Desktop/Mobile apps**
 
@@ -171,4 +171,4 @@ Before visionOS, apps on XR platforms were **completely different** from apps on
   </div>
 </div>
 
-From the comparison above, we can see that besides the three main advantages mentioned in [the previous section](./new-powers-for-xr-apps), **traditional XR apps have downsides both in terms of user experience and development, losing many benefits of desktop/mobile apps**. Traditional XR development could not reuse existing app code, tools, and programming mindsets from mainstream platforms. This makes it harder to support diverse use cases and business domains, leads to fewer developers, and raises both the entry barrier and development costs.
+From the comparison above, we can see that besides the three main advantages mentioned in [the previous section](/docs/introduction/new-powers-for-xr-apps), **traditional XR apps have downsides both in terms of user experience and development, losing many benefits of desktop/mobile apps**. Traditional XR development could not reuse existing app code, tools, and programming mindsets from mainstream platforms. This makes it harder to support diverse use cases and business domains, leads to fewer developers, and raises both the entry barrier and development costs.

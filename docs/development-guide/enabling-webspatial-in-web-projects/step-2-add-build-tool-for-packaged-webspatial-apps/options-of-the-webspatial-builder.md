@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Options for WebSpatial Builder
 
-The command-line options for [WebSpatial Builder](../step-2-add-build-tool-for-packaged-webspatial-apps) fall into two categories, each recommended to be handled differently.
+The command-line options for [WebSpatial Builder](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps) fall into two categories, each recommended to be handled differently.
 
 ## Fixed options {#constant-options}
 
@@ -14,7 +14,7 @@ For every developer on the project, the following options should be configured i
 
 #### `--manifest`, `--manifest-url` {#manifest-for-run}
 
-You can supply the local path to the [Web App Manifest file](../prerequisite-become-a-minimal-pwa/add-web-app-manifest) with `--manifest`, or provide the manifest's URL with `--manifest-url`.
+You can supply the local path to the [Web App Manifest file](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) with `--manifest`, or provide the manifest's URL with `--manifest-url`.
 
 - If neither option is set, the Builder reads the manifest from `public/manifest.webmanifest` or `public/manifest.json` by default.
 - If no manifest is found at the default path, the `run` command silently falls back to an internal default manifest and default icons. The resulting build is suitable only for early simulator testing.
@@ -39,7 +39,7 @@ The default manifest information bundled with the Builder is as follows:
 
 #### `--manifest`, `--manifest-url` {#manifest-for-build}
 
-You can supply the local path to the [Web App Manifest file](../prerequisite-become-a-minimal-pwa/add-web-app-manifest) with `--manifest`, or provide the manifest's URL with `--manifest-url`.
+You can supply the local path to the [Web App Manifest file](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) with `--manifest`, or provide the manifest's URL with `--manifest-url`.
 
 - If neither option is set, the Builder reads the manifest from `public/manifest.webmanifest` or `public/manifest.json` by default.
 - If no manifest is found at the default path, or the manifest is missing required fields, the Builder throws an error and aborts the build.
@@ -52,7 +52,7 @@ The app package produced by the `build` command (for example, an IPA file) is wr
 
 #### `--project` {#dist-for-build}
 
-If you want to [bundle the site files for offline use](../prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) into the app package, use this option to tell the Builder where the built web files are located.
+If you want to [bundle the site files for offline use](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) into the app package, use this option to tell the Builder where the built web files are located.
 
 - If omitted, the Builder pulls web files from the `dist/` directory by default.
 
@@ -60,30 +60,30 @@ If you want to [bundle the site files for offline use](../prerequisite-become-a-
 
 #### `--manifest`, `--manifest-url` {#manifest-for-publish}
 
-You can supply the local path to the [Web App Manifest file](../prerequisite-become-a-minimal-pwa/add-web-app-manifest) with `--manifest`, or provide the manifest's URL with `--manifest-url`.
+You can supply the local path to the [Web App Manifest file](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) with `--manifest`, or provide the manifest's URL with `--manifest-url`.
 
 - If neither option is set, the Builder reads the manifest from `public/manifest.webmanifest` or `public/manifest.json` by default.
 - If no manifest is found at the default path, or the manifest is missing required fields, the Builder throws an error and aborts the build.
 
 #### `--project` {#dist-for-publish}
 
-If you want to [bundle the site files for offline use](../prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) into the app package, use this option to tell the Builder where the built web files are located.
+If you want to [bundle the site files for offline use](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) into the app package, use this option to tell the Builder where the built web files are located.
 
 - If omitted, the Builder pulls web files from the `dist/` directory by default.
 
 ## Options best set via env vars {#inconsistent-options}
 
-The following options either contain sensitive information (such as the password for an Apple developer account) or vary between developers (such as different Dev Server ports). They should therefore be supplied using environment variables rather than being committed to Git (see the [recommended npm scripts in the previous section](../step-2-add-build-tool-for-packaged-webspatial-apps#npm-scripts)).
+The following options either contain sensitive information (such as the password for an Apple developer account) or vary between developers (such as different Dev Server ports). They should therefore be supplied using environment variables rather than being committed to Git (see the [recommended npm scripts in the previous section](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps#npm-scripts)).
 
 :::tip
-For best practice on environment variables, see ["(Optional) Simplify WebSpatial Builder with dotenv."](./optional-simplify-webspatial-builder-using-dotenv)
+For best practice on environment variables, see ["(Optional) Simplify WebSpatial Builder with dotenv."](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps/optional-simplify-webspatial-builder-using-dotenv)
 :::
 
 ### `run` {#inconsistent-options-for-run}
 
 #### `$XR_DEV_SERVER` (`--base`) {#base-for-devserver}
 
-Use `--base` to specify the root part of URL for all HTML requests loaded in the [WebSpatial App Shell](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk). If the [`start_url` in the Web App Manifest](../prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) is already set to a full URL, the root part of the URL is forcibly replaced by the value provided here.
+Use `--base` to specify the root part of URL for all HTML requests loaded in the [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk). If the [`start_url` in the Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) is already set to a full URL, the root part of the URL is forcibly replaced by the value provided here.
 
 :::note[Examples]
 
@@ -106,9 +106,9 @@ Resulting URL: `/app/home`
 
 :::tip[Best practice]
 
-Set `$XR_DEV_SERVER` to point at a [Dev Server dedicated to the WebSpatial app](../step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website), such as `http://localhost:3000/webspatial/avp/`.
+Set `$XR_DEV_SERVER` to point at a [Dev Server dedicated to the WebSpatial app](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website), such as `http://localhost:3000/webspatial/avp/`.
 
-In this setup, site files (for example, the `dist` directory) are NOT [bundled for offline use](../prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) into the Packaged WebSpatial App. After code changes you can rely on hot reload or simply refresh the page via the Dev Server, so there is no need to rerun `webspatial-builder run`, which greatly speeds up iteration.
+In this setup, site files (for example, the `dist` directory) are NOT [bundled for offline use](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) into the Packaged WebSpatial App. After code changes you can rely on hot reload or simply refresh the page via the Dev Server, so there is no need to rerun `webspatial-builder run`, which greatly speeds up iteration.
 
 :::
 
@@ -116,7 +116,7 @@ In this setup, site files (for example, the `dist` directory) are NOT [bundled f
 
 #### `$XR_PRE_SERVER` (`--base`) {#base-for-preview}
 
-Use `--base` to specify the root part of URL for all HTML requests loaded in the [WebSpatial App Shell](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk). If the [`start_url` in the Web App Manifest](../prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) is already set to a full URL, the root part of the URL is forcibly replaced by the value provided here.
+Use `--base` to specify the root part of URL for all HTML requests loaded in the [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk). If the [`start_url` in the Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) is already set to a full URL, the root part of the URL is forcibly replaced by the value provided here.
 
 :::note[Examples]
 
@@ -139,9 +139,9 @@ Resulting URL: `/app/home`
 
 :::tip
 
-If `$XR_PRE_SERVER` points at [a Web Server dedicated to the WebSpatial app](../step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website), site files (for example, the `dist` directory) are NOT bundled for offline use into the Packaged WebSpatial App, so the web server must be reachable from the target device.
+If `$XR_PRE_SERVER` points at [a Web Server dedicated to the WebSpatial app](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website), site files (for example, the `dist` directory) are NOT bundled for offline use into the Packaged WebSpatial App, so the web server must be reachable from the target device.
 
-If you don't include a domain in either `$XR_PRE_SERVER` or `start_url`, the site files are [bundled for offline use](../prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url), so the app runs without fetching site files from a web server.
+If you don't include a domain in either `$XR_PRE_SERVER` or `start_url`, the site files are [bundled for offline use](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url), so the app runs without fetching site files from a web server.
 
 :::
 
@@ -167,7 +167,7 @@ Provide your Apple Developer Team ID via `--teamId`.
 
 #### `$XR_PROD_SERVER` (`--base`) {#base-for-prod}
 
-Use `--base` to specify the root part of URL for all HTML requests loaded in the [WebSpatial App Shell](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk). If the [`start_url` in the Web App Manifest](../prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) is already set to a full URL, the root part of the URL is forcibly replaced by the value provided here.
+Use `--base` to specify the root part of URL for all HTML requests loaded in the [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk). If the [`start_url` in the Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) is already set to a full URL, the root part of the URL is forcibly replaced by the value provided here.
 
 :::note[Examples]
 
@@ -188,15 +188,15 @@ Resulting URL: `/app/home`
 
 :::
 
-If `start_url` is an full URL with a production domain, and the web server [automatically serves WebSpatial-specific content when it detects the User Agent from the WebSpatial App Shell](../step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website#single-web-server), you do NOT need to set this variable during the production release (`publish:avp`), the production URL comes directly from `start_url`.
+If `start_url` is an full URL with a production domain, and the web server [automatically serves WebSpatial-specific content when it detects the User Agent from the WebSpatial App Shell](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website#single-web-server), you do NOT need to set this variable during the production release (`publish:avp`), the production URL comes directly from `start_url`.
 
 If `start_url` is a relative URL, or the WebSpatial-specific content lives under a different URL, you must use this variable during the production release (`publish:avp` to supply the production domain and other root parts of the production URL.
 
 :::tip
 
-If `$XR_PROD_SERVER` points at [a Web Server dedicated to the WebSpatial app](../step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website), site files (for example, the `dist` directory) are NOT bundled for offline use into the Packaged WebSpatial App, so the web server must be reachable from the target device.
+If `$XR_PROD_SERVER` points at [a Web Server dedicated to the WebSpatial app](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website), site files (for example, the `dist` directory) are NOT bundled for offline use into the Packaged WebSpatial App, so the web server must be reachable from the target device.
 
-If you don't include a domain in either `$XR_PROD_SERVER` or `start_url`, the site files are [bundled for offline use](../prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url), so the app runs without fetching site files from a web server.
+If you don't include a domain in either `$XR_PROD_SERVER` or `start_url`, the site files are [bundled for offline use](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url), so the app runs without fetching site files from a web server.
 
 :::
 

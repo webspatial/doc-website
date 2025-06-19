@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Generate a WebSpatial-Specific Website
 
-After integrating the [WebSpatial SDK](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) into the project's [TS/JS compiler](./configure-js-ts-compiler) and [Web build tool & Web server](./add-optimizations-and-defaults-to-web-build-tools), your web project can produce a dedicated build for the [WebSpatial App Shell](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk), without affecting the original desktop/mobile site.
+After integrating the [WebSpatial SDK](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) into the project's [TS/JS compiler](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/configure-js-ts-compiler) and [Web build tool & Web server](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools), your web project can produce a dedicated build for the [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk), without affecting the original desktop/mobile site.
 
-This build is essentially a standalone website that loads only inside a native spatial app ([Packaged WebSpatial App](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk)) containing the App Shell built with [WebSpatial Builder](../step-2-add-build-tool-for-packaged-webspatial-apps). Web code in this context can tightly cooperate with native parts of the app to deliver web-controlled spatial capabilities.
+This build is essentially a standalone website that loads only inside a native spatial app ([Packaged WebSpatial App](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk)) containing the App Shell built with [WebSpatial Builder](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps). Web code in this context can tightly cooperate with native parts of the app to deliver web-controlled spatial capabilities.
 
 ## During simulator debugging {#for-simulator}
 
-> All examples below are [based on Vite](./add-optimizations-and-defaults-to-web-build-tools)
+> All examples below are [based on Vite](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools)
 
 ### Run the regular Dev Server {#regular-dev-server}
 
@@ -20,12 +20,12 @@ Run the project's `dev` script as usual. The served site targets desktop/mobile 
 npm run dev
 ```
 
-- The HTML/CSS/JS output does NOT include WebSpatial SDK; all [WebSpatial API](../../../core-concepts/unique-concepts-in-webspatial#webspatial-api) calls are removed or ignored.
+- The HTML/CSS/JS output does NOT include WebSpatial SDK; all [WebSpatial API](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) calls are removed or ignored.
 - Unsuitable for loading in the WebSpatial App Shell (no spatial effects).
 
 ### Run the dedicated Dev Server {#dedicated-dev-server}
 
-To build specifically for the WebSpatial App Shell on visionOS, set the environment variable [`$XR_ENV`](./check-if-running-in-webspatial-mode) from the WebSpatial SDK to `avp` when running `dev`.
+To build specifically for the WebSpatial App Shell on visionOS, set the environment variable [`$XR_ENV`](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode) from the WebSpatial SDK to `avp` when running `dev`.
 
 ```bash npm2yarn
 XR_ENV=avp npm run dev
@@ -43,7 +43,7 @@ Best practice: add an npm script for this dedicated Dev Server. Like:
 :::
 
 - The HTML/CSS/JS output does include WebSpatial SDK.
-- To make sure the HTML/CSS works fine in regular browser engines that don't support the [WebSpatial API](../../../core-concepts/unique-concepts-in-webspatial#webspatial-api) (like the default system WebView), all WebSpatial API calls in the HTML/CSS source are either removed or ignored and replaced with [non-standard JS Bridge API calls](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) in the JS output.
+- To make sure the HTML/CSS works fine in regular browser engines that don't support the [WebSpatial API](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) (like the default system WebView), all WebSpatial API calls in the HTML/CSS source are either removed or ignored and replaced with [non-standard JS Bridge API calls](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) in the JS output.
 - Only suitable for loading in the WebSpatial App Shell; not suitable for regular browsers like Chrome on your computer, since it lacks the WebSpatial App Shell and the web UI won't display correctly.
 - The served URL automatically adds the base segment `/webspatial/avp/` to keep things consistent with the distribution phase while still making development efficient during debugging.
   > Example: The regular Dev Server runs at `http://localhost:3000`; the dedicated Dev Server for visionOS runs at `http://localhost:3001/webspatial/avp/`.
@@ -66,11 +66,11 @@ Best practice: add an npm script for this dedicated Dev Server. Like:
 
 ### Use the dedicated Dev Server {#use-dedicated-dev-server}
 
-Combine the dedicated Dev Server with [`webspatial-builder run`](../step-2-add-build-tool-for-packaged-webspatial-apps#run) (or the [`run:avp` script](../step-2-add-build-tool-for-packaged-webspatial-apps#npm-scripts)) to package and install a visionOS app in the simulator.
+Combine the dedicated Dev Server with [`webspatial-builder run`](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps#run) (or the [`run:avp` script](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps#npm-scripts)) to package and install a visionOS app in the simulator.
 
 :::note
 
-Pass the dedicated Dev Server URL as the [`--base` option (or `$XR_DEV_SERVER`) to replace the original `start_url` in the Web App Manifest](../step-2-add-build-tool-for-packaged-webspatial-apps#run).
+Pass the dedicated Dev Server URL as the [`--base` option (or `$XR_DEV_SERVER`) to replace the original `start_url` in the Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps#run).
 
 :::
 
@@ -103,7 +103,7 @@ Because `/webspatial/avp/` is injected as the base segment, every Web-build-tool
 
 But when URLs appear within the JS logic, the web build tool won't automatically add that base part, you'll need to add it yourself.
 
-In your JS code, you can use [`__XR_ENV_BASE__`](./check-if-running-in-webspatial-mode) to get that base string.
+In your JS code, you can use [`__XR_ENV_BASE__`](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode) to get that base string.
 
 ```jsx
  <button
@@ -112,7 +112,7 @@ In your JS code, you can use [`__XR_ENV_BASE__`](./check-if-running-in-webspatia
    }}>
 ```
 
-If you're using client-side routing like in the [Quick Example](../../../quick-example#new-scene), you can set the base path centrally in the routing library so it's handled consistently.
+If you're using client-side routing like in the [Quick Example](/docs/quick-example#new-scene), you can set the base path centrally in the routing library so it's handled consistently.
 
 Using `react-router-dom` as an example:
 
@@ -134,7 +134,7 @@ In this case, prefer `<Link />` over raw `<a>` tags or `window.open`, letting `r
 
 At this stage you must deploy the site to a web server accessible from real devices.
 
-> Examples below use [Vite](add-optimizations-and-defaults-to-web-build-tools).
+> Examples below use [Vite](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools).
 
 ### Multi-Web-Server mode {#multi-web-server}
 
@@ -147,12 +147,12 @@ npm run build
 npm run preview
 ```
 
-- The HTML/CSS/JS output does NOT include WebSpatial SDK; all [WebSpatial API](../../../core-concepts/unique-concepts-in-webspatial#webspatial-api) calls are removed or ignored.
+- The HTML/CSS/JS output does NOT include WebSpatial SDK; all [WebSpatial API](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) calls are removed or ignored.
 - Unsuitable for loading in the WebSpatial App Shell (no spatial effects).
 
 The second site serves the visionOS-specific version.
 
-When building and starting it, you need to set the [`$XR_ENV`](./check-if-running-in-webspatial-mode) environment variable from the WebSpatial SDK to `avp`.
+When building and starting it, you need to set the [`$XR_ENV`](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode) environment variable from the WebSpatial SDK to `avp`.
 
 ```bash npm2yarn
 XR_ENV=avp npm run build
@@ -162,7 +162,7 @@ XR_ENV=avp npm run preview
 The files in the `webspatial/avp/` path under the output folder (like `/dist`) are specifically for the WebSpatial App Shell on visionOS.
 
 - The HTML/CSS/JS output does include WebSpatial SDK.
-- To make sure the HTML/CSS works fine in regular browser engines that don't support the [WebSpatial API](../../../core-concepts/unique-concepts-in-webspatial#webspatial-api) (like the default system WebView), all WebSpatial API calls in the HTML/CSS source are either removed or ignored and replaced with [non-standard JS Bridge API calls](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) in the JS output.
+- To make sure the HTML/CSS works fine in regular browser engines that don't support the [WebSpatial API](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) (like the default system WebView), all WebSpatial API calls in the HTML/CSS source are either removed or ignored and replaced with [non-standard JS Bridge API calls](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) in the JS output.
 - Only suitable for loading in the WebSpatial App Shell; not suitable for regular browsers like Chrome on your computer, since it lacks the WebSpatial App Shell and the web UI won't display correctly.
 
 Under default settings:
@@ -226,7 +226,7 @@ Another option is to use a single web server to serve both the desktop/mobile ve
 In this case, you'll need to run the project's build script twice, one after the other.
 
 1. First build: generates the usual HTML and static files for desktop, mobile, and regular browsers.
-2. Second build: with [`XR_ENV=avp`](./check-if-running-in-webspatial-mode), generates the HTML and static assets specifically tailored for the WebSpatial App Shell in visionOS.
+2. Second build: with [`XR_ENV=avp`](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode), generates the HTML and static assets specifically tailored for the WebSpatial App Shell in visionOS.
 
 :::info
 During the second build, the WebSpatial plugin keeps the first build's files and appends new files.
@@ -296,7 +296,7 @@ Two serving approaches:
 
 1. Configure the server so all web page requests with `/webspatial/avp/` as the base will read HTML files from the `dist/webspatial/avp/` directory.
    > In this case, just like with the [dedicated Dev Server](#use-dedicated-dev-server) or the [multi-web-server](#multi-web-server) mode, you'll need to manually add the base part to your web links in JS logic. If you're using client-side routing, you can set the base path centrally in the routing library for consistency.
-2. Detect the [special User-Agent string of the WebSpatial App Shell](./check-if-running-in-webspatial-mode#ua). Serve HTML files from `dist/webspatial/avp` for those web page requests; otherwise serve from `dist/`.
+2. Detect the [special User-Agent string of the WebSpatial App Shell](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode#ua). Serve HTML files from `dist/webspatial/avp` for those web page requests; otherwise serve from `dist/`.
    > In this case you'll need to set a custom base URL in your web build tool's config, then the WebSpatial SDK won't automatically add `/webspatial/avp/`.
    >
    > ```js title="vite.config.js"
@@ -307,7 +307,7 @@ Two serving approaches:
 
 ### Usage 1: Use built-in Static Web server from your web build tool {#static-web-server}
 
-E.g. with [Vite or Rsbuild/Rspack](add-optimizations-and-defaults-to-web-build-tools):
+E.g. with [Vite or Rsbuild/Rspack](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/add-optimizations-and-defaults-to-web-build-tools):
 
 ```bash npm2yarn
 npm run preview
@@ -352,4 +352,4 @@ module.exports = {
 
 E.g. with a Node.js server based on NestJS framework
 
-Use the second serving option of the [single-Web-Server](#single-web-server) approach: detect the [WebSpatial App Shell's User-Agent string](./check-if-running-in-webspatial-mode#ua) and serve HTML files from `dist/webspatial/avp` directory, otherwise from `dist/` directory.
+Use the second serving option of the [single-Web-Server](#single-web-server) approach: detect the [WebSpatial App Shell's User-Agent string](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode#ua) and serve HTML files from `dist/webspatial/avp` directory, otherwise from `dist/` directory.

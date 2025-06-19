@@ -4,19 +4,19 @@ sidebar_position: 2
 
 # Add Optimizations and Defaults to Web Build Tools
 
-In addition to [Configure the JS/TS Compiler](./configure-js-ts-compiler), a Web project that includes the [WebSpatial SDK](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) needs several essential performance optimizations and default configuration values (convention over configuration). These optimizations and defaults need to be implemented through the project's web build tool and web server.
+In addition to [Configure the JS/TS Compiler](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/configure-js-ts-compiler), a Web project that includes the [WebSpatial SDK](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) needs several essential performance optimizations and default configuration values (convention over configuration). These optimizations and defaults need to be implemented through the project's web build tool and web server.
 
-If your project uses tools like Next.js, Vite, or Rsbuild that bundle both the web build tool and web server - you just need to add the corresponding [WebSpatial plugin](../step-1-install-the-webspatial-sdk#non-core-deps-for-building) in their config. These ready-to-use plugins save you from manual setup and reduce boilerplate code.
+If your project uses tools like Next.js, Vite, or Rsbuild that bundle both the web build tool and web server - you just need to add the corresponding [WebSpatial plugin](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#non-core-deps-for-building) in their config. These ready-to-use plugins save you from manual setup and reduce boilerplate code.
 
 <!-- If your project relies directly on a lower-level web build tool such as Webpack, you can follow the guidelines in this document to integrate these optimizations and defaults by hand. -->
 
 :::info
-What exactly is optimized and preconfigured is explained in ["Generate a WebSpatial-Specific Website"](./generate-a-webspatial-specific-website) and ["Check if Running in WebSpatial Mode"](./check-if-running-in-webspatial-mode).
+What exactly is optimized and preconfigured is explained in ["Generate a WebSpatial-Specific Website"](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website) and ["Check if Running in WebSpatial Mode"](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode).
 :::
 
 ## React + Vite {#vite}
 
-Add the [Vite plugin](../step-1-install-the-webspatial-sdk#plugin-vite) in `vite.config.ts` or `vite.config.js`:
+Add the [Vite plugin](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#plugin-vite) in `vite.config.ts` or `vite.config.js`:
 
 ```js title="vite.config.js"
 import { defineConfig } from "vite";
@@ -36,7 +36,7 @@ If it's a TypeScript project, add `/// <reference types="@webspatial/vite-plugin
 
 ## React + Next.js {#next}
 
-Add the [Next.js plugin](../step-1-install-the-webspatial-sdk#plugin-next) in `next.config.ts` or `next.config.js`:
+Add the [Next.js plugin](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#plugin-next) in `next.config.ts` or `next.config.js`:
 
 ```ts title="next.config.ts"
 // diff-add
@@ -53,7 +53,7 @@ If it's a TypeScript project, create a `env.d.ts` file and add `/// <reference t
 
 ## React + Rsbuild {#rsbuild}
 
-Add the [Rsbuild plugin](../step-1-install-the-webspatial-sdk#plugin-rsbuild) in `rsbuild.config.ts` or `rsbuild.config.mjs`:
+Add the [Rsbuild plugin](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#plugin-rsbuild) in `rsbuild.config.ts` or `rsbuild.config.mjs`:
 
 ```ts title="rsbuild.config.ts"
 import { defineConfig } from "@rsbuild/core";
@@ -80,7 +80,7 @@ If it's a TypeScript project, add `/// <reference types="@webspatial/rsbuild-plu
 
 ## React + Rspack {#rspack}
 
-Add the [Rspack plugin](../step-1-install-the-webspatial-sdk#plugin-rspack) in `rspack.config.ts` or `rspack.config.mjs`:
+Add the [Rspack plugin](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#plugin-rspack) in `rspack.config.ts` or `rspack.config.mjs`:
 
 ```js title="rspack.config.mjs"
 import path, { dirname } from "node:path";

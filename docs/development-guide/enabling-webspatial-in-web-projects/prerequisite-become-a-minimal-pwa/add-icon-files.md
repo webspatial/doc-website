@@ -18,7 +18,7 @@ The best practice for a WebSpatial project is to include at least the following 
 Ready-to-use sample icons (you can use this directly in your demo): [webspatial-icon-examples.zip](/assets/guide/webspatial-icon-examples.zip)
 :::
 
-In addition to the standard PWA requirements, a [**Packaged WebSpatial App**](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) has extra icon rules:
+In addition to the standard PWA requirements, a [**Packaged WebSpatial App**](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) has extra icon rules:
 
 Because the minimum icon size for a visionOS app is 1024 × 1024 and the system automatically crops icons into a circle, your site must supply a PWA-standard icon with **a minimum size of 1024 × 1024** and of type **`maskable`** (no transparent background or rounded corners) before it can be published to the visionOS App Store.
 
@@ -31,7 +31,7 @@ At the very minimum, to run as a standalone app on desktop and visionOS, you nee
 - **512×512** (`"any"` type)
 - **1024×1024** (`"maskable"` type)
 
-In the [Web App Manifest](./add-web-app-manifest), these two icons are configured like this:
+In the [Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest), these two icons are configured like this:
 
 ```json5
   "icons": [
