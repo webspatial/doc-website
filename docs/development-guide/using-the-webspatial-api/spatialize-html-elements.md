@@ -5,12 +5,12 @@ sidebar_position: 2
 # Spatialize HTML Elements
 
 :::info
-Basic concept: [Spatialized Elements and 3D Container Elements](../../core-concepts/spatialized-elements-and-3d-container-elements)
+Basic concept: [Spatialized Elements and 3D Container Elements](/docs/core-concepts/spatialized-elements-and-3d-container-elements)
 :::
 
 :::note
 
-Because the [WebSpatial SDK](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) currently offers only a [React SDK](../enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#react-sdk), all examples in this document use React.
+Because the [WebSpatial SDK](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) currently offers only a [React SDK](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#react-sdk), all examples in this document use React.
 
 APIs covered in this section:
 
@@ -21,10 +21,10 @@ APIs covered in this section:
 
 ## Enable spatialization {#spatialize}
 
-With the current WebSpatial SDK, an HTML element must be marked with a temporary flag before you can use any [spatial APIs](../../core-concepts/unique-concepts-in-webspatial#webspatial-api).
+With the current WebSpatial SDK, an HTML element must be marked with a temporary flag before you can use any [spatial APIs](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api).
 
 :::note
-In a future W3C specification, we hope that HTML elements won't need to be explicitly marked as spatial to use spatial APIs - just using a spatial API should implicitly make them [spatialized HTML elements](../../core-concepts/spatialized-elements-and-3d-container-elements). For now the flag is required for performance and other practical reasons.
+In a future W3C specification, we hope that HTML elements won't need to be explicitly marked as spatial to use spatial APIs - just using a spatial API should implicitly make them [spatialized HTML elements](/docs/core-concepts/spatialized-elements-and-3d-container-elements). For now the flag is required for performance and other practical reasons.
 :::
 
 You can apply the flag in three ways:
@@ -103,13 +103,13 @@ const Card = ({ children, headerClassName, headerStyle, headerProps }) => {
 </Card>;
 ```
 
-After the flag is applied, the element keeps all of its original capabilities and also gains access to the [spatial APIs](../../core-concepts/unique-concepts-in-webspatial#webspatial-api) provided by the WebSpatial SDK, including the [CSS APIs](#css) and [DOM APIs](#dom) described below.
+After the flag is applied, the element keeps all of its original capabilities and also gains access to the [spatial APIs](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) provided by the WebSpatial SDK, including the [CSS APIs](#css) and [DOM APIs](#dom) described below.
 
 ## Cross-platform {#cross-platform}
 
-A spatialized element has spatial capabilities only when running inside the [WebSpatial App Shell](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk).
+A spatialized element has spatial capabilities only when running inside the [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk).
 
-On desktop/mobile platforms and regular browsers, [the build output does not include the WebSpatial SDK implementation](../enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website). Calls to the WebSpatial API are removed automatically, and the elements remain ordinary HTML elements in the React DOM.
+On desktop/mobile platforms and regular browsers, [the build output does not include the WebSpatial SDK implementation](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website). Calls to the WebSpatial API are removed automatically, and the elements remain ordinary HTML elements in the React DOM.
 
 So when you enable spatialization for an HTML element, you **do not need to write any if-else logic**, this API is designed to work cross-platform by default.
 
@@ -197,7 +197,7 @@ CSS Modules, PostCSS, and other pre-compiled CSS pipelines work as well.
 
 ## DOM Capabilities {#dom}
 
-If you bypass React and manipulate the spatialized element directly through `querySelector` or similar DOM APIs, the [WebSpatial API will not work correctly](../web-projects-that-support-webspatial/).
+If you bypass React and manipulate the spatialized element directly through `querySelector` or similar DOM APIs, the [WebSpatial API will not work correctly](/docs/development-guide/web-projects-that-support-webspatial/).
 
 Instead, obtain the DOM node of the spatialized element via React's Ref API, for example:
 
@@ -221,7 +221,7 @@ function App() {
       >Hello World</h1>
 ```
 
-You can then read or write [`--xr-back`](./elevate-2d-elements) through `ref.current.style`, or remove it with `ref.current.style.removeProperty`.
+You can then read or write [`--xr-back`](/docs/development-guide/using-the-webspatial-api/elevate-2d-elements) through `ref.current.style`, or remove it with `ref.current.style.removeProperty`.
 
 You can also modify `ref.current.className` as needed.
 
@@ -241,13 +241,13 @@ The following JS animation libraries have been tested:
 
 ## Internal Content Interaction {#content-interaction}
 
-Whether or not an element itself is spatialized, its child-element interactions on spatial-computing platforms such as visionOS are based on [natural interaction](../../core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction).
+Whether or not an element itself is spatialized, its child-element interactions on spatial-computing platforms such as visionOS are based on [natural interaction](/docs/core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction).
 
-Most of the natural interactions work like touch interactions. One key difference is that during [indirect interaction (eye-hand interaction)](../../core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction) an element must qualify as an **Interaction Region** to receive the system-provided **Hover Effect**.
+Most of the natural interactions work like touch interactions. One key difference is that during [indirect interaction (eye-hand interaction)](/docs/core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction) an element must qualify as an **Interaction Region** to receive the system-provided **Hover Effect**.
 
 ### Hover Effect {#hover-effect}
 
-During the [Select (Navigation)](../../core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction) phase - indirect or direct - no JS events fire and no CSS state changes (such as `:hover`) occur, just like on a touch screen.
+During the [Select (Navigation)](/docs/core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction) phase - indirect or direct - no JS events fire and no CSS state changes (such as `:hover`) occur, just like on a touch screen.
 
 So web code can't show any interaction cues at all. Basically, the page has no idea what the user is trying to do at that moment.
 
@@ -270,7 +270,7 @@ An element becomes an Interaction Region if any of the following is true:
 
 ### JavaScript events {#js-events}
 
-After the [Confirm (Activate)](../../core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction) phase, indirect and direct interactions fire the same JavaScript events as touch screens:
+After the [Confirm (Activate)](/docs/core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction) phase, indirect and direct interactions fire the same JavaScript events as touch screens:
 
 <p className="row">
   <div className="col col--6">

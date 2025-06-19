@@ -8,13 +8,13 @@ sidebar_position: 5
 
 Basic concepts:
 
-- [Scenes and Spatial Layouts](../../core-concepts/scenes-and-spatial-layouts)
+- [Scenes and Spatial Layouts](/docs/core-concepts/scenes-and-spatial-layouts)
 
 :::
 
 :::note
 
-Because the [WebSpatial SDK](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) currently offers only a [React SDK](../enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#react-sdk), all examples in this document use React.
+Because the [WebSpatial SDK](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) currently offers only a [React SDK](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#react-sdk), all examples in this document use React.
 
 APIs referenced in this section:
 
@@ -30,17 +30,17 @@ APIs referenced in this section:
 
 :::
 
-A WebSpatial app always starts from a [Start Scene](../../core-concepts/scenes-and-spatial-layouts#start-scene), which loads the first [web page](../../core-concepts/scenes-and-spatial-layouts#scenes-in-webspatial) of the current run. Starting from this page, you can open additional pages in new Scenes, so the app is composed of multiple [Scenes](../../core-concepts/scenes-and-spatial-layouts).
+A WebSpatial app always starts from a [Start Scene](/docs/core-concepts/scenes-and-spatial-layouts#start-scene), which loads the first [web page](/docs/core-concepts/scenes-and-spatial-layouts#scenes-in-webspatial) of the current run. Starting from this page, you can open additional pages in new Scenes, so the app is composed of multiple [Scenes](/docs/core-concepts/scenes-and-spatial-layouts).
 
 ## Managing the Start Scene {#start-scene}
 
-As the starting point of the entire WebSpatial app, the Start Scene is created and initialized entirely by native code (for example, the [WebSpatial App Shell](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk)). **Web code only runs after this Start Scene already exists.**
+As the starting point of the entire WebSpatial app, the Start Scene is created and initialized entirely by native code (for example, the [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk)). **Web code only runs after this Start Scene already exists.**
 
-Therefore, the type and [initialization settings](../../core-concepts/scenes-and-spatial-layouts#scene-init) of the Start Scene can be managed only in the [Web App Manifest](../enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa).
+Therefore, the type and [initialization settings](/docs/core-concepts/scenes-and-spatial-layouts#scene-init) of the Start Scene can be managed only in the [Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa).
 
-The WebSpatial SDK adds a new manifest property, `xr_main_scene`, that lets you specify [initialization settings](../../core-concepts/scenes-and-spatial-layouts#scene-init) for the Start Scene.
+The WebSpatial SDK adds a new manifest property, `xr_main_scene`, that lets you specify [initialization settings](/docs/core-concepts/scenes-and-spatial-layouts#scene-init) for the Start Scene.
 
-Example from the [Quick Eample](../../quick-example/):
+Example from the [Quick Eample](/docs/quick-example/):
 
 ```json5
   "start_url": "/",
@@ -68,17 +68,17 @@ In this demo, the Start Scene originally used the size shown in the left image (
 In the current WebSpatial SDK:
 
 - `xr_main_scene` only supports the `default_size` setting. More options will be added later.
-- Only [Window Scenes](../../core-concepts/scenes-and-spatial-layouts#window-scene) are supported for now. Other Scene types such as [Volume Scenes](../../core-concepts/scenes-and-spatial-layouts#volume-scene) are not yet supported, so there are no manifest properties for the type of the Start Scene.
+- Only [Window Scenes](/docs/core-concepts/scenes-and-spatial-layouts#scenes-window) are supported for now. Other Scene types such as [Volume Scenes](/docs/core-concepts/scenes-and-spatial-layouts#scenes-volume) are not yet supported, so there are no manifest properties for the type of the Start Scene.
 
 :::
 
 The URL loaded in the Start Scene is the first URL opened and run within the WebSpatial app.
 
-By default, it is determined by the [`start_url`](../enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) in the Web App Manifest.
+By default, it is determined by the [`start_url`](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) in the Web App Manifest.
 
-The combination of the Web App Manifest's [`scope`](../enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#scope) and [`start_url`](../enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) clearly defines which URLs belong to this WebSpatial app.
+The combination of the Web App Manifest's [`scope`](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#scope) and [`start_url`](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) clearly defines which URLs belong to this WebSpatial app.
 
-The [WebSpatial App Shell](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) automatically registers these URLs with the system so that they open in the corresponding WebSpatial app instead of a browser.
+The [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) automatically registers these URLs with the system so that they open in the corresponding WebSpatial app instead of a browser.
 
 If the app is launched from one of these URLs, the Start Scene loads that specific URL instead of the `start_url`.
 
@@ -95,14 +95,14 @@ The method is exactly the same as opening a link in a new window on a standard w
 
 Two important notes:
 
-- The link URL (for example, `newSceneUrl` above) **must** match the manifest's [`scope`](../enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#scope), meaning it is part of the current WebSpatial app. Otherwise, the URL opens in the browser rather than creating a new Scene in the app.
+- The link URL (for example, `newSceneUrl` above) **must** match the manifest's [`scope`](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#scope), meaning it is part of the current WebSpatial app. Otherwise, the URL opens in the browser rather than creating a new Scene in the app.
 - If you supply a window name (for example, `newSceneName` above) and a same-named Scene already exists and is still open, no new Scene is created. Instead, that Scene navigates to the new URL (equivalent to a URL jump inside the existing Scene). This behavior is the same as how multiple windows work in regular browsers.
 
 :::warning
 **Best practice:** Once a window name has been used, continue using that name only in the same parent window. Do not reuse the name from another windows. Otherwise, according to web standards, in those windows you might either not be able to reach the same-named window, or worse, your current window might unexpectedly become the parent of that window, which breaks the original parent's access.
 :::
 
-Example from the [Quick Example](../../quick-example/):
+Example from the [Quick Example](/docs/quick-example/):
 
 ```jsx {4,11}
 <div className="card" style={{ marginTop: "0px" }}>
@@ -129,7 +129,7 @@ Clicking the link or the button opens new Scenes. Every Scene shows the content 
 
 ---
 
-Because Scenes in spatial apps are [centrally managed](../../core-concepts/scenes-and-spatial-layouts) by the operating system, developers cannot arbitrarily control them. Instead, developers can only set the **desired initial values** for some scene properties at creation timed, the OS decides whether to honor them. After creation, these properties **cannot be changed by code** and are determined only by the OS and the user.
+Because Scenes in spatial apps are [centrally managed](/docs/core-concepts/scenes-and-spatial-layouts) by the operating system, developers cannot arbitrarily control them. Instead, developers can only set the **desired initial values** for some scene properties at creation timed, the OS decides whether to honor them. After creation, these properties **cannot be changed by code** and are determined only by the OS and the user.
 
 Current web standards weren't designed with spatial apps in mind, so there's no concept of scene initialization and no suitable standard API.
 
@@ -184,7 +184,7 @@ window.xrCurrentSceneDefaults = async defaultConfig => {
 ```
 
 - Use this API only within the page opened in the new Scene.
-- It is a hook: you need to provide it **before the page is ready** so the [WebSpatial App Shell](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) can use it to retrieve the desired scene initialization properties from the web page.
+- It is a hook: you need to provide it **before the page is ready** so the [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) can use it to retrieve the desired scene initialization properties from the web page.
 - If no initialization properties were provided in advance, the new Scene first enters a waiting state. It loads the page in the background and, before finishing, tries to read the hook. If the hook returns properties, those are used; otherwise, defaults are used.
 - If the hook returns an async function, the waiting state lasts until the function resolves or times out.
   :::tip
@@ -196,11 +196,11 @@ window.xrCurrentSceneDefaults = async defaultConfig => {
 In the current WebSpatial SDK:
 
 - Both APIs only support the `defaultSize` setting right now. More options will be added.
-- Only [Window Scenes](../../core-concepts/scenes-and-spatial-layouts#window-scene) are supported for now. Other Scene types such as [Volume Scenes](../../core-concepts/scenes-and-spatial-layouts#volume-scene) are not yet supported, so there are no manifest properties for the type of the Start Scene.
+- Only [Window Scenes](/docs/core-concepts/scenes-and-spatial-layouts#scenes-window) are supported for now. Other Scene types such as [Volume Scenes](/docs/core-concepts/scenes-and-spatial-layouts#scenes-volume) are not yet supported, so there are no manifest properties for the type of the Start Scene.
 
 :::
 
-Example based on the [Quick Example](../../quick-example/):
+Example based on the [Quick Example](/docs/quick-example/):
 
 ```jsx
                 <h2>Open Second Page</h2>

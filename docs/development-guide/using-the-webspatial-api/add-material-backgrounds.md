@@ -8,14 +8,14 @@ sidebar_position: 3
 
 Basic concepts:
 
-- [Scenes and Spatial Layouts](../../core-concepts/scenes-and-spatial-layouts)
-- [Spatialized Elements and 3D Container Elements](../../core-concepts/spatialized-elements-and-3d-container-elements)
+- [Scenes and Spatial Layouts](/docs/core-concepts/scenes-and-spatial-layouts)
+- [Spatialized Elements and 3D Container Elements](/docs/core-concepts/spatialized-elements-and-3d-container-elements)
 
 :::
 
 :::note
 
-Because the [WebSpatial SDK](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) currently offers only a [React SDK](../enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#react-sdk), all examples in this document use React.
+Because the [WebSpatial SDK](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) currently offers only a [React SDK](/docs/development-guide/enabling-webspatial-in-web-projects/step-1-install-the-webspatial-sdk#react-sdk), all examples in this document use React.
 
 APIs covered in this section:
 
@@ -25,15 +25,15 @@ APIs covered in this section:
 
 :::
 
-With the help of the [WebSpatial SDK](../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk), two main subjects in each [Scene](../../core-concepts/scenes-and-spatial-layouts) of the WebSpatial app can dynamically render their background based on the surrounding spatial environment.
+With the help of the [WebSpatial SDK](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk), two main subjects in each [Scene](/docs/core-concepts/scenes-and-spatial-layouts) of the WebSpatial app can dynamically render their background based on the surrounding spatial environment.
 
 ## Translucent or Fully Transparent Window Scenes {#for-window-scenes}
 
-The first subject is the entire [Window Scene](../../core-concepts/scenes-and-spatial-layouts#window-scene) and the webpage itself.
+The first subject is the entire [Window Scene](/docs/core-concepts/scenes-and-spatial-layouts#scenes-window) and the webpage itself.
 
 You can give the `<html>` tag a style that makes the whole window use a translucent material background with rounded corners, or turn the window fully transparent and border-less.
 
-Example based on the [Quick Example](../../quick-example/): a Window Scene with a translucent material background and rounded corners
+Example based on the [Quick Example](/docs/quick-example/): a Window Scene with a translucent material background and rounded corners
 
 ```css {3}
 html.is-spatial {
@@ -51,7 +51,7 @@ html.is-spatial {
 - The default value of `--xr-background-material` is `none`. If you omit this property in the window style or set it explicitly to `none`, the window falls back to the default opaque webpage background color like in a regular browser.
   > Note that `none` means "do not apply any custom setting". It is not equivalent to "no material background".
 
-Example from the [Techshop demo](../../introduction/built-on-the-existing-web-ecosystem#example-techshop): a fully transparent, border-less window scene
+Example from the [Techshop demo](/docs/introduction/built-on-the-existing-web-ecosystem#example-techshop): a fully transparent, border-less window scene
 
 ```css {3}
 html.is-spatial {
@@ -63,15 +63,15 @@ html.is-spatial {
 
 ## Translucent HTML Elements {#for-html-elements}
 
-The second subject is any [spatialized HTML element](./spatialize-html-elements).
+The second subject is any [spatialized HTML element](/docs/development-guide/using-the-webspatial-api/spatialize-html-elements).
 
 Unlike a web page window, HTML elements are naturally transparent (you can see the parent node's background through them). After an element is spatialized, **its default state is already a fully transparent material background**, equivalent to `--xr-background-material: transparent`.
 
 > For a spatialized HTML element, `--xr-background-material: none` (no custom setting) is the same as `--xr-background-material: transparent`.
 
-However, you can only perceive this fully transparent material once the spatialized HTML element has been [elevated](./elevate-2d-elements) into 3D space.
+However, you can only perceive this fully transparent material once the spatialized HTML element has been [elevated](/docs/development-guide/using-the-webspatial-api/elevate-2d-elements) into 3D space.
 
-Example based on the [Quick Example](../../quick-example/):
+Example based on the [Quick Example](/docs/quick-example/):
 
 ```css
   .link-card {
@@ -89,7 +89,7 @@ Removing the `--xr-background-material` property from the `.link-card` element r
 
 Whether or not the spatialized HTML element is elevated, you can set `--xr-background-material: translucent` (or one of the [other options](#translucent-options)) to give it a translucent background.
 
-Example based on the [Quick Example](../../quick-example/):
+Example based on the [Quick Example](/docs/quick-example/):
 
 ```css
   .link-card {
@@ -110,7 +110,7 @@ Besides `none` (no custom setting), `transparent` (fully transparent), and `tran
 <Image img={require("/assets/concepts/4-4.jpg")} alt="Scene Example 4" />
 <Image img={require("/assets/concepts/4-3.png")} alt="Scene Example 4" />
 
-Example from the [Techshop demo](../../introduction/built-on-the-existing-web-ecosystem#example-techshop):
+Example from the [Techshop demo](/docs/introduction/built-on-the-existing-web-ecosystem#example-techshop):
 
 ```jsx showLineNumbers {2,5,17,19-27}
         <div
@@ -154,7 +154,7 @@ The CSS `opacity` property continues to affect the entire element, including bot
 
 ## Stacking Order {#stacking-order}
 
-If a spatialized HTML element is **NOT** [elevated](./elevate-2d-elements), it remains **part of the plane of its parent element**. That plane can be the whole window scene's plane, or a new plane created by an elevated parent element.
+If a spatialized HTML element is **NOT** [elevated](/docs/development-guide/using-the-webspatial-api/elevate-2d-elements), it remains **part of the plane of its parent element**. That plane can be the whole window scene's plane, or a new plane created by an elevated parent element.
 
 Multiple HTML elements located on the **same plane** follow normal DOM order to decide which one covers the other. For sibling nodes, later nodes cover earlier ones.
 
@@ -175,4 +175,4 @@ Multiple spatialized HTML elements inside the **same** spatialized element can u
 - The parent spatialized element acts like a stacking context.
 - In the nesting structure between the parent and its children, there must not be another spatialized element acting as an intermediate parent.
 
-Remember, `--xr-z-index` **only** changes stacking order on the **same plane**. It **does NOT move elements along the Z-axis** and is completely separate from the [Elevate 2D Elements](./elevate-2d-elements) API.
+Remember, `--xr-z-index` **only** changes stacking order on the **same plane**. It **does NOT move elements along the Z-axis** and is completely separate from the [Elevate 2D Elements](/docs/development-guide/using-the-webspatial-api/elevate-2d-elements) API.

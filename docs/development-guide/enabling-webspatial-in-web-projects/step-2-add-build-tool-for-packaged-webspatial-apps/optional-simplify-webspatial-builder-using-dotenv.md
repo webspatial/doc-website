@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # (Optional) Simplify Builder Usage with dotenv
 
-To avoid typing the same environment variables each time you run these [npm scripts](../step-2-add-build-tool-for-packaged-webspatial-apps#npm-scripts), you can place all required variables in a dotenv configuration file and have them loaded automatically before the scripts run.
+To avoid typing the same environment variables each time you run these [npm scripts](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps#npm-scripts), you can place all required variables in a dotenv configuration file and have them loaded automatically before the scripts run.
 
 ## dotenv Files
 
@@ -102,4 +102,4 @@ console.log(env.XR_ENV);
 
 ## Used in Client-side JS Code
 
-See ["Check if Running in WebSpatial Mode"](../step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode).
+See ["Check if Running in WebSpatial Mode"](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode).

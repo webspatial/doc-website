@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Scenes {#scenes}
 
-A [spatial app](../core-concepts/shared-space-and-spatial-apps#spatial-apps) is composed of **Scenes**.
+A [spatial app](/docs/core-concepts/shared-space-and-spatial-apps#spatial-apps) is composed of **Scenes**.
 
 A Scene is a content container centrally managed by the spatial-computing OS. Every piece of app content must live in one or more of these containers.
 
@@ -72,7 +72,7 @@ Another difference: a WebSpatial Scene **has no browser UI such as address bar, 
 
 ## Scene Menu {#scene-menu}
 
-A Window Scene in a WebSpatial app is equivalent to an independent window created by an [installed PWA](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa).
+A Window Scene in a WebSpatial app is equivalent to an independent window created by an [installed PWA](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa).
 
 Because a WebSpatial Scene is [essentially a web page](#scenes-in-webspatial), it inherits the same general requirements and security/privacy considerations as any web page:
 
@@ -86,7 +86,7 @@ That's why PWA app windows include some native UI to provide the general feature
 
 <Image img={require("/assets/concepts/3-14.jpg")} alt="Scene Example 3" />
 
-The PWA standard's [`display` property](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#display) in the [Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) lets you control certain parts of this native UI - for example, **whether native navigation buttons appear**.
+The PWA standard's [`display` property](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#display) in the [Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest) lets you control certain parts of this native UI - for example, **whether native navigation buttons appear**.
 
 > The following image shows a desktop PWA in `minimal-ui` mode (native title bar with navigation buttons).
 > <Image img={require("/assets/concepts/3-15.jpg")} alt="Scene Example 3" />
@@ -113,7 +113,7 @@ The PWA standard's [`display` property](../development-guide/enabling-webspatial
 >   </div>
 > </div>
 
-WebSpatial is [**built on top of PWA**](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa), every WebSpatial Scene includes a native **Scene Menu**, just like a PWA window.
+WebSpatial is [**built on top of PWA**](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa), every WebSpatial Scene includes a native **Scene Menu**, just like a PWA window.
 
 :::note
 The Scene Menu shown in the image isn't the final design. It's a temporary test version. It's collapsed by default, and when expanded, it lets you view and copy the URL, use navigation buttons (depend on the `display` property in the Web App Manifest), etc.
@@ -125,11 +125,11 @@ The Scene Menu shown in the image isn't the final design. It's a temporary test 
 
 Window Scenes in WebSpatial apps have some Scene properties that are fully controlled by the developer.
 
-The window plane can use a [**semi-transparent** material background](../development-guide/using-the-webspatial-api/add-material-backgrounds#for-window-scenes), rendered dynamically against the surrounding environment so it remains legible in any context. You can also round the four corners instead of keeping the default sharp angles.
+The window plane can use a [**semi-transparent** material background](/docs/development-guide/using-the-webspatial-api/add-material-backgrounds#for-window-scenes), rendered dynamically against the surrounding environment so it remains legible in any context. You can also round the four corners instead of keeping the default sharp angles.
 
 <Image img={require("/assets/concepts/3-21.jpg")} alt="Scene Example 3" />
 
-Alternatively, set the background to a [fully transparent material](../development-guide/using-the-webspatial-api/add-material-backgrounds#for-window-scenes) with no border, making the page content appear to float freely.
+Alternatively, set the background to a [fully transparent material](/docs/development-guide/using-the-webspatial-api/add-material-backgrounds#for-window-scenes) with no border, making the page content appear to float freely.
 
 <Image img={require("/assets/concepts/3-22.jpg")} alt="Scene Example 3" />
 <Image img={require("/assets/concepts/3-23.jpg")} alt="Scene Example 3" />
@@ -177,7 +177,7 @@ For example, as the distance between scene and user changes, a reading-oriented 
 
 ## Scene Initialization {#scene-init}
 
-Scenes are content containers uniformly managed by the OS in the [shared space](./shared-space-and-spatial-apps). Centralized management is necessary because only the OS has the complete understanding of the user's environment, the dynamic relationships between scenes and the user ([Spatial Layout](#spatial-layout)), and what each app does and how they relate to one another.
+Scenes are content containers uniformly managed by the OS in the [shared space](/docs/core-concepts/shared-space-and-spatial-apps). Centralized management is necessary because only the OS has the complete understanding of the user's environment, the dynamic relationships between scenes and the user ([Spatial Layout](#spatial-layout)), and what each app does and how they relate to one another.
 
 Therefore, only the OS should make the **final decisions** about size, position, orientation, and other spatial-layout properties. Developers do not have **full control** over them, and even end-users are limited - they cannot arbitrarily resize a window or place it anywhere. These properties are **consistently constrained** by the
 OS.
@@ -186,7 +186,7 @@ During scene creation, developers may supply **preferred initial values**, which
 
 Once created, these properties **cannot** be changed by app code, they're entirely controlled by the OS and the user's actions.
 
-The classic example is the scene's [`defaultSize`](../development-guide/using-the-webspatial-api/manage-multiple-scenes#init-scene).
+The classic example is the scene's [`defaultSize`](/docs/development-guide/using-the-webspatial-api/manage-multiple-scenes#init-scene).
 
 > Example from the Quick Example:
 >
@@ -203,13 +203,13 @@ The classic example is the scene's [`defaultSize`](../development-guide/using-th
 
 Every time a WebSpatial app launches, it **starts with a single Scene** called the **Start Scene**, from which the app can open additional Scenes.
 
-Because the Start Scene is the entry point of the WebSpatial app, it is created and initialized entirely by native code ([WebSpatial App Shell](./unique-concepts-in-webspatial#webspatial-sdk)). **The web code runs only after this Start Scene exists.**
+Because the Start Scene is the entry point of the WebSpatial app, it is created and initialized entirely by native code ([WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk)). **The web code runs only after this Start Scene exists.**
 
-Consequently, the Start Scene's type and initial configuration can only be set via the [Web App Manifest](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest).
+Consequently, the Start Scene's type and initial configuration can only be set via the [Web App Manifest](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest).
 
-Additional scenes created later within the same WebSpatial app are [created by web code](../development-guide/using-the-webspatial-api/manage-multiple-scenes#new-scene), where their initialization can also be configured in web code.
+Additional scenes created later within the same WebSpatial app are [created by web code](/docs/development-guide/using-the-webspatial-api/manage-multiple-scenes#new-scene), where their initialization can also be configured in web code.
 
-The URL loaded in the Start Scene is the very first page the WebSpatial app loads and runs. By default, it is defined by [`start_url`](../development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) in the Web App Manifest. If the WebSpatial app is launched through a specific URL, the Start Scene loads that URL instead.
+The URL loaded in the Start Scene is the very first page the WebSpatial app loads and runs. By default, it is defined by [`start_url`](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-web-app-manifest#start-url) in the Web App Manifest. If the WebSpatial app is launched through a specific URL, the Start Scene loads that URL instead.
 
 > In the Quick Example, clicking buttons and links in the Start Scene opens two new Scenes:
 > <Image img={require("/assets/concepts/3-30.png")} alt="Scene Example 3" />

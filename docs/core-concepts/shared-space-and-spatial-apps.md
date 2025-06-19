@@ -23,15 +23,15 @@ Inside a Shared Space, an app's content is no longer confined to the plane of a 
 
 Content is no longer limited to 2D window containers. It can be placed in spatial containers that **have volume**, similar to 3D bounding boxes.
 
-An app can be made up of [multiple such content containers](./scenes-and-spatial-layouts), all of which are [**managed uniformly by the spatial-computing OS**](./scenes-and-spatial-layouts#spatial-layout).
+An app can be made up of [multiple such content containers](/docs/core-concepts/scenes-and-spatial-layouts), all of which are [**managed uniformly by the spatial-computing OS**](/docs/core-concepts/scenes-and-spatial-layouts#spatial-layout).
 
-Many 2D UI elements that make up the content can be **[spatialized](./spatialized-elements-and-3d-container-elements)**, meaning they enter 3D space where they can be positioned, laid out, and transformed.
+Many 2D UI elements that make up the content can be **[spatialized](/docs/core-concepts/spatialized-elements-and-3d-container-elements)**, meaning they enter 3D space where they can be positioned, laid out, and transformed.
 
-You can also use [3D UI elements](./spatialized-elements-and-3d-container-elements#3d-elements) to build richer, more flexible and fully-featured 3D content. These 3D elements can **be laid out together with 2D UI elements** along the X, Y, and Z axes, creating more sophisticated **mixed 2D-and-3D** UI components.
+You can also use [3D UI elements](/docs/core-concepts/spatialized-elements-and-3d-container-elements#3d-elements) to build richer, more flexible and fully-featured 3D content. These 3D elements can **be laid out together with 2D UI elements** along the X, Y, and Z axes, creating more sophisticated **mixed 2D-and-3D** UI components.
 
 This kind of app is called a **Spatial App**.
 
-Spatial Apps are the [new generation of XR apps](../introduction/the-new-generation-of-spatial-apps). They **preserve the strengths of 2D apps** from desktop and mobile platforms while gaining **optional, progressive [spatial enhancements](../introduction/new-powers-for-xr-apps)** on spatial-computing platforms.
+Spatial Apps are the [new generation of XR apps](/docs/introduction/the-new-generation-of-spatial-apps). They **preserve the strengths of 2D apps** from desktop and mobile platforms while gaining **optional, progressive [spatial enhancements](/docs/introduction/new-powers-for-xr-apps)** on spatial-computing platforms.
 
 <div className="row">
   <div className="col col--6">
@@ -74,11 +74,11 @@ Example apps shown above:
 
 ## Unified Rendering {#unified-rendering}
 
-Unlike traditional XR apps, spatial apps don't have to rendering their own content or build full XR interactions. Instead, the OS that provides the Shared Space offers a unified rendering service and handles fundamental natural interactions (for example, [gaze and hand interaction](./spatialized-elements-and-3d-container-elements#nature-interaction)).
+Unlike traditional XR apps, spatial apps don't have to rendering their own content or build full XR interactions. Instead, the OS that provides the Shared Space offers a unified rendering service and handles fundamental natural interactions (for example, [gaze and hand interaction](/docs/core-concepts/spatialized-elements-and-3d-container-elements#nature-interaction)).
 
 Multiple Spatial Apps can **blend into a single coordinate system and lighting environment** inside the Shared Space, complete with positional relationships, occlusion, shadows, and more.
 
-Because of this, Spatial Apps cannot freely build independent rendering pipelines. Instead, they expose content through OS-managed 2D/3D containers called **[Scenes](./scenes-and-spatial-layouts)** and describe that content via [APIs the OS understands](./spatialized-elements-and-3d-container-elements). This **lets the OS understand and manage apps' content**, enabling **Unified Rendering**.
+Because of this, Spatial Apps cannot freely build independent rendering pipelines. Instead, they expose content through OS-managed 2D/3D containers called **[Scenes](/docs/core-concepts/scenes-and-spatial-layouts)** and describe that content via [APIs the OS understands](/docs/core-concepts/spatialized-elements-and-3d-container-elements). This **lets the OS understand and manage apps' content**, enabling **Unified Rendering**.
 
 :::info
 [Unified Rendering App Model](https://developer.picoxr.com/news/multi-app-rendering/):

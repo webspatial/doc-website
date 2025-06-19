@@ -40,9 +40,9 @@ The manifest must contain at least the following properties:
 
 :::info
 
-The [Add Icon Files](./add-icon-files) section lists the exact icon requirements and provides ready-to-use sample icons.
+The [Add Icon Files](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-icon-files) section lists the exact icon requirements and provides ready-to-use sample icons.
 
-If you only need to build an app that installs and runs in the visionOS simulator, you may omit the manifest entirely or exclude any of the properties above. For missing properties, [WebSpatial Builder](../step-2-add-build-tool-for-packaged-webspatial-apps) will fill in default placeholders automatically.
+If you only need to build an app that installs and runs in the visionOS simulator, you may omit the manifest entirely or exclude any of the properties above. For missing properties, [WebSpatial Builder](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps) will fill in default placeholders automatically.
 
 :::
 
@@ -52,20 +52,20 @@ If you only need to build an app that installs and runs in the visionOS simulato
 
 The entry point that loads when the app starts.
 
-This property both sets the WebSpatial app's default [**Start Scene**](../../../core-concepts/scenes-and-spatial-layouts#start-scene) and **determines how the app is packaged**:
+This property both sets the WebSpatial app's default [**Start Scene**](/docs/core-concepts/scenes-and-spatial-layouts#start-scene) and **determines how the app is packaged**:
 
-- If [`start_url`](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/start_url) is an full URL (including an http-prefixed domain) or is completed into a full URL via the [`--base`](../step-2-add-build-tool-for-packaged-webspatial-apps/options-of-the-webspatial-builder#base-for-devserver) option of the [WebSpatial Builder](../step-2-add-build-tool-for-packaged-webspatial-apps), the [Packaged WebSpatial App](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will **NOT** include website files (for example, the files Vite outputs to `dist/`). Instead, the [WebSpatial App Shell](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will **load all pages and static files on demand from the web server** at runtime.
-- If `start_url` is a relative path and you do NOT supply a domain through [`--base`](../step-2-add-build-tool-for-packaged-webspatial-apps/options-of-the-webspatial-builder#base-for-devserver), the [Packaged WebSpatial App](../../../core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will bundle your entire website files (for example, everything in `dist/`). This produces a **fully offline** app that loads HTML and other static files directly from the package.
+- If [`start_url`](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/start_url) is an full URL (including an http-prefixed domain) or is completed into a full URL via the [`--base`](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps/options-of-the-webspatial-builder#base-for-devserver) option of the [WebSpatial Builder](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps), the [Packaged WebSpatial App](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will **NOT** include website files (for example, the files Vite outputs to `dist/`). Instead, the [WebSpatial App Shell](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will **load all pages and static files on demand from the web server** at runtime.
+- If `start_url` is a relative path and you do NOT supply a domain through [`--base`](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps/options-of-the-webspatial-builder#base-for-devserver), the [Packaged WebSpatial App](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk) will bundle your entire website files (for example, everything in `dist/`). This produces a **fully offline** app that loads HTML and other static files directly from the package.
 
 ### `scope` {#scope}
 
 (Optional) The [URL scope](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/scope) of the app. Defaults to all pages under the same path as `start_url`.
 
-This property decides which URLs open inside the WebSpatial app (either navigating within the current [Scene](../../../core-concepts/scenes-and-spatial-layouts) or opening a new one). URLs outside the scope open in the browser.
+This property decides which URLs open inside the WebSpatial app (either navigating within the current [Scene](/docs/core-concepts/scenes-and-spatial-layouts) or opening a new one). URLs outside the scope open in the browser.
 
 ### `display` {#display}
 
-Sets the [display](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display) mode, which controls which native features appear in each Scene's **native [Scene Menu](../../../core-concepts/scenes-and-spatial-layouts#scene-menu)**.
+Sets the [display](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display) mode, which controls which native features appear in each Scene's **native [Scene Menu](/docs/core-concepts/scenes-and-spatial-layouts#scene-menu)**.
 
 - **`minimal-ui`** - Adds native navigation buttons such as the "Back" button. Your pages don't need to implement full navigation (similar to a traditional website).
 - **`standalone`** - Removes native navigation buttons such as the "Back" button. Only basic features like "View URL" remain. Your pages must handle all navigation (similar to a native app).
@@ -75,12 +75,12 @@ Sets the [display](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_
 
 ### `icons` {#icons}
 
-Icons used during installation. [WebSpatial Builder](../step-2-add-build-tool-for-packaged-webspatial-apps) uses this setting to find icon files that meet spatial computing platform requirements.
+Icons used during installation. [WebSpatial Builder](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps) uses this setting to find icon files that meet spatial computing platform requirements.
 
 At minimum, include:
 
 - An icon with `"purpose": "any"` (required for all PWAs)
-- A **maskable** icon at least **1024×1024** px with `"purpose": "maskable"` ([required by visionOS apps](./add-icon-files))
+- A **maskable** icon at least **1024×1024** px with `"purpose": "maskable"` ([required by visionOS apps](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa/add-icon-files))
 
 :::info
 Manifest properties not mentioned above are currently ignored by WebSpatial apps.
