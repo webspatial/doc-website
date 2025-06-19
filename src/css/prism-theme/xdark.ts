@@ -1,6 +1,6 @@
 import {PrismTheme, themes} from 'prism-react-renderer';
 
-export const darkTheme: PrismTheme = themes.gruvboxMaterialDark;
+export const darkTheme: PrismTheme = themes.oneDark;
 
 // export const darkTheme: PrismTheme = {
 //   plain: {
