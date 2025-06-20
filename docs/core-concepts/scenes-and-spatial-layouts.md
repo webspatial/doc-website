@@ -95,10 +95,10 @@ The PWA standard's [`display` property](/docs/development-guide/enabling-webspat
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image img={require("/assets/concepts/3-16.jpg")} alt="Android PWA minimal-ui mode 1" />
+>     <Image img={require("/assets/concepts/3-16_2.jpg")} alt="Android PWA minimal-ui mode 1" />
 >   </div>
 >   <div className="col col--6">
->     <Image img={require("/assets/concepts/3-17.jpg")} alt="Android PWA minimal-ui mode 2" />
+>     <Image img={require("/assets/concepts/3-17_2.jpg")} alt="Android PWA minimal-ui mode 2" />
 >   </div>
 > </div>
 >
@@ -106,10 +106,10 @@ The PWA standard's [`display` property](/docs/development-guide/enabling-webspat
 >
 > <div className="row">
 >   <div className="col col--6">
->     <Image img={require("/assets/concepts/3-18.jpg")} alt="Android PWA standalone mode 1" />
+>     <Image img={require("/assets/concepts/3-18_2.jpg")} alt="Android PWA standalone mode 1" />
 >   </div>
 >   <div className="col col--6">
->     <Image img={require("/assets/concepts/3-19.jpg")} alt="Android PWA standalone mode 2" />
+>     <Image img={require("/assets/concepts/3-19_2.jpg")} alt="Android PWA standalone mode 2" />
 >   </div>
 > </div>
 
