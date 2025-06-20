@@ -140,14 +140,8 @@ You can create native UI elements that hover on the window edge and provide glob
 The current version of WebSpatial SDK does not support this feature natively. You can simulate it in a fully transparent window scene using regular HTML/CSS.
 :::
 
-<div className="row">
-  <div className="col col--6">
-    <Image img={require("/assets/concepts/3-24.jpg")} alt="Scene Properties Example 1" />
-  </div>
-  <div className="col col--6">
-    <Image img={require("/assets/concepts/3-25.jpg")} alt="Scene Properties Example 2" />
-  </div>
-</div>
+<Image img={require("/assets/concepts/3-24.jpg")} alt="Scene Properties Example 1" />
+<Image img={require("/assets/concepts/3-25.jpg")} alt="Scene Properties Example 2" />
 
 ## Spatial Layout {#spatial-layout}
 
@@ -168,10 +162,24 @@ For example, as the distance between scene and user changes, a reading-oriented 
 
 <div className="row">
   <div className="col col--6">
-    <Image img={require("/assets/concepts/3-26.gif")} alt="Spatial Layout Example 1" />
+    <video
+      src="/assets/concepts/visionos-dynamic-window-scaling.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      style={{ width: '100%', height: 'auto' }}
+    />
   </div>
   <div className="col col--6">
-    <Image img={require("/assets/concepts/3-27.gif")} alt="Spatial Layout Example 2" />
+    <video
+      src="/assets/concepts/visionos-fixed-window-scaling.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      style={{ width: '100%', height: 'auto' }}
+    />
   </div>
 </div>
 

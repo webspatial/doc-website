@@ -10,7 +10,7 @@ The new generation of XR apps - **spatial apps** - are not cut off from the 2D a
 
 <div className="row">
   <div className="col col--6">
-    <Image img="https://static.webspatial.dev/intro-2-1-1.gif" alt="intro-2-1" />
+    <Image img="https://static.webspatial.dev/intro-2-1-1.mp4" alt="intro-2-1" />
   </div>
   <div className="col col--6">
     <Image img={require("/assets/intro/intro-2-2.jpg")} alt="intro-2-2" />

@@ -125,7 +125,14 @@ Example from the [Quick Example](/docs/quick-example/):
 
 Clicking the link or the button opens new Scenes. Every Scene shows the content of `/second-page`, because that URL is opened in each new scene. Clicking the link multiple times produces multiple Scenes. Clicking the button multiple times produces a single Scene, because the `window.open` call gives it the window name `"secondScene"`.
 
-<Image img="https://static.webspatial.dev/intro-4-8.gif" alt="Scene Example 4" />
+<video
+  src="https://static.webspatial.dev/multi-scenes.mp4"
+  autoPlay
+  loop
+  muted
+  playsInline
+  style={{ width: '100%', height: 'auto' }}
+/>
 
 ---
 

@@ -156,12 +156,12 @@ Set the [default size](/docs/core-concepts/scenes-and-spatial-layouts#spatial-la
 
 ```json5
 {
-  xr_main_scene: {
-    default_size: {
-      width: 500,
-      height: 1000,
-    },
-  },
+  "xr_main_scene": {
+    "default_size": {
+      "width": 500,
+      "height": 1000
+    }
+  }
 }
 ```
 
@@ -280,7 +280,14 @@ At the end of the existing content in `src/App.tsx` (below `<p className="read-t
 
 Clicking the link or button opens a new [spatial-app scene](/docs/core-concepts/scenes-and-spatial-layouts) that displays the content of `/second-page`:
 
-<Image img="https://static.webspatial.dev/intro-4-8.gif" alt="Scene Example 4" />
+<video
+  src="https://static.webspatial.dev/multi-scenes.mp4"
+  autoPlay
+  loop
+  muted
+  playsInline
+  style={{ width: '100%', height: 'auto' }}
+/>
 
 ## 7. Set initialization properties for the new scene {#init-scene}
 
