@@ -9,7 +9,7 @@ sidebar_position: 4
 <iframe
   style={{
     aspectRatio: "4/3",
-    maxWidth: "100%",
+    width: "100%",
     height: "auto"
   }}
   src="https://www.youtube.com/embed/Bkef2HvkKhY?si=rjepUJPBFMy-bgLu"
