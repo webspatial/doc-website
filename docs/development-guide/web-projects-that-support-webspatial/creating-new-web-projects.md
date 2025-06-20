@@ -40,19 +40,11 @@ Ensure Node.js is installed first. See the [official Node.js site](https://nodej
 
 3. React + Next.js
 
-   :::warning
-   In testing, more docs to be added
-   :::
-
    ```bash npm2yarn
    npx create-next-app --js
    ```
 
 4. React + Next.js + TypeScript
-
-   :::warning
-   In testing, more docs to be added
-   :::
 
    ```bash npm2yarn
    npx create-next-app --ts
@@ -60,19 +52,11 @@ Ensure Node.js is installed first. See the [official Node.js site](https://nodej
 
 5. React + Rsbuild
 
-   :::warning
-   In testing, more docs to be added
-   :::
-
    ```bash npm2yarn
    npx create-rsbuild --template react
    ```
 
 6. React + Rsbuild + TypeScript
-
-   :::warning
-   In testing, more docs to be added
-   :::
 
    ```bash npm2yarn
    npx create-rsbuild --template react-ts
@@ -80,19 +64,11 @@ Ensure Node.js is installed first. See the [official Node.js site](https://nodej
 
 7. React + Rspack
 
-   :::warning
-   In testing, more docs to be added
-   :::
-
    ```bash npm2yarn
    npx create-rspack --template react
    ```
 
 8. React + Rspack + TypeScript
-
-   :::warning
-   In testing, more docs to be added
-   :::
 
    ```bash npm2yarn
    npx create-rspack --template react-ts

@@ -141,18 +141,18 @@ The screenshots below show how this sample project looks on different platforms.
   </div>
   <div className="col col--6">
     <p>Tablet</p>
-    <Image img={require("/assets/intro/techshop-pad.png")} alt="Tablet" />
+    <Image img={require("/assets/intro/techshop-pad.jpg")} alt="Tablet" />
   </div>
 </div>
 
 <div className="row">
   <div className="col col--6">
     <p>Small Window</p>
-    <Image img={require("/assets/intro/techshop-small.png")} alt="Small Window" />
+    <Image img={require("/assets/intro/techshop-small.jpg")} alt="Small Window" />
   </div>
   <div className="col col--6">
     <p>Phone</p>
-    <Image img={require("/assets/intro/techshop-phone.png")} alt="Phone" />
+    <Image img={require("/assets/intro/techshop-phone.jpg")} alt="Phone" />
   </div>
 </div>
 

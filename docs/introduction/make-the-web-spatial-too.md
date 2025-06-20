@@ -6,23 +6,19 @@ sidebar_position: 4
 
 **WebSpatial** is a set of [spatial APIs](/docs/core-concepts/unique-concepts-in-webspatial#webspatial-api) built on top of the mainstream Web-development ecosystem and existing 2D Web. It enables the entire HTML/CSS-based Web world - billions of websites and Web apps, tens of millions of Web developers, and millions of open-source libraries - to step into the spatial era, **gaining spatial power on par with native spatial apps (like visionOS apps) while keeping all the advantages the Web already have**.
 
-<div style={{ width: '100%', maxWidth: '860px', textAlign: 'center', position: 'relative' }}>
-  <a href="https://youtu.be/QRWjRoKKuXI?si=RvC66Y7X_eyWoRwv" target="_blank">
-    <img src="/assets/whatif.jpg" style={{ width: '100%' }} />
-    <div style={{
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      background: 'rgba(0, 0, 0, 0.7)',
-      color: 'white',
-      padding: '10px 20px',
-      borderRadius: '5px',
-      fontSize: '16px',
-      cursor: 'pointer'
-    }}>Watch Video</div>
-  </a>
-</div>
+<iframe
+  style={{
+    aspectRatio: "4/3",
+    width: "100%",
+    height: "auto"
+  }}
+  src="https://www.youtube.com/embed/Bkef2HvkKhY?si=rjepUJPBFMy-bgLu"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
 
 ### Position HTML Elements on the Z Axis {#position}
 
@@ -62,7 +58,14 @@ These 3D elements can [**participate in layout alongside 2D elements**](/docs/de
 
 A WebSpatial app can comprise multiple **[scenes](/docs/core-concepts/scenes-and-spatial-layouts)**, just like a native spatial app. These 2D + 3D (or pure 3D) scenes can be [**managed as standard Web windows**](/docs/development-guide/using-the-webspatial-api/manage-multiple-scenes), while also allowing for be [initialized with configurations specific to spatial computing platforms](/docs/core-concepts/scenes-and-spatial-layouts#scene-init).
 
-<Image img="https://static.webspatial.dev/intro-4-8.gif" alt="image" />
+<video
+  src="https://static.webspatial.dev/multi-scenes.mp4"
+  autoPlay
+  loop
+  muted
+  playsInline
+  style={{ width: '100%', height: 'auto' }}
+/>
 
 ### 3D Containers with 3D Engine APIs (upcoming feature) {#3d-engine}
 
