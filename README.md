@@ -1,41 +1,49 @@
-# Website
+# WebSpatial Website & Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains the source for the [WebSpatial](https://webspatial.dev) website and its documentation at [webspatial.dev/docs](https://webspatial.dev/docs). The site is built with [Docusaurus](https://docusaurus.io/) and includes Markdown based documentation, example projects and custom React components that power the official WebSpatial docs.
 
-### Installation
+## Requirements
 
-```
-$ yarn
-```
+- Node.js **18** or later
+- [pnpm](https://pnpm.io/) package manager
 
-### Local Development
+## Getting started
 
-```
-$ yarn start
-```
+Install dependencies and start a local development server:
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+```bash
+pnpm install
+pnpm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Open <http://localhost:3000> in your browser to preview the site. File changes are hot reloaded.
 
-### Deployment
+To create a production build:
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+pnpm run build
 ```
 
-Not using SSH:
+The generated static site will appear in the `build/` directory.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+To deploy to GitHub Pages or another static host, run:
+
+```bash
+pnpm run deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Repository structure
+
+- `docs/` – Markdown documentation
+- `blog/` – Blog posts (optional)
+- `src/` – React components, pages and styles used by the site
+- `static/` – Static assets served as-is
+- `scripts/` – Helper scripts (for example syncing docs from the WebSpatial SDK)
+- `docusaurus.config.ts` – Site configuration
+
+A `postinstall` hook automatically links a local copy of the WebSpatial SDK if it exists in a sibling directory. This allows the `sync-docs` script to import additional docs from the SDK repository.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests to improve the documentation or website.
+
