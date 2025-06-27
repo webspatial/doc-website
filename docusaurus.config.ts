@@ -14,8 +14,8 @@ const isProd = BASE_URL == '/';
 
 const config: Config = {
   trailingSlash: false,
-  // onBrokenLinks: 'throw', // 发现死链就 fail‐fast
-  // onBrokenAnchors: 'throw', // 发现失效锚点也直接失败
+  onBrokenLinks: 'throw', // 发现死链就 fail‐fast
+  onBrokenAnchors: 'throw', // 发现失效锚点也直接失败
 
   staticDirectories: ['static'],
 
@@ -89,7 +89,8 @@ const config: Config = {
         min: 640,
         steps: 2,
         // Use false to debug, but it incurs huge perf costs
-        disableInDev: false,
+        // disableInDev: false,
+        disableInDev: true,
       } satisfies IdealImageOptions,
     ],
     // [
@@ -171,9 +172,6 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'webspatial', // Usually your GitHub org/user name.
   projectName: PROJ_NAME, // Usually your repo name.
-
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

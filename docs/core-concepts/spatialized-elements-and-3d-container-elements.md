@@ -48,7 +48,14 @@ Both new capabilities support nesting:
 1. If the window or a parent element already has a material background, its child elements can still use [different translucent material](/docs/development-guide/using-the-webspatial-api/add-material-backgrounds#translucent-options) backgrounds.
 
    <Image img={require("/assets/concepts/4-3.png")} alt="Scene Example 4" />
-   <Image img={require("/assets/concepts/4-4.jpg")} alt="Scene Example 4" />
+   <video
+      src="/assets/concepts/visionos-glass-material-transition.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+      style={{ width: '100%', height: 'auto' }}
+   />
 
 2. If the parent element has been elevated and rotated in 3D space, child elements can continue to be elevated and rotated on that basis.
 

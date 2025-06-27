@@ -1530,3 +1530,29 @@ a[href$='blog/authors'] {
     margin-top: 0 !important;
   }
 }
+
+.advantage-mark {
+  // color: #10b981; // 绿色文字
+  background-color: rgba(16, 185, 129, 0.1); // 淡绿色背景
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+[data-theme='dark'] .advantage-mark {
+  // color: #34d399; // 深色模式下的绿色文字
+  background-color: rgba(52, 211, 153, 0.15); // 深色模式下的淡绿色背景
+}
+
+.disadvantage-mark {
+  // color: #ef4444; // 红色文字
+  background-color: rgba(239, 68, 68, 0.1); // 淡红色背景
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+[data-theme='dark'] .disadvantage-mark {
+  // color: #f87171; // 深色模式下的红色文字
+  background-color: rgba(248, 113, 113, 0.15); // 深色模式下的淡红色背景
+}
