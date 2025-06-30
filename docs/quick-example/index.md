@@ -158,7 +158,7 @@ The visionOS simulator will automatically launch, installs the [Packaged WebSpat
 
 Create a incomplete Web App Manifest file (this only works with the `webspatial-builder run` command, you'll need to [complete it before running on a real device or distributing it](/docs/development-guide/enabling-webspatial-in-web-projects/prerequisite-become-a-minimal-pwa)).
 
-```bash npm2yarn
+```bash
 touch public/manifest.webmanifest
 ```
 
