@@ -165,11 +165,12 @@ a:hover {
   a:hover {
     text-decoration: none;
     // --ifm-link-hover-color: #0f0471;
-    color: var(--ifm-color-primary-light);
-    [data-theme='dark'] & {
-      // --ifm-link-hover-color: var(--ifm-color-primary-dark);
-      color: var(--ifm-color-primary-dark);
-    }
+    // color: var(--ifm-color-primary-light);
+    color: rgba(185, 185, 250, 1);
+    // [data-theme='dark'] & {
+    //   // --ifm-link-hover-color: var(--ifm-color-primary-dark);
+    //   color: var(--ifm-color-primary-dark);
+    // }
     p {
       color: var(--color-text-1);
     }
