@@ -74,10 +74,11 @@
 
 /* 按钮容器 */
 .btnContainer {
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   width: 100%;
   gap: 30px; // 按钮之间留点空隙
+  justify-content: space-between;
   flex-wrap: nowrap;
   overflow-x: scroll;
   border-bottom: 2px solid rgba(255, 255, 255, 0.16);
