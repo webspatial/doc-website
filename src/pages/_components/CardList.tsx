@@ -54,12 +54,11 @@ const FadeImages = ({urls}: {urls: string[]}) => {
         const isD = url.endsWith('d1.png') || url.endsWith('d2.png');
         return (
           <div
-            className={clsx(
-              styles.imgItem,
-              currentImgIndex === index ? styles.active : '',
-              isHotfix ? styles.hotfix : '',
-              isD ? styles.isD : '',
-            )}
+            className={clsx(styles.imgItem, {
+              [styles.active]: currentImgIndex === index,
+              [styles.hotfix]: isHotfix,
+              [styles.isD]: isD,
+            })}
             key={index}
             style={{
               backgroundImage: `url(${finalUrl})`,
