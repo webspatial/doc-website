@@ -377,13 +377,15 @@ a:hover {
 }
 @media (min-width: 997px) {
   .xheader-github-link {
-    padding: 0 18px 0 0 !important;
+    padding: 0 0px 0 0 !important;
   }
 }
 .xheader-github-link::before {
   content: '';
   width: 20px;
   height: 20px;
+  padding: 0 6px;
+  margin-right: 6px;
 
   display: flex;
   background-color: rgba(78, 89, 105, 1); //var(--ifm-navbar-link-color);
@@ -391,6 +393,8 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.7);
   }
   mask-image: url('../img/github-light.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
 
   transition: background-color var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
@@ -403,12 +407,18 @@ a:hover {
   content: '';
   width: 20px;
   height: 20px;
+
+  padding: 0 6px;
+
   display: flex;
   background-color: rgba(78, 89, 105, 1); //var(--ifm-navbar-link-color);
   [data-theme='dark'] & {
     background-color: rgba(255, 255, 255, 0.7);
   }
   mask-image: url('../img/discord-light.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+
   transition: background-color var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
   :hover {
