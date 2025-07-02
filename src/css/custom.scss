@@ -33,7 +33,7 @@
   --color-text-4: #c9cdd4;
 
   --ifm-color-primary: #4e3bf6;
-  --ifm-color-primary-hover:rgba(100, 100, 250, 1);
+  --ifm-color-primary-hover: rgba(100, 100, 250, 1);
   --ifm-color-primary-dark: #341ef5;
   --ifm-color-primary-darker: #260ff4;
   --ifm-color-primary-darkest: #1d09cc;
@@ -65,7 +65,7 @@
 
 [data-theme='dark'] {
   --ifm-color-primary: #726bff;
-  --ifm-color-primary-hover:rgba(185, 185, 250, 1);
+  --ifm-color-primary-hover: rgba(185, 185, 250, 1);
   --ifm-color-primary-dark: #5047ff;
   --ifm-color-primary-darker: #3e35ff;
   --ifm-color-primary-darkest: #0c00fd;
@@ -361,6 +361,10 @@ a:hover {
 .navbar__link {
   font-size: 14px;
   font-weight: 400;
+  font-weight: 500;
+  &--active {
+    font-weight: 600;
+  }
 }
 
 .navbar__logo img {
