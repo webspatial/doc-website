@@ -86,6 +86,8 @@
   --color-text-2: rgba(242, 246, 250, 0.7);
   --color-text-3: rgba(242, 246, 250, 0.5);
   --color-text-4: rgba(242, 246, 250, 0.3);
+
+  --ifm-navbar-background-color: #000;
 }
 @media (max-width: 576px) {
   main .container {
@@ -362,6 +364,10 @@ a:hover {
   font-size: 14px;
   font-weight: 400;
   font-weight: 500;
+  [data-theme='dark'] & {
+    color: #9f94ff;
+  }
+
   &--active {
     font-weight: 600;
   }
@@ -486,40 +492,65 @@ a:hover {
   //   }
   // }
 }
+.DocSearch.DocSearch-Button {
+  background-color: #f2f3f5;
+  [data-theme='dark'] & {
+    background-color: #2a2a2b;
+  }
 
-.DocSearch-Button-Container {
-  width: 128px;
-  > svg {
-    width: 16px;
-    height: 16px;
-    // padding: 8px;
-    > path {
-      stroke: var(--color-text-3);
+  .DocSearch-Button-Container {
+    // background-color: var(--color-fill-2);
+    // width: 158px;
+    > svg {
+      width: 16px;
+      height: 16px;
+      // padding: 8px;
+      > path {
+        stroke: var(--color-text-4);
+        [data-theme='dark'] & {
+          stroke: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+    .DocSearch-Search-Icon {
+      width: 24px;
+      height: 24px;
+      padding: 2px;
+    }
+    .DocSearch-Button-Placeholder {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-4);
+      line-height: 24px;
+      padding: 0 82px 0 2px;
+      [data-theme='dark'] & {
+        color: rgba(255, 255, 255, 0.5);
+      }
     }
   }
-  .DocSearch-Button-Placeholder {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--color-text-3);
-    line-height: 18px;
-  }
-}
 
-span.DocSearch-Button-Keys {
-  .DocSearch-Button-Key:first-child {
-    font-size: 16px;
-    padding-top: 6px;
-  }
-  .DocSearch-Button-Key {
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    border: 0.63px var(--color-text-3) solid;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: unset;
-    background: transparent;
-    top: unset; // 坑
+  span.DocSearch-Button-Keys {
+    .DocSearch-Button-Key:first-child {
+      font-size: 16px;
+      padding-top: 6px;
+    }
+    .DocSearch-Button-Key {
+      color: var(--color-text-4);
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      border: 0.63px var(--color-text-4) solid;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: unset;
+      background: transparent;
+      top: unset; // 坑
+
+      [data-theme='dark'] & {
+        color: rgba(255, 255, 255, 0.5);
+        border-color: rgba(255, 255, 255, 0.5);
+      }
+    }
   }
 }
 
