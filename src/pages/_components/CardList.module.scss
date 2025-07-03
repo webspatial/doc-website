@@ -13,7 +13,7 @@
     overflow: hidden;
     .img {
       position: relative;
-      background-size: 100%;
+      // background-size: 100%;
 
       width: 100%;
       // margin-bottom: 108px;
@@ -23,25 +23,10 @@
         height: 100%;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
-        background-size: cover;
+        background-image: var(--h5-url);
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-
-        @media (max-width: 576px) {
-          transform: translateY(-15px);
-          &.hotfix {
-            transform: scale(0.8);
-          }
-        }
-        @media (min-width: 577px) and (max-width: 996px) {
-          transform: scale(1.2) translateY(-10px);
-          &.hotfix {
-            transform: scale(1) translateX(-10px);
-          }
-          &.isD {
-            transform: scale(1);
-          }
-        }
 
         &.active {
           opacity: 1;
@@ -118,7 +103,11 @@
       margin-bottom: 24px;
       .img {
         height: 360px;
+        .imgItem {
+          background-image: var(--pad-url);
+        }
       }
+
       .content {
         padding: 28px;
         .title {
@@ -175,6 +164,10 @@
       width: calc((100% - 24px) / 2);
       .img {
         height: 784px;
+      }
+      .imgItem {
+        background-image: var(--h5-url);
+        background-size: contain;
       }
     }
   }
