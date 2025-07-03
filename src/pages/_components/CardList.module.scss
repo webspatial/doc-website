@@ -146,15 +146,37 @@
 
       .img {
         height: 675px;
+        .imgItem {
+          background-image: var(--pc-url);
+        }
       }
       .content {
-        padding: 40px;
+        padding: 48px;
         .title {
-          font-size: 28px;
+          font-size: 32px;
+          text-wrap: balance;
         }
         .desc {
           font-size: 16px;
+          text-wrap: balance;
         }
+      }
+    }
+    .wrap:nth-child(1),
+    .wrap:nth-child(4) {
+      .content {
+        width: 454px;
+        padding: 48px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          90deg,
+          #323d90 0%,
+          rgba(73, 95, 145, 0) 100%
+        );
+        // backdrop-filter: blur(40px);
       }
     }
 
@@ -164,10 +186,9 @@
       width: calc((100% - 24px) / 2);
       .img {
         height: 784px;
-      }
-      .imgItem {
-        background-image: var(--h5-url);
-        background-size: contain;
+        .imgItem {
+          background-image: var(--h5-url);
+        }
       }
     }
   }
