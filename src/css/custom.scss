@@ -317,6 +317,10 @@ a:hover {
   display: none;
 }
 
+.breadcrumbs li:nth-child(2):nth-last-child(1) {
+  display: none;
+}
+
 .breadcrumbs__item:not(:last-child):after {
   margin: 0;
 }
