@@ -1,4 +1,6 @@
 .container {
+  box-sizing: content-box;
+  padding: 0 20px;
   margin: 0 auto;
   .wrap {
     position: relative;
@@ -90,7 +92,7 @@
     .wrap {
       height: 428px;
       max-width: 100%;
-      margin: 0 20px 24px;
+      margin: 0 0 24px;
       // margin-left: auto;
       // margin-right: auto;
       // margin-bottom: 24px;
