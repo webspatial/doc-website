@@ -27,15 +27,15 @@ const Slider: React.FC<Props> = ({data}) => {
         style={{backgroundImage: `url(${data[idx].imgUrl})`}}
       /> */}
       <div className={styles.btnContainer}>
+        <div className={clsx(styles.bgline)}></div>
         {data.map((item, i) => {
           return (
             <div
               key={i}
-              className={clsx(
-                styles.btn,
-                idx === i ? styles.active : '',
-                item.disable ? styles.disabled : '',
-              )}
+              className={clsx(styles.btn, {
+                [styles.active]: idx === i,
+                [styles.disabled]: item.disable,
+              })}
               onClick={(e) => {
                 if (item.disable) return;
                 setIdx(i);

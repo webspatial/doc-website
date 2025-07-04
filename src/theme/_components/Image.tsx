@@ -27,7 +27,13 @@ export default function Image({img, alt, title, ...props}) {
   return (
     <>
       <div style={{cursor: 'pointer'}} onClick={handleClick}>
-        <IdealImage img={img} alt={alt} title={title} {...props} />
+        <IdealImage
+          img={img}
+          alt={alt}
+          title={title}
+          {...props}
+          shouldAutoDownload={true}
+        />
       </div>
 
       <Lightbox

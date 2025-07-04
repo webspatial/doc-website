@@ -109,7 +109,8 @@ export default function NavbarContent(): ReactNode {
           <NavbarItems items={rightLeftItems} />
           {!hideSeparator && <Separator />}
           <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {!hideSeparator && <Separator />}
+          {/* {!hideSeparator && <Separator />} */}
+          <Separator />
           <NavbarItems items={rightRightItems} />
         </>
       }
