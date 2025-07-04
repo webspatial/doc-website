@@ -41,10 +41,10 @@ export default CardList;
 const FadeImages = ({urls, h5urls, padurls}: {urls: string[]; h5urls: string[]; padurls: string[]}) => {
   const [currentImgIndex, setCurrentImgIndex] = React.useState(0);
   React.useEffect(() => {
-    // const timer = setInterval(() => {
-    //   setCurrentImgIndex((prev) => (prev + 1) % 2);
-    // }, 3000);
-    // return () => clearInterval(timer);
+    const timer = setInterval(() => {
+      setCurrentImgIndex((prev) => (prev + 1) % 2);
+    }, 3000);
+    return () => clearInterval(timer);
   }, []);
 
   return (
