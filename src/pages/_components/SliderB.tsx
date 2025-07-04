@@ -25,7 +25,7 @@ const SliderB: React.FC<Props> = ({data}) => {
       <div className={styles.topWrap}>
         <div
           className={styles.imgContainer}
-          style={{transform: `translateX(-${idx * 100}%)`}}>
+          style={{transform: `translateX(calc(-${idx * 100}% - ${idx * 20}px))`}}>
           {data.map((item, i) => (
             <div
               key={i}
