@@ -368,9 +368,9 @@ a:hover {
   font-size: 14px;
   font-weight: 400;
   font-weight: 500;
-  [data-theme='dark'] & {
-    color: #9f94ff;
-  }
+  // [data-theme='dark'] & {
+  //   color: #9f94ff;
+  // }
 
   &--active {
     font-weight: 600;
