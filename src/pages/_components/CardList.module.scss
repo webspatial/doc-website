@@ -165,6 +165,7 @@
     .wrap:nth-child(1),
     .wrap:nth-child(4) {
       .content {
+        box-sizing: content-box;
         width: 454px;
         padding: 48px;
         top: 0;
