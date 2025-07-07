@@ -151,7 +151,9 @@
 .imgContainer {
   display: flex; /* 让图片横向排列 */
   transition: transform 0.4s ease-in-out; /* 滑动动画 */
+  transform: var(--h5-transform);
   @media (min-width: 577px) {
     gap: 20px;
+    transform: var(--pc-transform);
   }
 }
