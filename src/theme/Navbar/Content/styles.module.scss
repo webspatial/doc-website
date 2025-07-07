@@ -31,6 +31,9 @@ See https://github.com/facebook/docusaurus/pull/11142
   width: 1px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.32);
+  html[data-theme='light'] & {
+    background-color: rgba(229, 230, 235, 1);
+  }
   margin-right: 16px;
   @media (max-width: 996px) {
     display: none;
