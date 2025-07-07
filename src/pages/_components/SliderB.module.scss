@@ -78,6 +78,13 @@
     // border: solid 1px red;
     overflow: hidden;
   }
+
+  .img {
+    @media (min-width: 1281px) {
+      border-radius: 32px;
+      overflow: hidden;
+    }
+  }
 }
 
 .title {
