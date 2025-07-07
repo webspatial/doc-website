@@ -6,22 +6,32 @@
   flex-direction: column;
   align-items: center;
 
+  // @media (max-width: 576px) {
+    
+  // }
+
   @media (min-width: 577px) and (max-width: 996px) {
-    // margin: 0 80px;
+    padding: 0 80px;
+    // max-width: 640px;
+    // margin: 0 20px;
     .img {
       max-height: 360px;
     }
   }
   @media (min-width: 997px) and (max-width: 1280px) {
-    margin: 0 120px;
+    padding: 0 80px;
+    // max-width: 1040px;
+    // margin: 0 auto;
+    // margin: 0 120px;
     .img {
       max-height: 473px;
     }
   }
   @media (min-width: 1281px) {
-    max-width: 1680px; // fixme: overflow?
-    margin: 0 auto;
+    // fixme: overflow?
+    margin: 0 120px;
     .img {
+      max-width: 1680px;
       max-height: 600px;
     }
   }

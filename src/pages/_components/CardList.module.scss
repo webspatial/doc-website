@@ -96,7 +96,8 @@
     }
   }
   @media (min-width: 577px) and (max-width: 996px) {
-    max-width: 640px;
+    padding: 0 80px;
+    // max-width: 640px;
     .wrap {
       margin-left: auto;
       margin-right: auto;
@@ -117,7 +118,8 @@
     }
   }
   @media (min-width: 997px) and (max-width: 1280px) {
-    max-width: 840px;
+    // max-width: 840px;
+    padding: 0 80px;
     .wrap {
       margin-bottom: 24px;
       .img {
@@ -137,8 +139,10 @@
       }
     }
   }
+  
   @media (min-width: 1281px) {
-    max-width: 1200px;
+    padding: 0 120px;
+    max-width: 1280px;
     gap: 24px;
     display: flex;
     flex-wrap: wrap;
