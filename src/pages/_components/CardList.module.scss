@@ -122,6 +122,9 @@
       margin-bottom: 24px;
       .img {
         height: 480px;
+        .imgItem {
+          background-image: var(--pad-url);
+        }
       }
       .content {
         padding: 40px;
@@ -187,9 +190,9 @@
       width: calc((100% - 24px) / 2);
       .img {
         height: 784px;
-        .imgItem {
-          background-image: var(--h5-url);
-        }
+        // .imgItem {
+          // background-image: var(--h5-url);
+        // }
       }
     }
   }
