@@ -275,7 +275,7 @@ a:hover {
     margin-bottom: 12px;
     line-height: 175%;
     code {
-      padding: 5px;
+      padding: 2px 5px;
     }
   }
 
@@ -283,10 +283,10 @@ a:hover {
     text-decoration: none;
   }
 
-  ul {
+  ul,ol {
     margin-bottom: 12px;
     code {
-      padding: 5px;
+      padding: 2px 5px;
     }
   }
 

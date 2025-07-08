@@ -6,7 +6,7 @@
 }
 
 .codeBlockTitle {
-  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  border-bottom: 1px solid var(--ifm-color-emphasis-800);
   /* font-size: var(--ifm-code-font-size); */
   font-size: 12px;
   font-weight: 500;
