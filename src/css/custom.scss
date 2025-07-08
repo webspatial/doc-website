@@ -274,8 +274,14 @@ a:hover {
   > p {
     margin-bottom: 12px;
     line-height: 175%;
+    // code {
+    //   padding: 2px 5px;
+    // }
+  }
+
+  p {
     code {
-      padding: 5px;
+      padding: 2px 5px;
     }
   }
 
@@ -283,15 +289,16 @@ a:hover {
     text-decoration: none;
   }
 
-  ul {
+  ul,
+  ol {
     margin-bottom: 12px;
     code {
-      padding: 5px;
+      padding: 2px 5px;
     }
   }
 
   .theme-code-block {
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
     box-shadow: none;
   }
 
@@ -1567,7 +1574,7 @@ a[href$='blog/authors'] {
 .tabs-container {
   border-radius: 16px;
   overflow: hidden;
-  background-color: rgb(24, 24, 27);
+  background-color: rgb(40, 44, 52);
   .tabs {
     margin-bottom: 0;
     background-color: rgb(40, 44, 52);
