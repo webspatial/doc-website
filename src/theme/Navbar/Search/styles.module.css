@@ -9,7 +9,7 @@ See https://github.com/facebook/docusaurus/pull/9385
 @media (max-width: 996px) {
   .navbarSearchContainer {
     position: absolute;
-    right: 42px; 
+    right: 42px;
     /* var(--ifm-navbar-padding-horizontal); */
   }
 }

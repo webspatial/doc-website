@@ -24,12 +24,22 @@ const SliderB: React.FC<Props> = ({data}) => {
     <div className={styles.slider}>
       <div className={styles.topWrap}>
         <div
-          className={styles.img}
-          style={{backgroundImage: `url(${data[idx].imgUrl})`}}
-        />
-        {/* <div className={styles.placeholder}> */}
-        {/* <div className={styles.title}>{data[idx].title}</div> */}
-        {/* </div> */}
+          className={styles.imgContainer}
+          style={{
+            //@ts-ignore
+            '--pc-transform': `translateX(calc(-${idx * 100}% - ${
+              idx * 20
+            }px))`,
+            '--h5-transform': `translateX(calc(-${idx * 100}%))`,
+          }}>
+          {data.map((item, i) => (
+            <div
+              key={i}
+              className={styles.img}
+              style={{backgroundImage: `url(${item.imgUrl})`}}
+            />
+          ))}
+        </div>
       </div>
 
       <div className={styles.btnContainer}>
