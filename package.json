@@ -2,6 +2,7 @@
   "name": "doc-website",
   "version": "0.0.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "link:xrsdk": "bash scripts/link-xrsdk.sh",
     "postinstall": "npm run link:xrsdk",
