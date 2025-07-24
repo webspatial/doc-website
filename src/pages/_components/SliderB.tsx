@@ -1,6 +1,7 @@
-import React from 'react';
 import styles from './SliderB.module.scss';
 import clsx from 'clsx';
+import React, {useEffect, useRef} from 'react';
+
 type Props = {
   data: {
     title: string;
@@ -11,6 +12,29 @@ type Props = {
 };
 const SliderB: React.FC<Props> = ({data}) => {
   const [idx, setIdx] = React.useState(0);
+  const imgRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const img = entry.target as HTMLElement;
+          const src = img.dataset.src;
+          if (src) {
+            img.style.backgroundImage = `url(${src})`;
+            observer.unobserve(img);
+          }
+        }
+      });
+    });
+
+    imgRefs.current.forEach((el) => el && observer.observe(el));
+
+    return () => {
+      imgRefs.current.forEach((el) => el && observer.disconnect());
+      observer.disconnect();
+    };
+  }, []);
 
   const hasPre = idx > 0;
   const hasNext = idx < data.length - 1;
@@ -35,8 +59,10 @@ const SliderB: React.FC<Props> = ({data}) => {
           {data.map((item, i) => (
             <div
               key={i}
+              //@ts-ignore
+              ref={(el) => (imgRefs.current[i] = el)}
               className={styles.img}
-              style={{backgroundImage: `url(${item.imgUrl})`}}
+              data-src={item.imgUrl}
             />
           ))}
         </div>
