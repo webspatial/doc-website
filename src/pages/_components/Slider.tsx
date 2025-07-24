@@ -11,15 +11,46 @@ type Props = {
 };
 const Slider: React.FC<Props> = ({data}) => {
   const [idx, setIdx] = React.useState(2);
+  const videoRef = React.useRef<HTMLVideoElement>(null);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            videoRef.current?.play().catch(() => {});
+          } else {
+            videoRef.current?.pause();
+            videoRef.current && (videoRef.current.currentTime = 0); // 重置播放进度
+          }
+        });
+      },
+      {
+        threshold: 0.5, // 当50%进入视口时触发
+      },
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, [idx]);
+
   return (
     <div className={styles.slider}>
       <div className={styles.img}>
         <video
+          ref={videoRef}
           className={styles.video}
           src={data[idx].imgUrl}
-          autoPlay
           muted
           loop
+          preload="none"
         />
       </div>
       {/* <div
