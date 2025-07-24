@@ -23,7 +23,7 @@ async function checkFolder(originPath, tempPath){
         }
         else if(file.includes(".png") || file.includes(".jpg") || file.includes(".jpeg")){
         // if(file.includes(".png")){
-            if(await transImg(originPath + "/" + file, tempPath + "/" + file), file.includes(".png")){
+            if(await transImg(originPath + "/" + file, tempPath + "/" + file, file.includes(".png"))){
                 console.log(file);
             }
         }
