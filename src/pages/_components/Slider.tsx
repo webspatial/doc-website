@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Slider.module.scss';
 import clsx from 'clsx';
+import {useWindowSize} from '@docusaurus/theme-common';
 type Props = {
   data: {
     title: string;
@@ -12,8 +13,19 @@ type Props = {
 const Slider: React.FC<Props> = ({data}) => {
   const [idx, setIdx] = React.useState(2);
   const videoRef = React.useRef<HTMLVideoElement>(null);
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  const windowSize = useWindowSize();
 
   React.useEffect(() => {
+    if (windowSize == 'mobile' && !isMobile) {
+      setIsMobile(true);
+    }
+  }, [windowSize]);
+
+  React.useEffect(() => {
+    if (isMobile) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -39,7 +51,7 @@ const Slider: React.FC<Props> = ({data}) => {
         observer.unobserve(videoRef.current);
       }
     };
-  }, [idx]);
+  }, [idx, isMobile]);
 
   return (
     <div className={styles.slider}>
@@ -50,7 +62,8 @@ const Slider: React.FC<Props> = ({data}) => {
           src={data[idx].imgUrl}
           muted
           loop
-          preload="none"
+          preload="metadata"
+          autoPlay={isMobile}
         />
       </div>
       {/* <div
