@@ -8,6 +8,7 @@ type Props = {
     imgUrl: string;
     desc?: string;
     disable?: boolean;
+    poster?: string;
   }[];
 };
 const Slider: React.FC<Props> = ({data}) => {
@@ -22,29 +23,6 @@ const Slider: React.FC<Props> = ({data}) => {
 
   const [usePoster, setUsePoster] = React.useState(true);
 
-  const [poster, setPoster] = React.useState<string | undefined>(null);
-  React.useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    // 动态抓取
-    const onMeta = () => {
-      video.currentTime = 0.1;
-    };
-    const onSeeked = () => {
-      const canvas = document.createElement('canvas');
-      canvas.width = video.videoWidth;
-      canvas.height = video.videoHeight;
-      canvas.getContext('2d')!.drawImage(video, 0, 0);
-      setPoster(canvas.toDataURL('image/jpeg'));
-      video.removeEventListener('loadedmetadata', onMeta);
-      video.removeEventListener('seeked', onSeeked);
-      video.currentTime = 0;
-    };
-    video.addEventListener('loadedmetadata', onMeta);
-    video.addEventListener('seeked', onSeeked);
-    video.load();
-  }, []);
 
   React.useEffect(() => {
     if (windowSize === 'ssr') return;
@@ -92,7 +70,7 @@ const Slider: React.FC<Props> = ({data}) => {
     <div className={styles.slider}>
       <div className={styles.img}>
         <video
-          poster={usePoster ? poster : null}
+          poster={data[idx].poster ? data[idx].poster : null}
           ref={videoRef}
           playsInline
           className={styles.video}
