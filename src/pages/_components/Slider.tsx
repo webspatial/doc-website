@@ -13,19 +13,53 @@ type Props = {
 const Slider: React.FC<Props> = ({data}) => {
   const [idx, setIdx] = React.useState(2);
   const videoRef = React.useRef<HTMLVideoElement>(null);
-  const [isMobile, setIsMobile] = React.useState(false);
 
-  // const windowSize = useWindowSize();
+  const [shouldAutoplay, setShouldAutoplay] = React.useState(false);
 
-  // React.useEffect(() => {
-  //   if (windowSize == 'mobile' && !isMobile) {
-  //     setIsMobile(true);
-  //   }
-  // }, [windowSize]);
+  const windowSize = useWindowSize();
+
+  const isMobile = windowSize === 'mobile';
+
+  const [usePoster, setUsePoster] = React.useState(true);
+
+  const [poster, setPoster] = React.useState<string | undefined>(null);
+  React.useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // 动态抓取
+    const onMeta = () => {
+      video.currentTime = 0.1;
+    };
+    const onSeeked = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      canvas.getContext('2d')!.drawImage(video, 0, 0);
+      setPoster(canvas.toDataURL('image/jpeg'));
+      video.removeEventListener('loadedmetadata', onMeta);
+      video.removeEventListener('seeked', onSeeked);
+      video.currentTime = 0;
+    };
+    video.addEventListener('loadedmetadata', onMeta);
+    video.addEventListener('seeked', onSeeked);
+    video.load();
+  }, []);
 
   React.useEffect(() => {
-    console.log("🚀 ~ Slider ~ isMobile:", isMobile)
-    if (isMobile) return;
+    if (windowSize === 'ssr') return;
+
+    const listener = () => {
+      videoRef.current?.play();
+      setShouldAutoplay(true);
+      setUsePoster(false);
+    };
+    if (isMobile) {
+      document.addEventListener('touchstart', listener);
+      return () => {
+        document.removeEventListener('touchstart', listener);
+      };
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -52,18 +86,21 @@ const Slider: React.FC<Props> = ({data}) => {
         observer.unobserve(videoRef.current);
       }
     };
-  }, [idx, isMobile]);
+  }, [idx, windowSize]);
 
   return (
     <div className={styles.slider}>
       <div className={styles.img}>
         <video
+          poster={usePoster ? poster : null}
           ref={videoRef}
+          playsInline
           className={styles.video}
           src={data[idx].imgUrl}
           muted
           loop
-          preload="none"
+          preload="metadata"
+          autoPlay={shouldAutoplay}
           // autoPlay={isMobile}
         />
       </div>
