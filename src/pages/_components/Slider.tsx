@@ -15,15 +15,16 @@ const Slider: React.FC<Props> = ({data}) => {
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const [isMobile, setIsMobile] = React.useState(false);
 
-  const windowSize = useWindowSize();
+  // const windowSize = useWindowSize();
+
+  // React.useEffect(() => {
+  //   if (windowSize == 'mobile' && !isMobile) {
+  //     setIsMobile(true);
+  //   }
+  // }, [windowSize]);
 
   React.useEffect(() => {
-    if (windowSize == 'mobile' && !isMobile) {
-      setIsMobile(true);
-    }
-  }, [windowSize]);
-
-  React.useEffect(() => {
+    console.log("🚀 ~ Slider ~ isMobile:", isMobile)
     if (isMobile) return;
 
     const observer = new IntersectionObserver(
@@ -62,8 +63,8 @@ const Slider: React.FC<Props> = ({data}) => {
           src={data[idx].imgUrl}
           muted
           loop
-          preload="metadata"
-          autoPlay={isMobile}
+          preload="none"
+          // autoPlay={isMobile}
         />
       </div>
       {/* <div
