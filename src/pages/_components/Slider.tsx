@@ -69,7 +69,7 @@ const Slider: React.FC<Props> = ({data}) => {
     <div className={styles.slider}>
       <div className={styles.img}>
         <video
-          poster={data[idx].poster && idx === 2 ? data[idx].poster : null}
+          poster={data[idx].poster ? data[idx].poster : null}
           ref={videoRef}
           playsInline
           className={styles.video}
