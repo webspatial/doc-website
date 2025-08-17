@@ -28,7 +28,10 @@ You can follow this doc to build the demo from scratch, or just grab the ready-m
 
 ## 1. Create a modern web project that supports WebSpatial {#create-project}
 
-First confirm that Node.js is installed (see the [Node.js official website](https://nodejs.org/en/download)).
+First confirm 
+1. Node.js is installed (see the [Node.js official website](https://nodejs.org/en/download)).
+2. make sure you choose Apple Vision Pro simulator installed.
+Since our first version will only support Apple vision pro, we aim to support more platform later, as a result, go to App Store search Xcode, download and install Xcode, make sure you choose Apple Vision Pro simulator installed and you can run your first Apple Vision Pro app.
 
 Using a standard React + Vite + TypeScript project as an example, run the following commands to create the project:
 
