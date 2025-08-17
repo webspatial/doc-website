@@ -40,10 +40,15 @@ npx create-vite --template react-ts
 See [what kinds of web projects are considered WebSpatial-supported](/docs/development-guide/web-projects-that-support-webspatial) for details.
 :::
 
-In the project root, install the dependencies:
+After run the above commend, you should see 3 commends in terminal that you should run after you create your projct. Just like the screenshot shows below:
+<Image img={require("/assets/quick_v2/18.png")} alt="Scene Example 2" /> // please wait to review this PR before I uploaded the 18.png
+
+Those 3 lines tell you to open the project root (in the example shows up above, the project root is test-jul17), install the dependencies, and run your dev server to start your 2D webSite:
 
 ```bash npm2yarn
+cd YOUR_PROJECT_PATH
 npm install
+npm run dev
 ```
 
 ## 2. Install the WebSpatial SDK {#install-sdk}
