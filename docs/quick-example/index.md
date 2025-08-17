@@ -432,7 +432,7 @@ html.is-spatial {
 
 ## 9. Elevate spatialized elements {#elevation}
 
-Mark the description text inside `count-card` as a [spatialized HTML element](/docs/core-concepts/spatialized-elements-and-3d-container-elements).
+In src/App.tsx, Mark the description text inside `count-card` as a [spatialized HTML element](/docs/core-concepts/spatialized-elements-and-3d-container-elements).
 
 ```jsx
 //diff-remove
