@@ -48,6 +48,10 @@ npm install
 
 ## 2. Install the WebSpatial SDK {#install-sdk}
 
+Run the following commend under your project root:
+
+> Check the [video tutorial at 0:26](https://www.youtube.com/watch?v=UKx9EZtmtHU&t=26s)
+
 ```bash npm2yarn
 npm install --save @webspatial/react-sdk @webspatial/core-sdk @google/model-viewer three
 npm install --save-dev @webspatial/builder @webspatial/platform-visionos @webspatial/vite-plugin vite-plugin-html
@@ -141,6 +145,8 @@ Steps:
 
 Run the [development command (`run`)](/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps#run) of the packaging tool:
 
+> Check the [video tutorial at 3:22](https://www.youtube.com/watch?v=UKx9EZtmtHU&t=202s)
+
 ```bash npm2yarn
 npx webspatial-builder run --base=$XR_DEV_SERVER
 ```
@@ -191,6 +197,9 @@ If the issue persists, delete `node_modules` in the project and reinstall depend
 First add a new page. In this demo we use client-side routing.
 
 Create `src/SecondPage.tsx`.
+
+> Check [the sample code in GitHub for this step](https://github.com/webspatial/quick-example/blob/main/src/SecondPage.tsx) if you have any question about the code you need to add.
+
 
 ```jsx
 import { useState } from "react";
