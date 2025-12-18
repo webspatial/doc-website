@@ -9,6 +9,7 @@ Use a minimal example to get a quick feel for the actual results and development
 - To make sure everything runs properly, please follow each step exactly - many of them are absolutely essential.
 - This document includes detailed links, feel free to skip them for a quick example run.
 - After you have completed the demo, you can dive into [the real development guide](/docs/development-guide/).
+- To develop on Apple Vision Pro, please ensure you are using the latest versions of visionOS and Xcode.
 
 :::
 
