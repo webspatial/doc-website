@@ -179,3 +179,5 @@ Before visionOS, apps on XR platforms were **completely different** from apps on
 </div>
 
 From the comparison above, we can see that besides the three main advantages mentioned in [the previous section](/docs/introduction/new-powers-for-xr-apps), **traditional XR apps have downsides both in terms of user experience and development, losing many benefits of desktop/mobile apps**. Traditional XR development could not reuse existing app code, tools, and programming mindsets from mainstream platforms. This makes it harder to support diverse use cases and business domains, leads to fewer developers, and raises both the entry barrier and development costs.
+
+---*Note: Some illustrations in this article are sourced from Apple official documentation and visionOS app screenshots. All copyrights belong to their respective owners.*
