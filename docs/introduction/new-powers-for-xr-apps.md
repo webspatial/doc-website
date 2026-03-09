@@ -64,3 +64,6 @@ Interaction gains more possibilities: it is more natural and intuitive, more fle
     <Image img={require("/assets/intro/intro-1-8.jpg")} alt="intro-1-8" />
   </div>
 </div>
+
+---
+*Note: Some illustrations in this article are sourced from Apple official documentation and visionOS app screenshots. All copyrights belong to their respective owners.*
