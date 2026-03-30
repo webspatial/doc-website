@@ -41,19 +41,6 @@ npx create-vite --template react-ts
 See [what kinds of web projects are considered WebSpatial-supported](/docs/development-guide/web-projects-that-support-webspatial) for details.
 :::
 
-After the above command is completed, navigate to the project root directory and install the dependencies:
-
-```bash npm2yarn
-cd YOUR_PROJECT_PATH
-npm install
-```
-
-Then you can run the Dev Server to confirm everything works (remember to turn off this server before proceeding with the subsequent steps):
-
-```bash npm2yarn
-npm run dev
-```
-
 ## 2. Install the WebSpatial SDK {#install-sdk}
 
 Run the following commend under your project root:
@@ -80,7 +67,7 @@ First modify `tsconfig.app.json` and `tsconfig.node.json`, adding the configurat
     "jsxImportSource": "@webspatial/react-sdk",
 ```
 
-Run [the Dev Server for desktop/mobile and other non-XR platforms](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website#regular-dev-server) (keep it running in the following steps):
+Run [the Dev Server](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/generate-a-webspatial-specific-website#regular-dev-server) (keep it running in the following steps):
 
 ```bash npm2yarn
 npm run dev
@@ -297,13 +284,16 @@ Click the button and see that the [default size](/docs/core-concepts/scenes-and-
 
 ## 8. Add material backgrounds {#material-background}
 
-Edit the `index.html` file to [add a special classname to the `<html>` element](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode#css-solution) when this web code is executed as a WebSpatial app.
+Edit the `main.tsx` file to [add a special classname to the `<html>` element](/docs/development-guide/enabling-webspatial-in-web-projects/step-3-integrate-webspatial-sdk-into-web-build-tools/check-if-running-in-webspatial-mode#css-solution) when this web code is executed as a WebSpatial app.
 
-```js
+```jsx
+//diff-add
+import { Spatial } from "@webspatial/core-sdk";
+
 //diff-add
 if (Spatial.prototype.runInSpatialWeb()) {
 //diff-add
-  document.documentElement.classList.add("isSpatial");
+  document.documentElement.classList.add("is-spatial");
 //diff-add
 }
 ```
