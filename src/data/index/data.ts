@@ -16,15 +16,18 @@ export default {
     children: [
       {
         title: 'Large Screen',
-        imgUrl: '/video/large.mp4', //getFakeImg(800, 400),
+        imgUrl: 'https://static.webspatial.dev/large.mp4',
+        poster: 'https://static.webspatial.dev/large-thumb.jpg',
       },
       {
         title: 'Small Screen',
-        imgUrl: '/video/small.mp4', //getFakeImg(700, 500),
+        imgUrl: 'https://static.webspatial.dev/small.mp4',
+        poster: 'https://static.webspatial.dev/small-thumb.jpg',
       },
       {
         title: 'visionOS',
-        imgUrl: '/video/visionOS.mp4', // getFakeImg(600, 400),
+        imgUrl: 'https://static.webspatial.dev/visionOS.mp4',
+        poster: 'https://static.webspatial.dev/visionOS-thumb.jpg',
       },
       {
         title: 'Android XR',
