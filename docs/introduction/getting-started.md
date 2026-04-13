@@ -42,7 +42,7 @@ WebSpatial is a set of [minimal extensions to HTML/CSS/DOM APIs](https://tpac202
 
 ## Supported Web Projects
 
-The open-source [WebSpatial SDK](#webspatial-sdk) currently provides a [React SDK](/docs/api/react-sdk/). Any standard website project built with React should be able to enable the [WebSpatial API](#webspatial-api) by integrating this SDK.
+The open-source [WebSpatial SDK](#webspatial-sdk) currently provides a [React SDK](../api/react-sdk/). Any standard website project built with React should be able to enable the [WebSpatial API](#webspatial-api) by integrating this SDK.
 
 The React SDK needs to be integrated into the [JSX Runtime](https://www.typescriptlang.org/docs/handbook/jsx.html). In React projects that use TypeScript, this requires only [one line of configuration](#set-up-your-project) (a few web build tools need [extra configuration](../how-to/rspack.md)). In JavaScript projects, you [can only configure the JSX Runtime in the web build tool](../how-to/non-ts.md).
 The web build tools that have been tested and used most often so far are:
