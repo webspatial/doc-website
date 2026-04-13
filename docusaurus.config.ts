@@ -194,6 +194,20 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'latest',
+              badge: false,
+            },
+            '1.0.x': {
+              label: '1.0.x',
+              path: '1.0.x',
+              banner: 'unmaintained',
+              badge: false,
+              noIndex: true,
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: false,
@@ -277,11 +291,12 @@ const config: Config = {
           position: 'right',
           group: 'left',
         },
-        // {
-        //   type: 'docsVersionDropdown',
-        //   versions: ['current'],
-        //   position: 'right',
-        // },
+        {
+          type: 'docsVersionDropdown',
+          dropdownActiveClassDisabled: true,
+          position: 'right',
+          group: 'left',
+        },
 
         // {
         //   type: 'localeDropdown',
