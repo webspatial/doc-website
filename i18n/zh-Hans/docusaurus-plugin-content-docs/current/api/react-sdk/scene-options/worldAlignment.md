@@ -4,23 +4,27 @@ sidebar_position: 5
 
 # `worldAlignment`
 
-[空间场景](../../../concepts/spatial-scenes.md)的[初始化属性](../../../concepts/spatial-scenes.md#scene-initialization)之一，`worldAlignment` 会影响空间场景创建后被用户拖拽在垂直方向上移动位置时的行为。
+[空间场景](../../../concepts/spatial-scenes.md)的[初始化属性](../../../concepts/spatial-scenes.md#scene-initialization)之一，`worldAlignment` 会影响空间场景创建后被用户拖拽在垂直方向上移动时的行为。
+只有 `volume` 类型的空间场景才支持 `worldAlignment`。
 
-只有 `volume` 类型的空间场景才支持设置 `worldAlignment`。
+## 适用范围与设置方式 {#declared-in}
 
-## 声明位置 {#declared-in}
+| 项目 | 内容 |
+| --- | --- |
+| 适用于 | 仅适用于 `volume` 类型空间场景。 |
+| 新场景 | 通过 [`initScene`](../js-api/initScene.md) 设置。 |
+| 起始场景 | 通过 [Web App Manifest](../manifest-options/main-scene.md) 设置。 |
+| 默认值 | `"automatic"` |
 
-对于 WebSpatial App 里[新创建的空间场景](../../../concepts/spatial-scenes.md#new-scenes)，初始化属性要通过 [`initScene`](../js-api/initScene.md) API 来设置。
-
-对于[起始场景](../../../concepts/spatial-scenes.md#start-scene)，初始化属性要[通过 Web App Manifest 设置](../manifest-options/main-scene.md)。
-
-## 类型 {#type}
+## 类型定义 {#type}
 
 `"automatic" | "gravityAligned"`
 
-通过 `initScene` 设置新场景的示例：
+## 示例
 
-```js
+### 使用 `initScene`
+
+```js title="通过 initScene 设置新场景的 worldAlignment" {6-7}
 import { initScene } from "@webspatial/react-sdk";
 
 initScene("newSceneName", defaultConfig => {
@@ -33,11 +37,13 @@ initScene("newSceneName", defaultConfig => {
 window.open(newSceneUrl, "newSceneName");
 ```
 
-通过 Web App Manifest 设置初始场景的示例：
+### 使用 Web App Manifest
 
-> 注意：在 Web App Manifest 里，属性名建议从驼峰（`worldAlignment`）改成全小写、下划线分隔（`world_alignment`）。
+:::caution[Manifest 属性命名]
+在 Web App Manifest 里，建议把 `worldAlignment` 这样的驼峰属性名改成 `world_alignment` 这样的全小写下划线写法。
+:::
 
-```json
+```json title="通过 Web App Manifest 设置起始场景的 world_alignment" {5-6}
 {
   "name": "example app",
   "start_url": "/",
@@ -54,5 +60,7 @@ window.open(newSceneUrl, "newSceneName");
 
 ## 可接受的值 {#accepted-values}
 
-- `"automatic"`: 在上下移动过程中会自动倾斜保持始终面朝用户
-- `"gravityAligned"`: 在上下移动过程中不自动倾斜，始终对齐重力方向，跟现实世界中的物体一样
+| 取值 | 含义 |
+| --- | --- |
+| `"automatic"` | 上下移动时会自动倾斜，始终朝向用户。 |
+| `"gravityAligned"` | 上下移动时不会自动倾斜，始终和重力方向对齐，更像现实世界中的物体。 |

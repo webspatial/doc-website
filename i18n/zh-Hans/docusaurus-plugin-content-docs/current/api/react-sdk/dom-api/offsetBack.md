@@ -20,7 +20,9 @@ sidebar_position: 2
 
 ## 语法 {#syntax}
 
+:::caution[标准化完成前的临时 DOM 命名]
 WebSpatial API 中的 DOM 属性在标准化完成前，需要加上 `xr` 前缀并把原有的首字母改成大写，因此 `offsetBack` 的属性名要写成 `xrOffsetBack`。
+:::
 
 ## 读写语义 {#read--write-semantics}
 

@@ -24,8 +24,10 @@ CSS 中的 `width` 和 `height` 会影响这个背板（2D 面片）的尺寸，
 
 ## 语法 {#syntax}
 
+:::caution[标准化完成前的临时 CSS 命名]
 WebSpatial API 中的 CSS 属性在标准化完成前，需要加上 `-xr-` 前缀。
 在 WebSpatial SDK 当前的实现中，出于性能考虑，是用 CSS 自定义变量来实现新的 CSS API，因此 `depth` 的属性名在 CSS 样式和 `style` 属性里都要写成 `--xr-depth`。
+:::
 
 示例：
 
@@ -91,7 +93,9 @@ export default function ProductPreview() {
 
 在 WebSpatial SDK 当前的实现中，暂时不支持在 CSS 动画中使用 `depth` 属性。
 
-> 空间化 HTML 元素整体目前都不支持 CSS 动画。
+:::caution[当前限制]
+空间化 HTML 元素整体目前都不支持 CSS 动画。
+:::
 
 `depth` 支持 JS 动画的实现方式，可以对一个元素用 JS 反复修改 style 属性里 `--xr-depth` 的值。
 

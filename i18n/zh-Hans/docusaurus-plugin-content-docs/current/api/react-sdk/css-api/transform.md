@@ -76,7 +76,9 @@ transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
 
 在 WebSpatial SDK 当前的实现中，暂时不支持在 CSS 动画中使用 Spatial Transform 的属性。
 
-> 空间化 HTML 元素整体目前都不支持 CSS 动画。
+:::caution[当前限制]
+空间化 HTML 元素整体目前都不支持 CSS 动画。
+:::
 
 Spatial Transform 支持 JS 动画的实现方式，可以对一个元素用 JS 反复修改 style 属性里 Spatial Transform 值。
 

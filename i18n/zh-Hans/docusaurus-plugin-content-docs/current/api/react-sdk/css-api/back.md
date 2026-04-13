@@ -27,10 +27,13 @@ sidebar_position: 1
 `back` 跟 `position: absolute` 组合使用时，可以理解为让当前元素相对于父层级中最近的[空间化 HTML 元素](../../../concepts/spatialized-html-elements.md)对应的 2D 平面进行定位，如果父层级中没有空间化 HTML 元素，就会相对于当前网页对应的 2D 平面进行定位。
 等价于让当前元素相对于元素原本所在的 2D 平面进行定位。
 
-> 这个理解方式不违背现有 Web 标准：
-> 在 Web 标准中，inset 属性在跟 `position: absolute` 或 `position: fixed` 组合使用时，元素是相对于父层级中距离最近的 [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Containing_block#identifying_the_containing_block)（可理解为 `position` 值不是 `static` 的元素）进行定位。
-> 一个 HTML 元素被标记为空间化 HTML 元素后，就自动成为了 containing block，相当于被设置为 `position: relative`。
-> 如果当前元素和父层级中最近的空间化 HTML 元素之间还有其他 `position: relative` 的父元素，由于这个父元素不是空间化 HTML 元素，不能「浮起」，所以一定位于父层级中最近的空间化 HTML 元素对应的 2D 平面上，`back` 的最终结果都是相对于这个 2D 平面进行定位。
+:::info[为什么这仍然符合现有 Web 标准]
+在 Web 标准中，inset 属性在跟 `position: absolute` 或 `position: fixed` 组合使用时，元素是相对于父层级中距离最近的 [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Containing_block#identifying_the_containing_block)（可理解为 `position` 值不是 `static` 的元素）进行定位。
+
+一个 HTML 元素被标记为空间化 HTML 元素后，就自动成为了 containing block，相当于被设置为 `position: relative`。
+
+如果当前元素和父层级中最近的空间化 HTML 元素之间还有其他 `position: relative` 的父元素，由于这个父元素不是空间化 HTML 元素，不能「浮起」，所以一定位于父层级中最近的空间化 HTML 元素对应的 2D 平面上，`back` 的最终结果都是相对于这个 2D 平面进行定位。
+:::
 
 `back` 跟 `position: fixed` 组合使用时，当前元素始终相对于 [initial containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_display/Containing_block#identifying_the_containing_block) （也就是 `<html>` 元素，相当于当前网页对应的 2D 平面）进行定位，并且不会随页面滚动。
 
@@ -38,8 +41,10 @@ sidebar_position: 1
 
 ## 语法 {#syntax}
 
+:::caution[标准化完成前的临时 CSS 命名]
 WebSpatial API 中的 CSS 属性在标准化完成前，需要加上 `-xr-` 前缀。
 在 WebSpatial SDK 当前的实现中，出于性能考虑，是用 CSS 自定义变量来实现新的 CSS API，因此 `back` 的属性名在 CSS 样式和 `style` 属性里都要写成 `--xr-back`。
+:::
 
 示例：
 
@@ -121,7 +126,9 @@ export default function Demo() {
 
 在 WebSpatial SDK 当前的实现中，暂时不支持在 CSS 动画中使用 `back` 属性。
 
-> 空间化 HTML 元素整体目前都不支持 CSS 动画。
+:::caution[当前限制]
+空间化 HTML 元素整体目前都不支持 CSS 动画。
+:::
 
 `back` 支持 JS 动画的实现方式，可以对一个元素用 JS 反复修改 style 属性里 `--xr-back` 的值。
 

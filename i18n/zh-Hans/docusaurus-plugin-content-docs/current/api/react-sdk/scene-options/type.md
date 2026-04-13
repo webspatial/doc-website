@@ -4,21 +4,26 @@ sidebar_position: 1
 
 # `type`
 
-在 [空间场景](../../../concepts/spatial-scenes.md)的[初始化环节](../../../concepts/spatial-scenes.md#scene-initialization)，可以设置[场景类型](../../../concepts/spatial-scenes.md#scene-type)。
+在[空间场景](../../../concepts/spatial-scenes.md)的[初始化环节](../../../concepts/spatial-scenes.md#scene-initialization)，可以设置[场景类型](../../../concepts/spatial-scenes.md#scene-type)。
 
-## 声明位置 {#declared-in}
+## 适用范围与设置方式 {#declared-in}
 
-对于 WebSpatial App 里[新创建的空间场景](../../../concepts/spatial-scenes.md#new-scenes)，场景类型要通过 [`initScene`](../js-api/initScene.md) API 来设置。
+| 项目 | 内容 |
+| --- | --- |
+| 适用于 | 所有空间场景。 |
+| 新场景 | 在调用 [`initScene`](../js-api/initScene.md) 后、执行 `window.open(...)` 前设置。 |
+| 起始场景 | 通过 [Web App Manifest](../manifest-options/main-scene.md) 设置。 |
+| 默认值 | `"window"` |
 
-对于[起始场景](../../../concepts/spatial-scenes.md#start-scene)，场景类型要[通过 Web App Manifest 设置](../manifest-options/main-scene.md)。
-
-## 类型 {#type-1}
+## 类型定义 {#type-1}
 
 `"window" | "volume"`
 
-通过 `initScene` 设置新场景的示例：
+## 示例
 
-```js
+### 使用 `initScene`
+
+```js title="通过 initScene 设置新场景的类型" {6}
 import { initScene } from "@webspatial/react-sdk";
 
 initScene("newSceneName", defaultConfig => {
@@ -30,9 +35,9 @@ initScene("newSceneName", defaultConfig => {
 window.open(newSceneUrl, "newSceneName");
 ```
 
-通过 Web App Manifest 设置初始场景的示例：
+### 使用 Web App Manifest
 
-```json
+```json title="通过 Web App Manifest 设置起始场景的类型" {5}
 {
   "name": "example app",
   "start_url": "/",
@@ -48,5 +53,7 @@ window.open(newSceneUrl, "newSceneName");
 
 ## 可接受的值 {#accepted-values}
 
-- `"window"`: 优先服务于 [GUI 需求](../../../concepts/spatial-scenes.md#scene-type)
-- `"volume"`: 模拟现实世界中的[真实物体](../../../concepts/spatial-scenes.md#scene-type)
+| 取值 | 含义 |
+| --- | --- |
+| `"window"` | 优先服务于 [GUI 需求](../../../concepts/spatial-scenes.md#scene-type)。 |
+| `"volume"` | 模拟现实世界中的[真实物体](../../../concepts/spatial-scenes.md#scene-type)。 |

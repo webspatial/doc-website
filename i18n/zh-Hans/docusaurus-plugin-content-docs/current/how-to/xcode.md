@@ -4,10 +4,12 @@ sidebar_position: 5
 
 # 如何安装 Xcode 和 visionOS 相关组件 {#how-to-install-xcode-and-visionos-related-components}
 
-先决条件：一台 Mac 电脑
+:::info[前提条件]
+你需要一台 Mac 电脑。
+:::
 
-步骤：
-
-1. 打开 Mac App Store，搜索 "Xcode"，安装。
-2. 首次启动时，需要同意授权协议并输入管理员密码，会自动安装其他组件。
-3. 在顶部菜单中点击 "Xcode" > "Settings"。在 "Components" 标签下的 "Platform Support" 里，找到 visionOS 和 visionOS Simulator，安装两者。
+| 步骤 | 操作 | 为什么重要 |
+| --- | --- | --- |
+| 1 | 打开 Mac App Store，搜索 `Xcode` 并安装。 | 它会安装 Apple 的核心开发环境。 |
+| 2 | 首次启动 Xcode 时，接受许可协议，并在需要时输入管理员密码。 | Xcode 会在第一次启动时自动安装额外必需组件。 |
+| 3 | 打开 `Xcode > Settings > Components`，在 `Platform Support` 里安装 `visionOS` 和 `visionOS Simulator`。 | 构建和预览 visionOS 应用都依赖这些平台组件。 |

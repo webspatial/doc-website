@@ -14,23 +14,25 @@ sidebar_position: 1
 
 1. 将属性 `enable-xr` 作为 HTML 属性传给元素：
 
-   ```html
-   <div className="card" enable-xr></div>
-   ```
+```html
+<div className="card" enable-xr></div>
+```
 
 2. 将 `__enableXr__` 添加到元素的 `className` 中：
 
-   ```html
-   <div className="card __enableXr__"></div>
-   ```
+```html
+<div className="card __enableXr__"></div>
+```
 
 3. 在元素的内联样式中添加 `enableXr: true`:
 
-   ```js
-   <div className="card" style={{ enableXr: true, marginTop: "10px" }}></div>
-   ```
+```js
+<div className="card" style={{ enableXr: true, marginTop: "10px" }}></div>
+```
 
-> 在 [`<Model>`](./Model.md) 上使用这个标记，会让这个元素从 web 标准里只能在平面画布中渲染 3D 模型的 model element 增强为可以在空间中渲染 3D 模型的[静态 3D 容器元素](../../../concepts/3d-content-containers.md)。
+:::info[这会为 `<Model>` 启用什么]
+在 [`<Model>`](./Model.md) 上使用这个标记，会让这个元素从 web 标准里只能在平面画布中渲染 3D 模型的 model element 增强为可以在空间中渲染 3D 模型的[静态 3D 容器元素](../../../concepts/3d-content-containers.md)。
+:::
 
 ## `enable-xr-monitor`
 

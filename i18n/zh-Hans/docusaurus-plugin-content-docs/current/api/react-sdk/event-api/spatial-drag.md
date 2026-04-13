@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 空间拖拽（Spatial Drag） {#spatial-drag}
+# 空间拖拽（Spatial Drag）
 
 ## 概述 {#summary}
 
@@ -10,62 +10,56 @@ sidebar_position: 2
 
 ## 触发条件 {#trigger-conditions}
 
-监听了 Spatial Drag 系列事件的[空间化 2D HTML 元素](../../../concepts/spatialized-html-elements.md)，在自身内容占据的 3D 空间位置被「捏住不放」后，会触发这套事件。
-
-监听了 Spatial Drag 系列事件的 [3D 容器元素](../../../concepts/3d-content-containers.md)，在自身的可交互内容占据的 3D 空间位置被「捏住不放」后，会触发这套事件。
+| 目标 | 触发时机 |
+| --- | --- |
+| [空间化 2D HTML 元素](../../../concepts/spatialized-html-elements.md) | 在自身内容占据的 3D 空间位置被「捏住不放」后触发这套事件。 |
+| [3D 容器元素](../../../concepts/3d-content-containers.md) | 在自身可交互内容占据的 3D 空间位置被「捏住不放」后触发这套事件。 |
 
 ## 心智模型 {#mental-model}
 
-可以在 3D 空间中的任意方向上拖拽，在空间中任意位置放置。
+可以在 3D 空间中的任意方向上拖拽，并把目标放到空间中的任意位置。
 
 ## 事件类型名称 {#event-type-signature}
 
-- `spatialdragstart`
-- `spatialdrag`
-- `spatialdragend`
+| 阶段 | DOM 事件 |
+| --- | --- |
+| 拖拽开始 | `spatialdragstart` |
+| 拖拽持续中 | `spatialdrag` |
+| 拖拽结束 | `spatialdragend` |
 
 ## React 用法 {#react-usage}
 
-JSX 中可用的事件属性名
-
-- `onSpatialDragStart`
-- `onSpatialDrag`
-- `onSpatialDragEnd`
+| 阶段 | JSX 属性 |
+| --- | --- |
+| 拖拽开始 | `onSpatialDragStart` |
+| 拖拽持续中 | `onSpatialDrag` |
+| 拖拽结束 | `onSpatialDragEnd` |
 
 ## 原生 DOM 用法 {#native-dom-usage}
 
-[WebSpatial SDK](../../../introduction/getting-started.md#webspatial-sdk) 现阶段不允许在 DOM 元素（包括来自 Ref 的）上直接监听空间事件。
+:::info[当前限制]
+[WebSpatial SDK](../../../introduction/getting-started.md#webspatial-sdk) 现阶段不允许在 DOM 元素（包括来自 Ref 的元素）上直接监听空间事件。
+:::
 
 ## 事件生命周期 {#event-lifecycle}
 
-「选择」过程中不触发事件，捏住不放刚开始触发 `spatialdragstart`， 「激活」后「保持」，会持续触发`spatialdrag`，松开后「结束」，触发 `spatialdragend`。
+「选择」过程中不触发事件；捏住不放刚开始会触发 `spatialdragstart`，激活后保持会持续触发 `spatialdrag`，松开后触发 `spatialdragend`。
 
 ## SpatialDragStartEvent 事件数据 {#spatialdragstartevent-payload}
 
-### `offsetX`, `offsetY`, `offsetZ`
-
-值是以 `px` 为单位的浮点数。
-
-代表激活位置的 X、Y、Z 坐标。
-
-坐标系：触发事件的[空间化 2D HTML 元素](../../../concepts/spatialized-html-elements.md)（包括 3D 容器元素）对应的[本地坐标系](../js-api/convertCoordinate.md)，采用左手坐标系，原点都位于元素对应的 2D 面片的左上角，Y 轴向下，Z 轴朝向用户。
-
-### `clientX`, `clientY`, `clientZ`
-
-值是以 `px` 为单位的浮点数。
-
-代表激活位置的 X、Y、Z 坐标。
-
-坐标系：当前[空间场景容器](../../../concepts/spatial-scenes.md)对应的[全局坐标系](../js-api/convertCoordinate.md)，采用左手坐标系，原点都位于空间场景的背板的左上角，Y 轴向下，Z 轴朝向用户。
+| 字段 | 单位 | 含义 | 坐标系 |
+| --- | --- | --- | --- |
+| `offsetX`, `offsetY`, `offsetZ` | `px` | 激活位置的 X、Y、Z 坐标。 | 触发事件的[空间化 2D HTML 元素](../../../concepts/spatialized-html-elements.md)（包括 3D 容器元素）对应的[本地坐标系](../js-api/convertCoordinate.md)，采用左手坐标系，原点位于元素对应 2D 面片的左上角，Y 轴向下，Z 轴朝向用户。 |
+| `clientX`, `clientY`, `clientZ` | `px` | 激活位置的 X、Y、Z 坐标。 | 当前[空间场景容器](../../../concepts/spatial-scenes.md)对应的[全局坐标系](../js-api/convertCoordinate.md)，采用左手坐标系，原点位于空间场景背板的左上角，Y 轴向下，Z 轴朝向用户。 |
 
 ## SpatialDragEvent 事件数据 {#spatialdragevent-payload}
 
-### translationX, translationY, translationZ
-
-值是以 `px` 为单位的浮点数。
-
-相对于拖拽起点的偏移量。
+| 字段 | 单位 | 含义 |
+| --- | --- | --- |
+| `translationX`, `translationY`, `translationZ` | `px` | 相对于拖拽起点的偏移量。 |
 
 ## SpatialDragEndEvent 事件数据 {#spatialdragendevent-payload}
 
-`spatialdragend` 事件回调获得的 `SpatialDragEndEvent` 对象没有额外属性。
+:::info[没有额外数据]
+`spatialdragend` 回调拿到的 `SpatialDragEndEvent` 对象没有额外属性。
+:::

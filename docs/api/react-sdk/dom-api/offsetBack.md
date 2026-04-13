@@ -20,7 +20,9 @@ Like `HTMLElement.offsetHeight`: read-only and unaffected by [CSS Transform](../
 
 ## Syntax
 
+:::caution[Temporary prefixed DOM name]
 Before standardization is complete, DOM properties in the WebSpatial API need the `xr` prefix and the original first letter becomes uppercase, so `offsetBack` must be written as `xrOffsetBack`.
+:::
 
 ## Read / Write Semantics
 

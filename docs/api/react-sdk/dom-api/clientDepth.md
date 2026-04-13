@@ -18,7 +18,9 @@ Like `Element.clientWidth`: read-only and unaffected by [CSS Transform](../css-a
 
 ## Syntax
 
+:::caution[Temporary prefixed DOM name]
 Before standardization is complete, DOM properties in the WebSpatial API need the `xr` prefix and the original first letter becomes uppercase, so `clientDepth` must be written as `xrClientDepth`.
+:::
 
 ## Read / Write Semantics
 

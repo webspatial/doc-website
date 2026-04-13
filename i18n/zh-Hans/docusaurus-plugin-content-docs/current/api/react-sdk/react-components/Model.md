@@ -6,7 +6,9 @@ sidebar_position: 2
 
 `<Model>` 组件实现了 WebSpatial API 中的[静态 3D 内容容器元素](../../../concepts/3d-content-containers.md)，这种元素兼容 Web 标准中的 `<model>` 元素的 API，同时对 web 标准中的能力做了增强，不仅让元素对应的 2D 面片具备了[空间化 HTML 元素的能力](../../../concepts/spatialized-html-elements.md)，也让 3D 模型能在这个 2D 面片前方的空间中渲染出有真实体积的 3D 内容。
 
-> Web 标准中的 model element 原本只能让 3D 模型在这个元素的「画布」上渲染，这个画布看上去像一个洞口，3D 内容在洞口的「内部」或「后方」显示。可参考 [WebKit 的文档](https://webkit.org/blog/17118/a-step-into-the-spatial-web-the-html-model-element-in-apple-vision-pro/) 和 [demo](https://webkit.org/demos/model-demos/index.html)。
+:::info[标准 model element 的行为]
+Web 标准中的 model element 原本只能让 3D 模型在这个元素的「画布」上渲染，这个画布看上去像一个洞口，3D 内容在洞口的「内部」或「后方」显示。可参考 [WebKit 的文档](https://webkit.org/blog/17118/a-step-into-the-spatial-web-the-html-model-element-in-apple-vision-pro/) 和 [demo](https://webkit.org/demos/model-demos/index.html)。
+:::
 
 要启用这种增强，需要在 `<Model>` 上添加[空间化 HTML 元素的标记（`enable-xr`）](./jsx-marker.md#enable-xr)：
 

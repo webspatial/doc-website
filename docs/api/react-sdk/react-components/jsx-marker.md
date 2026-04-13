@@ -14,23 +14,25 @@ To remain compatible with third-party open-source libraries, the SDK supports th
 
 1. Pass the `enable-xr` attribute as an HTML attribute on the element:
 
-   ```html
-   <div className="card" enable-xr></div>
-   ```
+```html
+<div className="card" enable-xr></div>
+```
 
 2. Add `__enableXr__` to the element's `className`:
 
-   ```html
-   <div className="card __enableXr__"></div>
-   ```
+```html
+<div className="card __enableXr__"></div>
+```
 
 3. Add `enableXr: true` in the element's inline style:
 
-   ```js
-   <div className="card" style={{ enableXr: true, marginTop: "10px" }}></div>
-   ```
+```js
+<div className="card" style={{ enableXr: true, marginTop: "10px" }}></div>
+```
 
-> Using this marker on [`<Model>`](./Model.md) upgrades the element from the Web standard model element, which can only render a 3D model inside a flat canvas, into a [static 3D container element](../../../concepts/3d-content-containers.md) that can render a 3D model in space.
+:::info[What this enables on `<Model>`]
+Using this marker on [`<Model>`](./Model.md) upgrades the element from the Web standard model element, which can only render a 3D model inside a flat canvas, into a [static 3D container element](../../../concepts/3d-content-containers.md) that can render a 3D model in space.
+:::
 
 ## `enable-xr-monitor`
 

@@ -18,7 +18,9 @@ Like `window.innerHeight`: read-only and does not include the height of native w
 
 ## Syntax
 
+:::caution[Temporary prefixed DOM name]
 Before standardization is complete, DOM properties in the WebSpatial API need the `xr` prefix and the original first letter becomes uppercase, so `innerDepth` must be written as `xrInnerDepth`.
+:::
 
 ## Read / Write Semantics
 

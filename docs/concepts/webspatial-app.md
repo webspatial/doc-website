@@ -17,7 +17,9 @@ If the same Web App runs independently outside the browser on PICO OS 6 through 
 
 WebXR content can be "contained" inside a WebSpatial App, because a WebSpatial App is still a standard Web App composed of normal webpages. A webpage in the app can start a WebXR session through JS APIs, take over the entire space, and render WebXR content with low-level 3D graphics APIs such as WebGL or WebGPU. But that space is not [Full Space](./spatial-computing.md#spatial-runtime), and it is not [unified rendering](./spatial-computing.md#unified-rendering). Rendering is handled independently by the WebXR code itself. Once a WebXR session starts, the original webpages and spatialized UI of the WebSpatial App are hidden and are not shown at the same time.
 
-> Note: Because WKWebView on visionOS does not currently support WebXR, Packaged WebSpatial Apps on visionOS cannot start a WebXR session for now.
+:::caution[Current limitation on visionOS]
+Because WKWebView on visionOS does not currently support WebXR, Packaged WebSpatial Apps on visionOS cannot start a WebXR session for now.
+:::
 
 ## Web App
 

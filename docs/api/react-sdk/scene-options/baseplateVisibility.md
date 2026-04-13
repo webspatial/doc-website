@@ -6,19 +6,24 @@ sidebar_position: 6
 
 One of the [initialization properties](../../../concepts/spatial-scenes.md#scene-initialization) of a [Spatial Scene](../../../concepts/spatial-scenes.md). Only Spatial Scenes of type `volume` support `baseplateVisibility`, and it affects the visibility of the baseplate under the Volume.
 
-## Declared In
+## Availability {#declared-in}
 
-For [new Spatial Scenes](../../../concepts/spatial-scenes.md#new-scenes) created in a WebSpatial App, initialization properties must be set through the [`initScene`](../js-api/initScene.md) API.
+| Item | Value |
+| --- | --- |
+| Applies to | Only `volume` Spatial Scenes. |
+| New scenes | Set through [`initScene`](../js-api/initScene.md). |
+| Start scene | Set through the [Web App Manifest](../manifest-options/main-scene.md). |
+| Default value | `"automatic"` |
 
-For the [Start Scene](../../../concepts/spatial-scenes.md#start-scene), initialization properties must be [set through the Web App Manifest](../manifest-options/main-scene.md).
-
-## Type
+## Type Signature {#type}
 
 `"automatic" | "hidden"`
 
-Example of setting a new scene through `initScene`:
+## Examples
 
-```js
+### Using `initScene`
+
+```js title="Set baseplateVisibility for a new scene" {6-7}
 import { initScene } from "@webspatial/react-sdk";
 
 initScene("newSceneName", defaultConfig => {
@@ -31,11 +36,13 @@ initScene("newSceneName", defaultConfig => {
 window.open(newSceneUrl, "newSceneName");
 ```
 
-Example of setting the initial scene through the Web App Manifest:
+### Using the Web App Manifest
 
-> Note: In a Web App Manifest, it is recommended to convert property names from camelCase, such as `baseplateVisibility`, to lowercase snake_case, such as `baseplate_visibility`.
+:::caution[Manifest key naming]
+In a Web App Manifest, convert camelCase keys such as `baseplateVisibility` to lowercase snake_case such as `baseplate_visibility`.
+:::
 
-```json
+```json title="Set baseplate_visibility for the start scene" {5-6}
 {
   "name": "example app",
   "start_url": "/",
@@ -46,11 +53,13 @@ Example of setting the initial scene through the Web App Manifest:
 }
 ```
 
-## Default Value
+## Default Value {#default-value}
 
 `"automatic"`
 
-## Accepted Values
+## Accepted Values {#accepted-values}
 
-- `"automatic"`: the baseplate is shown when needed
-- `"hidden"`: the baseplate is always hidden
+| Value | Meaning |
+| --- | --- |
+| `"automatic"` | The baseplate is shown when needed. |
+| `"hidden"` | The baseplate is always hidden. |

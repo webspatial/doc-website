@@ -4,21 +4,26 @@ sidebar_position: 6
 
 # `baseplateVisibility`
 
-[空间场景](../../../concepts/spatial-scenes.md)的[初始化属性](../../../concepts/spatial-scenes.md#scene-initialization)之一， 只有 `volume` 类型的空间场景才支持设置 `baseplateVisibility`，会影响 Volume 下方底板的可见性。
+[空间场景](../../../concepts/spatial-scenes.md)的[初始化属性](../../../concepts/spatial-scenes.md#scene-initialization)之一。只有 `volume` 类型的空间场景才支持设置 `baseplateVisibility`，它会影响 Volume 下方底板的可见性。
 
-## 声明位置 {#declared-in}
+## 适用范围与设置方式 {#declared-in}
 
-对于 WebSpatial App 里[新创建的空间场景](../../../concepts/spatial-scenes.md#new-scenes)，初始化属性要通过 [`initScene`](../js-api/initScene.md) API 来设置。
+| 项目 | 内容 |
+| --- | --- |
+| 适用于 | 仅适用于 `volume` 类型空间场景。 |
+| 新场景 | 通过 [`initScene`](../js-api/initScene.md) 设置。 |
+| 起始场景 | 通过 [Web App Manifest](../manifest-options/main-scene.md) 设置。 |
+| 默认值 | `"automatic"` |
 
-对于[起始场景](../../../concepts/spatial-scenes.md#start-scene)，初始化属性要[通过 Web App Manifest 设置](../manifest-options/main-scene.md)。
-
-## 类型 {#type}
+## 类型定义 {#type}
 
 `"automatic" | "hidden"`
 
-通过 `initScene` 设置新场景的示例：
+## 示例
 
-```js
+### 使用 `initScene`
+
+```js title="通过 initScene 设置新场景的 baseplateVisibility" {6-7}
 import { initScene } from "@webspatial/react-sdk";
 
 initScene("newSceneName", defaultConfig => {
@@ -31,11 +36,13 @@ initScene("newSceneName", defaultConfig => {
 window.open(newSceneUrl, "newSceneName");
 ```
 
-通过 Web App Manifest 设置初始场景的示例：
+### 使用 Web App Manifest
 
-> 注意：在 Web App Manifest 里，属性名建议从驼峰（`baseplateVisibility`）改成全小写、下划线分隔（`baseplate_visibility`）。
+:::caution[Manifest 属性命名]
+在 Web App Manifest 里，建议把 `baseplateVisibility` 这样的驼峰属性名改成 `baseplate_visibility` 这样的全小写下划线写法。
+:::
 
-```json
+```json title="通过 Web App Manifest 设置起始场景的 baseplate_visibility" {5-6}
 {
   "name": "example app",
   "start_url": "/",
@@ -52,5 +59,7 @@ window.open(newSceneUrl, "newSceneName");
 
 ## 可接受的值 {#accepted-values}
 
-- `"automatic"`: 底板按需显示
-- `"hidden"`: 底板始终隐藏
+| 取值 | 含义 |
+| --- | --- |
+| `"automatic"` | 底板按需显示。 |
+| `"hidden"` | 底板始终隐藏。 |

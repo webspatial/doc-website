@@ -12,11 +12,15 @@ WebSpatial SDK 以 React 组件形式提供的 [3D 内容容器元素](./3d-cont
 
 所有空间化 HTML 元素都相当于悬浮在 [Spatial Scene](./spatial-scenes.md) 空间中的 2D 面片，即使脱离了网页平面，也继续参与整个网页的 HTML/CSS 布局系统，在网页平面中保留原本占据的位置。这些 2D 面片的宽高尺寸和它们在 X/Y 轴上的位置，完全由现有的 HTML/CSS 布局系统决定（相当于会跟它们在网页平面中占据的位置保持同步）。
 
-> [CSS Transform](../api/react-sdk/css-api/transform.md) 会改变它们看上去的位置和大小，不会改变它们在布局系统中的实际位置和大小。
+:::note[Transform 不会改变布局边界]
+[CSS Transform](../api/react-sdk/css-api/transform.md) 会改变空间化 HTML 元素看上去的位置和大小，不会改变它们在布局系统中的实际位置和大小。
+:::
 
 WebSpatial API 只为这些空间化 HTML 元素新增了 Z 轴相关的 CSS 能力和 DOM API，让这些 2D 面片可以在 Z 轴方向上[布局定位](../api/react-sdk/css-api/back.md)和[变形转换](../api/react-sdk/css-api/transform.md)，还可以[获取当前的相关状态](../api/react-sdk/dom-api/offsetBack.md)。
 
-> 对于受到 [CSS Transform](../api/react-sdk/css-api/transform.md) 影响，作为 2D 面片在空间中发生旋转等变化的空间化 HTML 元素， WebSpatial SDK 暂时还不支持用 [`getBoundingClientRect()`](https://developer.mozilla.org/docs/Web/API/Element/getBoundingClientRect) 获取它们的投影范围，也暂时不支持用 WebSpatial API 中新增的 `getBoundingClientCube()` 获取它们在空间中的 3D 包围盒范围。
+:::caution[当前限制]
+对于受到 [CSS Transform](../api/react-sdk/css-api/transform.md) 影响、作为 2D 面片在空间中发生旋转等变化的空间化 HTML 元素，WebSpatial SDK 暂时还不支持用 [`getBoundingClientRect()`](https://developer.mozilla.org/docs/Web/API/Element/getBoundingClientRect) 获取它们的投影范围，也暂时不支持用 WebSpatial API 中新增的 `getBoundingClientCube()` 获取它们在空间中的 3D 包围盒范围。
+:::
 
 这些 Z 轴上的新 CSS/DOM API 能跟 Web 标准现有的 X/Y 轴上的 CSS/DOM API 组合使用。
 

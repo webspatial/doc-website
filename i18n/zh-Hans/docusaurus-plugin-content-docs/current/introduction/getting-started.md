@@ -54,7 +54,9 @@ React SDK 需要被集成到 [JSX Runtime](https://www.typescriptlang.org/docs/h
 - Next.js、Remix ([支持 SSR](../how-to/ssr.md))
 - Rspack / Rsbuild / Webpack
 
-> 注意：WebSpatial SDK 最新版本暂时有 bug 导致暂时不支持 styled-components。
+:::caution[当前限制]
+WebSpatial SDK 最新版本暂时有 bug，导致暂时不支持 styled-components。
+:::
 
 ## 支持的平台 {#supported-platforms}
 
@@ -79,27 +81,29 @@ React SDK 需要被集成到 [JSX Runtime](https://www.typescriptlang.org/docs/h
 
 要在一个 React 项目里启用 [WebSpatial API](#webspatial-api)，需要安装 [WebSpatial SDK](#webspatial-sdk) 项目提供的 React SDK 和底层的 Core SDK：
 
-```bash
-pnpm add @webspatial/react-sdk @webspatial/core-sdk
+```bash npm2yarn
+npm install @webspatial/react-sdk @webspatial/core-sdk
 ```
 
 ### 步骤 2（可选）：Builder {#step-2-optional-builder}
 
 对于没有内置 [WebSpatial Runtime](../concepts/webspatial-app.md#webspatial-runtime) 的空间计算平台，需要把网站打包成[自带 WebSpatial Runtime 的原生应用](../concepts/webspatial-app.md#packaged-webspatial-app)，因此还需要以下安装步骤：
 
-> [PICO OS 6](https://developer.picoxr.com/document/discover/pico-os-6-overview/) 的 [Web App Runtime](https://developer.picoxr.com/document/web/web-app/) 里内置了 WebSpatial Runtime，可以直接让网站中的 WebSpatial API 生效，因此不需要打包，不需要做下面这些额外的安装操作。
+:::tip[PICO OS 6 不需要打包]
+[PICO OS 6](https://developer.picoxr.com/document/discover/pico-os-6-overview/) 的 [Web App Runtime](https://developer.picoxr.com/document/web/web-app/) 里内置了 WebSpatial Runtime，可以直接让网站中的 WebSpatial API 生效，因此不需要打包，也不需要做下面这些额外的安装操作。
+:::
 
 1. 需要在 React 项目里额外安装 WebSpatial SDK 项目提供的打包工具（[WebSpatial Builder](../concepts/webspatial-app.md#webspatial-builder)）：
 
-   ```bash
-   pnpm add -D @webspatial/builder
-   ```
+```bash npm2yarn
+npm install -D @webspatial/builder
+```
 
 2. 对应平台上的 WebSpatial Runtime 实现在独立的 npm 包里，需要单独安装。因此如果要支持 visionOS，需要安装这个包：
 
-   ```bash
-   pnpm add -D @webspatial/platform-visionos
-   ```
+```bash npm2yarn
+npm install -D @webspatial/platform-visionos
+```
 
 3. 为了打包生成原生应用，WebSpatial Builder 需要调用对应平台的原生开发工具，因此如果要支持 visionOS，需要[安装 Xcode 和 visionOS 相关组件](../how-to/xcode.md)。
 
@@ -111,8 +115,7 @@ pnpm add @webspatial/react-sdk @webspatial/core-sdk
 
 对于用 TypeScript 的 React 项目，只需要配置 tsconfig 的 [`jsxImportSource`](https://www.typescriptlang.org/tsconfig/jsxImportSource.html) 字段：
 
-```json
-// tsconfig.json
+```json title="tsconfig.json" {4}
 {
   "compilerOptions": {
     "jsx": "react-jsx",
@@ -120,17 +123,19 @@ pnpm add @webspatial/react-sdk @webspatial/core-sdk
 // ...
 ```
 
-> 对于基于 Rspack 的 TS 项目, 还需要[配置 swc-loader](../how-to/rspack.md)。
-
-> 用 JavaScript 的 React 项目需要[在 web build tool 里配置 JSX Runtime](../how-to/non-ts.md)。
-
-> 对于开启 SSR 的项目，需要[添加 SDK 需要的 Context](../how-to/ssr.md)。
+:::tip[相关配置指南]
+- 对于基于 Rspack 的 TS 项目，还需要[配置 `swc-loader`](../how-to/rspack.md)。
+- 用 JavaScript 的 React 项目，需要[在 Web Build Tool 里配置 JSX Runtime](../how-to/non-ts.md)。
+- 对于开启 SSR 的项目，需要[添加 SDK 需要的 Context](../how-to/ssr.md)。
+:::
 
 ### 步骤 2：满足 PWA 的最低要求 {#step-2-minimal-pwa}
 
 为了提供空间应用需要的应用信息和[起始窗口的设置](../concepts/spatial-scenes.md#start-scene)，需要在当前网站中[按照 PWA 标准提供 Web App Manifest](../how-to/minimal-pwa.md)。
 
-> 如果当前网站原本就是一个 PWA，可以作为 PWA 在 Chrome 里安装，就不需要这个环节。
+:::tip[已经是 PWA？]
+如果当前网站原本就是一个 PWA，可以作为 PWA 在 Chrome 里安装，就可以跳过这一步。
+:::
 
 ## 起始模板 {#boilerplate}
 
@@ -140,7 +145,7 @@ pnpm add @webspatial/react-sdk @webspatial/core-sdk
 
 要预览和调试 [WebSpatial 效果](#webspatial-api)，首先只需要像普通网站开发一样，把当前 Web 项目作为一个网站运行起来，获得可访问的 URL。比如用 Vite 的 [Dev Server](https://vite.dev/guide/#command-line-interface)：
 
-```bash
+```bash title="启动本地开发服务器" {1}
 vite dev
 # result:
 # -> Local: http://localhost:5173/
@@ -152,9 +157,11 @@ vite dev
 
 只需要在[官方模拟器](https://developer.picoxr.com/document/spatial-toolkit/learn-about-pico-emulator/)或真机 PICO OS 6 设备上的 PICO 浏览器里访问当前网站的网址，然后点击地址栏里的「作为独立应用运行」按钮，这个网站就会作为[启用了 WebSpatial 的 Web App](https://developer.picoxr.com/document/web/install-free/) 独立运行，从而能看到 WebSpatial 生效后的空间化 UI 效果和有体积的 3D 内容。
 
-> 在 PICO OS 6 的模拟器里把本地 URL 作为 Web App 预览时，[不要求网址采用 HTTPS 协议](https://developer.picoxr.com/document/web/manifest/)，同时需要使用默认 IP 地址 `10.0.2.2`。例如：http://10.0.2.2:5173/
->
-> 注意：如果要通过 `10.0.2.2` 访问 Vite 的 dev server，需要在 Vite 中[设置 `server: { host: true }`](https://vitejs.dev/config/server-options)，让它允许来自 `localhost` 或 `127.0.0.1` 之外的 IP 访问。
+:::tip[PICO OS 6 模拟器网络访问]
+在 PICO OS 6 的模拟器里把本地 URL 作为 Web App 预览时，[不要求网址采用 HTTPS 协议](https://developer.picoxr.com/document/web/manifest/)，同时需要使用默认 IP 地址 `10.0.2.2`。例如：`http://10.0.2.2:5173/`。
+
+如果要通过 `10.0.2.2` 访问 Vite 的 dev server，需要在 Vite 中[设置 `server: { host: true }`](https://vitejs.dev/config/server-options)，让它允许来自 `localhost` 或 `127.0.0.1` 之外的 IP 访问。
+:::
 
 ### 打包应用模式 {#packaged-app-mode}
 
@@ -164,14 +171,19 @@ vite dev
 
 执行 Builder 的 [`run` 命令](../api/builder/run.md)有「一键预览」的效果：会自动把当前网站打包成[自带 WebSpatial Runtime 的原生应用安装包](../concepts/webspatial-app.md#packaged-webspatial-app)、调起官方模拟器（比如 [visionOS 模拟器](../how-to/xcode.md)）、把安装包传到模拟器里、安装、启动这个应用。
 
-```bash
+```bash title="在模拟器里预览应用" {1}
 webspatial-builder run --base="http://localhost:5173/"
 ```
 
-> `run` 命令允许这个 Web 项目在初期的开发调试阶段不用提供 Web App Manifest。在这种情况下，Builder 会提供默认的临时[应用信息](../how-to/minimal-pwa.md)（`start_url` 为 `''`）。
+:::info[`run` 可以使用临时 manifest]
+`run` 命令允许这个 Web 项目在初期的开发调试阶段不用提供 Web App Manifest。在这种情况下，Builder 会提供默认的临时[应用信息](../how-to/minimal-pwa.md)（`start_url` 为 `''`）。
+:::
 
-> 如果 [`start_url` 不完整、缺少域名](../api/builder/run.md#--manifest)，又不[用 `--base` 为 `start_url` 补全 base 部分](../api/builder/run.md#--base)，Builder 会自动把网站产物打包进原生应用安装包里，运行过程中从应用包的本地文件中离线获取网站文件。
-> 在开发调试阶段，这种模式会导致每次有代码修改都需要重新运行 Builder，等待打包和安装完成，效率较低，建议在开发调试阶段始终提供 `--base` 参数。
+:::caution[离线打包会拖慢迭代]
+如果 [`start_url` 不完整、缺少域名](../api/builder/run.md#--manifest)，又不[用 `--base` 为 `start_url` 补全 base 部分](../api/builder/run.md#--base)，Builder 会自动把网站产物打包进原生应用安装包里，运行过程中从应用包的本地文件中离线获取网站文件。
+
+在开发调试阶段，这种模式会导致每次有代码修改都需要重新运行 Builder，等待打包和安装完成，效率较低，建议始终提供 `--base` 参数。
+:::
 
 要在个人真机测试设备上预览效果，需要执行 Builder 的 [`build` 命令](../api/builder/build.md)生成应用安装包，对于 visionOS 设备，需要[从 App Store Connect 获取额外参数、用 Xcode 注册测试设备和安装应用](../how-to/app-store-connect.md)。
 
@@ -191,7 +203,9 @@ visionOS 里的 WebSpatial 应用是基于 WebView 实现的，可以用 Mac 上
 
 第一类分发方式是作为跨平台网站，通过 URL 传播和获取流量，在内置 WebSpatial Runtime 的空间计算平台上[通过 URL 按需访问](https://tpac2025.webspatial.dev/#instant-apps)，可以用完即抛，也可以[作为 PWA 安装到设备上](https://developer.picoxr.com/document/web/installable/)。
 
-> 在 [PICO OS 6](https://developer.picoxr.com/document/discover/pico-os-6-overview/) 设备上，Web App 在不安装的情况下也可以在浏览器之外[独立运行](https://developer.picoxr.com/document/web/install-free/)、自动启用 WebSpatial 效果。
+:::tip[PICO OS 6 上的 Web App]
+在 [PICO OS 6](https://developer.picoxr.com/document/discover/pico-os-6-overview/) 设备上，Web App 即使不安装，也可以在浏览器之外[独立运行](https://developer.picoxr.com/document/web/install-free/)，并自动启用 WebSpatial 效果。
+:::
 
 第二类分发方式是上架应用商店，用户通过应用商店发现这个应用，先安装再使用。
 

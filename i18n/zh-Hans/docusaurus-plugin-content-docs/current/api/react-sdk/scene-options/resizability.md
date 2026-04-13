@@ -4,17 +4,20 @@ sidebar_position: 3
 
 # `resizability`
 
-[空间场景](../../../concepts/spatial-scenes.md)的[初始化属性](../../../concepts/spatial-scenes.md#scene-initialization)之一，`resizability` 会影响空间场景创建后被用户拖拽拉伸大小时的约束，可以为空间场景的宽和高分别提供最大值和最小值的约束。
+[空间场景](../../../concepts/spatial-scenes.md)的[初始化属性](../../../concepts/spatial-scenes.md#scene-initialization)之一，`resizability` 会影响空间场景创建后被用户拖拽调整大小时的约束，可以分别限制宽度和高度的最小值与最大值。
 
-## 声明位置 {#declared-in}
+## 适用范围与设置方式 {#declared-in}
 
-对于 WebSpatial App 里[新创建的空间场景](../../../concepts/spatial-scenes.md#new-scenes)，初始化属性要通过 [`initScene`](../js-api/initScene.md) API 来设置。
+| 项目 | 内容 |
+| --- | --- |
+| 适用于 | 所有可调整大小的空间场景。 |
+| 新场景 | 通过 [`initScene`](../js-api/initScene.md) 设置。 |
+| 起始场景 | 通过 [Web App Manifest](../manifest-options/main-scene.md) 设置。 |
+| 默认值 | 无 |
 
-对于[起始场景](../../../concepts/spatial-scenes.md#start-scene)，初始化属性要[通过 Web App Manifest 设置](../manifest-options/main-scene.md)。
+## 类型定义 {#type}
 
-## 类型 {#type}
-
-```ts
+```ts title="resizability 类型"
 {
   minWidth?: number | string
   minHeight?: number | string
@@ -23,9 +26,11 @@ sidebar_position: 3
 }
 ```
 
-通过 `initScene` 设置新场景的示例：
+## 示例
 
-```js
+### 使用 `initScene`
+
+```js title="通过 initScene 设置新场景的 resizability" {6-12}
 import { initScene } from "@webspatial/react-sdk";
 
 initScene("newSceneName", defaultConfig => {
@@ -43,11 +48,13 @@ initScene("newSceneName", defaultConfig => {
 window.open(newSceneUrl, "newSceneName");
 ```
 
-通过 Web App Manifest 设置初始场景的示例：
+### 使用 Web App Manifest
 
-> 注意：在 Web App Manifest 里，属性名建议从驼峰（比如 `minWidth`）改成全小写、下划线分隔（比如 `min_width`）。
+:::caution[Manifest 属性命名]
+在 Web App Manifest 里，建议把 `minWidth` 这样的驼峰属性名改成 `min_width` 这样的全小写下划线写法。
+:::
 
-```json
+```json title="通过 Web App Manifest 设置起始场景的 resizability" {5-10}
 {
   "name": "example app",
   "start_url": "/",
@@ -68,7 +75,9 @@ window.open(newSceneUrl, "newSceneName");
 
 ## 可接受的值 {#accepted-values}
 
-- `minWidth`: 数字（默认单位是 `px`）或字符串（带单位后缀，比如 `"100px"` 和 `"2m"`）
-- `minHeight`: 数字（默认单位是 `px`）或字符串（带单位后缀，比如 `"100px"` 和 `"2m"`）
-- `maxWidth`: 数字（默认单位是 `px`）或字符串（带单位后缀，比如 `"100px"` 和 `"2m"`）
-- `maxHeight`: 数字（默认单位是 `px`）或字符串（带单位后缀，比如 `"100px"` 和 `"2m"`）
+| 字段 | 可接受的值 |
+| --- | --- |
+| `minWidth` | 数字（默认单位是 `px`）或带单位后缀的字符串，比如 `"100px"`、`"2m"`。 |
+| `minHeight` | 数字（默认单位是 `px`）或带单位后缀的字符串，比如 `"100px"`、`"2m"`。 |
+| `maxWidth` | 数字（默认单位是 `px`）或带单位后缀的字符串，比如 `"100px"`、`"2m"`。 |
+| `maxHeight` | 数字（默认单位是 `px`）或带单位后缀的字符串，比如 `"100px"`、`"2m"`。 |

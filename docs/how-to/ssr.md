@@ -4,9 +4,15 @@ sidebar_position: 4
 
 # How to enable WebSpatial in SSR-enabled projects
 
-In a React project with SSR enabled, there is one extra step when [integrating WebSpatial SDK](../introduction/getting-started.md#set-up-your-project): add the `SSRProvider` from the SDK:
+In a React project with SSR enabled, there is one extra step when [integrating WebSpatial SDK](../introduction/getting-started.md#set-up-your-project): add the `SSRProvider` from the SDK.
 
-```js
+:::info[Why this wrapper exists]
+`SSRProvider` gives the SDK the extra context it needs to bridge server rendering and client hydration correctly.
+:::
+
+## Generic React
+
+```js title="client-entry.js" {2,6-8}
 import { hydrateRoot } from "react-dom/client";
 import { SSRProvider } from "@webspatial/react-sdk";
 
@@ -18,9 +24,9 @@ hydrateRoot(
 );
 ```
 
-Using Shopify's e-commerce framework [Hydrogen](https://hydrogen.shopify.dev/) as an example, which is based on Remix and React Router and enables SSR by default:
+## Hydrogen
 
-```js
+```js title="entry.client.jsx" {5,13-15}
 import { HydratedRouter } from "react-router/dom";
 import { startTransition, StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
