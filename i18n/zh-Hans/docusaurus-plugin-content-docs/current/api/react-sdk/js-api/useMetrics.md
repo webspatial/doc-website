@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # `useMetrics`
 
-## Summary
+## 概述 {#summary}
 
 在 2D GUI 使用的 point 单位（`px`）和 3D 空间使用的物理世界单位（`m`）之间做[单位转换](../../../concepts/3d-content-containers.md#2d-containing-3d)。
 
@@ -14,7 +14,7 @@ sidebar_position: 2
 
 不同空间计算平台上的换算关系也不一致，所以应该统一通过这个 API 来转换单位。
 
-## Signature
+## 调用形式 {#signature}
 
 ```js
 import { useMetrics } from "@webspatial/react-sdk";
@@ -46,11 +46,11 @@ function UnitConvertTest() {
 }
 ```
 
-## Parameters
+## 参数 {#parameters}
 
 无
 
-## Return Shape
+## 返回结构 {#return-shape}
 
 ```ts
 type WorldScalingCompensation = "scaled" | "unscaled";

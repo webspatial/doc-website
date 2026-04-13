@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # `back`
 
-## Summary
+## 概述 {#summary}
 
 `back` 是 WebSpatial 在现有 Web 标准基础上新增的 CSS 属性，提供最基本的在 3D 空间中布局的能力，可以让 HTML 元素作为 2D 面片被「抬升」到网页平面前方的空间中。
 
-## Applies To
+## 适用对象 {#applies-to}
 
 通过 [WebSpatial SDK](../../../introduction/getting-started.md#webspatial-sdk) 在一个 HTML 元素上使用 `back` 的时候，需要这个元素被[标记为空间化 HTML 元素](../react-components/jsx-marker.md)。
 
@@ -16,7 +16,7 @@ sidebar_position: 1
 
 只适用于设置了 `position: relative`、`position: absolute` 或 `position: fixed` 的 [positioned element](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position)。
 
-## Mental Model
+## 心智模型 {#mental-model}
 
 跟 `top`, `left`, `bottom`, `right` 一样属于 [inset 属性](https://developer.mozilla.org/en-US/docs/Glossary/Inset_properties)，但影响的不是 HTML 元素在 X/Y 轴上的位置，而是元素在 Z 轴上的位置，相当于让元素沿着垂直于网页平面的 Z 轴方向，在网页平面前方的 3D 空间中定位，作为一个 2D 面片悬浮在空间中。
 
@@ -36,7 +36,7 @@ sidebar_position: 1
 
 `back` 跟 `position: relative` 组合使用时，可以理解为让当前元素相对于元素原本所在的 2D 平面进行定位。
 
-## Syntax
+## 语法 {#syntax}
 
 WebSpatial API 中的 CSS 属性在标准化完成前，需要加上 `-xr-` 前缀。
 在 WebSpatial SDK 当前的实现中，出于性能考虑，是用 CSS 自定义变量来实现新的 CSS API，因此 `back` 的属性名在 CSS 样式和 `style` 属性里都要写成 `--xr-back`。
@@ -85,7 +85,7 @@ export default function Demo() {
 }
 ```
 
-## Value Grammar
+## 值语法 {#value-grammar}
 
 在 WebSpatial SDK 当前的实现中，`back` 的值只支持用 `px` 作为单位，等价于 2D GUI 使用的 point 单位（参考[单位转换 API](../js-api/useMetrics.md)）。
 
@@ -103,7 +103,7 @@ export default function Demo() {
 --xr-back: 0.5px;
 ```
 
-## Initial Value
+## 初始值 {#initial-value}
 
 初始值相当于：
 
@@ -111,13 +111,13 @@ export default function Demo() {
 --xr-back: 0;
 ```
 
-## Inherited
+## 是否继承 {#inherited}
 
 子元素不会继承父元素的 `back` 属性。
 
 但是在跟 `position: relative` 或 `position: absolute` 组合使用时，父元素中的空间化 HTML 元素因为 `back` 属性发生了 Z 轴方向上的位移，子元素（包括空间化 HTML 元素）也会有相应的位移（因为子元素是相对于父元素定位的）。
 
-## Animatable
+## 是否可动画化 {#animatable}
 
 在 WebSpatial SDK 当前的实现中，暂时不支持在 CSS 动画中使用 `back` 属性。
 
@@ -145,13 +145,13 @@ DOM API 示例：
 ref.current.style["--xr-back"] = animatedOffsetZ;
 ```
 
-## Interaction with Other CSS APIs
+## 与其他 CSS API 的交互 {#interaction-with-other-css-apis}
 
 `back` 是布局属性，用 `back` 让元素「浮起」，相当于改变元素在 Z 轴上的布局位置。[CSS Transform](./transform.md) 是相对于这个布局位置进一步改变这个元素的显示效果（不影响实际布局位置）。
 
 `back` 能跟 `top`, `left`, `bottom`, `right` 组合使用，改变元素对应的 2D 面片在 3D 空间中 X、Y、Z 轴上的布局位置。
 
-## DOM and JS Reflection
+## DOM 与 JS 映射 {#dom-and-js-reflection}
 
 用 `back` 让元素「浮起」后，可以用 DOM API 里新增的 [`offsetBack`](../dom-api/offsetBack.md) 属性读取这个元素相对于原本所在 2D 平面「浮起」的距离。
 
@@ -163,6 +163,6 @@ ref.current.style["--xr-back"] = animatedOffsetZ;
 const currentOffsetZ = ref.current.style["--xr-back"];
 ```
 
-## Fallback Behavior
+## 回退行为 {#fallback-behavior}
 
 在不支持 WebSpatial 的环境里，`back` 会被自动忽略。

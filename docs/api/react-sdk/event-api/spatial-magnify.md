@@ -20,8 +20,6 @@ The line between the two hands, effectively like a real object, can be stretched
 
 ## Event Type Signature
 
-Event type names:
-
 - `spatialmagnify`
 - `spatialmagnifyend`
 

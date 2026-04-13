@@ -10,25 +10,25 @@ sidebar_position: 2
 
 visionOS 测试设备需要[事先在 Apple 开发者账号控制台和 Xcode 里注册](../../how-to/app-store-connect.md#device-testing)。
 
-## When to Use
+## 适用场景 {#when-to-use}
 
 要在不包含 [WebSpatial Runtime](../../concepts/webspatial-app.md#webspatial-runtime) 的[空间计算](../../concepts/spatial-computing.md)平台（比如 visionOS）上运行 [WebSpatial App](../../concepts/webspatial-app.md)。
 
 只需要[在个人测试设备上预览效果](../../how-to/app-store-connect.md#device-testing)。
 
-## When Not to Use
+## 不适用场景 {#when-not-to-use}
 
 要在内置了 [WebSpatial Runtime](../../concepts/webspatial-app.md#webspatial-runtime) 、支持直接用 URL 运行 [WebSpatial App](../../concepts/webspatial-app.md) 的[空间计算](../../concepts/spatial-computing.md)平台上运行（比如 [PICO OS 6](https://developer.picoxr.com/document/web/web-app/)）。
 
 只需要[在模拟器里预览效果](./run.md)，或要[对外大量分发应用](./publish.md)。
 
-## Syntax
+## 语法 {#syntax}
 
 `webspatial-builder build`
 
 `webspatial-builder build --bundle-id=<id> --teamId=<id> [--export=<local path>] [--base=<base url>] [--manifest=<local path>] [--manifest-url=<url>] [--project=<dist>]`
 
-## Options
+## 选项 {#options}
 
 ### `--teamId`
 

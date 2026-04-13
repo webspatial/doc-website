@@ -32,7 +32,7 @@ sidebar_position: 1
 
 > 在 [`<Model>`](./Model.md) 上使用这个标记，会让这个元素从 web 标准里只能在平面画布中渲染 3D 模型的 model element 增强为可以在空间中渲染 3D 模型的[静态 3D 容器元素](../../../concepts/3d-content-containers.md)。
 
-### `enable-xr-monitor`
+## `enable-xr-monitor`
 
 把这个特殊标记添加到一个[空间化 HTML 元素](../../../concepts/spatialized-html-elements.md)的某个父元素上，可以让 WebSpatial SDK 监听这个父元素中内容的变化，如果这些变化会影响到了空间化 HTML 元素的[尺寸和在 X/Y 轴上的布局位置](../../../concepts/spatialized-html-elements.md)，就可以及时同步到空间化 HTML 元素上。
 

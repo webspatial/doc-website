@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# How to enable WebSpatial in SSR-enabled projects
+# 如何在启用 SSR 的项目中启用 WebSpatial {#how-to-enable-webspatial-in-ssr-enabled-projects}
 
 开启了 SSR 的 React 项目，在[集成 WebSpatial SDK 的时候](../introduction/getting-started.md#set-up-your-project)，有一个额外步骤，需要添加 SDK 里的 `SSRProvider`：
 

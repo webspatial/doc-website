@@ -8,13 +8,13 @@ sidebar_position: 4
 
 只有 `volume` 类型的空间场景才支持设置 `worldScaling`。
 
-## Declared In
+## 声明位置 {#declared-in}
 
 对于 WebSpatial App 里[新创建的空间场景](../../../concepts/spatial-scenes.md#new-scenes)，初始化属性要通过 [`initScene`](../js-api/initScene.md) API 来设置。
 
 对于[起始场景](../../../concepts/spatial-scenes.md#start-scene)，初始化属性要[通过 Web App Manifest 设置](../manifest-options/main-scene.md)。
 
-## Type
+## 类型 {#type}
 
 `"automatic" | "dynamic"`
 
@@ -48,11 +48,11 @@ window.open(newSceneUrl, "newSceneName");
 }
 ```
 
-## Default Value
+## 默认值 {#default-value}
 
 `"automatic"`
 
-## Accepted Values
+## 可接受的值 {#accepted-values}
 
 - `"automatic"`: 在移动过程中会有近大远小的效果，类似现实世界中的物体
 - `"dynamic"`: 在移动过程中始终相对于用户视野区域保持大小不变，跟 `window` 类型空间场景的默认行为一样

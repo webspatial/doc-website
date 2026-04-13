@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Spatial Computing
+# 空间计算 {#spatial-computing}
 
 空间计算是指一种计算设备和操作系统的新能力，是传统 XR 设备和 XR OS（包括[虚拟现实、混合现实或增强现实](https://developer.picoxr.com/document/web/introduce-xr/)）的进一步发展。
 
@@ -12,13 +12,13 @@ sidebar_position: 1
 
 [visionOS](https://developer.apple.com/visionos/) 和 [PICO OS 6](https://developer.picoxr.com/document/discover/pico-os-6-overview/) 都属于这种 Spatial OS。
 
-## Unified Rendering
+## 统一渲染 {#unified-rendering}
 
 统一渲染的目的是让 Spatial OS 能为各个软件统一做[空间计算](./spatial-computing.md)，让多个[空间应用](#spatial-app)的 2D 和 3D 内容能在同一个空间里共存，能融合到同一个坐标系和光照环境中（比如具备位置关系和遮挡、阴影等效果）。
 
 为此，各个空间应用不能孤立的渲染自己的内容、随意实现交互，需要通过[操作系统统一管理的 2D/3D 内容容器（称为空间场景）](./spatial-scenes.md)来提供应用内容，通过[操作系统可理解的 API](./3d-content-containers.md#3d-engine-api) 来实现这些内容，从而让操作系统能尽可能理解各个应用中的内容 ，实现统一渲染，让这些内容具备一致的跟空间结合和自然交互的能力。
 
-## Spatial Runtime
+## Spatial Runtime {#spatial-runtime}
 
 为了持续做[空间计算](./spatial-computing.md)和[统一渲染](#unified-rendering)，Spatial OS 需要运行单一的 3D 空间和单一的 3D 渲染引擎，相当于一个负责运行所有[空间应用](#spatial-app)的 Runtime，所有空间应用都在这个 3D 空间中运行，都由这个 3D 引擎渲染。
 
@@ -26,7 +26,7 @@ sidebar_position: 1
 
 在 Shared Space 里，空间应用默认获取不到眼动、手部移动、空间环境信息等隐私数据，需要通过用户授权进入了 Full Space 模式、独占整个空间的情况下，空间应用才能获得这些数据，实现自定义的空间计算。
 
-## Spatial App
+## 空间应用 {#spatial-app}
 
 空间应用是指在 [Shared Space 或 Full Space](#spatial-runtime) 里运行、由操作系统做[统一渲染](#unified-rendering)、自动具备[空间计算](./spatial-computing.md)能力的应用。
 

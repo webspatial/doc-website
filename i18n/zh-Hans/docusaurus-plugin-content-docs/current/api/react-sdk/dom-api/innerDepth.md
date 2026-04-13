@@ -4,23 +4,23 @@ sidebar_position: 4
 
 # `innerDepth`
 
-## Summary
+## 概述 {#summary}
 
 读取 [Volume 类型空间场景容器](../../../concepts/spatial-scenes.md)的深度/厚度。
 
-## Exposed On
+## 可用对象 {#exposed-on}
 
 `window` 对象上可以访问这个属性。
 
-## Mental Model
+## 心智模型 {#mental-model}
 
 跟 `window.innerHeight` 一样：只读，不含网页之外窗口原生 UI 的高度。
 
-## Syntax
+## 语法 {#syntax}
 
 WebSpatial API 中的 DOM 属性在标准化完成前，需要加上 `xr` 前缀并把原有的首字母改成大写，因此 `innerDepth` 的属性名要写成 `xrInnerDepth`。
 
-## Read / Write Semantics
+## 读写语义 {#read--write-semantics}
 
 只读。
 
@@ -30,6 +30,6 @@ WebSpatial API 中的 DOM 属性在标准化完成前，需要加上 `xr` 前缀
 const currentVolumeDepth = window.xrInnerDepth;
 ```
 
-## Fallback Behavior
+## 回退行为 {#fallback-behavior}
 
 在不支持 WebSpatial 的环境里，`innerDepth` 不存在。

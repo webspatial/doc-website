@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# How to configure the JSX runtime in non-TypeScript projects
+# 如何在非 TypeScript 项目中配置 JSX Runtime {#how-to-configure-the-jsx-runtime-in-non-typescript-projects}
 
 对于 Rspack/Rsbuild 项目，可以[直接配置 swc-loader](./rspack.md)。
 

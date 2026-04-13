@@ -32,7 +32,7 @@ To remain compatible with third-party open-source libraries, the SDK supports th
 
 > Using this marker on [`<Model>`](./Model.md) upgrades the element from the Web standard model element, which can only render a 3D model inside a flat canvas, into a [static 3D container element](../../../concepts/3d-content-containers.md) that can render a 3D model in space.
 
-### `enable-xr-monitor`
+## `enable-xr-monitor`
 
 Adding this special marker to a parent element of a [spatialized HTML element](../../../concepts/spatialized-html-elements.md) allows WebSpatial SDK to monitor changes to the content inside that parent. If those changes affect the [size or X/Y layout position](../../../concepts/spatialized-html-elements.md) of the spatialized HTML element, the SDK can synchronize the updates to the spatialized HTML element in time.
 

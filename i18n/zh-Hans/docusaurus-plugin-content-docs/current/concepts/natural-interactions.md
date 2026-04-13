@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Natural Interactions
+# 自然交互 {#natural-interactions}
 
 自然交互是指让用户跟空间中的软件界面和虚拟内容交互时，就像跟现实世界的真实物体互动，不使用任何控制设备（比如 XR 手柄），只靠手和眼就做直观高效的交互。
 
@@ -11,7 +11,7 @@ sidebar_position: 6
 1. 直接交互：采用最符合直觉的方式，用单手或双手直接接触虚拟内容元素。
 2. 间接交互：更高效，不用抬手接触，先用眼睛注视的方式在虚拟内容元素中做「选择」，然后捏合手指触发「确认」操作，捏住不放还可以进一步做拖拽、旋转、缩放等手势操作。
 
-## 2D Content Interactions
+## 2D 内容交互 {#2d-content-interactions}
 
 这两种自然交互模式在 2D 内容上产生的效果是等价的，都相当于在传统屏幕设备上做触屏交互的结果：在一个 HTML 元素上做直接交互（手指直接触控元素）或间接交互（先注视元素，再捏合手指），都会触发 Touch Events、Pointer Events，为了兼容旧网页代码，也会触发 Mouse Events 和 click 事件，这些 Web API 的行为完全等价于在传统屏幕设备上对网页做触屏交互。
 
@@ -29,7 +29,7 @@ sidebar_position: 6
    1. 「移动」事件（`pointermove`，手指移动对应初始交互位置的移动）
    2. 「触摸移动」事件（`touchmove`）
 
-## Hover Effect
+## Hover Effect {#hover-effect}
 
 在间接交互模式下，在手指捏合之前，由于网页不知道眼睛在注视哪里，不会触发任何 JS 事件，也不会改变 CSS 状态，因此无法用网页代码实现 Hover Effect，需要由 [Spatial Runtime](./spatial-computing.md#spatial-runtime) 统一负责在被注视的 HTML 元素上自动渲染 Hover Effect。
 
@@ -42,7 +42,7 @@ sidebar_position: 6
 3. 用 Web 标准里的可访问性 API（ARIA）设置成跟上述元素语义等价的元素（比如 `<div role="button">`）
 4. 通过 CSS 样式 `cursor: pointer` 主动把鼠标指针设置为 pointer 形状的 HTML 元素
 
-## Spatial Interactions
+## 空间交互 {#spatial-interactions}
 
 不同于平面内的 2D 内容，[空间化 HTML 元素](./spatialized-html-elements.md)都被视作悬浮在空间中的 2D 面片，可以在 3D 空间的 X/Y/Z 三个方向上[定位和移动](../api/react-sdk/css-api/back.md)，可以在空间中[旋转](../api/react-sdk/css-api/transform.md)，交互命中的范围也从平面上的点变成了空间中 2D 面片和 [3D 网格](./3d-content-containers.md)上的点。
 

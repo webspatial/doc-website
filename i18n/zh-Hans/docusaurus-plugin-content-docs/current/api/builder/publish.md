@@ -10,25 +10,25 @@ sidebar_position: 3
 
 对于 visionOS App Store，需要事先[在 App Store Connect 里填写 App 信息](../../how-to/app-store-connect.md#submission-to-the-app-store)。
 
-## When to Use
+## 适用场景 {#when-to-use}
 
 要在不包含 [WebSpatial Runtime](../../concepts/webspatial-app.md#webspatial-runtime) 的[空间计算](../../concepts/spatial-computing.md)平台（比如 visionOS）上运行 [WebSpatial App](../../concepts/webspatial-app.md)。
 
 要[在大量真实设备上测试，或正式对外分发应用](../../introduction/getting-started.md#distribution)。
 
-## When Not to Use
+## 不适用场景 {#when-not-to-use}
 
 要在内置了 [WebSpatial Runtime](../../concepts/webspatial-app.md#webspatial-runtime) 、支持直接用 URL 运行 [WebSpatial App](../../concepts/webspatial-app.md) 的[空间计算](../../concepts/spatial-computing.md)平台上运行（比如 [PICO OS 6](https://developer.picoxr.com/document/web/web-app/)）。
 
 只需要[在模拟器里预览效果](./run.md)，或[在个人测试设备上预览效果](./build.md)。
 
-## Syntax
+## 语法 {#syntax}
 
 `webspatial-builder publish`
 
 `webspatial-builder publish --u=<username> --p=<password> --version=<app version> --bundle-id=<id> --teamId=<id> [--export=<local path>] [--base=<base url>] [--manifest=<local path>] [--manifest-url=<url>] [--project=<dist>]`
 
-## Options
+## 选项 {#options}
 
 ### `--u`
 

@@ -20,7 +20,7 @@ Spatial Tap can be understood as a `click` event in 3D space.
 
 ## Event Type Signature
 
-Event type name: `spatialtap`
+- `spatialtap`
 
 ## React Usage
 

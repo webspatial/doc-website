@@ -2,39 +2,39 @@
 sidebar_position: 1
 ---
 
-# Spatial Tap
+# 空间点击（Spatial Tap） {#spatial-tap}
 
-## Summary
+## 概述 {#summary}
 
 表示完成了一次对空间目标的单手「选择、激活」动作，无论这种交互是[通过间接的「注视 + 捏合」完成，还是通过直接触摸完成](../../../concepts/natural-interactions.md)。
 
-## Trigger Conditions
+## 触发条件 {#trigger-conditions}
 
 监听了 Spatial Tap 事件的[空间化 2D HTML 元素](../../../concepts/spatialized-html-elements.md)，在自身内容占据的 3D 空间位置被点击后，会触发这个事件。
 
 监听了 Spatial Tap 事件的 [3D 容器元素](../../../concepts/3d-content-containers.md)，在自身的可交互内容占据的 3D 空间位置被点击后，会触发这个事件
 
-## Mental Model
+## 心智模型 {#mental-model}
 
 可以把 Spatial Tap 理解为「3D 空间中的 click 事件」。
 
-## Event Type Signature
+## 事件类型名称 {#event-type-signature}
 
-事件类型名称：`spatialtap`
+- `spatialtap`
 
-## React Usage
+## React 用法 {#react-usage}
 
 JSX 中可用的事件属性名：`onSpatialTap`
 
-## Native DOM Usage
+## 原生 DOM 用法 {#native-dom-usage}
 
 [WebSpatial SDK](../../../introduction/getting-started.md#webspatial-sdk) 现阶段不允许在 DOM 元素（包括来自 Ref 的）上直接监听空间事件。
 
-## Event Lifecycle
+## 事件生命周期 {#event-lifecycle}
 
 「选择」过程中不触发事件，捏住立刻放开，触发 `spatialtap`。
 
-## SpatialTapEvent Payload
+## SpatialTapEvent 事件数据 {#spatialtapevent-payload}
 
 ### `offsetX`, `offsetY`, `offsetZ`
 

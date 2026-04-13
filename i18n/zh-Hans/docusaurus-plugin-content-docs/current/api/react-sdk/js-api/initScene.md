@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # `initScene`
 
-## Summary
+## 概述 {#summary}
 
 在[创建一个新的空间场景容器](../../../concepts/spatial-scenes.md#new-scenes)之前，对这个 Spatial Scene 的[初始化属性](../../../concepts/spatial-scenes.md#scene-initialization)做自定义设置。
 
-## Signature
+## 调用形式 {#signature}
 
 ```js
 import { initScene } from "@webspatial/react-sdk";
@@ -27,7 +27,7 @@ initScene("newSceneName", defaultConfig => {
 window.open(newSceneUrl, "newSceneName");
 ```
 
-## Parameters
+## 参数 {#parameters}
 
 ### sceneName
 
@@ -43,6 +43,6 @@ window.open(newSceneUrl, "newSceneName");
 
 如果是第一次对这个 name 执行 `initScene`，参数（`defaultConfig`）是默认的初始化属性。
 
-## Return Shape
+## 返回结构 {#return-shape}
 
 不返回任何值。

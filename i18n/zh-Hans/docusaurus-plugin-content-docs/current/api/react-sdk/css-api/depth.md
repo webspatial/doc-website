@@ -4,15 +4,15 @@ sidebar_position: 4
 
 # `depth`
 
-## Summary
+## 概述 {#summary}
 
 `depth` 是 WebSpatial 在现有 Web 标准基础上新增的 CSS 属性，让 [3D 容器元素](../../../concepts/3d-content-containers.md)在 CSS 样式里不仅能控制宽度和高度，也能控制「厚度/深度」。
 
-## Applies To
+## 适用对象 {#applies-to}
 
 只有静态 3D 容器元素（[`<Model>`](../react-components/Model.md) ）和动态 3D 容器元素（ [`<Reality>`](../react-components/Reality.md)）支持这个属性。
 
-## Mental Model
+## 心智模型 {#mental-model}
 
 3D 内容容器元素也是[空间化 HTML 元素](../../../concepts/spatialized-html-elements.md)，仍然作为一个 2D 面片参与 HTML/CSS 布局，容器的内容相当于 2D 面片前方的「盒状」局部 3D 空间，这个 3D 空间始终以这个 2D 面片为「背板」，因此这个局部空间的宽度和高度由背板尺寸决定，深度则默认跟当前[空间场景](../../../concepts/spatial-scenes.md)的深度保持一致。
 
@@ -22,7 +22,7 @@ CSS 中的 `width` 和 `height` 会影响这个背板（2D 面片）的尺寸，
 
 3D 内容容器元素的深度变化，会改变[内部 3D 坐标系的原点位置（原点位于容器对应的局部 3D 空间的中心点）](../react-components/Reality.md#3d-entity)。
 
-## Syntax
+## 语法 {#syntax}
 
 WebSpatial API 中的 CSS 属性在标准化完成前，需要加上 `-xr-` 前缀。
 在 WebSpatial SDK 当前的实现中，出于性能考虑，是用 CSS 自定义变量来实现新的 CSS API，因此 `depth` 的属性名在 CSS 样式和 `style` 属性里都要写成 `--xr-depth`。
@@ -69,13 +69,13 @@ export default function ProductPreview() {
 }
 ```
 
-## Value Grammar
+## 值语法 {#value-grammar}
 
 在 WebSpatial SDK 当前的实现中，`depth` 的值只支持用 px 作为单位，等价于 2D GUI 使用的 point 单位（参考[单位转换 API](../js-api/useMetrics.md)）。
 
 对于数值，最多允许精确到小数点后一位。
 
-## Initial Value
+## 初始值 {#initial-value}
 
 初始值相当于：
 
@@ -83,11 +83,11 @@ export default function ProductPreview() {
 --xr-depth: 0;
 ```
 
-## Inherited
+## 是否继承 {#inherited}
 
 3D 内容容器元素不能用其他 3D 内容容器元素作为子元素，因此 `depth` 不存在父子之间的影响。
 
-## Animatable
+## 是否可动画化 {#animatable}
 
 在 WebSpatial SDK 当前的实现中，暂时不支持在 CSS 动画中使用 `depth` 属性。
 
@@ -119,17 +119,17 @@ DOM API 示例：
 ref.current.style["--xr-depth"] = animatedDepth;
 ```
 
-## Interaction with Other CSS APIs
+## 与其他 CSS API 的交互 {#interaction-with-other-css-apis}
 
 `depth` 能跟 `width`、`height` 组合使用，改变 3D 容器元素对应的局部 3D 空间的尺寸。
 
-## DOM and JS Reflection
+## DOM 与 JS 映射 {#dom-and-js-reflection}
 
 可以用 DOM API 里新增的 [clientDepth](../dom-api/clientDepth.md) 获取 3D 容器元素当前的深度状态。
 
 [`<Reality>`](../react-components/Reality.md) 用 `depth` 改变深度后，[本地坐标系](../js-api/convertCoordinate.md)的原点在全局坐标系中会相应的沿着 Z 轴改变位置（比如深度增加 10px，原点会向前方位移 5px）。
 因此，`depth` 会影响用 [`convertCoordinate`](../js-api/convertCoordinate.md) 在本地坐标系和全局坐标系之间转换的结果，也会影响 `<Reality>` 中 3D 内容的渲染。
 
-## Fallback Behavior
+## 回退行为 {#fallback-behavior}
 
 在不支持 WebSpatial 的环境里，`depth` 会被自动忽略。

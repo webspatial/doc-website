@@ -6,13 +6,13 @@ sidebar_position: 6
 
 [空间场景](../../../concepts/spatial-scenes.md)的[初始化属性](../../../concepts/spatial-scenes.md#scene-initialization)之一， 只有 `volume` 类型的空间场景才支持设置 `baseplateVisibility`，会影响 Volume 下方底板的可见性。
 
-## Declared In
+## 声明位置 {#declared-in}
 
 对于 WebSpatial App 里[新创建的空间场景](../../../concepts/spatial-scenes.md#new-scenes)，初始化属性要通过 [`initScene`](../js-api/initScene.md) API 来设置。
 
 对于[起始场景](../../../concepts/spatial-scenes.md#start-scene)，初始化属性要[通过 Web App Manifest 设置](../manifest-options/main-scene.md)。
 
-## Type
+## 类型 {#type}
 
 `"automatic" | "hidden"`
 
@@ -46,11 +46,11 @@ window.open(newSceneUrl, "newSceneName");
 }
 ```
 
-## Default Value
+## 默认值 {#default-value}
 
 `"automatic"`
 
-## Accepted Values
+## 可接受的值 {#accepted-values}
 
 - `"automatic"`: 底板按需显示
 - `"hidden"`: 底板始终隐藏

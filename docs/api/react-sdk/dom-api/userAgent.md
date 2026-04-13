@@ -10,7 +10,7 @@ Obtains information about the current device, operating system, and runtime envi
 
 ## Exposed On
 
-This property is available on the `Navigator` object.
+This property is available on the `navigator` object.
 
 ## Mental Model
 

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# How to configure the JSX runtime in Rspack-based projects
+# 如何在基于 Rspack 的项目中配置 JSX Runtime {#how-to-configure-the-jsx-runtime-in-rspack-based-projects}
 
 基于 [Rspack](https://www.rspack.dev/)/[Rsbuild](https://rsbuild.rs/) 的 React 项目不能[用 tsconfig 的 `jsxImportSource` 配置 JSX Runtime](../introduction/getting-started.md#set-up-your-project)，而是需要在 swc-loader 里配置。
 

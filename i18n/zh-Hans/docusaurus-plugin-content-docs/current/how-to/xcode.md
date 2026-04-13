@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# How to install Xcode and visionOS-related components
+# 如何安装 Xcode 和 visionOS 相关组件 {#how-to-install-xcode-and-visionos-related-components}
 
 先决条件：一台 Mac 电脑
 

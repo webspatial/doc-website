@@ -2,31 +2,29 @@
 sidebar_position: 2
 ---
 
-# Spatial Drag
+# 空间拖拽（Spatial Drag） {#spatial-drag}
 
-## Summary
+## 概述 {#summary}
 
 表示完成了一次对空间目标的单手「选择、激活、持续」动作，无论这种交互[是通过间接的「注视 + 捏合」完成，还是通过直接触摸完成](../../../concepts/natural-interactions.md)。
 
-## Trigger Conditions
+## 触发条件 {#trigger-conditions}
 
 监听了 Spatial Drag 系列事件的[空间化 2D HTML 元素](../../../concepts/spatialized-html-elements.md)，在自身内容占据的 3D 空间位置被「捏住不放」后，会触发这套事件。
 
 监听了 Spatial Drag 系列事件的 [3D 容器元素](../../../concepts/3d-content-containers.md)，在自身的可交互内容占据的 3D 空间位置被「捏住不放」后，会触发这套事件。
 
-## Mental Model
+## 心智模型 {#mental-model}
 
 可以在 3D 空间中的任意方向上拖拽，在空间中任意位置放置。
 
-## Event Type Signature
-
-事件类型名称：
+## 事件类型名称 {#event-type-signature}
 
 - `spatialdragstart`
 - `spatialdrag`
 - `spatialdragend`
 
-## React Usage
+## React 用法 {#react-usage}
 
 JSX 中可用的事件属性名
 
@@ -34,15 +32,15 @@ JSX 中可用的事件属性名
 - `onSpatialDrag`
 - `onSpatialDragEnd`
 
-## Native DOM Usage
+## 原生 DOM 用法 {#native-dom-usage}
 
 [WebSpatial SDK](../../../introduction/getting-started.md#webspatial-sdk) 现阶段不允许在 DOM 元素（包括来自 Ref 的）上直接监听空间事件。
 
-## Event Lifecycle
+## 事件生命周期 {#event-lifecycle}
 
 「选择」过程中不触发事件，捏住不放刚开始触发 `spatialdragstart`， 「激活」后「保持」，会持续触发`spatialdrag`，松开后「结束」，触发 `spatialdragend`。
 
-## SpatialDragStartEvent Payload
+## SpatialDragStartEvent 事件数据 {#spatialdragstartevent-payload}
 
 ### `offsetX`, `offsetY`, `offsetZ`
 
@@ -60,7 +58,7 @@ JSX 中可用的事件属性名
 
 坐标系：当前[空间场景容器](../../../concepts/spatial-scenes.md)对应的[全局坐标系](../js-api/convertCoordinate.md)，采用左手坐标系，原点都位于空间场景的背板的左上角，Y 轴向下，Z 轴朝向用户。
 
-## SpatialDragEvent Payload
+## SpatialDragEvent 事件数据 {#spatialdragevent-payload}
 
 ### translationX, translationY, translationZ
 
@@ -68,6 +66,6 @@ JSX 中可用的事件属性名
 
 相对于拖拽起点的偏移量。
 
-## SpatialDragEndEvent Payload
+## SpatialDragEndEvent 事件数据 {#spatialdragendevent-payload}
 
 `spatialdragend` 事件回调获得的 `SpatialDragEndEvent` 对象没有额外属性。

@@ -20,8 +20,6 @@ The line between the two hands, effectively like a real object, can rotate at ar
 
 ## Event Type Signature
 
-Event type names:
-
 - `spatialrotate`
 - `spatialrotateend`
 

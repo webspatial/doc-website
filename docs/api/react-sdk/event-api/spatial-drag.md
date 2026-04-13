@@ -20,8 +20,6 @@ You can drag in any direction in 3D space and place the target at any location i
 
 ## Event Type Signature
 
-Event type names:
-
 - `spatialdragstart`
 - `spatialdrag`
 - `spatialdragend`

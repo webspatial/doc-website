@@ -24,19 +24,19 @@ function Example() {
 }
 ```
 
-## Fallback
+## 回退行为 {#fallback}
 
 如果没有添加 `enable-xr` 标记，或当前运行环境中没有 [WebSpatial Runtime](../../../concepts/webspatial-app.md#webspatial-runtime)， `<Model>` 组件会自动降级成 web 标准中的 `<model>` 元素，由浏览器引擎负责渲染（当前平台上的浏览器引擎可能还不支持这个新标准，可以用 `typeof HTMLModelElement !== "undefined"` 做特性检测）。
 
 WebSpatial SDK 当前版本中，`<Model>` 支持以下 model element 的 API：
 
-## Attributes
+## 属性 {#attributes}
 
 `src`
 
 要嵌入的 3D 模型的 URL。
 
-## Lifecycle Events
+## 生命周期事件 {#lifecycle-events}
 
 `onLoad`
 
@@ -46,7 +46,7 @@ WebSpatial SDK 当前版本中，`<Model>` 支持以下 model element 的 API：
 
 当模型加载失败时触发。
 
-## JavaScript API
+## JavaScript API {#javascript-api}
 
 `currentSrc`
 

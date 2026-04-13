@@ -6,13 +6,13 @@ sidebar_position: 1
 
 在 [空间场景](../../../concepts/spatial-scenes.md)的[初始化环节](../../../concepts/spatial-scenes.md#scene-initialization)，可以设置[场景类型](../../../concepts/spatial-scenes.md#scene-type)。
 
-## Declared In
+## 声明位置 {#declared-in}
 
 对于 WebSpatial App 里[新创建的空间场景](../../../concepts/spatial-scenes.md#new-scenes)，场景类型要通过 [`initScene`](../js-api/initScene.md) API 来设置。
 
 对于[起始场景](../../../concepts/spatial-scenes.md#start-scene)，场景类型要[通过 Web App Manifest 设置](../manifest-options/main-scene.md)。
 
-## Type
+## 类型 {#type-1}
 
 `"window" | "volume"`
 
@@ -42,11 +42,11 @@ window.open(newSceneUrl, "newSceneName");
 }
 ```
 
-## Default Value
+## 默认值 {#default-value}
 
 `"window"`
 
-## Accepted Values
+## 可接受的值 {#accepted-values}
 
 - `"window"`: 优先服务于 [GUI 需求](../../../concepts/spatial-scenes.md#scene-type)
 - `"volume"`: 模拟现实世界中的[真实物体](../../../concepts/spatial-scenes.md#scene-type)

@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Spatialized HTML Elements
+# 空间化 HTML 元素 {#spatialized-html-elements}
 
 空间化 HTML 元素是指不被局限在网页平面内、可以进入网页前方空间中的 HTML 元素。
 

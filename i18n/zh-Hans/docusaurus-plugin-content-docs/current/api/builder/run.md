@@ -8,25 +8,25 @@ sidebar_position: 1
 
 会自动打包、调起模拟器、推送安装包到模拟器里、自动安装和启动。
 
-## When to Use
+## 适用场景 {#when-to-use}
 
 要在不包含 [WebSpatial Runtime](../../concepts/webspatial-app.md#webspatial-runtime) 的[空间计算](../../concepts/spatial-computing.md)平台（比如 visionOS）上运行 [WebSpatial App](../../concepts/webspatial-app.md)。
 
 只需要[在模拟器里预览效果](../../introduction/getting-started.md#preview)，不需要在真实设备上使用。
 
-## When Not to Use
+## 不适用场景 {#when-not-to-use}
 
 要在内置了 [WebSpatial Runtime](../../concepts/webspatial-app.md#webspatial-runtime) 、支持直接用 URL 运行 [WebSpatial App](../../concepts/webspatial-app.md) 的[空间计算](../../concepts/spatial-computing.md)平台上运行（比如 [PICO OS 6](https://developer.picoxr.com/document/web/web-app/)）。
 
 要[在真实设备上测试](./build.md)，或[对外大量分发应用](./publish.md)。
 
-## Syntax
+## 语法 {#syntax}
 
 `webspatial-builder run`
 
 `webspatial-builder run [--base=<base url>] [--manifest=<local path>] [--manifest-url=<url>] [--project=<dist>]`
 
-## Options
+## 选项 {#options}
 
 ### `--base`
 

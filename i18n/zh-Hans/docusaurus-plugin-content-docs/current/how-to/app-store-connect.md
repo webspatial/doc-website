@@ -2,9 +2,9 @@
 sidebar_position: 6
 ---
 
-# How to test on visionOS devices and submit to the App Store
+# 如何在 visionOS 设备上测试并提交到 App Store {#how-to-test-on-visionos-devices-and-submit-to-the-app-store}
 
-## Prerequisites
+## 前提条件 {#prerequisites}
 
 1. 获取开发者信息
    1. 登录 [https://developer.apple.com/account](https://developer.apple.com/account)
@@ -13,7 +13,7 @@ sidebar_position: 6
    1. 在你的开发者账号仪表板中，前往 [Certificates, Identifiers & Profiles -> Identifiers](https://developer.apple.com/account/resources/identifiers/list)。
    2. 为此应用创建一个专用的 **Bundle ID**。
 
-## Device Testing
+## 设备测试 {#device-testing}
 
 1. 创建应用记录
    1. 登录 [https://appstoreconnect.apple.com/](https://appstoreconnect.apple.com/)
@@ -39,7 +39,7 @@ sidebar_position: 6
    4. 在 **Devices** 下，选择测试设备。
    5. 在 **Installed Apps** 中，添加 IPA 文件。
 
-## Submission to the App Store
+## 提交到 App Store {#submission-to-the-app-store}
 
 1. 配置 App
    1. 从 **App** 列表（[https://appstoreconnect.apple.com/apps](https://appstoreconnect.apple.com/apps)）中，打开你之前创建的 App。

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# How to meet the minimum PWA requirements
+# 如何满足最低 PWA 要求 {#how-to-meet-the-minimum-pwa-requirements}
 
 1. 这个 Web App 的网页 URL 必须是 HTTPS 协议
 
@@ -51,7 +51,7 @@ sidebar_position: 1
 
 ---
 
-## Recommended Icons for Web Apps
+## Web App 的推荐图标 {#recommended-icons-for-web-apps}
 
 > 符合以下要求的示例图标文件：[webspatial-icon-examples.zip](https://webspatial.dev/assets/guide/webspatial-icon-examples.zip)
 
