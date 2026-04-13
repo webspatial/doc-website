@@ -30,6 +30,7 @@ Docs structure and routing config:
 - latest category metadata: `docs/**/_category_.json`
 - localized latest category metadata: `i18n/zh-Hans/docusaurus-plugin-content-docs/current/**/_category_.json`
 - legacy version config: `docusaurus.config.ts`, `versions.json`, `versioned_sidebars/version-1.0.x-sidebars.json`
+- legacy doc metadata override: `src/theme/DocItem/Metadata/index.tsx`
 - docs root redirects: `src/pages/docs.tsx`, `src/pages/docs/introduction.tsx`
 - legacy introduction fallback redirects: `src/pages/docs/introduction/**/index.tsx`
 - legacy non-introduction fallback redirects: `src/theme/NotFound/Content/index.tsx`
@@ -123,12 +124,13 @@ Rules:
 - keep legacy Chinese content body aligned with the English legacy source unless there is an explicit decision to translate old docs
 - keep legacy reachable only under `/docs/1.0.x/...` and `/zh-Hans/docs/1.0.x/...`
 - keep `banner: 'unmaintained'`
-- keep `noIndex: true`
+- do not set `noIndex` for legacy docs
 - keep legacy internal links relative whenever possible so they stay inside `1.0.x`
 - do not add absolute `/docs/...` links inside legacy doc bodies unless the intent is to jump to latest
 - keep the warning admonition at the top of every legacy page:
   - English legacy links to `/docs/`
-  - Chinese legacy links to `/zh-Hans/docs/`
+  - Chinese legacy also authors the link as `/docs/` so Docusaurus can localize it correctly
+- keep the centralized legacy metadata notice in `src/theme/DocItem/Metadata/index.tsx` so search engines and AI-oriented crawlers can see that the page is outdated and should defer to the latest docs
 - if you add or resync legacy files, reapply that admonition after the frontmatter
 
 ## Redirect Architecture
@@ -229,7 +231,7 @@ When updating legacy docs:
 1. Update English legacy in `versioned_docs/version-1.0.x/` if the change truly belongs to legacy.
 2. Mirror the same file-level change in Chinese legacy under `i18n/zh-Hans/docusaurus-plugin-content-docs/version-1.0.x/`.
 3. Keep the Chinese legacy body aligned with the English legacy body unless legacy translation is intentionally introduced later.
-4. Preserve or reapply the Chinese warning admonition that links to `/zh-Hans/docs/`.
+4. Preserve or reapply the Chinese warning admonition, but author its latest-docs link as `/docs/` so locale-prefixed builds remain valid.
 5. Recheck legacy redirect coverage if any slug or page path changes.
 
 Do not:
@@ -275,6 +277,8 @@ Legacy docs must stay out of AI-facing outputs such as `static/llms.txt`.
 
 Current design relies on the latest docs tree as the source for that output. Preserve that behavior unless multilingual AI output is intentionally redesigned.
 
+Legacy docs are still indexable by search engines. The machine-readable outdated notice for legacy pages is handled centrally in `src/theme/DocItem/Metadata/index.tsx`, not by per-file frontmatter duplication.
+
 ## Validation Checklist
 
 After docs changes, validate the parts you touched.
@@ -300,7 +304,7 @@ Behavior checks:
 - legacy docs resolve only under `1.0.x`
 - old naked legacy-only URLs redirect to matching `1.0.x` URLs
 - legacy pages show the unmaintained banner
-- legacy pages remain `noindex`
+- legacy pages are indexable and expose the outdated/latest-docs guidance in page metadata
 - no new latest route conflicts with legacy redirect namespaces
 - authored internal links do not rely on accidental trailing-slash behavior
 

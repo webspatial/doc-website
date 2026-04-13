@@ -1,10 +1,17 @@
 import React, {type ReactNode} from 'react';
 import clsx from 'clsx';
 import {ThemeClassNames} from '@docusaurus/theme-common';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import type {Props} from '@theme/Admonition/Layout';
 
 import styles from './styles.module.scss';
+
+const LEGACY_OUTDATED_TITLES = new Set(['Old Documentation', '旧版文档']);
+const LEGACY_OUTDATED_LABELS: Record<string, string> = {
+  en: 'This document is outdated',
+  'zh-Hans': '当前文档已过时',
+};
 
 function AdmonitionContainer({
   type,
@@ -40,10 +47,25 @@ function AdmonitionContent({children}: Pick<Props, 'children'>) {
 }
 
 export default function AdmonitionLayout(props: Props): ReactNode {
+  const {
+    i18n: {currentLocale},
+  } = useDocusaurusContext();
   const {type, icon, title, children, className} = props;
+  const isLegacyOutdatedAdmonition =
+    typeof title === 'string' && LEGACY_OUTDATED_TITLES.has(title);
+  const resolvedTitle = isLegacyOutdatedAdmonition
+    ? LEGACY_OUTDATED_LABELS[currentLocale] ?? LEGACY_OUTDATED_LABELS.en
+    : title;
+
   return (
-    <AdmonitionContainer type={type} className={className}>
-      {title || icon ? <AdmonitionHeading title={title} icon={icon} /> : null}
+    <AdmonitionContainer
+      type={type}
+      className={clsx(className, {
+        [styles.legacyOutdatedAdmonition]: isLegacyOutdatedAdmonition,
+      })}>
+      {resolvedTitle || icon ? (
+        <AdmonitionHeading title={resolvedTitle} icon={icon} />
+      ) : null}
       <AdmonitionContent>{children}</AdmonitionContent>
     </AdmonitionContainer>
   );

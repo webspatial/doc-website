@@ -38,12 +38,9 @@ pnpm run deploy
 - `blog/` – Blog posts (optional)
 - `src/` – React components, pages and styles used by the site
 - `static/` – Static assets served as-is
-- `scripts/` – Helper scripts (for example syncing docs from the WebSpatial SDK)
+- `scripts/` – Helper scripts for documentation maintenance
 - `docusaurus.config.ts` – Site configuration
-
-A `postinstall` hook automatically links a local copy of the WebSpatial SDK if it exists in a sibling directory. This allows the `sync-docs` script to import additional docs from the SDK repository.
 
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or pull requests to improve the documentation or website.
-

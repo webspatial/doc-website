@@ -12,6 +12,19 @@ const PROJ_NAME = 'doc-website'; //process.env.PROJECT_NAME || 'my-default-proje
 
 const isProd = BASE_URL == '/';
 
+const expandSidebarCategories = (items: any[]): any[] =>
+  items.map((item) =>
+    item.type === 'category'
+      ? {
+          ...item,
+          collapsed: false,
+          items: Array.isArray(item.items)
+            ? expandSidebarCategories(item.items)
+            : item.items,
+        }
+      : item,
+  );
+
 const config: Config = {
   trailingSlash: false,
   onBrokenLinks: 'throw', // 发现死链就 fail‐fast
@@ -93,71 +106,6 @@ const config: Config = {
         disableInDev: true,
       } satisfies IdealImageOptions,
     ],
-    // [
-    //   'docusaurus-plugin-typedoc',
-
-    //   // Options
-    //   {
-    //     id: 'core-sdk',
-    //     // ── begin explicit source-link settings ──
-
-    //     // Ensure TypeDoc always generates links, even if Git auto-detection is off
-    //     disableGit: true,
-
-    //     // Template for linking to GitHub.
-    //     // {path} is the file path under the SDK repo, {line} the line number.
-    //     sourceLinkTemplate:
-    //       'https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/{path}#L{line}',
-
-    //     // (Optional) override the revision—use your default branch or commit SHA
-    //     gitRevision: 'main',
-    //     cleanOutputDir: false,
-
-    //     // ── end explicit settings ──
-    //     entryPoints: ['./XRSDK/packages/core/src/index.ts'],
-    //     tsconfig: './XRSDK/packages/core/tsconfig.json',
-    //     out: 'docs/api-core',
-    //     sidebar: {
-    //       autoConfiguration: true,
-    //       pretty: true,
-    //       typescript: true,
-    //       deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
-    //     },
-    //   },
-    // ],
-    // [
-    //   'docusaurus-plugin-typedoc',
-
-    //   // Options
-    //   {
-    //     id: 'react-sdk',
-    //     // ── begin explicit source-link settings ──
-
-    //     // Ensure TypeDoc always generates links, even if Git auto-detection is off
-    //     disableGit: true,
-
-    //     // // Template for linking to GitHub.
-    //     // // {path} is the file path under the SDK repo, {line} the line number.
-    //     basePath: './XRSDK/packages/react/src',
-    //     sourceLinkTemplate:
-    //       'https://github.com/webspatial/webspatial-sdk/blob/main/react/src/{path}#L{line}',
-
-    //     // // (Optional) override the revision—use your default branch or commit SHA
-    //     gitRevision: 'main',
-    //     cleanOutputDir: false,
-
-    //     // ── end explicit settings ──
-    //     entryPoints: ['./XRSDK/packages/react/src/index.ts'],
-    //     tsconfig: './XRSDK/packages/react/tsconfig.json',
-    //     out: 'docs/api-react',
-    //     sidebar: {
-    //       autoConfiguration: true,
-    //       pretty: true,
-    //       typescript: true,
-    //       deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
-    //     },
-    //   },
-    // ],
   ],
   title: 'WebSpatial',
   favicon: 'img/favicon.svg',
@@ -194,6 +142,13 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarItemsGenerator: async ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }: any) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            return expandSidebarCategories(items);
+          },
           lastVersion: 'current',
           versions: {
             current: {
@@ -205,7 +160,6 @@ const config: Config = {
               path: '1.0.x',
               banner: 'unmaintained',
               badge: false,
-              noIndex: true,
             },
           },
           // Please change this to your repo.
