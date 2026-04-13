@@ -25,15 +25,15 @@
     "check-assets": "node ./helper/AssetsChecker.js"
   },
   "dependencies": {
-    "@docusaurus/core": "3.8.1",
-    "@docusaurus/plugin-content-blog": "^3.8.1",
-    "@docusaurus/plugin-content-docs": "3.8.1",
-    "@docusaurus/plugin-ideal-image": "^3.8.1",
-    "@docusaurus/preset-classic": "3.8.1",
-    "@docusaurus/remark-plugin-npm2yarn": "^3.8.1",
-    "@docusaurus/theme-common": "^3.8.1",
-    "@docusaurus/theme-live-codeblock": "^3.8.1",
-    "@docusaurus/utils-common": "^3.8.1",
+    "@docusaurus/core": "3.10.0",
+    "@docusaurus/plugin-content-blog": "^3.10.0",
+    "@docusaurus/plugin-content-docs": "3.10.0",
+    "@docusaurus/plugin-ideal-image": "^3.10.0",
+    "@docusaurus/preset-classic": "3.10.0",
+    "@docusaurus/remark-plugin-npm2yarn": "^3.10.0",
+    "@docusaurus/theme-common": "^3.10.0",
+    "@docusaurus/theme-live-codeblock": "^3.10.0",
+    "@docusaurus/utils-common": "^3.10.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "copy-text-to-clipboard": "^3.2.0",
@@ -48,9 +48,9 @@
     "yet-another-react-lightbox": "^3.23.3"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.8.1",
-    "@docusaurus/tsconfig": "3.8.1",
-    "@docusaurus/types": "3.8.1",
+    "@docusaurus/module-type-aliases": "3.10.0",
+    "@docusaurus/tsconfig": "3.10.0",
+    "@docusaurus/types": "3.10.0",
     "@types/react": "^19.1.6",
     "jimp": "^1.6.0",
     "typescript": "~5.6.2"
@@ -68,7 +68,12 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "webpack": "5.105.4"
+    }
   },
   "packageManager": "pnpm@9.0.0+sha512.b4106707c7225b1748b61595953ccbebff97b54ad05d002aa3635f633b9c53cd666f7ce9b8bc44704f1fa048b9a49b55371ab2d9e9d667d1efe2ef1514bcd513"
 }
