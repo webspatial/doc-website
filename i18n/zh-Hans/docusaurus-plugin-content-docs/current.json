@@ -16,11 +16,11 @@
     "description": "The generated-index page description for category Concepts in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.How-to": {
-    "message": "操作指南",
+    "message": "How-to",
     "description": "The label for category How-to in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.How-to.link.generated-index.description": {
-    "message": "面向 PWA 要求、JSX Runtime 配置、SSR、Xcode 和应用商店流程的实用接入指南。",
+    "message": "面向 PWA 要求、JSX Runtime 配置、SSR、Xcode 和应用商店流程的配套文档。",
     "description": "The generated-index page description for category How-to in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.API": {

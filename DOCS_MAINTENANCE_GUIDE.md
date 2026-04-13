@@ -289,7 +289,7 @@ Rules:
 - If the English source heading would produce a deduplicated id, preserve that deduplicated id in Chinese too. Example: keep `## 类型 {#type-1}` if the English source already uses `#type-1`.
 - Do not translate English abbreviations, API naming, command names, option names, component names, property names, or other code identifiers.
 - Do not translate English project or tool names such as `WebSpatial`, `WebSpatial Builder`, `Rspack`, and `visionOS`.
-- Do not translate `Web App`, `Xxx Runtime`, `Hover Effect`, or `App Store`.
+- Do not translate `Web App`, `Xxx Runtime`, `Hover Effect`, `App Store`, or the top-level section name `How-to`.
 - If a heading mixes protected English terms with descriptive words, translate only the descriptive words. Example: `## 打包版 WebSpatial App {#packaged-webspatial-app}`.
 - Prefer Chinese labels that describe function clearly. Examples:
   - `Summary` -> `概述`
