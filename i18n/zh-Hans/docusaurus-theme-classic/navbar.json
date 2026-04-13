@@ -7,6 +7,18 @@
     "message": "WebSpatial 标志",
     "description": "The alt text of navbar logo"
   },
+  "item.label.Introduction": {
+    "message": "介绍",
+    "description": "Navbar item with label Introduction"
+  },
+  "item.label.Concepts": {
+    "message": "概念",
+    "description": "Navbar item with label Concepts"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
   "item.label.Docs": {
     "message": "文档",
     "description": "Navbar item with label Docs"

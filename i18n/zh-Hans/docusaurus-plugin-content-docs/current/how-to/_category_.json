@@ -1,6 +1,7 @@
 {
   "label": "How-to",
   "position": 3,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
     "slug": "/how-to",

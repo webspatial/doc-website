@@ -49,13 +49,12 @@ export default function NavbarLogo(): ReactNode {
     siteConfig: {title},
   } = useDocusaurusContext();
   const {
-    navbar: {title: navbarTitle, logo},
+    navbar: {logo},
   } = useThemeConfig();
   const isHomepage = useIsHomepage();
   const logoLink = useBaseUrl(logo?.href || '/');
 
-  const fallbackAlt = navbarTitle ? '' : title;
-  const alt = logo?.alt ?? fallbackAlt;
+  const alt = logo?.alt ?? title;
 
   return (
     <Link
@@ -67,7 +66,6 @@ export default function NavbarLogo(): ReactNode {
           <LogoImage logo={logo} alt={alt} isHomepage={isHomepage} />
         </div>
       )}
-      {navbarTitle != null && <b className="navbar__title text--truncate">{navbarTitle}</b>}
     </Link>
   );
 }

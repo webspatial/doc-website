@@ -1,43 +1,97 @@
 /*
-Hide color mode toggle in small viewports
- */
+Hide desktop utility controls in small viewports.
+Mobile navigation still exposes locale and theme controls in the sidebar.
+*/
 @media (max-width: 996px) {
-  .colorModeToggle {
+  .colorModeToggle,
+  .utilityControls,
+  .socialItems,
+  .utilitySeparator {
     display: none;
   }
 }
+
 @media (min-width: 997px) {
-  :global(a.navbar__item) {
-    padding: 0 24px 0 0;
-    &:first-of-type {
-      padding-left: 12px;
+  :global(.navbar__items) {
+    min-width: 0;
+  }
+
+  .utilityControls {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  .controlGroup {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    min-height: auto;
+    padding: 2px;
+    border-radius: var(--navbar-control-radius);
+    background: var(--navbar-control-bg);
+    border: 1px solid var(--navbar-control-border);
+    box-shadow: var(--navbar-control-shadow);
+    backdrop-filter: blur(14px);
+  }
+
+  .controlGroupItem {
+    display: flex;
+    align-items: center;
+
+    :global(.navbar__item) {
+      padding: 0;
     }
   }
+
+  .controlGroupDivider {
+    width: 1px;
+    height: 16px;
+    background: var(--navbar-control-divider);
+  }
+
   .colorModeToggle {
-    margin: 0 16px 0 0;
+    margin: 0;
+  }
+
+  .navbarSearch {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .socialItems {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+    gap: 2px;
+    flex-shrink: 0;
   }
 }
 
 /*
 Restore some Infima style that broke with CSS Cascade Layers
 See https://github.com/facebook/docusaurus/pull/11142
- */
+*/
 :global(.navbar__items--right) > :last-child {
   padding-right: 0;
 }
 
 .separator {
-  /* display: block; */
+  align-self: center;
   width: 1px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.32);
-  html[data-theme='light'] & {
-    background-color: rgba(229, 230, 235, 1);
-  }
-  :global(.navbar--dark) & {
-    background-color: rgba(255, 255, 255, 0.32);
-  }
-  margin-right: 16px;
+  height: 18px;
+  background: var(--navbar-divider-color);
+  margin-right: 14px;
+  flex-shrink: 0;
+
   @media (max-width: 996px) {
     display: none;
   }

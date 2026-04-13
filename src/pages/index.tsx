@@ -36,7 +36,7 @@ import tdk from '../data/tdk';
 // }
 
 function HomepageColorMode(): ReactNode {
-  const {colorModeChoice, setColorMode} = useColorMode();
+  const {setColorMode} = useColorMode();
 
   React.useEffect(() => {
     const setTransientColorMode = setColorMode as unknown as (
@@ -44,13 +44,24 @@ function HomepageColorMode(): ReactNode {
       options?: {persist?: boolean},
     ) => void;
 
-    const previousColorModeChoice = colorModeChoice;
+    // `useColorMode()` intentionally lags during hydration. Read the current
+    // DOM attribute so we restore the user's real choice when leaving home.
+    const previousColorModeChoice = (() => {
+      const themeChoice = document.documentElement.getAttribute(
+        'data-theme-choice',
+      );
+      if (themeChoice === 'light' || themeChoice === 'dark') {
+        return themeChoice;
+      }
+      return null;
+    })();
+
     setTransientColorMode('dark', {persist: false});
 
     return () => {
       setTransientColorMode(previousColorModeChoice, {persist: false});
     };
-  }, []);
+  }, [setColorMode]);
 
   return null;
 }

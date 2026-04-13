@@ -79,11 +79,15 @@ export default function NavbarContent(): ReactNode {
   const [leftItems, rightItems] = splitNavbarItems(items);
 
   const searchBarItem = items.find((item) => item.type === 'search');
-
-  const rightLeftItems = rightItems.filter((item) => item.group === 'left');
-  const rightRightItems = rightItems.filter((item) => item.group !== 'left'); // right and default
+  const utilityItems = rightItems.filter((item) => item.type !== 'search');
+  const localeDropdownItem = utilityItems.find(
+    (item) => item.type === 'localeDropdown',
+  );
+  const socialItems = utilityItems.filter((item) => item !== localeDropdownItem);
 
   const isHomepage = useIsHomepage();
+  const showControlGroup = Boolean(localeDropdownItem) || !isHomepage;
+  const showSocialSeparator = socialItems.length > 0;
 
   return (
     <NavbarContentLayout
@@ -96,38 +100,49 @@ export default function NavbarContent(): ReactNode {
         </>
       }
       right={
-        // TODO stop hardcoding items?
-        // Ask the user to add the respective navbar items => more flexible
         <>
-          {!searchBarItem && (
-            <NavbarSearch>
+          {showControlGroup && (
+            <div className={styles.utilityControls}>
+              <div className={styles.controlGroup}>
+                {localeDropdownItem && (
+                  <div className={styles.controlGroupItem}>
+                    <NavbarItems items={[localeDropdownItem]} />
+                  </div>
+                )}
+                {localeDropdownItem && !isHomepage && (
+                  <div className={styles.controlGroupDivider} />
+                )}
+                {!isHomepage && (
+                  <div className={styles.controlGroupItem}>
+                    <NavbarColorModeToggle className={styles.colorModeToggle} />
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {!searchBarItem ? (
+            <NavbarSearch className={styles.navbarSearch}>
               <SearchBar />
             </NavbarSearch>
+          ) : (
+            <NavbarItems items={[searchBarItem]} />
           )}
-          <NavbarItems items={rightLeftItems} />
-          {!isHomepage && <Separator />}
-          {!isHomepage && (
-            <NavbarColorModeToggle className={styles.colorModeToggle} />
+
+          {showSocialSeparator && <Separator className={styles.utilitySeparator} />}
+          {socialItems.length > 0 && (
+            <div className={styles.socialItems}>
+              <NavbarItems items={socialItems} />
+            </div>
           )}
-          {!isHomepage && <Separator />}
-          <NavbarItems items={rightRightItems} />
         </>
       }
     />
   );
 }
 
-const Separator = () => {
+const Separator = ({className}: {className?: string}) => {
   return (
-    <div className={styles.separator}>
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="2"
-        height="12"
-        viewBox="0 0 2 12"
-        fill="none">
-        <path d="M1 0V12" stroke="#E5E6EB" />
-      </svg> */}
-    </div>
+    <div className={clsx(styles.separator, className)} />
   );
 };

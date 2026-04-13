@@ -487,6 +487,10 @@
     "message": "system mode",
     "description": "The name for the system color mode"
   },
+  "theme.navbar.docsVersion.currentLabel": {
+    "message": "最新",
+    "description": "Label for the latest docs version in the navbar"
+  },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
     "message": "Expand the dropdown",
     "description": "The ARIA label of the button to expand the mobile dropdown navbar item"

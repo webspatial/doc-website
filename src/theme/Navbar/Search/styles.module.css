@@ -6,17 +6,14 @@ See https://github.com/facebook/docusaurus/pull/9385
   display: none;
 }
 
+.navbarSearchContainer {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 996px) {
   .navbarSearchContainer {
     position: absolute;
     right: 42px;
-    /* var(--ifm-navbar-padding-horizontal); */
-  }
-}
-
-@media (min-width: 997px) {
-  .navbarSearchContainer {
-    padding: var(--ifm-navbar-item-padding-vertical)
-      var(--ifm-navbar-item-padding-horizontal);
   }
 }

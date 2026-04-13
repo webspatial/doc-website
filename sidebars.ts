@@ -23,7 +23,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'How-to',
-      collapsed: false,
+      collapsed: true,
       link: {
         type: 'generated-index',
         slug: '/how-to',

@@ -2,16 +2,16 @@ import React, {type ReactNode} from 'react';
 import type {Props} from '@theme/Icon/Language';
 
 export default function IconLanguage({
-  width = 20,
-  height = 20,
+  width = 18,
+  height = 18,
   ...props
 }: Props): ReactNode {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
+      width={width}
+      height={height}
+      viewBox="7 7 18.5 18"
       fill="none"
       {...props}>
       <path

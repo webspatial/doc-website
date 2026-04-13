@@ -1,13 +1,17 @@
 import React, {type ReactNode} from 'react';
 import type {Props} from '@theme/Icon/DarkMode';
 
-export default function IconDarkMode(props: Props): ReactNode {
+export default function IconDarkMode({
+  width = 18,
+  height = 18,
+  ...props
+}: Props): ReactNode {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
+      width={width}
+      height={height}
+      viewBox="9 9 14 14"
       fill="none"
       {...props}>
       <path
