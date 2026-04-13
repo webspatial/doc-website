@@ -3,13 +3,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import React from 'react';
 
 export default function LegacyRedirectPageintroductionhtml_css_and_webxr(): React.JSX.Element {
-  const target = useBaseUrl('/docs/');
+  const target = useBaseUrl('/docs/1.0.x/introduction/html-css-and-webxr');
 
   return (
     <Head>
       <meta httpEquiv="refresh" content={`0; url=${target}`} />
       <meta name="robots" content="noindex,follow" />
-      <title>Redirecting to the latest docs</title>
+      <title>Redirecting to the legacy docs</title>
     </Head>
   );
 }
