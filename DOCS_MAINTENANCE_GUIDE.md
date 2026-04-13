@@ -243,6 +243,29 @@ Do not:
 - localize slugs casually
 - use one locale as a staging area that diverges from the published tree
 
+## Localized Title Translation Rules
+
+When translating latest Chinese docs, translate visible page titles and section headings into natural Chinese that matches the terminology already used in the localized body copy.
+
+Rules:
+
+- Translate visible titles by function, not by word-for-word literal mapping. Prefer the label that best explains what the section does in context.
+- Keep page URLs, file paths, slugs, sidebar ids, heading ids, and code-facing names aligned with English.
+- For translated headings, add an explicit English id such as `## 场景类型 {#scene-type}` so fragment links and generated TOC links stay stable.
+- If the English source heading would produce a deduplicated id, preserve that deduplicated id in Chinese too. Example: keep `## 类型 {#type-1}` if the English source already uses `#type-1`.
+- Do not translate English abbreviations, API naming, command names, option names, component names, property names, or other code identifiers.
+- Do not translate English project or tool names such as `WebSpatial`, `WebSpatial Builder`, `Rspack`, and `visionOS`.
+- Do not translate `Web App`, `Xxx Runtime`, `Hover Effect`, or `App Store`.
+- If a heading mixes protected English terms with descriptive words, translate only the descriptive words. Example: `## 打包版 WebSpatial App {#packaged-webspatial-app}`.
+- Prefer Chinese labels that describe function clearly. Examples:
+  - `Summary` -> `概述`
+  - `Availability` -> `适用范围与设置方式` when the section actually combines applicability, where to set it, and default behavior
+  - `Signature` -> `调用形式`
+  - `Type Signature` -> `类型定义` when the section shows a type declaration or union/object type shape, not a callable function signature
+  - `Event Type Signature` -> `事件类型名称`
+  - `Supported Web Projects` -> `支持的 Web 项目`
+- After title translation changes, verify that the rendered Chinese TOC shows Chinese labels while the underlying fragment hrefs still use the English ids.
+
 ## Localized Markdown and MDX Rules
 
 These are easy to break during translation or regeneration.
