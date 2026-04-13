@@ -1,0 +1,9 @@
+{
+  "label": "概念",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "slug": "/concepts",
+    "description": "理解 WebSpatial、空间计算、空间场景、交互方式以及 2D + 3D 组合的核心概念。"
+  }
+}

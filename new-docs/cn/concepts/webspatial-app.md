@@ -1,6 +1,6 @@
 # WebSpatial App
 
-使用了 [WebSpatial API](../introduction/getting-started.md#webspatial-api) 的 [Web App](#web-app)，如果在[空间计算平台](./spatial-computing.md#spatial-computing)中作为独立应用运行，在 [WebSpatial Runtime](#webspatial-runtime) 的支持下启用空间计算能力，就会成为空间应用，可以称作 WebSpatial App。
+使用了 [WebSpatial API](../introduction/getting-started.md#webspatial-api) 的 [Web App](#web-app)，如果在[空间计算平台](./spatial-computing.md)中作为独立应用运行，在 [WebSpatial Runtime](#webspatial-runtime) 的支持下启用空间计算能力，就会成为空间应用，可以称作 WebSpatial App。
 
 WebSpatial App 就是对标准 Web App 的增强，这种增强需要在合适的条件下激活。
 
@@ -33,7 +33,7 @@ visionOS 里的 Safari 和 WKWebView 都是 Web Runtime，用 [WebSpatial Builde
 
 PICO OS 6 里内置 [WebSpatial Runtime](#webspatial-runtime) 的 [Web App Runtime](https://developer.picoxr.com/document/web/web-app/) 也是一种 Web Runtime，跟 PICO 浏览器使用[相同的 Chromium 内核](https://developer.picoxr.com/document/web/web-platform/)。
 
-也就是说，WebSpatial Runtime 始终内置在 Web Runtime 内，是这些 Web Runtime 的一部分，因此 [WebSpatial App](#webspatial-app) 具备[标准 Web App](#web-app) 的原有能力，继承标准 Web App 的代码和开发方式。
+也就是说，WebSpatial Runtime 始终内置在 Web Runtime 内，是这些 Web Runtime 的一部分，因此 [WebSpatial App](./webspatial-app.md) 具备[标准 Web App](#web-app) 的原有能力，继承标准 Web App 的代码和开发方式。
 
 ## WebSpatial Runtime
 

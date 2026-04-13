@@ -1,0 +1,10 @@
+{
+  "label": "Scene Options",
+  "position": 7,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/react-sdk/scene-options",
+    "description": "用于尺寸、缩放、对齐和窗口行为的场景配置选项。"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "label": "JS API",
+  "position": 5,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/react-sdk/js-api",
+    "description": "用于场景初始化、指标读取和坐标转换的 JavaScript API。"
+  }
+}

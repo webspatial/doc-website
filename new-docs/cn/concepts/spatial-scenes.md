@@ -1,8 +1,8 @@
 # Spatial Scenes
 
-Spatial Scene 又叫 Spatial Container，是空间计算操作系统为[空间应用](./spatial-computing.md#spatial-app)提供的最基础的应用内容容器，用于实现[统一渲染](./spatial-computing.md#unified-rendering)和提供[软件和空间结合的基本能力](./spatial-computing.md#spatial-computing)。空间应用的所有内容都需要通过这种容器来提供，就好像桌面操作系统里的应用内容都需要通过窗口来提供。
+Spatial Scene 又叫 Spatial Container，是空间计算操作系统为[空间应用](./spatial-computing.md#spatial-app)提供的最基础的应用内容容器，用于实现[统一渲染](./spatial-computing.md#unified-rendering)和提供[软件和空间结合的基本能力](./spatial-computing.md)。空间应用的所有内容都需要通过这种容器来提供，就好像桌面操作系统里的应用内容都需要通过窗口来提供。
 
-对于 [WebSpatial App](./webspatial-app.md#webspatial-app) 来说，每个 Spatial Scene 都相当于一个在独立「窗口」中通过 URL 加载和运行的网页。
+对于 [WebSpatial App](./webspatial-app.md) 来说，每个 Spatial Scene 都相当于一个在独立「窗口」中通过 URL 加载和运行的网页。
 WebSpatial App 完全由这些「窗口」组成，所有内容都来自这些「窗口」中运行的 HTML/CSS/JS 代码。
 
 这种「窗口」没有浏览器的标签栏、地址栏等 UI，把空间都留给网页自身，只额外提供[跟 PWA 窗口一样的极简菜单](https://web.dev/learn/pwa/app-design#standalone_experience)，悬浮在网页内容上方，默认折叠，提供「复制当前网址」、「在浏览器中打开」等对 Web App 来说必要的基础功能。其中默认还会包含「后退」等导航按钮，如果在 Web App Manifest 里[把 `display` 模式设成 `standalone`](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Manifest/Reference/display)，会隐藏导航按钮，完全靠网页内的 UI 来导航。
@@ -17,8 +17,8 @@ Spatial Scene 目前有三种类型：
 
 这个 2D 面片的背板可以设置为[全透明、无边框](../api/react-sdk/css-api/background-material.md)，让网页中的内容好像分散悬浮在空中。也可以设置为原生质感的半透明材质（比如在 visionOS 里会是毛玻璃效果），随视角和环境实时动态渲染。
 
-[空间化 HTML 元素](./spatialized-html-elements.md#spatialized-html-elements)可以从这个 2D 面片上被「抬升」到前方（朝向用户）的 3D 空间中做 Z 轴方向上的[布局](../api/react-sdk/css-api/back.md)和[变形转换](../api/react-sdk/css-api/transform.md)。
-如果在网页中添加 [3D 内容容器元素](./3d-content-containers.md#3d-content-containers)，也会在这个 2D 面片前方的空间中渲染有体积的 3D 内容。
+[空间化 HTML 元素](./spatialized-html-elements.md)可以从这个 2D 面片上被「抬升」到前方（朝向用户）的 3D 空间中做 Z 轴方向上的[布局](../api/react-sdk/css-api/back.md)和[变形转换](../api/react-sdk/css-api/transform.md)。
+如果在网页中添加 [3D 内容容器元素](./3d-content-containers.md)，也会在这个 2D 面片前方的空间中渲染有体积的 3D 内容。
 因此「window」类型的 Spatial Scene 不只是一个平面，不是只能包含 纯 2D 内容，也可以包含空间化 UI 和有体积的 3D 内容。
 
 Spatial Scene 也可以设置为 `volume` 类型，这种类型不再优先服务于 GUI 需求，而是用于模拟现实世界中的真实物体。

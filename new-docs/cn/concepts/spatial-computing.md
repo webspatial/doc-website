@@ -10,13 +10,13 @@
 
 ## Unified Rendering
 
-统一渲染的目的是让 Spatial OS 能为各个软件统一做[空间计算](#spatial-computing)，让多个[空间应用](#spatial-app)的 2D 和 3D 内容能在同一个空间里共存，能融合到同一个坐标系和光照环境中（比如具备位置关系和遮挡、阴影等效果）。
+统一渲染的目的是让 Spatial OS 能为各个软件统一做[空间计算](./spatial-computing.md)，让多个[空间应用](#spatial-app)的 2D 和 3D 内容能在同一个空间里共存，能融合到同一个坐标系和光照环境中（比如具备位置关系和遮挡、阴影等效果）。
 
-为此，各个空间应用不能孤立的渲染自己的内容、随意实现交互，需要通过[操作系统统一管理的 2D/3D 内容容器（称为空间场景）](./spatial-scenes.md#spatial-scenes)来提供应用内容，通过[操作系统可理解的 API](./3d-content-containers.md#3d-engine-api) 来实现这些内容，从而让操作系统能尽可能理解各个应用中的内容 ，实现统一渲染，让这些内容具备一致的跟空间结合和自然交互的能力。
+为此，各个空间应用不能孤立的渲染自己的内容、随意实现交互，需要通过[操作系统统一管理的 2D/3D 内容容器（称为空间场景）](./spatial-scenes.md)来提供应用内容，通过[操作系统可理解的 API](./3d-content-containers.md#3d-engine-api) 来实现这些内容，从而让操作系统能尽可能理解各个应用中的内容 ，实现统一渲染，让这些内容具备一致的跟空间结合和自然交互的能力。
 
 ## Spatial Runtime
 
-为了持续做[空间计算](#spatial-computing)和[统一渲染](#unified-rendering)，Spatial OS 需要运行单一的 3D 空间和单一的 3D 渲染引擎，相当于一个负责运行所有[空间应用](#spatial-app)的 Runtime，所有空间应用都在这个 3D 空间中运行，都由这个 3D 引擎渲染。
+为了持续做[空间计算](./spatial-computing.md)和[统一渲染](#unified-rendering)，Spatial OS 需要运行单一的 3D 空间和单一的 3D 渲染引擎，相当于一个负责运行所有[空间应用](#spatial-app)的 Runtime，所有空间应用都在这个 3D 空间中运行，都由这个 3D 引擎渲染。
 
 这个 3D 空间在多个空间应用共存的模式下，称作 Shared Space，而如果隐藏其他空间应用，把整个空间都留给一个空间应用使用，则称作 Full Space。
 
@@ -24,7 +24,7 @@
 
 ## Spatial App
 
-空间应用是指在 [Shared Space 或 Full Space](#spatial-runtime) 里运行、由操作系统做[统一渲染](#unified-rendering)、自动具备[空间计算](#spatial-computing)能力的应用。
+空间应用是指在 [Shared Space 或 Full Space](#spatial-runtime) 里运行、由操作系统做[统一渲染](#unified-rendering)、自动具备[空间计算](./spatial-computing.md)能力的应用。
 
 空间应用采用「[2D 包含 3D](./3d-content-containers.md#2d-containing-3d)」的开发范式，现有的 2D 应用（比如 [Web App](./webspatial-app.md#web-app)）只要能使用[新增的空间计算 API（比如 WebSpatial API）](../introduction/getting-started.md#webspatial-api)，就可以成为空间应用，可以按需添加相应的代码，让 2D 内容进入 3D 空间、增加有真实体积的 3D 内容跟 2D 内容混合使用、让内容支持空间交互和跟空间环境结合。
 

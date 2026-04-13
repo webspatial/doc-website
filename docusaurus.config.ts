@@ -173,20 +173,20 @@ const config: Config = {
   organizationName: 'webspatial', // Usually your GitHub org/user name.
   projectName: PROJ_NAME, // Usually your repo name.
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: [
-  //     'en',
-  //     // 'zh-Hans'
-  //   ],
-  //   localeConfigs: {
-  //     en: {htmlLang: 'en-US'},
-  //     'zh-Hans': {htmlLang: 'zh-CN'},
-  //   },
-  // },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh-Hans'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en-US',
+      },
+      'zh-Hans': {
+        label: '中文',
+        htmlLang: 'zh-CN',
+      },
+    },
+  },
 
   presets: [
     [
@@ -298,11 +298,11 @@ const config: Config = {
           group: 'left',
         },
 
-        // {
-        //   type: 'localeDropdown',
-        //   className: 'xheader-locale',
-        //   position: 'right',
-        // },
+        {
+          type: 'localeDropdown',
+          className: 'xheader-locale',
+          position: 'right',
+        },
         {
           href: 'https://github.com/webspatial/webspatial-sdk',
           // label: 'GitHub',

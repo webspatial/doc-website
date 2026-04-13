@@ -1,0 +1,10 @@
+{
+  "label": "Manifest Options",
+  "position": 6,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/react-sdk/manifest-options",
+    "description": "用于配置 WebSpatial 应用主场景的 manifest 选项。"
+  }
+}

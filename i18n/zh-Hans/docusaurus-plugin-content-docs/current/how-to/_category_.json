@@ -1,0 +1,9 @@
+{
+  "label": "操作指南",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/how-to",
+    "description": "面向 PWA 要求、JSX Runtime 配置、SSR、Xcode 和应用商店流程的实用接入指南。"
+  }
+}

@@ -20,7 +20,7 @@
 
 `back` 表示的是这个 2D 面片跟「背后」之间的距离。这个「背后」对应的是哪个 2D 平面，由 `position` 的值决定：
 
-`back` 跟 `position: absolute` 组合使用时，可以理解为让当前元素相对于父层级中最近的[空间化 HTML 元素](../../../concepts/spatialized-html-elements.md#spatialized-html-elements)对应的 2D 平面进行定位，如果父层级中没有空间化 HTML 元素，就会相对于当前网页对应的 2D 平面进行定位。
+`back` 跟 `position: absolute` 组合使用时，可以理解为让当前元素相对于父层级中最近的[空间化 HTML 元素](../../../concepts/spatialized-html-elements.md)对应的 2D 平面进行定位，如果父层级中没有空间化 HTML 元素，就会相对于当前网页对应的 2D 平面进行定位。
 等价于让当前元素相对于元素原本所在的 2D 平面进行定位。
 
 > 这个理解方式不违背现有 Web 标准：

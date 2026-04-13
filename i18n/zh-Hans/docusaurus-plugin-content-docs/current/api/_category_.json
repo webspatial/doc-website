@@ -1,0 +1,10 @@
+{
+  "label": "API",
+  "position": 4,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api",
+    "description": "WebSpatial Builder 和 WebSpatial React SDK 的参考文档。"
+  }
+}

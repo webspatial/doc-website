@@ -1,0 +1,10 @@
+{
+  "label": "CSS API",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/react-sdk/css-api",
+    "description": "用于空间布局、深度、变换和材质表面的 CSS 属性。"
+  }
+}
