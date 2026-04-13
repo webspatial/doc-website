@@ -254,6 +254,59 @@ Rules:
 - avoid hand-authored links that append title-style fragments such as `#spatial-scenes` unless the target heading has an explicit matching id
 - when in doubt, link to the doc page root instead of a fragile title-anchor fragment
 
+## Markdown and Docusaurus Authoring Rules
+
+When upgrading docs formatting, prefer Docusaurus-native patterns over plain Markdown when they make the page easier to scan or harder to misuse.
+
+### Admonitions
+
+Rules:
+
+- Do not leave semantic guidance as plain Markdown blockquotes such as `> ...` in latest docs. Convert them to Docusaurus admonitions.
+- Use `:::info` for background explanations, standards context, and "why this works" clarifications.
+- Use `:::tip` for shortcuts, related APIs, optional workflow guidance, and convenience notes.
+- Use `:::note` for neutral clarifications that are useful but not risky.
+- Use `:::caution` for current limitations, temporary syntax requirements, naming rules that are easy to get wrong, and compatibility constraints.
+- In API docs, any note that says a WebSpatial API currently needs a temporary prefix because standardization is incomplete must be wrapped in `:::caution`.
+- In `scene-options` docs, Manifest key naming reminders must use `:::caution`, not `:::note`.
+- Keep admonition intent aligned between English and Chinese when mirroring latest docs.
+
+### Code Blocks
+
+Rules:
+
+- Prefer fenced code blocks with an accurate language tag such as `js`, `ts`, `json`, `json5`, `css`, `html`, or `bash`.
+- Add `title="..."` when the filename or usage context helps the reader understand the snippet quickly.
+- Avoid backticks inside code-block title strings. They can break MDX parsing in this repo.
+- Use line highlighting such as `{4}` or `{5-8}` only to emphasize the lines the reader must actually notice.
+- Recheck line highlights after every code edit so they still point at the intended lines.
+- For side-by-side conceptual alternatives that touch different files or different configuration surfaces, prefer sequential headings such as `### Using \`initScene\`` and `### Using the Web App Manifest` instead of tabs.
+
+### Package Manager Install Blocks
+
+Rules:
+
+- For npm package installation examples, use the legacy-compatible Docusaurus package-manager switcher pattern: ```` ```bash npm2yarn ````.
+- Write the source command in those blocks as `npm install ...` or `npm install -D ...`.
+- In latest docs, do not use `<Tabs>` / `<TabItem>` to group multi-file examples or alternative configuration surfaces.
+- If you ever need real `<Tabs>` / `<TabItem>` in this repo, explicitly import them from `@theme/Tabs` and `@theme/TabItem`. Do not assume they are globally available.
+
+### Tables
+
+Rules:
+
+- Prefer Markdown tables for reference-style content such as availability, options, accepted values, checklists, and field-by-field comparisons.
+- Use tables when readers need to scan multiple dimensions quickly.
+- Do not force long prose into tables when a normal paragraph or list is clearer.
+
+### Layout Conventions
+
+Rules:
+
+- Use Docusaurus formatting upgrades to reduce ambiguity, not to decorate the page.
+- Keep repeated structures consistent across related pages, especially in API reference families.
+- Mirror meaningful formatting upgrades across English latest and Chinese latest when both locales are maintained together.
+
 ## Metadata Rules
 
 Per-page metadata:
