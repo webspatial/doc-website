@@ -131,7 +131,8 @@ const config: Config = {
       },
       'zh-Hans': {
         label: '中文',
-        htmlLang: 'zh-CN',
+        htmlLang: 'zh-Hans',
+        path: 'zh-Hans',
       },
     },
   },

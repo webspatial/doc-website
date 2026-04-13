@@ -56,6 +56,8 @@ Rules:
 - Keep matching `sidebar_position` values between locales.
 - Keep matching `_category_.json` structural fields between locales.
 - Only localize visible strings such as `label` and `description`. Do not casually change slugs or directory names.
+- Keep the Chinese locale key, localized docs directory, and `localeConfigs['zh-Hans'].path` aligned on `zh-Hans`.
+- Keep `localeConfigs['zh-Hans'].htmlLang` explicit. Do not rely on `htmlLang` to infer the i18n directory path.
 
 ## Current URL Model
 
