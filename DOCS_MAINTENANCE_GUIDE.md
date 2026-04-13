@@ -96,6 +96,40 @@ Cloudflare Pages note:
 - for root-path deployment, use `pnpm build` with output directory `build`
 - `pnpm build:test` is for subpath testing and should not be used for the normal root deployment
 
+## Homepage Theme Rules
+
+The homepage is a special case and must not be maintained like normal docs pages.
+
+Current intent:
+
+- the homepage must always render in dark mode, including navbar, logo, search button, Algolia modal, modal footer, and search results
+- this dark rendering must not overwrite the site's persisted user theme choice
+- all non-homepage pages must continue following the persisted site theme
+- the homepage navbar must hide the color mode toggle
+- other pages must keep the color mode toggle and continue updating the persisted theme normally
+
+Current implementation:
+
+- the homepage temporarily forces Docusaurus's effective color mode to `dark` from inside the `Layout` subtree in `src/pages/index.tsx`
+- this is done with `setColorMode('dark', {persist: false})` on mount and restoring the previous `colorModeChoice` on unmount
+- this approach is intentional because it makes the whole Docusaurus/Algolia stack use the normal dark-mode code paths instead of homepage-only CSS patches
+- the homepage navbar still has route-aware dark treatment in `src/theme/Navbar/Layout/index.tsx` and `src/theme/Navbar/Logo/index.tsx` to keep first paint and logo behavior aligned with the dark homepage design
+- the homepage color mode toggle is hidden in `src/theme/Navbar/Content/index.tsx`
+
+Do not:
+
+- reintroduce homepage-specific Algolia `DocSearch` dark-mode patches as the primary solution
+- force homepage search button, modal, footer, or result text colors one selector at a time when the real problem is that the homepage is not using dark effective theme
+- call `setColorMode('dark')` without disabling persistence; that would overwrite the user's actual site preference
+- show the color mode toggle on the homepage unless the homepage theme model is intentionally redesigned
+
+If this area regresses, debug in this order:
+
+1. Confirm the homepage still mounts the temporary non-persisted dark effective mode inside `Layout`.
+2. Confirm leaving the homepage restores the previous `colorModeChoice`.
+3. Confirm the homepage toggle is hidden and other pages still persist user theme changes.
+4. Only after that, inspect component-level CSS overrides.
+
 ## Latest Entry Rules
 
 `Getting Started` must remain a normal child page inside `Introduction`.
@@ -378,6 +412,9 @@ Behavior checks:
 
 - `/docs` and `/zh-Hans/docs` redirect to localized `Getting Started`
 - `Getting Started` remains a child page under `Introduction`
+- with the persisted site theme set to light, the homepage still renders in dark mode
+- with the persisted site theme set to light, the homepage Algolia search button and modal still render in dark mode
+- leaving the homepage restores the persisted theme on docs/blog pages
 - latest docs resolve at naked docs URLs
 - legacy docs resolve only under `1.0.x`
 - old naked legacy-only URLs redirect to matching `1.0.x` URLs
