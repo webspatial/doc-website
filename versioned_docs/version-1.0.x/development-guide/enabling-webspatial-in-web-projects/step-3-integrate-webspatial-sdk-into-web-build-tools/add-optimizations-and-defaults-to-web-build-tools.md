@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+title: "Add Optimizations and Defaults to Web Build Tools"
 ---
 
 :::warning[Old Documentation]

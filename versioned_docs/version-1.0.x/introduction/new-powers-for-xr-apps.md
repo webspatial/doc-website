@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: "New Powers for XR Apps"
 ---
 
 :::warning[Old Documentation]

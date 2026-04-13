@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+title: "(Optional) Add TailwindCSS and PostCSS"
 ---
 
 :::warning[Old Documentation]

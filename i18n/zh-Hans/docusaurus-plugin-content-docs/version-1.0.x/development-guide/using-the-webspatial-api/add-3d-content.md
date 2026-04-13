@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+title: "Add 3D Content"
 ---
 
 :::warning[旧版文档]

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+title: "Add Material Backgrounds"
 ---
 
 :::warning[旧版文档]

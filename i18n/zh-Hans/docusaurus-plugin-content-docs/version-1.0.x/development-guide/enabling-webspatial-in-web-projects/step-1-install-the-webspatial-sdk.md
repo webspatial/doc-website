@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+title: "Step 1: Install the WebSpatial SDK"
 ---
 
 :::warning[旧版文档]

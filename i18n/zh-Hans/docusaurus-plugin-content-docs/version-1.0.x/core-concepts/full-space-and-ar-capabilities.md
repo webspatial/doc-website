@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+title: "Full Space and AR Capabilities"
 ---
 
 :::warning[旧版文档]

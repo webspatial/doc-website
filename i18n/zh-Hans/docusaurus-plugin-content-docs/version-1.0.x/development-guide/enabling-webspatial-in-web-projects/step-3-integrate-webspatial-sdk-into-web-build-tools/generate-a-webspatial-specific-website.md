@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+title: "Generate a WebSpatial-Specific Website"
 ---
 
 :::warning[旧版文档]

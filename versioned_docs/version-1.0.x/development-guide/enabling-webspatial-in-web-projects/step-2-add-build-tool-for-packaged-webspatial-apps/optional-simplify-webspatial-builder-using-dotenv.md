@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+title: "(Optional) Simplify Builder Usage with dotenv"
 ---
 
 :::warning[Old Documentation]

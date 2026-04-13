@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+title: "Make the Web Spatial Too"
 ---
 
 :::warning[Old Documentation]

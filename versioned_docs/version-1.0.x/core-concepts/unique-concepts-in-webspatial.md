@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+title: "Unique Concepts in WebSpatial"
 ---
 
 :::warning[Old Documentation]

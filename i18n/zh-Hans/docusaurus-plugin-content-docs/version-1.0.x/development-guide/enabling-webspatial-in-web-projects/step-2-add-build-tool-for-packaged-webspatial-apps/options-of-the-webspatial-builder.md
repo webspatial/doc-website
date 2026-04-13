@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+title: "Options for WebSpatial Builder"
 ---
 
 :::warning[旧版文档]

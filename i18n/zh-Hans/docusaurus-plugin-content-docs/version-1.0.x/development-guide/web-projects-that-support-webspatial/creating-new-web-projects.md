@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: "Creating a New Web Project"
 ---
 
 :::warning[旧版文档]

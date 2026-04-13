@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+title: "Check If Running in WebSpatial Mode"
 ---
 
 :::warning[Old Documentation]

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+title: "Spatialized Elements and 3D Container Elements"
 ---
 
 :::warning[旧版文档]

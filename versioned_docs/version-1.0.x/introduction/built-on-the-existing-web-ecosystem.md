@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+title: "Built on the Existing Web Ecosystem"
 ---
 
 :::warning[Old Documentation]

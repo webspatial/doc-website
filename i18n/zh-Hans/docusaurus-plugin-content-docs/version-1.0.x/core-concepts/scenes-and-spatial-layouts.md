@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+title: "Scenes and Spatial Layouts"
 ---
 
 :::warning[旧版文档]

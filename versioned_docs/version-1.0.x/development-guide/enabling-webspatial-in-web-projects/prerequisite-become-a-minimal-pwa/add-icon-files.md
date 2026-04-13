@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+title: "Add Icon Files"
 ---
 
 :::warning[Old Documentation]

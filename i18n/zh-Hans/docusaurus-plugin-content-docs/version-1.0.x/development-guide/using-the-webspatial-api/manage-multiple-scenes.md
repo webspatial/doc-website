@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+title: "Managing Multiple Scenes"
 ---
 
 :::warning[旧版文档]

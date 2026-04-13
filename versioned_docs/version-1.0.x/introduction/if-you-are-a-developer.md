@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 sidebar_label: "If You Are a ___ Developer"
+title: "If You Are a {`___`} Developer"
 ---
 
 :::warning[Old Documentation]

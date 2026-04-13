@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+title: "(Optional) Add pnpm"
 ---
 
 :::warning[Old Documentation]

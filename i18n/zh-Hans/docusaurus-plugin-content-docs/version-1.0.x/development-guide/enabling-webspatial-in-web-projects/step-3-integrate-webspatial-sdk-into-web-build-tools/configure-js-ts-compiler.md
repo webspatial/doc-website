@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: "Configure the JS/TS Compiler"
 ---
 
 :::warning[旧版文档]

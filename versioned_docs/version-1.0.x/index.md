@@ -1,11 +1,13 @@
 ---
 sidebar_position: 0
+title: WebSpatial Handbook (Legacy)
+sidebar_label: WebSpatial Handbook (Legacy)
 ---
 
 :::warning[Old Documentation]
 This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
 :::
-# WebSpatial Handbook
+# WebSpatial Handbook (Legacy)
 
 ## Overview
 

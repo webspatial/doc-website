@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: "Shared Space and Spatial Apps"
 ---
 
 :::warning[旧版文档]
