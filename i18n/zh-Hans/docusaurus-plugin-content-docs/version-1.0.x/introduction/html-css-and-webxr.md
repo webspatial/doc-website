@@ -2,6 +2,9 @@
 sidebar_position: 3
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # HTML/CSS and WebXR
 
 However, the problem that follows is, **the Web didn't automatically gain such spatial capabilities**.

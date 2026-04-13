@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # Options for WebSpatial Builder
 
 The command-line options for [WebSpatial Builder](./index.md) fall into two categories, each recommended to be handled differently.

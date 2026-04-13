@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Configure the JS/TS Compiler
 
 To use the [WebSpatial API](../../../core-concepts/unique-concepts-in-webspatial.md#webspatial-api) inside a UI framework such as React, you need to integrate WebSpatial's framework SDK (currently only the [React SDK](../step-1-install-the-webspatial-sdk.md#react-sdk)) into the JS/TS compiler used by your Web project. This allows the SDK to affect JSX transforms and other stages that involve the HTML/CSS APIs.

@@ -2,6 +2,9 @@
 sidebar_position: 5
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # Built on the Existing Web Ecosystem
 
 While the mainstream Web ecosystem is ultimately built on HTML/CSS, most Web developers **do not work directly with raw HTML/CSS** when creating applications. Instead, they rely on **UI frameworks or full-featured application frameworks**. React is currently the most popular choice - developers use HTML through React's JSX API and component-based architecture, and CSS through APIs such as TailwindCSS, PostCSS, or CSS-in-JS.

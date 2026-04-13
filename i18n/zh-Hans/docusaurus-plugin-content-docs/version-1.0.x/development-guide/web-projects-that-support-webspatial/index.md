@@ -1,3 +1,6 @@
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # Web Projects That Support WebSpatial
 
 WebSpatial currently uses a [Hybrid approach](../../core-concepts/unique-concepts-in-webspatial.md#webspatial-sdk) that allows mainstream Web projects to immediately leverage the [WebSpatial API](../../core-concepts/unique-concepts-in-webspatial.md#webspatial-api) to gain spatial-computing capabilities on XR platforms. This does not affect how those projects run on existing desktop/mobile platforms or in regular browsers, thereby preserving their original cross-platform capabilities.

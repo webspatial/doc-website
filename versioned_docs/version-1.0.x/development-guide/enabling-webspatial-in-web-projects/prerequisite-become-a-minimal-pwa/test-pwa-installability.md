@@ -1,3 +1,6 @@
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Test PWA Installability
 
 You can now launch the React site locally using your project's existing workflow.

@@ -1,3 +1,6 @@
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Prerequisite: Become a Minimal PWA
 
 To give a WebSpatial app the capabilities and experience of a native [spatial app](../../../core-concepts/shared-space-and-spatial-apps.md#spatial-apps) - like having its own [standalone window](../../../core-concepts/scenes-and-spatial-layouts.md#scene-menu) instead of just running inside a browser - it needs to be more than just a bunch of webpages. **It has to become an actual "app" which means adding app-level info** like the app name, app icon, [which pages it includes](./add-web-app-manifest.md#scope), and [what the start page is](../../../core-concepts/scenes-and-spatial-layouts.md#start-scene).

@@ -3,6 +3,9 @@ sidebar_position: 6
 sidebar_label: "If You Are a ___ Developer"
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # If You Are a {`___`} Developer
 
 ## 2D Web Developers {#web-developers}

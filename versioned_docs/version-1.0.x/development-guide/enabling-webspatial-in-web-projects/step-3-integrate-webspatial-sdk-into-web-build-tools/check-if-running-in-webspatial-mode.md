@@ -2,6 +2,9 @@
 sidebar_position: 4
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Check If Running in WebSpatial Mode
 
 The [previous section](./generate-a-webspatial-specific-website.md) explained that WebSpatial SDK can automatically build two sets of site assets:

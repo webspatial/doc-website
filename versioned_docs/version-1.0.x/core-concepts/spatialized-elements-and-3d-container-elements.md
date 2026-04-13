@@ -2,6 +2,9 @@
 sidebar_position: 4
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Spatialized Elements and 3D Container Elements
 
 [Spatial apps](./shared-space-and-spatial-apps.md#spatial-apps) are composed of [Scenes](./scenes-and-spatial-layouts.md), and the content in a Scene is made up of both 2D and 3D content.

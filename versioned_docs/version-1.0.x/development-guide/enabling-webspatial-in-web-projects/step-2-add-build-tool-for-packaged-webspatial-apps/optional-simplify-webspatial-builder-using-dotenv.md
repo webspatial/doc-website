@@ -2,6 +2,9 @@
 sidebar_position: 3
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # (Optional) Simplify Builder Usage with dotenv
 
 To avoid typing the same environment variables each time you run these [npm scripts](./index.md#npm-scripts), you can place all required variables in a dotenv configuration file and have them loaded automatically before the scripts run.

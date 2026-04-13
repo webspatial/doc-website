@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Options for WebSpatial Builder
 
 The command-line options for [WebSpatial Builder](./index.md) fall into two categories, each recommended to be handled differently.

@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Add Icon Files
 
 The best practice for a WebSpatial project is to include at least the following icon files:

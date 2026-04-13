@@ -1,3 +1,6 @@
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # Quick Example
 
 Use a minimal example to get a quick feel for the actual results and development experience of the [WebSpatial SDK](../core-concepts/unique-concepts-in-webspatial.md#webspatial-sdk), covering project setup, SDK installation and configuration, a sample development workflow, and a preview of spatial features.

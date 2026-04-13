@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # New Powers for XR Apps
 
 On XR platforms such as Vision Pro, Meta Quest, and PICO, apps (including Web apps) gain brand-new capabilities and enormous potential. Even without cutting-edge features like full immersion or environment blending, XR apps already offer the following clear advantages in **existing mainstream user cases**:

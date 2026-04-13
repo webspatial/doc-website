@@ -1,3 +1,6 @@
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Quick Example
 
 Use a minimal example to get a quick feel for the actual results and development experience of the [WebSpatial SDK](../core-concepts/unique-concepts-in-webspatial.md#webspatial-sdk), covering project setup, SDK installation and configuration, a sample development workflow, and a preview of spatial features.

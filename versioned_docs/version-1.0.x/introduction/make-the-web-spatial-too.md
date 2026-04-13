@@ -2,6 +2,9 @@
 sidebar_position: 4
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Make the Web Spatial Too
 
 **WebSpatial** is a set of [spatial APIs](../core-concepts/unique-concepts-in-webspatial.md#webspatial-api) built on top of the mainstream Web-development ecosystem and existing 2D Web. It enables the entire HTML/CSS-based Web world - billions of websites and Web apps, tens of millions of Web developers, and millions of open-source libraries - to step into the spatial era, **gaining spatial power on par with native spatial apps (like visionOS apps) while keeping all the advantages the Web already have**.

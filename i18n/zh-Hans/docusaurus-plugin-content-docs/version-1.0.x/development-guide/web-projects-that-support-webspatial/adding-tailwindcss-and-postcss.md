@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # (Optional) Add TailwindCSS and PostCSS
 
 TailwindCSS is a utility-first CSS framework that provides a large set of atomic classes to speed up UI development.

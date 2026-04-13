@@ -2,6 +2,9 @@
 sidebar_position: 4
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # Spatialized Elements and 3D Container Elements
 
 [Spatial apps](./shared-space-and-spatial-apps.md#spatial-apps) are composed of [Scenes](./scenes-and-spatial-layouts.md), and the content in a Scene is made up of both 2D and 3D content.

@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # Add Optimizations and Defaults to Web Build Tools
 
 In addition to [Configure the JS/TS Compiler](./configure-js-ts-compiler.md), a Web project that includes the [WebSpatial SDK](../../../core-concepts/unique-concepts-in-webspatial.md#webspatial-sdk) needs several essential performance optimizations and default configuration values (convention over configuration). These optimizations and defaults need to be implemented through the project's web build tool and web server.

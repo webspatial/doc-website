@@ -2,6 +2,9 @@
 sidebar_position: 2
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # The New Generation of Spatial Apps
 
 With Apple's release of the next-gen XR OS, visionOS, and its new spatial-computing architecture ([Unified Rendering app model](https://developer.picoxr.com/news/multi-app-rendering/)), the [long-standing bottlenecks of traditional XR apps](#traditional-xr-apps) have been fundamentally addressed.

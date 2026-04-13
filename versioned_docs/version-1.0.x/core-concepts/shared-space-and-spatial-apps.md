@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Shared Space and Spatial Apps
 
 ## Shared Space {#shared-space}

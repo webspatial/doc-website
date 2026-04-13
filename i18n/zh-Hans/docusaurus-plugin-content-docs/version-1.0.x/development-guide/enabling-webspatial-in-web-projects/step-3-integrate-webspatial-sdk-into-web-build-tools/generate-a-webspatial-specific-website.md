@@ -2,6 +2,9 @@
 sidebar_position: 3
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # Generate a WebSpatial-Specific Website
 
 After integrating the [WebSpatial SDK](../../../core-concepts/unique-concepts-in-webspatial.md#webspatial-sdk) into the project's [TS/JS compiler](./configure-js-ts-compiler.md) and [Web build tool & Web server](./add-optimizations-and-defaults-to-web-build-tools.md), your web project can produce a dedicated build for the [WebSpatial App Shell](../../../core-concepts/unique-concepts-in-webspatial.md#webspatial-sdk), without affecting the original desktop/mobile site.

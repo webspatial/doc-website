@@ -2,6 +2,9 @@
 sidebar_position: 3
 ---
 
+:::warning[旧版文档]
+本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/zh-Hans/docs/)。
+:::
 # (Optional) Simplify Builder Usage with dotenv
 
 To avoid typing the same environment variables each time you run these [npm scripts](./index.md#npm-scripts), you can place all required variables in a dotenv configuration file and have them loaded automatically before the scripts run.

@@ -2,6 +2,9 @@
 sidebar_position: 4
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # Elevate 2D Elements
 
 :::info

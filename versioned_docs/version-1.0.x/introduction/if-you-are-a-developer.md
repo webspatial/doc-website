@@ -3,6 +3,9 @@ sidebar_position: 6
 sidebar_label: "If You Are a ___ Developer"
 ---
 
+:::warning[Old Documentation]
+This page is part of the legacy `1.0.x` documentation. We recommend using the [latest documentation](/docs/) instead.
+:::
 # If You Are a {`___`} Developer
 
 ## 2D Web Developers {#web-developers}
