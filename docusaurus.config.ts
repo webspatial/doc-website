@@ -314,15 +314,15 @@ const config: Config = {
           items: [
             {
               label: 'Introduction',
-              to: '/docs/introduction/',
+              to: '/docs/',
             },
             {
               label: 'Core Concepts',
-              to: '/docs/core-concepts/',
+              to: '/docs/concepts/',
             },
             {
-              label: 'Quick Example',
-              to: '/docs/quick-example/',
+              label: 'Getting Started',
+              to: '/docs/',
             },
             {
               label: 'Video',
@@ -336,15 +336,15 @@ const config: Config = {
           items: [
             {
               label: 'Compatibility',
-              to: '/docs/development-guide/web-projects-that-support-webspatial/',
+              to: '/docs/introduction/getting-started#supported-web-projects',
             },
             {
               label: 'Setup Guide',
-              to: '/docs/development-guide/enabling-webspatial-in-web-projects/',
+              to: '/docs/introduction/getting-started#set-up-your-project',
             },
             {
               label: 'WebSpatial API',
-              to: '/docs/development-guide/using-the-webspatial-api/',
+              to: '/docs/introduction/getting-started#webspatial-api',
             },
           ],
         },

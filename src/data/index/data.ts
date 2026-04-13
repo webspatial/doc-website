@@ -7,7 +7,7 @@ export default {
     imgUrl: getFakeImg(1280, 1280),
     button: {
       text: 'Quick Start',
-      url: '/docs/quick-example',
+      url: '/docs/',
     },
   },
   section1: {
@@ -113,30 +113,28 @@ export default {
       {
         title: 'WebSpatial API',
         desc: 'BAn open, minimal extension to HTML, CSS, and JS that adds spatial powers like elevation, multi-scenes, 3D containers',
-        moreUrl: '/docs/development-guide/using-the-webspatial-api/',
+        moreUrl: '/docs/introduction/getting-started#webspatial-api',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(78, 59, 246, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #191919',
       },
       {
         title: 'React SDK',
         desc: 'A drop-in library for React projects that instantly unlocks WebSpatial APIs, and lets you build spatial apps with the same React components and ecosystem you already use.',
-        moreUrl:
-          '/docs/core-concepts/unique-concepts-in-webspatial#webspatial-sdk',
+        moreUrl: '/docs/api/react-sdk/',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'WebSpatial Builder',
         desc: 'A CLI tool that packages WebSpatial-enabled React projects into installable native spatial app, wrapping web code in a platform-specific App Shell that runs WebSpatial APIs.',
-        moreUrl:
-          '/docs/development-guide/enabling-webspatial-in-web-projects/step-2-add-build-tool-for-packaged-webspatial-apps',
+        moreUrl: '/docs/api/builder/',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(252, 184, 75, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'Platform Simulator',
         desc: 'Preview and debug WebSpatial app on visionOS simulator without a headset.',
-        moreUrl: '/docs/quick-example/#package-and-run',
+        moreUrl: '/docs/introduction/getting-started#packaged-app-mode',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
@@ -162,11 +160,11 @@ export default {
     children: [
       {
         title: 'Quick Start',
-        url: '/docs/quick-example',
+        url: '/docs/',
       },
       {
         title: 'Concept',
-        url: '/docs/core-concepts/',
+        url: '/docs/concepts/',
       },
     ],
   },

@@ -1,0 +1,9 @@
+{
+  "label": "How-to",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/how-to",
+    "description": "Practical setup guides for PWA requirements, JSX runtime configuration, SSR, Xcode, and app-store workflows."
+  }
+}
