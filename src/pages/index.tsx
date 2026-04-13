@@ -1,11 +1,7 @@
 import React from 'react';
 import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import {useColorMode, type ColorMode} from '@docusaurus/theme-common';
 
 import styles from './index.module.scss';
 import Banner from './_components/Banner';
@@ -16,7 +12,6 @@ import Slider from './_components/Slider';
 import CardList from './_components/CardList';
 import SliderB from './_components/SliderB';
 import CardListMore from './_components/CardListMore';
-import {useColorMode} from '@docusaurus/theme-common';
 import tdk from '../data/tdk';
 
 // function HomepageHeader() {
@@ -40,13 +35,33 @@ import tdk from '../data/tdk';
 //   );
 // }
 
+function HomepageColorMode(): ReactNode {
+  const {colorModeChoice, setColorMode} = useColorMode();
+
+  React.useEffect(() => {
+    const setTransientColorMode = setColorMode as unknown as (
+      colorMode: ColorMode | null,
+      options?: {persist?: boolean},
+    ) => void;
+
+    const previousColorModeChoice = colorModeChoice;
+    setTransientColorMode('dark', {persist: false});
+
+    return () => {
+      setTransientColorMode(previousColorModeChoice, {persist: false});
+    };
+  }, []);
+
+  return null;
+}
+
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
 
   return (
     <Layout
       title={tdk.index.title}
       description={tdk.index.description}>
+      <HomepageColorMode />
       {/* <HomepageHeader /> */}
       <Banner />
       <main className={styles.mainWrap}>

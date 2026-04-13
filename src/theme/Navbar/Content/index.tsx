@@ -15,8 +15,8 @@ import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
-import {useLocation} from '@docusaurus/router';
 
+import useIsHomepage from '../useIsHomepage';
 import styles from './styles.module.scss';
 
 function useNavbarItems() {
@@ -83,9 +83,7 @@ export default function NavbarContent(): ReactNode {
   const rightLeftItems = rightItems.filter((item) => item.group === 'left');
   const rightRightItems = rightItems.filter((item) => item.group !== 'left'); // right and default
 
-  const location = useLocation();
-
-  const hideSeparator = location.pathname === '/';
+  const isHomepage = useIsHomepage();
 
   return (
     <NavbarContentLayout
@@ -107,10 +105,11 @@ export default function NavbarContent(): ReactNode {
             </NavbarSearch>
           )}
           <NavbarItems items={rightLeftItems} />
-          {!hideSeparator && <Separator />}
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {/* {!hideSeparator && <Separator />} */}
-          <Separator />
+          {!isHomepage && <Separator />}
+          {!isHomepage && (
+            <NavbarColorModeToggle className={styles.colorModeToggle} />
+          )}
+          {!isHomepage && <Separator />}
           <NavbarItems items={rightRightItems} />
         </>
       }

@@ -18,6 +18,10 @@
   background: var(--ifm-color-emphasis-200);
 }
 
+:global(.navbar--dark) .toggleButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .toggleIcon {
   display: none;
 }
@@ -30,8 +34,4 @@
 
 .toggleButtonDisabled {
   cursor: not-allowed;
-}
-
-.hide {
-  display: none !important;
 }

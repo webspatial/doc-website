@@ -7,7 +7,6 @@ import IconDarkMode from '@theme/Icon/DarkMode';
 import IconSystemColorMode from '@theme/Icon/SystemColorMode';
 import type {Props} from '@theme/ColorModeToggle';
 import type {ColorMode} from '@docusaurus/theme-common';
-import {useLocation} from '@docusaurus/router';
 
 import styles from './styles.module.css';
 
@@ -105,17 +104,9 @@ function ColorModeToggle({
   onChange,
 }: Props): ReactNode {
   const isBrowser = useIsBrowser();
-  const location = useLocation();
-
-  const hideColorMode = location.pathname === '/'
-
 
   return (
-    <div className={clsx(
-      styles.toggle,
-      className,
-      hideColorMode && styles.hide  // 新增隐藏条件
-    )}>
+    <div className={clsx(styles.toggle, className)}>
       <button
         className={clsx(
           'clean-btn',

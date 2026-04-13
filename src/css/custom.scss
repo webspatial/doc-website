@@ -89,6 +89,15 @@
 
   --ifm-navbar-background-color: #000;
 }
+
+.navbar--homepage-dark {
+  --ifm-navbar-background-color: #000;
+}
+
+.navbar--homepage-dark.navbar--fixed-top.navbar {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
 @media (max-width: 576px) {
   main .container {
     padding: 0 24px;
@@ -406,7 +415,8 @@ a:hover {
 
   display: flex;
   background-color: rgba(78, 89, 105, 1); //var(--ifm-navbar-link-color);
-  [data-theme='dark'] & {
+  [data-theme='dark'] &,
+  .navbar--dark & {
     background-color: rgba(255, 255, 255, 0.7);
   }
   mask-image: url('../img/github-light.svg');
@@ -429,7 +439,8 @@ a:hover {
 
   display: flex;
   background-color: rgba(78, 89, 105, 1); //var(--ifm-navbar-link-color);
-  [data-theme='dark'] & {
+  [data-theme='dark'] &,
+  .navbar--dark & {
     background-color: rgba(255, 255, 255, 0.7);
   }
   mask-image: url('../img/discord-light.svg');
@@ -457,10 +468,12 @@ a:hover {
   height: 32px;
   // toggle light/dark button
   color: rgba(78, 89, 105, 1);
-  [data-theme='dark'] & {
+  [data-theme='dark'] &,
+  .navbar--dark & {
     color: rgba(255, 255, 255, 0.7);
   }
 }
+
 .dropdownHr {
   display: none;
 }
@@ -505,7 +518,8 @@ a:hover {
 }
 .DocSearch.DocSearch-Button {
   background-color: #f2f3f5;
-  [data-theme='dark'] & {
+  [data-theme='dark'] &,
+  .navbar--dark & {
     background-color: #2a2a2b;
   }
 
@@ -518,7 +532,8 @@ a:hover {
       // padding: 8px;
       > path {
         stroke: var(--color-text-4);
-        [data-theme='dark'] & {
+        [data-theme='dark'] &,
+        .navbar--dark & {
           stroke: rgba(255, 255, 255, 0.5);
         }
       }
@@ -534,7 +549,8 @@ a:hover {
       color: var(--color-text-4);
       line-height: 24px;
       padding: 0 82px 0 2px;
-      [data-theme='dark'] & {
+      [data-theme='dark'] &,
+      .navbar--dark & {
         color: rgba(255, 255, 255, 0.5);
       }
     }
@@ -557,7 +573,8 @@ a:hover {
       background: transparent;
       top: unset; // 坑
 
-      [data-theme='dark'] & {
+      [data-theme='dark'] &,
+      .navbar--dark & {
         color: rgba(255, 255, 255, 0.5);
         border-color: rgba(255, 255, 255, 0.5);
       }
@@ -577,7 +594,8 @@ a:hover {
   left: 0px;
   margin-left: 0;
 
-  [data-theme='dark'] & {
+  [data-theme='dark'] &,
+  .navbar--dark & {
     background: url('../img/arrow-white.svg') 50% / 1rem 1rem;
   }
 }
