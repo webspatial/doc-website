@@ -20,7 +20,9 @@ yarn-debug.log*
 yarn-error.log*
 
 llms.txt
+llms-full.txt
 
 .playwright-cli
+.pnpm-store/
 output
 temp-assets

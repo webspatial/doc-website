@@ -106,12 +106,7 @@ const config: Config = {
   ],
   plugins: [
     'docusaurus-plugin-sass',
-    [
-      'docusaurus-plugin-generate-llms-txt',
-      {
-        outputFile: 'llms.txt', // defaults to llms.txt if not specified
-      },
-    ],
+    require.resolve('./plugins/llms'),
     '@docusaurus/theme-live-codeblock',
     [
       'ideal-image',
@@ -128,6 +123,10 @@ const config: Config = {
   ],
   title: 'WebSpatial',
   favicon: 'img/favicon.svg',
+  customFields: {
+    llmsSummary: tdk.index.description,
+    llmsBaseUrl: '/',
+  },
 
   // Set the production url of your site here
   url: 'https://webspatial.dev',

@@ -50,9 +50,6 @@ importers:
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
-      docusaurus-plugin-generate-llms-txt:
-        specifier: ^0.0.1
-        version: 0.0.1(@docusaurus/core@3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.6.3))
       docusaurus-plugin-sass:
         specifier: ^0.2.6
         version: 0.2.6(@docusaurus/core@3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.6.3))(sass@1.99.0)(webpack@5.105.4)
@@ -2862,12 +2859,6 @@ packages:
   dns-packet@5.6.1:
     resolution: {integrity: sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==}
     engines: {node: '>=6'}
-
-  docusaurus-plugin-generate-llms-txt@0.0.1:
-    resolution: {integrity: sha512-XlUeQ23anYc85I1k9pO61fWcMWcUs8Tx7n3zqIus/1wjZ1mjezm0lOX9jymu9Y2MAi3/YQbDxsfo4kZrMf5q6A==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@docusaurus/core': '>=2.0.0'
 
   docusaurus-plugin-sass@0.2.6:
     resolution: {integrity: sha512-2hKQQDkrufMong9upKoG/kSHJhuwd+FA3iAe/qzS/BmWpbIpe7XKmq5wlz4J5CJaOPu4x+iDJbgAxZqcoQf0kg==}
@@ -9730,11 +9721,6 @@ snapshots:
   dns-packet@5.6.1:
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.5
-
-  docusaurus-plugin-generate-llms-txt@0.0.1(@docusaurus/core@3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.6.3)):
-    dependencies:
-      '@docusaurus/core': 3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.6.3)
-      js-yaml: 4.1.1
 
   docusaurus-plugin-sass@0.2.6(@docusaurus/core@3.10.0(@mdx-js/react@3.1.1(@types/react@19.2.14)(react@19.2.5))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(typescript@5.6.3))(sass@1.99.0)(webpack@5.105.4):
     dependencies:

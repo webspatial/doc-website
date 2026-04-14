@@ -427,9 +427,13 @@ Legacy titles:
 
 ## AI-Facing Content
 
-Legacy docs must stay out of AI-facing outputs such as `static/llms.txt`.
+Legacy docs must stay out of AI-facing outputs such as `static/llms.txt` and `static/llms-full.txt`.
 
-Current design relies on the latest docs tree as the source for that output. Preserve that behavior unless multilingual AI output is intentionally redesigned.
+Current design relies on the latest English docs tree in `docs/` as the source for both outputs. Preserve that behavior unless multilingual AI output is intentionally redesigned.
+
+`static/llms.txt` is the lightweight index file. It should list canonical latest-doc URLs and short descriptions, not inline full doc bodies.
+
+`static/llms-full.txt` is the merged full-context file. It should inline the latest English doc bodies and link back to the canonical source page for each entry.
 
 Legacy docs are still indexable by search engines. The machine-readable outdated notice for legacy pages is handled centrally in `src/theme/DocItem/Metadata/index.tsx`, not by per-file frontmatter duplication.
 
