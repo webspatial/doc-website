@@ -142,7 +142,9 @@ function useHomepagePreloadProgress() {
     void Promise.all(
       entries.map(async (entry) => {
         const task =
-          entry.kind === 'video' ? preloadVideo(entry.url) : preloadImage(entry.url);
+          entry.kind === 'video'
+            ? preloadVideo(entry.url)
+            : preloadImage(entry.url);
 
         await settleWithTimeout(task, PRELOAD_TIMEOUT_MS);
         markComplete(entry.weight);
@@ -179,18 +181,20 @@ function HomepageLoadingScreen({
 }): ReactNode {
   const loadingTitle = translate({
     id: 'homepage.loading.title',
-    message: 'Preparing the first scene',
+    message: 'Loading WebSpatial Homepage',
   });
   const loadingDescription = translate({
     id: 'homepage.loading.description',
-    message:
-      'Loading the hero media before the homepage animations and scroll interactions start.',
+    message: 'Please wait a moment while the homepage gets ready.',
   });
   const progressPercent = Math.round(progress * 100);
 
   return (
     <div
-      className={clsx(styles.loadingScreen, hidden && styles.loadingScreenHidden)}
+      className={clsx(
+        styles.loadingScreen,
+        hidden && styles.loadingScreenHidden,
+      )}
       role="status"
       aria-live="polite"
       aria-hidden={hidden}>
@@ -229,9 +233,8 @@ function HomepageColorMode(): ReactNode {
     // `useColorMode()` intentionally lags during hydration. Read the current
     // DOM attribute so we restore the user's real choice when leaving home.
     const previousColorModeChoice = (() => {
-      const themeChoice = document.documentElement.getAttribute(
-        'data-theme-choice',
-      );
+      const themeChoice =
+        document.documentElement.getAttribute('data-theme-choice');
       if (themeChoice === 'light' || themeChoice === 'dark') {
         return themeChoice;
       }
@@ -275,9 +278,7 @@ export default function Home(): ReactNode {
   }, [isReady]);
 
   return (
-    <Layout
-      title={title}
-      description={description}>
+    <Layout title={title} description={description}>
       <HomepageColorMode />
       <noscript>
         <style>{`.${styles.loadingScreen}{display:none !important;}`}</style>
