@@ -1162,14 +1162,55 @@ html[data-red-border] div#__docusaurus {
   // background-color: rgba(78, 59, 246, 0.08);
 }
 
-.theme-doc-sidebar-item-link-level-1 a {
-  font-weight: 600;
-}
+.theme-doc-sidebar-menu {
+  .menu__list,
+  .menu__list .menu__list {
+    margin: 0;
+    padding-left: 0;
+  }
 
-.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-1
-  > div
-  > a {
-  font-weight: 600;
+  .menu__list-item {
+    margin: 0;
+  }
+
+  .theme-doc-sidebar-item-link-level-1 > .menu__link,
+  .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible > .menu__link {
+    color: var(--color-text-1);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .theme-doc-sidebar-item-link-level-2 > .menu__link,
+  .theme-doc-sidebar-item-category-level-2 > .menu__list-item-collapsible > .menu__link {
+    color: var(--color-text-2);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .theme-doc-sidebar-item-link-level-3 > .menu__link,
+  .theme-doc-sidebar-item-category-level-3 > .menu__list-item-collapsible > .menu__link {
+    color: var(--color-text-2);
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 20px;
+  }
+
+  .theme-doc-sidebar-item-link-level-4 > .menu__link,
+  .theme-doc-sidebar-item-category-level-4 > .menu__list-item-collapsible > .menu__link {
+    color: var(--color-text-2);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .theme-doc-sidebar-item-link-level-4 > .menu__link {
+    padding-left: 28px;
+  }
+
+  .theme-doc-sidebar-item-link > .menu__link--active,
+  .theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link--active {
+    color: var(--ifm-color-primary);
+  }
 }
 
 .menu {
