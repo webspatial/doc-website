@@ -1,0 +1,10 @@
+{
+  "label": "DOM API",
+  "position": 3,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/react-sdk/dom-api",
+    "description": "用于深度、背向偏移和运行时环境检测的 DOM 属性。"
+  }
+}

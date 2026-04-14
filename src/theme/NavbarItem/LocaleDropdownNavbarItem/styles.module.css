@@ -1,4 +1,17 @@
 .iconLanguage {
-  vertical-align: text-bottom;
-  /* margin-right: 5px; */
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.localeLabel {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+@media (max-width: 1200px) {
+  .localeLabel {
+    font-size: 13px;
+  }
 }

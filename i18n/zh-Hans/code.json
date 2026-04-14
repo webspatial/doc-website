@@ -53,6 +53,96 @@
     "message": "Docusaurus has been a great choice for the ReasonML family of projects. It makes our documentation consistent, i18n-friendly, easy to maintain, and friendly for new contributors.",
     "description": "Quote of Ricky Vetter on the home page"
   },
+  "homepage.banner.title": {
+    "message": "让 Web 进入你身处的空间"
+  },
+  "homepage.banner.desc": {
+    "message": "在广泛采用的开放标准 Web 技术中引入原生空间应用的 UI 能力和新一代开发范式，让 Web 突破屏幕进入现实空间，让主流 Web 生态和 Web 开发者能无缝进入空间计算和多模态 AI 的时代。"
+  },
+  "homepage.banner.button": {
+    "message": "快速开始"
+  },
+  "homepage.section1.title": {
+    "message": "一个应用，覆盖所有设备，从屏幕走向空间"
+  },
+  "homepage.section1.desc": {
+    "message": "一套代码同时交付桌面和移动端的 2D UI，并在空间计算设备上进一步解锁空间化 UI。"
+  },
+  "homepage.section1.largeScreen": {
+    "message": "大屏"
+  },
+  "homepage.section1.smallScreen": {
+    "message": "小屏"
+  },
+  "homepage.section1.comingSoon": {
+    "message": "即将支持"
+  },
+  "homepage.section2.title": {
+    "message": "释放空间创造力，让你的 Web 从 2D 扩展到 3D"
+  },
+  "homepage.section2.card1.title": {
+    "message": "拆分网页，释放 UI"
+  },
+  "homepage.section2.card1.desc": {
+    "message": "把拥挤在不透明平面上的网页内容拆分成能充分利用空间的独立悬浮面片，动态半透明材质的 UI 能自然地叠加在现实世界之上。"
+  },
+  "homepage.section2.card2.title": {
+    "message": "抬升 HTML 元素，解锁纵深"
+  },
+  "homepage.section2.card2.desc": {
+    "message": "把任意 HTML 元素从平面页面中抬起，无论它是静态还是动态内容，都能沿 Z 轴定位、布局和形变，让界面能超越宽高利用真实世界的纵深。"
+  },
+  "homepage.section2.card3.title": {
+    "message": "多空间场景，原生空间计算能力"
+  },
+  "homepage.section2.card3.desc": {
+    "message": "把组成 Web App 的多个窗口升级成操作系统管理的空间场景容器，以独立空间应用形态运行，自动获得空间计算能力。"
+  },
+  "homepage.section2.card4.title": {
+    "message": "接入真正的 3D 内容，融合不同维度"
+  },
+  "homepage.section2.card4.desc": {
+    "message": "引入具备真实体积的 3D 元素，让它们与 2D 元素无缝嵌套和布局，再通过 3D 引擎驱动动态、可交互的 3D 内容。"
+  },
+  "homepage.section3.title": {
+    "message": "继续写 Web，直接交付空间应用"
+  },
+  "homepage.section3.desc": {
+    "message": "继续使用你已经熟悉的 React、CSS、JS 和 Web 开发工具。WebSpatial 只为现有 Web 技术栈补充一组精简的空间 API，可以直接接入标准 Web 项目，以极少代码改动解锁原生级空间能力。"
+  },
+  "homepage.section3.card.title": {
+    "message": "从熟悉的方式开始"
+  },
+  "homepage.section4.title": {
+    "message": "探索 WebSpatial 工具链"
+  },
+  "homepage.section4.desc": {
+    "message": "交付空间应用所需的一切，基于你已经在使用的那些工具。"
+  },
+  "homepage.section4.card1.desc": {
+    "message": "对 HTML、CSS 和 JS 的开放且精简的扩展，为 Web 增加抬升、多场景、3D 容器等空间能力。"
+  },
+  "homepage.section4.card2.desc": {
+    "message": "一个可直接接入 React 项目的库，立刻解锁 WebSpatial API，让你继续用熟悉的 React 组件和现有生态来构建空间应用。"
+  },
+  "homepage.section4.card3.desc": {
+    "message": "一个 CLI 工具，可将启用了 WebSpatial 的 React 项目打包成可安装的原生空间应用，用平台专属的 App Shell 包裹 Web 代码并运行 WebSpatial API。"
+  },
+  "homepage.section4.more": {
+    "message": "了解更多"
+  },
+  "homepage.bottom.title": {
+    "message": "开始使用 WebSpatial 构建应用"
+  },
+  "homepage.bottom.gettingStarted": {
+    "message": "快速开始"
+  },
+  "homepage.bottom.concept": {
+    "message": "概念"
+  },
+  "homepage.meta.description": {
+    "message": "WebSpatial 是一套空间 API 和开箱即用的 SDK，可在跨平台场景下把标准 2D Web 生态扩展到空间计算，让整个基于 HTML/CSS 的 Web 世界进入空间时代，在保留原有优势的同时获得接近原生应用（如 visionOS 应用）的空间能力。"
+  },
   "Favorite": {
     "message": "Favorite"
   },
@@ -190,7 +280,7 @@
   },
   "theme.colorToggle.ariaLabel": {
     "message": "切换浅色/暗黑模式（当前为{mode}）",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
     "message": "暗黑模式",
@@ -482,5 +572,152 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "system mode",
+    "description": "The name for the system color mode"
+  },
+  "theme.navbar.docsVersion.currentLabel": {
+    "message": "最新",
+    "description": "Label for the latest docs version in the navbar"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expand the dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Collapse the dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "查看全部 {count} 个结果"
+  },
+  "theme.SearchBar.label": {
+    "message": "搜索",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.SearchModal.searchBox.resetButtonTitle": {
+    "message": "清除查询",
+    "description": "The label and ARIA label for search box reset button"
+  },
+  "theme.SearchModal.searchBox.cancelButtonText": {
+    "message": "取消",
+    "description": "The label and ARIA label for search box cancel button"
+  },
+  "theme.SearchModal.startScreen.recentSearchesTitle": {
+    "message": "最近搜索",
+    "description": "The title for recent searches"
+  },
+  "theme.SearchModal.startScreen.noRecentSearchesText": {
+    "message": "没有最近搜索",
+    "description": "The text when no recent searches"
+  },
+  "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
+    "message": "保存这个搜索",
+    "description": "The label for save recent search button"
+  },
+  "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
+    "message": "从历史记录中删除这个搜索",
+    "description": "The label for remove recent search button"
+  },
+  "theme.SearchModal.startScreen.favoriteSearchesTitle": {
+    "message": "收藏",
+    "description": "The title for favorite searches"
+  },
+  "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
+    "message": "从收藏列表中删除这个搜索",
+    "description": "The label for remove favorite search button"
+  },
+  "theme.SearchModal.errorScreen.titleText": {
+    "message": "无法获取结果",
+    "description": "The title for error screen of search modal"
+  },
+  "theme.SearchModal.errorScreen.helpText": {
+    "message": "你可能需要检查网络连接。",
+    "description": "The help text for error screen of search modal"
+  },
+  "theme.SearchModal.footer.selectText": {
+    "message": "选中",
+    "description": "The explanatory text of the action for the enter key"
+  },
+  "theme.SearchModal.footer.selectKeyAriaLabel": {
+    "message": "Enter 键",
+    "description": "The ARIA label for the Enter key button that makes the selection"
+  },
+  "theme.SearchModal.footer.navigateText": {
+    "message": "导航",
+    "description": "The explanatory text of the action for the Arrow up and Arrow down key"
+  },
+  "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
+    "message": "向上键",
+    "description": "The ARIA label for the Arrow up key button that makes the navigation"
+  },
+  "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
+    "message": "向下键",
+    "description": "The ARIA label for the Arrow down key button that makes the navigation"
+  },
+  "theme.SearchModal.footer.closeText": {
+    "message": "关闭",
+    "description": "The explanatory text of the action for Escape key"
+  },
+  "theme.SearchModal.footer.closeKeyAriaLabel": {
+    "message": "Esc 键",
+    "description": "The ARIA label for the Escape key button that close the modal"
+  },
+  "theme.SearchModal.footer.searchByText": {
+    "message": "搜索提供",
+    "description": "The text explain that the search is making by Algolia"
+  },
+  "theme.SearchModal.noResultsScreen.noResultsText": {
+    "message": "没有结果：",
+    "description": "The text explains that there are no results for the following search"
+  },
+  "theme.SearchModal.noResultsScreen.suggestedQueryText": {
+    "message": "试试搜索",
+    "description": "The text for the suggested query when no results are found for the following search"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
+    "message": "认为这个查询应该有结果？",
+    "description": "The text for the question where the user thinks there are missing results"
+  },
+  "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
+    "message": "请告知我们。",
+    "description": "The text for the link to report missing results"
+  },
+  "theme.SearchModal.placeholder": {
+    "message": "搜索文档",
+    "description": "The placeholder of the input of the DocSearch pop-up modal"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "找到 {count} 份文件",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "「{query}」的搜索结果",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "在文档中搜索",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "在此输入搜索字词",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "搜索",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "通过 Algolia 搜索",
+    "description": "The ARIA label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "未找到任何结果",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "正在获取新的搜索结果...",
+    "description": "The paragraph for fetching new search results"
   }
 }

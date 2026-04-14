@@ -6,10 +6,19 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  .img {
+  .img,
+  .imgLink {
     background-size: contain;
     height: 280px;
   }
+
+  .imgLink {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   .title {
     position: relative;
   }
@@ -20,7 +29,8 @@
   @media (min-width: 577px) and (max-width: 996px) {
     // margin: 0 auto;
     max-width: 640px;
-    .img {
+    .img,
+    .imgLink {
       height: 266px;
       // padding-bottom: 72px;
     }
@@ -31,7 +41,8 @@
   @media (min-width: 997px) and (max-width: 1280px) {
     // margin: 0 auto;
     max-width: 840px;
-    .img {
+    .img,
+    .imgLink {
       height: 350px;
       // padding-bottom: 86px;
     }
@@ -43,7 +54,8 @@
     // margin: 0 auto;
     max-width: 1200px;
     max-height: 675px;
-    .img {
+    .img,
+    .imgLink {
       height: 500px;
       // padding-bottom: 100px;
     }
@@ -56,7 +68,8 @@
   position: relative;
   width: 100%;
   border-radius: 8px;
-  .img {
+  .img,
+  .imgLink {
     box-sizing: content-box;
     width: 100%;
     // margin-right: 24px;
@@ -79,7 +92,8 @@
     overflow: hidden;
   }
 
-  .img {
+  .img,
+  .imgLink {
     @media (min-width: 1281px) {
       border-radius: 32px;
       overflow: hidden;
@@ -163,4 +177,9 @@
     gap: 20px;
     transform: var(--pc-transform);
   }
+}
+
+.imgLink:focus-visible {
+  outline: 2px solid rgba(117, 190, 255, 0.9);
+  outline-offset: 4px;
 }

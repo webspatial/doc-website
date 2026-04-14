@@ -1,0 +1,37 @@
+.categoryLink {
+  overflow: hidden;
+}
+
+:global(.menu__link--sublist-caret)::after {
+  margin-left: var(--ifm-menu-link-padding-vertical);
+}
+
+.categoryLinkLabel {
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.categoryLabelWithIcon {
+  align-items: center;
+  display: flex;
+  gap: var(--docs-sidebar-icon-gap, 10px);
+}
+
+.categoryIcon {
+  color: currentColor;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: var(--docs-sidebar-icon-size, 18px);
+  width: var(--docs-sidebar-icon-size, 18px);
+}
+
+.categoryText {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

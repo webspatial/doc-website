@@ -1,0 +1,10 @@
+{
+  "label": "Event API",
+  "position": 4,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/react-sdk/event-api",
+    "description": "用于点击、拖拽、缩放和旋转手势的空间交互事件。"
+  }
+}

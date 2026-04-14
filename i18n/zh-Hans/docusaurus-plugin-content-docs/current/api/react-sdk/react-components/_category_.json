@@ -1,0 +1,10 @@
+{
+  "label": "React Components",
+  "position": 1,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/react-sdk/react-components",
+    "description": "用于渲染 3D 和空间内容的 React 组件与 JSX 标记。"
+  }
+}

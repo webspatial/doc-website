@@ -5,6 +5,7 @@ import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
 
 const useCloudflare = false;
+const alwaysAutoDownload = () => true;
 export default function Image({img, alt, title, ...props}) {
   const [open, setOpen] = useState(false);
   const [fullImageURL, setFullImageURL] = useState('');
@@ -32,7 +33,7 @@ export default function Image({img, alt, title, ...props}) {
           alt={alt}
           title={title}
           {...props}
-          shouldAutoDownload={true}
+          shouldAutoDownload={alwaysAutoDownload}
         />
       </div>
 

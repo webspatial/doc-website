@@ -15,7 +15,6 @@ export default function NavbarMobilePrimaryMenu(): ReactNode {
   // TODO how can the order be defined for mobile?
   // Should we allow providing a different list of items?
   const items = useNavbarItems();
-  console.log("🚀 ~ NavbarMobilePrimaryMenu ~ items:", items)
 
   return (
     <ul className="menu__list">

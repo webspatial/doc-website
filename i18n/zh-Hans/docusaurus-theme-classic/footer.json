@@ -1,42 +1,78 @@
 {
-  "link.title.Docs": {
-    "message": "Docs",
-    "description": "The title of the footer links column with title=Docs in the footer"
+  "link.title.Learn": {
+    "message": "学习",
+    "description": "The title of the footer links column with title=Learn in the footer"
+  },
+  "link.title.Develop": {
+    "message": "开发",
+    "description": "The title of the footer links column with title=Develop in the footer"
   },
   "link.title.Community": {
-    "message": "Community",
+    "message": "社区",
     "description": "The title of the footer links column with title=Community in the footer"
   },
-  "link.title.More": {
-    "message": "More",
-    "description": "The title of the footer links column with title=More in the footer"
+  "link.title.News": {
+    "message": "资讯",
+    "description": "The title of the footer links column with title=News in the footer"
   },
-  "link.item.label.Tutorial": {
-    "message": "Tutorial",
-    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+  "link.item.label.Introduction": {
+    "message": "简介",
+    "description": "The label of footer link with label=Introduction linking to /docs/"
   },
-  "link.item.label.Stack Overflow": {
-    "message": "Stack Overflow",
-    "description": "The label of footer link with label=Stack Overflow linking to https://stackoverflow.com/questions/tagged/docusaurus"
+  "link.item.label.Core Concepts": {
+    "message": "核心概念",
+    "description": "The label of footer link with label=Core Concepts linking to /docs/concepts/"
   },
-  "link.item.label.Discord": {
-    "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
+  "link.item.label.Getting Started": {
+    "message": "快速开始",
+    "description": "The label of footer link with label=Getting Started linking to /docs/"
+  },
+  "link.item.label.Video": {
+    "message": "视频",
+    "description": "The label of footer link with label=Video linking to /"
+  },
+  "link.item.label.Compatibility": {
+    "message": "兼容性",
+    "description": "The label of footer link with label=Compatibility linking to /docs/introduction/getting-started#supported-web-projects"
+  },
+  "link.item.label.Setup Guide": {
+    "message": "配置指南",
+    "description": "The label of footer link with label=Setup Guide linking to /docs/introduction/getting-started#set-up-your-project"
+  },
+  "link.item.label.WebSpatial API": {
+    "message": "WebSpatial API",
+    "description": "The label of footer link with label=WebSpatial API linking to /docs/introduction/getting-started#webspatial-api"
+  },
+  "link.item.label.GitHub Issues": {
+    "message": "GitHub Issues",
+    "description": "The label of footer link with label=GitHub Issues linking to //github.com/webspatial/webspatial-sdk/issues"
+  },
+  "link.item.label.Join Discord": {
+    "message": "加入 Discord",
+    "description": "The label of footer link with label=Join Discord linking to //discord.gg/nhFhSuhNF2"
+  },
+  "link.item.label.FAQ": {
+    "message": "常见问题",
+    "description": "The label of footer link with label=FAQ linking to /"
+  },
+  "link.item.label.Blog": {
+    "message": "博客",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Releases": {
+    "message": "发布记录",
+    "description": "The label of footer link with label=Releases linking to https://github.com/webspatial/webspatial-sdk/releases"
   },
   "link.item.label.X": {
     "message": "X",
-    "description": "The label of footer link with label=X linking to https://x.com/docusaurus"
+    "description": "The label of footer link with label=X linking to /"
   },
-  "link.item.label.Blog": {
-    "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
-  },
-  "link.item.label.GitHub": {
-    "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+  "link.item.label.Events": {
+    "message": "活动",
+    "description": "The label of footer link with label=Events linking to /"
   },
   "copyright": {
-    "message": "Copyright © 2025 My Project, Inc. Built with Docusaurus.",
+    "message": "基于 MIT 许可证发布。 \nCopyright © 2026 WebSpatial",
     "description": "The footer copyright"
   }
 }

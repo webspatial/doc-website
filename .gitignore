@@ -19,5 +19,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-XRSDK
 llms.txt
+llms-full.txt
+
+.playwright-cli
+.pnpm-store/
+output
+temp-assets

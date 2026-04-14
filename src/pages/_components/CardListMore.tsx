@@ -1,4 +1,5 @@
 import React from 'react';
+import Translate from '@docusaurus/Translate';
 import styles from './CardListMore.module.scss';
 import Link from '@docusaurus/Link';
 type Props = {
@@ -20,7 +21,7 @@ const CardListMore: React.FC<Props> = ({data}) => {
               <div className={styles.desc}>{x.desc}</div>
               {x.moreUrl && (
                 <Link to={x.moreUrl} className={styles.more}>
-                  More
+                  <Translate id="homepage.section4.more">More</Translate>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="8"

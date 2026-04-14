@@ -1,0 +1,290 @@
+.docItemContainer header + *,
+.docItemContainer article > *:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 997px) {
+  .docItemCol {
+    max-width: 75% !important;
+  }
+
+  .docItemContainer {
+    max-width: 780px;
+  }
+
+  .docItemContainer article > .docBreadcrumbsDesktop:first-child {
+    margin-top: 12px;
+  }
+}
+
+.docBreadcrumbsDesktop {
+  display: block;
+}
+
+.mobileToolbar {
+  display: none;
+}
+
+@media (max-width: 996px) {
+  .docItemContainer {
+    --doc-mobile-anchor-offset: calc(var(--ifm-navbar-height) + 52px);
+  }
+
+  .docItemContainer :global(.theme-doc-markdown h1),
+  .docItemContainer :global(.theme-doc-markdown h2),
+  .docItemContainer :global(.theme-doc-markdown h3),
+  .docItemContainer :global(.theme-doc-markdown h4),
+  .docItemContainer :global(.theme-doc-markdown h5),
+  .docItemContainer :global(.theme-doc-markdown h6) {
+    scroll-margin-top: var(--doc-mobile-anchor-offset);
+  }
+
+  .docBreadcrumbsDesktop {
+    display: none;
+  }
+
+  .mobileToolbar {
+    --doc-mobile-toolbar-height: 40px;
+    --doc-mobile-toolbar-breakout-inline: 24px;
+    --doc-mobile-toolbar-inline-padding: var(--ifm-navbar-padding-horizontal);
+    --doc-mobile-toolbar-overlay-bg: rgba(247, 248, 250, 0.48);
+    display: block;
+    position: sticky;
+    top: var(--ifm-navbar-height);
+    z-index: calc(var(--ifm-z-index-fixed) - 2);
+    margin: 0 calc(var(--doc-mobile-toolbar-breakout-inline) * -1) 16px;
+    background: var(--ifm-navbar-background-color);
+  }
+
+  :global([data-theme='dark']) .mobileToolbar {
+    --doc-mobile-toolbar-overlay-bg: rgba(10, 12, 16, 0.42);
+  }
+
+  .mobileToolbarBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: var(--doc-mobile-toolbar-height);
+    padding: 0 var(--doc-mobile-toolbar-inline-padding);
+    background: var(--ifm-navbar-background-color);
+    border-bottom: 1px solid var(--navbar-divider-color);
+  }
+
+  .mobileBreadcrumbs {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .mobileBreadcrumbs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobileBreadcrumbsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    min-width: max-content;
+  }
+
+  .mobileToolbar :global(.breadcrumbs) {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobileToolbar :global(.breadcrumbs__item) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 100%;
+    margin: 0;
+  }
+
+  .mobileToolbar :global(.breadcrumbs__link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: var(--color-text-2);
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .mobileToolbar :global(.breadcrumbs__item--active .breadcrumbs__link) {
+    color: var(--color-text-1);
+  }
+
+  .mobileToolbarToggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-text-1);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .mobileToolbarToggleChevronIcon {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(-135deg);
+    transform-origin: 50% 50%;
+  }
+
+  .mobileToolbarToggleContentsIcon {
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 14px;
+    color: var(--color-text-1);
+    border: 1.5px solid currentColor;
+    border-radius: 3px;
+  }
+
+  .mobileToolbarToggleContentsIcon::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 3px;
+    width: 1.5px;
+    border-radius: 999px;
+    background: currentColor;
+  }
+
+  .mobileToolbarToggleContentsIcon::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 4px;
+    height: 1.5px;
+    border-radius: 999px;
+    background: currentColor;
+    box-shadow: 0 3.5px 0 currentColor, 0 7px 0 currentColor;
+  }
+
+  .mobileToolbarPanelWrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    overflow: hidden;
+  }
+
+  .mobileToolbarPanelBackdrop {
+    position: fixed;
+    top: calc(var(--ifm-navbar-height) + var(--doc-mobile-toolbar-height));
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    border: 0;
+    background: var(--doc-mobile-toolbar-overlay-bg);
+    -webkit-backdrop-filter: blur(2px) saturate(1);
+    backdrop-filter: blur(2px) saturate(1);
+    cursor: default;
+  }
+
+  .mobileToolbarPanel {
+    position: relative;
+    z-index: 1;
+    max-height: calc(
+      100vh - var(--ifm-navbar-height) - var(--doc-mobile-toolbar-height)
+    );
+    padding: 14px var(--doc-mobile-toolbar-inline-padding) 12px;
+    background: var(--ifm-navbar-background-color);
+    border-bottom: 1px solid var(--navbar-divider-color);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobileToolbarPanelTitle {
+    margin-bottom: 12px;
+    color: var(--color-text-1);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .mobileToolbarToc {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .mobileToolbarToc :global(ul) {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .mobileToolbarToc :global(li) {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+
+  .mobileToolbarToc :global(li:last-child) {
+    margin-bottom: 0;
+  }
+
+  .mobileToolbarToc :global(li > ul) {
+    margin-top: 6px;
+    margin-left: 12px;
+    padding-left: 10px;
+    border-left: 1px solid var(--navbar-divider-color);
+  }
+
+  .mobileToolbarTocLink {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--color-text-2);
+    background: transparent;
+    transition: background-color 160ms ease, color 160ms ease;
+  }
+
+  .mobileToolbarTocLink:hover {
+    color: var(--color-text-1);
+    background: var(--color-fill-2);
+    text-decoration: none;
+  }
+
+  .mobileToolbarToc :global(.table-of-contents__link--active) {
+    color: var(--color-text-1);
+    font-weight: 600;
+    background: var(--color-fill-2);
+  }
+}
+
+@media (min-width: 577px) and (max-width: 996px) {
+  .mobileToolbar {
+    --doc-mobile-toolbar-breakout-inline: 40px;
+  }
+}

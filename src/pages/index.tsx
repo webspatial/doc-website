@@ -1,11 +1,8 @@
 import React from 'react';
 import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {translate} from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import {useColorMode, type ColorMode} from '@docusaurus/theme-common';
 
 import styles from './index.module.scss';
 import Banner from './_components/Banner';
@@ -16,38 +13,51 @@ import Slider from './_components/Slider';
 import CardList from './_components/CardList';
 import SliderB from './_components/SliderB';
 import CardListMore from './_components/CardListMore';
-import {useColorMode} from '@docusaurus/theme-common';
-import tdk from '../data/tdk';
 
-// function HomepageHeader() {
-//   const {siteConfig} = useDocusaurusContext();
-//   return (
-//     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-//       <div className="container">
-//         <Heading as="h1" className="hero__title">
-//           {siteConfig.title}
-//         </Heading>
-//         <p className="hero__subtitle">{siteConfig.tagline}</p>
-//         <div className={styles.buttons}>
-//           <Link
-//             className="button button--secondary button--lg"
-//             to="/docs/intro">
-//             Docusaurus Tutorial - 5min ⏱️
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
+function HomepageColorMode(): ReactNode {
+  const {setColorMode} = useColorMode();
+
+  React.useEffect(() => {
+    const setTransientColorMode = setColorMode as unknown as (
+      colorMode: ColorMode | null,
+      options?: {persist?: boolean},
+    ) => void;
+
+    // `useColorMode()` intentionally lags during hydration. Read the current
+    // DOM attribute so we restore the user's real choice when leaving home.
+    const previousColorModeChoice = (() => {
+      const themeChoice = document.documentElement.getAttribute(
+        'data-theme-choice',
+      );
+      if (themeChoice === 'light' || themeChoice === 'dark') {
+        return themeChoice;
+      }
+      return null;
+    })();
+
+    setTransientColorMode('dark', {persist: false});
+
+    return () => {
+      setTransientColorMode(previousColorModeChoice, {persist: false});
+    };
+  }, [setColorMode]);
+
+  return null;
+}
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const title = 'WebSpatial';
+  const description = translate({
+    id: 'homepage.meta.description',
+    message:
+      'WebSpatial is a set of spatial APIs and ready-to-use SDK that extend the standard 2D Web ecosystem to support spatial computing across platforms. It enables the entire HTML/CSS-based Web world to step into the spatial era, gaining spatial power on par with native apps (like visionOS apps) while keeping the advantages they already have.',
+  });
 
   return (
     <Layout
-      title={tdk.index.title}
-      description={tdk.index.description}>
-      {/* <HomepageHeader /> */}
+      title={title}
+      description={description}>
+      <HomepageColorMode />
       <Banner />
       <main className={styles.mainWrap}>
         <Section title={data.section1.title} desc={data.section1.desc}>

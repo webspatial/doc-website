@@ -1,0 +1,10 @@
+{
+  "label": "React SDK",
+  "position": 1,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/react-sdk",
+    "description": "React 组件、CSS API、DOM API、事件、JS API 和场景配置的参考文档。"
+  }
+}

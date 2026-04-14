@@ -1,6 +1,8 @@
 @media (min-width: 997px) {
   .menu {
     flex-grow: 1;
+    min-height: 0;
+    overflow-y: auto;
     padding: 0.5rem;
   }
   @supports (scrollbar-gutter: stable) {

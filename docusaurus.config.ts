@@ -12,6 +12,38 @@ const PROJ_NAME = 'doc-website'; //process.env.PROJECT_NAME || 'my-default-proje
 
 const isProd = BASE_URL == '/';
 
+const normalizeSidebarHref = (href: unknown): string | undefined =>
+  typeof href === 'string' ? href.replace(/\/$/, '') : undefined;
+
+const getSidebarCategoryHref = (item: any): string | undefined =>
+  normalizeSidebarHref(item.href) ??
+  normalizeSidebarHref(item.link?.href) ??
+  normalizeSidebarHref(item.link?.slug);
+
+const isReactSdkCategoryHref = (href: string | undefined): boolean =>
+  typeof href === 'string' && /\/api\/react-sdk$/.test(href);
+
+const expandSidebarCategories = (
+  items: any[],
+  parentCategoryHref?: string,
+): any[] =>
+  items.map((item) => {
+    if (item.type !== 'category') {
+      return item;
+    }
+
+    const itemHref = getSidebarCategoryHref(item);
+    const shouldDefaultCollapse = isReactSdkCategoryHref(parentCategoryHref);
+
+    return {
+      ...item,
+      collapsed: shouldDefaultCollapse ? true : item.collapsed ?? false,
+      items: Array.isArray(item.items)
+        ? expandSidebarCategories(item.items, itemHref)
+        : item.items,
+    };
+  });
+
 const config: Config = {
   trailingSlash: false,
   onBrokenLinks: 'throw', // 发现死链就 fail‐fast
@@ -74,12 +106,7 @@ const config: Config = {
   ],
   plugins: [
     'docusaurus-plugin-sass',
-    [
-      'docusaurus-plugin-generate-llms-txt',
-      {
-        outputFile: 'llms.txt', // defaults to llms.txt if not specified
-      },
-    ],
+    require.resolve('./plugins/llms'),
     '@docusaurus/theme-live-codeblock',
     [
       'ideal-image',
@@ -93,74 +120,13 @@ const config: Config = {
         disableInDev: true,
       } satisfies IdealImageOptions,
     ],
-    // [
-    //   'docusaurus-plugin-typedoc',
-
-    //   // Options
-    //   {
-    //     id: 'core-sdk',
-    //     // ── begin explicit source-link settings ──
-
-    //     // Ensure TypeDoc always generates links, even if Git auto-detection is off
-    //     disableGit: true,
-
-    //     // Template for linking to GitHub.
-    //     // {path} is the file path under the SDK repo, {line} the line number.
-    //     sourceLinkTemplate:
-    //       'https://github.com/webspatial/webspatial-sdk/blob/main/core/src/core/{path}#L{line}',
-
-    //     // (Optional) override the revision—use your default branch or commit SHA
-    //     gitRevision: 'main',
-    //     cleanOutputDir: false,
-
-    //     // ── end explicit settings ──
-    //     entryPoints: ['./XRSDK/packages/core/src/index.ts'],
-    //     tsconfig: './XRSDK/packages/core/tsconfig.json',
-    //     out: 'docs/api-core',
-    //     sidebar: {
-    //       autoConfiguration: true,
-    //       pretty: true,
-    //       typescript: true,
-    //       deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
-    //     },
-    //   },
-    // ],
-    // [
-    //   'docusaurus-plugin-typedoc',
-
-    //   // Options
-    //   {
-    //     id: 'react-sdk',
-    //     // ── begin explicit source-link settings ──
-
-    //     // Ensure TypeDoc always generates links, even if Git auto-detection is off
-    //     disableGit: true,
-
-    //     // // Template for linking to GitHub.
-    //     // // {path} is the file path under the SDK repo, {line} the line number.
-    //     basePath: './XRSDK/packages/react/src',
-    //     sourceLinkTemplate:
-    //       'https://github.com/webspatial/webspatial-sdk/blob/main/react/src/{path}#L{line}',
-
-    //     // // (Optional) override the revision—use your default branch or commit SHA
-    //     gitRevision: 'main',
-    //     cleanOutputDir: false,
-
-    //     // ── end explicit settings ──
-    //     entryPoints: ['./XRSDK/packages/react/src/index.ts'],
-    //     tsconfig: './XRSDK/packages/react/tsconfig.json',
-    //     out: 'docs/api-react',
-    //     sidebar: {
-    //       autoConfiguration: true,
-    //       pretty: true,
-    //       typescript: true,
-    //       deprecatedItemClassName: 'typedoc-sidebar-item-deprecated',
-    //     },
-    //   },
-    // ],
   ],
   title: 'WebSpatial',
   favicon: 'img/favicon.svg',
+  customFields: {
+    llmsSummary: tdk.index.description,
+    llmsBaseUrl: '/',
+  },
 
   // Set the production url of your site here
   url: 'https://webspatial.dev',
@@ -173,20 +139,21 @@ const config: Config = {
   organizationName: 'webspatial', // Usually your GitHub org/user name.
   projectName: PROJ_NAME, // Usually your repo name.
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: [
-  //     'en',
-  //     // 'zh-Hans'
-  //   ],
-  //   localeConfigs: {
-  //     en: {htmlLang: 'en-US'},
-  //     'zh-Hans': {htmlLang: 'zh-CN'},
-  //   },
-  // },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh-Hans'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en-US',
+      },
+      'zh-Hans': {
+        label: '中文',
+        htmlLang: 'zh-Hans',
+        path: 'zh-Hans',
+      },
+    },
+  },
 
   presets: [
     [
@@ -194,6 +161,26 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarItemsGenerator: async ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }: any) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            return expandSidebarCategories(items);
+          },
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: 'latest',
+              badge: false,
+            },
+            '1.0.x': {
+              label: '1.0.x',
+              path: '1.0.x',
+              banner: 'unmaintained',
+              badge: false,
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: false,
@@ -256,43 +243,42 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'right',
-          label: 'Docs',
-          group: 'left',
+          type: 'docsVersionDropdown',
+          dropdownActiveClassDisabled: true,
+          position: 'left',
+          className: 'xheader-control xheader-version-switch',
         },
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'apiSidebar',
-        //   // to: '/docs/api',
-        //   label: 'API',
-        //   position: 'left',
-        // },
-        // {to: '/blog', label: 'Blog', position: 'right', group: 'left'},
-        // {to: 'showcase', label: 'Showcase', position: 'right', group: 'left'},
         {
-          to: '#',
-          className: 'dropdownHr',
-          position: 'right',
-          group: 'left',
+          to: '/docs/introduction/getting-started',
+          label: 'Docs',
+          position: 'left',
+          activeBasePath: '/docs/introduction',
+          className: 'xheader-section-link',
         },
-        // {
-        //   type: 'docsVersionDropdown',
-        //   versions: ['current'],
-        //   position: 'right',
-        // },
-
-        // {
-        //   type: 'localeDropdown',
-        //   className: 'xheader-locale',
-        //   position: 'right',
-        // },
+        {
+          to: '/docs/concepts',
+          label: 'Concepts',
+          position: 'left',
+          activeBasePath: '/docs/concepts',
+          className: 'xheader-section-link',
+        },
+        {
+          to: '/docs/api',
+          label: 'API',
+          position: 'left',
+          activeBasePath: '/docs/api',
+          className: 'xheader-section-link',
+        },
+        {
+          type: 'localeDropdown',
+          className: 'xheader-control xheader-locale-switch',
+          position: 'right',
+        },
         {
           href: 'https://github.com/webspatial/webspatial-sdk',
           // label: 'GitHub',
           h5Label: 'GitHub',
-          className: 'xheader-github-link',
+          className: 'xheader-social-link xheader-github-link',
           h5ClassName: '',
           position: 'right',
         },
@@ -300,7 +286,7 @@ const config: Config = {
           href: 'https://discord.gg/nhFhSuhNF2',
           // label: 'Discord',
           h5Label: 'Discord',
-          className: 'xheader-discord-link',
+          className: 'xheader-social-link xheader-discord-link',
           h5ClassName: '',
           position: 'right',
         },
@@ -313,38 +299,16 @@ const config: Config = {
           title: 'Learn',
           items: [
             {
-              label: 'Introduction',
-              to: '/docs/introduction/',
+              label: 'Features',
+              to: '/docs/introduction/getting-started#features',
             },
-            {
-              label: 'Core Concepts',
-              to: '/docs/core-concepts/',
-            },
-            {
-              label: 'Quick Example',
-              to: '/docs/quick-example/',
-            },
-            {
-              label: 'Video',
-              className: 'disabled',
-              to: '/',
-            },
-          ],
-        },
-        {
-          title: 'Develop',
-          items: [
             {
               label: 'Compatibility',
-              to: '/docs/development-guide/web-projects-that-support-webspatial/',
+              to: '/docs/introduction/getting-started#supported-web-projects',
             },
             {
-              label: 'Setup Guide',
-              to: '/docs/development-guide/enabling-webspatial-in-web-projects/',
-            },
-            {
-              label: 'WebSpatial API',
-              to: '/docs/development-guide/using-the-webspatial-api/',
+              label: 'Setup',
+              to: '/docs/introduction/getting-started#installation',
             },
           ],
         },
@@ -353,16 +317,15 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Issues',
-              href: '//github.com/webspatial/webspatial-sdk/issues',
+              href: 'https://github.com/webspatial/webspatial-sdk/issues',
             },
             {
               label: 'Join Discord',
-              href: '//discord.gg/nhFhSuhNF2',
+              href: 'https://discord.gg/nhFhSuhNF2',
             },
             {
-              label: 'FAQ',
-              className: 'disabled',
-              to: '/',
+              label: 'Watch on YouTube',
+              href: 'https://www.youtube.com/@WebSpatial',
             },
           ],
         },
@@ -370,28 +333,18 @@ const config: Config = {
           title: 'News',
           items: [
             {
-              label: 'Blog',
-              className: 'disabled',
-              to: '/blog',
-            },
-            {
               label: 'Releases',
               href: 'https://github.com/webspatial/webspatial-sdk/releases',
             },
             {
-              label: 'X',
+              label: 'Blog',
               className: 'disabled',
-              to: '/',
-            },
-            {
-              label: 'Events',
-              className: 'disabled',
-              to: '/',
+              to: '/blog',
             },
           ],
         },
       ],
-      copyright: `Released under the MIT License. \nCopyright © ${new Date().getFullYear()} WebSpatial`,
+      copyright: `Released under the MIT License. Copyright © ${new Date().getFullYear()} WebSpatial`,
     },
     prism: {
       theme: darkTheme, // lightTheme, //emptyTheme,

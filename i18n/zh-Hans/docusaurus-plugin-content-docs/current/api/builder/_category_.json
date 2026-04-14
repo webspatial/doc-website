@@ -1,0 +1,10 @@
+{
+  "label": "Builder",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/builder",
+    "description": "打包 WebSpatial 应用的预览、构建和发布命令参考。"
+  }
+}

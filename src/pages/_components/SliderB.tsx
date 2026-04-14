@@ -1,10 +1,13 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './SliderB.module.scss';
 import clsx from 'clsx';
 type Props = {
   data: {
     title: string;
     imgUrl: string;
+    url?: string;
     desc?: string;
     disable?: boolean;
   }[];
@@ -33,11 +36,7 @@ const SliderB: React.FC<Props> = ({data}) => {
             '--h5-transform': `translateX(calc(-${idx * 100}%))`,
           }}>
           {data.map((item, i) => (
-            <div
-              key={i}
-              className={styles.img}
-              style={{backgroundImage: `url(${item.imgUrl})`}}
-            />
+            <SliderItem key={i} item={item} />
           ))}
         </div>
       </div>
@@ -125,3 +124,27 @@ const SliderB: React.FC<Props> = ({data}) => {
   );
 };
 export default SliderB;
+
+const SliderItem: React.FC<{
+  item: Props['data'][number];
+}> = ({item}) => {
+  const imgUrl = useBaseUrl(item.imgUrl);
+
+  if (item.url) {
+    return (
+      <Link
+        to={item.url}
+        className={styles.imgLink}
+        aria-label={item.title}
+        style={{backgroundImage: `url(${imgUrl})`}}
+      />
+    );
+  }
+
+  return (
+    <div
+      className={styles.img}
+      style={{backgroundImage: `url(${imgUrl})`}}
+    />
+  );
+};

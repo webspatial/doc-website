@@ -15,8 +15,8 @@ import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
-import {useLocation} from '@docusaurus/router';
 
+import useIsHomepage from '../useIsHomepage';
 import styles from './styles.module.scss';
 
 function useNavbarItems() {
@@ -77,15 +77,21 @@ export default function NavbarContent(): ReactNode {
 
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
+  const versionDropdownItem = leftItems.find(
+    (item) => item.type === 'docsVersionDropdown',
+  );
+  const mainNavItems = leftItems.filter((item) => item !== versionDropdownItem);
 
   const searchBarItem = items.find((item) => item.type === 'search');
+  const utilityItems = rightItems.filter((item) => item.type !== 'search');
+  const localeDropdownItem = utilityItems.find(
+    (item) => item.type === 'localeDropdown',
+  );
+  const socialItems = utilityItems.filter((item) => item !== localeDropdownItem);
 
-  const rightLeftItems = rightItems.filter((item) => item.group === 'left');
-  const rightRightItems = rightItems.filter((item) => item.group !== 'left'); // right and default
-
-  const location = useLocation();
-
-  const hideSeparator = location.pathname === '/';
+  const isHomepage = useIsHomepage();
+  const showControlGroup = Boolean(localeDropdownItem) || !isHomepage;
+  const showSocialSeparator = socialItems.length > 0;
 
   return (
     <NavbarContentLayout
@@ -94,41 +100,63 @@ export default function NavbarContent(): ReactNode {
         <>
           {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarLogo />
-          <NavbarItems items={leftItems} />
+          {versionDropdownItem && (
+            <>
+              <div className={styles.mobileVersion}>
+                <NavbarItems items={[versionDropdownItem]} />
+              </div>
+              <div className={styles.desktopVersion}>
+                <NavbarItems items={[versionDropdownItem]} />
+              </div>
+            </>
+          )}
+          <NavbarItems items={mainNavItems} />
         </>
       }
       right={
-        // TODO stop hardcoding items?
-        // Ask the user to add the respective navbar items => more flexible
         <>
-          {!searchBarItem && (
-            <NavbarSearch>
+          {showControlGroup && (
+            <div className={styles.utilityControls}>
+              <div className={styles.controlGroup}>
+                {localeDropdownItem && (
+                  <div className={styles.controlGroupItem}>
+                    <NavbarItems items={[localeDropdownItem]} />
+                  </div>
+                )}
+                {localeDropdownItem && !isHomepage && (
+                  <div className={styles.controlGroupDivider} />
+                )}
+                {!isHomepage && (
+                  <div className={styles.controlGroupItem}>
+                    <NavbarColorModeToggle className={styles.colorModeToggle} />
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {!searchBarItem ? (
+            <NavbarSearch className={styles.navbarSearch}>
               <SearchBar />
             </NavbarSearch>
+          ) : (
+            <NavbarItems items={[searchBarItem]} />
           )}
-          <NavbarItems items={rightLeftItems} />
-          {!hideSeparator && <Separator />}
-          <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {/* {!hideSeparator && <Separator />} */}
-          <Separator />
-          <NavbarItems items={rightRightItems} />
+
+          {showSocialSeparator && <Separator className={styles.utilitySeparator} />}
+          {socialItems.length > 0 && (
+            <div className={styles.socialItems}>
+              <NavbarItems items={socialItems} />
+            </div>
+          )}
         </>
       }
     />
   );
 }
 
-const Separator = () => {
+const Separator = ({className}: {className?: string}) => {
   return (
-    <div className={styles.separator}>
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="2"
-        height="12"
-        viewBox="0 0 2 12"
-        fill="none">
-        <path d="M1 0V12" stroke="#E5E6EB" />
-      </svg> */}
-    </div>
+    <div className={clsx(styles.separator, className)} />
   );
 };
