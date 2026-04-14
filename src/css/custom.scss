@@ -561,30 +561,20 @@ a:hover {
   margin-right: 14px;
 }
 
-.navbar__logo img:not(.navbar__logo-compact) {
+.navbar__logo img {
   max-width: 128px;
   display: block;
 }
 
-.navbar__logo-full {
+.navbar__logo picture {
   display: block;
 }
 
-.navbar__logo-compact {
-  display: none;
-  width: 30px;
-  height: auto;
-  flex: none;
-  max-width: none;
-}
-
-@media (max-width: 430px) {
-  .navbar__logo-full {
-    display: none;
-  }
-
-  .navbar__logo-compact {
-    display: block;
+@media (max-width: 429.98px) {
+  .navbar__logo img {
+    width: 30px;
+    height: auto;
+    max-width: none;
   }
 }
 

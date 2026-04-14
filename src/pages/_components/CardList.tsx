@@ -2,7 +2,11 @@ import React from 'react';
 import styles from './CardList.module.scss';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {withBaseUrl} from './homepageMedia';
+import {useNearViewport} from './useNearViewport';
+
 type Props = {
   data: {
     title: string;
@@ -15,8 +19,12 @@ type Props = {
 };
 const CardList: React.FC<Props> = ({data}) => {
   const cardBgUrl = useBaseUrl('/img/index-s2/cbg.jpg');
+  const {ref, isNearViewport} = useNearViewport<HTMLDivElement>({
+    rootMargin: '420px 0px',
+  });
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={ref}>
       {data.map((x, i) => {
         if (x.url) {
           return (
@@ -40,6 +48,7 @@ const CardList: React.FC<Props> = ({data}) => {
                   urls={x.imgUrl}
                   h5urls={x.imgUrlh5}
                   padurls={x.imgUrlPad}
+                  isActive={isNearViewport}
                 />
               </div>
 
@@ -70,6 +79,7 @@ const CardList: React.FC<Props> = ({data}) => {
                 urls={x.imgUrl}
                 h5urls={x.imgUrlh5}
                 padurls={x.imgUrlPad}
+                isActive={isNearViewport}
               />
             </div>
 
@@ -85,35 +95,55 @@ const CardList: React.FC<Props> = ({data}) => {
 };
 export default CardList;
 
-const FadeImages = ({urls, h5urls, padurls}: {urls: string[]; h5urls: string[]; padurls: string[]}) => {
+const FadeImages = ({
+  urls,
+  h5urls,
+  padurls,
+  isActive,
+}: {
+  urls: string[];
+  h5urls: string[];
+  padurls: string[];
+  isActive: boolean;
+}) => {
+  const {siteConfig} = useDocusaurusContext();
   const [currentImgIndex, setCurrentImgIndex] = React.useState(0);
+
+  const resolvedImages = React.useMemo(
+    () =>
+      urls.map((url, index) => ({
+        pcUrl: withBaseUrl(siteConfig.baseUrl, url),
+        h5Url: withBaseUrl(siteConfig.baseUrl, h5urls[index] ?? url),
+        padUrl: withBaseUrl(siteConfig.baseUrl, padurls[index] ?? url),
+      })),
+    [h5urls, padurls, siteConfig.baseUrl, urls],
+  );
+
   React.useEffect(() => {
+    if (!isActive || resolvedImages.length <= 1) {
+      return undefined;
+    }
+
     const timer = setInterval(() => {
-      setCurrentImgIndex((prev) => (prev + 1) % 2);
+      setCurrentImgIndex((prev) => (prev + 1) % resolvedImages.length);
     }, 3000);
     return () => clearInterval(timer);
-  }, []);
+  }, [isActive, resolvedImages.length]);
+
+  if (!isActive) {
+    return <div className={styles.imgPlaceholder} aria-hidden="true" />;
+  }
 
   return (
     <>
-      {urls.map((url, index) => {
-        const pcUrl = useBaseUrl(url);
-        const h5Url = useBaseUrl(h5urls[index]);
-        const padUrl = useBaseUrl(padurls[index]);
-
-        // const isHotfix = url.endsWith('b2.png');
-        // const isC = url.endsWith('c1.png') || url.endsWith('c2.png');
-        // const isD = url.endsWith('d1.png') || url.endsWith('d2.png');
+      {resolvedImages.map(({pcUrl, h5Url, padUrl}, index) => {
         return (
           <div
             className={clsx(styles.imgItem, {
               [styles.active]: currentImgIndex === index,
-              // [styles.hotfix]: isHotfix,
-              // [styles.isD]: isD,
             })}
             key={index}
             style={{
-              // backgroundImage: `url(${finalUrl})`,
               //@ts-ignore
               '--pc-url': `url(${pcUrl})`,
               //@ts-ignore

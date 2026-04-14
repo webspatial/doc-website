@@ -17,6 +17,14 @@
 
       width: 100%;
       // margin-bottom: 108px;
+      .imgPlaceholder {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 18% 18%, rgba(117, 190, 255, 0.2) 0%, rgba(117, 190, 255, 0) 28%),
+          linear-gradient(180deg, rgba(15, 19, 32, 0.94) 0%, rgba(8, 10, 18, 0.98) 100%);
+      }
+
       .imgItem {
         position: absolute;
         width: 100%;

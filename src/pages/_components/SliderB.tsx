@@ -3,6 +3,8 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './SliderB.module.scss';
 import clsx from 'clsx';
+import {useNearViewport} from './useNearViewport';
+
 type Props = {
   data: {
     title: string;
@@ -14,6 +16,9 @@ type Props = {
 };
 const SliderB: React.FC<Props> = ({data}) => {
   const [idx, setIdx] = React.useState(0);
+  const {ref, isNearViewport} = useNearViewport<HTMLDivElement>({
+    rootMargin: '420px 0px',
+  });
 
   const hasPre = idx > 0;
   const hasNext = idx < data.length - 1;
@@ -24,7 +29,7 @@ const SliderB: React.FC<Props> = ({data}) => {
   }
 
   return (
-    <div className={styles.slider}>
+    <div className={styles.slider} ref={ref}>
       <div className={styles.topWrap}>
         <div
           className={styles.imgContainer}
@@ -36,7 +41,7 @@ const SliderB: React.FC<Props> = ({data}) => {
             '--h5-transform': `translateX(calc(-${idx * 100}%))`,
           }}>
           {data.map((item, i) => (
-            <SliderItem key={i} item={item} />
+            <SliderItem key={i} item={item} isActive={isNearViewport} />
           ))}
         </div>
       </div>
@@ -127,24 +132,26 @@ export default SliderB;
 
 const SliderItem: React.FC<{
   item: Props['data'][number];
-}> = ({item}) => {
+  isActive: boolean;
+}> = ({item, isActive}) => {
   const imgUrl = useBaseUrl(item.imgUrl);
+  const backgroundImage = isActive ? `url(${imgUrl})` : undefined;
 
   if (item.url) {
     return (
       <Link
         to={item.url}
-        className={styles.imgLink}
+        className={clsx(styles.imgLink, !isActive && styles.isPending)}
         aria-label={item.title}
-        style={{backgroundImage: `url(${imgUrl})`}}
+        style={{backgroundImage}}
       />
     );
   }
 
   return (
     <div
-      className={styles.img}
-      style={{backgroundImage: `url(${imgUrl})`}}
+      className={clsx(styles.img, !isActive && styles.isPending)}
+      style={{backgroundImage}}
     />
   );
 };

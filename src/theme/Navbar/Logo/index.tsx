@@ -2,8 +2,11 @@ import React, {type ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {useThemeConfig, type NavbarLogo as NavbarLogoConfig} from '@docusaurus/theme-common';
-import ThemedImage from '@theme/ThemedImage';
+import {
+  useColorMode,
+  useThemeConfig,
+  type NavbarLogo as NavbarLogoConfig,
+} from '@docusaurus/theme-common';
 
 import useIsHomepage from '../useIsHomepage';
 
@@ -16,31 +19,32 @@ function LogoImage({
   alt: string;
   isHomepage: boolean;
 }) {
+  const {colorMode} = useColorMode();
   const lightSrc = useBaseUrl(logo.src);
   const darkSrc = useBaseUrl(logo.srcDark || logo.src);
+  const compactSrc = useBaseUrl('/img/favicon.svg');
+  const documentTheme =
+    typeof document !== 'undefined'
+      ? document.documentElement.getAttribute('data-theme')
+      : null;
+  const fullSrc =
+    isHomepage || documentTheme === 'dark' || colorMode === 'dark'
+      ? darkSrc
+      : lightSrc;
 
-  if (isHomepage) {
-    return (
+  return (
+    <picture>
+      <source media="(max-width: 429.98px)" srcSet={compactSrc} />
       <img
         className={logo.className}
-        src={darkSrc}
+        src={fullSrc}
         height={logo.height}
         width={logo.width}
         alt={alt}
         style={logo.style}
+        suppressHydrationWarning
       />
-    );
-  }
-
-  return (
-    <ThemedImage
-      className={logo.className}
-      sources={{light: lightSrc, dark: darkSrc}}
-      height={logo.height}
-      width={logo.width}
-      alt={alt}
-      style={logo.style}
-    />
+    </picture>
   );
 }
 
@@ -53,7 +57,6 @@ export default function NavbarLogo(): ReactNode {
   } = useThemeConfig();
   const isHomepage = useIsHomepage();
   const logoLink = useBaseUrl(logo?.href || '/');
-  const compactLogoSrc = useBaseUrl('/img/favicon.svg');
 
   const alt = logo?.alt ?? title;
 
@@ -64,10 +67,7 @@ export default function NavbarLogo(): ReactNode {
       {...(logo?.target && {target: logo.target})}>
       {logo && (
         <div className="navbar__logo">
-          <div className="navbar__logo-full">
-            <LogoImage logo={logo} alt={alt} isHomepage={isHomepage} />
-          </div>
-          <img className="navbar__logo-compact" src={compactLogoSrc} alt={alt} />
+          <LogoImage logo={logo} alt={alt} isHomepage={isHomepage} />
         </div>
       )}
     </Link>

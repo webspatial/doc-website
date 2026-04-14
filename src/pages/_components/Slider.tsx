@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './Slider.module.scss';
 import clsx from 'clsx';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {useNearViewport} from './useNearViewport';
+
 type Props = {
   data: {
     title: string;
@@ -12,17 +14,26 @@ type Props = {
 };
 const Slider: React.FC<Props> = ({data}) => {
   const [idx, setIdx] = React.useState(2);
+  const {ref, isNearViewport} = useNearViewport<HTMLDivElement>();
   const currentVideoUrl = useBaseUrl(data[idx].imgUrl);
+
   return (
-    <div className={styles.slider}>
+    <div className={styles.slider} ref={ref}>
       <div className={styles.img}>
-        <video
-          className={styles.video}
-          src={currentVideoUrl}
-          autoPlay
-          muted
-          loop
-        />
+        {isNearViewport ? (
+          <video
+            key={currentVideoUrl}
+            className={styles.video}
+            src={currentVideoUrl}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          />
+        ) : (
+          <div className={styles.videoPlaceholder} aria-hidden="true" />
+        )}
       </div>
       {/* <div
         className={styles.img}

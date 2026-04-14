@@ -3,6 +3,10 @@ import clsx from 'clsx';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import data from '../../data/index/data';
 import Button from './Button';
+import {
+  HOMEPAGE_HERO_ASSETS,
+  HOMEPAGE_HERO_STAGE_BREAKPOINT,
+} from './homepageMedia';
 import styles from './Banner.module.scss';
 
 type ResponsiveAsset = {
@@ -29,7 +33,7 @@ type EntranceOptions = {
   fromBlur?: number;
 };
 
-const STAGE_BREAKPOINT = 768;
+const STAGE_BREAKPOINT = HOMEPAGE_HERO_STAGE_BREAKPOINT;
 const WHEEL_PHASE_DISTANCE = 520;
 const TOUCH_PHASE_DISTANCE = 260;
 const KEYBOARD_PHASE_DISTANCE = 180;
@@ -163,57 +167,59 @@ const Banner: React.FC = () => {
   );
   const [phaseProgress, setPhaseProgress] = React.useState(0);
 
-  const portraitBackgroundUrl = useBaseUrl('/img/home-hero/vertical/background.jpg');
+  const portraitBackgroundUrl = useBaseUrl(
+    HOMEPAGE_HERO_ASSETS.backgroundImage.portrait,
+  );
   const landscapeBackgroundUrl = useBaseUrl(
-    '/img/home-hero/horizontal/background.jpg',
+    HOMEPAGE_HERO_ASSETS.backgroundImage.landscape,
   );
   const portraitBackgroundVideoUrl = useBaseUrl(
-    '/img/home-hero/vertical/background.mp4',
+    HOMEPAGE_HERO_ASSETS.backgroundVideo.portrait,
   );
   const landscapeBackgroundVideoUrl = useBaseUrl(
-    '/img/home-hero/horizontal/background.mp4',
+    HOMEPAGE_HERO_ASSETS.backgroundVideo.landscape,
   );
   const personBase = useHeroAsset(
-    '/img/home-hero/vertical/person-dark.png',
-    '/img/home-hero/horizontal/person-dark.png',
+    HOMEPAGE_HERO_ASSETS.personBase.portrait,
+    HOMEPAGE_HERO_ASSETS.personBase.landscape,
     '',
-    'webp',
+    HOMEPAGE_HERO_ASSETS.personBase.modernFormat,
   );
   const personGlow = useHeroAsset(
-    '/img/home-hero/vertical/person-bright.png',
-    '/img/home-hero/horizontal/person-bright.png',
+    HOMEPAGE_HERO_ASSETS.personGlow.portrait,
+    HOMEPAGE_HERO_ASSETS.personGlow.landscape,
     '',
-    'webp',
+    HOMEPAGE_HERO_ASSETS.personGlow.modernFormat,
   );
   const center = useHeroAsset(
-    '/img/home-hero/vertical/center.png',
-    '/img/home-hero/horizontal/center.png',
+    HOMEPAGE_HERO_ASSETS.center.portrait,
+    HOMEPAGE_HERO_ASSETS.center.landscape,
     '',
-    'webp',
+    HOMEPAGE_HERO_ASSETS.center.modernFormat,
   );
   const panelTop = useHeroAsset(
-    '/img/home-hero/vertical/panel-top.png',
-    '/img/home-hero/horizontal/panel-top.png',
+    HOMEPAGE_HERO_ASSETS.panelTop.portrait,
+    HOMEPAGE_HERO_ASSETS.panelTop.landscape,
     '',
-    'webp',
+    HOMEPAGE_HERO_ASSETS.panelTop.modernFormat,
   );
   const panelRight = useHeroAsset(
-    '/img/home-hero/vertical/panel-right.png',
-    '/img/home-hero/horizontal/panel-right.png',
+    HOMEPAGE_HERO_ASSETS.panelRight.portrait,
+    HOMEPAGE_HERO_ASSETS.panelRight.landscape,
     '',
-    'webp',
+    HOMEPAGE_HERO_ASSETS.panelRight.modernFormat,
   );
   const panelBottom = useHeroAsset(
-    '/img/home-hero/vertical/panel-bottom.png',
-    '/img/home-hero/horizontal/panel-bottom.png',
+    HOMEPAGE_HERO_ASSETS.panelBottom.portrait,
+    HOMEPAGE_HERO_ASSETS.panelBottom.landscape,
     '',
-    'webp',
+    HOMEPAGE_HERO_ASSETS.panelBottom.modernFormat,
   );
   const panelLeft = useHeroAsset(
-    '/img/home-hero/vertical/panel-left.png',
-    '/img/home-hero/horizontal/panel-left.png',
+    HOMEPAGE_HERO_ASSETS.panelLeft.portrait,
+    HOMEPAGE_HERO_ASSETS.panelLeft.landscape,
     '',
-    'webp',
+    HOMEPAGE_HERO_ASSETS.panelLeft.modernFormat,
   );
 
   React.useEffect(() => {
