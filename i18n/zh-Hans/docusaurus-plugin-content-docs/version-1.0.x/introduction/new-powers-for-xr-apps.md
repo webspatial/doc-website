@@ -56,7 +56,17 @@ Interaction gains more possibilities: it is more natural and intuitive, more fle
     <Image img={require("/assets/intro/intro-1-5.jpg")} alt="intro-1-5" />
   </div>
   <div className="col col--6">
-    <Image img={require("/assets/intro/intro-1-6.gif")} alt="intro-1-6" />
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      preload="metadata"
+      aria-label="intro-1-6"
+      style={{ width: '100%', height: 'auto' }}
+    >
+      <source src="/assets/intro/intro-1-6.mp4" type="video/mp4" />
+    </video>
   </div>
 </div>
 

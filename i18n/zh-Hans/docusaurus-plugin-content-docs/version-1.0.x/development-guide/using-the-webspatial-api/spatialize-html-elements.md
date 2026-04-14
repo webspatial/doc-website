@@ -3,6 +3,8 @@ sidebar_position: 2
 title: "Spatialize HTML Elements"
 ---
 
+import IdealImage from '@theme/IdealImage';
+
 :::warning[旧版文档]
 本文档属于旧版 `1.0.x` 文档，建议使用[新版文档](/docs/)。
 :::
@@ -302,8 +304,12 @@ You can build higher-level gestures such as drag-and-drop on top of these low-le
 Example:
 
 <div style={{ width: '100%', maxWidth: '860px', textAlign: 'center', position: 'relative' }}>
-  <a href="https://youtu.be/d8RcEiV-WM4?si=MyfgPKQ4qGZN80lw" target="_blank">
-    <img src="/assets/guide/hand-4.jpg" style={{ width: '100%' }} />
+  <a href="https://youtu.be/d8RcEiV-WM4?si=MyfgPKQ4qGZN80lw" target="_blank" rel="noreferrer">
+    <IdealImage
+      img={require("/assets/guide/hand-4.jpg")}
+      alt="Watch video preview"
+      shouldAutoDownload={() => true}
+    />
     <div style={{
       position: 'absolute',
       top: '50%',

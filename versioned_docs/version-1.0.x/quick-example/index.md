@@ -145,7 +145,7 @@ A current bug may leave the start scene blank after repackaging. If this happens
 If the issue persists, delete `node_modules` in the project and reinstall dependencies.
 :::
 
-<Image img={require("/assets/quick_v2/6.png")} alt="Scene Example 6" />
+<Image img={require("/assets/quick_v2/6.jpg")} alt="Scene Example 6" />
 
 ## 6. Add a new scene {#new-scene}
 

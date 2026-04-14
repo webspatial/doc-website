@@ -103,7 +103,7 @@ There are two kinds of 3D content container elements.
 
   Their 3D content is generated in real time by a [3D engine](../development-guide/using-the-webspatial-api/add-3d-content.md).
 
-  <Image img={require("/assets/concepts/4-8.png")} alt="Scene Example 4" />
+  <Image img={require("/assets/concepts/4-8.jpg")} alt="Scene Example 4" />
 
 ## Interaction with 2D Content {#nature-interaction}
 
