@@ -1,15 +1,17 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './Bottom.module.scss';
 import data from '../../data/index/data';
 import Button from './Button';
 type Props = {};
 const Bottom: React.FC<Props> = () => {
+  const bottomImgUrl = useBaseUrl(data.bottom.imgUrl);
   return (
     <div className={styles.bottomWrap}>
       <div
         className={styles.topImg}
         style={{
-          backgroundImage: `url(${data.bottom.imgUrl})`,
+          backgroundImage: `url(${bottomImgUrl})`,
         }}>
         <div className={styles.container}>
           <div className={styles.title}>{data.bottom.title}</div>

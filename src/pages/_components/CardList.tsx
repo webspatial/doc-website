@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './CardList.module.scss';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 type Props = {
   data: {
@@ -9,21 +10,67 @@ type Props = {
     imgUrl: string[];
     imgUrlh5: string[];
     imgUrlPad: string[];
+    url?: string;
   }[];
 };
 const CardList: React.FC<Props> = ({data}) => {
+  const cardBgUrl = useBaseUrl('/img/index-s2/cbg.jpg');
   return (
     <div className={styles.container}>
       {data.map((x, i) => {
+        if (x.url) {
+          return (
+            <Link
+              key={i}
+              to={x.url}
+              className={clsx(styles.wrap, styles.linkWrap)}
+              aria-label={x.title}
+              style={
+                {
+                  '--card-bg-url': `url(${cardBgUrl})`,
+                } as React.CSSProperties
+              }>
+              <div
+                className={styles.img} // placeholder
+                // style={{
+                //   backgroundImage: `url(${x.imgUrl[currentImgIndex]})`,
+                // }}
+              >
+                <FadeImages
+                  urls={x.imgUrl}
+                  h5urls={x.imgUrlh5}
+                  padurls={x.imgUrlPad}
+                />
+              </div>
+
+              <div className={styles.content}>
+                <div className={styles.title}>{x.title}</div>
+                <div className={styles.desc}>{x.desc}</div>
+              </div>
+            </Link>
+          );
+        }
+
         return (
-          <div className={styles.wrap} key={i}>
+          <div
+            className={styles.wrap}
+            key={i}
+            style={
+              {
+                '--card-bg-url': `url(${cardBgUrl})`,
+              } as React.CSSProperties
+            }>
             <div
               className={styles.img} // placeholder
               // style={{
               //   backgroundImage: `url(${x.imgUrl[currentImgIndex]})`,
               // }}
             >
-              <FadeImages urls={x.imgUrl} h5urls={x.imgUrlh5} padurls={x.imgUrlPad} />
+              <FadeImages
+                urls={x.imgUrl}
+                h5urls={x.imgUrlh5}
+                padurls={x.imgUrlPad}
+              />
             </div>
 
             <div className={styles.content}>

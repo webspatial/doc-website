@@ -300,38 +300,16 @@ const config: Config = {
           title: 'Learn',
           items: [
             {
-              label: 'Introduction',
-              to: '/docs/',
+              label: 'Features',
+              to: '/docs/introduction/getting-started#features',
             },
-            {
-              label: 'Core Concepts',
-              to: '/docs/concepts/',
-            },
-            {
-              label: 'Getting Started',
-              to: '/docs/',
-            },
-            {
-              label: 'Video',
-              className: 'disabled',
-              to: '/',
-            },
-          ],
-        },
-        {
-          title: 'Develop',
-          items: [
             {
               label: 'Compatibility',
               to: '/docs/introduction/getting-started#supported-web-projects',
             },
             {
-              label: 'Setup Guide',
-              to: '/docs/introduction/getting-started#set-up-your-project',
-            },
-            {
-              label: 'WebSpatial API',
-              to: '/docs/introduction/getting-started#webspatial-api',
+              label: 'Setup',
+              to: '/docs/introduction/getting-started#installation',
             },
           ],
         },
@@ -340,16 +318,15 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Issues',
-              href: '//github.com/webspatial/webspatial-sdk/issues',
+              href: 'https://github.com/webspatial/webspatial-sdk/issues',
             },
             {
               label: 'Join Discord',
-              href: '//discord.gg/nhFhSuhNF2',
+              href: 'https://discord.gg/nhFhSuhNF2',
             },
             {
-              label: 'FAQ',
-              className: 'disabled',
-              to: '/',
+              label: 'Watch on YouTube',
+              href: 'https://www.youtube.com/@WebSpatial',
             },
           ],
         },
@@ -357,28 +334,18 @@ const config: Config = {
           title: 'News',
           items: [
             {
-              label: 'Blog',
-              className: 'disabled',
-              to: '/blog',
-            },
-            {
               label: 'Releases',
               href: 'https://github.com/webspatial/webspatial-sdk/releases',
             },
             {
-              label: 'X',
+              label: 'Blog',
               className: 'disabled',
-              to: '/',
-            },
-            {
-              label: 'Events',
-              className: 'disabled',
-              to: '/',
+              to: '/blog',
             },
           ],
         },
       ],
-      copyright: `Released under the MIT License. \nCopyright © ${new Date().getFullYear()} WebSpatial`,
+      copyright: `Released under the MIT License. Copyright © ${new Date().getFullYear()} WebSpatial`,
     },
     prism: {
       theme: darkTheme, // lightTheme, //emptyTheme,

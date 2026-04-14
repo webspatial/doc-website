@@ -1,5 +1,6 @@
 import React from 'react';
 import type {ReactNode} from 'react';
+import {translate} from '@docusaurus/Translate';
 import Layout from '@theme/Layout';
 import {useColorMode, type ColorMode} from '@docusaurus/theme-common';
 
@@ -12,7 +13,6 @@ import Slider from './_components/Slider';
 import CardList from './_components/CardList';
 import SliderB from './_components/SliderB';
 import CardListMore from './_components/CardListMore';
-import tdk from '../data/tdk';
 
 // function HomepageHeader() {
 //   const {siteConfig} = useDocusaurusContext();
@@ -67,11 +67,17 @@ function HomepageColorMode(): ReactNode {
 }
 
 export default function Home(): ReactNode {
+  const title = 'WebSpatial';
+  const description = translate({
+    id: 'homepage.meta.description',
+    message:
+      'WebSpatial is a set of spatial APIs and ready-to-use SDK that extend the standard 2D Web ecosystem to support spatial computing across platforms. It enables the entire HTML/CSS-based Web world to step into the spatial era, gaining spatial power on par with native apps (like visionOS apps) while keeping the advantages they already have.',
+  });
 
   return (
     <Layout
-      title={tdk.index.title}
-      description={tdk.index.description}>
+      title={title}
+      description={description}>
       <HomepageColorMode />
       {/* <HomepageHeader /> */}
       <Banner />

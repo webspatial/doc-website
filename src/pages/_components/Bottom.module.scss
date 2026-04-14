@@ -35,8 +35,11 @@
       align-items: center;
       justify-content: center;
       gap: 16px;
+      a {
+        white-space: nowrap;
+      }
       div:first-child {
-        width: 144px;
+        width: 176px;
       }
       div:last-child {
         width: 144px;

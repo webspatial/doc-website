@@ -68,6 +68,7 @@ Current implementation:
 - shared icon source of truth: `src/theme/_components/docsCategoryIcons.tsx`
 - desktop docs sidebar category rendering: `src/theme/DocSidebarItem/Category/index.tsx`
 - generated-index cards: `src/theme/DocCard/index.tsx`
+- generated-index link-card summary source: `item.description ?? doc?.description` from `src/theme/DocCard/index.tsx`
 
 Rules:
 
@@ -79,6 +80,10 @@ Rules:
 - Do not rely on Docusaurus default doc-card emoji fallback for docs index cards.
 - Generated-index category cards should render the category's own shared icon.
 - Generated-index link cards that point to docs pages should inherit the parent category icon, not a generic document icon.
+- Every latest doc that appears as a generated-index link card must have an explicit one-sentence `description` in frontmatter.
+- Keep those per-doc `description` values localized and aligned between `docs/` and `i18n/zh-Hans/.../current/`.
+- Do not rely on Docusaurus excerpt extraction for card summaries. In this repo it can degrade to placeholder text such as `Summary`, `概述`, or malformed slug fragments.
+- When adding a new doc under a category that has a generated-index page, treat writing its card summary as part of the required doc authoring work, not as optional polish.
 
 Hydration caveat:
 
@@ -404,6 +409,8 @@ Rules:
 Per-page metadata:
 
 - keep `sidebar_position` aligned between locales
+- for latest docs that appear on generated-index pages, add an explicit `description` frontmatter string for the card summary
+- keep those per-doc `description` strings concise, intentional, and localized between English and Chinese latest docs
 - add `title` or `sidebar_label` only when needed by Docusaurus behavior or UX
 - keep frontmatter minimal and intentional
 
@@ -447,6 +454,7 @@ Behavior checks:
 
 - `/docs` and `/zh-Hans/docs` redirect to localized `Getting Started`
 - `Getting Started` remains a child page under `Introduction`
+- generated-index doc cards show intentional summaries, not placeholder text such as `Summary`, `概述`, or slug fragments
 - with the persisted site theme set to light, the homepage still renders in dark mode
 - with the persisted site theme set to light, the homepage Algolia search button and modal still render in dark mode
 - leaving the homepage restores the persisted theme on docs/blog pages

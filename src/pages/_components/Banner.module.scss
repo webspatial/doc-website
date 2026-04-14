@@ -1,7 +1,9 @@
 .bannerWrap {
   /* 公共背景和初始（移动端）样式 */
   background-color: #2f2f2f;
-  background: url('/img/banner-img.jpeg') center/cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   // background-repeat: no-repeat;
   // background-position: center 300px;
   // background-size: cover;

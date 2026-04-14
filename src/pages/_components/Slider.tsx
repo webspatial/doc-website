@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Slider.module.scss';
 import clsx from 'clsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 type Props = {
   data: {
     title: string;
@@ -11,12 +12,13 @@ type Props = {
 };
 const Slider: React.FC<Props> = ({data}) => {
   const [idx, setIdx] = React.useState(2);
+  const currentVideoUrl = useBaseUrl(data[idx].imgUrl);
   return (
     <div className={styles.slider}>
       <div className={styles.img}>
         <video
           className={styles.video}
-          src={data[idx].imgUrl}
+          src={currentVideoUrl}
           autoPlay
           muted
           loop
