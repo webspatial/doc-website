@@ -12,7 +12,7 @@ export default {
     title: t('homepage.banner.title', 'Bring Your Web to Space.'),
     desc: t(
       'homepage.banner.desc',
-      'Spatialize any website across real and virtual spaces with widely adopted open-web tech, empowering every web developer and enriching XR ecosystems.',
+      'Bring native-level spatial UI capabilities and a new development paradigm to widely adopted open Web technologies, enable the mainstream Web ecosystem and Web developers to move seamlessly into the era of spatial computing and multimodal AI.',
     ),
     imgUrl: getFakeImg(1280, 1280),
     button: {
@@ -100,11 +100,11 @@ export default {
       {
         title: t(
           'homepage.section2.card3.title',
-          'Multiple Scene Containers, Native Power',
+          'Multiple Spatial Scenes, Native Spatial Power',
         ),
         desc: t(
           'homepage.section2.card3.desc',
-          'Compose your web app from multiple OS-managed flat or volumetric scenes so it behaves like a native spatial app and delivers a unified experience across web and native.',
+          'Upgrade the multiple webpages into OS-managed spatial scene containers, so they can run as independent spatial app and automatically gain spatial-computing capabilities.',
         ),
         imgUrl: ['/img/index-s2o/pc/c1.png', '/img/index-s2o/pc/c2.png'], // getFakeImg(600, 400),
         imgUrlh5: ['/img/index-s2o/h5/c1.png', '/img/index-s2o/h5/c2.png'], // getFakeImg(600, 400),
@@ -131,7 +131,7 @@ export default {
     title: t('homepage.section3.title', 'Keep Coding Web, Ship Spatial'),
     desc: t(
       'homepage.section3.desc',
-      'Keep coding with React, CSS, JS and the web-dev tools you already know. WebSpatial extends your existing web stack with a minimal set of new spatial APIs, drops straight into any project, and unlocks native-grade spatial power with almost no code changes or extra cost.',
+      'Keep coding with React, CSS, JS and the web-dev tools you already know. WebSpatial extends your existing web stack with a minimal set of new spatial APIs, drops straight into standard Web projects, and unlocks native-grade spatial power with almost no code changes.',
     ),
     children: [
       {
@@ -160,7 +160,7 @@ export default {
     title: t('homepage.section4.title', 'Explore the WebSpatial Toolkit'),
     desc: t(
       'homepage.section4.desc',
-      'Everything you need to ship spatial apps, plus the tools you already rely on.',
+      'Everything you need to ship spatial apps, built on the tools you already use.',
     ),
     children: [
       {

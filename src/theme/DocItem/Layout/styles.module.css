@@ -8,6 +8,10 @@
     max-width: 75% !important;
   }
 
+  .docItemContainer {
+    max-width: 780px;
+  }
+
   .docItemContainer article > .docBreadcrumbsDesktop:first-child {
     margin-top: 12px;
   }

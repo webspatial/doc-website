@@ -321,7 +321,6 @@ a:hover {
 }
 .markdown {
   a:hover {
-    text-decoration: none;
     // --ifm-link-hover-color: #0f0471;
     color: var(--ifm-color-primary-light);
     // [data-theme='dark'] & {
@@ -338,9 +337,6 @@ a:hover {
   li {
     ::marker {
       color: var(--color-text-2);
-    }
-    a {
-      text-decoration: none;
     }
   }
   hr {
@@ -434,7 +430,7 @@ a:hover {
     --ifm-spacing-vertical: 24px;
   }
   > p {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     line-height: 175%;
     // code {
     //   padding: 2px 5px;
@@ -447,16 +443,32 @@ a:hover {
     }
   }
 
-  p a {
-    text-decoration: none;
+  p a,
+  li a,
+  td a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.14em;
+    text-decoration-skip-ink: auto;
+  }
+
+  p a:hover,
+  li a:hover,
+  td a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
   }
 
   ul,
   ol {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     code {
       padding: 2px 5px;
     }
+  }
+
+  li + li {
+    margin-top: 8px;
   }
 
   .theme-code-block {

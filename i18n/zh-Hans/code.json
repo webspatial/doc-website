@@ -57,7 +57,7 @@
     "message": "让 Web 进入你身处的空间"
   },
   "homepage.banner.desc": {
-    "message": "基于广泛采用的开放 Web 技术，让任意网站在现实与虚拟空间中实现空间化，为每一位 Web 开发者赋能，并丰富 XR 生态。"
+    "message": "在广泛采用的开放标准 Web 技术中引入跟原生空间应用的 UI 能力和新一代开发范式，让 Web 突破屏幕进入现实空间，让主流 Web 生态和 Web 开发者能无缝进入空间计算和多模态 AI 的时代。"
   },
   "homepage.banner.button": {
     "message": "快速开始"
@@ -84,19 +84,19 @@
     "message": "拆分网页，释放 UI"
   },
   "homepage.section2.card1.desc": {
-    "message": "把拥挤、带有实体底板的网页拆成独立面板，让它们悬浮在空间中，去掉外框后，半透明 UI 就能自然地叠加在现实世界之上。"
+    "message": "把拥挤在不透明平面上的网页内容拆分成能充分利用空间的独立悬浮面片，动态半透明材质的 UI 能自然地叠加在现实世界之上。"
   },
   "homepage.section2.card2.title": {
     "message": "抬升 HTML 元素，解锁纵深"
   },
   "homepage.section2.card2.desc": {
-    "message": "把任意 HTML 元素从平面页面中抬起，无论它是静态还是动态内容，都能沿 Z 轴定位、布局和形变，让界面获得超越宽高的真实纵深。"
+    "message": "把任意 HTML 元素从平面页面中抬起，无论它是静态还是动态内容，都能沿 Z 轴定位、布局和形变，让界面能超越宽高利用真实世界的纵深。"
   },
   "homepage.section2.card3.title": {
-    "message": "多场景容器，获得原生能力"
+    "message": "多空间场景，原生空间计算能力"
   },
   "homepage.section2.card3.desc": {
-    "message": "让你的 Web 应用由多个由操作系统管理的平面或体积场景组成，以原生空间应用的方式运行，并在 Web 与原生之间提供统一体验。"
+    "message": "把组成 Web App 的多个窗口升级成操作系统管理的空间场景容器，以独立空间应用形态运行，自动获得空间计算能力。"
   },
   "homepage.section2.card4.title": {
     "message": "接入真正的 3D 内容，融合不同维度"
@@ -117,7 +117,7 @@
     "message": "探索 WebSpatial 工具链"
   },
   "homepage.section4.desc": {
-    "message": "交付空间应用所需的一切，以及你已经在使用的那些工具。"
+    "message": "交付空间应用所需的一切，基于你已经在使用的那些工具。"
   },
   "homepage.section4.card1.desc": {
     "message": "对 HTML、CSS 和 JS 的开放且精简的扩展，为 Web 增加抬升、多场景、3D 容器等空间能力。"
