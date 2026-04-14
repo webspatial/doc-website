@@ -15,6 +15,13 @@
     align-items: center;
     justify-content: center;
   }
+
+  .topImgPending {
+    background-color: #090d18;
+    background-image:
+      radial-gradient(circle at 18% 18%, rgba(117, 190, 255, 0.2) 0%, rgba(117, 190, 255, 0) 28%),
+      linear-gradient(180deg, rgba(14, 18, 29, 0.94) 0%, rgba(8, 10, 18, 0.98) 100%);
+  }
   .container {
     // background: red;
     margin: 0 auto;

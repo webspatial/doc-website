@@ -1,6 +1,8 @@
 import React from 'react';
 import type {ReactNode} from 'react';
+import clsx from 'clsx';
 import {translate} from '@docusaurus/Translate';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import {useColorMode, type ColorMode} from '@docusaurus/theme-common';
 
@@ -13,6 +15,207 @@ import Slider from './_components/Slider';
 import CardList from './_components/CardList';
 import SliderB from './_components/SliderB';
 import CardListMore from './_components/CardListMore';
+import {
+  getHomepageHeroPreloadEntries,
+  HOMEPAGE_HERO_STAGE_BREAKPOINT,
+  withBaseUrl,
+} from './_components/homepageMedia';
+
+const PRELOAD_TIMEOUT_MS = 15000;
+
+function preloadImage(url: string): Promise<void> {
+  return new Promise((resolve) => {
+    const image = new Image();
+    let settled = false;
+
+    const finalize = () => {
+      if (settled) {
+        return;
+      }
+
+      settled = true;
+      resolve();
+    };
+
+    image.decoding = 'async';
+    image.addEventListener('load', finalize, {once: true});
+    image.addEventListener('error', finalize, {once: true});
+    image.src = url;
+
+    if (image.complete) {
+      finalize();
+    }
+  });
+}
+
+function preloadVideo(url: string): Promise<void> {
+  return new Promise((resolve) => {
+    const video = document.createElement('video');
+    let settled = false;
+
+    const finalize = () => {
+      if (settled) {
+        return;
+      }
+
+      settled = true;
+      video.pause();
+      video.removeAttribute('src');
+      video.load();
+      resolve();
+    };
+
+    video.preload = 'auto';
+    video.muted = true;
+    video.playsInline = true;
+    video.addEventListener('loadeddata', finalize, {once: true});
+    video.addEventListener('error', finalize, {once: true});
+    video.src = url;
+    video.load();
+
+    if (video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+      finalize();
+    }
+  });
+}
+
+function settleWithTimeout(task: Promise<unknown>, timeoutMs: number) {
+  return new Promise<void>((resolve) => {
+    const timer = window.setTimeout(resolve, timeoutMs);
+
+    task.finally(() => {
+      window.clearTimeout(timer);
+      resolve();
+    });
+  });
+}
+
+function useHomepagePreloadProgress() {
+  const {siteConfig} = useDocusaurusContext();
+  const [progress, setProgress] = React.useState(0);
+  const [isReady, setIsReady] = React.useState(false);
+
+  React.useEffect(() => {
+    if (typeof window === 'undefined') {
+      return undefined;
+    }
+
+    let cancelled = false;
+    let loadedWeight = 0;
+
+    setProgress(0);
+    setIsReady(false);
+
+    const isLandscapeStage = window.matchMedia(
+      `(min-width: ${HOMEPAGE_HERO_STAGE_BREAKPOINT}px)`,
+    ).matches;
+    const prefersReducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)',
+    ).matches;
+
+    const entries = getHomepageHeroPreloadEntries(
+      isLandscapeStage,
+      !prefersReducedMotion,
+    ).map((entry) => ({
+      ...entry,
+      url: withBaseUrl(siteConfig.baseUrl, entry.path),
+    }));
+
+    if (entries.length === 0) {
+      setProgress(1);
+      setIsReady(true);
+      return undefined;
+    }
+
+    const totalWeight = entries.reduce((sum, entry) => sum + entry.weight, 0);
+
+    const markComplete = (weight: number) => {
+      loadedWeight += weight;
+
+      if (cancelled) {
+        return;
+      }
+
+      setProgress(Math.min(loadedWeight / totalWeight, 1));
+    };
+
+    void Promise.all(
+      entries.map(async (entry) => {
+        const task =
+          entry.kind === 'video' ? preloadVideo(entry.url) : preloadImage(entry.url);
+
+        await settleWithTimeout(task, PRELOAD_TIMEOUT_MS);
+        markComplete(entry.weight);
+      }),
+    ).then(() => {
+      if (cancelled) {
+        return;
+      }
+
+      window.requestAnimationFrame(() => {
+        if (cancelled) {
+          return;
+        }
+
+        setProgress(1);
+        setIsReady(true);
+      });
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [siteConfig.baseUrl]);
+
+  return {progress, isReady};
+}
+
+function HomepageLoadingScreen({
+  progress,
+  hidden,
+}: {
+  progress: number;
+  hidden: boolean;
+}): ReactNode {
+  const loadingTitle = translate({
+    id: 'homepage.loading.title',
+    message: 'Preparing the first scene',
+  });
+  const loadingDescription = translate({
+    id: 'homepage.loading.description',
+    message:
+      'Loading the hero media before the homepage animations and scroll interactions start.',
+  });
+  const progressPercent = Math.round(progress * 100);
+
+  return (
+    <div
+      className={clsx(styles.loadingScreen, hidden && styles.loadingScreenHidden)}
+      role="status"
+      aria-live="polite"
+      aria-hidden={hidden}>
+      <div className={styles.loadingPanel}>
+        <div className={styles.loadingEyebrow}>WebSpatial</div>
+        <div className={styles.loadingTitle}>{loadingTitle}</div>
+        <div className={styles.loadingDescription}>{loadingDescription}</div>
+        <div
+          className={styles.loadingBar}
+          role="progressbar"
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-valuenow={progressPercent}>
+          <div
+            className={styles.loadingBarFill}
+            style={{width: `${progressPercent}%`}}
+          />
+        </div>
+        <div className={styles.loadingMeta}>
+          <span>{progressPercent}%</span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function HomepageColorMode(): ReactNode {
   const {setColorMode} = useColorMode();
@@ -52,31 +255,55 @@ export default function Home(): ReactNode {
     message:
       'WebSpatial is a set of spatial APIs and ready-to-use SDK that extend the standard 2D Web ecosystem to support spatial computing across platforms. It enables the entire HTML/CSS-based Web world to step into the spatial era, gaining spatial power on par with native apps (like visionOS apps) while keeping the advantages they already have.',
   });
+  const {progress, isReady} = useHomepagePreloadProgress();
+
+  React.useEffect(() => {
+    if (typeof document === 'undefined' || isReady) {
+      return undefined;
+    }
+
+    const previousHtmlOverflow = document.documentElement.style.overflow;
+    const previousBodyOverflow = document.body.style.overflow;
+
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.documentElement.style.overflow = previousHtmlOverflow;
+      document.body.style.overflow = previousBodyOverflow;
+    };
+  }, [isReady]);
 
   return (
     <Layout
       title={title}
       description={description}>
       <HomepageColorMode />
-      <Banner />
-      <main className={styles.mainWrap}>
-        <Section title={data.section1.title} desc={data.section1.desc}>
-          <Slider data={data.section1.children} />
-        </Section>
+      <noscript>
+        <style>{`.${styles.loadingScreen}{display:none !important;}`}</style>
+      </noscript>
+      <HomepageLoadingScreen progress={progress} hidden={isReady} />
+      <div className={styles.pageShell}>
+        <Banner />
+        <main className={styles.mainWrap}>
+          <Section title={data.section1.title} desc={data.section1.desc}>
+            <Slider data={data.section1.children} />
+          </Section>
 
-        <Section title={data.section2.title} desc={data.section2.desc}>
-          <CardList data={data.section2.children} />
-        </Section>
+          <Section title={data.section2.title} desc={data.section2.desc}>
+            <CardList data={data.section2.children} />
+          </Section>
 
-        <Section title={data.section3.title} desc={data.section3.desc}>
-          <SliderB data={data.section3.children} />
-        </Section>
+          <Section title={data.section3.title} desc={data.section3.desc}>
+            <SliderB data={data.section3.children} />
+          </Section>
 
-        <Section title={data.section4.title} desc={data.section4.desc}>
-          <CardListMore data={data.section4.children} />
-        </Section>
-        <Bottom />
-      </main>
+          <Section title={data.section4.title} desc={data.section4.desc}>
+            <CardListMore data={data.section4.children} />
+          </Section>
+          <Bottom />
+        </main>
+      </div>
     </Layout>
   );
 }
