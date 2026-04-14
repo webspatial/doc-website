@@ -1,19 +1,61 @@
-/*
-Hide desktop utility controls in small viewports.
-Mobile navigation still exposes locale and theme controls in the sidebar.
-*/
 @media (max-width: 996px) {
   .colorModeToggle,
   .utilityControls,
   .socialItems,
-  .utilitySeparator {
+  .utilitySeparator,
+  .desktopVersion {
     display: none;
+  }
+
+  .mobileVersion {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    flex-shrink: 0;
+
+    :global(.navbar__item) {
+      display: flex !important;
+      padding: 0;
+    }
+
+    :global(.xheader-control) {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      color: var(--navbar-control-text);
+    }
+
+    :global(.xheader-version-switch) {
+      height: var(--navbar-control-height);
+      min-height: var(--navbar-control-height);
+      padding: 0 12px !important;
+      border-radius: var(--navbar-control-radius);
+      background: var(--navbar-control-bg);
+      border: 1px solid var(--navbar-control-border);
+      box-shadow: var(--navbar-control-shadow);
+    }
+
+    :global(.dropdown__menu) {
+      top: calc(100% + 8px);
+    }
   }
 }
 
 @media (min-width: 997px) {
   :global(.navbar__items) {
     min-width: 0;
+  }
+
+  .mobileVersion {
+    display: none;
+  }
+
+  .desktopVersion {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-shrink: 0;
   }
 
   .utilityControls {

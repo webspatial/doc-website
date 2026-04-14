@@ -72,7 +72,7 @@
   --navbar-control-text: var(--color-text-2);
   --navbar-control-text-strong: var(--color-text-1);
   --navbar-control-hover-bg: rgba(78, 59, 246, 0.08);
-  --navbar-control-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  --navbar-control-shadow: none;
   --navbar-divider-color: rgba(201, 205, 212, 0.72);
   --site-shell-max-width: 1438px;
   --site-shell-divider-color: rgba(201, 205, 212, 0.72);
@@ -112,7 +112,7 @@
   --navbar-control-text: rgba(245, 247, 250, 0.78);
   --navbar-control-text-strong: rgba(255, 255, 255, 0.95);
   --navbar-control-hover-bg: rgba(255, 255, 255, 0.08);
-  --navbar-control-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+  --navbar-control-shadow: none;
   --navbar-divider-color: rgba(255, 255, 255, 0.16);
   --site-shell-divider-color: rgba(255, 255, 255, 0.14);
   --site-page-background: var(--ifm-background-color);
@@ -131,7 +131,7 @@
   --navbar-control-text: rgba(245, 247, 250, 0.78);
   --navbar-control-text-strong: rgba(255, 255, 255, 0.95);
   --navbar-control-hover-bg: rgba(255, 255, 255, 0.08);
-  --navbar-control-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+  --navbar-control-shadow: none;
   --navbar-divider-color: rgba(255, 255, 255, 0.16);
 }
 
@@ -185,6 +185,11 @@ body {
     margin: 0 auto;
     width: 100%;
   }
+
+  body:has(.DocSearch-Container)::before,
+  body:has(.DocSearch-Container)::after {
+    z-index: calc(var(--ifm-z-index-fixed) - 2);
+  }
 }
 
 @media (min-width: 997px) {
@@ -206,6 +211,20 @@ body {
 
   .main-wrapper .theme-doc-toc-desktop .table-of-contents__left-border {
     border-left: 0;
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1438px) {
+  .main-wrapper main .container > .row:has(> .col.col--3 > .theme-doc-toc-desktop) {
+    margin-right: 0;
+  }
+
+  .main-wrapper
+    main
+    .container
+    > .row:has(> .col.col--3 > .theme-doc-toc-desktop)
+    > .col.col--3 {
+    padding-right: 0;
   }
 }
 
@@ -566,7 +585,7 @@ a:hover {
 .theme-layout-navbar.navbar.navbar--fixed-top.navbar-sidebar--show {
   .navbar-sidebar {
     --ifm-navbar-sidebar-width: 100%;
-    bottom: unset;
+    bottom: 0;
 
     .menu__link.dropdownHr {
       display: block;
@@ -581,7 +600,11 @@ a:hover {
   }
 
   .navbar-sidebar__items {
-    height: unset;
+    height: calc(100% - var(--ifm-navbar-height));
+  }
+
+  .navbar-sidebar__item {
+    overflow-y: auto;
   }
   // .xheader-github-link::after {
   //   content: 'Github';
@@ -602,6 +625,7 @@ a:hover {
   //   }
   // }
 }
+
 .DocSearch.DocSearch-Button {
   min-width: 188px;
   height: var(--navbar-control-height);
@@ -671,7 +695,44 @@ a:hover {
   }
 }
 
+@media (max-width: 1130px) {
+  .DocSearch.DocSearch-Button {
+    width: 56px;
+    min-width: 56px;
+    max-width: 56px;
+    height: var(--navbar-control-height);
+    min-height: var(--navbar-control-height);
+    max-height: var(--navbar-control-height);
+    padding: 0 12px 0 10px;
+
+    .DocSearch-Button-Container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 0;
+    }
+
+    .DocSearch-Button-Placeholder,
+    .DocSearch-Button-Keys {
+      display: none;
+    }
+
+    .DocSearch-Search-Icon,
+    .DocSearch-Button-Container > svg {
+      margin: 0;
+    }
+  }
+}
+
 // navbar dropdown
+
+.navbar .dropdown__menu {
+  background: var(--ifm-navbar-background-color);
+  border: 1px solid var(--navbar-control-border);
+  border-radius: 16px;
+  box-shadow: none;
+}
 
 .dropdown > .navbar__link:after {
   border: none;
@@ -699,7 +760,7 @@ a:hover {
 
   .xheader-version-switch ~ .dropdown__menu,
   .xheader-locale-switch ~ .dropdown__menu {
-    top: calc(100% + 8px);
+    top: calc(100% - 2px);
   }
 
   .xheader-section-link {
@@ -1606,9 +1667,33 @@ body .DocSearch {
     padding-right: 0;
     margin-right: 46px;
   }
+
   .navbar-sidebar {
-    left: unset;
+    left: auto;
     right: 0;
+    transform: translate3d(100%, 0, 0);
+    opacity: 1;
+    box-shadow: none;
+    transition-property: transform, visibility;
+    transition-duration: 240ms;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
+  .navbar-sidebar__brand {
+    box-shadow: none;
+    border-bottom: 1px solid var(--navbar-divider-color);
+  }
+
+  .navbar-sidebar__backdrop {
+    background-color: rgba(0, 0, 0, 0.28);
+    transition-duration: 220ms;
+    transition-timing-function: ease;
+  }
+
+  .navbar-sidebar--show .navbar-sidebar {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 

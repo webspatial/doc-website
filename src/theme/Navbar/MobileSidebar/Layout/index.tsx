@@ -39,7 +39,8 @@ export default function NavbarMobileSidebarLayout({
   primaryMenu,
   secondaryMenu,
 }: Props): ReactNode {
-  const {shown: secondaryMenuShown} = useNavbarSecondaryMenu();
+  const {content: secondaryMenuContent} = useNavbarSecondaryMenu();
+  const hasSecondaryMenu = Boolean(secondaryMenuContent);
   return (
     <div
       className={clsx(
@@ -47,15 +48,9 @@ export default function NavbarMobileSidebarLayout({
         'navbar-sidebar',
       )}>
       {header}
-      <div
-        className={clsx('navbar-sidebar__items', {
-          'navbar-sidebar__items--show-secondary': secondaryMenuShown,
-        })}>
-        <NavbarMobileSidebarPanel inert={secondaryMenuShown}>
-          {primaryMenu}
-        </NavbarMobileSidebarPanel>
-        <NavbarMobileSidebarPanel inert={!secondaryMenuShown}>
-          {secondaryMenu}
+      <div className="navbar-sidebar__items">
+        <NavbarMobileSidebarPanel inert={false}>
+          {hasSecondaryMenu ? secondaryMenu : primaryMenu}
         </NavbarMobileSidebarPanel>
       </div>
     </div>

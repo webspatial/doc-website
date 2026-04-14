@@ -77,6 +77,10 @@ export default function NavbarContent(): ReactNode {
 
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
+  const versionDropdownItem = leftItems.find(
+    (item) => item.type === 'docsVersionDropdown',
+  );
+  const mainNavItems = leftItems.filter((item) => item !== versionDropdownItem);
 
   const searchBarItem = items.find((item) => item.type === 'search');
   const utilityItems = rightItems.filter((item) => item.type !== 'search');
@@ -96,7 +100,17 @@ export default function NavbarContent(): ReactNode {
         <>
           {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarLogo />
-          <NavbarItems items={leftItems} />
+          {versionDropdownItem && (
+            <>
+              <div className={styles.mobileVersion}>
+                <NavbarItems items={[versionDropdownItem]} />
+              </div>
+              <div className={styles.desktopVersion}>
+                <NavbarItems items={[versionDropdownItem]} />
+              </div>
+            </>
+          )}
+          <NavbarItems items={mainNavItems} />
         </>
       }
       right={

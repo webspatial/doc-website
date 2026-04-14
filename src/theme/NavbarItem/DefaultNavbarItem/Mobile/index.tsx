@@ -8,7 +8,6 @@ export default function DefaultNavbarItemMobile({
   isDropdownItem,
   ...props
 }: Props): ReactNode {
-  console.log('🚀 ~ props:', props);
   const finalLabel = props.h5Label ?? props.label;
   const finalClassName = props.h5ClassName ?? className;
 

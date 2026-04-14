@@ -14,6 +14,25 @@ See https://github.com/facebook/docusaurus/pull/9385
 @media (max-width: 996px) {
   .navbarSearchContainer {
     position: absolute;
-    right: 42px;
+    top: 0;
+    bottom: 0;
+    right: calc(var(--navbar-control-height) + 10px);
+    display: flex;
+    align-items: center;
+  }
+
+  .navbarSearchContainer :global(.DocSearch.DocSearch-Button) {
+    width: 56px;
+    min-width: 56px;
+    max-width: 56px;
+    height: var(--navbar-control-height);
+    min-height: var(--navbar-control-height);
+    max-height: var(--navbar-control-height);
+    padding: 0 12px 0 10px;
+  }
+
+  .navbarSearchContainer :global(.DocSearch-Button-Container) {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
