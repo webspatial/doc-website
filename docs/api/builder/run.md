@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Launch a Packaged WebSpatial App in the simulator for local preview and debugging.'
 ---
 
 # `webspatial-builder run`

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'Render a static 3D model inside a spatialized container using the Web-standard-inspired `<model>` API.'
 ---
 
 # `<Model>`

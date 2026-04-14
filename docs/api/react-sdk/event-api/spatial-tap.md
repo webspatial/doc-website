@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Handle completed tap interactions on spatialized elements and 3D content.'
 ---
 
 # Spatial Tap

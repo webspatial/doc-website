@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Give scene and element backplates a transparent or real-time translucent material background.'
 ---
 
 # `background-material`

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'Apply true 3D translation, rotation, and scale to spatialized HTML elements and 3D containers.'
 ---
 
 # Spatial Transform

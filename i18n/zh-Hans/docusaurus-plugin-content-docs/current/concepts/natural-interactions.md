@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: '了解注视、捏合、触摸等自然交互方式，以及 WebSpatial 提供的空间事件模型。'
 ---
 
 # 自然交互 {#natural-interactions}

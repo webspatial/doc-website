@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+description: 'Install Xcode, simulators, and visionOS platform components required to run Packaged WebSpatial Apps locally.'
 ---
 
 # How to install Xcode and visionOS-related components

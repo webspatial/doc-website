@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '在新空间场景打开前，为它配置初始化属性。'
 ---
 
 # `initScene`

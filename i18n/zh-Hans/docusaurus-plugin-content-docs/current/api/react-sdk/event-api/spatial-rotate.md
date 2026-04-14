@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: '处理双手旋转手势，并读取 3D 空间中的旋转结果。'
 ---
 
 # 空间旋转（Spatial Rotate）

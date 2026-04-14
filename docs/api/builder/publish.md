@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Upload a built Packaged WebSpatial App to App Store Connect for TestFlight or App Store submission.'
 ---
 
 # `webspatial-builder publish`

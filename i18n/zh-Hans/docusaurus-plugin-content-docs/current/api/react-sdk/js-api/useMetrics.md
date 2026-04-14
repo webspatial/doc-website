@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '在 WebSpatial 布局中完成 2D 像素单位和真实世界米单位之间的换算。'
 ---
 
 # `useMetrics`

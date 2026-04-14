@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '在基于 Rspack 或 Rsbuild 的项目中通过 swc-loader 配置 WebSpatial 的 JSX Runtime。'
 ---
 
 # 如何在基于 Rspack 的项目中配置 JSX Runtime {#how-to-configure-the-jsx-runtime-in-rspack-based-projects}

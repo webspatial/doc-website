@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Lift an HTML element along the Z axis and position it in front of the page plane.'
 ---
 
 # `back`

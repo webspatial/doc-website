@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Set up the WebSpatial JSX runtime in Rspack or Rsbuild projects through swc-loader configuration.'
 ---
 
 # How to configure the JSX runtime in Rspack-based projects

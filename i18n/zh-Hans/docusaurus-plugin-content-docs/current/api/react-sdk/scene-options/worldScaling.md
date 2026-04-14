@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: '控制空间场景是保持视觉大小恒定，还是随距离产生缩放效果。'
 ---
 
 # `worldScaling`

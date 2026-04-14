@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '在 JSX 中为元素添加标记，让 WebSpatial SDK 能把它们转成空间化 HTML 元素。'
 ---
 
 # JSX 标记

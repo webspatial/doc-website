@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '把已构建的 Packaged WebSpatial App 上传到 App Store Connect，用于 TestFlight 或正式提交。'
 ---
 
 # `webspatial-builder publish`

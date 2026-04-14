@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'See how a standard Web App becomes a WebSpatial App, including the roles of the runtime and packaged app.'
 ---
 
 # WebSpatial App

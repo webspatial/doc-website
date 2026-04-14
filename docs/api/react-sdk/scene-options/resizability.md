@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Limit how far users can resize a Spatial Scene after it opens.'
 ---
 
 # `resizability`

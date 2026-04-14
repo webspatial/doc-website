@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '限制用户在场景打开后可调整的尺寸范围。'
 ---
 
 # `resizability`

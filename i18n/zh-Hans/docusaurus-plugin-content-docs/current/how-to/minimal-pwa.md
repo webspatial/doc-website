@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '准备 WebSpatial 所需的最小 PWA 配置，包括 manifest、图标和可安装性要求。'
 ---
 
 # 如何满足最低 PWA 要求 {#how-to-meet-the-minimum-pwa-requirements}

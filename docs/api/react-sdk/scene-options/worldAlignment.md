@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+description: 'Control whether a Spatial Scene stays upright, faces the user, or behaves more like a real object.'
 ---
 
 # `worldAlignment`

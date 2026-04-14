@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Read the current rendered depth of a 3D container element in pixels.'
 ---
 
 # `clientDepth`

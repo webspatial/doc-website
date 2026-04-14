@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Configure the Start Scene from the Web App Manifest before any page code runs.'
 ---
 
 # `main_scene`

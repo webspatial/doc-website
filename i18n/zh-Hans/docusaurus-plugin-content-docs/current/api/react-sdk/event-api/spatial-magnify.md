@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '处理双手缩放手势，并读取交互产生的缩放倍率。'
 ---
 
 # 空间缩放（Spatial Magnify）

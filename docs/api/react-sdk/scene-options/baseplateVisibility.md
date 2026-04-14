@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: 'Show or hide the baseplate under a volume Spatial Scene.'
 ---
 
 # `baseplateVisibility`

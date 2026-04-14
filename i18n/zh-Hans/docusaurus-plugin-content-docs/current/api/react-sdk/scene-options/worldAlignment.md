@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+description: '控制空间场景是保持竖直、始终朝向用户，还是更像真实物体。'
 ---
 
 # `worldAlignment`

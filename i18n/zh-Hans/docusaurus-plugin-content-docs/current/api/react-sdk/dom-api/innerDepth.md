@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: '通过 DOM 接口读取 volume 类型空间场景当前的深度。'
 ---
 
 # `innerDepth`

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '在网页代码运行前，通过 Web App Manifest 配置起始场景的初始化属性。'
 ---
 
 # `main_scene`

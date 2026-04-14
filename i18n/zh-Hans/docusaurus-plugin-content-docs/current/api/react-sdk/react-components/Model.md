@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '使用接近 Web 标准 `<model>` 的 API，在空间化容器中渲染静态 3D 模型。'
 ---
 
 # `<Model>`

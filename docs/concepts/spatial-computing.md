@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Learn how spatial computing differs from traditional XR, including spatial apps, runtimes, and unified rendering.'
 ---
 
 # Spatial Computing

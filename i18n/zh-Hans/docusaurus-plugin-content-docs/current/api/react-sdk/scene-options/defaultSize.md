@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '设置空间场景创建时请求的初始宽度、高度和深度。'
 ---
 
 # `defaultSize`

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '读取当前设备、操作系统，以及是否运行在 WebSpatial 模式等运行时信息。'
 ---
 
 # `userAgent`

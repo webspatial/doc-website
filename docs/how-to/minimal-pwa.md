@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Prepare the minimum manifest, icons, and installability requirements needed for WebSpatial and packaged app workflows.'
 ---
 
 # How to meet the minimum PWA requirements

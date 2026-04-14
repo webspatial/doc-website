@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'Build a Packaged WebSpatial App that can be installed on test devices or prepared for release workflows.'
 ---
 
 # `webspatial-builder build`

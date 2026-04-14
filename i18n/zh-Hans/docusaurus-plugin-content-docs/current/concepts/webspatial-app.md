@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '了解标准 Web App 如何在运行时和打包能力配合下变成 WebSpatial App。'
 ---
 
 # WebSpatial App {#webspatial-app}

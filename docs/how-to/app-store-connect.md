@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: 'Test Packaged WebSpatial Apps on visionOS devices and submit builds through App Store Connect.'
 ---
 
 # How to test on visionOS devices and submit to the App Store

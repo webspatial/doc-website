@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '理解空间计算与传统 XR 的区别，以及空间应用、运行时和统一渲染等基础概念。'
 ---
 
 # 空间计算 {#spatial-computing}

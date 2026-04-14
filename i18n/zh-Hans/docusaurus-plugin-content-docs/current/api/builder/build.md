@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '构建可安装到测试设备或用于发布流程的 Packaged WebSpatial App。'
 ---
 
 # `webspatial-builder build`

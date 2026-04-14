@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: 'Understand gaze, pinch, touch, and the spatial events WebSpatial exposes for natural interaction.'
 ---
 
 # Natural Interactions

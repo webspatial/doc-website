@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: 'Control whether a Spatial Scene keeps a constant apparent size or scales with distance.'
 ---
 
 # `worldScaling`

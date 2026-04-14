@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: '为 3D 容器元素设置深度，让它在空间中具有真实厚度。'
 ---
 
 # `depth`

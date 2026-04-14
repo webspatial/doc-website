@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '在模拟器中启动 Packaged WebSpatial App，用于本地预览和调试。'
 ---
 
 # `webspatial-builder run`

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '对空间化 HTML 元素和 3D 容器应用真实的 3D 平移、旋转和缩放。'
 ---
 
 # 空间变换（Spatial Transform） {#spatial-transform}

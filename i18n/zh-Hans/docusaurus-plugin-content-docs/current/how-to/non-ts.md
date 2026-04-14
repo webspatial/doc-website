@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '在不使用 TypeScript 的 React 项目中配置 WebSpatial 所需的 JSX Runtime。'
 ---
 
 # 如何在非 TypeScript 项目中配置 JSX Runtime

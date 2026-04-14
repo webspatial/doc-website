@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: 'Learn how ordinary HTML elements become spatialized surfaces with Z-axis layout, transforms, and spatial state.'
 ---
 
 # Spatialized HTML Elements

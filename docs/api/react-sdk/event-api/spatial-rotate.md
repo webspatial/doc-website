@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: 'Handle two-handed rotate gestures and read the rotation produced in 3D space.'
 ---
 
 # Spatial Rotate

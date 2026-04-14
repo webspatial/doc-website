@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '决定新空间场景应表现为 window 还是 volume 类型。'
 ---
 
 # `type`

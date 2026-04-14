@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '读取 3D 容器元素当前渲染出来的深度。'
 ---
 
 # `clientDepth`

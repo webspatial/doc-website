@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: '控制 volume 类型空间场景底板是否可见。'
 ---
 
 # `baseplateVisibility`

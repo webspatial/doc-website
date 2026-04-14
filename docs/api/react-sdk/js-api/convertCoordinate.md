@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Convert points between the local and global coordinate systems used by scenes and spatial content.'
 ---
 
 # `convertCoordinate`

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Choose whether a new Spatial Scene behaves like a window or a volume.'
 ---
 
 # `type`

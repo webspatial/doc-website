@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+description: '理解“2D 包含 3D”范式，以及静态和动态 3D 容器如何在局部空间中渲染体积内容。'
 ---
 
 # 3D 内容容器 {#3d-content-containers}

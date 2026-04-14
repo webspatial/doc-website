@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Configure initialization options for a new Spatial Scene before it opens.'
 ---
 
 # `initScene`

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: '了解如何在 visionOS 真机上测试 Packaged WebSpatial App，并提交到 App Store Connect。'
 ---
 
 # 如何在 visionOS 设备上测试并提交到 App Store {#how-to-test-on-visionos-devices-and-submit-to-the-app-store}

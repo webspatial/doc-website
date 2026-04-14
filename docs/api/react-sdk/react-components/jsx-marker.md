@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Mark JSX elements so the WebSpatial SDK can turn them into spatialized HTML elements.'
 ---
 
 # JSX Markers

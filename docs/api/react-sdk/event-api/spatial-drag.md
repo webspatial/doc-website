@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'Handle spatial drag gestures, including their phases and position payload.'
 ---
 
 # Spatial Drag

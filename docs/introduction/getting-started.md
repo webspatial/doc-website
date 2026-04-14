@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Understand what WebSpatial adds to the Web, how the SDK works, and how to integrate it into a React project.'
 ---
 
 # Getting Started

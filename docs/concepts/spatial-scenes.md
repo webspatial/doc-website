@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Understand Spatial Scene containers, scene types, initialization, and how WebSpatial apps open multiple scenes.'
 ---
 
 # Spatial Scenes

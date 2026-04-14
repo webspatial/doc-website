@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '了解 WebSpatial 给 Web 带来的能力、SDK 的工作方式，以及如何把它接入 React 项目。'
 ---
 
 # 快速开始 {#getting-started}

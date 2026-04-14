@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'Set the initial width, height, and depth a Spatial Scene requests when it is created.'
 ---
 
 # `defaultSize`

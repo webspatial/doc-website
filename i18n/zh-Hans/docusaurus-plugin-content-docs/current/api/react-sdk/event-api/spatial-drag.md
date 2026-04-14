@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '处理空间拖拽手势，并读取各阶段的位置数据。'
 ---
 
 # 空间拖拽（Spatial Drag）

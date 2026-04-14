@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '理解空间场景容器的类型、初始化方式，以及 WebSpatial App 如何打开和管理多个场景。'
 ---
 
 # 空间场景 {#spatial-scenes}

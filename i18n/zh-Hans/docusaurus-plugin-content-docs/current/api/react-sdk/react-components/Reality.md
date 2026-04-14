@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '使用统一渲染的 3D 引擎 API，在空间化容器中渲染动态 3D 内容。'
 ---
 
 # `<Reality>`

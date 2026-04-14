@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: 'Set the depth of 3D container elements so they render with real thickness in space.'
 ---
 
 # `depth`

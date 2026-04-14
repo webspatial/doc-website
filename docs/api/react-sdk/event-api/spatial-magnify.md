@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Handle two-handed magnify gestures and read the scale factor produced by the interaction.'
 ---
 
 # Spatial Magnify

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: 'Enable WebSpatial in SSR projects by wrapping the app with SSRProvider and preserving the client-runtime split.'
 ---
 
 # How to enable WebSpatial in SSR-enabled projects

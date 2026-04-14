@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '在空间化元素、空间场景和 3D 内容使用的本地与全局坐标系之间转换坐标。'
 ---
 
 # `convertCoordinate`

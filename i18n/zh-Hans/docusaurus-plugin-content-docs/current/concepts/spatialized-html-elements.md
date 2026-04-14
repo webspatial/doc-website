@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: '了解普通 HTML 元素如何进入网页前方的 3D 空间，并获得 Z 轴布局、变形和状态读取能力。'
 ---
 
 # 空间化 HTML 元素 {#spatialized-html-elements}

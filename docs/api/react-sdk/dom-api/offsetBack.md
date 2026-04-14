@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'Read how far a spatialized HTML element has moved forward from its original 2D position.'
 ---
 
 # `offsetBack`

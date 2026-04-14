@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: 'Render dynamic 3D content inside a spatialized container with the unified-rendering engine API.'
 ---
 
 # `<Reality>`

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'Convert between 2D pixel units and real-world meter units inside WebSpatial layouts.'
 ---
 
 # `useMetrics`

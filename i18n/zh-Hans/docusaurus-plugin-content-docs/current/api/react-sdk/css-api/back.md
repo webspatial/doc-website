@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '沿 Z 轴把 HTML 元素抬升到网页前方，并控制它在空间中的前后位置。'
 ---
 
 # `back`

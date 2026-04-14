@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: '为场景或元素的背板设置透明或实时渲染的半透明材质背景。'
 ---
 
 # `background-material`

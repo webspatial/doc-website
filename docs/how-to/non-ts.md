@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: 'Configure the WebSpatial JSX runtime in JavaScript-based React projects without TypeScript support.'
 ---
 
 # How to configure the JSX runtime in non-TypeScript projects

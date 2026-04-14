@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+description: 'Explore the 2D containing 3D model, static and dynamic 3D containers, and the local 3D spaces they create.'
 ---
 
 # 3D Content Containers

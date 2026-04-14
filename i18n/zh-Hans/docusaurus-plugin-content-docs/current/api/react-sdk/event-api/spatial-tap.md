@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: '处理空间化元素和 3D 内容上的点击完成事件。'
 ---
 
 # 空间点击（Spatial Tap）

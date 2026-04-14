@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: '在启用 SSR 的 React 项目中通过 SSRProvider 正确接入 WebSpatial。'
 ---
 
 # 如何在启用 SSR 的项目中启用 WebSpatial {#how-to-enable-webspatial-in-ssr-enabled-projects}

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: '读取空间化 HTML 元素相对原始 2D 位置沿 Z 轴前移的距离。'
 ---
 
 # `offsetBack`

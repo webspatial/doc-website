@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: 'Inspect the current device, operating system, and whether the app is running in WebSpatial mode.'
 ---
 
 # `userAgent`

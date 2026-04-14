@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: 'Read the current depth of a volume Spatial Scene through the DOM interface.'
 ---
 
 # `innerDepth`
