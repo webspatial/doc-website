@@ -7,6 +7,10 @@
   .docItemCol {
     max-width: 75% !important;
   }
+
+  .docItemContainer article > .docBreadcrumbsDesktop:first-child {
+    margin-top: 12px;
+  }
 }
 
 .docBreadcrumbsDesktop {

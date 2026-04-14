@@ -59,6 +59,41 @@ Rules:
 - Keep the Chinese locale key, localized docs directory, and `localeConfigs['zh-Hans'].path` aligned on `zh-Hans`.
 - Keep `localeConfigs['zh-Hans'].htmlLang` explicit. Do not rely on `htmlLang` to infer the i18n directory path.
 
+## Sidebar And Docs Card Icon Rules
+
+Sidebar category icons and generated-index card icons are a shared system.
+
+Current implementation:
+
+- shared icon source of truth: `src/theme/_components/docsCategoryIcons.tsx`
+- desktop docs sidebar category rendering: `src/theme/DocSidebarItem/Category/index.tsx`
+- generated-index cards: `src/theme/DocCard/index.tsx`
+
+Rules:
+
+- Keep icon mapping path-based, not label-based.
+- Do not key icon logic off localized labels such as `Introduction` vs `简介`.
+- When adding or renaming docs sections, update icon mapping using canonical docs path segments such as `introduction`, `concepts`, `how-to`, `api`, `react-sdk`, and `css-api`.
+- Keep English and Chinese `_category_.json` slugs structurally aligned so the shared icon mapping continues to work in both locales.
+- Do not reintroduce emoji-driven card icons or title hacks as the primary icon system.
+- Do not rely on Docusaurus default doc-card emoji fallback for docs index cards.
+- Generated-index category cards should render the category's own shared icon.
+- Generated-index link cards that point to docs pages should inherit the parent category icon, not a generic document icon.
+
+Hydration caveat:
+
+- Some sidebar categories do not have an explicit `href`, such as `Introduction`.
+- For those categories, icon selection must use the sidebar item's stable fallback link from `getCategoryIconHref()` instead of relying on the client-hydrated rendered `href`.
+- If you use the rendered `href` directly, the icon can appear during SSR and disappear after hydration.
+
+If icons regress, debug in this order:
+
+1. Confirm the canonical docs path segments did not change.
+2. Confirm `src/theme/_components/docsCategoryIcons.tsx` still maps those path segments.
+3. Confirm sidebar categories still call `getCategoryIconHref()` when choosing icons.
+4. Confirm `src/theme/DocCard/index.tsx` still uses shared icons for both category cards and doc-link cards.
+5. Only after that, inspect spacing or visual styles in `src/theme/DocSidebarItem/Category/styles.module.css` and `src/theme/DocCard/styles.module.scss`.
+
 ## Current URL Model
 
 Latest docs:

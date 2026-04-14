@@ -346,6 +346,13 @@ a:hover {
   h5,
   h6 {
     color: var(--color-text-1);
+
+    code {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      vertical-align: baseline;
+    }
   }
 
   > h1 {

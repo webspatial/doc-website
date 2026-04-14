@@ -1,4 +1,4 @@
-import React, {type ReactNode, useState} from 'react';
+import React, {type ReactNode, useEffect, useRef, useState} from 'react';
 import clsx from 'clsx';
 import {ThemeClassNames} from '@docusaurus/theme-common';
 import {
@@ -32,9 +32,51 @@ export default function DocSidebarDesktopContent({
   className,
 }: Props): ReactNode {
   const showAnnouncementBar = useShowAnnouncementBar();
+  const menuRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return undefined;
+    }
+
+    const scrollActiveItemIntoView = () => {
+      const menu = menuRef.current;
+      if (!menu) {
+        return;
+      }
+
+      const activeItem = menu.querySelector<HTMLElement>(
+        ".menu__link[aria-current='page']",
+      );
+
+      if (!activeItem) {
+        return;
+      }
+
+      const menuRect = menu.getBoundingClientRect();
+      const itemRect = activeItem.getBoundingClientRect();
+      const isItemAbove = itemRect.top < menuRect.top;
+      const isItemBelow = itemRect.bottom > menuRect.bottom;
+
+      if (isItemAbove || isItemBelow) {
+        activeItem.scrollIntoView({
+          block: 'nearest',
+        });
+      }
+    };
+
+    const firstFrame = window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(scrollActiveItemIntoView);
+    });
+
+    return () => {
+      window.cancelAnimationFrame(firstFrame);
+    };
+  }, [path, sidebar]);
 
   return (
     <nav
+      ref={menuRef}
       aria-label={translate({
         id: 'theme.docs.sidebar.navAriaLabel',
         message: 'Docs sidebar',
