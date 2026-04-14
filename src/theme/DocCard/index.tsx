@@ -48,7 +48,7 @@ function CardCategory({item}: {item: PropSidebarItemCategory}): ReactNode {
         fallback: 'folder',
         href: iconHref,
         level: getCategoryCardLevel(iconHref),
-        size: 20,
+        size: 30,
       })}
       title={getCardTitle(item.label)}
     />
@@ -72,11 +72,11 @@ function CardLink({item}: {item: PropSidebarItemLink}): ReactNode {
           ? renderDocsCategoryIcon({
               href: parentCategoryIcon.href,
               level: parentCategoryIcon.level,
-              size: 20,
+              size: 30,
             })
           : renderDocLinkIcon({
               external: !isInternalUrl(item.href),
-              size: 20,
+              size: 30,
             })
       }
       title={getCardTitle(item.label)}

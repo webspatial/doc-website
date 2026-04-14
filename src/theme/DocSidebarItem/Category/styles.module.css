@@ -18,15 +18,15 @@
 .categoryLabelWithIcon {
   align-items: center;
   display: flex;
-  gap: 10px;
+  gap: var(--docs-sidebar-icon-gap, 10px);
 }
 
 .categoryIcon {
   color: currentColor;
   display: inline-flex;
   flex: 0 0 auto;
-  height: 18px;
-  width: 18px;
+  height: var(--docs-sidebar-icon-size, 18px);
+  width: var(--docs-sidebar-icon-size, 18px);
 }
 
 .categoryText {

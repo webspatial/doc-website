@@ -22,6 +22,19 @@
 }
 
 @media (max-width: 996px) {
+  .docItemContainer {
+    --doc-mobile-anchor-offset: calc(var(--ifm-navbar-height) + 52px);
+  }
+
+  .docItemContainer :global(.theme-doc-markdown h1),
+  .docItemContainer :global(.theme-doc-markdown h2),
+  .docItemContainer :global(.theme-doc-markdown h3),
+  .docItemContainer :global(.theme-doc-markdown h4),
+  .docItemContainer :global(.theme-doc-markdown h5),
+  .docItemContainer :global(.theme-doc-markdown h6) {
+    scroll-margin-top: var(--doc-mobile-anchor-offset);
+  }
+
   .docBreadcrumbsDesktop {
     display: none;
   }
@@ -192,9 +205,15 @@
   .mobileToolbarPanel {
     position: relative;
     z-index: 1;
+    max-height: calc(
+      100vh - var(--ifm-navbar-height) - var(--doc-mobile-toolbar-height)
+    );
     padding: 14px var(--doc-mobile-toolbar-inline-padding) 12px;
     background: var(--ifm-navbar-background-color);
     border-bottom: 1px solid var(--navbar-divider-color);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .mobileToolbarPanelTitle {
@@ -209,21 +228,54 @@
 
   .mobileToolbarToc {
     padding-left: 0;
+    margin: 0;
   }
 
   .mobileToolbarToc :global(ul) {
-    padding-left: 16px;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
   }
 
   .mobileToolbarToc :global(li) {
+    list-style: none;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 6px;
+  }
+
+  .mobileToolbarToc :global(li:last-child) {
+    margin-bottom: 0;
+  }
+
+  .mobileToolbarToc :global(li > ul) {
+    margin-top: 6px;
+    margin-left: 12px;
+    padding-left: 10px;
+    border-left: 1px solid var(--navbar-divider-color);
   }
 
   .mobileToolbarTocLink {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 10px;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.4;
     color: var(--color-text-2);
+    background: transparent;
+    transition: background-color 160ms ease, color 160ms ease;
+  }
+
+  .mobileToolbarTocLink:hover {
+    color: var(--color-text-1);
+    background: var(--color-fill-2);
+    text-decoration: none;
+  }
+
+  .mobileToolbarToc :global(.table-of-contents__link--active) {
+    color: var(--color-text-1);
+    font-weight: 600;
+    background: var(--color-fill-2);
   }
 }
 

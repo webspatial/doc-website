@@ -6,8 +6,8 @@ export default {
     desc: 'Spatialize any website across real and virtual spaces with widely adopted open-web tech, empowering every web developer and enriching XR ecosystems.',
     imgUrl: getFakeImg(1280, 1280),
     button: {
-      text: 'Quick Start',
-      url: '/docs/',
+      text: 'Getting Started',
+      url: '/docs/introduction/getting-started',
     },
   },
   section1: {
@@ -118,39 +118,18 @@ export default {
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(78, 59, 246, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #191919',
       },
       {
-        title: 'React SDK',
+        title: 'WebSpatial SDK',
         desc: 'A drop-in library for React projects that instantly unlocks WebSpatial APIs, and lets you build spatial apps with the same React components and ecosystem you already use.',
-        moreUrl: '/docs/api/react-sdk/',
+        moreUrl: '/docs/introduction/getting-started#webspatial-sdk',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
       },
       {
         title: 'WebSpatial Builder',
         desc: 'A CLI tool that packages WebSpatial-enabled React projects into installable native spatial app, wrapping web code in a platform-specific App Shell that runs WebSpatial APIs.',
-        moreUrl: '/docs/api/builder/',
+        moreUrl: '/docs/introduction/getting-started#step-2-optional-builder',
         background:
           'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(252, 184, 75, 0.16) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
-      },
-      {
-        title: 'Platform Simulator',
-        desc: 'Preview and debug WebSpatial app on visionOS simulator without a headset.',
-        moreUrl: '/docs/introduction/getting-started#packaged-app-mode',
-        background:
-          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(117, 190, 255, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
-      },
-      {
-        title: 'Safari / Chrome DevTools',
-        desc: 'Inspect DOM, measure performance, and live-edit styles using the same tools you know.',
-        moreUrl: '',
-        background:
-          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(240, 59, 94, 0.14) 0%, rgba(0, 0, 0, 0.00) 100%), #171717',
-      },
-      {
-        title: '3D Authoring Tools',
-        desc: 'Import 3D assets from Blender, Spline, or any authoring tool that supports USD or glTF.',
-        moreUrl: '',
-        background:
-          'radial-gradient(103.73% 103.73% at 50% -3.73%, rgba(78, 59, 246, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), #191919',
       },
     ],
   },
@@ -159,8 +138,8 @@ export default {
     imgUrl: '/img/bottom.png', //getFakeImg(600, 400),
     children: [
       {
-        title: 'Quick Start',
-        url: '/docs/',
+        title: 'Getting Started',
+        url: '/docs/introduction/getting-started',
       },
       {
         title: 'Concept',

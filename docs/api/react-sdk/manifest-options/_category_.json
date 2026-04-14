@@ -1,7 +1,7 @@
 {
   "label": "Manifest Options",
   "position": 6,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
     "slug": "/api/react-sdk/manifest-options",

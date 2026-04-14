@@ -1,5 +1,6 @@
-import React, {type ReactNode, useEffect, useId} from 'react';
+import React, {type ReactNode, useEffect, useId, useRef} from 'react';
 import clsx from 'clsx';
+import {useLocation} from '@docusaurus/router';
 import Link from '@docusaurus/Link';
 import {useDoc, useSidebarBreadcrumbs} from '@docusaurus/plugin-content-docs/client';
 import {translate} from '@docusaurus/Translate';
@@ -103,6 +104,8 @@ function MobileDocToolbar({
   hidden: boolean | undefined;
 }): ReactNode {
   const toolbarPanelId = useId();
+  const toolbarBarRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
   const windowSize = useWindowSize();
   const {collapsed, toggleCollapsed, setCollapsed} = useCollapsible({
     initialState: true,
@@ -132,16 +135,54 @@ function MobileDocToolbar({
     description: 'Title shown above the mobile table of contents panel',
   });
 
+  const getMobileAnchorOffset = (): number => {
+    const navbarHeight =
+      document.querySelector<HTMLElement>('.navbar')?.getBoundingClientRect()
+        .height ?? 0;
+    const toolbarHeight = toolbarBarRef.current?.getBoundingClientRect().height ?? 0;
+
+    return navbarHeight + toolbarHeight + 12;
+  };
+
+  const scrollToHashTarget = (targetId: string): void => {
+    const targetHeading = document.getElementById(targetId);
+
+    if (!targetHeading) {
+      return;
+    }
+
+    const top =
+      window.scrollY +
+      targetHeading.getBoundingClientRect().top -
+      getMobileAnchorOffset();
+
+    window.scrollTo({top});
+  };
+
   useEffect(() => {
     if (isDesktop) {
       setCollapsed(true);
     }
   }, [isDesktop, setCollapsed]);
 
+  useEffect(() => {
+    if (isDesktop || !location.hash) {
+      return;
+    }
+
+    const targetId = decodeURIComponent(location.hash.slice(1));
+
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        scrollToHashTarget(targetId);
+      });
+    });
+  }, [isDesktop, location.hash, location.pathname]);
+
   if (!hasTOC) {
     return (
       <div className={styles.mobileToolbar}>
-        <div className={styles.mobileToolbarBar}>
+        <div ref={toolbarBarRef} className={styles.mobileToolbarBar}>
           <MobileBreadcrumbs />
         </div>
       </div>
@@ -150,7 +191,7 @@ function MobileDocToolbar({
 
   return (
     <div className={styles.mobileToolbar}>
-      <div className={styles.mobileToolbarBar}>
+      <div ref={toolbarBarRef} className={styles.mobileToolbarBar}>
         <MobileBreadcrumbs />
         <button
           type="button"
@@ -182,6 +223,21 @@ function MobileDocToolbar({
           className={styles.mobileToolbarPanel}
           onClick={(event) => {
             const target = event.target as HTMLElement;
+            const anchor = target.closest<HTMLAnchorElement>('a[href^="#"]');
+
+            if (anchor) {
+              const targetId = decodeURIComponent(anchor.getAttribute('href')!.slice(1));
+              if (document.getElementById(targetId)) {
+                event.preventDefault();
+                setCollapsed(true);
+                window.history.pushState(null, '', `#${targetId}`);
+                window.requestAnimationFrame(() => {
+                  scrollToHashTarget(targetId);
+                });
+                return;
+              }
+            }
+
             if (target.closest('a')) {
               setCollapsed(true);
             }

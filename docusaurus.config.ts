@@ -12,18 +12,37 @@ const PROJ_NAME = 'doc-website'; //process.env.PROJECT_NAME || 'my-default-proje
 
 const isProd = BASE_URL == '/';
 
-const expandSidebarCategories = (items: any[]): any[] =>
-  items.map((item) =>
-    item.type === 'category'
-      ? {
-          ...item,
-          collapsed: false,
-          items: Array.isArray(item.items)
-            ? expandSidebarCategories(item.items)
-            : item.items,
-        }
-      : item,
-  );
+const normalizeSidebarHref = (href: unknown): string | undefined =>
+  typeof href === 'string' ? href.replace(/\/$/, '') : undefined;
+
+const getSidebarCategoryHref = (item: any): string | undefined =>
+  normalizeSidebarHref(item.href) ??
+  normalizeSidebarHref(item.link?.href) ??
+  normalizeSidebarHref(item.link?.slug);
+
+const isReactSdkCategoryHref = (href: string | undefined): boolean =>
+  typeof href === 'string' && /\/api\/react-sdk$/.test(href);
+
+const expandSidebarCategories = (
+  items: any[],
+  parentCategoryHref?: string,
+): any[] =>
+  items.map((item) => {
+    if (item.type !== 'category') {
+      return item;
+    }
+
+    const itemHref = getSidebarCategoryHref(item);
+    const shouldDefaultCollapse = isReactSdkCategoryHref(parentCategoryHref);
+
+    return {
+      ...item,
+      collapsed: shouldDefaultCollapse ? true : item.collapsed ?? false,
+      items: Array.isArray(item.items)
+        ? expandSidebarCategories(item.items, itemHref)
+        : item.items,
+    };
+  });
 
 const config: Config = {
   trailingSlash: false,

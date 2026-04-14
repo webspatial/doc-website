@@ -1,10 +1,30 @@
 .wrap {
-  h2 {
+  --docs-card-icon-size: 30px;
+  --docs-card-icon-gap: 12px;
+
+  :global(.theme-doc-card-heading) {
+    display: flex;
+    align-items: center;
+    gap: var(--docs-card-icon-gap);
     margin-bottom: 8px;
   }
 
-  h2 svg {
-    height: 20px;
-    width: 20px;
+  :global(.theme-doc-card-icon) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 var(--docs-card-icon-size);
+    width: var(--docs-card-icon-size);
+    height: var(--docs-card-icon-size);
+    margin-right: 0;
+  }
+
+  :global(.theme-doc-card-icon svg) {
+    width: var(--docs-card-icon-size);
+    height: var(--docs-card-icon-size);
+  }
+
+  :global(.theme-doc-card-description) {
+    margin-left: calc(var(--docs-card-icon-size) + var(--docs-card-icon-gap));
   }
 }

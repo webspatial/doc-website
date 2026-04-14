@@ -1,7 +1,7 @@
 {
   "label": "CSS API",
   "position": 2,
-  "collapsed": false,
+  "collapsed": true,
   "link": {
     "type": "generated-index",
     "slug": "/api/react-sdk/css-api",

@@ -132,7 +132,7 @@ function CategoryLinkLabel({
     className: styles.categoryIcon,
     href: iconHref,
     level,
-    size: 18,
+    size: 22,
   });
 
   if (icon) {
