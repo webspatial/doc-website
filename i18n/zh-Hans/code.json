@@ -63,10 +63,10 @@
     "message": "快速开始"
   },
   "homepage.loading.title": {
-    "message": "正在准备首屏场景"
+    "message": "正在加载 WebSpatial 主页"
   },
   "homepage.loading.description": {
-    "message": "正在加载首页首屏所需的媒体资源，完成后将展示动画和滚动交互。"
+    "message": "正在加载主页所需资源。"
   },
   "homepage.section1.title": {
     "message": "一个应用，覆盖所有设备，从屏幕走向空间"

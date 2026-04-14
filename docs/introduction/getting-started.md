@@ -134,6 +134,11 @@ For TypeScript React projects, you only need to configure the [`jsxImportSource`
 
 To provide the app information required by a spatial app and the [settings for the start window](../concepts/spatial-scenes.md#start-scene), the current site must [provide a Web App Manifest following the PWA standard](../how-to/minimal-pwa.md).
 
+:::tip[Sample files]
+[webspatial-icon-examples.zip](https://webspatial.dev/assets/guide/webspatial-icon-examples.zip) contains icon files and manifest file that already satisfy the PWA requirements.
+You just need to unzip it into a directory on your website that can be publicly accessed via URL, then embed the manifest file's URL in your HTML with `<link rel="manifest" href="/app.webmanifest" />`.
+:::
+
 :::tip[Already a PWA?]
 If the current site is already a PWA and can be installed as a PWA in Chrome, you can skip this step.
 :::
