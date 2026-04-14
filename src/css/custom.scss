@@ -561,9 +561,31 @@ a:hover {
   margin-right: 14px;
 }
 
-.navbar__logo img {
+.navbar__logo img:not(.navbar__logo-compact) {
   max-width: 128px;
   display: block;
+}
+
+.navbar__logo-full {
+  display: block;
+}
+
+.navbar__logo-compact {
+  display: none;
+  width: 30px;
+  height: auto;
+  flex: none;
+  max-width: none;
+}
+
+@media (max-width: 429.98px) {
+  .navbar__logo-full {
+    display: none;
+  }
+
+  .navbar__logo-compact {
+    display: block;
+  }
 }
 
 .navbar--fixed-top.navbar {

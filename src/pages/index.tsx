@@ -14,27 +14,6 @@ import CardList from './_components/CardList';
 import SliderB from './_components/SliderB';
 import CardListMore from './_components/CardListMore';
 
-// function HomepageHeader() {
-//   const {siteConfig} = useDocusaurusContext();
-//   return (
-//     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-//       <div className="container">
-//         <Heading as="h1" className="hero__title">
-//           {siteConfig.title}
-//         </Heading>
-//         <p className="hero__subtitle">{siteConfig.tagline}</p>
-//         <div className={styles.buttons}>
-//           <Link
-//             className="button button--secondary button--lg"
-//             to="/docs/intro">
-//             Docusaurus Tutorial - 5min ⏱️
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
-
 function HomepageColorMode(): ReactNode {
   const {setColorMode} = useColorMode();
 
@@ -79,7 +58,6 @@ export default function Home(): ReactNode {
       title={title}
       description={description}>
       <HomepageColorMode />
-      {/* <HomepageHeader /> */}
       <Banner />
       <main className={styles.mainWrap}>
         <Section title={data.section1.title} desc={data.section1.desc}>

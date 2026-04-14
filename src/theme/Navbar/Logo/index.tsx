@@ -53,6 +53,7 @@ export default function NavbarLogo(): ReactNode {
   } = useThemeConfig();
   const isHomepage = useIsHomepage();
   const logoLink = useBaseUrl(logo?.href || '/');
+  const compactLogoSrc = useBaseUrl('/img/favicon.svg');
 
   const alt = logo?.alt ?? title;
 
@@ -63,7 +64,10 @@ export default function NavbarLogo(): ReactNode {
       {...(logo?.target && {target: logo.target})}>
       {logo && (
         <div className="navbar__logo">
-          <LogoImage logo={logo} alt={alt} isHomepage={isHomepage} />
+          <div className="navbar__logo-full">
+            <LogoImage logo={logo} alt={alt} isHomepage={isHomepage} />
+          </div>
+          <img className="navbar__logo-compact" src={compactLogoSrc} alt={alt} />
         </div>
       )}
     </Link>
