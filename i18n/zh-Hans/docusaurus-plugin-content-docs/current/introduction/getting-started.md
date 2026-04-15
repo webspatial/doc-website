@@ -140,7 +140,21 @@ npm install -D @webspatial/platform-visionos
 
 ## 起始模板 {#boilerplate}
 
-如果想快速尝试 WebSpatial，可以使用 [WebSpatial Starter](https://github.com/webspatial/webspatial-starter/tree/main) 仓库，这是一个采用 React + TypeScript + Vite 技术栈的项目模板，已经集成了 WebSpatial SDK，并且内置了面向 coding agent 的文档，可以用 AI 快速尝试添加 WebSpatial 功能。
+如果想快速开始，建议直接使用 [`@webspatial/starter`](https://www.npmjs.com/package/@webspatial/starter) CLI。
+
+创建一个新的 WebSpatial 项目：
+
+```bash title="创建新的 WebSpatial 项目"
+npx @webspatial/starter create my-webspatial-app
+```
+
+在已有 Web 项目中一键添加 WebSpatial AI 资源：
+
+```bash title="为现有项目添加 WebSpatial AI 资源"
+npx @webspatial/starter ai
+```
+
+`ai` 命令会为当前 Web 项目生成一套项目本地的 WebSpatial AI 资源，其中包括全套文档、项目指引和 agent skills。这些资源是专门为嵌入开发者自己的 Web 项目而设计的，让 agent 可以基于它们理解推荐的 WebSpatial 工作流，并协助完成初始化、接入以及后续开发等任务。
 
 ## 预览 {#preview}
 

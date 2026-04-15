@@ -1,0 +1,44 @@
+{
+  "name": "@webspatial/starter",
+  "version": "0.1.0",
+  "description": "CLI utilities for adding local AI resources for WebSpatial to existing web projects or scaffolding new WebSpatial projects.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "webspatial-starter": "./bin/webspatial-starter.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "claude",
+    "docs",
+    "scaffolding",
+    "skills",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node ./bin/webspatial-starter.js",
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "webspatial",
+    "cli",
+    "starter",
+    "docs",
+    "scaffold",
+    "ai",
+    "agent",
+    "codex",
+    "claude",
+    "skills"
+  ]
+}

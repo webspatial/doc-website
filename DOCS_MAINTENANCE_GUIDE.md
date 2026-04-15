@@ -7,6 +7,8 @@ Use this guide when maintaining:
 - latest docs
 - localized latest docs
 - legacy `1.0.x` docs
+- the AI-facing starter docs mirror in `packages/starter/docs/`
+- the AI-facing starter guidance and skills in `packages/starter/`
 - redirects between latest and legacy docs
 - doc links, slugs, and category metadata
 
@@ -23,6 +25,14 @@ Legacy docs:
 
 - English: `versioned_docs/version-1.0.x/`
 - Simplified Chinese: `i18n/zh-Hans/docusaurus-plugin-content-docs/version-1.0.x/`
+
+Starter AI-facing mirror and guidance:
+
+- English docs mirror for local agent use: `packages/starter/docs/`
+- scaffolding templates: `packages/starter/scaffolding/**`
+- project guidance source: `packages/starter/src/project-guidance.js`
+- Codex skills: `packages/starter/skills/**`
+- Claude guidance imports: `packages/starter/claude/**`
 
 Docs structure and routing config:
 
@@ -42,6 +52,8 @@ Generated files such as `.docusaurus/**` are useful for debugging but are not so
 
 The canonical latest docs structure is the current English published tree in `docs/`.
 
+`packages/starter/docs/` is a required AI-facing mirror of the latest English docs tree. It is not an independent authoring source.
+
 Current top-level latest sections:
 
 1. `introduction/`
@@ -53,11 +65,13 @@ Rules:
 
 - Keep the latest Chinese docs structurally aligned with English unless there is an explicit product decision to diverge.
 - Keep matching file paths between `docs/` and `i18n/zh-Hans/.../current/`.
+- Keep matching file paths between `docs/` and `packages/starter/docs/`.
 - Keep matching `sidebar_position` values between locales.
 - Keep matching `_category_.json` structural fields between locales.
 - Only localize visible strings such as `label` and `description`. Do not casually change slugs or directory names.
 - Keep the Chinese locale key, localized docs directory, and `localeConfigs['zh-Hans'].path` aligned on `zh-Hans`.
 - Keep `localeConfigs['zh-Hans'].htmlLang` explicit. Do not rely on `htmlLang` to infer the i18n directory path.
+- Keep `packages/starter/docs/` semantically equivalent to `docs/`. The only allowed differences are the Markdown-format adaptations needed for GitHub rendering and path/link fixes required by that mirror format.
 
 ## Sidebar And Docs Card Icon Rules
 
@@ -295,12 +309,27 @@ When updating latest docs:
 
 1. Update English latest in `docs/`.
 2. Mirror the same structure and metadata in Chinese latest under `i18n/zh-Hans/.../current/`.
-3. Localize visible content, titles, labels, and descriptions as needed.
-4. Keep structural parity:
+3. Mirror the same doc changes in `packages/starter/docs/`.
+4. Keep `packages/starter/docs/` equivalent to `docs/`:
+   - same relative path
+   - same doc set
+   - same meaning and requirements
+   - only GitHub-rendering adaptations are allowed
+5. Localize visible content, titles, labels, and descriptions as needed.
+6. Keep structural parity:
    - same relative path
    - same category layout
    - same sidebar ordering
    - same redirect expectations
+7. Review whether the docs change also requires updates in AI-facing starter guidance:
+   - `packages/starter/src/project-guidance.js`
+   - `packages/starter/skills/**`
+   - `packages/starter/claude/**`
+8. If any doc path, heading, heading id, command name, package name, or recommended workflow changed, update any affected links, references, or instructions in those starter guidance files.
+9. If the changed docs affect how a Web project installs, initializes, or integrates WebSpatial SDK, update the starter scaffold and setup guidance in the same maintenance pass:
+   - `packages/starter/scaffolding/**`
+   - `packages/starter/skills/webspatial-sdk-setup/**`
+   - `packages/starter/claude/webspatial-sdk-setup.md`
 
 When updating legacy docs:
 
@@ -314,6 +343,7 @@ Do not:
 
 - maintain a second unpublished raw docs tree
 - make Chinese latest structurally different from English by accident
+- treat `packages/starter/docs/` as a separate docs source with its own content decisions
 - localize slugs casually
 - use one locale as a staging area that diverges from the published tree
 
@@ -431,6 +461,20 @@ Legacy docs must stay out of AI-facing outputs such as `static/llms.txt` and `st
 
 Current design relies on the latest English docs tree in `docs/` as the source for both outputs. Preserve that behavior unless multilingual AI output is intentionally redesigned.
 
+`packages/starter/` is also AI-facing and must stay aligned with the latest English docs:
+
+- `packages/starter/docs/` must remain a GitHub-renderable mirror of `docs/`, not an independent source.
+- When a latest English doc changes, update the mirrored file under `packages/starter/docs/` in the same maintenance pass.
+- When a latest English doc changes meaning, requirements, package names, APIs, commands, headings, or anchor fragments, audit whether the AI-facing starter guidance also needs updates:
+  - `packages/starter/src/project-guidance.js`
+  - `packages/starter/skills/**`
+  - `packages/starter/claude/**`
+- When the latest English docs change the installation, initialization, or integration workflow for WebSpatial SDK, update the starter scaffold and setup guidance in the same maintenance pass:
+  - `packages/starter/scaffolding/**`
+  - `packages/starter/skills/webspatial-sdk-setup/**`
+  - `packages/starter/claude/webspatial-sdk-setup.md`
+- If those files reference a docs path or heading fragment, keep those references valid after the docs change.
+
 `static/llms.txt` is the lightweight index file. It should list canonical latest-doc URLs and short descriptions, not inline full doc bodies.
 
 `static/llms-full.txt` is the merged full-context file. It should inline the latest English doc bodies and link back to the canonical source page for each entry.
@@ -458,6 +502,7 @@ Behavior checks:
 
 - `/docs` and `/zh-Hans/docs` redirect to localized `Getting Started`
 - `Getting Started` remains a child page under `Introduction`
+- `packages/starter/docs/` still matches the changed latest English docs in path and meaning
 - generated-index doc cards show intentional summaries, not placeholder text such as `Summary`, `概述`, or slug fragments
 - with the persisted site theme set to light, the homepage still renders in dark mode
 - with the persisted site theme set to light, the homepage Algolia search button and modal still render in dark mode
@@ -469,6 +514,15 @@ Behavior checks:
 - legacy pages are indexable and expose the outdated/latest-docs guidance in page metadata
 - no new latest route conflicts with legacy redirect namespaces
 - authored internal links do not rely on accidental trailing-slash behavior
+- any affected files in `packages/starter/src/project-guidance.js`, `packages/starter/skills/**`, and `packages/starter/claude/**` still point at the correct mirrored docs paths and headings
+- if SDK installation or initialization docs changed, the affected files in `packages/starter/scaffolding/**`, `packages/starter/skills/webspatial-sdk-setup/**`, and `packages/starter/claude/webspatial-sdk-setup.md` were updated in the same maintenance pass
+
+If you changed `packages/starter/`, also run:
+
+```bash
+cd packages/starter
+npm test
+```
 
 ## Short Version
 
@@ -477,7 +531,9 @@ If you need the shortest reliable workflow:
 1. Edit the published docs trees directly.
 2. Keep English latest as the structural reference.
 3. Keep Chinese latest structurally aligned with English latest.
-4. Treat legacy as `versioned_docs/version-1.0.x/`, not as a separate docs tree.
-5. Audit redirects whenever a path or slug changes.
-6. Prefer relative links or canonical no-slash internal URLs.
-7. Validate build and routing behavior before finishing.
+4. Update `packages/starter/docs/` whenever `docs/` changes.
+5. Check whether `packages/starter` guidance and skills also need updates.
+6. Treat legacy as `versioned_docs/version-1.0.x/`, not as a separate docs tree.
+7. Audit redirects whenever a path or slug changes.
+8. Prefer relative links or canonical no-slash internal URLs.
+9. Validate build, routing, and starter AI-facing outputs before finishing.
