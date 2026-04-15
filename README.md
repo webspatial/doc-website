@@ -45,8 +45,8 @@ Important local-dev behavior:
 | --- | --- |
 | `pnpm start` | Start the default English dev server |
 | `pnpm start:zh` | Start the Simplified Chinese dev server |
-| `pnpm start:test` | Start the site under `/doc-website/` for subpath testing |
-| `pnpm start:test:zh` | Start the Chinese site under `/doc-website/` |
+| `pnpm start:test` | Start the site under `/webspatial-docs/` for subpath testing |
+| `pnpm start:test:zh` | Start the Chinese site under `/webspatial-docs/` |
 | `pnpm build` | Build the production site for root-path deployment |
 | `pnpm build:test` | Build the site for subpath testing |
 | `pnpm serve` | Serve the built output locally |
