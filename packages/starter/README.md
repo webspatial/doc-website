@@ -27,18 +27,26 @@ pnpm starter:test
 
 ## Usage
 
+Use `npx @webspatial/starter ...` by default. If you install the package ahead of time, the CLI command name is `webspatial-starter`.
+
 ### `create`
 
 Create a new project:
 
 ```bash
 npx @webspatial/starter create my-webspatial-app
+
+# If you are already inside an empty target directory, you can omit the directory name:
+npx @webspatial/starter create
 ```
 
-If you are already inside an empty target directory, you can omit the directory name:
+If the package is already installed:
 
 ```bash
-npx @webspatial/starter create
+webspatial-starter create my-webspatial-app
+
+# If you are already inside an empty target directory, you can omit the directory name:
+webspatial-starter create
 ```
 
 This scaffolds the default bundled template into `./my-webspatial-app` and then automatically runs the equivalent of the `ai` command inside that new project.
@@ -58,10 +66,22 @@ Run inside an existing target web project:
 npx @webspatial/starter ai
 ```
 
+If the package is already installed:
+
+```bash
+webspatial-starter ai
+```
+
 Or target another project directory:
 
 ```bash
 npx @webspatial/starter ai --project-dir ../my-web-app
+```
+
+If the package is already installed:
+
+```bash
+webspatial-starter ai --project-dir ../my-web-app
 ```
 
 By default, the command prepares AI resources in the current project and currently does the following:
@@ -82,6 +102,12 @@ Usage:
 
 ```bash
 npx @webspatial/starter create [project-dir]
+```
+
+If the package is already installed:
+
+```bash
+webspatial-starter create [project-dir]
 ```
 
 Options:

@@ -62,18 +62,24 @@ Important local-dev behavior:
 
 This repo also contains [`@webspatial/starter`](./packages/starter/), a CLI package for scaffolding WebSpatial web projects and preparing local WebSpatial AI resources.
 
+Use `npx @webspatial/starter ...` by default. If you install the package ahead of time, the CLI command name is `webspatial-starter`.
+
 Current commands:
 
-### `@webspatial/starter create`
+### `create`
 
 ```bash
 npx @webspatial/starter create my-webspatial-app
+# or if you are already inside an empty target directory:
+npx @webspatial/starter create
 ```
 
-Or if you are already inside an empty target directory:
+If the package is already installed:
 
 ```bash
-npx @webspatial/starter create
+webspatial-starter create my-webspatial-app
+# or if you are already inside an empty target directory:
+webspatial-starter create
 ```
 
 This scaffolds the default React + TypeScript + Vite + WebSpatial project template and automatically prepares its local AI resources.
@@ -85,10 +91,16 @@ cd my-webspatial-app
 pnpm install
 ```
 
-### `@webspatial/starter ai`
+### `ai`
 
 ```bash
 npx @webspatial/starter ai
+```
+
+If the package is already installed:
+
+```bash
+webspatial-starter ai
 ```
 
 Current effects:
