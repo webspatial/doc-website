@@ -16,7 +16,6 @@
     "build": "docusaurus build",
     "build:test": "cross-env BASE_URL='/webspatial-docs/' pnpm build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",

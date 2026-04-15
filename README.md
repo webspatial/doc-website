@@ -233,5 +233,6 @@ pnpm starter:test
 
 - For normal Cloudflare Pages root deployment, use `pnpm build` and publish the `build/` directory.
 - Cloudflare Pages deployment is expected to be triggered by the repository's GitHub integration on `main`, not by the starter release workflow.
+- This repository does not use GitHub Pages deployment.
 - Starter publishing is handled separately by [`.github/workflows/release-starter.yml`](./.github/workflows/release-starter.yml).
 - `pnpm build:test` is only for subpath testing and should not be used for the normal root deployment.
