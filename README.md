@@ -1,6 +1,6 @@
 # WebSpatial Docs Website
 
-This repository contains the source for the [WebSpatial](https://webspatial.dev) website and documentation site at [webspatial.dev/docs](https://webspatial.dev/docs). It is a Docusaurus 3 project with English and Simplified Chinese docs, a published legacy `1.0.x` docs version, custom theme components, and generated AI-facing docs outputs.
+This repository contains the source for the [WebSpatial](https://webspatial.dev) website and documentation site at [webspatial.dev/docs](https://webspatial.dev/docs). It is a Docusaurus 3 project with English and Simplified Chinese docs, a published legacy `1.0.x` docs version, custom theme components, generated AI-facing docs outputs, and the `@webspatial/starter` CLI package for syncing local WebSpatial AI resources into app projects.
 
 Before changing docs structure, routing, localized content layout, homepage theme behavior, or legacy version behavior, read [DOCS_MAINTENANCE_GUIDE.md](./DOCS_MAINTENANCE_GUIDE.md). That file is the maintainer source of truth.
 
@@ -43,6 +43,31 @@ Important local-dev behavior:
 | `pnpm fix-md-all` | Run Markdown image/link normalization helpers on `docs/` |
 | `pnpm check-assets` | Run the asset checker helper |
 
+## Starter CLI
+
+This repo also contains [`@webspatial/starter`](./packages/starter/), a CLI package for preparing WebSpatial AI resources inside an existing web project.
+
+Current command:
+
+```bash
+npx @webspatial/starter ai
+```
+
+Current effects:
+
+- sync a hidden local docs mirror into `./.webspatial/docs`
+- sync project-local Codex skills into `./.codex/skills`
+- add or update managed WebSpatial guidance in `./AGENTS.md`
+- add or update Claude Code project memory in `./CLAUDE.md` and `./.claude/`
+- add `/.webspatial/` to `.git/info/exclude` when the target project is inside a Git repository
+
+Package-local validation:
+
+```bash
+cd packages/starter
+npm test
+```
+
 ## Docs Topology
 
 Published docs source of truth:
@@ -75,11 +100,16 @@ Use the full guide for details. The short version:
 
 - Edit the published docs trees directly. Do not create duplicate unpublished docs source trees.
 - Treat English latest docs in `docs/` as the structural reference.
+- Keep `packages/starter/docs/` aligned with `docs/`. It is an AI-facing mirror, not a separate docs source.
 - Keep the Simplified Chinese latest docs structurally aligned with English:
   - same relative paths
   - same category layout
   - same sidebar ordering
   - same `sidebar_position` values
+- When updating latest English docs, check whether the same change also requires updates in:
+  - `packages/starter/src/project-guidance.js`
+  - `packages/starter/skills/**`
+  - `packages/starter/claude/**`
 - Keep legacy docs under `1.0.x`. Latest owns naked `/docs/...` URLs.
 - `Getting Started` must remain a normal child page under `Introduction`.
 - Prefer relative links or canonical no-trailing-slash internal URLs.
@@ -95,6 +125,7 @@ Use the full guide for details. The short version:
 - `i18n/zh-Hans/` - localized docs content and translations
 - `versioned_docs/` - published legacy docs sources
 - `versioned_sidebars/` - legacy sidebar config
+- `packages/starter/` - `@webspatial/starter` CLI package, mirrored docs, AI guidance, and skills
 - `src/` - pages, theme overrides, components, styles, and routing logic
 - `static/` - static assets, headers, redirects, and generated AI-facing docs files
 - `scripts/` - Markdown maintenance helpers
@@ -125,6 +156,15 @@ Recommended behavior checks after docs-IA or routing changes:
 - legacy docs resolve only under `1.0.x`
 - old legacy-only naked routes redirect to matching `1.0.x` URLs
 - generated-index cards show intentional summaries instead of placeholder text
+- `packages/starter/docs/` still matches the changed latest English docs in path and meaning
+- any affected files in `packages/starter/src/project-guidance.js`, `packages/starter/skills/**`, and `packages/starter/claude/**` still point at the correct mirrored docs paths and headings
+
+If you changed `packages/starter/`, also run:
+
+```bash
+cd packages/starter
+npm test
+```
 
 ## Deployment Notes
 

@@ -25,4 +25,5 @@ llms-full.txt
 .playwright-cli
 .pnpm-store/
 output
-temp-assets
+
+design-*
