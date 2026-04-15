@@ -8,7 +8,6 @@ import tdk from './src/data/tdk';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 const BASE_URL = process.env.BASE_URL || '/';
-const PROJ_NAME = 'webspatial-docs'; //process.env.PROJECT_NAME || 'my-default-project';
 
 const isProd = BASE_URL == '/';
 
@@ -130,14 +129,9 @@ const config: Config = {
 
   // Set the production url of your site here
   url: 'https://webspatial.dev',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // Set the pathname under which the site is served.
+  // Use '/' for normal Cloudflare Pages deployment and override BASE_URL for subpath testing.
   baseUrl: BASE_URL,
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'webspatial', // Usually your GitHub org/user name.
-  projectName: PROJ_NAME, // Usually your repo name.
 
   i18n: {
     defaultLocale: 'en',
