@@ -13,7 +13,7 @@
         "proseWrap": "preserve",
         "printWidth": 120,
         "tabWidth": 2,
-        "embeddedLanguageFormatting": "false"
+        "embeddedLanguageFormatting": "off"
       }
     }
   ]

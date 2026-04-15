@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "webspatial-starter": "./bin/webspatial-starter.js"
+    "webspatial-starter": "bin/webspatial-starter.js"
   },
   "exports": {
     ".": "./src/index.js"
