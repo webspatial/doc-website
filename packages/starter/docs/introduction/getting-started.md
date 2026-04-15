@@ -194,7 +194,21 @@ To provide the app information required by a spatial app and the [settings for t
 
 ## Boilerplate
 
-If you want to try WebSpatial quickly, use the [WebSpatial Starter](https://github.com/webspatial/webspatial-starter/tree/main) repository. It is a project template based on React + TypeScript + Vite, already integrated with WebSpatial SDK, and includes documentation optimized for coding agents so AI can quickly help add WebSpatial features.
+If you want to get started quickly, use the [`@webspatial/starter`](https://www.npmjs.com/package/@webspatial/starter) CLI.
+
+To scaffold a new WebSpatial project:
+
+```bash title="Create a new WebSpatial project"
+npx @webspatial/starter create my-webspatial-app
+```
+
+To add WebSpatial AI resources to an existing web project in one command:
+
+```bash title="Add WebSpatial AI resources to an existing project"
+npx @webspatial/starter ai
+```
+
+The `ai` command generates a project-local set of WebSpatial AI resources for the current web project, including the full documentation set, project guidance, and agent skills. These resources are designed to be embedded into developers' own web projects, so an agent can use them to understand the recommended WebSpatial workflow and help with setup, integration, and follow-up development tasks.
 
 ## Preview
 
