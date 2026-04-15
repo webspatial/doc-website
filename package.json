@@ -4,13 +4,17 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "starter:test": "pnpm --filter @webspatial/starter test",
+    "release:starter": "pnpm starter:test && changeset publish",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "start:zh": "docusaurus start --locale zh-Hans",
     "start:test": "cross-env BASE_URL='/doc-website/' docusaurus start",
     "start:test:zh": "cross-env BASE_URL='/doc-website/' docusaurus start --locale zh-Hans",
     "build": "docusaurus build",
-    "build:test": "cross-env BASE_URL='/doc-website/' npm run build",
+    "build:test": "cross-env BASE_URL='/doc-website/' pnpm build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -48,6 +52,7 @@
     "yet-another-react-lightbox": "^3.23.3"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.30.0",
     "@docusaurus/module-type-aliases": "3.10.0",
     "@docusaurus/tsconfig": "3.10.0",
     "@docusaurus/types": "3.10.0",

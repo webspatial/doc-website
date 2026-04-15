@@ -23,6 +23,9 @@
     "start": "node ./bin/webspatial-starter.js",
     "test": "node --test"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20.0.0"
   },

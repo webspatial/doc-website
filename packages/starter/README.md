@@ -9,6 +9,22 @@ The package currently supports two high-level workflows:
 
 Today the AI-resource flow syncs bundled WebSpatial docs, agent resources, and project guidance into the project, and the default scaffold is a React + TypeScript + Vite + WebSpatial template.
 
+## Monorepo Development
+
+Inside this repository, `@webspatial/starter` is managed as a `pnpm` workspace package under `packages/starter/`.
+
+Install dependencies from the repository root:
+
+```bash
+pnpm install
+```
+
+Run the starter test suite from the repository root:
+
+```bash
+pnpm starter:test
+```
+
 ## Usage
 
 ### `create`
@@ -112,3 +128,15 @@ Behavior:
 - The command refuses paths that would overwrite the package's bundled source docs.
 - The command refuses paths that would overwrite the package's bundled source skills.
 - The command refuses paths that would overwrite the package's bundled Claude resources.
+
+## Release Process
+
+This package is published from the workspace root with Changesets and GitHub Actions.
+
+For release-worthy changes:
+
+1. Run `pnpm changeset` from the repository root.
+2. Select `@webspatial/starter`.
+3. Commit the generated changeset file with the code change.
+
+After that changeset reaches `main`, the repository workflow `.github/workflows/release-starter.yml` opens or updates the starter release PR. Merging that release PR publishes the new version to npm when `NPM_TOKEN` is configured in GitHub Actions secrets.

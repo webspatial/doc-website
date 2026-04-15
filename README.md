@@ -9,9 +9,22 @@ Before changing docs structure, routing, localized content layout, homepage them
 - Node.js `>=20.0`
 - `pnpm` `9.x`
 
+## Monorepo
+
+This repository is a `pnpm` workspace with two main projects:
+
+- the root Docusaurus website project
+- [`packages/starter`](./packages/starter/), the publishable `@webspatial/starter` CLI package
+
+Install dependencies from the repository root:
+
+```bash
+pnpm install
+```
+
 ## Quick Start
 
-Install dependencies and start the default English dev server:
+Start the default English dev server from the workspace root:
 
 ```bash
 pnpm install
@@ -40,6 +53,8 @@ Important local-dev behavior:
 | `pnpm typecheck` | Run TypeScript checks |
 | `pnpm clear` | Clear Docusaurus caches and generated artifacts |
 | `pnpm generate:llms` | Regenerate `llms.txt` and `llms-full.txt` outputs |
+| `pnpm starter:test` | Run the `@webspatial/starter` test suite from the workspace root |
+| `pnpm changeset` | Create a release changeset for `@webspatial/starter` |
 | `pnpm fix-md-all` | Run Markdown image/link normalization helpers on `docs/` |
 | `pnpm check-assets` | Run the asset checker helper |
 
@@ -62,7 +77,6 @@ npx @webspatial/starter create
 ```
 
 This scaffolds the default React + TypeScript + Vite + WebSpatial project template and automatically prepares its local AI resources.
-
 
 Then install dependencies inside the generated project:
 
@@ -88,9 +102,23 @@ Current effects:
 Package-local validation:
 
 ```bash
-cd packages/starter
-npm test
+pnpm starter:test
 ```
+
+## Release Flow
+
+The website and the starter package are released through different systems:
+
+- The website is expected to deploy from `main` through the repository's Cloudflare Pages GitHub integration, using the root project and `pnpm build` to produce `build/`.
+- `@webspatial/starter` is versioned and published with Changesets and GitHub Actions.
+
+For release-worthy starter changes:
+
+1. Run `pnpm changeset` from the repository root.
+2. Select `@webspatial/starter`.
+3. Commit the generated changeset file with the code change.
+
+After that changeset reaches `main`, [`.github/workflows/release-starter.yml`](./.github/workflows/release-starter.yml) will open or update the starter release PR. Merging that release PR publishes the new `@webspatial/starter` version to npm when `NPM_TOKEN` is configured in GitHub Actions secrets.
 
 ## Docs Topology
 
@@ -149,7 +177,7 @@ Use the full guide for details. The short version:
 - `i18n/zh-Hans/` - localized docs content and translations
 - `versioned_docs/` - published legacy docs sources
 - `versioned_sidebars/` - legacy sidebar config
-- `packages/starter/` - `@webspatial/starter` CLI package, mirrored docs, AI guidance, and skills
+- `packages/starter/` - `@webspatial/starter` workspace package, mirrored docs, templates, AI guidance, and skills
 - `src/` - pages, theme overrides, components, styles, and routing logic
 - `static/` - static assets, headers, redirects, and generated AI-facing docs files
 - `scripts/` - Markdown maintenance helpers
@@ -186,11 +214,12 @@ Recommended behavior checks after docs-IA or routing changes:
 If you changed `packages/starter/`, also run:
 
 ```bash
-cd packages/starter
-npm test
+pnpm starter:test
 ```
 
 ## Deployment Notes
 
 - For normal Cloudflare Pages root deployment, use `pnpm build` and publish the `build/` directory.
+- Cloudflare Pages deployment is expected to be triggered by the repository's GitHub integration on `main`, not by the starter release workflow.
+- Starter publishing is handled separately by [`.github/workflows/release-starter.yml`](./.github/workflows/release-starter.yml).
 - `pnpm build:test` is only for subpath testing and should not be used for the normal root deployment.
