@@ -1,4 +1,10 @@
 export { prepareAiResources } from "./prepare-ai-resources.js";
+export {
+  bundledScaffoldingDir,
+  createProject,
+  defaultScaffoldTemplate,
+  listScaffoldTemplates
+} from "./create-project.js";
 export { bundledDocsDir, defaultDocsOutputDir, syncDocs } from "./sync-docs.js";
 export { defaultAgentsFile, syncAgentsGuidance } from "./sync-agents.js";
 export {

@@ -5,9 +5,12 @@ import path from "node:path";
 import test from "node:test";
 import { runCli } from "../src/cli.js";
 import {
+  bundledScaffoldingDir,
   bundledClaudeDir,
   bundledDocsDir,
   bundledSkillsDir,
+  createProject,
+  defaultScaffoldTemplate,
   defaultDocsOutputDir,
   prepareAiResources,
   syncAgentsGuidance,
@@ -22,6 +25,10 @@ async function countFiles(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
 
   for (const entry of entries) {
+    if (entry.name === ".DS_Store") {
+      continue;
+    }
+
     const entryPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       fileCount += await countFiles(entryPath);
@@ -82,6 +89,45 @@ test("prepareAiResources syncs the bundled WebSpatial AI resources into the targ
   assert.match(rootClaudeMemory, /@\.claude\/webspatial-sdk-setup\.md/);
   const excludeContent = await fs.readFile(path.join(projectDir, ".git", "info", "exclude"), "utf8");
   assert.match(excludeContent, /\/\.webspatial\//);
+});
+
+test("createProject scaffolds the default template and prepares AI resources", async () => {
+  const parentDir = await fs.mkdtemp(path.join(os.tmpdir(), "webspatial-starter-create-"));
+  const projectDir = path.join(parentDir, "spatial-lab");
+  const result = await createProject({ projectDir });
+  const templateAction = result.actions.find(action => action.kind === "template");
+  const docsAction = result.actions.find(action => action.kind === "docs");
+
+  assert.ok(templateAction);
+  assert.ok(docsAction);
+  assert.equal(result.templateName, defaultScaffoldTemplate);
+  assert.equal(result.packageName, "spatial-lab");
+  assert.equal(templateAction.fileCount, await countFiles(path.join(bundledScaffoldingDir, defaultScaffoldTemplate)));
+
+  const generatedPackageJson = JSON.parse(await fs.readFile(path.join(projectDir, "package.json"), "utf8"));
+  assert.equal(generatedPackageJson.name, "spatial-lab");
+
+  const generatedManifest = JSON.parse(
+    await fs.readFile(path.join(projectDir, "public", "manifest.webmanifest"), "utf8")
+  );
+  assert.equal(generatedManifest.name, "Spatial Lab");
+
+  const indexHtml = await fs.readFile(path.join(projectDir, "index.html"), "utf8");
+  assert.match(indexHtml, /<title>Spatial Lab<\/title>/);
+
+  await fs.access(path.join(projectDir, "src", "App.tsx"));
+  await fs.access(path.join(projectDir, ".webspatial", "docs", "introduction", "getting-started.md"));
+  await assert.rejects(fs.access(path.join(projectDir, "public", ".DS_Store")), /ENOENT/);
+});
+
+test("createProject rejects a non-empty target directory", async () => {
+  const projectDir = await fs.mkdtemp(path.join(os.tmpdir(), "webspatial-starter-create-collision-"));
+  await fs.writeFile(path.join(projectDir, "keep.txt"), "keep\n", "utf8");
+
+  await assert.rejects(
+    createProject({ projectDir }),
+    /must be empty or not exist/
+  );
 });
 
 test("syncDocs removes stale files from a previous sync", async () => {
@@ -208,4 +254,44 @@ test("runCli supports the high-level ai command", async () => {
   assert.match(stdout, /AGENTS\.md/);
   assert.match(stdout, /CLAUDE\.md/);
   assert.match(stdout, /\.git\/info\/exclude|no Git repository detected/);
+});
+
+test("runCli supports the create command", async () => {
+  const parentDir = await fs.mkdtemp(path.join(os.tmpdir(), "webspatial-starter-cli-create-"));
+  const projectDir = path.join(parentDir, "new-world");
+  let stdout = "";
+
+  await runCli(["create", projectDir], {
+    cwd: process.cwd(),
+    stdout: {
+      write(chunk) {
+        stdout += chunk;
+      }
+    }
+  });
+
+  assert.match(stdout, /Created WebSpatial project/);
+  assert.match(stdout, /Template: vite/);
+  assert.match(stdout, /Package name: new-world/);
+  assert.match(stdout, /\.webspatial\/docs/);
+  assert.match(stdout, /pnpm install/);
+});
+
+test("runCli supports create in the current empty directory", async () => {
+  const projectDir = await fs.mkdtemp(path.join(os.tmpdir(), "webspatial-starter-cli-create-cwd-"));
+  let stdout = "";
+
+  await runCli(["create"], {
+    cwd: projectDir,
+    stdout: {
+      write(chunk) {
+        stdout += chunk;
+      }
+    }
+  });
+
+  const generatedPackageJson = JSON.parse(await fs.readFile(path.join(projectDir, "package.json"), "utf8"));
+  assert.equal(generatedPackageJson.name, path.basename(projectDir).toLowerCase());
+  assert.match(stdout, /Created WebSpatial project/);
+  assert.match(stdout, /\.webspatial\/docs/);
 });

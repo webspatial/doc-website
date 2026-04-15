@@ -1,5 +1,9 @@
 import path from "node:path";
-import { prepareAiResources } from "./prepare-ai-resources.js";
+import {
+  createProject,
+  defaultScaffoldTemplate,
+  prepareAiResources
+} from "./index.js";
 
 class CliError extends Error {
   constructor(message, exitCode = 1) {
@@ -15,11 +19,13 @@ function getGeneralHelp() {
     "",
     "Usage:",
     "  webspatial-starter ai [--project-dir <path>]",
+    "  webspatial-starter create [project-dir] [--template <name>]",
     "",
     "Commands:",
     "  ai            Prepare WebSpatial AI resources for a local project.",
+    "  create        Scaffold a new WebSpatial web project and prepare its AI resources.",
     "",
-    "Run `webspatial-starter ai --help` for command-specific options."
+    "Run `webspatial-starter <command> --help` for command-specific options."
   ].join("\n");
 }
 
@@ -37,8 +43,22 @@ function getAiHelp() {
   ].join("\n");
 }
 
-function parseKeyValueArgs(args, allowedKeys) {
+function getCreateHelp() {
+  return [
+    "webspatial-starter create",
+    "",
+    "Usage:",
+    "  webspatial-starter create [project-dir] [--template <name>]",
+    "",
+    "Options:",
+    `  --template <name>     Scaffold template to use. Defaults to ${defaultScaffoldTemplate}.`,
+    "  -h, --help            Show this help message."
+  ].join("\n");
+}
+
+function parseCommandArgs(args, allowedKeys) {
   const options = {};
+  const positionals = [];
 
   for (let index = 0; index < args.length; index += 1) {
     const current = args[index];
@@ -49,7 +69,8 @@ function parseKeyValueArgs(args, allowedKeys) {
     }
 
     if (!current.startsWith("--")) {
-      throw new CliError(`Unknown argument: ${current}`);
+      positionals.push(current);
+      continue;
     }
 
     if (!allowedKeys.has(current)) {
@@ -65,17 +86,25 @@ function parseKeyValueArgs(args, allowedKeys) {
     index += 1;
   }
 
-  return options;
+  return {
+    options,
+    positionals
+  };
 }
 
-function formatPrepareSuccess(result) {
-  const lines = [
-    "Prepared WebSpatial AI resources.",
-    `Project: ${result.projectDir}`
-  ];
+function formatActionLines(projectDir, actions) {
+  const lines = [];
 
-  for (const action of result.actions) {
-    const relativeTarget = path.relative(result.projectDir, action.outputDir) || ".";
+  for (const action of actions) {
+    const relativeTarget = path.relative(projectDir, action.outputDir) || ".";
+
+    if (action.kind === "template") {
+      lines.push(
+        `- ${action.label}: ${action.templateName} template, ${action.fileCount} file${action.fileCount === 1 ? "" : "s"} -> ${relativeTarget} (package name: ${action.packageName})`
+      );
+      continue;
+    }
+
     if (action.kind === "skills") {
       lines.push(
         `- ${action.label}: ${action.skillCount} skill${action.skillCount === 1 ? "" : "s"}, ${action.fileCount} file${action.fileCount === 1 ? "" : "s"} -> ${relativeTarget}`
@@ -125,44 +154,104 @@ function formatPrepareSuccess(result) {
     lines.push(`- ${action.label}: ${action.fileCount} file${action.fileCount === 1 ? "" : "s"} -> ${relativeTarget}`);
   }
 
-  return lines.join("\n");
+  return lines;
+}
+
+function formatPrepareSuccess(result) {
+  return [
+    "Prepared WebSpatial AI resources.",
+    `Project: ${result.projectDir}`,
+    ...formatActionLines(result.projectDir, result.actions)
+  ].join("\n");
+}
+
+function formatCreateSuccess(result) {
+  return [
+    "Created WebSpatial project.",
+    `Project: ${result.projectDir}`,
+    `Template: ${result.templateName}`,
+    `Package name: ${result.packageName}`,
+    ...formatActionLines(result.projectDir, result.actions),
+    "",
+    "Next: run `pnpm install` inside the project directory."
+  ].join("\n");
+}
+
+async function runAiCommand(args, io) {
+  const stdout = io.stdout ?? process.stdout;
+  const cwd = io.cwd ?? process.cwd();
+
+  if (args.length === 0) {
+    const result = await prepareAiResources({ projectDir: cwd });
+    stdout.write(`${formatPrepareSuccess(result)}\n`);
+    return;
+  }
+
+  if (args[0] === "-h" || args[0] === "--help") {
+    stdout.write(`${getAiHelp()}\n`);
+    return;
+  }
+
+  const { options, positionals } = parseCommandArgs(args, new Set(["--project-dir", "--cwd"]));
+  if (options.help) {
+    stdout.write(`${getAiHelp()}\n`);
+    return;
+  }
+
+  if (positionals.length > 0) {
+    throw new CliError(`Unknown argument: ${positionals[0]}`);
+  }
+
+  const projectDir = path.resolve(cwd, options["--project-dir"] ?? options["--cwd"] ?? ".");
+  const result = await prepareAiResources({ projectDir });
+  stdout.write(`${formatPrepareSuccess(result)}\n`);
+}
+
+async function runCreateCommand(args, io) {
+  const stdout = io.stdout ?? process.stdout;
+  const cwd = io.cwd ?? process.cwd();
+
+  if (args[0] === "-h" || args[0] === "--help") {
+    stdout.write(`${getCreateHelp()}\n`);
+    return;
+  }
+
+  const { options, positionals } = parseCommandArgs(args, new Set(["--template"]));
+  if (options.help) {
+    stdout.write(`${getCreateHelp()}\n`);
+    return;
+  }
+
+  if (positionals.length > 1) {
+    throw new CliError(`Unknown argument: ${positionals[1]}`);
+  }
+
+  const projectDir = path.resolve(cwd, positionals[0] ?? ".");
+  const result = await createProject({
+    projectDir,
+    template: options["--template"] ?? defaultScaffoldTemplate
+  });
+
+  stdout.write(`${formatCreateSuccess(result)}\n`);
 }
 
 export async function runCli(argv, io = {}) {
   const stdout = io.stdout ?? process.stdout;
-  const cwd = io.cwd ?? process.cwd();
 
   if (argv.length === 0 || argv[0] === "-h" || argv[0] === "--help") {
     stdout.write(`${getGeneralHelp()}\n`);
     return;
   }
 
-  if (argv[0] !== "ai") {
-    throw new CliError(`Unknown command: ${argv[0]}`);
-  }
-
-  if (argv.length === 1) {
-    const result = await prepareAiResources({ projectDir: cwd });
-    stdout.write(`${formatPrepareSuccess(result)}\n`);
+  if (argv[0] === "ai") {
+    await runAiCommand(argv.slice(1), io);
     return;
   }
 
-  if (argv[1] === "-h" || argv[1] === "--help") {
-    stdout.write(`${getAiHelp()}\n`);
+  if (argv[0] === "create") {
+    await runCreateCommand(argv.slice(1), io);
     return;
   }
 
-  const options = parseKeyValueArgs(argv.slice(1), new Set(["--project-dir", "--cwd"]));
-  if (options.help) {
-    stdout.write(`${getAiHelp()}\n`);
-    return;
-  }
-
-  const projectDir = path.resolve(cwd, options["--project-dir"] ?? options["--cwd"] ?? ".");
-
-  const result = await prepareAiResources({
-    projectDir
-  });
-
-  stdout.write(`${formatPrepareSuccess(result)}\n`);
+  throw new CliError(`Unknown command: ${argv[0]}`);
 }

@@ -29,6 +29,7 @@ Legacy docs:
 Starter AI-facing mirror and guidance:
 
 - English docs mirror for local agent use: `packages/starter/docs/`
+- scaffolding templates: `packages/starter/scaffolding/**`
 - project guidance source: `packages/starter/src/project-guidance.js`
 - Codex skills: `packages/starter/skills/**`
 - Claude guidance imports: `packages/starter/claude/**`
@@ -325,6 +326,10 @@ When updating latest docs:
    - `packages/starter/skills/**`
    - `packages/starter/claude/**`
 8. If any doc path, heading, heading id, command name, package name, or recommended workflow changed, update any affected links, references, or instructions in those starter guidance files.
+9. If the changed docs affect how a Web project installs, initializes, or integrates WebSpatial SDK, update the starter scaffold and setup guidance in the same maintenance pass:
+   - `packages/starter/scaffolding/**`
+   - `packages/starter/skills/webspatial-sdk-setup/**`
+   - `packages/starter/claude/webspatial-sdk-setup.md`
 
 When updating legacy docs:
 
@@ -464,6 +469,10 @@ Current design relies on the latest English docs tree in `docs/` as the source f
   - `packages/starter/src/project-guidance.js`
   - `packages/starter/skills/**`
   - `packages/starter/claude/**`
+- When the latest English docs change the installation, initialization, or integration workflow for WebSpatial SDK, update the starter scaffold and setup guidance in the same maintenance pass:
+  - `packages/starter/scaffolding/**`
+  - `packages/starter/skills/webspatial-sdk-setup/**`
+  - `packages/starter/claude/webspatial-sdk-setup.md`
 - If those files reference a docs path or heading fragment, keep those references valid after the docs change.
 
 `static/llms.txt` is the lightweight index file. It should list canonical latest-doc URLs and short descriptions, not inline full doc bodies.
@@ -506,6 +515,7 @@ Behavior checks:
 - no new latest route conflicts with legacy redirect namespaces
 - authored internal links do not rely on accidental trailing-slash behavior
 - any affected files in `packages/starter/src/project-guidance.js`, `packages/starter/skills/**`, and `packages/starter/claude/**` still point at the correct mirrored docs paths and headings
+- if SDK installation or initialization docs changed, the affected files in `packages/starter/scaffolding/**`, `packages/starter/skills/webspatial-sdk-setup/**`, and `packages/starter/claude/webspatial-sdk-setup.md` were updated in the same maintenance pass
 
 If you changed `packages/starter/`, also run:
 

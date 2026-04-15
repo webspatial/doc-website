@@ -1,7 +1,7 @@
 {
   "name": "@webspatial/starter",
   "version": "0.1.0",
-  "description": "CLI utilities for adding WebSpatial assets and documentation to existing web projects.",
+  "description": "CLI utilities for adding local AI resources for WebSpatial to existing web projects or scaffolding new WebSpatial projects.",
   "license": "MIT",
   "type": "module",
   "bin": {
@@ -14,6 +14,7 @@
     "bin",
     "claude",
     "docs",
+    "scaffolding",
     "skills",
     "src",
     "README.md"
@@ -29,6 +30,12 @@
     "webspatial",
     "cli",
     "starter",
-    "docs"
+    "docs",
+    "scaffold",
+    "ai",
+    "agent",
+    "codex",
+    "claude",
+    "skills"
   ]
 }

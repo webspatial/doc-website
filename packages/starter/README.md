@@ -1,15 +1,51 @@
 # `@webspatial/starter`
 
-`@webspatial/starter` is a CLI package for preparing WebSpatial resources inside an existing web project.
+`@webspatial/starter` is a CLI utilities for adding local AI resources for WebSpatial to existing web projects or scaffolding new WebSpatial projects.
 
-The package is designed around one high-level command that prepares the project for AI-assisted development. Today that means syncing bundled WebSpatial docs, agent resources, and project guidance into the project. Later versions can add more generated AI resources behind the same command without changing how developers use it.
+The package currently supports two high-level workflows:
+
+- prepare AI resources inside an existing project
+- scaffold a new WebSpatial web project
+
+Today the AI-resource flow syncs bundled WebSpatial docs, agent resources, and project guidance into the project, and the default scaffold is a React + TypeScript + Vite + WebSpatial template.
 
 ## Usage
 
-Run inside the target web project:
+### `create`
+
+Create a new project:
+
+```bash
+npx @webspatial/starter create my-webspatial-app
+```
+
+If you are already inside an empty target directory, you can omit the directory name:
+
+```bash
+npx @webspatial/starter create
+```
+
+This scaffolds the default bundled template into `./my-webspatial-app` and then automatically runs the equivalent of the `ai` command inside that new project.
+
+Then install dependencies inside the generated project:
+
+```bash
+cd my-webspatial-app
+pnpm install
+```
+
+### `ai`
+
+Run inside an existing target web project:
 
 ```bash
 npx @webspatial/starter ai
+```
+
+Or target another project directory:
+
+```bash
+npx @webspatial/starter ai --project-dir ../my-web-app
 ```
 
 By default, the command prepares AI resources in the current project and currently does the following:
@@ -20,13 +56,30 @@ By default, the command prepares AI resources in the current project and current
 - sync Claude Code project memory into `./CLAUDE.md` plus `./.claude/webspatial-sdk-setup.md`
 - when Git is present, add `/.webspatial/` to `.git/info/exclude`
 
-### Target another project directory
+## Command Reference
+
+### `create`
+
+Scaffolds a new WebSpatial web project and automatically prepares its local AI resources.
+
+Usage:
 
 ```bash
-npx @webspatial/starter ai --project-dir ../my-web-app
+npx @webspatial/starter create [project-dir]
 ```
 
-## Command Reference
+Options:
+
+- `--template <name>`: Scaffold template to use. Defaults to `vite`.
+- `-h`, `--help`: Show help for the command.
+
+Current behavior:
+
+- Creates a new project directory from a bundled scaffold template, or scaffolds into the current working directory when no directory argument is provided.
+- Personalizes the generated project name in the template's `package.json`, manifest, and HTML title.
+- Runs the same AI-resource preparation flow as `ai` inside the new project.
+- Refuses to write into a non-empty target directory.
+- Refuses paths that would overlap the package's bundled scaffold source.
 
 ### `ai`
 

@@ -1,6 +1,6 @@
 # WebSpatial Docs Website
 
-This repository contains the source for the [WebSpatial](https://webspatial.dev) website and documentation site at [webspatial.dev/docs](https://webspatial.dev/docs). It is a Docusaurus 3 project with English and Simplified Chinese docs, a published legacy `1.0.x` docs version, custom theme components, generated AI-facing docs outputs, and the `@webspatial/starter` CLI package for syncing local WebSpatial AI resources into app projects.
+This repository contains the source for the [WebSpatial](https://webspatial.dev) website and documentation site at [webspatial.dev/docs](https://webspatial.dev/docs). It is a Docusaurus 3 project with English and Simplified Chinese docs, a published legacy `1.0.x` docs version, custom theme components, generated AI-facing docs outputs, and the `@webspatial/starter` CLI package for adding local AI resources for WebSpatial to existing web projects or scaffolding new WebSpatial projects.
 
 Before changing docs structure, routing, localized content layout, homepage theme behavior, or legacy version behavior, read [DOCS_MAINTENANCE_GUIDE.md](./DOCS_MAINTENANCE_GUIDE.md). That file is the maintainer source of truth.
 
@@ -45,9 +45,33 @@ Important local-dev behavior:
 
 ## Starter CLI
 
-This repo also contains [`@webspatial/starter`](./packages/starter/), a CLI package for preparing WebSpatial AI resources inside an existing web project.
+This repo also contains [`@webspatial/starter`](./packages/starter/), a CLI package for scaffolding WebSpatial web projects and preparing local WebSpatial AI resources.
 
-Current command:
+Current commands:
+
+### `@webspatial/starter create`
+
+```bash
+npx @webspatial/starter create my-webspatial-app
+```
+
+Or if you are already inside an empty target directory:
+
+```bash
+npx @webspatial/starter create
+```
+
+This scaffolds the default React + TypeScript + Vite + WebSpatial project template and automatically prepares its local AI resources.
+
+
+Then install dependencies inside the generated project:
+
+```bash
+cd my-webspatial-app
+pnpm install
+```
+
+### `@webspatial/starter ai`
 
 ```bash
 npx @webspatial/starter ai
